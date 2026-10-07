@@ -1,0 +1,21 @@
+[
+  {
+    "graph": "malecns_cx_500.npz",
+    "mode": "sparse",
+    "device": "cuda",
+    "neurons": 500,
+    "edges": 35102,
+    "trainable_parameters": 55610,
+    "batch": 2,
+    "unroll_steps": 2,
+    "warmup": 0,
+    "timed_repeats": 1,
+    "step_ms_median": 294.19240000015634,
+    "step_ms_min": 294.19240000015634,
+    "step_ms_max": 294.19240000015634,
+    "gpu_total_gib": 15.92816162109375,
+    "gpu_free_before_gib": 14.8134765625,
+    "torch_peak_allocated_gib": 0.02328205108642578,
+    "torch_peak_reserved_gib": 0.02734375
+  }
+]

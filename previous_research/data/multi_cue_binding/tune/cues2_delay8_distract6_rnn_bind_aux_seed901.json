@@ -1,0 +1,94 @@
+{
+ "stage": "tune",
+ "kind": "rnn",
+ "variant": "bind_aux",
+ "seed": 901,
+ "cues": 2,
+ "delay": 8,
+ "distractors": 6,
+ "updates": 6000,
+ "name": "cues2_delay8_distract6_rnn_bind_aux_seed901",
+ "hidden": 422,
+ "parameters": 248241,
+ "learning_rate": 0.0003,
+ "final_validation": 1.0,
+ "test": {
+  "accuracy": 1.0,
+  "by_slot": {
+   "0": 1.0,
+   "1": 1.0
+  },
+  "distractor_reused_color": {
+   "False": 1.0,
+   "True": 1.0
+  }
+ },
+ "curve": [
+  {
+   "update": 0,
+   "validation": 0.2734375
+  },
+  {
+   "update": 500,
+   "loss": 0.5042644739151001,
+   "validation": 0.6708984375
+  },
+  {
+   "update": 1000,
+   "loss": 0.49189332127571106,
+   "validation": 0.76171875
+  },
+  {
+   "update": 1500,
+   "loss": 0.09084837883710861,
+   "validation": 0.9931640625
+  },
+  {
+   "update": 2000,
+   "loss": 0.008195838890969753,
+   "validation": 1.0
+  },
+  {
+   "update": 2500,
+   "loss": 0.0022044572979211807,
+   "validation": 1.0
+  },
+  {
+   "update": 3000,
+   "loss": 0.0010515765752643347,
+   "validation": 1.0
+  },
+  {
+   "update": 3500,
+   "loss": 0.0008549114572815597,
+   "validation": 1.0
+  },
+  {
+   "update": 4000,
+   "loss": 0.00046793045476078987,
+   "validation": 1.0
+  },
+  {
+   "update": 4500,
+   "loss": 0.000374715804355219,
+   "validation": 1.0
+  },
+  {
+   "update": 5000,
+   "loss": 0.0001970008306670934,
+   "validation": 1.0
+  },
+  {
+   "update": 5500,
+   "loss": 0.00012827038881368935,
+   "validation": 1.0
+  },
+  {
+   "update": 6000,
+   "loss": 0.00010232250497210771,
+   "validation": 1.0
+  }
+ ],
+ "to90": 1500,
+ "seconds": 80.93366010000045
+}

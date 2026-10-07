@@ -1,0 +1,87 @@
+{
+  "kind": "rnn",
+  "seed": 801,
+  "config": {
+    "cues_min": 2,
+    "cues_max": 2,
+    "delay": 4,
+    "distractors": 2
+  },
+  "task": "cues2_delay4_distract2",
+  "hidden": 407,
+  "parameters": 223551,
+  "updates": 3000,
+  "batch_size": 128,
+  "learning_rate": 0.003,
+  "episodes_seen": 384000,
+  "final_validation": 0.6748046875,
+  "test_accuracy": 0.658447265625,
+  "chance": 0.3333333333333333,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.314453125
+    },
+    {
+      "update": 250,
+      "loss": 0.4650268256664276,
+      "validation": 0.646484375
+    },
+    {
+      "update": 500,
+      "loss": 0.4789694845676422,
+      "validation": 0.6748046875
+    },
+    {
+      "update": 750,
+      "loss": 0.42940837144851685,
+      "validation": 0.68359375
+    },
+    {
+      "update": 1000,
+      "loss": 0.4465443193912506,
+      "validation": 0.6875
+    },
+    {
+      "update": 1250,
+      "loss": 0.4500296711921692,
+      "validation": 0.666015625
+    },
+    {
+      "update": 1500,
+      "loss": 0.4778555631637573,
+      "validation": 0.640625
+    },
+    {
+      "update": 1750,
+      "loss": 0.4781224727630615,
+      "validation": 0.6533203125
+    },
+    {
+      "update": 2000,
+      "loss": 0.4366280436515808,
+      "validation": 0.666015625
+    },
+    {
+      "update": 2250,
+      "loss": 0.4293783903121948,
+      "validation": 0.6748046875
+    },
+    {
+      "update": 2500,
+      "loss": 0.41846224665641785,
+      "validation": 0.6728515625
+    },
+    {
+      "update": 2750,
+      "loss": 0.4795265793800354,
+      "validation": 0.66015625
+    },
+    {
+      "update": 3000,
+      "loss": 0.4993613362312317,
+      "validation": 0.6748046875
+    }
+  ],
+  "seconds": 23.540095599999972
+}

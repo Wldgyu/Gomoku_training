@@ -1,0 +1,107 @@
+{
+  "method": "visual cue latch and explicit cue-target equality at detected branch",
+  "actor_model": "rnn",
+  "actor_seed": 401,
+  "actor_checkpoint": "data\\minigrid_relation_curriculum\\relation_variable_control_rnn_1000_seed401.pt",
+  "detector_seed": 501,
+  "train_base_episodes_per_size": 4,
+  "train_frames": 800,
+  "epochs": 1,
+  "validation_base_episodes": 4,
+  "final_base_episodes": 4,
+  "selected_epoch": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.357162695664626,
+      "validation": {
+        "frames": 232,
+        "cue_accuracy": 0.7327586206896551,
+        "branch_accuracy": 0.9310344827586207,
+        "upper_accuracy_at_branch": 0.5,
+        "cue_positive_count": 64,
+        "cue_predicted_count": 100,
+        "branch_positive_count": 16,
+        "branch_predicted_count": 0
+      },
+      "score": 0.7212643678160919
+    }
+  ],
+  "teacher_frame_diagnostic": {
+    "9": {
+      "frames": 208,
+      "cue_accuracy": 0.625,
+      "branch_accuracy": 0.9230769230769231,
+      "upper_accuracy_at_branch": 0.5,
+      "cue_positive_count": 72,
+      "cue_predicted_count": 120,
+      "branch_positive_count": 16,
+      "branch_predicted_count": 0
+    },
+    "15": {
+      "frames": 348,
+      "cue_accuracy": 0.764367816091954,
+      "branch_accuracy": 0.9540229885057471,
+      "upper_accuracy_at_branch": 0.5,
+      "cue_positive_count": 96,
+      "cue_predicted_count": 130,
+      "branch_positive_count": 16,
+      "branch_predicted_count": 0
+    },
+    "19": {
+      "frames": 460,
+      "cue_accuracy": 0.7913043478260869,
+      "branch_accuracy": 0.9652173913043478,
+      "upper_accuracy_at_branch": 0.5,
+      "cue_positive_count": 116,
+      "cue_predicted_count": 150,
+      "branch_positive_count": 16,
+      "branch_predicted_count": 0
+    }
+  },
+  "autonomous": {
+    "9": {
+      "base_episodes": 4,
+      "success_rate": 0.5625,
+      "all_four_success": 0.0,
+      "per_variant_success": {
+        "00": 0.75,
+        "10": 0.25,
+        "01": 0.75,
+        "11": 0.5
+      },
+      "cue_latched_rate": 0.0,
+      "branch_override_rate": 0.0,
+      "branch_reach_rate": 1.0
+    },
+    "15": {
+      "base_episodes": 4,
+      "success_rate": 0.75,
+      "all_four_success": 0.0,
+      "per_variant_success": {
+        "00": 0.75,
+        "10": 0.5,
+        "01": 1.0,
+        "11": 0.75
+      },
+      "cue_latched_rate": 0.0,
+      "branch_override_rate": 0.0,
+      "branch_reach_rate": 1.0
+    },
+    "19": {
+      "base_episodes": 4,
+      "success_rate": 1.0,
+      "all_four_success": 1.0,
+      "per_variant_success": {
+        "00": 1.0,
+        "10": 1.0,
+        "01": 1.0,
+        "11": 1.0
+      },
+      "cue_latched_rate": 0.0,
+      "branch_override_rate": 0.0,
+      "branch_reach_rate": 1.0
+    }
+  },
+  "duration_seconds": 6.642272500000217
+}

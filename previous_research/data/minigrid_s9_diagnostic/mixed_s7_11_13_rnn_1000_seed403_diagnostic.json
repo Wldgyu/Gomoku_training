@@ -1,0 +1,92 @@
+{
+  "model": "rnn",
+  "seed": 403,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_length_curriculum\\mixed_s7_11_13_rnn_1000_seed403.pt",
+  "episodes": 128,
+  "first_seed": 16000000,
+  "size": 9,
+  "cue_seen_rate": 1.0,
+  "branch_reach_rate": 1.0,
+  "success_rate": 0.28125,
+  "first_branch_turn_accuracy_given_reach": 0.28125,
+  "teacher_choice_accuracy": 0.2109375,
+  "teacher_swap_flip_rate": 0.6328125,
+  "failure_counts": {
+    "success": 36,
+    "branch_or_finish": 92
+  },
+  "failure_by_start_x": [
+    {
+      "start_x": 1,
+      "category": "branch_or_finish",
+      "count": 20
+    },
+    {
+      "start_x": 2,
+      "category": "branch_or_finish",
+      "count": 19
+    },
+    {
+      "start_x": 2,
+      "category": "success",
+      "count": 9
+    },
+    {
+      "start_x": 3,
+      "category": "branch_or_finish",
+      "count": 14
+    },
+    {
+      "start_x": 3,
+      "category": "success",
+      "count": 10
+    },
+    {
+      "start_x": 4,
+      "category": "branch_or_finish",
+      "count": 16
+    },
+    {
+      "start_x": 4,
+      "category": "success",
+      "count": 4
+    },
+    {
+      "start_x": 5,
+      "category": "branch_or_finish",
+      "count": 11
+    },
+    {
+      "start_x": 5,
+      "category": "success",
+      "count": 4
+    },
+    {
+      "start_x": 6,
+      "category": "branch_or_finish",
+      "count": 12
+    },
+    {
+      "start_x": 6,
+      "category": "success",
+      "count": 9
+    }
+  ],
+  "failure_by_cue_type": [
+    {
+      "cue_type": "Ball",
+      "category": "branch_or_finish",
+      "count": 31
+    },
+    {
+      "cue_type": "Ball",
+      "category": "success",
+      "count": 36
+    },
+    {
+      "cue_type": "Key",
+      "category": "branch_or_finish",
+      "count": 61
+    }
+  ]
+}

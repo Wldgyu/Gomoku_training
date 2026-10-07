@@ -1,0 +1,18 @@
+{
+  "audit_date": "2026-10-03",
+  "sha256": {
+    "multi_cue_memory.py": "4f543d5cfe099f33e8474cf89782e86378458dfccc34e9f06027b1db38f949ee",
+    "grid_multi_cue.py": "47ff11c011d8f1a6c6be8c0be0f56a878893c7cbae1bca4681f238f0d64e31d8",
+    "tune_multi_cue.py": "75ee592c177e997202d800f1620dcf036d55b6100e6412558b3eb3d903c23c7c",
+    "tune_multi_cue_long.py": "316985a4f7e1e5b4292ff81b8682332eba57dd40cd3749bf5a43cff41821ae72",
+    "tune_multi_cue_leak.py": "5693914c6c6e33f36aa51d362795cbf03598dea46c77317556f5925629c3d9e2",
+    "run_multi_cue_grid.ps1": "78cfcba7d9b5a89396e83e1bbc662ba92313bd294b1a03126f6c6c802b4f20fb",
+    "multi_cue_protocol.txt": "8bc2bd58d8f0afda7c0cfdf9891c7a12f46235f9c7675a42afd37160037dade0",
+    "data/multi_cue/tuning.json": "2afa28fc235a0f72c1b0c196c6deddacddce75ffb498c6c843d87e73d7ecbd72",
+    "data/multi_cue/tuning_long.json": "af43966573334c55c6c735b8e8476948dbee38cfdc584058c1cc931a6cfa2719",
+    "data/multi_cue/tuning_leak.json": "bacdb55cfe1fa0209ab0c718ba91e335b2c2c854ce97598af34330e0f3bafdc2"
+  },
+  "tests_passed": 14,
+  "launcher_dry_run_conditions": 9,
+  "final_results_at_audit": 0
+}

@@ -1,0 +1,73 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "start_mode": "default",
+  "episodes": 256,
+  "rows": [
+    {
+      "model": "gru",
+      "seed": 401,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      },
+      "masked": {
+        "success_rate": 0.4375,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 402,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      },
+      "masked": {
+        "success_rate": 0.44140625,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 403,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1171875
+      }
+    }
+  ]
+}

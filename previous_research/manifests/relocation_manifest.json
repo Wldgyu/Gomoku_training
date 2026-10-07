@@ -1,0 +1,517 @@
+{
+  "date": "2026-10-06",
+  "files": [
+    {
+      "name": "analyze_card_followup.py",
+      "bytes": 5647,
+      "sha256": "8E9DB8FF4BEF3F2F3AC58A005E7087EDDE41C1044C316D0053F89F5B82929A19"
+    },
+    {
+      "name": "analyze_minigrid_length_choice.py",
+      "bytes": 2711,
+      "sha256": "A895F2A7FA1AB7D0DB9D6D768DE7BAFB8F3B97D73ECE11545A64184FF70F984D"
+    },
+    {
+      "name": "build_subgraphs.py",
+      "bytes": 8612,
+      "sha256": "D31E1C44E460BE58DF6D76F1E8642FD4EB4848E820E17FF87BDA5140324D6DD1"
+    },
+    {
+      "name": "card_followup_results.txt",
+      "bytes": 5654,
+      "sha256": "E1894FEA29C4344EDF77409BE72E153849BFAA9BB043C74EEDDC8DA376246FFA"
+    },
+    {
+      "name": "card_game_delay_stage2_report.txt",
+      "bytes": 7382,
+      "sha256": "099D9AE319E3876BB0318C2734F3E08C676E3CF95A5B2EE50C6534041E621B18"
+    },
+    {
+      "name": "card_game_pilot_report.txt",
+      "bytes": 5010,
+      "sha256": "2D2B876D471B1A1DC1BFDEB81C2D9C035685ACC9CA9DBBB55B5A07DF1AAAD8B4"
+    },
+    {
+      "name": "check_memory_checkpoint.py",
+      "bytes": 2356,
+      "sha256": "71A503469A3BCC7EB6F8464149B4E736BFAEDC7267D2E537DE53A501C8EC386F"
+    },
+    {
+      "name": "diagnose_aux_transfer.py",
+      "bytes": 6817,
+      "sha256": "029873BCA48EF4C803EBD0CB1CD6A68462B2CEBAEEEAF019D756F4F2AAD037CB"
+    },
+    {
+      "name": "diagnose_card_rnn.py",
+      "bytes": 2785,
+      "sha256": "6D425B670A0BD267319D294DB36D2F541C15D96FA7A25F42D3C327ECDE77E82C"
+    },
+    {
+      "name": "diagnose_minigrid_s9.py",
+      "bytes": 6942,
+      "sha256": "3E28F1A7F22F28B7FACDBC5DDF13D4324068D9583A1A86FCD23E64E30D55694D"
+    },
+    {
+      "name": "diagnose_multi_cue.py",
+      "bytes": 8779,
+      "sha256": "5C872E02F26AEEEE7819A15DBE9AF141A29C1CEA7D0ECF71ECE6FAC9AB45FF26"
+    },
+    {
+      "name": "evaluate_card_delays.py",
+      "bytes": 3448,
+      "sha256": "90EA80080F53A0ABA28E48ADF0F7078034ED09EDBEF75B29CD25BA3FABD26313"
+    },
+    {
+      "name": "evaluate_card_followup.py",
+      "bytes": 4587,
+      "sha256": "FA4C2C036049C40B0A90438D5CE0E1716BF4C0E6BAA1B1E4186E8A02EC84E77B"
+    },
+    {
+      "name": "evaluate_minigrid_compositional.py",
+      "bytes": 3628,
+      "sha256": "847EDF7C4B6DD91C48AD29639ADB002FD41D76ECAE145FC41EF981B834A6D374"
+    },
+    {
+      "name": "evaluate_minigrid_curriculum_lengths.py",
+      "bytes": 1854,
+      "sha256": "C17FECB56766601DD13E53346B150ACDC0BD6D89A1C0B78BB41B0B317F60BAE5"
+    },
+    {
+      "name": "evaluate_minigrid_full_policy.py",
+      "bytes": 1969,
+      "sha256": "815E48264B8CFDA5AED9B654AC8D0FBB59E5A7B63E999E5B94C3F63987DEF107"
+    },
+    {
+      "name": "evaluate_minigrid_learned_relation.py",
+      "bytes": 8878,
+      "sha256": "5D70592A0AF7602F34F9CA6F52821CADD33C9F3356162C3B8BA78FF25D5D2647"
+    },
+    {
+      "name": "evaluate_minigrid_lengths.py",
+      "bytes": 2848,
+      "sha256": "0B7CA449D5DFFE9CD767D24DA5319E57ED12D925E4BDEBD05C70526219FA0F8D"
+    },
+    {
+      "name": "evaluate_minigrid_memory_diagnostic.py",
+      "bytes": 2330,
+      "sha256": "B7E20D10BB489935C8F9051214C1ED4954502FAD549B84E74D5B1C7CCE0FBF17"
+    },
+    {
+      "name": "evaluate_minigrid_random_lengths.py",
+      "bytes": 1950,
+      "sha256": "0EDFD22CCE3F405B2ED386E4EE3260A159012C4272DDA0FAA177507F8F0814E5"
+    },
+    {
+      "name": "evaluate_minigrid_random_start.py",
+      "bytes": 2099,
+      "sha256": "8B830243724C8FBBB2C0AEE791F619135ACE23487A51BA53CD2135207485FF24"
+    },
+    {
+      "name": "evaluate_rnn_delay8.py",
+      "bytes": 2294,
+      "sha256": "0CC6F4E0941876920AB2CD25B99C990D33E61E0BC3B45DC041CF02ED3D7D4617"
+    },
+    {
+      "name": "evaluate_rnn_recovery.py",
+      "bytes": 4554,
+      "sha256": "B3E18895537610100EF7BAFEF04CE59ECA6C6D54C9EB1F2F1DF222065911F881"
+    },
+    {
+      "name": "grid_multi_cue.py",
+      "bytes": 16937,
+      "sha256": "81E64878C4AB86F9A74E066E0843C9B441D093E428BF8329A4329F65614BAA21"
+    },
+    {
+      "name": "inspect_multi_cue_heads.py",
+      "bytes": 1765,
+      "sha256": "ABE4BCF1B1D7AD36242D39A569A2D487E979EA7BF19079613B0673A7CDCEE2C4"
+    },
+    {
+      "name": "measure_rnn_initial_memory.py",
+      "bytes": 2008,
+      "sha256": "8E6AC2C8259C150ECCD3DF0D628E8D57FB5145F40A428A6CB511E9515A24C8A4"
+    },
+    {
+      "name": "minigrid_auxiliary_curriculum.py",
+      "bytes": 11697,
+      "sha256": "36FF25C96D24033ACA4576EF73708C30F6BF3632073E378B6D42AC0D9F0C47F0"
+    },
+    {
+      "name": "minigrid_compositional_policy.py",
+      "bytes": 13671,
+      "sha256": "F6DA2A90B5B3313D6CBCB943AB0AE5CB8937E48B85D7C5F1F121684223F666F0"
+    },
+    {
+      "name": "minigrid_full_policy_curriculum.py",
+      "bytes": 10206,
+      "sha256": "1A8B8E53DAFF5FA0959DEB0BF267B2F9F04637A5FA921A5C4D8C478A72080402"
+    },
+    {
+      "name": "minigrid_learned_relation_results.txt",
+      "bytes": 7328,
+      "sha256": "A35890B8C4D7F10051D214C8637FA3BFD167FF8D8A4ADD9551B9178CBAE4540F"
+    },
+    {
+      "name": "minigrid_learned_relation.py",
+      "bytes": 15255,
+      "sha256": "9D5B26379091998940FC8545853E7CB696F679F6880AAEBA53BD0444939DA309"
+    },
+    {
+      "name": "minigrid_length_curriculum.py",
+      "bytes": 6064,
+      "sha256": "D82824428E495FAD77CA3B12783441F18C6F67D3DAB6D4287F0CD0BEAB7E298C"
+    },
+    {
+      "name": "minigrid_memory_diagnostic.py",
+      "bytes": 10766,
+      "sha256": "2635CC29C2F48B33D203DCE7CE22557777EA3E90EFD158049A0D7A2F56D03A22"
+    },
+    {
+      "name": "minigrid_memory_followup_results.txt",
+      "bytes": 7496,
+      "sha256": "143EAF86345BE076ECF258836FBCE22E1A3FAAF0B406702990BAB5F193CCEFCE"
+    },
+    {
+      "name": "minigrid_memory_pilot.py",
+      "bytes": 26361,
+      "sha256": "8026826CFF289D4544CEA1300CDBED51F15503155403BD89A3F0E9D3AAE35698"
+    },
+    {
+      "name": "minigrid_pilot_results.txt",
+      "bytes": 7030,
+      "sha256": "9B6F1863EB396A51235125BE472A444F107ED12C288C96EAB29026DB6973241E"
+    },
+    {
+      "name": "minigrid_random_start_curriculum.py",
+      "bytes": 9513,
+      "sha256": "A2BFE45F5E5E4A9189819FA4EC373A875E99AD732EE19A7A6BD4143739C87F34"
+    },
+    {
+      "name": "minigrid_random_start_results.txt",
+      "bytes": 9721,
+      "sha256": "11B65C75337ABD6B395C4DA51F8BB28FA10B6F617F7C66EBD7E3F7FF0EF9599A"
+    },
+    {
+      "name": "minigrid_recurrent_probe.py",
+      "bytes": 6798,
+      "sha256": "CD4A9A4910CE43405060455A03F8BBF7A16F93FF2B4C8DF6890526B9ECC508D4"
+    },
+    {
+      "name": "minigrid_relation_curriculum.py",
+      "bytes": 10953,
+      "sha256": "B94FE940D9C31291391CAEB0AA799BB4CDAA1D9366DF17CADB8A2FC6466E190E"
+    },
+    {
+      "name": "minigrid_relation_data.py",
+      "bytes": 4739,
+      "sha256": "CA0B49A9BF1BB0A54F035E59865E4C0ED8EEF3DC2B4C07D7D88BEE55BA1119B1"
+    },
+    {
+      "name": "minigrid_relation_followup_results.txt",
+      "bytes": 9821,
+      "sha256": "901620444736F027342C2E0C899B7903D823412DA891AEDE65A688FA79F44060"
+    },
+    {
+      "name": "minigrid_relation_followup.py",
+      "bytes": 24024,
+      "sha256": "06725734E889379A1B6534B6DBE60345002B3C8CF972A4D04CA794F4B2078184"
+    },
+    {
+      "name": "minigrid_relation_generalization_results.txt",
+      "bytes": 9476,
+      "sha256": "E9270826D1A8711AF1DFB1D12DDC4E43C33343F057FD5B145B6E804A28C76AB1"
+    },
+    {
+      "name": "minigrid_s9_three_step_results.txt",
+      "bytes": 9499,
+      "sha256": "7EB37840D24CA96082E67C06E509187879C985E3071B1A5B8062AC7EA38C2B92"
+    },
+    {
+      "name": "multi_cue_audit_results.txt",
+      "bytes": 7550,
+      "sha256": "741D73648A3CF6FBB47DB4D8EF25C7D59C6961CD93C88152E511BFBFAE3252E7"
+    },
+    {
+      "name": "multi_cue_aux_generalization_results.txt",
+      "bytes": 13871,
+      "sha256": "6D7ADEACFC96573D4A6050A623764B607C23BA0E4A4A4F0C19D1D759E50B87FD"
+    },
+    {
+      "name": "multi_cue_aux_transfer.py",
+      "bytes": 5046,
+      "sha256": "F635F03F9D06E1A0B999529854A69A523A4F628AB7DD4755E67ABBB552B23346"
+    },
+    {
+      "name": "multi_cue_binding_results.txt",
+      "bytes": 21128,
+      "sha256": "92AE9A18378E1D4D2FA276E8EDA6BB6D85129F878FF3F9CCCCDBF58F35EF3787"
+    },
+    {
+      "name": "multi_cue_binding.py",
+      "bytes": 13823,
+      "sha256": "2CA2CB8C3B9D27B3E162DC96320C4DEF230B00E4D320262DE0F5D006063F729F"
+    },
+    {
+      "name": "multi_cue_followup_results.txt",
+      "bytes": 18473,
+      "sha256": "DBA56A78A70D5F9C77C3EEA6BF398D40A4B925C34143593AF2717B903DA0F909"
+    },
+    {
+      "name": "multi_cue_followup.py",
+      "bytes": 19081,
+      "sha256": "E309473477D18702996C41428D92E4B9B45CA9BA40F815313D2E3D838BF43154"
+    },
+    {
+      "name": "multi_cue_memory.py",
+      "bytes": 13828,
+      "sha256": "D563FDE6071DB6BCEADEDA6780890671BCB8D5ABB9AD21DEE8DD32A3BF8C5B06"
+    },
+    {
+      "name": "multi_cue_observation_recovery.py",
+      "bytes": 19188,
+      "sha256": "C134EFCA5428A84403B8672F3294D7B720FCC613022C4941A71E06E18C7A5813"
+    },
+    {
+      "name": "multi_cue_order_holdout.py",
+      "bytes": 4246,
+      "sha256": "07E66B49662D20D86A21E637388D136C5BC5AB508749A78380EDF044C94850FE"
+    },
+    {
+      "name": "multi_cue_recovery_results.txt",
+      "bytes": 10652,
+      "sha256": "4CE28D4248944FAC7D13FF21FBA6A87455A16B4D97170CE3A73EB0E75791870E"
+    },
+    {
+      "name": "multi_cue_recovery.py",
+      "bytes": 14502,
+      "sha256": "F564D4499D696C5B064BEABEA823F2B53C4058DAE8B01E2A21AC8A9A6EE37524"
+    },
+    {
+      "name": "multi_cue_visual_aux.py",
+      "bytes": 11451,
+      "sha256": "10F90104CE3AE22682B39738BBB8ED7874C86B7AE35CD9549C3E0D496F0FFBF5"
+    },
+    {
+      "name": "multi_cue_visual_followup.py",
+      "bytes": 9264,
+      "sha256": "24B4F9860610E7CAF620B80EC87B257006FFF32B68E2C3E0E1479A841C74D41B"
+    },
+    {
+      "name": "pilot_card_game.py",
+      "bytes": 17015,
+      "sha256": "F77B94D139BCBB330C8BFBC24068BA6C9C63D64E756B021EA5E569D4172489B4"
+    },
+    {
+      "name": "probe_fly_memory.py",
+      "bytes": 6814,
+      "sha256": "815167163E6F3EDECE4B8CB48A646508984B01C240A1EC2A339C4BD22E6B0958"
+    },
+    {
+      "name": "probe_recovery_batch.py",
+      "bytes": 2306,
+      "sha256": "9A6B64AEF61CE53DFCEB5F16E8912080E76D6135E1F8E94D3657B31D7F05094D"
+    },
+    {
+      "name": "project_config.py",
+      "bytes": 399,
+      "sha256": "B0A2D9AB4794A51181B9F066ADF9D910DB2BF76B1E73A3C83418F5B81F96523A"
+    },
+    {
+      "name": "refresh_order_holdout.py",
+      "bytes": 2246,
+      "sha256": "2D3AC827AE574E22B5FCEE293E1F23EB388582E2A097823F31C778158CB4DC2D"
+    },
+    {
+      "name": "refresh_visual_aux_results.py",
+      "bytes": 2777,
+      "sha256": "CE776A3FA52AD7F8500EEA3D3F054230F3FFD723289EFEEC2127D47CD714F1D1"
+    },
+    {
+      "name": "requirements-minigrid.txt",
+      "bytes": 33,
+      "sha256": "861BBBF15D93749DA72F9F0067299419EBA175F721F4B7FBB507C572F92A7091"
+    },
+    {
+      "name": "requirements-phase0.txt",
+      "bytes": 31,
+      "sha256": "C6B07CA7CE2EC2A017DD5DE571769C03C5392FEF67A1AA5B665E031D87103DF6"
+    },
+    {
+      "name": "rewire_subgraphs.py",
+      "bytes": 4634,
+      "sha256": "C8118DC8885353A75F45FF443F427F32E38E2098FF6C7C1E8037EC56BC7F83AD"
+    },
+    {
+      "name": "rnn_recovery_results.txt",
+      "bytes": 5688,
+      "sha256": "E2366269444489A8DCF6B1FBD51F004912F29A1B83D113AFE5476CDB538045EA"
+    },
+    {
+      "name": "run_card_followup.py",
+      "bytes": 7254,
+      "sha256": "47848FA5DFFC429751CD5362BA20BA2E64006D4B081AC56DFE0B15069CF9DF8E"
+    },
+    {
+      "name": "run_minigrid_matrix.py",
+      "bytes": 2731,
+      "sha256": "BC56F46DB7EFB4536F40FC439B090E59B51363313E1848F293A9C3FD372C6D69"
+    },
+    {
+      "name": "run_multi_cue_followup.py",
+      "bytes": 3642,
+      "sha256": "1E7FFA5A04F02384DFA2D25A133F9A92E060D72BDD64EB563ACB0949A53455F6"
+    },
+    {
+      "name": "run_multi_cue_grid.ps1",
+      "bytes": 1452,
+      "sha256": "78CFCBA7D9B5A89396E83E1BBC662BA92313BD294B1A03126F6C6C802B4F20FB"
+    },
+    {
+      "name": "run_multi_cue_recovery.py",
+      "bytes": 1778,
+      "sha256": "318A8DF58FA679109E3D03CD3F015CF48EF2B4A3569C0E8D804E45CE9E6187C4"
+    },
+    {
+      "name": "run_rnn_recovery.py",
+      "bytes": 2523,
+      "sha256": "CDB989F7ADF9618E921E473C9F118BDE5AEED4E618CEB08C5BD79E0B622887FB"
+    },
+    {
+      "name": "summarize_minigrid_matched.py",
+      "bytes": 5217,
+      "sha256": "E3A563C2C9470EC110FAE459E418ED935B29012FEC8F82CC5A10E3F85C820FFE"
+    },
+    {
+      "name": "summarize_minigrid_matrix.py",
+      "bytes": 3805,
+      "sha256": "4A746CDE47FBC7CA6C58AD76BC65D5836B83B22325FDA011442A669849D2F299"
+    },
+    {
+      "name": "summarize_minigrid_relation_followup.py",
+      "bytes": 14168,
+      "sha256": "DBFB326A0BC424511E1F9C88B25563B2003D3ABE98924CA1406D9D53FA18D05A"
+    },
+    {
+      "name": "summarize_multi_cue_aux_transfer.py",
+      "bytes": 12963,
+      "sha256": "368B0E61AA508021191DD80835F308597EBE5B6276E628438B3EC799C9AB5A0C"
+    },
+    {
+      "name": "summarize_multi_cue_binding.py",
+      "bytes": 11832,
+      "sha256": "FC4FA9AD49D901E8924FF547EEBC9CE1C8D4FF91588662D0FC45F10920D4EE68"
+    },
+    {
+      "name": "summarize_multi_cue_followup.py",
+      "bytes": 17920,
+      "sha256": "E832D8F18979D04A340279BF6523B5B95C87FA2BD9287F1B68C55AE314B23AE5"
+    },
+    {
+      "name": "summarize_multi_cue_recovery.py",
+      "bytes": 14302,
+      "sha256": "ADB17D1D6561B84EE0712EA7EB6F45FBA9B94EEEAEE27F73839221BF340BFBAA"
+    },
+    {
+      "name": "test_grid_multi_cue.py",
+      "bytes": 3180,
+      "sha256": "40975FB2C53A26B690A2CFBF8BCCFDCA929156E8DCB0D4C3948B75D78439BA66"
+    },
+    {
+      "name": "test_minigrid_learned_relation.py",
+      "bytes": 2547,
+      "sha256": "C625D6AD1674804206663EF2573C7A0A029B2241C79D13B83A65CE008D3AF2D1"
+    },
+    {
+      "name": "test_minigrid_memory_pilot.py",
+      "bytes": 3486,
+      "sha256": "BF54C09A8BA34C850EF7021F7948F706FAA08BD27A546D7F6C495943914C1E3C"
+    },
+    {
+      "name": "test_minigrid_memory_stages.py",
+      "bytes": 1944,
+      "sha256": "5AB2E4E46CA454C323118F3D2645292D9E2D592C23136C6883B4C060A5CDBB01"
+    },
+    {
+      "name": "test_minigrid_relation_data.py",
+      "bytes": 1536,
+      "sha256": "C5DD22E256F39B5E35D2CC0CF5713860BE32AC02803787B1C725CD4BCD21CDAA"
+    },
+    {
+      "name": "test_multi_cue_binding.py",
+      "bytes": 4739,
+      "sha256": "6ACB62D999813736C4BEECD088085022AB0D37BFDF6DEA79454D8338F4A43772"
+    },
+    {
+      "name": "test_multi_cue_followup.py",
+      "bytes": 7026,
+      "sha256": "01F203FFC681D62619EDCFD24D9FFA2A2C3161E377AA4A3F285F31C72C916345"
+    },
+    {
+      "name": "test_multi_cue_memory.py",
+      "bytes": 4665,
+      "sha256": "E9CAE9A1CDDE6E7B1F79737A11D154F126425A846474BB5FBC126E55923CAE4F"
+    },
+    {
+      "name": "test_multi_cue_recovery.py",
+      "bytes": 3258,
+      "sha256": "AE4A735D60C4CDB8E7FF086D2E7F5B6E495033397BE51F5DEA291E24E0393F8A"
+    },
+    {
+      "name": "train_memory_sanity.py",
+      "bytes": 7418,
+      "sha256": "03467C47F5F354E35198C012828DEB08466EEE5C16E9B70FD96582E3B9D23358"
+    },
+    {
+      "name": "tune_multi_cue_leak.py",
+      "bytes": 1560,
+      "sha256": "5693914C6C6E33F36AA51D362795CBF03598DEA46C77317556F5925629C3D9E2"
+    },
+    {
+      "name": "tune_multi_cue_long.py",
+      "bytes": 1432,
+      "sha256": "316985A4F7E1E5B4292FF81B8682332EBA57DD40CD3749BF5A43CFF41821AE72"
+    },
+    {
+      "name": "tune_multi_cue.py",
+      "bytes": 1873,
+      "sha256": "75EE592C177E997202D800F1620DCF036D55B6100E6412558B3EB3D903C23C7C"
+    },
+    {
+      "name": "verify_subgraphs.py",
+      "bytes": 7481,
+      "sha256": "B87D4196FA757DDB88C1512FFE4643C063725B8F733C4EE86E6401E3ED2673DD"
+    },
+    {
+      "name": "visual_aux_shared_navigation.py",
+      "bytes": 6130,
+      "sha256": "96E094A7607D94CD6787FBF9D584C8EEECB5E39D934BEF2DCC4CC48A8D0415C1"
+    }
+  ],
+  "data_count": 2923,
+  "data_bytes": 4846559219.0,
+  "retained_planning": [
+    ".gitignore",
+    "가상환경 실행.txt",
+    "card_followup_protocol.txt",
+    "core_research_questions_report.txt",
+    "drosophila_project_plan_flow.txt",
+    "minigrid_pilot_protocol.txt",
+    "minigrid_relation_followup_protocol.txt",
+    "multi_cue_binding_protocol.txt",
+    "multi_cue_followup_protocol.txt",
+    "multi_cue_protocol.txt",
+    "multi_cue_recovery_protocol.txt",
+    "multi_cue_visual_protocol.txt",
+    "README.md",
+    "RESEARCH_PROTOCOL.md",
+    "rnn_recovery_protocol.txt"
+  ],
+  "post_move_path_repairs": {
+    "run_multi_cue_grid.ps1": "b9dd1f0129bc37a83afcc3835c34d8287006dd7b4ad44bf3a1e87a7e95083020",
+    "run_multi_cue_followup.py": "d01502aab0a37c904cb5a408f532c5d50ed63a1a2d1eb3d4ddae363fa1489585",
+    "summarize_multi_cue_followup.py": "0d84accb3c94fb0b407048e87f6981f3cc40c86cb95e373ffc4435de4356c6ae",
+    "summarize_multi_cue_recovery.py": "dae489776d00f5fcfe1eff7bece2c30127dfce92261d3527e2e150edbb5d8ca4",
+    "summarize_minigrid_relation_followup.py": "e7a80d9e56685b2ecca05fde0f33f21cde811b2d9d5cfcf05d3a12d7624e2c1c"
+  },
+  "verification": "Original hashes verified immediately after moving; later wrapper/protocol path repairs listed separately."
+}

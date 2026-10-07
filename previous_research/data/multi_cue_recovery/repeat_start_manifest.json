@@ -1,0 +1,16 @@
+{
+  "time": "2026-10-04T13:18:43.023988+09:00",
+  "phase": "independent_difficult_replication_started",
+  "selected_head": "relu_state",
+  "source_sha256": {
+    "multi_cue_recovery_protocol.txt": "d23bd0d7d3dc55d18271df7ae3e80dfe036974f80ef992a8ca323651037d829b",
+    "multi_cue_recovery.py": "f564d4499d696c5b064beabea823f2b53c4058dae8b01e2a21ac8a9a6ee37524",
+    "multi_cue_observation_recovery.py": "c134efca5428a84403b8672f3294d7b720fcc613022c4941a71e06e18c7a5813",
+    "multi_cue_followup.py": "e309473477d18702996c41428d92e4b9b45ca9ba40f815313d2e3d838bf43154",
+    "multi_cue_memory.py": "3d86f1124407abf3b69ce37cecf3b87e23680f444f8585575caac8c18b2b1a6b",
+    "grid_multi_cue.py": "50efe998c7efd029ba98e276f1bb31ce65d38f05a3aac20187b10da059289170"
+  },
+  "new_tests": "4 passed",
+  "readout_results": 15,
+  "observation_summary_main": 15
+}

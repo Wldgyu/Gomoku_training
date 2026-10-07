@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-07",
+  "independent_gpu_process": true,
+  "models": [
+    "rnn_seed4603",
+    "gru_seed4603"
+  ],
+  "budgets_and_core_source_equal": true,
+  "main_training_reuses_completed_runs": true,
+  "files": [
+    {
+      "source": "gomoku9\\runs\\advanced_20261007\\parallel_seed4603\\gru_seed4603.json",
+      "destination": "gomoku9\\runs\\advanced_20261007\\final\\gru_seed4603.json",
+      "sha256": "a17d8abbe8f7952b6fed71ce36f73ae177e0dfb76b56f03e663572ac7d647307"
+    },
+    {
+      "source": "gomoku9\\runs\\advanced_20261007\\parallel_seed4603\\gru_seed4603.pt",
+      "destination": "gomoku9\\runs\\advanced_20261007\\final\\gru_seed4603.pt",
+      "sha256": "caf53437407acacd1c17d5fbbeba69a74a48f4ca074dd6118ac0c6ffbebb41f1"
+    },
+    {
+      "source": "gomoku9\\runs\\advanced_20261007\\parallel_seed4603\\gru_seed4603_warmup.pt",
+      "destination": "gomoku9\\runs\\advanced_20261007\\final\\gru_seed4603_warmup.pt",
+      "sha256": "022bb4eb13b35bf62b1a478533b11a3010589f1130518641e1c21ad0402a9281"
+    },
+    {
+      "source": "gomoku9\\runs\\advanced_20261007\\parallel_seed4603\\rnn_seed4603.json",
+      "destination": "gomoku9\\runs\\advanced_20261007\\final\\rnn_seed4603.json",
+      "sha256": "00130c50b1282e5ebd3495f9d551f275889a5540ddac877006aa25bb2c0d684d"
+    },
+    {
+      "source": "gomoku9\\runs\\advanced_20261007\\parallel_seed4603\\rnn_seed4603.pt",
+      "destination": "gomoku9\\runs\\advanced_20261007\\final\\rnn_seed4603.pt",
+      "sha256": "1e0d8c4078c55c702c27f328db72324685e675e54fb4caae6a190424efef0f7f"
+    },
+    {
+      "source": "gomoku9\\runs\\advanced_20261007\\parallel_seed4603\\rnn_seed4603_warmup.pt",
+      "destination": "gomoku9\\runs\\advanced_20261007\\final\\rnn_seed4603_warmup.pt",
+      "sha256": "92f0f826497d4df277b05bd130bd40dc6a7902ca698a636b4996a323f3290514"
+    },
+    {
+      "source": "gomoku9\\runs\\advanced_20261007\\parallel_seed4603\\training_summary.json",
+      "destination": "gomoku9\\runs\\advanced_20261007\\parallel_training_summary.json",
+      "sha256": "4ed44a53ec5127963e21f2ca19996dcf6a5ff0c545c6fc1c67bbf1ae62624c29"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "kind": "fly",
+  "seed": 1101,
+  "rewire_seed": 0,
+  "hidden": 1000,
+  "memory_parameters": 276851,
+  "total_parameters": 392307,
+  "learning_rate": 0.0003,
+  "epochs": 20,
+  "updates": 1280,
+  "training_episodes": 8192,
+  "best_validation": 0.6796875,
+  "best_validation_loss": 0.4945690780878067,
+  "best_epoch": 13,
+  "curve": [
+    {
+      "epoch": 1,
+      "validation": 0.318359375,
+      "validation_loss": 1.0986758023500443
+    },
+    {
+      "epoch": 2,
+      "validation": 0.48828125,
+      "validation_loss": 0.8893376663327217
+    },
+    {
+      "epoch": 3,
+      "validation": 0.490234375,
+      "validation_loss": 0.8100351169705391
+    },
+    {
+      "epoch": 4,
+      "validation": 0.5595703125,
+      "validation_loss": 0.7880670800805092
+    },
+    {
+      "epoch": 5,
+      "validation": 0.560546875,
+      "validation_loss": 0.7833743914961815
+    },
+    {
+      "epoch": 6,
+      "validation": 0.6015625,
+      "validation_loss": 0.7757805809378624
+    },
+    {
+      "epoch": 7,
+      "validation": 0.6708984375,
+      "validation_loss": 0.6020461916923523
+    },
+    {
+      "epoch": 8,
+      "validation": 0.66796875,
+      "validation_loss": 0.49801912903785706
+    },
+    {
+      "epoch": 9,
+      "validation": 0.658203125,
+      "validation_loss": 0.48613039031624794
+    },
+    {
+      "epoch": 10,
+      "validation": 0.658203125,
+      "validation_loss": 0.49098271131515503
+    },
+    {
+      "epoch": 11,
+      "validation": 0.6591796875,
+      "validation_loss": 0.5111753158271313
+    },
+    {
+      "epoch": 12,
+      "validation": 0.6728515625,
+      "validation_loss": 0.508097093552351
+    },
+    {
+      "epoch": 13,
+      "validation": 0.6796875,
+      "validation_loss": 0.4945690780878067
+    },
+    {
+      "epoch": 14,
+      "validation": 0.642578125,
+      "validation_loss": 0.4875055365264416
+    },
+    {
+      "epoch": 15,
+      "validation": 0.6650390625,
+      "validation_loss": 0.48247355595231056
+    },
+    {
+      "epoch": 16,
+      "validation": 0.646484375,
+      "validation_loss": 0.48691805452108383
+    },
+    {
+      "epoch": 17,
+      "validation": 0.6455078125,
+      "validation_loss": 0.4777209982275963
+    },
+    {
+      "epoch": 18,
+      "validation": 0.6533203125,
+      "validation_loss": 0.4791657030582428
+    },
+    {
+      "epoch": 19,
+      "validation": 0.646484375,
+      "validation_loss": 0.4750637747347355
+    },
+    {
+      "epoch": 20,
+      "validation": 0.6611328125,
+      "validation_loss": 0.48037852346897125
+    }
+  ],
+  "tests": {
+    "trained_delays": {
+      "accuracy": 0.66064453125,
+      "by_delay": {
+        "6": 0.6526005888125613,
+        "10": 0.6686103012633625
+      },
+      "by_slot": {
+        "0": {
+          "accuracy": 0.6207584738731384,
+          "count": 1002
+        },
+        "1": {
+          "accuracy": 0.6988527774810791,
+          "count": 1046
+        }
+      }
+    },
+    "unseen_delays": {
+      "accuracy": 0.6708984375,
+      "by_delay": {
+        "8": 0.6615678776290631,
+        "14": 0.6806387225548902
+      },
+      "by_slot": {
+        "0": {
+          "accuracy": 0.6240000128746033,
+          "count": 1000
+        },
+        "1": {
+          "accuracy": 0.7156488299369812,
+          "count": 1048
+        }
+      }
+    },
+    "unseen_delays_wait": {
+      "accuracy": 0.66162109375,
+      "by_delay": {
+        "8": 0.6627793974732751,
+        "14": 0.6604514229636899
+      },
+      "by_slot": {
+        "0": {
+          "accuracy": 0.5746785402297974,
+          "count": 1011
+        },
+        "1": {
+          "accuracy": 0.746383786201477,
+          "count": 1037
+        }
+      }
+    }
+  },
+  "seconds": 35.38451519999944,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\visual\\main\\fly_seed1101.pt"
+}

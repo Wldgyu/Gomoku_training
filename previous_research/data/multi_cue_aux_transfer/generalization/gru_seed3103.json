@@ -1,0 +1,99 @@
+{
+  "kind": "gru",
+  "seed": 3103,
+  "hidden": 252,
+  "published_test": 1.0,
+  "replayed_test": 1.0,
+  "conditions": {
+    "trained": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "reversed_cue_order": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "delay24": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "delay32": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "distractors6": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "distractors10": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "combined24_6": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "three_cues": {
+      "accuracy": 0.785888671875,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 0.347470223903656
+      },
+      "distractor_reused_color": {
+        "False": 0.7851239442825317,
+        "True": 0.7868670225143433
+      }
+    }
+  },
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_aux_transfer\\checkpoints\\gru_aux_seed3103.pt"
+}

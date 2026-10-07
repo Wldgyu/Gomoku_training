@@ -1,0 +1,179 @@
+{
+  "kind": "rewired",
+  "seed": 1103,
+  "graph": 2,
+  "frozen": false,
+  "name": "rewired_graph2_seed1103",
+  "config": {
+    "cues_min": 2,
+    "cues_max": 2,
+    "delay": 4,
+    "distractors": 2
+  },
+  "task": "cues2_delay4_distract2",
+  "hidden": 1000,
+  "parameters": 223851,
+  "leak": 0.9,
+  "learning_rate": 0.003,
+  "updates": 16000,
+  "batch_size": 128,
+  "episodes_seen": 2048000,
+  "generator": "vectorized_fixed_v2",
+  "final_validation": 0.6552734375,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.361328125
+    },
+    {
+      "update": 500,
+      "validation": 0.6728515625
+    },
+    {
+      "update": 1000,
+      "validation": 0.6640625
+    },
+    {
+      "update": 1500,
+      "validation": 0.6806640625
+    },
+    {
+      "update": 2000,
+      "validation": 0.66015625
+    },
+    {
+      "update": 2500,
+      "validation": 0.6484375
+    },
+    {
+      "update": 3000,
+      "validation": 0.638671875
+    },
+    {
+      "update": 3500,
+      "validation": 0.666015625
+    },
+    {
+      "update": 4000,
+      "validation": 0.6806640625
+    },
+    {
+      "update": 4500,
+      "validation": 0.6767578125
+    },
+    {
+      "update": 5000,
+      "validation": 0.658203125
+    },
+    {
+      "update": 5500,
+      "validation": 0.6416015625
+    },
+    {
+      "update": 6000,
+      "validation": 0.6552734375
+    },
+    {
+      "update": 6500,
+      "validation": 0.6806640625
+    },
+    {
+      "update": 7000,
+      "validation": 0.6689453125
+    },
+    {
+      "update": 7500,
+      "validation": 0.662109375
+    },
+    {
+      "update": 8000,
+      "validation": 0.6806640625
+    },
+    {
+      "update": 8500,
+      "validation": 0.646484375
+    },
+    {
+      "update": 9000,
+      "validation": 0.6416015625
+    },
+    {
+      "update": 9500,
+      "validation": 0.658203125
+    },
+    {
+      "update": 10000,
+      "validation": 0.68359375
+    },
+    {
+      "update": 10500,
+      "validation": 0.66015625
+    },
+    {
+      "update": 11000,
+      "validation": 0.6416015625
+    },
+    {
+      "update": 11500,
+      "validation": 0.6806640625
+    },
+    {
+      "update": 12000,
+      "validation": 0.6669921875
+    },
+    {
+      "update": 12500,
+      "validation": 0.67578125
+    },
+    {
+      "update": 13000,
+      "validation": 0.67578125
+    },
+    {
+      "update": 13500,
+      "validation": 0.6669921875
+    },
+    {
+      "update": 14000,
+      "validation": 0.6806640625
+    },
+    {
+      "update": 14500,
+      "validation": 0.6416015625
+    },
+    {
+      "update": 15000,
+      "validation": 0.6806640625
+    },
+    {
+      "update": 15500,
+      "validation": 0.6416015625
+    },
+    {
+      "update": 16000,
+      "validation": 0.6552734375
+    }
+  ],
+  "test": {
+    "accuracy": 0.67138671875,
+    "by_slot": {
+      "0": {
+        "accuracy": 0.6600000262260437,
+        "count": 2000
+      },
+      "1": {
+        "accuracy": 0.6822519302368164,
+        "count": 2096
+      }
+    },
+    "last_only_accuracy": 0.665283203125,
+    "queried_kind_change_accuracy": 0.669921875,
+    "queried_kind_change_prediction_rate": 0.564208984375,
+    "unqueried_kind_change_accuracy": 0.683349609375,
+    "unqueried_kind_change_invariance": 0.46044921875
+  },
+  "to90": null,
+  "to99": null,
+  "seconds_this_session": 560.2372816000006,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph2_seed1103.pt"
+}

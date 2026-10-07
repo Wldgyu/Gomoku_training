@@ -1,0 +1,104 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "start_mode": "default",
+  "method": "teacher route imitation from S11 fixed-start checkpoint",
+  "model": "rewired",
+  "neurons_reference": 1000,
+  "seed": 405,
+  "parameters": 351092,
+  "source_checkpoint": "data\\minigrid_matched_topology\\full\\full_s11_rewired_1000_seed405.pt",
+  "train_episodes": 2048,
+  "start_x_counts": [
+    0,
+    277,
+    251,
+    239,
+    248,
+    237,
+    279,
+    235,
+    282,
+    0,
+    0
+  ],
+  "eval_episodes": 128,
+  "epochs": 30,
+  "learning_rate": 0.0001,
+  "initial": {
+    "success_rate": 0.5546875,
+    "branch_reach_rate": 1.0,
+    "cue_seen_rate": 0.125,
+    "cue_visible_at_start_rate": 0.125
+  },
+  "history": [
+    {
+      "epoch": 5,
+      "teacher_loss": 0.1083681748714298,
+      "success_rate": 0.6796875,
+      "branch_reach_rate": 1.0,
+      "cue_seen_rate": 0.4765625,
+      "cue_visible_at_start_rate": 0.125
+    },
+    {
+      "epoch": 10,
+      "teacher_loss": 0.04585917992517352,
+      "success_rate": 0.8671875,
+      "branch_reach_rate": 0.96875,
+      "cue_seen_rate": 0.78125,
+      "cue_visible_at_start_rate": 0.125
+    },
+    {
+      "epoch": 15,
+      "teacher_loss": 0.01776427071308717,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0,
+      "cue_seen_rate": 1.0,
+      "cue_visible_at_start_rate": 0.125
+    },
+    {
+      "epoch": 20,
+      "teacher_loss": 0.008167463980498724,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0,
+      "cue_seen_rate": 1.0,
+      "cue_visible_at_start_rate": 0.125
+    },
+    {
+      "epoch": 25,
+      "teacher_loss": 0.005088494639494456,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0,
+      "cue_seen_rate": 1.0,
+      "cue_visible_at_start_rate": 0.125
+    },
+    {
+      "epoch": 30,
+      "teacher_loss": 0.003648557496489957,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0,
+      "cue_seen_rate": 1.0,
+      "cue_visible_at_start_rate": 0.125
+    }
+  ],
+  "selected_epoch": 15,
+  "selection_rule": "highest validation success, then cue-seen rate",
+  "final_fresh": {
+    "success_rate": 1.0,
+    "branch_reach_rate": 1.0,
+    "cue_seen_rate": 1.0,
+    "cue_visible_at_start_rate": 0.1171875
+  },
+  "final_fresh_cue_masked": {
+    "success_rate": 0.5,
+    "branch_reach_rate": 1.0,
+    "cue_seen_rate": 1.0,
+    "cue_visible_at_start_rate": 0.1171875
+  },
+  "final_fresh_cue_swapped": {
+    "success_rate": 0.0,
+    "branch_reach_rate": 1.0,
+    "cue_seen_rate": 1.0,
+    "cue_visible_at_start_rate": 0.1171875
+  },
+  "duration_seconds": 88.4695112999998
+}

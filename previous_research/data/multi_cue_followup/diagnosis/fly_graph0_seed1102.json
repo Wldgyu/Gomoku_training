@@ -1,0 +1,307 @@
+{
+  "run": {
+    "kind": "fly",
+    "seed": 1102,
+    "graph": 0,
+    "frozen": false,
+    "name": "fly_graph0_seed1102",
+    "config": {
+      "cues_min": 2,
+      "cues_max": 2,
+      "delay": 4,
+      "distractors": 2
+    },
+    "task": "cues2_delay4_distract2",
+    "hidden": 1000,
+    "parameters": 223851,
+    "leak": 0.9,
+    "learning_rate": 0.003,
+    "updates": 16000,
+    "batch_size": 128,
+    "episodes_seen": 2048000,
+    "generator": "vectorized_fixed_v2",
+    "final_validation": 0.6376953125,
+    "curve": [
+      {
+        "update": 0,
+        "validation": 0.32421875
+      },
+      {
+        "update": 500,
+        "validation": 0.6787109375
+      },
+      {
+        "update": 1000,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 1500,
+        "validation": 0.6435546875
+      },
+      {
+        "update": 2000,
+        "validation": 0.66796875
+      },
+      {
+        "update": 2500,
+        "validation": 0.6396484375
+      },
+      {
+        "update": 3000,
+        "validation": 0.638671875
+      },
+      {
+        "update": 3500,
+        "validation": 0.6875
+      },
+      {
+        "update": 4000,
+        "validation": 0.6376953125
+      },
+      {
+        "update": 4500,
+        "validation": 0.6318359375
+      },
+      {
+        "update": 5000,
+        "validation": 0.62890625
+      },
+      {
+        "update": 5500,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 6000,
+        "validation": 0.6640625
+      },
+      {
+        "update": 6500,
+        "validation": 0.6640625
+      },
+      {
+        "update": 7000,
+        "validation": 0.642578125
+      },
+      {
+        "update": 7500,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 8000,
+        "validation": 0.609375
+      },
+      {
+        "update": 8500,
+        "validation": 0.62890625
+      },
+      {
+        "update": 9000,
+        "validation": 0.6591796875
+      },
+      {
+        "update": 9500,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 10000,
+        "validation": 0.642578125
+      },
+      {
+        "update": 10500,
+        "validation": 0.6396484375
+      },
+      {
+        "update": 11000,
+        "validation": 0.69140625
+      },
+      {
+        "update": 11500,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 12000,
+        "validation": 0.642578125
+      },
+      {
+        "update": 12500,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 13000,
+        "validation": 0.6298828125
+      },
+      {
+        "update": 13500,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 14000,
+        "validation": 0.609375
+      },
+      {
+        "update": 14500,
+        "validation": 0.6298828125
+      },
+      {
+        "update": 15000,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 15500,
+        "validation": 0.6376953125
+      },
+      {
+        "update": 16000,
+        "validation": 0.6376953125
+      }
+    ],
+    "test": {
+      "accuracy": 0.66357421875,
+      "by_slot": {
+        "0": {
+          "accuracy": 0.6628571152687073,
+          "count": 2100
+        },
+        "1": {
+          "accuracy": 0.6643286347389221,
+          "count": 1996
+        }
+      },
+      "last_only_accuracy": 0.65234375,
+      "queried_kind_change_accuracy": 0.671875,
+      "queried_kind_change_prediction_rate": 0.56396484375,
+      "unqueried_kind_change_accuracy": 0.655029296875,
+      "unqueried_kind_change_invariance": 0.43115234375
+    },
+    "to90": null,
+    "to99": null,
+    "seconds_this_session": 559.0902005999997,
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1102.pt"
+  },
+  "probes": [
+    {
+      "accuracy_all_present_colors": 1.0,
+      "by_cue_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "best_validation_loss": 0.09508901834487915,
+      "phase": "cue_end",
+      "probe": "linear",
+      "updates": 500,
+      "normalization_std_mean": 0.022513004019856453,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 1.0,
+      "by_cue_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "best_validation_loss": 0.003797378623858094,
+      "phase": "cue_end",
+      "probe": "mlp",
+      "updates": 500,
+      "normalization_std_mean": 0.022513004019856453,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 0.85595703125,
+      "by_cue_slot": {
+        "0": 0.865966796875,
+        "1": 0.845947265625
+      },
+      "best_validation_loss": 0.34901124238967896,
+      "phase": "delay_end",
+      "probe": "linear",
+      "updates": 500,
+      "normalization_std_mean": 0.029823070392012596,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 0.816650390625,
+      "by_cue_slot": {
+        "0": 0.827392578125,
+        "1": 0.805908203125
+      },
+      "best_validation_loss": 0.3849446475505829,
+      "phase": "delay_end",
+      "probe": "mlp",
+      "updates": 500,
+      "normalization_std_mean": 0.029823070392012596,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 0.8460693359375,
+      "by_cue_slot": {
+        "0": 0.848876953125,
+        "1": 0.84326171875
+      },
+      "best_validation_loss": 0.36453351378440857,
+      "phase": "query_end",
+      "probe": "linear",
+      "updates": 500,
+      "normalization_std_mean": 0.03141574189066887,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 0.783447265625,
+      "by_cue_slot": {
+        "0": 0.790283203125,
+        "1": 0.776611328125
+      },
+      "best_validation_loss": 0.4069662392139435,
+      "phase": "query_end",
+      "probe": "mlp",
+      "updates": 500,
+      "normalization_std_mean": 0.03141574189066887,
+      "normalization_min_std": 0.0001
+    }
+  ],
+  "query_switch": {
+    "changed_query_accuracy": 0.66845703125,
+    "both_queries_correct": 0.33203125,
+    "prediction_changes_when_kinds_differ": 0.0,
+    "distinct_kind_count": 2736
+  },
+  "interventions": {
+    "zero_edges_at_inference": {
+      "accuracy": 0.53466796875,
+      "by_slot": {
+        "0": {
+          "accuracy": 0.5052381157875061,
+          "count": 2100
+        },
+        "1": {
+          "accuracy": 0.5656312704086304,
+          "count": 1996
+        }
+      },
+      "last_only_accuracy": 0.65234375,
+      "majority_kind_accuracy": 0.66845703125,
+      "prediction_is_majority_kind": 0.8232421875
+    },
+    "initial_edges_at_inference": {
+      "accuracy": 0.564208984375,
+      "by_slot": {
+        "0": {
+          "accuracy": 0.5376190543174744,
+          "count": 2100
+        },
+        "1": {
+          "accuracy": 0.5921843647956848,
+          "count": 1996
+        }
+      },
+      "last_only_accuracy": 0.65234375,
+      "majority_kind_accuracy": 0.66845703125,
+      "prediction_is_majority_kind": 0.865966796875
+    },
+    "learned_edge_delta_rms": 0.2870647609233856
+  },
+  "probe_seed_ranges": [
+    4100001102,
+    4200001102,
+    4300001102
+  ]
+}

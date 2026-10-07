@@ -1,0 +1,108 @@
+{
+  "model": "rewired",
+  "seed": 402,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_length_curriculum\\mixed_s7_11_13_rewired_1000_seed402.pt",
+  "episodes": 128,
+  "first_seed": 16000000,
+  "size": 9,
+  "cue_seen_rate": 1.0,
+  "branch_reach_rate": 0.8359375,
+  "success_rate": 0.71875,
+  "first_branch_turn_accuracy_given_reach": 0.8598130841121495,
+  "teacher_choice_accuracy": 0.8828125,
+  "teacher_swap_flip_rate": 0.7578125,
+  "failure_counts": {
+    "success": 92,
+    "branch_or_finish": 15,
+    "navigation_after_cue": 21
+  },
+  "failure_by_start_x": [
+    {
+      "start_x": 1,
+      "category": "branch_or_finish",
+      "count": 10
+    },
+    {
+      "start_x": 1,
+      "category": "navigation_after_cue",
+      "count": 3
+    },
+    {
+      "start_x": 1,
+      "category": "success",
+      "count": 7
+    },
+    {
+      "start_x": 2,
+      "category": "navigation_after_cue",
+      "count": 7
+    },
+    {
+      "start_x": 2,
+      "category": "success",
+      "count": 21
+    },
+    {
+      "start_x": 3,
+      "category": "navigation_after_cue",
+      "count": 2
+    },
+    {
+      "start_x": 3,
+      "category": "success",
+      "count": 22
+    },
+    {
+      "start_x": 4,
+      "category": "branch_or_finish",
+      "count": 5
+    },
+    {
+      "start_x": 4,
+      "category": "navigation_after_cue",
+      "count": 6
+    },
+    {
+      "start_x": 4,
+      "category": "success",
+      "count": 9
+    },
+    {
+      "start_x": 5,
+      "category": "navigation_after_cue",
+      "count": 3
+    },
+    {
+      "start_x": 5,
+      "category": "success",
+      "count": 12
+    },
+    {
+      "start_x": 6,
+      "category": "success",
+      "count": 21
+    }
+  ],
+  "failure_by_cue_type": [
+    {
+      "cue_type": "Ball",
+      "category": "navigation_after_cue",
+      "count": 21
+    },
+    {
+      "cue_type": "Ball",
+      "category": "success",
+      "count": 46
+    },
+    {
+      "cue_type": "Key",
+      "category": "branch_or_finish",
+      "count": 15
+    },
+    {
+      "cue_type": "Key",
+      "category": "success",
+      "count": 46
+    }
+  ]
+}

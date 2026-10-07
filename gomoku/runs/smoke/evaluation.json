@@ -1,0 +1,710 @@
+{
+  "rule": "9x9 freestyle: >=5 wins for both colors; no forbidden/opening rules",
+  "observation": "full board",
+  "evaluation_policy": "frozen, deterministic argmax",
+  "opponent_eval_games_per_run": 16,
+  "paired_two_ply_openings_per_seed": 4,
+  "fixed_opponents": [
+    {
+      "kind": "fly",
+      "seed": 4901,
+      "games": 16,
+      "wins": 14,
+      "draws": 0,
+      "losses": 2,
+      "win_rate": 0.875,
+      "score": 0.875,
+      "mean_plies": 34.125,
+      "black": {
+        "games": 8,
+        "wins": 7,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.875,
+        "score": 0.875
+      },
+      "white": {
+        "games": 8,
+        "wins": 7,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.875,
+        "score": 0.875
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "fly",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.75,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rewired",
+      "seed": 4901,
+      "games": 16,
+      "wins": 15,
+      "draws": 0,
+      "losses": 1,
+      "win_rate": 0.9375,
+      "score": 0.9375,
+      "mean_plies": 33.6875,
+      "black": {
+        "games": 8,
+        "wins": 7,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.875,
+        "score": 0.875
+      },
+      "white": {
+        "games": 8,
+        "wins": 8,
+        "draws": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score": 1.0
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rewired",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.75,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rnn",
+      "seed": 4901,
+      "games": 16,
+      "wins": 11,
+      "draws": 0,
+      "losses": 5,
+      "win_rate": 0.6875,
+      "score": 0.6875,
+      "mean_plies": 43.4375,
+      "black": {
+        "games": 8,
+        "wins": 5,
+        "draws": 0,
+        "losses": 3,
+        "win_rate": 0.625,
+        "score": 0.625
+      },
+      "white": {
+        "games": 8,
+        "wins": 6,
+        "draws": 0,
+        "losses": 2,
+        "win_rate": 0.75,
+        "score": 0.75
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rnn",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.625,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "gru",
+      "seed": 4901,
+      "games": 16,
+      "wins": 14,
+      "draws": 0,
+      "losses": 2,
+      "win_rate": 0.875,
+      "score": 0.875,
+      "mean_plies": 44.25,
+      "black": {
+        "games": 8,
+        "wins": 6,
+        "draws": 0,
+        "losses": 2,
+        "win_rate": 0.75,
+        "score": 0.75
+      },
+      "white": {
+        "games": 8,
+        "wins": 8,
+        "draws": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score": 1.0
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "gru",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.5,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    }
+  ],
+  "fresh_initialization": [
+    {
+      "kind": "fly",
+      "seed": 4901,
+      "games": 16,
+      "wins": 9,
+      "draws": 0,
+      "losses": 7,
+      "win_rate": 0.5625,
+      "score": 0.5625,
+      "mean_plies": 55.8125,
+      "black": {
+        "games": 8,
+        "wins": 5,
+        "draws": 0,
+        "losses": 3,
+        "win_rate": 0.625,
+        "score": 0.625
+      },
+      "white": {
+        "games": 8,
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "win_rate": 0.5,
+        "score": 0.5
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "fly",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 11.125,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rewired",
+      "seed": 4901,
+      "games": 16,
+      "wins": 4,
+      "draws": 0,
+      "losses": 12,
+      "win_rate": 0.25,
+      "score": 0.25,
+      "mean_plies": 56.625,
+      "black": {
+        "games": 8,
+        "wins": 2,
+        "draws": 0,
+        "losses": 6,
+        "win_rate": 0.25,
+        "score": 0.25
+      },
+      "white": {
+        "games": 8,
+        "wins": 2,
+        "draws": 0,
+        "losses": 6,
+        "win_rate": 0.25,
+        "score": 0.25
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rewired",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 11.125,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rnn",
+      "seed": 4901,
+      "games": 16,
+      "wins": 7,
+      "draws": 0,
+      "losses": 9,
+      "win_rate": 0.4375,
+      "score": 0.4375,
+      "mean_plies": 55.6875,
+      "black": {
+        "games": 8,
+        "wins": 5,
+        "draws": 0,
+        "losses": 3,
+        "win_rate": 0.625,
+        "score": 0.625
+      },
+      "white": {
+        "games": 8,
+        "wins": 2,
+        "draws": 0,
+        "losses": 6,
+        "win_rate": 0.25,
+        "score": 0.25
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "rnn",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.5,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "gru",
+      "seed": 4901,
+      "games": 16,
+      "wins": 8,
+      "draws": 0,
+      "losses": 8,
+      "win_rate": 0.5,
+      "score": 0.5,
+      "mean_plies": 57.75,
+      "black": {
+        "games": 8,
+        "wins": 5,
+        "draws": 0,
+        "losses": 3,
+        "win_rate": 0.625,
+        "score": 0.625
+      },
+      "white": {
+        "games": 8,
+        "wins": 3,
+        "draws": 0,
+        "losses": 5,
+        "win_rate": 0.375,
+        "score": 0.375
+      },
+      "opponent": "random",
+      "evaluation_seed": 50004901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    },
+    {
+      "kind": "gru",
+      "seed": 4901,
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.625,
+      "black": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 8,
+        "wins": 0,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 50104901,
+      "policy": "deterministic argmax on occupancy-masked logits"
+    }
+  ],
+  "head_to_head": [
+    {
+      "a": "fly",
+      "b": "rewired",
+      "seed": 4901,
+      "games": 8,
+      "wins": 1,
+      "draws": 0,
+      "losses": 7,
+      "colors": [
+        {
+          "games": 4,
+          "wins": 0,
+          "draws": 0,
+          "losses": 4,
+          "win_rate": 0.0,
+          "score": 0.0,
+          "a_color": 1,
+          "mean_plies": 40.5
+        },
+        {
+          "games": 4,
+          "wins": 1,
+          "draws": 0,
+          "losses": 3,
+          "win_rate": 0.25,
+          "score": 0.25,
+          "a_color": -1,
+          "mean_plies": 52.75
+        }
+      ],
+      "mean_plies": 46.625,
+      "score": 0.125
+    },
+    {
+      "a": "fly",
+      "b": "rnn",
+      "seed": 4901,
+      "games": 8,
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "colors": [
+        {
+          "games": 4,
+          "wins": 4,
+          "draws": 0,
+          "losses": 0,
+          "win_rate": 1.0,
+          "score": 1.0,
+          "a_color": 1,
+          "mean_plies": 31.0
+        },
+        {
+          "games": 4,
+          "wins": 4,
+          "draws": 0,
+          "losses": 0,
+          "win_rate": 1.0,
+          "score": 1.0,
+          "a_color": -1,
+          "mean_plies": 40.5
+        }
+      ],
+      "mean_plies": 35.75,
+      "score": 1.0
+    },
+    {
+      "a": "fly",
+      "b": "gru",
+      "seed": 4901,
+      "games": 8,
+      "wins": 3,
+      "draws": 0,
+      "losses": 5,
+      "colors": [
+        {
+          "games": 4,
+          "wins": 2,
+          "draws": 0,
+          "losses": 2,
+          "win_rate": 0.5,
+          "score": 0.5,
+          "a_color": 1,
+          "mean_plies": 54.5
+        },
+        {
+          "games": 4,
+          "wins": 1,
+          "draws": 0,
+          "losses": 3,
+          "win_rate": 0.25,
+          "score": 0.25,
+          "a_color": -1,
+          "mean_plies": 65.75
+        }
+      ],
+      "mean_plies": 60.125,
+      "score": 0.375
+    },
+    {
+      "a": "rewired",
+      "b": "rnn",
+      "seed": 4901,
+      "games": 8,
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "colors": [
+        {
+          "games": 4,
+          "wins": 4,
+          "draws": 0,
+          "losses": 0,
+          "win_rate": 1.0,
+          "score": 1.0,
+          "a_color": 1,
+          "mean_plies": 31.0
+        },
+        {
+          "games": 4,
+          "wins": 4,
+          "draws": 0,
+          "losses": 0,
+          "win_rate": 1.0,
+          "score": 1.0,
+          "a_color": -1,
+          "mean_plies": 40.0
+        }
+      ],
+      "mean_plies": 35.5,
+      "score": 1.0
+    },
+    {
+      "a": "rewired",
+      "b": "gru",
+      "seed": 4901,
+      "games": 8,
+      "wins": 2,
+      "draws": 0,
+      "losses": 6,
+      "colors": [
+        {
+          "games": 4,
+          "wins": 2,
+          "draws": 0,
+          "losses": 2,
+          "win_rate": 0.5,
+          "score": 0.5,
+          "a_color": 1,
+          "mean_plies": 53.5
+        },
+        {
+          "games": 4,
+          "wins": 0,
+          "draws": 0,
+          "losses": 4,
+          "win_rate": 0.0,
+          "score": 0.0,
+          "a_color": -1,
+          "mean_plies": 70.5
+        }
+      ],
+      "mean_plies": 62.0,
+      "score": 0.25
+    },
+    {
+      "a": "rnn",
+      "b": "gru",
+      "seed": 4901,
+      "games": 8,
+      "wins": 0,
+      "draws": 0,
+      "losses": 8,
+      "colors": [
+        {
+          "games": 4,
+          "wins": 0,
+          "draws": 0,
+          "losses": 4,
+          "win_rate": 0.0,
+          "score": 0.0,
+          "a_color": 1,
+          "mean_plies": 44.0
+        },
+        {
+          "games": 4,
+          "wins": 0,
+          "draws": 0,
+          "losses": 4,
+          "win_rate": 0.0,
+          "score": 0.0,
+          "a_color": -1,
+          "mean_plies": 51.5
+        }
+      ],
+      "mean_plies": 47.75,
+      "score": 0.0
+    }
+  ],
+  "random_baseline": {
+    "random": {
+      "games": 16,
+      "wins": 6,
+      "draws": 0,
+      "losses": 10,
+      "win_rate": 0.375,
+      "score": 0.375
+    },
+    "tactical": {
+      "games": 16,
+      "wins": 0,
+      "draws": 0,
+      "losses": 16,
+      "win_rate": 0.0,
+      "score": 0.0
+    }
+  },
+  "scope": "same training seed pairs; cross-seed/cross-rewire league not yet included"
+}

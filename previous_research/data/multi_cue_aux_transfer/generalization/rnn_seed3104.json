@@ -1,0 +1,99 @@
+{
+  "kind": "rnn",
+  "seed": 3104,
+  "hidden": 415,
+  "published_test": 1.0,
+  "replayed_test": 1.0,
+  "conditions": {
+    "trained": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "reversed_cue_order": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "delay24": {
+      "accuracy": 0.36181640625,
+      "by_slot": {
+        "0": 0.3719174563884735,
+        "1": 0.35229966044425964
+      },
+      "distractor_reused_color": {
+        "False": 0.37294015288352966,
+        "True": 0.3474860191345215
+      }
+    },
+    "delay32": {
+      "accuracy": 0.302490234375,
+      "by_slot": {
+        "0": 0.2588736414909363,
+        "1": 0.34896621108055115
+      },
+      "distractor_reused_color": {
+        "False": 0.30890053510665894,
+        "True": 0.294345885515213
+      }
+    },
+    "distractors6": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "distractors10": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "combined24_6": {
+      "accuracy": 0.345458984375,
+      "by_slot": {
+        "0": 0.35340186953544617,
+        "1": 0.33755481243133545
+      },
+      "distractor_reused_color": {
+        "False": 0.3351351320743561,
+        "True": 0.3477354049682617
+      }
+    },
+    "three_cues": {
+      "accuracy": 0.593017578125,
+      "by_slot": {
+        "0": 0.6527259349822998,
+        "1": 0.7668393850326538,
+        "2": 0.36913228034973145
+      },
+      "distractor_reused_color": {
+        "False": 0.585261344909668,
+        "True": 0.6032916903495789
+      }
+    }
+  },
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_aux_transfer\\checkpoints\\rnn_aux_seed3104.pt"
+}

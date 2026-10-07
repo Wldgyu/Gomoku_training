@@ -1,0 +1,67 @@
+{
+  "kind": "fly",
+  "seed": 1,
+  "hidden": 1000,
+  "memory_parameters": 276851,
+  "total_parameters": 392307,
+  "learning_rate": 0.003,
+  "epochs": 4,
+  "episodes_per_epoch": 1024,
+  "best_validation": 0.38671875,
+  "tests": {
+    "trained_delays": {
+      "accuracy": 0.42578125,
+      "by_delay": {
+        "6": 0.4728682170542636,
+        "10": 0.3779527559055118
+      }
+    },
+    "unseen_delays": {
+      "accuracy": 0.37109375,
+      "by_delay": {
+        "8": 0.41935483870967744,
+        "14": 0.32575757575757575
+      }
+    }
+  },
+  "curve": [
+    {
+      "epoch": 0,
+      "validation": 0.375
+    },
+    {
+      "epoch": 1,
+      "loss": 1.1083524227142334,
+      "validation": 0.3203125
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0989750623703003,
+      "validation": 0.3203125
+    },
+    {
+      "epoch": 3,
+      "loss": 1.098522424697876,
+      "validation": 0.3203125
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0969817638397217,
+      "validation": 0.38671875
+    }
+  ],
+  "seconds": 0.6086047999999664,
+  "setting": {
+    "cues": 2,
+    "train_delays": [
+      6,
+      10
+    ],
+    "test_delays": [
+      8,
+      14
+    ],
+    "distractors": 2,
+    "wait_probability": 0.0
+  }
+}

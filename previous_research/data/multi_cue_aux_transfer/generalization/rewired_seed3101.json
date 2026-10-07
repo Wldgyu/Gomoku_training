@@ -1,0 +1,99 @@
+{
+  "kind": "rewired",
+  "seed": 3101,
+  "hidden": 1000,
+  "published_test": 1.0,
+  "replayed_test": 1.0,
+  "conditions": {
+    "trained": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "reversed_cue_order": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "delay24": {
+      "accuracy": 0.999267578125,
+      "by_slot": {
+        "0": 0.9990305304527283,
+        "1": 0.9995081424713135
+      },
+      "distractor_reused_color": {
+        "False": 0.9987314939498901,
+        "True": 1.0
+      }
+    },
+    "delay32": {
+      "accuracy": 0.827880859375,
+      "by_slot": {
+        "0": 0.834316611289978,
+        "1": 0.8215324878692627
+      },
+      "distractor_reused_color": {
+        "False": 0.8166014552116394,
+        "True": 0.842339813709259
+      }
+    },
+    "distractors6": {
+      "accuracy": 0.982421875,
+      "by_slot": {
+        "0": 0.9883438348770142,
+        "1": 0.9764359593391418
+      },
+      "distractor_reused_color": {
+        "False": 0.9810040593147278,
+        "True": 0.9827329516410828
+      }
+    },
+    "distractors10": {
+      "accuracy": 0.738037109375,
+      "by_slot": {
+        "0": 0.7450494766235352,
+        "1": 0.7312138676643372
+      },
+      "distractor_reused_color": {
+        "False": 0.6577777862548828,
+        "True": 0.7427021265029907
+      }
+    },
+    "combined24_6": {
+      "accuracy": 0.9990234375,
+      "by_slot": {
+        "0": 0.9995059370994568,
+        "1": 0.998552143573761
+      },
+      "distractor_reused_color": {
+        "False": 0.9986467957496643,
+        "True": 0.9991063475608826
+      }
+    },
+    "three_cues": {
+      "accuracy": 0.867919921875,
+      "by_slot": {
+        "0": 0.8924418687820435,
+        "1": 0.8734939694404602,
+        "2": 0.8383620977401733
+      },
+      "distractor_reused_color": {
+        "False": 0.8640860319137573,
+        "True": 0.8729531168937683
+      }
+    }
+  },
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_aux_transfer\\checkpoints\\rewired_aux_seed3101.pt"
+}

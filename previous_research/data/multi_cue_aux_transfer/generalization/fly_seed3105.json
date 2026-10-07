@@ -1,0 +1,99 @@
+{
+  "kind": "fly",
+  "seed": 3105,
+  "hidden": 1000,
+  "published_test": 1.0,
+  "replayed_test": 1.0,
+  "conditions": {
+    "trained": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "reversed_cue_order": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "distractor_reused_color": {
+        "False": 1.0,
+        "True": 1.0
+      }
+    },
+    "delay24": {
+      "accuracy": 0.979736328125,
+      "by_slot": {
+        "0": 0.9872922897338867,
+        "1": 0.9721951484680176
+      },
+      "distractor_reused_color": {
+        "False": 0.9800708293914795,
+        "True": 0.9793253540992737
+      }
+    },
+    "delay32": {
+      "accuracy": 0.867431640625,
+      "by_slot": {
+        "0": 0.8770257234573364,
+        "1": 0.857357382774353
+      },
+      "distractor_reused_color": {
+        "False": 0.8683522343635559,
+        "True": 0.8662596940994263
+      }
+    },
+    "distractors6": {
+      "accuracy": 0.998779296875,
+      "by_slot": {
+        "0": 0.9995238184928894,
+        "1": 0.9979959726333618
+      },
+      "distractor_reused_color": {
+        "False": 0.9986859560012817,
+        "True": 0.9988005757331848
+      }
+    },
+    "distractors10": {
+      "accuracy": 0.971923828125,
+      "by_slot": {
+        "0": 0.9798657894134521,
+        "1": 0.9636815786361694
+      },
+      "distractor_reused_color": {
+        "False": 0.9583333134651184,
+        "True": 0.9727697372436523
+      }
+    },
+    "combined24_6": {
+      "accuracy": 0.9765625,
+      "by_slot": {
+        "0": 0.9819424152374268,
+        "1": 0.971177339553833
+      },
+      "distractor_reused_color": {
+        "False": 0.9694322943687439,
+        "True": 0.9779993891716003
+      }
+    },
+    "three_cues": {
+      "accuracy": 0.8837890625,
+      "by_slot": {
+        "0": 0.927431046962738,
+        "1": 0.8802008628845215,
+        "2": 0.8421450257301331
+      },
+      "distractor_reused_color": {
+        "False": 0.8816013336181641,
+        "True": 0.8867276906967163
+      }
+    }
+  },
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_aux_transfer\\checkpoints\\fly_aux_seed3105.pt"
+}

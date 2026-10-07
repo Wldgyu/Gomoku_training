@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "kind": "fly",
+      "seed": 4201,
+      "budgets_equal": true,
+      "source_initialization_equal": true,
+      "parameters": 453793,
+      "cold_elapsed_seconds": 127.17041109999991,
+      "history_elapsed_seconds": 231.33056190000025,
+      "additional_history_frames": 7774250
+    },
+    {
+      "kind": "gru",
+      "seed": 4201,
+      "budgets_equal": true,
+      "source_initialization_equal": true,
+      "parameters": 453809,
+      "cold_elapsed_seconds": 122.50476619999972,
+      "history_elapsed_seconds": 217.16254089999984,
+      "additional_history_frames": 7774250
+    }
+  ],
+  "same_validation_data_sha256": "d4f44e7e604758b61d0ac243673804ca9ff3a87ed9e37372c7a951bab97a1ca6",
+  "fresh_predictions_equal": true,
+  "checkpoint_selection": "last fixed budget"
+}

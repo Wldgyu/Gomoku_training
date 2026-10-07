@@ -1,0 +1,1744 @@
+{
+  "rows": [
+    {
+      "model": "fly",
+      "neurons_reference": 1000,
+      "seed": 301,
+      "parameters": 351092,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.04141712188720703,
+      "duration_seconds": 25.35301740000068,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "fly",
+      "neurons_reference": 1000,
+      "seed": 302,
+      "parameters": 351092,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.04141712188720703,
+      "duration_seconds": 25.11812809999992,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "fly",
+      "neurons_reference": 1000,
+      "seed": 303,
+      "parameters": 351092,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.04141712188720703,
+      "duration_seconds": 23.143831299999874,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 1000,
+      "seed": 301,
+      "parameters": 351092,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.04141712188720703,
+      "duration_seconds": 24.972085999999763,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 1000,
+      "seed": 302,
+      "parameters": 351092,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.04141712188720703,
+      "duration_seconds": 23.517203899999913,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 1000,
+      "seed": 303,
+      "parameters": 351092,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.04141712188720703,
+      "duration_seconds": 24.787409300000036,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 1000,
+      "seed": 301,
+      "parameters": 350756,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.296875,
+      "peak_vram_gib": 0.025098800659179688,
+      "duration_seconds": 21.184760000000097,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.578125,
+          "mean_reward": 0.427234375
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.421875,
+          "mean_reward": 0.19406249999999997
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.421875,
+          "mean_reward": 0.372515625
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 1000,
+      "seed": 302,
+      "parameters": 350756,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.025098800659179688,
+      "duration_seconds": 24.324573500000042,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 1000,
+      "seed": 303,
+      "parameters": 350756,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.025098800659179688,
+      "duration_seconds": 24.344176000000516,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 1000,
+      "seed": 301,
+      "parameters": 351196,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.025864124298095703,
+      "duration_seconds": 23.00113010000041,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 1000,
+      "seed": 302,
+      "parameters": 351196,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.025864124298095703,
+      "duration_seconds": 23.23186480000004,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 1000,
+      "seed": 303,
+      "parameters": 351196,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.025864124298095703,
+      "duration_seconds": 22.8620006000001,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "fly",
+      "neurons_reference": 2000,
+      "seed": 301,
+      "parameters": 566129,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.09386587142944336,
+      "duration_seconds": 22.805200499999955,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "fly",
+      "neurons_reference": 2000,
+      "seed": 302,
+      "parameters": 566129,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.09386587142944336,
+      "duration_seconds": 23.93400500000007,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "fly",
+      "neurons_reference": 2000,
+      "seed": 303,
+      "parameters": 566129,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.09386587142944336,
+      "duration_seconds": 23.41909510000005,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 2000,
+      "seed": 301,
+      "parameters": 566129,
+      "success": 0.484375,
+      "mean_reward": 0.35289062499999996,
+      "cue_masked_success": 0.484375,
+      "default_start_success": 0.484375,
+      "peak_vram_gib": 0.09386587142944336,
+      "duration_seconds": 19.27029080000011,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.578125,
+          "mean_reward": 0.42175
+        }
+      ]
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 2000,
+      "seed": 302,
+      "parameters": 566129,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.09386587142944336,
+      "duration_seconds": 25.063883499999974,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 2000,
+      "seed": 303,
+      "parameters": 566129,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.09386587142944336,
+      "duration_seconds": 23.647653900000478,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 2000,
+      "seed": 301,
+      "parameters": 566180,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.03000926971435547,
+      "duration_seconds": 24.406576700000187,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 2000,
+      "seed": 302,
+      "parameters": 566180,
+      "success": 0.578125,
+      "mean_reward": 0.24512499999999998,
+      "cue_masked_success": 0.578125,
+      "default_start_success": 0.296875,
+      "peak_vram_gib": 0.03000926971435547,
+      "duration_seconds": 19.541450200000327,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.484375,
+          "mean_reward": 0.44078125
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.484375,
+          "mean_reward": 0.05279687499999999
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.515625,
+          "mean_reward": 0.46921874999999996
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.515625,
+          "mean_reward": 0.21862499999999996
+        }
+      ]
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 2000,
+      "seed": 303,
+      "parameters": 566180,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.21875,
+      "peak_vram_gib": 0.03000926971435547,
+      "duration_seconds": 24.071509499999593,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 2000,
+      "seed": 301,
+      "parameters": 565476,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.031069278717041016,
+      "duration_seconds": 23.11553179999919,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.578125,
+          "mean_reward": 0.52609375
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 2000,
+      "seed": 302,
+      "parameters": 565476,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.031069278717041016,
+      "duration_seconds": 24.142099300000154,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 2000,
+      "seed": 303,
+      "parameters": 565476,
+      "success": 0.0,
+      "mean_reward": 0.0,
+      "cue_masked_success": 0.0,
+      "default_start_success": 0.0,
+      "peak_vram_gib": 0.031069278717041016,
+      "duration_seconds": 22.937782299999526,
+      "learning_curve": [
+        {
+          "interaction_steps": 2560,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 5120,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 7680,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        },
+        {
+          "interaction_steps": 10240,
+          "success_rate": 0.0,
+          "mean_reward": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "model": "fly",
+      "neurons_reference": 1000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.04141712188720703,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.04141712188720703,
+          0.04141712188720703,
+          0.04141712188720703
+        ]
+      },
+      "duration_seconds": {
+        "mean": 24.53832560000016,
+        "sample_std": 1.213364747453821,
+        "by_seed": [
+          25.35301740000068,
+          25.11812809999992,
+          23.143831299999874
+        ]
+      }
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 1000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.04141712188720703,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.04141712188720703,
+          0.04141712188720703,
+          0.04141712188720703
+        ]
+      },
+      "duration_seconds": {
+        "mean": 24.425566399999905,
+        "sample_std": 0.7920657765838468,
+        "by_seed": [
+          24.972085999999763,
+          23.517203899999913,
+          24.787409300000036
+        ]
+      }
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 1000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.09895833333333333,
+        "sample_std": 0.17140086116567016,
+        "by_seed": [
+          0.296875,
+          0.0,
+          0.0
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.025098800659179688,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.025098800659179688,
+          0.025098800659179688,
+          0.025098800659179688
+        ]
+      },
+      "duration_seconds": {
+        "mean": 23.284503166666884,
+        "sample_std": 1.8184573376833648,
+        "by_seed": [
+          21.184760000000097,
+          24.324573500000042,
+          24.344176000000516
+        ]
+      }
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 1000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.025864124298095703,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.025864124298095703,
+          0.025864124298095703,
+          0.025864124298095703
+        ]
+      },
+      "duration_seconds": {
+        "mean": 23.03166516666685,
+        "sample_std": 0.18681320706160348,
+        "by_seed": [
+          23.00113010000041,
+          23.23186480000004,
+          22.8620006000001
+        ]
+      }
+    },
+    {
+      "model": "fly",
+      "neurons_reference": 2000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.09386587142944336,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.09386587142944336,
+          0.09386587142944336,
+          0.09386587142944336
+        ]
+      },
+      "duration_seconds": {
+        "mean": 23.386100200000026,
+        "sample_std": 0.5651251165667971,
+        "by_seed": [
+          22.805200499999955,
+          23.93400500000007,
+          23.41909510000005
+        ]
+      }
+    },
+    {
+      "model": "rewired",
+      "neurons_reference": 2000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.16145833333333334,
+        "sample_std": 0.27965403663872496,
+        "by_seed": [
+          0.484375,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.11763020833333332,
+        "sample_std": 0.20374149733824526,
+        "by_seed": [
+          0.35289062499999996,
+          0.0,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.16145833333333334,
+        "sample_std": 0.27965403663872496,
+        "by_seed": [
+          0.484375,
+          0.0,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.16145833333333334,
+        "sample_std": 0.27965403663872496,
+        "by_seed": [
+          0.484375,
+          0.0,
+          0.0
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.09386587142944336,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.09386587142944336,
+          0.09386587142944336,
+          0.09386587142944336
+        ]
+      },
+      "duration_seconds": {
+        "mean": 22.660609400000187,
+        "sample_std": 3.020285040705354,
+        "by_seed": [
+          19.27029080000011,
+          25.063883499999974,
+          23.647653900000478
+        ]
+      }
+    },
+    {
+      "model": "rnn",
+      "neurons_reference": 2000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.19270833333333334,
+        "sample_std": 0.3337806243752524,
+        "by_seed": [
+          0.0,
+          0.578125,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.08170833333333333,
+        "sample_std": 0.141522984735107,
+        "by_seed": [
+          0.0,
+          0.24512499999999998,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.19270833333333334,
+        "sample_std": 0.3337806243752524,
+        "by_seed": [
+          0.0,
+          0.578125,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.171875,
+        "sample_std": 0.15388840315306412,
+        "by_seed": [
+          0.0,
+          0.296875,
+          0.21875
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.03000926971435547,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.03000926971435547,
+          0.03000926971435547,
+          0.03000926971435547
+        ]
+      },
+      "duration_seconds": {
+        "mean": 22.673178800000034,
+        "sample_std": 2.7173259880204217,
+        "by_seed": [
+          24.406576700000187,
+          19.541450200000327,
+          24.071509499999593
+        ]
+      }
+    },
+    {
+      "model": "gru",
+      "neurons_reference": 2000,
+      "seeds": [
+        301,
+        302,
+        303
+      ],
+      "success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_reward": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cue_masked_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "default_start_success": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "peak_vram_gib": {
+        "mean": 0.031069278717041016,
+        "sample_std": 0.0,
+        "by_seed": [
+          0.031069278717041016,
+          0.031069278717041016,
+          0.031069278717041016
+        ]
+      },
+      "duration_seconds": {
+        "mean": 23.398471133332958,
+        "sample_std": 0.6501044984332488,
+        "by_seed": [
+          23.11553179999919,
+          24.142099300000154,
+          22.937782299999526
+        ]
+      }
+    }
+  ],
+  "length_generalization": [
+    {
+      "neurons_reference": 1000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 1000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "fly",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "gru",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rewired",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.16666666666666666,
+      "success_sample_std": 0.28867513459481287,
+      "by_seed": [
+        0.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS13-v0",
+      "mask_cue": true,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": false,
+      "success_mean": 0.0,
+      "success_sample_std": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "neurons_reference": 2000,
+      "model": "rnn",
+      "evaluated_environment": "MiniGrid-MemoryS7-v0",
+      "mask_cue": true,
+      "success_mean": 0.08333333333333333,
+      "success_sample_std": 0.14433756729740643,
+      "by_seed": [
+        0.0,
+        0.25,
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "kind": "rewired",
+  "seed": 602,
+  "parameters": 88358,
+  "hidden": 1000,
+  "best_epoch": 6,
+  "comparator_train_accuracy": 1.0,
+  "validation": {
+    "episodes": 384,
+    "turn_accuracy": 1.0,
+    "all_four_success": 1.0,
+    "cue_accuracy": 1.0
+  },
+  "heldout": {
+    "9": {
+      "episodes": 512,
+      "turn_accuracy": 1.0,
+      "all_four_success": 1.0,
+      "cue_accuracy": 1.0
+    },
+    "15": {
+      "episodes": 512,
+      "turn_accuracy": 0.953125,
+      "all_four_success": 0.90625,
+      "cue_accuracy": 0.953125
+    },
+    "19": {
+      "episodes": 512,
+      "turn_accuracy": 0.98046875,
+      "all_four_success": 0.9609375,
+      "cue_accuracy": 0.98046875
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.3271226584911346,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 0.6354166865348816,
+        "all_four_success": 0.2708333333333333,
+        "cue_accuracy": 0.6354166865348816
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 1.1787546873092651,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 0.7734375,
+        "all_four_success": 0.4791666666666667,
+        "cue_accuracy": 0.7734375
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 1.0371734499931335,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 0.7135416865348816,
+        "all_four_success": 0.4270833333333333,
+        "cue_accuracy": 0.7135416865348816
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 0.9031164397795995,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 0.9479166865348816,
+        "all_four_success": 0.8958333333333334,
+        "cue_accuracy": 0.9479166865348816
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 0.7721015016237894,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 0.9479166865348816,
+        "all_four_success": 0.8958333333333334,
+        "cue_accuracy": 0.9479166865348816
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": 0.6281951367855072,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 1.0,
+        "all_four_success": 1.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    {
+      "epoch": 7,
+      "loss": 0.5137006243069967,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 1.0,
+        "all_four_success": 1.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    {
+      "epoch": 8,
+      "loss": 0.4010708729426066,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 1.0,
+        "all_four_success": 1.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    {
+      "epoch": 9,
+      "loss": 0.31664152691761654,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 1.0,
+        "all_four_success": 1.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    {
+      "epoch": 10,
+      "loss": 0.2536332979798317,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 1.0,
+        "all_four_success": 1.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    {
+      "epoch": 11,
+      "loss": 0.20602271209160486,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 1.0,
+        "all_four_success": 1.0,
+        "cue_accuracy": 1.0
+      }
+    },
+    {
+      "epoch": 12,
+      "loss": 0.1744412692884604,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 1.0,
+        "all_four_success": 1.0,
+        "cue_accuracy": 1.0
+      }
+    }
+  ]
+}

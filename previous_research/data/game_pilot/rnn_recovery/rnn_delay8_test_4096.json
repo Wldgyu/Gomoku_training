@@ -1,0 +1,122 @@
+{
+  "rows": [
+    {
+      "neurons_reference": 1000,
+      "seed": 206,
+      "initialization": "default",
+      "success_rate": 0.252685546875,
+      "no_memory_success_rate": 0.24658203125,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_default/card_stage1_mlphead_reinforce_rnn_1000_delay8_seed206.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 206,
+      "initialization": "orthogonal",
+      "success_rate": 0.999267578125,
+      "no_memory_success_rate": 0.25439453125,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_orthogonal/card_stage1_mlphead_reinforce_rnn_1000_delay8_seed206.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 207,
+      "initialization": "default",
+      "success_rate": 0.240966796875,
+      "no_memory_success_rate": 0.240966796875,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_default/card_stage1_mlphead_reinforce_rnn_1000_delay8_seed207.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 207,
+      "initialization": "orthogonal",
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.251220703125,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_orthogonal/card_stage1_mlphead_reinforce_rnn_1000_delay8_seed207.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 208,
+      "initialization": "default",
+      "success_rate": 0.258056640625,
+      "no_memory_success_rate": 0.258056640625,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_default/card_stage1_mlphead_reinforce_rnn_1000_delay8_seed208.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 208,
+      "initialization": "orthogonal",
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.244384765625,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_orthogonal/card_stage1_mlphead_reinforce_rnn_1000_delay8_seed208.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 206,
+      "initialization": "default",
+      "success_rate": 0.24658203125,
+      "no_memory_success_rate": 0.24658203125,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_default/card_stage1_mlphead_reinforce_rnn_2000_delay8_seed206.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 206,
+      "initialization": "orthogonal",
+      "success_rate": 0.24658203125,
+      "no_memory_success_rate": 0.24658203125,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_orthogonal/card_stage1_mlphead_reinforce_rnn_2000_delay8_seed206.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 207,
+      "initialization": "default",
+      "success_rate": 0.241455078125,
+      "no_memory_success_rate": 0.241455078125,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_default/card_stage1_mlphead_reinforce_rnn_2000_delay8_seed207.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 207,
+      "initialization": "orthogonal",
+      "success_rate": 0.999755859375,
+      "no_memory_success_rate": 0.248046875,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_orthogonal/card_stage1_mlphead_reinforce_rnn_2000_delay8_seed207.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 208,
+      "initialization": "default",
+      "success_rate": 0.2431640625,
+      "no_memory_success_rate": 0.241943359375,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_default/card_stage1_mlphead_reinforce_rnn_2000_delay8_seed208.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 208,
+      "initialization": "orthogonal",
+      "success_rate": 0.9990234375,
+      "no_memory_success_rate": 0.250244140625,
+      "eval_games": 4096,
+      "source": "data/game_pilot/rnn_recovery/delay8_orthogonal/card_stage1_mlphead_reinforce_rnn_2000_delay8_seed208.json"
+    }
+  ],
+  "means": {
+    "1000": {
+      "default": 0.2505696614583333,
+      "orthogonal": 0.999755859375
+    },
+    "2000": {
+      "default": 0.24373372395833334,
+      "orthogonal": 0.7484537760416666
+    }
+  }
+}

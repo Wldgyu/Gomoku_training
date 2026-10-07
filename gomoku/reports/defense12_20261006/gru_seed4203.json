@@ -1,0 +1,499 @@
+{
+  "config": {
+    "kind": "gru",
+    "seed": 4203,
+    "hidden": 254,
+    "size": 12,
+    "rewire_seed": 3,
+    "updates": 1200,
+    "envs": 32,
+    "rollout": 16,
+    "epochs": 2,
+    "lr": 0.0003,
+    "opponent": "weak",
+    "warmup_updates": 1800,
+    "auxiliary_batch": 128,
+    "auxiliary_weight": 1.0,
+    "tactical_data_sha256": "018da29888c78f009b7bc5a8bdaea8961cb9f3cdfa869fcd7210d570da3f100a",
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "ppo_clip": 0.2,
+    "entropy_coefficient": 0.01,
+    "value_coefficient": 0.5,
+    "observation": "full board: own, opponent, last move, black-to-play color",
+    "reward": "terminal +1/-1, draw 0; no shaping or search; auxiliary tactical labels if configured",
+    "initialization": "fresh; archived task checkpoints not loaded"
+  },
+  "parameters": 453809,
+  "graph_sha256": null,
+  "completed_updates": 1200,
+  "learner_decisions": 614400,
+  "completed_training_games": 52958,
+  "last_1000_training_win_rate": 0.837,
+  "last_1000_training_draw_rate": 0.0,
+  "last_1000_training_mean_plies": 18.983,
+  "elapsed_seconds": 122.82347329999902,
+  "curve": [
+    {
+      "update": 1,
+      "training_win_rate": 0.047619047619047616,
+      "games": 21,
+      "policy_loss": -0.006030680611729622,
+      "value_loss": 0.43441182374954224,
+      "entropy": 4.138503074645996,
+      "seconds": 6.07
+    },
+    {
+      "update": 25,
+      "training_win_rate": 0.1353211009174312,
+      "games": 872,
+      "policy_loss": -0.0029257163405418396,
+      "value_loss": 0.2264578491449356,
+      "entropy": 3.813955307006836,
+      "seconds": 8.81
+    },
+    {
+      "update": 50,
+      "training_win_rate": 0.199,
+      "games": 1756,
+      "policy_loss": -0.0027969516813755035,
+      "value_loss": 0.2014733999967575,
+      "entropy": 3.876291513442993,
+      "seconds": 11.4
+    },
+    {
+      "update": 75,
+      "training_win_rate": 0.233,
+      "games": 2578,
+      "policy_loss": -0.002823933959007263,
+      "value_loss": 0.23269805312156677,
+      "entropy": 3.8126611709594727,
+      "seconds": 13.8
+    },
+    {
+      "update": 100,
+      "training_win_rate": 0.263,
+      "games": 3411,
+      "policy_loss": -0.0030601248145103455,
+      "value_loss": 0.27586138248443604,
+      "entropy": 3.6269917488098145,
+      "seconds": 16.19
+    },
+    {
+      "update": 125,
+      "training_win_rate": 0.287,
+      "games": 4277,
+      "policy_loss": -0.0020173918455839157,
+      "value_loss": 0.282594233751297,
+      "entropy": 3.556516170501709,
+      "seconds": 18.59
+    },
+    {
+      "update": 150,
+      "training_win_rate": 0.32,
+      "games": 5152,
+      "policy_loss": -0.0019848495721817017,
+      "value_loss": 0.25586795806884766,
+      "entropy": 3.4362525939941406,
+      "seconds": 21.11
+    },
+    {
+      "update": 175,
+      "training_win_rate": 0.357,
+      "games": 6056,
+      "policy_loss": -0.00030037760734558105,
+      "value_loss": 0.31385472416877747,
+      "entropy": 3.3456835746765137,
+      "seconds": 23.5
+    },
+    {
+      "update": 200,
+      "training_win_rate": 0.384,
+      "games": 6972,
+      "policy_loss": -0.0022457465529441833,
+      "value_loss": 0.24780330061912537,
+      "entropy": 3.238010883331299,
+      "seconds": 25.89
+    },
+    {
+      "update": 225,
+      "training_win_rate": 0.435,
+      "games": 7902,
+      "policy_loss": 0.0001937560737133026,
+      "value_loss": 0.3464876115322113,
+      "entropy": 3.1169347763061523,
+      "seconds": 28.32
+    },
+    {
+      "update": 250,
+      "training_win_rate": 0.459,
+      "games": 8835,
+      "policy_loss": -0.003572024405002594,
+      "value_loss": 0.2739177942276001,
+      "entropy": 2.9281535148620605,
+      "seconds": 30.74
+    },
+    {
+      "update": 275,
+      "training_win_rate": 0.476,
+      "games": 9812,
+      "policy_loss": -0.0007245205342769623,
+      "value_loss": 0.32742851972579956,
+      "entropy": 2.926853656768799,
+      "seconds": 33.17
+    },
+    {
+      "update": 300,
+      "training_win_rate": 0.509,
+      "games": 10774,
+      "policy_loss": -0.0017271935939788818,
+      "value_loss": 0.42050445079803467,
+      "entropy": 2.819676160812378,
+      "seconds": 35.58
+    },
+    {
+      "update": 325,
+      "training_win_rate": 0.541,
+      "games": 11777,
+      "policy_loss": -0.002032422460615635,
+      "value_loss": 0.3641042113304138,
+      "entropy": 2.742332696914673,
+      "seconds": 38.0
+    },
+    {
+      "update": 350,
+      "training_win_rate": 0.564,
+      "games": 12802,
+      "policy_loss": -0.001721210777759552,
+      "value_loss": 0.3418184518814087,
+      "entropy": 2.6465096473693848,
+      "seconds": 40.41
+    },
+    {
+      "update": 375,
+      "training_win_rate": 0.612,
+      "games": 13841,
+      "policy_loss": -0.0007631406188011169,
+      "value_loss": 0.34014612436294556,
+      "entropy": 2.6244921684265137,
+      "seconds": 42.8
+    },
+    {
+      "update": 400,
+      "training_win_rate": 0.587,
+      "games": 14868,
+      "policy_loss": -0.0028565600514411926,
+      "value_loss": 0.33427536487579346,
+      "entropy": 2.5284013748168945,
+      "seconds": 45.21
+    },
+    {
+      "update": 425,
+      "training_win_rate": 0.583,
+      "games": 15899,
+      "policy_loss": -0.0013925768435001373,
+      "value_loss": 0.4191938638687134,
+      "entropy": 2.5832831859588623,
+      "seconds": 47.64
+    },
+    {
+      "update": 450,
+      "training_win_rate": 0.613,
+      "games": 16936,
+      "policy_loss": -0.001626383513212204,
+      "value_loss": 0.428537517786026,
+      "entropy": 2.4391121864318848,
+      "seconds": 50.03
+    },
+    {
+      "update": 475,
+      "training_win_rate": 0.656,
+      "games": 17984,
+      "policy_loss": -0.0029192976653575897,
+      "value_loss": 0.33299362659454346,
+      "entropy": 2.4890646934509277,
+      "seconds": 52.44
+    },
+    {
+      "update": 500,
+      "training_win_rate": 0.616,
+      "games": 19026,
+      "policy_loss": -0.001894492655992508,
+      "value_loss": 0.4100516438484192,
+      "entropy": 2.451765537261963,
+      "seconds": 54.83
+    },
+    {
+      "update": 525,
+      "training_win_rate": 0.652,
+      "games": 20110,
+      "policy_loss": -0.0009978581219911575,
+      "value_loss": 0.2630908489227295,
+      "entropy": 2.3688230514526367,
+      "seconds": 57.28
+    },
+    {
+      "update": 550,
+      "training_win_rate": 0.652,
+      "games": 21191,
+      "policy_loss": -0.0014336779713630676,
+      "value_loss": 0.4002847373485565,
+      "entropy": 2.2501447200775146,
+      "seconds": 59.7
+    },
+    {
+      "update": 575,
+      "training_win_rate": 0.684,
+      "games": 22291,
+      "policy_loss": -0.0008441805839538574,
+      "value_loss": 0.32175591588020325,
+      "entropy": 2.4080543518066406,
+      "seconds": 62.11
+    },
+    {
+      "update": 600,
+      "training_win_rate": 0.698,
+      "games": 23384,
+      "policy_loss": -0.0007271841168403625,
+      "value_loss": 0.40524858236312866,
+      "entropy": 2.4100582599639893,
+      "seconds": 64.51
+    },
+    {
+      "update": 625,
+      "training_win_rate": 0.695,
+      "games": 24499,
+      "policy_loss": -0.0017252862453460693,
+      "value_loss": 0.27617979049682617,
+      "entropy": 2.160336494445801,
+      "seconds": 66.98
+    },
+    {
+      "update": 650,
+      "training_win_rate": 0.695,
+      "games": 25603,
+      "policy_loss": -0.002152971923351288,
+      "value_loss": 0.3441321551799774,
+      "entropy": 2.2215700149536133,
+      "seconds": 69.39
+    },
+    {
+      "update": 675,
+      "training_win_rate": 0.721,
+      "games": 26738,
+      "policy_loss": -0.0019875112920999527,
+      "value_loss": 0.34890708327293396,
+      "entropy": 2.2429301738739014,
+      "seconds": 71.8
+    },
+    {
+      "update": 700,
+      "training_win_rate": 0.721,
+      "games": 27887,
+      "policy_loss": -0.0010299291461706161,
+      "value_loss": 0.30215370655059814,
+      "entropy": 2.0502748489379883,
+      "seconds": 74.21
+    },
+    {
+      "update": 725,
+      "training_win_rate": 0.745,
+      "games": 29031,
+      "policy_loss": -0.0021235402673482895,
+      "value_loss": 0.33986586332321167,
+      "entropy": 2.118069648742676,
+      "seconds": 76.65
+    },
+    {
+      "update": 750,
+      "training_win_rate": 0.717,
+      "games": 30251,
+      "policy_loss": -0.0013010725378990173,
+      "value_loss": 0.3566431403160095,
+      "entropy": 2.143549919128418,
+      "seconds": 79.06
+    },
+    {
+      "update": 775,
+      "training_win_rate": 0.723,
+      "games": 31410,
+      "policy_loss": 0.0010554362088441849,
+      "value_loss": 0.26449689269065857,
+      "entropy": 1.9435384273529053,
+      "seconds": 81.47
+    },
+    {
+      "update": 800,
+      "training_win_rate": 0.749,
+      "games": 32604,
+      "policy_loss": -0.0018395781517028809,
+      "value_loss": 0.33811843395233154,
+      "entropy": 2.0956380367279053,
+      "seconds": 84.03
+    },
+    {
+      "update": 825,
+      "training_win_rate": 0.781,
+      "games": 33859,
+      "policy_loss": 0.00018704310059547424,
+      "value_loss": 0.24499894678592682,
+      "entropy": 1.944564700126648,
+      "seconds": 86.49
+    },
+    {
+      "update": 850,
+      "training_win_rate": 0.775,
+      "games": 35082,
+      "policy_loss": -0.0010269582271575928,
+      "value_loss": 0.27504658699035645,
+      "entropy": 1.947588324546814,
+      "seconds": 88.9
+    },
+    {
+      "update": 875,
+      "training_win_rate": 0.781,
+      "games": 36307,
+      "policy_loss": -0.001399107277393341,
+      "value_loss": 0.25496792793273926,
+      "entropy": 1.9391140937805176,
+      "seconds": 91.33
+    },
+    {
+      "update": 900,
+      "training_win_rate": 0.803,
+      "games": 37534,
+      "policy_loss": -0.00196123868227005,
+      "value_loss": 0.23464223742485046,
+      "entropy": 1.9229038953781128,
+      "seconds": 93.76
+    },
+    {
+      "update": 925,
+      "training_win_rate": 0.769,
+      "games": 38759,
+      "policy_loss": -0.002250581979751587,
+      "value_loss": 0.3590221405029297,
+      "entropy": 2.055206060409546,
+      "seconds": 96.22
+    },
+    {
+      "update": 950,
+      "training_win_rate": 0.817,
+      "games": 40050,
+      "policy_loss": -0.0017533749341964722,
+      "value_loss": 0.17704156041145325,
+      "entropy": 1.8795589208602905,
+      "seconds": 98.63
+    },
+    {
+      "update": 975,
+      "training_win_rate": 0.797,
+      "games": 41336,
+      "policy_loss": -0.0025767385959625244,
+      "value_loss": 0.3395967483520508,
+      "entropy": 1.8856849670410156,
+      "seconds": 101.04
+    },
+    {
+      "update": 1000,
+      "training_win_rate": 0.81,
+      "games": 42625,
+      "policy_loss": -0.0009241290390491486,
+      "value_loss": 0.2400534301996231,
+      "entropy": 1.8877267837524414,
+      "seconds": 103.45
+    },
+    {
+      "update": 1025,
+      "training_win_rate": 0.783,
+      "games": 43901,
+      "policy_loss": -0.0019086971879005432,
+      "value_loss": 0.33280694484710693,
+      "entropy": 1.8237695693969727,
+      "seconds": 105.9
+    },
+    {
+      "update": 1050,
+      "training_win_rate": 0.787,
+      "games": 45179,
+      "policy_loss": -0.00033727288246154785,
+      "value_loss": 0.26809030771255493,
+      "entropy": 1.7268710136413574,
+      "seconds": 108.31
+    },
+    {
+      "update": 1075,
+      "training_win_rate": 0.821,
+      "games": 46466,
+      "policy_loss": -0.0003726854920387268,
+      "value_loss": 0.2010120451450348,
+      "entropy": 1.715057611465454,
+      "seconds": 110.71
+    },
+    {
+      "update": 1100,
+      "training_win_rate": 0.799,
+      "games": 47719,
+      "policy_loss": -0.0005612224340438843,
+      "value_loss": 0.19625148177146912,
+      "entropy": 1.88849937915802,
+      "seconds": 113.12
+    },
+    {
+      "update": 1125,
+      "training_win_rate": 0.801,
+      "games": 48988,
+      "policy_loss": -0.0011521577835083008,
+      "value_loss": 0.3097466230392456,
+      "entropy": 1.7655528783798218,
+      "seconds": 115.58
+    },
+    {
+      "update": 1150,
+      "training_win_rate": 0.822,
+      "games": 50296,
+      "policy_loss": -0.001405227929353714,
+      "value_loss": 0.2669733762741089,
+      "entropy": 1.744994878768921,
+      "seconds": 118.0
+    },
+    {
+      "update": 1175,
+      "training_win_rate": 0.832,
+      "games": 51629,
+      "policy_loss": -0.0007128752768039703,
+      "value_loss": 0.303570032119751,
+      "entropy": 1.793977975845337,
+      "seconds": 120.41
+    },
+    {
+      "update": 1200,
+      "training_win_rate": 0.837,
+      "games": 52958,
+      "policy_loss": -0.0025967061519622803,
+      "value_loss": 0.21352055668830872,
+      "entropy": 1.7366474866867065,
+      "seconds": 122.82
+    }
+  ],
+  "peak_allocated_gib": 0.1575150489807129,
+  "peak_reserved_gib": 0.19140625,
+  "torch_version": "2.11.0+cu128",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "tf32": false,
+  "source_hashes": {
+    "benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "defense_audit.py": "ced6afc3a1443db800701661b500fb301ba37f8142f7b82a2bae0f1832c29243",
+    "defense_evaluate.py": "b08c106951d451c8413764e133be0df4f10bd25568f6f3fe99e3b826903df3ef",
+    "defense_report.py": "9f46bdf91c24c1e5baebc9f37ab21c32f708deecae046b170a87efdc9a9e6af8",
+    "env.py": "d6d0403604ad165c37a2e53c097bfed35032396c499cecdcc4f03fd59362fd90",
+    "evaluate.py": "7f3fba758f42f53075dc97748fe35423f8412a24233c153241a9b8f37e9a7cc8",
+    "make_report.py": "812516d6370e3fada892ecc744141aa9324e1046559a19b02c17083004b97e95",
+    "models.py": "f97fa7ed8bfd66863e1b49bd650be7ed8ecd22f949840f9dc3f371be90d17331",
+    "tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "test_defense.py": "b86518edfd715811782eeca7307e986ba29d0e2d712335d14c4ebe377f0af235",
+    "test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "train.py": "101d132ef58fbad673d8e43fff8162dd6cda8d329c1bfd2c6a4c33f4564d67fa",
+    "__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28"
+  }
+}

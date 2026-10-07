@@ -1,0 +1,238 @@
+{
+  "runs": [
+    {
+      "name": "fly_graph0_seed711_lr0.003",
+      "kind": "fly",
+      "seed": 711,
+      "ablation": "mask_cue",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "fly_graph0_seed711_lr0.003",
+      "kind": "fly",
+      "seed": 711,
+      "ablation": "reset_at_branch",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "fly_graph0_seed711_lr0.003",
+      "kind": "fly",
+      "seed": 711,
+      "ablation": "zero_recurrence",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 1.0,
+        "cue_accuracy_at_junction": 1.0,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "rnn_graph0_seed711_lr0.0003",
+      "kind": "rnn",
+      "seed": 711,
+      "ablation": "mask_cue",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "rnn_graph0_seed711_lr0.0003",
+      "kind": "rnn",
+      "seed": 711,
+      "ablation": "reset_at_branch",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "gru_graph0_seed711_lr0.003",
+      "kind": "gru",
+      "seed": 711,
+      "ablation": "mask_cue",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "gru_graph0_seed711_lr0.003",
+      "kind": "gru",
+      "seed": 711,
+      "ablation": "reset_at_branch",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "rewired_graph0_seed711_lr0.003",
+      "kind": "rewired",
+      "seed": 711,
+      "ablation": "mask_cue",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "rewired_graph0_seed711_lr0.003",
+      "kind": "rewired",
+      "seed": 711,
+      "ablation": "reset_at_branch",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 0.5,
+        "all_four_success": 0.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 0.5,
+        "cue_accuracy_at_junction": 0.5,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "fly_graph0_seed712_lr0.003",
+      "kind": "fly",
+      "seed": 712,
+      "ablation": "zero_recurrence",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 1.0,
+        "cue_accuracy_at_junction": 1.0,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "fly_graph0_seed713_lr0.003",
+      "kind": "fly",
+      "seed": 713,
+      "ablation": "zero_recurrence",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 1.0,
+        "cue_accuracy_at_junction": 1.0,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "fly_graph0_seed714_lr0.003",
+      "kind": "fly",
+      "seed": 714,
+      "ablation": "zero_recurrence",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 1.0,
+        "cue_accuracy_at_junction": 1.0,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    },
+    {
+      "name": "fly_graph0_seed715_lr0.003",
+      "kind": "fly",
+      "seed": 715,
+      "ablation": "zero_recurrence",
+      "size": 19,
+      "metrics": {
+        "base_episodes": 128,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_accuracy_at_override": 1.0,
+        "cue_accuracy_at_junction": 1.0,
+        "early_override_rate": 0.0,
+        "mean_branch_step": 27.4921875
+      }
+    }
+  ]
+}

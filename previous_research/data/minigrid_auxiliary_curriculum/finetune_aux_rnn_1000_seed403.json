@@ -1,0 +1,249 @@
+{
+  "model": "rnn",
+  "seed": 403,
+  "parameters": 350756,
+  "initial_parameter_sha256": "79cc4d77a40d343a16990c4f44f850a6b76bf00bb01930280c23ef1b1f92b6cd",
+  "topology_sha256": null,
+  "source_checkpoint": "data\\minigrid_length_curriculum\\mixed_s7_11_13_rnn_1000_seed403.pt",
+  "train_sizes": [
+    7,
+    11,
+    13
+  ],
+  "holdout_size": 9,
+  "train_episodes_per_size": 512,
+  "eval_episodes_final_per_size": 128,
+  "epochs": 15,
+  "learning_rate": 0.0001,
+  "cue_weight": 0.5,
+  "comparison_weight": 0.5,
+  "initial": {
+    "7": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.25
+      }
+    },
+    "11": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.140625
+      }
+    },
+    "13": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.109375
+      }
+    },
+    "9": {
+      "normal": {
+        "success_rate": 0.171875,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.21875
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 5,
+      "mean_train_success": 1.0,
+      "min_train_success": 1.0,
+      "losses": {
+        "actor_loss": 0.002262201174744405,
+        "cue_loss": 0.5069382178286711,
+        "comparison_loss": 0.10851710041364034
+      },
+      "by_size": {
+        "7": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.25
+          }
+        },
+        "11": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.140625
+          }
+        },
+        "13": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.109375
+          }
+        }
+      }
+    },
+    {
+      "epoch": 10,
+      "mean_train_success": 1.0,
+      "min_train_success": 1.0,
+      "losses": {
+        "actor_loss": 0.0012521959676329668,
+        "cue_loss": 0.2853689168890317,
+        "comparison_loss": 0.03410352339657644
+      },
+      "by_size": {
+        "7": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.25
+          }
+        },
+        "11": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.140625
+          }
+        },
+        "13": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.109375
+          }
+        }
+      }
+    },
+    {
+      "epoch": 15,
+      "mean_train_success": 1.0,
+      "min_train_success": 1.0,
+      "losses": {
+        "actor_loss": 0.001473565149353817,
+        "cue_loss": 0.14821241113046804,
+        "comparison_loss": 0.015721420796277624
+      },
+      "by_size": {
+        "7": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.25
+          }
+        },
+        "11": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.140625
+          }
+        },
+        "13": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.109375
+          }
+        }
+      }
+    }
+  ],
+  "selected_epoch": 5,
+  "selection_rule": "mean and minimum train-size success; S9 excluded",
+  "final_fresh": {
+    "7": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.2578125
+      },
+      "masked": {
+        "success_rate": 0.4609375,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.2578125
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.2578125
+      }
+    },
+    "11": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1484375
+      },
+      "masked": {
+        "success_rate": 0.4296875,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1484375
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1484375
+      }
+    },
+    "13": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1015625
+      },
+      "masked": {
+        "success_rate": 0.3984375,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1015625
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1015625
+      }
+    },
+    "9": {
+      "normal": {
+        "success_rate": 0.21875,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1875
+      },
+      "masked": {
+        "success_rate": 0.4375,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1875
+      },
+      "swapped": {
+        "success_rate": 0.671875,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.1875
+      }
+    }
+  },
+  "duration_seconds": 68.86573429999999
+}

@@ -1,0 +1,998 @@
+{
+  "tactical_test": [
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 5,
+          "accuracy": 0.009765625
+        },
+        "block": {
+          "positions": 512,
+          "correct": 2,
+          "accuracy": 0.00390625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 9,
+          "accuracy": 0.017578125
+        },
+        "block": {
+          "positions": 512,
+          "correct": 2,
+          "accuracy": 0.00390625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 26,
+          "accuracy": 0.05078125
+        },
+        "block": {
+          "positions": 512,
+          "correct": 13,
+          "accuracy": 0.025390625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 24,
+          "accuracy": 0.046875
+        },
+        "block": {
+          "positions": 512,
+          "correct": 14,
+          "accuracy": 0.02734375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 25,
+          "accuracy": 0.048828125
+        },
+        "block": {
+          "positions": 512,
+          "correct": 30,
+          "accuracy": 0.05859375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 26,
+          "accuracy": 0.05078125
+        },
+        "block": {
+          "positions": 512,
+          "correct": 24,
+          "accuracy": 0.046875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 2,
+          "accuracy": 0.00390625
+        },
+        "block": {
+          "positions": 512,
+          "correct": 2,
+          "accuracy": 0.00390625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "block": {
+          "positions": 512,
+          "correct": 1,
+          "accuracy": 0.001953125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 22,
+          "accuracy": 0.04296875
+        },
+        "block": {
+          "positions": 512,
+          "correct": 14,
+          "accuracy": 0.02734375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 21,
+          "accuracy": 0.041015625
+        },
+        "block": {
+          "positions": 512,
+          "correct": 14,
+          "accuracy": 0.02734375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 26,
+          "accuracy": 0.05078125
+        },
+        "block": {
+          "positions": 512,
+          "correct": 34,
+          "accuracy": 0.06640625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 30,
+          "accuracy": 0.05859375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 36,
+          "accuracy": 0.0703125
+        },
+        "history_replayed": true
+      }
+    }
+  ],
+  "fixed_opponents": [
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "fresh",
+      "games": 128,
+      "wins": 35,
+      "draws": 0,
+      "losses": 93,
+      "win_rate": 0.2734375,
+      "score": 0.2734375,
+      "mean_plies": 90.3203125,
+      "black": {
+        "games": 64,
+        "wins": 18,
+        "draws": 0,
+        "losses": 46,
+        "win_rate": 0.28125,
+        "score": 0.28125
+      },
+      "white": {
+        "games": 64,
+        "wins": 17,
+        "draws": 0,
+        "losses": 47,
+        "win_rate": 0.265625,
+        "score": 0.265625
+      },
+      "opponent": "random",
+      "evaluation_seed": 100004500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 3086,
+          "correct": 35,
+          "accuracy": 0.01134154244977317
+        },
+        "block": {
+          "positions": 167,
+          "correct": 3,
+          "accuracy": 0.017964071856287425
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "fresh",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 29.3125,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "weak",
+      "evaluation_seed": 100104500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 90,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "block": {
+          "positions": 99,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "fresh",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.6875,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 100204500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 4,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "warmup",
+      "games": 128,
+      "wins": 127,
+      "draws": 0,
+      "losses": 1,
+      "win_rate": 0.9921875,
+      "score": 0.9921875,
+      "mean_plies": 35.5546875,
+      "black": {
+        "games": 64,
+        "wins": 64,
+        "draws": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score": 1.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 63,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.984375,
+        "score": 0.984375
+      },
+      "opponent": "random",
+      "evaluation_seed": 100004500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 761,
+          "correct": 127,
+          "accuracy": 0.16688567674113008
+        },
+        "block": {
+          "positions": 10,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "warmup",
+      "games": 128,
+      "wins": 20,
+      "draws": 0,
+      "losses": 108,
+      "win_rate": 0.15625,
+      "score": 0.15625,
+      "mean_plies": 27.828125,
+      "black": {
+        "games": 64,
+        "wins": 11,
+        "draws": 0,
+        "losses": 53,
+        "win_rate": 0.171875,
+        "score": 0.171875
+      },
+      "white": {
+        "games": 64,
+        "wins": 9,
+        "draws": 0,
+        "losses": 55,
+        "win_rate": 0.140625,
+        "score": 0.140625
+      },
+      "opponent": "weak",
+      "evaluation_seed": 100104500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 225,
+          "correct": 20,
+          "accuracy": 0.08888888888888889
+        },
+        "block": {
+          "positions": 120,
+          "correct": 1,
+          "accuracy": 0.008333333333333333
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "warmup",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 10.234375,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 100204500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 58,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "final",
+      "games": 128,
+      "wins": 127,
+      "draws": 0,
+      "losses": 1,
+      "win_rate": 0.9921875,
+      "score": 0.9921875,
+      "mean_plies": 27.9921875,
+      "black": {
+        "games": 64,
+        "wins": 64,
+        "draws": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score": 1.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 63,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.984375,
+        "score": 0.984375
+      },
+      "opponent": "random",
+      "evaluation_seed": 100004500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 696,
+          "correct": 127,
+          "accuracy": 0.1824712643678161
+        },
+        "block": {
+          "positions": 5,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "final",
+      "games": 128,
+      "wins": 60,
+      "draws": 0,
+      "losses": 68,
+      "win_rate": 0.46875,
+      "score": 0.46875,
+      "mean_plies": 27.75,
+      "black": {
+        "games": 64,
+        "wins": 41,
+        "draws": 0,
+        "losses": 23,
+        "win_rate": 0.640625,
+        "score": 0.640625
+      },
+      "white": {
+        "games": 64,
+        "wins": 19,
+        "draws": 0,
+        "losses": 45,
+        "win_rate": 0.296875,
+        "score": 0.296875
+      },
+      "opponent": "weak",
+      "evaluation_seed": 100104500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 414,
+          "correct": 60,
+          "accuracy": 0.14492753623188406
+        },
+        "block": {
+          "positions": 68,
+          "correct": 1,
+          "accuracy": 0.014705882352941176
+        }
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "final",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 10.03125,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 100204500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 23,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "fresh",
+      "games": 128,
+      "wins": 41,
+      "draws": 0,
+      "losses": 87,
+      "win_rate": 0.3203125,
+      "score": 0.3203125,
+      "mean_plies": 86.1015625,
+      "black": {
+        "games": 64,
+        "wins": 22,
+        "draws": 0,
+        "losses": 42,
+        "win_rate": 0.34375,
+        "score": 0.34375
+      },
+      "white": {
+        "games": 64,
+        "wins": 19,
+        "draws": 0,
+        "losses": 45,
+        "win_rate": 0.296875,
+        "score": 0.296875
+      },
+      "opponent": "random",
+      "evaluation_seed": 100004500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 1917,
+          "correct": 41,
+          "accuracy": 0.02138758476786646
+        },
+        "block": {
+          "positions": 378,
+          "correct": 5,
+          "accuracy": 0.013227513227513227
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "fresh",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 26.03125,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "weak",
+      "evaluation_seed": 100104500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 6,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "block": {
+          "positions": 130,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "fresh",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 9.875,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 100204500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 2,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "warmup",
+      "games": 128,
+      "wins": 126,
+      "draws": 0,
+      "losses": 2,
+      "win_rate": 0.984375,
+      "score": 0.984375,
+      "mean_plies": 37.359375,
+      "black": {
+        "games": 64,
+        "wins": 63,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.984375,
+        "score": 0.984375
+      },
+      "white": {
+        "games": 64,
+        "wins": 63,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.984375,
+        "score": 0.984375
+      },
+      "opponent": "random",
+      "evaluation_seed": 100004500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 687,
+          "correct": 126,
+          "accuracy": 0.18340611353711792
+        },
+        "block": {
+          "positions": 26,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "warmup",
+      "games": 128,
+      "wins": 24,
+      "draws": 0,
+      "losses": 104,
+      "win_rate": 0.1875,
+      "score": 0.1875,
+      "mean_plies": 27.53125,
+      "black": {
+        "games": 64,
+        "wins": 11,
+        "draws": 0,
+        "losses": 53,
+        "win_rate": 0.171875,
+        "score": 0.171875
+      },
+      "white": {
+        "games": 64,
+        "wins": 13,
+        "draws": 0,
+        "losses": 51,
+        "win_rate": 0.203125,
+        "score": 0.203125
+      },
+      "opponent": "weak",
+      "evaluation_seed": 100104500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 254,
+          "correct": 24,
+          "accuracy": 0.09448818897637795
+        },
+        "block": {
+          "positions": 148,
+          "correct": 3,
+          "accuracy": 0.02027027027027027
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "warmup",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 10.25,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 100204500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 51,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "final",
+      "games": 128,
+      "wins": 128,
+      "draws": 0,
+      "losses": 0,
+      "win_rate": 1.0,
+      "score": 1.0,
+      "mean_plies": 17.953125,
+      "black": {
+        "games": 64,
+        "wins": 64,
+        "draws": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score": 1.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 64,
+        "draws": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "score": 1.0
+      },
+      "opponent": "random",
+      "evaluation_seed": 100004500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 383,
+          "correct": 128,
+          "accuracy": 0.3342036553524804
+        },
+        "block": {
+          "positions": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "final",
+      "games": 128,
+      "wins": 79,
+      "draws": 0,
+      "losses": 49,
+      "win_rate": 0.6171875,
+      "score": 0.6171875,
+      "mean_plies": 27.1640625,
+      "black": {
+        "games": 64,
+        "wins": 39,
+        "draws": 0,
+        "losses": 25,
+        "win_rate": 0.609375,
+        "score": 0.609375
+      },
+      "white": {
+        "games": 64,
+        "wins": 40,
+        "draws": 0,
+        "losses": 24,
+        "win_rate": 0.625,
+        "score": 0.625
+      },
+      "opponent": "weak",
+      "evaluation_seed": 100104500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 468,
+          "correct": 79,
+          "accuracy": 0.16880341880341881
+        },
+        "block": {
+          "positions": 60,
+          "correct": 2,
+          "accuracy": 0.03333333333333333
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "final",
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0,
+      "mean_plies": 11.40625,
+      "black": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "white": {
+        "games": 64,
+        "wins": 0,
+        "draws": 0,
+        "losses": 64,
+        "win_rate": 0.0,
+        "score": 0.0
+      },
+      "opponent": "tactical",
+      "evaluation_seed": 100204500,
+      "policy": "deterministic argmax on occupancy-masked logits",
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 65,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      }
+    }
+  ],
+  "head_to_head": [],
+  "data_path": "gomoku9\\runs\\defense12_20261006\\data\\validation.npz",
+  "data_sha256": "d4f44e7e604758b61d0ac243673804ca9ff3a87ed9e37372c7a951bab97a1ca6",
+  "frozen_policy": "neural argmax with occupancy-only mask; no teacher or search at runtime",
+  "random_baseline": {
+    "random": {
+      "games": 128,
+      "wins": 54,
+      "draws": 0,
+      "losses": 74,
+      "win_rate": 0.421875,
+      "score": 0.421875
+    },
+    "weak": {
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0
+    },
+    "tactical": {
+      "games": 128,
+      "wins": 0,
+      "draws": 0,
+      "losses": 128,
+      "win_rate": 0.0,
+      "score": 0.0
+    }
+  },
+  "games_per_opponent": 128,
+  "paired_openings": 0
+}

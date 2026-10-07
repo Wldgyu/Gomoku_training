@@ -1,0 +1,4142 @@
+[
+  {
+    "variant": "relu_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00019797339336946607,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.009761977940797806,
+        "validation": 0.9990234375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.001997012412175536,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0011096277739852667,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0007621846161782742,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0005611595697700977,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0004370499518699944,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0003263377584517002,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.000298424536595121,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0002420919481664896,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00019797339336946607,
+        "validation": 1.0
+      }
+    ],
+    "run": "fly_graph0_seed1101",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1101_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00019796431297436357,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.009810506366193295,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.002006120514124632,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.001162777771241963,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0007534794858656824,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.000566633592825383,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0004436058516148478,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00032490765443071723,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0003134496510028839,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0002447278529871255,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00019796431297436357,
+        "validation": 1.0
+      }
+    ],
+    "run": "fly_graph0_seed1101",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1101_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00016041501658037305,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.0068050166592001915,
+        "validation": 0.9990234375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.001517732860520482,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0008417483186349273,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0006051295204088092,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.00043427999480627477,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.00034333934308961034,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0002593450481072068,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00022713888029102236,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00019061019702348858,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00016041501658037305,
+        "validation": 1.0
+      }
+    ],
+    "run": "fly_graph0_seed1101",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1101_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00015735637862235308,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.006944519467651844,
+        "validation": 0.9990234375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0015297047793865204,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0008671937976032495,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0006024623289704323,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.00043729349272325635,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0003399323031771928,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0002597018319647759,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00022825457563158125,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00018943659961223602,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00015735637862235308,
+        "validation": 1.0
+      }
+    ],
+    "run": "fly_graph0_seed1101",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1101_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.45853981375694275,
+    "best_validation_accuracy": 0.705078125,
+    "best_update": 300,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.47075679898262024,
+        "validation": 0.685546875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.4776831269264221,
+        "validation": 0.669921875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.47372502088546753,
+        "validation": 0.69140625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.46803000569343567,
+        "validation": 0.6806640625
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5101394653320312,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.45853981375694275,
+        "validation": 0.705078125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.47977444529533386,
+        "validation": 0.6865234375
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4737875461578369,
+        "validation": 0.6767578125
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4663908779621124,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.4906059205532074,
+        "validation": 0.681640625
+      }
+    ],
+    "run": "fly_graph0_seed1102",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1102_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.46141552925109863,
+    "best_validation_accuracy": 0.68359375,
+    "best_update": 300,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.46905797719955444,
+        "validation": 0.6875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.47763118147850037,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4625498950481415,
+        "validation": 0.6875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.4758545756340027,
+        "validation": 0.6650390625
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5016366839408875,
+        "validation": 0.6650390625
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.46141552925109863,
+        "validation": 0.68359375
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4629899263381958,
+        "validation": 0.6904296875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4770751893520355,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.47122734785079956,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.5007034540176392,
+        "validation": 0.6669921875
+      }
+    ],
+    "run": "fly_graph0_seed1102",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1102_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.46170538663864136,
+    "best_validation_accuracy": 0.6787109375,
+    "best_update": 200,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.467800498008728,
+        "validation": 0.6865234375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.47990837693214417,
+        "validation": 0.67578125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4633637070655823,
+        "validation": 0.6923828125
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.46170538663864136,
+        "validation": 0.6787109375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.48655498027801514,
+        "validation": 0.6787109375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.46601951122283936,
+        "validation": 0.6884765625
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.47581833600997925,
+        "validation": 0.677734375
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.48445528745651245,
+        "validation": 0.662109375
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.48255234956741333,
+        "validation": 0.66796875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.5143099427223206,
+        "validation": 0.6591796875
+      }
+    ],
+    "run": "fly_graph0_seed1102",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1102_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4578242301940918,
+    "best_validation_accuracy": 0.681640625,
+    "best_update": 150,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4681786894798279,
+        "validation": 0.6904296875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.48266685009002686,
+        "validation": 0.673828125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4578242301940918,
+        "validation": 0.681640625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.46342331171035767,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5087606906890869,
+        "validation": 0.66015625
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.4594053328037262,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4624762237071991,
+        "validation": 0.7041015625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4765815734863281,
+        "validation": 0.697265625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.471993625164032,
+        "validation": 0.6845703125
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49572789669036865,
+        "validation": 0.6640625
+      }
+    ],
+    "run": "fly_graph0_seed1102",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1102_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4771733283996582,
+    "best_validation_accuracy": 0.66796875,
+    "best_update": 200,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.506445050239563,
+        "validation": 0.658203125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.49168360233306885,
+        "validation": 0.6552734375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.49050372838974,
+        "validation": 0.6767578125
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.4771733283996582,
+        "validation": 0.66796875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4965488314628601,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.4793877601623535,
+        "validation": 0.6767578125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4948670268058777,
+        "validation": 0.662109375
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4949677884578705,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.48449379205703735,
+        "validation": 0.6748046875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.5016304850578308,
+        "validation": 0.6708984375
+      }
+    ],
+    "run": "fly_graph0_seed1103",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1103_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.47610440850257874,
+    "best_validation_accuracy": 0.6845703125,
+    "best_update": 200,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.5063997507095337,
+        "validation": 0.6552734375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.4795462191104889,
+        "validation": 0.658203125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4885703921318054,
+        "validation": 0.666015625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.47610440850257874,
+        "validation": 0.6845703125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5010668635368347,
+        "validation": 0.6611328125
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.479726642370224,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4888930320739746,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.48228776454925537,
+        "validation": 0.67578125
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4840053915977478,
+        "validation": 0.666015625
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.4868028163909912,
+        "validation": 0.6708984375
+      }
+    ],
+    "run": "fly_graph0_seed1103",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1103_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1103.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.48351532220840454,
+    "best_validation_accuracy": 0.6611328125,
+    "best_update": 200,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4869781732559204,
+        "validation": 0.669921875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.49531933665275574,
+        "validation": 0.673828125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4881490468978882,
+        "validation": 0.6572265625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.48351532220840454,
+        "validation": 0.6611328125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4982786476612091,
+        "validation": 0.67578125
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.49130478501319885,
+        "validation": 0.681640625
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.49911385774612427,
+        "validation": 0.6513671875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.5041268467903137,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4945816993713379,
+        "validation": 0.65234375
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.5013543963432312,
+        "validation": 0.6689453125
+      }
+    ],
+    "run": "fly_graph0_seed1103",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1103_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.47989583015441895,
+    "best_validation_accuracy": 0.6826171875,
+    "best_update": 200,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.48952168226242065,
+        "validation": 0.6552734375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.49787038564682007,
+        "validation": 0.6572265625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.48452192544937134,
+        "validation": 0.662109375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.47989583015441895,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5006208419799805,
+        "validation": 0.6748046875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.49136388301849365,
+        "validation": 0.677734375
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4849916696548462,
+        "validation": 0.67578125
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4856188893318176,
+        "validation": 0.669921875
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4831620454788208,
+        "validation": 0.6650390625
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49179863929748535,
+        "validation": 0.6748046875
+      }
+    ],
+    "run": "fly_graph0_seed1103",
+    "kind": "fly",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\fly_graph0_seed1103_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_fly_graph0_seed1103.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4825727343559265,
+    "best_validation_accuracy": 0.69140625,
+    "best_update": 250,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.5064986944198608,
+        "validation": 0.6396484375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.5119853615760803,
+        "validation": 0.6513671875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.48576247692108154,
+        "validation": 0.66796875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.506824254989624,
+        "validation": 0.658203125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4825727343559265,
+        "validation": 0.69140625
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.4891677498817444,
+        "validation": 0.669921875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4941112995147705,
+        "validation": 0.6572265625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.5005158185958862,
+        "validation": 0.662109375
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4980211555957794,
+        "validation": 0.6689453125
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.4902588725090027,
+        "validation": 0.669921875
+      }
+    ],
+    "run": "rewired_graph1_seed1101",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph1_seed1101_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph1_seed1101.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4816974997520447,
+    "best_validation_accuracy": 0.677734375,
+    "best_update": 150,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.5035930871963501,
+        "validation": 0.6435546875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.5006162524223328,
+        "validation": 0.6474609375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4816974997520447,
+        "validation": 0.677734375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.5141580104827881,
+        "validation": 0.669921875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4827512800693512,
+        "validation": 0.685546875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.48489055037498474,
+        "validation": 0.6552734375
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.49337297677993774,
+        "validation": 0.65625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.48943641781806946,
+        "validation": 0.6552734375
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.49806687235832214,
+        "validation": 0.6689453125
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.4932827055454254,
+        "validation": 0.6591796875
+      }
+    ],
+    "run": "rewired_graph1_seed1101",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph1_seed1101_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph1_seed1101.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.47969985008239746,
+    "best_validation_accuracy": 0.681640625,
+    "best_update": 150,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.5089587569236755,
+        "validation": 0.640625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.5117462277412415,
+        "validation": 0.64453125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.47969985008239746,
+        "validation": 0.681640625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.5144768953323364,
+        "validation": 0.6689453125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.48247063159942627,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.49286597967147827,
+        "validation": 0.6494140625
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4908352196216583,
+        "validation": 0.66015625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.509844183921814,
+        "validation": 0.6484375
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4990868866443634,
+        "validation": 0.6572265625
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.48864856362342834,
+        "validation": 0.6708984375
+      }
+    ],
+    "run": "rewired_graph1_seed1101",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph1_seed1101_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph1_seed1101.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4804590046405792,
+    "best_validation_accuracy": 0.673828125,
+    "best_update": 150,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.5101284980773926,
+        "validation": 0.6494140625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.5082540512084961,
+        "validation": 0.642578125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4804590046405792,
+        "validation": 0.673828125
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.5090361833572388,
+        "validation": 0.6689453125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.48816967010498047,
+        "validation": 0.6796875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.48154181241989136,
+        "validation": 0.671875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.5056372880935669,
+        "validation": 0.66015625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.5134156942367554,
+        "validation": 0.6650390625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4940447211265564,
+        "validation": 0.6669921875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.4931439757347107,
+        "validation": 0.658203125
+      }
+    ],
+    "run": "rewired_graph1_seed1101",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph1_seed1101_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph1_seed1101.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4582260251045227,
+    "best_validation_accuracy": 0.6943359375,
+    "best_update": 350,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4897542893886566,
+        "validation": 0.697265625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.4692140221595764,
+        "validation": 0.6669921875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4625243544578552,
+        "validation": 0.6953125
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.46436619758605957,
+        "validation": 0.6748046875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4799017310142517,
+        "validation": 0.6796875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.46400028467178345,
+        "validation": 0.6826171875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4582260251045227,
+        "validation": 0.6943359375
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.46970057487487793,
+        "validation": 0.697265625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.47329241037368774,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49184250831604004,
+        "validation": 0.677734375
+      }
+    ],
+    "run": "rewired_graph2_seed1102",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph2_seed1102_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph2_seed1102.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4601401090621948,
+    "best_validation_accuracy": 0.6767578125,
+    "best_update": 200,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.48750224709510803,
+        "validation": 0.7001953125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.4768304228782654,
+        "validation": 0.65625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.46354377269744873,
+        "validation": 0.6962890625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.4601401090621948,
+        "validation": 0.6767578125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5013900995254517,
+        "validation": 0.6650390625
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.46787315607070923,
+        "validation": 0.669921875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.47828447818756104,
+        "validation": 0.6806640625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.46920013427734375,
+        "validation": 0.681640625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4720005989074707,
+        "validation": 0.669921875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49763214588165283,
+        "validation": 0.662109375
+      }
+    ],
+    "run": "rewired_graph2_seed1102",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph2_seed1102_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph2_seed1102.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.46433013677597046,
+    "best_validation_accuracy": 0.6845703125,
+    "best_update": 350,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4859553575515747,
+        "validation": 0.6806640625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.48432087898254395,
+        "validation": 0.66015625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4654466211795807,
+        "validation": 0.677734375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.46607112884521484,
+        "validation": 0.689453125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4878014624118805,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.4682379961013794,
+        "validation": 0.685546875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.46433013677597046,
+        "validation": 0.6845703125
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4741162061691284,
+        "validation": 0.6845703125
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.47004279494285583,
+        "validation": 0.671875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49542027711868286,
+        "validation": 0.658203125
+      }
+    ],
+    "run": "rewired_graph2_seed1102",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph2_seed1102_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph2_seed1102.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.45869332551956177,
+    "best_validation_accuracy": 0.68359375,
+    "best_update": 200,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4841460883617401,
+        "validation": 0.697265625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.4763720631599426,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4592379927635193,
+        "validation": 0.69921875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.45869332551956177,
+        "validation": 0.68359375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4694213271141052,
+        "validation": 0.68359375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.4643714725971222,
+        "validation": 0.6875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.46381059288978577,
+        "validation": 0.6767578125
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.46479660272598267,
+        "validation": 0.6875
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.47199833393096924,
+        "validation": 0.66796875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49131038784980774,
+        "validation": 0.6552734375
+      }
+    ],
+    "run": "rewired_graph2_seed1102",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph2_seed1102_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph2_seed1102.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.47985726594924927,
+    "best_validation_accuracy": 0.669921875,
+    "best_update": 200,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.5037931799888611,
+        "validation": 0.65625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.48668593168258667,
+        "validation": 0.669921875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4861644506454468,
+        "validation": 0.6787109375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.47985726594924927,
+        "validation": 0.669921875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4990341067314148,
+        "validation": 0.662109375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.4892312288284302,
+        "validation": 0.6640625
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.492484986782074,
+        "validation": 0.650390625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.49131882190704346,
+        "validation": 0.654296875
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.480276495218277,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.5062060356140137,
+        "validation": 0.6640625
+      }
+    ],
+    "run": "rewired_graph3_seed1103",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph3_seed1103_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph3_seed1103.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.48184269666671753,
+    "best_validation_accuracy": 0.6669921875,
+    "best_update": 200,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4998076558113098,
+        "validation": 0.6611328125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.4900619089603424,
+        "validation": 0.6572265625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.48856106400489807,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.48184269666671753,
+        "validation": 0.6669921875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5341812968254089,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.5043993592262268,
+        "validation": 0.6572265625
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.49200439453125,
+        "validation": 0.66015625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4859650135040283,
+        "validation": 0.6689453125
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4937857687473297,
+        "validation": 0.6591796875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.4980214536190033,
+        "validation": 0.666015625
+      }
+    ],
+    "run": "rewired_graph3_seed1103",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph3_seed1103_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph3_seed1103.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.47600531578063965,
+    "best_validation_accuracy": 0.67578125,
+    "best_update": 450,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.5030585527420044,
+        "validation": 0.6484375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.496625691652298,
+        "validation": 0.6572265625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.4811021685600281,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.48449182510375977,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4960549473762512,
+        "validation": 0.6748046875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.4984549582004547,
+        "validation": 0.6640625
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4925636053085327,
+        "validation": 0.671875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.5077592134475708,
+        "validation": 0.666015625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.47600531578063965,
+        "validation": 0.67578125
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.505720853805542,
+        "validation": 0.669921875
+      }
+    ],
+    "run": "rewired_graph3_seed1103",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph3_seed1103_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph3_seed1103.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.48338645696640015,
+    "best_validation_accuracy": 0.681640625,
+    "best_update": 200,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.501171350479126,
+        "validation": 0.6416015625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.5136781930923462,
+        "validation": 0.6513671875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.49051082134246826,
+        "validation": 0.6669921875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.48338645696640015,
+        "validation": 0.681640625
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5005476474761963,
+        "validation": 0.671875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.48939359188079834,
+        "validation": 0.673828125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4858771562576294,
+        "validation": 0.6650390625
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.488358736038208,
+        "validation": 0.6640625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.5110158920288086,
+        "validation": 0.6748046875
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.504119873046875,
+        "validation": 0.6630859375
+      }
+    ],
+    "run": "rewired_graph3_seed1103",
+    "kind": "rewired",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rewired_graph3_seed1103_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rewired_graph3_seed1103.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00015563357737846673,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 52611,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.005256781354546547,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.001510104164481163,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.000904215732589364,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0006213214946910739,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.000453405809821561,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0003417344414629042,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00027285300893709064,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0002198894217144698,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0001828232198022306,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00015563357737846673,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1101",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1101_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00015837507089599967,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 52611,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.005388672463595867,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0015699630603194237,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0009381730342283845,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0006426650215871632,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0004673129878938198,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0003505060449242592,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0002791475271806121,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00022444914793595672,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0001863045763457194,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00015837507089599967,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1101",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1101_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0001519625075161457,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 53123,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.005272206850349903,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0015696764457970858,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0009213275043293834,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0006260754307731986,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.00045213382691144943,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.000336485099978745,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0002698382595553994,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00021568071679212153,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00017828852287493646,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0001519625075161457,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1101",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1101_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00015496520791202784,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 53123,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.0055669196881353855,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0016227476298809052,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0009466914925724268,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0006431527435779572,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.00046405044849961996,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.00034557958133518696,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00027664710069075227,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0002204532065661624,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0001819294411689043,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00015496520791202784,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1101",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1101_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00012316834181547165,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 52611,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.0038275490514934063,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0011204085312783718,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0006995939766056836,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.00047180347610265017,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0003464509209152311,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.000270844844635576,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00021034720703028142,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00017414150352124125,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00014515305520035326,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00012316834181547165,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1102",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1102_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00012582528870552778,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 52611,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.003973120823502541,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.001164938323199749,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.000723683275282383,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0004854068683926016,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0003553249407559633,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0002772044681478292,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00021470797946676612,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0001777136349119246,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00014825267135165632,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00012582528870552778,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1102",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1102_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00012429952039383352,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 53123,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.0037411744706332684,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0011017235228791833,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.000687096209730953,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.00047395634464919567,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0003491489333100617,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0002729376428760588,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00021274274331517518,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00017579455743543804,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00014622058370150626,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00012429952039383352,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1102",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1102_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00012691548909060657,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 53123,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.003801413346081972,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.001140946988016367,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0007099591894075274,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0004884323570877314,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0003592559660319239,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.00028008074150420725,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00021785229910165071,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.000179658381966874,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00014920573448762298,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00012691548909060657,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1102",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1102_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00011182473826920614,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 52611,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.003179877530783415,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.001000492600724101,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0006299631204456091,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.00043106675730086863,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0003118543536402285,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0002410262677585706,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0001931520673679188,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0001598546514287591,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00013195205247029662,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00011182473826920614,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1103",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1103_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00011285007349215448,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 52611,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.003292656969279051,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0010173164773732424,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0006403748411685228,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0004379612801130861,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0003160865162499249,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.00024383040727116168,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00019510489073581994,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00016150050214491785,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00013321544975042343,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00011285007349215448,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1103",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1103_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1103.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00011148611520184204,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 53123,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.00305534596554935,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0010175727074965835,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0006379904225468636,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0004340469604358077,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0003125294460915029,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.00024213286815211177,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00019393542606849223,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00016024502110667527,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00013191081234253943,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00011148611520184204,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1103",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1103_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00011384555546101183,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 53123,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.003240630030632019,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0010581109672784805,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0006575315492227674,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.00044520822120830417,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.000319667044095695,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0002475008077453822,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0001980762172024697,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00016356652486138046,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0001346590870525688,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00011384555546101183,
+        "validation": 1.0
+      }
+    ],
+    "run": "rnn_graph0_seed1103",
+    "kind": "rnn",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\rnn_graph0_seed1103_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1103.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0006437331903725863,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32003,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.07953553646802902,
+        "validation": 0.986328125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.012264573946595192,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.005615133326500654,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.003180599305778742,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.002143130637705326,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0015577502781525254,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0012099884916096926,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0009885125327855349,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.000792168895713985,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0006437331903725863,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1101",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1101_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0006582356290891767,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32003,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.08170270919799805,
+        "validation": 0.9765625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.012609094381332397,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.005868688225746155,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0032583684660494328,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.002236136933788657,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0016048670513555408,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0012412938522174954,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0010304015595465899,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0008139645215123892,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0006582356290891767,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1101",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1101_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0006160252378322184,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.08665888011455536,
+        "validation": 0.9833984375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.011637711897492409,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.005138004198670387,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0030716517940163612,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0020401717629283667,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0014916029758751392,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.001148777431808412,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0009119462920352817,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0007501767249777913,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0006160252378322184,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1101",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1101_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0006085812347009778,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.08993068337440491,
+        "validation": 0.97265625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.011512935161590576,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.005089414771646261,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.00304792239330709,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0020227856002748013,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0014753199648112059,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0011380416108295321,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0009012552909553051,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0007403758354485035,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0006085812347009778,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1101",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1101_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.019803153350949287,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32003,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.6531605124473572,
+        "validation": 0.7080078125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.3690299391746521,
+        "validation": 0.8671875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.20530390739440918,
+        "validation": 0.958984375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.14103901386260986,
+        "validation": 0.974609375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.09641052782535553,
+        "validation": 0.9814453125
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.06362169235944748,
+        "validation": 0.9951171875
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.042215146124362946,
+        "validation": 0.998046875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0314880833029747,
+        "validation": 0.9990234375
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.02295840159058571,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.019803153350949287,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1102",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1102_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.018758203834295273,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32003,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.656862735748291,
+        "validation": 0.705078125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.370578408241272,
+        "validation": 0.8701171875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.20207037031650543,
+        "validation": 0.95703125
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.14101707935333252,
+        "validation": 0.97265625
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.09638432413339615,
+        "validation": 0.982421875
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.060251884162425995,
+        "validation": 0.9970703125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.042642779648303986,
+        "validation": 0.9970703125
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.03047720342874527,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.02273925393819809,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.018758203834295273,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1102",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1102_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.017609601840376854,
+    "best_validation_accuracy": 0.9990234375,
+    "best_update": 500,
+    "parameters": 32515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.6536157131195068,
+        "validation": 0.7138671875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.3663889169692993,
+        "validation": 0.8740234375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.20626413822174072,
+        "validation": 0.9609375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.13793237507343292,
+        "validation": 0.9873046875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.09232734143733978,
+        "validation": 0.984375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.05725860595703125,
+        "validation": 0.99609375
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.03986997902393341,
+        "validation": 0.998046875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.029328856617212296,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.021688051521778107,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.017609601840376854,
+        "validation": 0.9990234375
+      }
+    ],
+    "run": "gru_graph0_seed1102",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1102_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.017256539314985275,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.6577323079109192,
+        "validation": 0.712890625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.36615848541259766,
+        "validation": 0.8720703125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.2034035325050354,
+        "validation": 0.966796875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.13855552673339844,
+        "validation": 0.9833984375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0906776636838913,
+        "validation": 0.984375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.05685146898031235,
+        "validation": 0.99609375
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.04039699584245682,
+        "validation": 0.998046875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.028440680354833603,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.021666305139660835,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.017256539314985275,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1102",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1102_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0002518391702324152,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32003,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.02237686514854431,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0036632209084928036,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0018808325985446572,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0011959278490394354,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0008171371882781386,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0005949938204139471,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0004590299795381725,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00036236620508134365,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0003018779680132866,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0002518391702324152,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1103",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1103_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00024857785319909453,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32003,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.02295442298054695,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.003663891926407814,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0018765567801892757,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.001192177995108068,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0008110806811600924,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0005894028581678867,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00045426684664562345,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00035891865263693035,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00029848379199393094,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00024857785319909453,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1103",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1103_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1103.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0002367986598983407,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.020335054025053978,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.003315613605082035,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.001728234812617302,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0010969741269946098,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0007545004482381046,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0005553127266466618,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0004314857069402933,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00034081446938216686,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00028310867492109537,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0002367986598983407,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1103",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1103_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00023764865181874484,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 32515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.020435024052858353,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.0033234611619263887,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0017347490647807717,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0011042575351893902,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0007595825009047985,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.0005582737503573298,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00043346447637304664,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0003420463181100786,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0002841459645424038,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00023764865181874484,
+        "validation": 1.0
+      }
+    ],
+    "run": "gru_graph0_seed1103",
+    "kind": "gru",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\gru_graph0_seed1103_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1103.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.002243430120870471,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.46121498942375183,
+        "validation": 0.7470703125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.2535881996154785,
+        "validation": 0.8896484375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.08230473101139069,
+        "validation": 0.96875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0205323975533247,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.008658504113554955,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.006248802412301302,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.003986481577157974,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0033283608499914408,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0025560613721609116,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.002243430120870471,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1101",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1101_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0021549470257014036,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4556509256362915,
+        "validation": 0.75390625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.23040717840194702,
+        "validation": 0.91015625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.07497785985469818,
+        "validation": 0.9794921875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.028148196637630463,
+        "validation": 0.9970703125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.008960851468145847,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.005884402431547642,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.003791018621996045,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0031754951924085617,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0025154300965368748,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0021549470257014036,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1101",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1101_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0020178109407424927,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.47707271575927734,
+        "validation": 0.740234375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.19088923931121826,
+        "validation": 0.9287109375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.07272177189588547,
+        "validation": 0.9755859375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.020066147670149803,
+        "validation": 0.9990234375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.008334525860846043,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.005895587615668774,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0038258193526417017,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0032085576094686985,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.002368100918829441,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0020178109407424927,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1101",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1101_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1101.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0021571507677435875,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.49167364835739136,
+        "validation": 0.734375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.22192394733428955,
+        "validation": 0.912109375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.09049838036298752,
+        "validation": 0.96484375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.027186319231987,
+        "validation": 0.9951171875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.008360521867871284,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.005688499193638563,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.003880143631249666,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0032268851064145565,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.002556748688220978,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0021571507677435875,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1101",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1101_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1101.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0018909762147814035,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.47405877709388733,
+        "validation": 0.73046875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.23410561680793762,
+        "validation": 0.896484375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.07439123094081879,
+        "validation": 0.9765625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.03888946399092674,
+        "validation": 0.98828125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.011193690821528435,
+        "validation": 0.9990234375
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.011574123986065388,
+        "validation": 0.9970703125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.003622288815677166,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0028542750515043736,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.002282065572217107,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0018909762147814035,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1102",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1102_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0017555950907990336,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.47841835021972656,
+        "validation": 0.7392578125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.26646140217781067,
+        "validation": 0.888671875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.08237223327159882,
+        "validation": 0.97265625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.04178508371114731,
+        "validation": 0.98828125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.01124832034111023,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.01135791465640068,
+        "validation": 0.9970703125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0036808864679187536,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0025566676631569862,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0021977012511342764,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0017555950907990336,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1102",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1102_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0016232701018452644,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.48664215207099915,
+        "validation": 0.7431640625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.2206312119960785,
+        "validation": 0.900390625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.06421314179897308,
+        "validation": 0.9853515625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.025848792865872383,
+        "validation": 0.9951171875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.009668323211371899,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.00972573459148407,
+        "validation": 0.9970703125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0029096626676619053,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00235786777921021,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0019187300931662321,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0016232701018452644,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1102",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1102_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1102.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0017564889276400208,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4828813374042511,
+        "validation": 0.7421875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.2245263010263443,
+        "validation": 0.9072265625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.06401748955249786,
+        "validation": 0.98046875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.03258977830410004,
+        "validation": 0.994140625
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.00798298604786396,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.006525146774947643,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0032263135071843863,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0025714002549648285,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.002138483803719282,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0017564889276400208,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1102",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1102_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1102.pt"
+  },
+  {
+    "variant": "relu_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0015511538367718458,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4376097023487091,
+        "validation": 0.7685546875
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.24953319132328033,
+        "validation": 0.8994140625
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.08283081650733948,
+        "validation": 0.9765625
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.018105899915099144,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.008652722463011742,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.004404238425195217,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0032045452389866114,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0024094064719974995,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0020054951310157776,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0015511538367718458,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1103",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1103_relu_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_state",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.001607727026566863,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4373164772987366,
+        "validation": 0.7646484375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.25005218386650085,
+        "validation": 0.896484375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.07334638386964798,
+        "validation": 0.9833984375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.026355670765042305,
+        "validation": 0.998046875
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.007599357515573502,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.004305797629058361,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.00314914807677269,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0024581924080848694,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0020218128338456154,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.001607727026566863,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1103",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1103_leaky_state.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1103.pt"
+  },
+  {
+    "variant": "relu_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.0014795766910538077,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4397026300430298,
+        "validation": 0.751953125
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.2426016479730606,
+        "validation": 0.9130859375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0604066327214241,
+        "validation": 0.9912109375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.014280362986028194,
+        "validation": 0.9990234375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.006851093843579292,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.004321443848311901,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0030094687826931477,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.002245669486001134,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.0018644460942596197,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.0014795766910538077,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1103",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1103_relu_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1103.pt"
+  },
+  {
+    "variant": "leaky_query",
+    "seed": 1103,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.001568640349432826,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 129027,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.4389735460281372,
+        "validation": 0.7509765625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.2557169497013092,
+        "validation": 0.89453125
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.0688079446554184,
+        "validation": 0.990234375
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.014776877127587795,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.007531235925853252,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.004719763062894344,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.0031597132328897715,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.0024458528496325016,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00199095974676311,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.001568640349432826,
+        "validation": 1.0
+      }
+    ],
+    "run": "leaky_graph0_seed1103",
+    "kind": "leaky",
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\readout\\heads\\leaky_graph0_seed1103_leaky_query.pt",
+    "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_leaky_graph0_seed1103.pt"
+  }
+]

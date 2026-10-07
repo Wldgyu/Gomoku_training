@@ -1,0 +1,105 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "environment_version": "3.1.0",
+  "gymnasium_version": "1.3.0",
+  "model": "rnn",
+  "neurons_reference": 1000,
+  "hidden_size": 400,
+  "parameters": 350756,
+  "fly_reference_parameters": 351092,
+  "graph_sha256": null,
+  "connection_direction": "pre_index -> post_index; W[post, pre]",
+  "observation": "partial 7x7 image (one-hot object/color/state) and direction; constant mission omitted",
+  "actions": "left, right, forward; original success reward",
+  "algorithm": "recurrent PPO with GAE; full rollout BPTT",
+  "rnn_recurrent_init": "orthogonal",
+  "max_episode_steps": 100,
+  "steps": 10240,
+  "start_mode": "fixed_cue",
+  "num_envs": 16,
+  "rollout_steps": 32,
+  "ppo_epochs": 2,
+  "minibatch_envs": 4,
+  "learning_rate": 0.0003,
+  "entropy_bonus": 0.01,
+  "eval_episodes": 64,
+  "seed": 302,
+  "evaluation_seed": 802000,
+  "device": "cuda",
+  "duration_seconds": 24.324573500000042,
+  "peak_vram_bytes_pytorch": 26949632,
+  "initial_evaluation": {
+    "episodes": 64,
+    "success_rate": 0.0,
+    "mean_reward": 0.0,
+    "mean_episode_steps": 100.0,
+    "cue_visible_at_start_rate": 1.0
+  },
+  "history": [
+    {
+      "interaction_steps": 2560,
+      "episodes": 64,
+      "success_rate": 0.0,
+      "mean_reward": 0.0,
+      "mean_episode_steps": 100.0,
+      "cue_visible_at_start_rate": 1.0,
+      "loss": -0.014446945860981941,
+      "policy_entropy": 1.0859354734420776,
+      "completed_train_episodes_in_rollout": 1
+    },
+    {
+      "interaction_steps": 5120,
+      "episodes": 64,
+      "success_rate": 0.0,
+      "mean_reward": 0.0,
+      "mean_episode_steps": 100.0,
+      "cue_visible_at_start_rate": 1.0,
+      "loss": -0.01902089302893728,
+      "policy_entropy": 1.077325090765953,
+      "completed_train_episodes_in_rollout": 13
+    },
+    {
+      "interaction_steps": 7680,
+      "episodes": 64,
+      "success_rate": 0.0,
+      "mean_reward": 0.0,
+      "mean_episode_steps": 100.0,
+      "cue_visible_at_start_rate": 1.0,
+      "loss": -0.01390064787119627,
+      "policy_entropy": 1.077252671122551,
+      "completed_train_episodes_in_rollout": 2
+    },
+    {
+      "interaction_steps": 10240,
+      "episodes": 64,
+      "success_rate": 0.0,
+      "mean_reward": 0.0,
+      "mean_episode_steps": 100.0,
+      "cue_visible_at_start_rate": 1.0,
+      "loss": -0.01343465386889875,
+      "policy_entropy": 1.0108489766716957,
+      "completed_train_episodes_in_rollout": 1
+    }
+  ],
+  "final_fresh_evaluation": {
+    "episodes": 64,
+    "success_rate": 0.0,
+    "mean_reward": 0.0,
+    "mean_episode_steps": 100.0,
+    "cue_visible_at_start_rate": 1.0
+  },
+  "final_fresh_cue_masked_evaluation": {
+    "episodes": 64,
+    "success_rate": 0.0,
+    "mean_reward": 0.0,
+    "mean_episode_steps": 100.0,
+    "cue_visible_at_start_rate": 1.0
+  },
+  "final_fresh_default_start_evaluation": {
+    "episodes": 64,
+    "success_rate": 0.0,
+    "mean_reward": 0.0,
+    "mean_episode_steps": 100.0,
+    "cue_visible_at_start_rate": 0.078125
+  }
+}

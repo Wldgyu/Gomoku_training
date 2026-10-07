@@ -1,0 +1,67 @@
+{
+  "kind": "gru",
+  "seed": 1,
+  "hidden": 254,
+  "memory_parameters": 276867,
+  "total_parameters": 392323,
+  "learning_rate": 0.003,
+  "epochs": 4,
+  "episodes_per_epoch": 1024,
+  "best_validation": 0.3203125,
+  "tests": {
+    "trained_delays": {
+      "accuracy": 0.3359375,
+      "by_delay": {
+        "6": 0.3488372093023256,
+        "10": 0.3228346456692913
+      }
+    },
+    "unseen_delays": {
+      "accuracy": 0.328125,
+      "by_delay": {
+        "8": 0.3387096774193548,
+        "14": 0.3181818181818182
+      }
+    }
+  },
+  "curve": [
+    {
+      "epoch": 0,
+      "validation": 0.375
+    },
+    {
+      "epoch": 1,
+      "loss": 1.100250005722046,
+      "validation": 0.3203125
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0997461080551147,
+      "validation": 0.3203125
+    },
+    {
+      "epoch": 3,
+      "loss": 1.0985612869262695,
+      "validation": 0.3203125
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0962014198303223,
+      "validation": 0.3203125
+    }
+  ],
+  "seconds": 0.7290983999998844,
+  "setting": {
+    "cues": 2,
+    "train_delays": [
+      6,
+      10
+    ],
+    "test_delays": [
+      8,
+      14
+    ],
+    "distractors": 2,
+    "wait_probability": 0.0
+  }
+}

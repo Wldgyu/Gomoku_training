@@ -1,0 +1,73 @@
+{
+  "config": {
+    "kind": "gru",
+    "seed": 4300,
+    "hidden": 254,
+    "size": 12,
+    "rewire_seed": 0,
+    "updates": 25,
+    "envs": 32,
+    "rollout": 16,
+    "epochs": 2,
+    "lr": 0.0003,
+    "opponent": "weak",
+    "warmup_updates": 200,
+    "auxiliary_batch": 128,
+    "auxiliary_weight": 1.0,
+    "tactical_data_sha256": "018da29888c78f009b7bc5a8bdaea8961cb9f3cdfa869fcd7210d570da3f100a",
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "ppo_clip": 0.2,
+    "entropy_coefficient": 0.01,
+    "value_coefficient": 0.5,
+    "observation": "full board: own, opponent, last move, black-to-play color",
+    "reward": "terminal +1/-1, draw 0; no shaping or search; auxiliary tactical labels if configured",
+    "initialization": "fresh; archived task checkpoints not loaded"
+  },
+  "parameters": 453809,
+  "graph_sha256": null,
+  "completed_updates": 25,
+  "learner_decisions": 12800,
+  "completed_training_games": 985,
+  "last_1000_training_win_rate": 0.0040609137055837565,
+  "last_1000_training_draw_rate": 0.0,
+  "last_1000_training_mean_plies": 25.992893401015227,
+  "elapsed_seconds": 3.6185640999992756,
+  "curve": [
+    {
+      "update": 1,
+      "training_win_rate": 0.0,
+      "games": 23,
+      "policy_loss": -0.0008443370461463928,
+      "value_loss": 0.2876279056072235,
+      "entropy": 4.831987380981445,
+      "seconds": 1.33
+    },
+    {
+      "update": 25,
+      "training_win_rate": 0.0040609137055837565,
+      "games": 985,
+      "policy_loss": -0.0007243957370519638,
+      "value_loss": 0.004422549158334732,
+      "entropy": 4.7693328857421875,
+      "seconds": 3.62
+    }
+  ],
+  "peak_allocated_gib": 0.15737295150756836,
+  "peak_reserved_gib": 0.19140625,
+  "torch_version": "2.11.0+cu128",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "tf32": false,
+  "source_hashes": {
+    "benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "env.py": "d6d0403604ad165c37a2e53c097bfed35032396c499cecdcc4f03fd59362fd90",
+    "evaluate.py": "ed2226d35b6b73c40dba6ad489200293f27c25c373b2477be7258c64a512534c",
+    "make_report.py": "812516d6370e3fada892ecc744141aa9324e1046559a19b02c17083004b97e95",
+    "models.py": "f97fa7ed8bfd66863e1b49bd650be7ed8ecd22f949840f9dc3f371be90d17331",
+    "tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "test_defense.py": "ef2c996316d035e002089742f47e34997fa399bcbe26a06804cee5680ef67185",
+    "test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "train.py": "dd95719ec40733693e5d658bb0561433bef3845f99e3dcbd1ff6096eaf17c5ec",
+    "__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28"
+  }
+}

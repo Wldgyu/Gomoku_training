@@ -1,0 +1,80 @@
+{
+  "source_game": "C:/Users/a/Desktop/자바스크립트 게임/game.js",
+  "pilot_rule": "stage 2: four unique colors or emojis; choose the replaced slot",
+  "excluded_from_pilot": "real-time timer, animations, fake-shake cue, focus mode, reverse rule, stage progression, stages 3+",
+  "algorithm": "REINFORCE with batch reward baseline and entropy bonus",
+  "model": "gru",
+  "stage": 2,
+  "graph_variant": "real",
+  "rewire_seed": null,
+  "readout": "shared MLP 128 with current observation skip",
+  "neurons_reference": 2000,
+  "hidden_size": 380,
+  "parameters": 569720,
+  "fly_reference_parameters": 570593,
+  "graph_sha256": null,
+  "connection_direction": "pre_index -> post_index; W[post, pre]",
+  "blank_steps": 1,
+  "updates": 1200,
+  "batch": 256,
+  "choice_interactions": 307200,
+  "eval_games": 1024,
+  "seed": 44,
+  "random_success_rate": 0.25,
+  "initial_success_rate": 0.25390625,
+  "initial_no_memory_success_rate": 0.25390625,
+  "final_fresh_success_rate": 0.724609375,
+  "final_fresh_no_memory_success_rate": 0.2705078125,
+  "history": [
+    {
+      "update": 1,
+      "choice_interactions": 256,
+      "training_reward": 0.2734375,
+      "heldout_success_rate": 0.2587890625,
+      "no_memory_success_rate": 0.2568359375
+    },
+    {
+      "update": 200,
+      "choice_interactions": 51200,
+      "training_reward": 0.24609375,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.2421875
+    },
+    {
+      "update": 400,
+      "choice_interactions": 102400,
+      "training_reward": 0.5,
+      "heldout_success_rate": 0.5283203125,
+      "no_memory_success_rate": 0.2353515625
+    },
+    {
+      "update": 600,
+      "choice_interactions": 153600,
+      "training_reward": 0.640625,
+      "heldout_success_rate": 0.6591796875,
+      "no_memory_success_rate": 0.25390625
+    },
+    {
+      "update": 800,
+      "choice_interactions": 204800,
+      "training_reward": 0.65625,
+      "heldout_success_rate": 0.7080078125,
+      "no_memory_success_rate": 0.2734375
+    },
+    {
+      "update": 1000,
+      "choice_interactions": 256000,
+      "training_reward": 0.69921875,
+      "heldout_success_rate": 0.7275390625,
+      "no_memory_success_rate": 0.271484375
+    },
+    {
+      "update": 1200,
+      "choice_interactions": 307200,
+      "training_reward": 0.703125,
+      "heldout_success_rate": 0.7373046875,
+      "no_memory_success_rate": 0.2783203125
+    }
+  ],
+  "checkpoint": "data\\game_pilot\\card_stage2_mlphead_reinforce_gru_2000_delay1_seed44.pt"
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "fly",
+  "seed": 3104,
+  "replayed_test": 0.99951171875,
+  "diagnostics": {
+    "after_cues": {
+      "linear_probe": 1.0,
+      "trained_aux_head": 0.90966796875,
+      "same_probe_after_delay": 0.99609375
+    },
+    "before_query": {
+      "linear_probe": 1.0,
+      "trained_aux_head": 1.0
+    },
+    "query_swap": {
+      "both_correct": 0.99853515625,
+      "slot0_correct": 0.999267578125,
+      "slot1_correct": 0.999267578125,
+      "different_kind_fraction": 0.652587890625,
+      "changes_when_kind_differs": 0.9977553486824036
+    },
+    "final_readout": {
+      "trained_answer_head": 0.99951171875,
+      "aux_with_explicit_query_selection": 1.0
+    }
+  }
+}

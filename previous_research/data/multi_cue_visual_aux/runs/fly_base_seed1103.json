@@ -1,0 +1,125 @@
+{
+  "kind": "fly",
+  "seed": 1103,
+  "aux": false,
+  "hidden": 1000,
+  "learning_rate": 0.0003,
+  "best_epoch": 14,
+  "best_validation": 0.68359375,
+  "curve": [
+    {
+      "epoch": 1,
+      "validation": 0.3359375
+    },
+    {
+      "epoch": 2,
+      "validation": 0.4521484375
+    },
+    {
+      "epoch": 3,
+      "validation": 0.498046875
+    },
+    {
+      "epoch": 4,
+      "validation": 0.5380859375
+    },
+    {
+      "epoch": 5,
+      "validation": 0.5439453125
+    },
+    {
+      "epoch": 6,
+      "validation": 0.669921875
+    },
+    {
+      "epoch": 7,
+      "validation": 0.66796875
+    },
+    {
+      "epoch": 8,
+      "validation": 0.6611328125
+    },
+    {
+      "epoch": 9,
+      "validation": 0.65234375
+    },
+    {
+      "epoch": 10,
+      "validation": 0.6357421875
+    },
+    {
+      "epoch": 11,
+      "validation": 0.646484375
+    },
+    {
+      "epoch": 12,
+      "validation": 0.666015625
+    },
+    {
+      "epoch": 13,
+      "validation": 0.6630859375
+    },
+    {
+      "epoch": 14,
+      "validation": 0.68359375
+    },
+    {
+      "epoch": 15,
+      "validation": 0.677734375
+    },
+    {
+      "epoch": 16,
+      "validation": 0.66796875
+    },
+    {
+      "epoch": 17,
+      "validation": 0.658203125
+    },
+    {
+      "epoch": 18,
+      "validation": 0.650390625
+    },
+    {
+      "epoch": 19,
+      "validation": 0.6708984375
+    },
+    {
+      "epoch": 20,
+      "validation": 0.6513671875
+    }
+  ],
+  "tests": {
+    "trained_lengths": {
+      "answer_accuracy": 0.65869140625,
+      "by_delay": {
+        "6": 0.6555446516192346,
+        "10": 0.6618075801749271
+      },
+      "count": 2048
+    },
+    "unseen_lengths": {
+      "answer_accuracy": 0.673828125,
+      "by_delay": {
+        "8": 0.6787762906309751,
+        "14": 0.6686626746506986
+      },
+      "count": 2048
+    },
+    "unseen_wait": {
+      "answer_accuracy": 0.638671875,
+      "by_delay": {
+        "8": 0.6375121477162293,
+        "14": 0.6398429833169774
+      },
+      "count": 2048
+    },
+    "autonomous_unseen": {
+      "movement_success": 0.05078125,
+      "answer_given_movement_success": 0.9230769230769231,
+      "end_to_end_answer_success": 0.046875,
+      "episodes": 256
+    }
+  },
+  "seconds": 29.592835100000002,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_visual_aux\\runs\\fly_base_seed1103.pt"
+}

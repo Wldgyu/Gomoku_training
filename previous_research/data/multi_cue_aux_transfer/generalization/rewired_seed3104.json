@@ -1,0 +1,99 @@
+{
+  "kind": "rewired",
+  "seed": 3104,
+  "hidden": 1000,
+  "published_test": 0.92333984375,
+  "replayed_test": 0.92333984375,
+  "conditions": {
+    "trained": {
+      "accuracy": 0.9326171875,
+      "by_slot": {
+        "0": 0.9315914511680603,
+        "1": 0.9337016344070435
+      },
+      "distractor_reused_color": {
+        "False": 0.9180470705032349,
+        "True": 0.9511653780937195
+      }
+    },
+    "reversed_cue_order": {
+      "accuracy": 0.9306640625,
+      "by_slot": {
+        "0": 0.9452536702156067,
+        "1": 0.9168646335601807
+      },
+      "distractor_reused_color": {
+        "False": 0.9149956703186035,
+        "True": 0.9506104588508606
+      }
+    },
+    "delay24": {
+      "accuracy": 0.83349609375,
+      "by_slot": {
+        "0": 0.8409662842750549,
+        "1": 0.8264580368995667
+      },
+      "distractor_reused_color": {
+        "False": 0.832176923751831,
+        "True": 0.8351955413818359
+      }
+    },
+    "delay32": {
+      "accuracy": 0.709716796875,
+      "by_slot": {
+        "0": 0.7188830971717834,
+        "1": 0.6999495625495911
+      },
+      "distractor_reused_color": {
+        "False": 0.6958987712860107,
+        "True": 0.7272727489471436
+      }
+    },
+    "distractors6": {
+      "accuracy": 0.830322265625,
+      "by_slot": {
+        "0": 0.8369829654693604,
+        "1": 0.8236158490180969
+      },
+      "distractor_reused_color": {
+        "False": 0.8278236985206604,
+        "True": 0.8308605551719666
+      }
+    },
+    "distractors10": {
+      "accuracy": 0.741943359375,
+      "by_slot": {
+        "0": 0.7502448558807373,
+        "1": 0.7336903810501099
+      },
+      "distractor_reused_color": {
+        "False": 0.727642297744751,
+        "True": 0.7428571581840515
+      }
+    },
+    "combined24_6": {
+      "accuracy": 0.798828125,
+      "by_slot": {
+        "0": 0.8022515773773193,
+        "1": 0.7954213619232178
+      },
+      "distractor_reused_color": {
+        "False": 0.7864865064620972,
+        "True": 0.8015494346618652
+      }
+    },
+    "three_cues": {
+      "accuracy": 0.776123046875,
+      "by_slot": {
+        "0": 0.7901418805122375,
+        "1": 0.7994078397750854,
+        "2": 0.7403982877731323
+      },
+      "distractor_reused_color": {
+        "False": 0.7737789154052734,
+        "True": 0.779228150844574
+      }
+    }
+  },
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_aux_transfer\\checkpoints\\rewired_aux_seed3104.pt"
+}

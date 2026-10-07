@@ -1,0 +1,175 @@
+{
+  "model": "rnn",
+  "seed": 401,
+  "parameters": 350756,
+  "source_checkpoint": "data\\minigrid_length_curriculum\\mixed_s7_11_13_rnn_1000_seed401.pt",
+  "train_sizes": [
+    7,
+    11,
+    13
+  ],
+  "holdout_size": 9,
+  "train_episodes_per_size": 4,
+  "eval_episodes_final_per_size": 4,
+  "epochs": 1,
+  "learning_rate": 0.0001,
+  "cue_weight": 0.5,
+  "comparison_weight": 0.5,
+  "initial": {
+    "7": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      }
+    },
+    "11": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      }
+    },
+    "13": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      }
+    },
+    "9": {
+      "normal": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_success": 1.0,
+      "min_train_success": 1.0,
+      "losses": {
+        "actor_loss": 0.01662726855526368,
+        "cue_loss": 0.7283945282300314,
+        "comparison_loss": 0.6389888525009155
+      },
+      "by_size": {
+        "7": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.0
+          }
+        },
+        "11": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.0
+          }
+        },
+        "13": {
+          "normal": {
+            "success_rate": 1.0,
+            "branch_reach_rate": 1.0,
+            "cue_seen_rate": 1.0,
+            "cue_visible_at_start_rate": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "selected_epoch": 1,
+  "selection_rule": "mean and minimum train-size success; S9 excluded",
+  "final_fresh": {
+    "7": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.25
+      },
+      "masked": {
+        "success_rate": 0.25,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.25
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.25
+      }
+    },
+    "11": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      }
+    },
+    "13": {
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      },
+      "masked": {
+        "success_rate": 0.25,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      }
+    },
+    "9": {
+      "normal": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      },
+      "masked": {
+        "success_rate": 0.25,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      },
+      "swapped": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0,
+        "cue_seen_rate": 1.0,
+        "cue_visible_at_start_rate": 0.0
+      }
+    }
+  },
+  "duration_seconds": 3.517414599999938
+}

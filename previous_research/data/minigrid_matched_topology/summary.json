@@ -1,0 +1,331 @@
+{
+  "rows": [
+    {
+      "model": "fly",
+      "seed": 401,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_fly_1000_seed401.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_curriculum\\full_s11_fly_1000_seed401.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_random_start\\from_full\\random_s11_fly_1000_seed401.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_fly_1000_seed401.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 0.515625,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 5,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 0.65625,
+      "s9_branch_reach": 0.765625,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.3359375,
+      "s9_swap_success": 0.0
+    },
+    {
+      "model": "fly",
+      "seed": 402,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_fly_1000_seed402.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_curriculum\\full_s11_fly_1000_seed402.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_random_start\\from_full\\random_s11_fly_1000_seed402.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_fly_1000_seed402.json"
+      },
+      "diagnostic_s11_accuracy": 0.484375,
+      "full_s11_success": 0.515625,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 5,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 0.765625,
+      "s9_branch_reach": 0.765625,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.4375,
+      "s9_swap_success": 0.0
+    },
+    {
+      "model": "fly",
+      "seed": 403,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_fly_1000_seed403.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_curriculum\\full_s11_fly_1000_seed403.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_random_start\\from_full\\random_s11_fly_1000_seed403.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_fly_1000_seed403.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 1.0,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 10,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 1.0,
+      "s9_branch_reach": 1.0,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.4921875,
+      "s9_swap_success": 0.0
+    },
+    {
+      "model": "fly",
+      "seed": 404,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\diagnostic\\choice_s11_fly_1000_seed404.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\full\\full_s11_fly_1000_seed404.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\random\\random_s11_fly_1000_seed404.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_fly_1000_seed404.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 1.0,
+      "random_s11_success": 0.9765625,
+      "random_s11_swap_success": 0.0234375,
+      "selected_length_epoch": 10,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 0.9765625,
+        "13": 0.953125
+      },
+      "s9_success": 0.5625,
+      "s9_branch_reach": 0.828125,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.3984375,
+      "s9_swap_success": 0.234375
+    },
+    {
+      "model": "fly",
+      "seed": 405,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\diagnostic\\choice_s11_fly_1000_seed405.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\full\\full_s11_fly_1000_seed405.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\random\\random_s11_fly_1000_seed405.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_fly_1000_seed405.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 1.0,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 5,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 0.6640625,
+      "s9_branch_reach": 1.0,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.46875,
+      "s9_swap_success": 0.3125
+    },
+    {
+      "model": "rewired",
+      "seed": 401,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_rewired_1000_seed401.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_curriculum\\full_s11_rewired_1000_seed401.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\random\\random_s11_rewired_1000_seed401.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_rewired_1000_seed401.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 1.0,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 5,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 0.7578125,
+      "s9_branch_reach": 1.0,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.546875,
+      "s9_swap_success": 0.2890625
+    },
+    {
+      "model": "rewired",
+      "seed": 402,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_rewired_1000_seed402.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_curriculum\\full_s11_rewired_1000_seed402.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\random\\random_s11_rewired_1000_seed402.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_rewired_1000_seed402.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 1.0,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 10,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 0.640625,
+      "s9_branch_reach": 0.7578125,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.515625,
+      "s9_swap_success": 0.09375
+    },
+    {
+      "model": "rewired",
+      "seed": 403,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_rewired_1000_seed403.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_curriculum\\full_s11_rewired_1000_seed403.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\random\\random_s11_rewired_1000_seed403.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_rewired_1000_seed403.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 1.0,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 5,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 0.84375,
+      "s9_branch_reach": 0.9375,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.4375,
+      "s9_swap_success": 0.0625
+    },
+    {
+      "model": "rewired",
+      "seed": 404,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\diagnostic\\choice_s11_rewired_1000_seed404.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\full\\full_s11_rewired_1000_seed404.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\random\\random_s11_rewired_1000_seed404.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_rewired_1000_seed404.json"
+      },
+      "diagnostic_s11_accuracy": 0.48828125,
+      "full_s11_success": 0.515625,
+      "random_s11_success": 0.4921875,
+      "random_s11_swap_success": 0.453125,
+      "selected_length_epoch": 15,
+      "train_length_success": {
+        "7": 0.59375,
+        "11": 0.484375,
+        "13": 0.4375
+      },
+      "s9_success": 0.484375,
+      "s9_branch_reach": 1.0,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.484375,
+      "s9_swap_success": 0.484375
+    },
+    {
+      "model": "rewired",
+      "seed": 405,
+      "stage_paths": {
+        "diagnostic": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\diagnostic\\choice_s11_rewired_1000_seed405.json",
+        "full": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\full\\full_s11_rewired_1000_seed405.json",
+        "random": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\random\\random_s11_rewired_1000_seed405.json",
+        "length": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_matched_topology\\length\\mixed_s7_11_13_rewired_1000_seed405.json"
+      },
+      "diagnostic_s11_accuracy": 1.0,
+      "full_s11_success": 1.0,
+      "random_s11_success": 1.0,
+      "random_s11_swap_success": 0.0,
+      "selected_length_epoch": 5,
+      "train_length_success": {
+        "7": 1.0,
+        "11": 1.0,
+        "13": 1.0
+      },
+      "s9_success": 0.8046875,
+      "s9_branch_reach": 0.8046875,
+      "s9_cue_seen": 1.0,
+      "s9_mask_success": 0.5,
+      "s9_swap_success": 0.0
+    }
+  ],
+  "initialization_audit": [
+    {
+      "seed": 401,
+      "equal_trainable_initial_weights": true,
+      "different_topology": true,
+      "initial_parameter_sha256": "fa7918bdd6f2a60388ee61d4281525296bfa9c7e0c7efb5e1ace0ba22a431d2e",
+      "fly_topology_sha256": "c7ddb7a63cbfd75b81b0fb78826c6797343c058b825070b25b83c32a220d623a",
+      "rewired_topology_sha256": "6012dfefbc9bc268ccd2ed05d90d647cb5263dfddc53467932020cb83fc54315"
+    },
+    {
+      "seed": 402,
+      "equal_trainable_initial_weights": true,
+      "different_topology": true,
+      "initial_parameter_sha256": "1c1f47d15c8de46b7b4c464b9f455a26d0e1651cf0d67cacb0608d152c62714b",
+      "fly_topology_sha256": "c7ddb7a63cbfd75b81b0fb78826c6797343c058b825070b25b83c32a220d623a",
+      "rewired_topology_sha256": "6012dfefbc9bc268ccd2ed05d90d647cb5263dfddc53467932020cb83fc54315"
+    },
+    {
+      "seed": 403,
+      "equal_trainable_initial_weights": true,
+      "different_topology": true,
+      "initial_parameter_sha256": "d118c6f0a89e86c8696af268efa157d61ea9d6bf87360b4f8ce36c5f3d762ab0",
+      "fly_topology_sha256": "c7ddb7a63cbfd75b81b0fb78826c6797343c058b825070b25b83c32a220d623a",
+      "rewired_topology_sha256": "6012dfefbc9bc268ccd2ed05d90d647cb5263dfddc53467932020cb83fc54315"
+    },
+    {
+      "seed": 404,
+      "equal_trainable_initial_weights": true,
+      "different_topology": true,
+      "initial_parameter_sha256": "1981cf4c982997a6eb5aed4d5fd100b7d3076f89c049ac15c40ea0169c4f9511",
+      "fly_topology_sha256": "c7ddb7a63cbfd75b81b0fb78826c6797343c058b825070b25b83c32a220d623a",
+      "rewired_topology_sha256": "6012dfefbc9bc268ccd2ed05d90d647cb5263dfddc53467932020cb83fc54315"
+    },
+    {
+      "seed": 405,
+      "equal_trainable_initial_weights": true,
+      "different_topology": true,
+      "initial_parameter_sha256": "907a3b2bf0e2c16c2c09aa0cbf9178cc5eabb7c2ce25370d17ba89480f42820a",
+      "fly_topology_sha256": "c7ddb7a63cbfd75b81b0fb78826c6797343c058b825070b25b83c32a220d623a",
+      "rewired_topology_sha256": "6012dfefbc9bc268ccd2ed05d90d647cb5263dfddc53467932020cb83fc54315"
+    }
+  ],
+  "paired_s9": [
+    {
+      "seed": 401,
+      "fly_s9": 0.65625,
+      "rewired_s9": 0.7578125,
+      "fly_minus_rewired": -0.1015625
+    },
+    {
+      "seed": 402,
+      "fly_s9": 0.765625,
+      "rewired_s9": 0.640625,
+      "fly_minus_rewired": 0.125
+    },
+    {
+      "seed": 403,
+      "fly_s9": 1.0,
+      "rewired_s9": 0.84375,
+      "fly_minus_rewired": 0.15625
+    },
+    {
+      "seed": 404,
+      "fly_s9": 0.5625,
+      "rewired_s9": 0.484375,
+      "fly_minus_rewired": 0.078125
+    },
+    {
+      "seed": 405,
+      "fly_s9": 0.6640625,
+      "rewired_s9": 0.8046875,
+      "fly_minus_rewired": -0.140625
+    }
+  ],
+  "fly_mean_s9": 0.7296875,
+  "rewired_mean_s9": 0.70625,
+  "mean_paired_difference": 0.0234375
+}

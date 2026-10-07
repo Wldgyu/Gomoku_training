@@ -1,0 +1,106 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "episodes": 512,
+  "label_distribution": [
+    266,
+    246
+  ],
+  "rows": [
+    {
+      "model": "fly",
+      "seed": 401,
+      "normal": 1.0,
+      "masked": 0.51953125,
+      "branch_state_reset": 0.48046875,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "fly",
+      "seed": 402,
+      "normal": 0.51953125,
+      "masked": 0.51953125,
+      "branch_state_reset": 0.48046875,
+      "swapped_cue": 0.51953125
+    },
+    {
+      "model": "fly",
+      "seed": 403,
+      "normal": 1.0,
+      "masked": 0.4921875,
+      "branch_state_reset": 0.48046875,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "rewired",
+      "seed": 401,
+      "normal": 1.0,
+      "masked": 0.48046875,
+      "branch_state_reset": 0.51953125,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "rewired",
+      "seed": 402,
+      "normal": 1.0,
+      "masked": 0.51953125,
+      "branch_state_reset": 0.48046875,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "rewired",
+      "seed": 403,
+      "normal": 1.0,
+      "masked": 0.48046875,
+      "branch_state_reset": 0.48046875,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "rnn",
+      "seed": 401,
+      "normal": 1.0,
+      "masked": 0.51953125,
+      "branch_state_reset": 0.51953125,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "rnn",
+      "seed": 402,
+      "normal": 1.0,
+      "masked": 0.4921875,
+      "branch_state_reset": 0.51953125,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "rnn",
+      "seed": 403,
+      "normal": 1.0,
+      "masked": 0.4921875,
+      "branch_state_reset": 0.51953125,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "gru",
+      "seed": 401,
+      "normal": 1.0,
+      "masked": 0.48046875,
+      "branch_state_reset": 0.48046875,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "gru",
+      "seed": 402,
+      "normal": 1.0,
+      "masked": 0.48046875,
+      "branch_state_reset": 0.51953125,
+      "swapped_cue": 0.0
+    },
+    {
+      "model": "gru",
+      "seed": 403,
+      "normal": 1.0,
+      "masked": 0.48046875,
+      "branch_state_reset": 0.48046875,
+      "swapped_cue": 0.0
+    }
+  ]
+}

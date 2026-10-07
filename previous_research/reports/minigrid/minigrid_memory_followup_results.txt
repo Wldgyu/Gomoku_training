@@ -1,0 +1,118 @@
+MiniGrid Memory 후속 진단·전체 이동 결과
+작성일: 2026-10-02
+
+핵심 결론
+
+1. 고정된 S11 복도에서 마지막 좌·우 선택만 학습시키면, 첫 물체를
+   상태에 저장해 사용하는 모델을 얻을 수 있다. Fly 실제 연결은 3시드
+   중 2개, 재배선 Fly·RNN·GRU는 각각 3개 시드에서 이 기준을 만족했다.
+2. 전체 이동을 자율 선택하는 정책으로 확장해도 S11에서 기억 사용을
+   확인했다. 다만 실제 Fly는 학습 안정성이 낮았고, PPO 추가 학습도
+   일부 시드의 성능을 떨어뜨렸다.
+3. S11에서 학습한 정책의 S7·S13 무재학습 전이는 불안정하다.
+   현재 결과는 훈련한 복도 길이에서의 기억 사용 증거이지 복도 길이
+   일반화나 실제 연결 구조의 우위를 뜻하지 않는다. 오목은 실행하지 않았다.
+
+1단계: 이동과 기억 선택 분리
+
+- 환경: MiniGrid-MemoryS11-v0, 시작 위치를 첫 단서 옆에 고정.
+- 모델 입력: 기존 파일럿과 같은 7×7 부분관측 image와 direction.
+  정답 물체, 전역 좌표, 성공 위치는 입력하지 않았다.
+- 복도에서는 환경의 forward 행동 8번을 정해진 경로로 적용하고,
+  분기점에서 모델이 left/right를 선택한다. 선택한 행동과 다음
+  forward를 실제 환경에 적용해 정답 라벨이 성공 보상과 일치함을
+  확인했다. 출발 단서가 Ball/Key이고 끝의 위·아래 물체 순서는
+  독립적으로 변하므로 마지막 장면만으로 정답을 고를 수 없다.
+- 훈련 시에만 첫 물체 종류에 대한 보조 지도 신호를 중간 시점에
+  제공했다. 최종 선택도 환경의 성공 위치로 만든 지도 라벨이다.
+  모델 출력 평가는 보조 라벨 없이 새 에피소드에서 수행했다.
+- 1,000개 뉴런 기준 실제/재배선 Fly·RNN·GRU, 시드 401~403.
+  각 실행의 학습 에피소드 1,024개, 독립 평가 512개. GRU 시드
+  401은 40 epoch, 나머지는 120 epoch로 종료했다. 따라서 수렴
+  속도의 공정한 모델 간 비교 자료로 쓰지 않는다.
+
+2단계: 기억 사용 대조
+
+512개 새 평가 에피소드의 정답 분포는 위 266개/아래 246개였다.
+아래 수치는 정상 단서 정확도(시드 401/402/403)다.
+
+  실제 Fly       100.0 / 52.0 / 100.0%
+  재배선 Fly     100.0 / 100.0 / 100.0%
+  RNN            100.0 / 100.0 / 100.0%
+  GRU            100.0 / 100.0 / 100.0%
+
+정상 정확도 100%인 11개 실행은 모두 출발 단서를 제거하거나 마지막
+선택 직전에 순환 상태를 초기화하면 약 48~52%가 됐다. 관측에 표시한
+출발 물체의 종류만 반대로 교체하고 실제 환경의 정답과 보상은 유지하자
+11개 실행 모두 정확도가 0%가 됐다. 즉 선택 방향이 단서에 따라
+뒤집혔다. Fly 시드 402는 정상/단서 제거 정확도가 모두 52.0%여서
+기억 학습 실패로 판단한다. 자세한 시드별 값은
+data/minigrid_diagnostic/s11_heldout_ablation_1000.json에 있다.
+
+3단계: 자율 이동 정책과 PPO
+
+- 진단 체크포인트에서 시작해, 1,024개 새로운 훈련 에피소드의
+  성공 경로를 지도학습했다. 경로를 만드는 데 환경 정답을 쓰지만,
+  모델은 부분관측 이미지·방향만 받는다. 평가에서는 교사 없이
+  left/right/forward 세 행동을 스스로 선택한다.
+- 30 epoch 후 새 에피소드 128개에서 GRU·RNN·재배선 Fly는 모두
+  3시드 성공률 100%였다. 실제 Fly는 401/402가 51.6%, 403이
+  100%였다. 정상 성공률 100%인 실행은 단서 제거 시 약 48~52%로
+  떨어졌고 분기점 도달률은 유지됐다.
+- 성공한 10개 체크포인트를 원래 성공 보상의 recurrent PPO로
+  추가 10,240 환경 스텝 학습했다. 처음의 학습률 0.0003 설정은
+  GRU 401의 새 평가 성공률을 100%에서 71.9%로 떨어뜨렸다.
+  탐색적으로 학습률 0.00003, 엔트로피 보너스 0.001로 바꾸어
+  10개 실행을 다시 수행했다. 아래는 그 최종 체크포인트를 별도
+  256개 새 에피소드에서 평가한 성공률이다. 훈련 환경은 S11이다.
+
+  모델          정상 성공률(시드별)       단서 제거(시드별)
+  실제 Fly      403: 100.0%              44.9%
+  재배선 Fly    401/402/403: 75.8/100/100%  53.5/46.5/46.5%
+  RNN           401/402/403: 100/77.7/100% 46.5/46.5/53.5%
+  GRU           401/402/403: 100/100/100%  55.1/46.5/55.1%
+
+모두 분기점에는 100% 도달했다. 정상 성공률 100%인 8개 실행은
+출발 물체를 반대로 교체하면 성공률 0%가 됐다. 재배선 Fly 401과
+RNN 402는 정상 성공률이 각각 75.8%, 77.7%이며 교체 후 22.7%,
+30.9%였다. 자세한 값은
+data/minigrid_curriculum/ppo_low_lr/heldout_ablation.json에 있다.
+
+실제 Fly 401에서 진단 순환부를 고정하고 출력층만 학습하는 시도도
+했다. 중간 검증 성공률은 81.3%까지 올랐지만 최종 새 평가에서
+성공률 53.9%, 분기점 도달률 53.9%로 불안정했다. 이 탐색은
+안정적인 개선으로 채택하지 않는다.
+
+길이 전이와 해석 범위
+
+위 10개 PPO 체크포인트를 재학습 없이 S7·S13으로 옮겨 각각
+64개 에피소드에서 평가했다. 정상 성공률의 10개 실행 평균은
+S7 42.3%, S13 43.8%였다. 정상과 단서 제거 성공률 차이가
+20%p 이상인 실행은 각각 4/10, 3/10개였다. 일부는 분기점에도
+도달하지 못했다. 이는 S11에서 배운 이동 및 기억 정책이 다른
+복도 길이에 안정적으로 전이되지 않음을 보여준다. 원자료는
+data/minigrid_curriculum/ppo_low_lr/length_generalization.json에 있다.
+
+주의: 지도학습으로 정답과 성공 경로를 제공한 이 후속 절차는
+기존 10,240스텝 보상 전용 PPO 파일럿과 직접 비교할 수 없다.
+3개 시드의 탐색 결과이고, 사후에 학습률을 조정했다. 실제 연결
+구조의 우위, 일반적인 기억 능력 순위, 원래의 무작위 시작 위치
+분포에 대한 성능을 주장하지 않는다. 2,000개 뉴런 조건은 아직
+이 후속 절차로 실행하지 않았다.
+
+재실행과 근거 파일
+
+  .\.venv\Scripts\python.exe -m unittest -v test_minigrid_memory_pilot.py test_minigrid_memory_stages.py
+  .\.venv\Scripts\python.exe minigrid_memory_diagnostic.py --model gru --neurons 1000 --size 11 --seed 401 --train-episodes 1024 --eval-episodes 256 --epochs 40 --learning-rate 0.0003
+  .\.venv\Scripts\python.exe evaluate_minigrid_memory_diagnostic.py --size 11 --neurons 1000 --episodes 512
+  .\.venv\Scripts\python.exe minigrid_full_policy_curriculum.py --model gru --neurons 1000 --size 11 --seed 401 --train-episodes 1024 --eval-episodes 128 --epochs 30
+  .\.venv\Scripts\python.exe minigrid_memory_pilot.py --model gru --neurons 1000 --size 11 --seed 401 --steps 10240 --eval-episodes 128 --learning-rate 0.00003 --entropy-bonus 0.001 --init-checkpoint data/minigrid_curriculum/full_s11_gru_1000_seed401.pt --output-dir data/minigrid_curriculum/ppo_low_lr
+  .\.venv\Scripts\python.exe evaluate_minigrid_full_policy.py --episodes 256
+  .\.venv\Scripts\python.exe evaluate_minigrid_curriculum_lengths.py --episodes 64
+
+코드: minigrid_memory_diagnostic.py,
+      minigrid_full_policy_curriculum.py,
+      minigrid_memory_pilot.py,
+      evaluate_minigrid_memory_diagnostic.py,
+      evaluate_minigrid_full_policy.py,
+      evaluate_minigrid_curriculum_lengths.py.

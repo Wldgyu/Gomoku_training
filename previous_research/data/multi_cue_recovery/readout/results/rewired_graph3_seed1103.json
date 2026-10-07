@@ -1,0 +1,89 @@
+{
+  "kind": "rewired",
+  "seed": 1103,
+  "graph": 3,
+  "run": "rewired_graph3_seed1103",
+  "original": {
+    "accuracy": 0.66064453125,
+    "by_slot": {
+      "0": {
+        "accuracy": 0.6579077839851379,
+        "count": 2017
+      },
+      "1": {
+        "accuracy": 0.6632996797561646,
+        "count": 2079
+      }
+    },
+    "changed_query_accuracy": 0.663330078125,
+    "both_queries_correct": 0.323974609375,
+    "prediction_changes_when_kinds_differ": 0.00036101083969697356
+  },
+  "heads": {
+    "relu_state": {
+      "accuracy": 0.6728515625,
+      "by_slot": {
+        "0": {
+          "accuracy": 0.7055032253265381,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 0.6411736607551575,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 0.6513671875,
+      "both_queries_correct": 0.40087890625,
+      "prediction_changes_when_kinds_differ": 0.227436825633049
+    },
+    "leaky_state": {
+      "accuracy": 0.662841796875,
+      "by_slot": {
+        "0": {
+          "accuracy": 0.6841844320297241,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 0.6421356201171875,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 0.649169921875,
+      "both_queries_correct": 0.388427734375,
+      "prediction_changes_when_kinds_differ": 0.20866425335407257
+    },
+    "relu_query": {
+      "accuracy": 0.658447265625,
+      "by_slot": {
+        "0": {
+          "accuracy": 0.680713951587677,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 0.6368446350097656,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 0.674072265625,
+      "both_queries_correct": 0.4111328125,
+      "prediction_changes_when_kinds_differ": 0.24548736214637756
+    },
+    "leaky_query": {
+      "accuracy": 0.666015625,
+      "by_slot": {
+        "0": {
+          "accuracy": 0.6866633892059326,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 0.6459836363792419,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 0.65673828125,
+      "both_queries_correct": 0.399658203125,
+      "prediction_changes_when_kinds_differ": 0.22599278390407562
+    }
+  },
+  "selected_variant": "relu_state"
+}

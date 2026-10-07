@@ -1,0 +1,116 @@
+{
+ "stage": "final",
+ "kind": "gru",
+ "variant": "aux",
+ "seed": 3104,
+ "cues": 4,
+ "delay": 8,
+ "distractors": 2,
+ "updates": 8000,
+ "name": "cues4_delay8_distract2_gru_aux_seed3104",
+ "hidden": 252,
+ "parameters": 236147,
+ "learning_rate": 0.01,
+ "final_validation": 1.0,
+ "test": {
+  "accuracy": 1.0,
+  "by_slot": {
+   "0": 1.0,
+   "1": 1.0,
+   "2": 1.0,
+   "3": 1.0
+  },
+  "distractor_reused_color": {
+   "False": 1.0,
+   "True": 1.0
+  }
+ },
+ "curve": [
+  {
+   "update": 0,
+   "validation": 0.33984375
+  },
+  {
+   "update": 500,
+   "loss": 0.00017477954679634422,
+   "validation": 1.0
+  },
+  {
+   "update": 1000,
+   "loss": 6.715847121085972e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 1500,
+   "loss": 3.9165024645626545e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 2000,
+   "loss": 2.8176007617730647e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 2500,
+   "loss": 2.2448337404057384e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 3000,
+   "loss": 1.6275893358397298e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 3500,
+   "loss": 1.0488710358913522e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 4000,
+   "loss": 7.488923984055873e-06,
+   "validation": 1.0
+  },
+  {
+   "update": 4500,
+   "loss": 5.476562819239916e-06,
+   "validation": 1.0
+  },
+  {
+   "update": 5000,
+   "loss": 3.269631861257949e-06,
+   "validation": 1.0
+  },
+  {
+   "update": 5500,
+   "loss": 2.20746323975618e-06,
+   "validation": 1.0
+  },
+  {
+   "update": 6000,
+   "loss": 1.4724192851645057e-06,
+   "validation": 1.0
+  },
+  {
+   "update": 6500,
+   "loss": 1.0735814157669665e-06,
+   "validation": 1.0
+  },
+  {
+   "update": 7000,
+   "loss": 8.181664838957659e-07,
+   "validation": 1.0
+  },
+  {
+   "update": 7500,
+   "loss": 0.14842410385608673,
+   "validation": 0.9775390625
+  },
+  {
+   "update": 8000,
+   "loss": 0.0002551935031078756,
+   "validation": 1.0
+  }
+ ],
+ "to90": 500,
+ "seconds": 114.09049699999923
+}

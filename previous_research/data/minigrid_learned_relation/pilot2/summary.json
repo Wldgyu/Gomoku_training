@@ -1,0 +1,184 @@
+{
+  "method": "frozen visual detector, learned recurrent cue memory and MLP comparison",
+  "train_sizes": [
+    7,
+    11,
+    13
+  ],
+  "heldout_sizes": [
+    9,
+    15,
+    19
+  ],
+  "train_base_per_size": 128,
+  "validation_base_per_size": 32,
+  "final_base_per_size": 64,
+  "detector_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_compositional\\compositional_rnn_seed401_detector501.pt",
+  "seeds": [
+    601
+  ],
+  "models": [
+    "rnn"
+  ],
+  "epochs": 12,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "duration_seconds": 19.74044520000001,
+  "runs": [
+    {
+      "kind": "rnn",
+      "seed": 601,
+      "parameters": 88316,
+      "hidden": 294,
+      "best_epoch": 11,
+      "validation": {
+        "episodes": 384,
+        "turn_accuracy": 0.5572916865348816,
+        "all_four_success": 0.0625,
+        "cue_accuracy": 0.53125
+      },
+      "heldout": {
+        "9": {
+          "episodes": 256,
+          "turn_accuracy": 0.5390625,
+          "all_four_success": 0.0,
+          "cue_accuracy": 0.578125
+        },
+        "15": {
+          "episodes": 256,
+          "turn_accuracy": 0.5,
+          "all_four_success": 0.0,
+          "cue_accuracy": 0.5
+        },
+        "19": {
+          "episodes": 256,
+          "turn_accuracy": 0.5,
+          "all_four_success": 0.0,
+          "cue_accuracy": 0.5
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.8712785045305887,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 1.0
+          }
+        },
+        {
+          "epoch": 2,
+          "loss": 0.8071635961532593,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.6822916865348816
+          }
+        },
+        {
+          "epoch": 3,
+          "loss": 0.8024772653977076,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.9791666865348816
+          }
+        },
+        {
+          "epoch": 4,
+          "loss": 0.7599057058493296,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.7265625,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.984375
+          }
+        },
+        {
+          "epoch": 5,
+          "loss": 0.7522163639465967,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.9791666865348816
+          }
+        },
+        {
+          "epoch": 6,
+          "loss": 0.9182943105697632,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.5
+          }
+        },
+        {
+          "epoch": 7,
+          "loss": 0.9033819685379664,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.4791666567325592
+          }
+        },
+        {
+          "epoch": 8,
+          "loss": 0.8943097839752833,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.5
+          }
+        },
+        {
+          "epoch": 9,
+          "loss": 0.8942283143599828,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.46875
+          }
+        },
+        {
+          "epoch": 10,
+          "loss": 0.8879047135512034,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.515625,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.5833333134651184
+          }
+        },
+        {
+          "epoch": 11,
+          "loss": 0.8868525922298431,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.5572916865348816,
+            "all_four_success": 0.0625,
+            "cue_accuracy": 0.53125
+          }
+        },
+        {
+          "epoch": 12,
+          "loss": 0.8831310570240021,
+          "validation": {
+            "episodes": 384,
+            "turn_accuracy": 0.515625,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.53125
+          }
+        }
+      ]
+    }
+  ]
+}

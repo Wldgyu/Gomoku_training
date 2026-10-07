@@ -1,0 +1,474 @@
+{
+  "runs": [
+    {
+      "kind": "fly",
+      "seed": 4601,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 649,
+          "correct": 553,
+          "accuracy": 0.8520801232665639
+        },
+        "create_fork": {
+          "positions": 27,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "prevent_fork": {
+          "positions": 693,
+          "correct": 543,
+          "accuracy": 0.7835497835497836
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 96,
+        "already_multiple_winning_cells": 160,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 118,
+        "other_or_no_prevention_label": 42
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4601,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 733,
+          "correct": 598,
+          "accuracy": 0.8158253751705321
+        },
+        "create_fork": {
+          "positions": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "prevent_fork": {
+          "positions": 710,
+          "correct": 612,
+          "accuracy": 0.8619718309859155
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 135,
+        "already_multiple_winning_cells": 121,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 83,
+        "other_or_no_prevention_label": 38
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4601,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 690,
+          "correct": 573,
+          "accuracy": 0.8304347826086956
+        },
+        "create_fork": {
+          "positions": 4,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "prevent_fork": {
+          "positions": 706,
+          "correct": 603,
+          "accuracy": 0.8541076487252125
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 117,
+        "already_multiple_winning_cells": 139,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 93,
+        "other_or_no_prevention_label": 46
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4601,
+      "games": 256,
+      "wins": 2,
+      "losses": 253,
+      "draws": 1,
+      "tactical_decisions": {
+        "win": {
+          "positions": 3,
+          "correct": 2,
+          "accuracy": 0.6666666666666666
+        },
+        "block": {
+          "positions": 685,
+          "correct": 576,
+          "accuracy": 0.8408759124087591
+        },
+        "create_fork": {
+          "positions": 3,
+          "correct": 3,
+          "accuracy": 1.0
+        },
+        "prevent_fork": {
+          "positions": 690,
+          "correct": 577,
+          "accuracy": 0.836231884057971
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 109,
+        "already_multiple_winning_cells": 144,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 102,
+        "other_or_no_prevention_label": 42
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4602,
+      "games": 256,
+      "wins": 1,
+      "losses": 255,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 1,
+          "correct": 1,
+          "accuracy": 1.0
+        },
+        "block": {
+          "positions": 779,
+          "correct": 647,
+          "accuracy": 0.8305519897304237
+        },
+        "create_fork": {
+          "positions": 5,
+          "correct": 1,
+          "accuracy": 0.2
+        },
+        "prevent_fork": {
+          "positions": 756,
+          "correct": 675,
+          "accuracy": 0.8928571428571429
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 132,
+        "already_multiple_winning_cells": 123,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 76,
+        "other_or_no_prevention_label": 47
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4602,
+      "games": 256,
+      "wins": 3,
+      "losses": 253,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 3,
+          "correct": 3,
+          "accuracy": 1.0
+        },
+        "block": {
+          "positions": 590,
+          "correct": 460,
+          "accuracy": 0.7796610169491526
+        },
+        "create_fork": {
+          "positions": 4,
+          "correct": 3,
+          "accuracy": 0.75
+        },
+        "prevent_fork": {
+          "positions": 625,
+          "correct": 533,
+          "accuracy": 0.8528
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 130,
+        "already_multiple_winning_cells": 123,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 84,
+        "other_or_no_prevention_label": 39
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4602,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 656,
+          "correct": 548,
+          "accuracy": 0.8353658536585366
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 683,
+          "correct": 586,
+          "accuracy": 0.8579795021961932
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 108,
+        "already_multiple_winning_cells": 148,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 97,
+        "other_or_no_prevention_label": 51
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4602,
+      "games": 256,
+      "wins": 1,
+      "losses": 255,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 3,
+          "correct": 1,
+          "accuracy": 0.3333333333333333
+        },
+        "block": {
+          "positions": 605,
+          "correct": 498,
+          "accuracy": 0.8231404958677686
+        },
+        "create_fork": {
+          "positions": 3,
+          "correct": 3,
+          "accuracy": 1.0
+        },
+        "prevent_fork": {
+          "positions": 684,
+          "correct": 576,
+          "accuracy": 0.8421052631578947
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 107,
+        "already_multiple_winning_cells": 148,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 90,
+        "other_or_no_prevention_label": 58
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4603,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "block": {
+          "positions": 787,
+          "correct": 681,
+          "accuracy": 0.8653113087674714
+        },
+        "create_fork": {
+          "positions": 1,
+          "correct": 1,
+          "accuracy": 1.0
+        },
+        "prevent_fork": {
+          "positions": 802,
+          "correct": 681,
+          "accuracy": 0.8491271820448878
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 106,
+        "already_multiple_winning_cells": 150,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 113,
+        "other_or_no_prevention_label": 37
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4603,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 821,
+          "correct": 709,
+          "accuracy": 0.8635809987819733
+        },
+        "create_fork": {
+          "positions": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "prevent_fork": {
+          "positions": 777,
+          "correct": 655,
+          "accuracy": 0.842985842985843
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 112,
+        "already_multiple_winning_cells": 144,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 114,
+        "other_or_no_prevention_label": 30
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4603,
+      "games": 256,
+      "wins": 1,
+      "losses": 255,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 1,
+          "correct": 1,
+          "accuracy": 1.0
+        },
+        "block": {
+          "positions": 741,
+          "correct": 626,
+          "accuracy": 0.844804318488529
+        },
+        "create_fork": {
+          "positions": 1,
+          "correct": 1,
+          "accuracy": 1.0
+        },
+        "prevent_fork": {
+          "positions": 823,
+          "correct": 729,
+          "accuracy": 0.8857837181044957
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 115,
+        "already_multiple_winning_cells": 140,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 85,
+        "other_or_no_prevention_label": 55
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4603,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 755,
+          "correct": 634,
+          "accuracy": 0.8397350993377484
+        },
+        "create_fork": {
+          "positions": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "prevent_fork": {
+          "positions": 752,
+          "correct": 631,
+          "accuracy": 0.839095744680851
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 121,
+        "already_multiple_winning_cells": 135,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 109,
+        "other_or_no_prevention_label": 26
+      }
+    }
+  ],
+  "same_primary_games_verified": true,
+  "interpretation": "Terminal cause is the position before the last learner move, not a proof of earliest strategic error."
+}

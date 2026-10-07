@@ -1,0 +1,750 @@
+{
+  "date": "2026-10-07",
+  "entries": [
+    {
+      "old": "previous_research/analyze_card_followup.py",
+      "new": "previous_research/code/analyze_card_followup.py",
+      "sha256_before": "8e9db8ff4bef3f2f3ac58a005e7087edde41c1044c316d0053f89f5b82929a19",
+      "sha256_after_move": "8e9db8ff4bef3f2f3ac58a005e7087edde41c1044c316d0053f89f5b82929a19",
+      "edited": true,
+      "sha256_after_repair": "032d41ad7a2afbec30fbdb41062f826e15c034c7a035a0987d956e9defa2cd35",
+      "original_source": "previous_research/manifests/source_before_layout/analyze_card_followup.py"
+    },
+    {
+      "old": "previous_research/analyze_minigrid_length_choice.py",
+      "new": "previous_research/code/analyze_minigrid_length_choice.py",
+      "sha256_before": "a895f2a7fa1ab7d0db9d6d768de7bafb8f3b97d73ece11545a64184ff70f984d",
+      "sha256_after_move": "a895f2a7fa1ab7d0db9d6d768de7bafb8f3b97d73ece11545a64184ff70f984d",
+      "edited": false
+    },
+    {
+      "old": "previous_research/build_subgraphs.py",
+      "new": "previous_research/code/build_subgraphs.py",
+      "sha256_before": "d31e1c44e460be58df6d76f1e8642fd4eb4848e820e17ff87bda5140324d6dd1",
+      "sha256_after_move": "d31e1c44e460be58df6d76f1e8642fd4eb4848e820e17ff87bda5140324d6dd1",
+      "edited": false
+    },
+    {
+      "old": "previous_research/card_followup_results.txt",
+      "new": "previous_research/reports/card_game/card_followup_results.txt",
+      "sha256_before": "e1894fea29c4344edf77409be72e153849bfaa9bb043c74eeddc8da376246ffa",
+      "sha256_after_move": "e1894fea29c4344edf77409be72e153849bfaa9bb043c74eeddc8da376246ffa",
+      "edited": false
+    },
+    {
+      "old": "previous_research/card_game_delay_stage2_report.txt",
+      "new": "previous_research/reports/card_game/card_game_delay_stage2_report.txt",
+      "sha256_before": "099d9ae319e3876bb0318c2734f3e08c676e3cf95a5b2ee50c6534041e621b18",
+      "sha256_after_move": "099d9ae319e3876bb0318c2734f3e08c676e3cf95a5b2ee50c6534041e621b18",
+      "edited": false
+    },
+    {
+      "old": "previous_research/card_game_pilot_report.txt",
+      "new": "previous_research/reports/card_game/card_game_pilot_report.txt",
+      "sha256_before": "2d2b876d471b1a1dc1bfdeb81c2d9c035685acc9ca9dbbb55b5a07df1aaad8b4",
+      "sha256_after_move": "2d2b876d471b1a1dc1bfdeb81c2d9c035685acc9ca9dbbb55b5a07df1aaad8b4",
+      "edited": false
+    },
+    {
+      "old": "previous_research/check_memory_checkpoint.py",
+      "new": "previous_research/code/check_memory_checkpoint.py",
+      "sha256_before": "71a503469a3bcc7eb6f8464149b4e736bfaedc7267d2e537de53a501c8ec386f",
+      "sha256_after_move": "71a503469a3bcc7eb6f8464149b4e736bfaedc7267d2e537de53a501c8ec386f",
+      "edited": false
+    },
+    {
+      "old": "previous_research/diagnose_aux_transfer.py",
+      "new": "previous_research/code/diagnose_aux_transfer.py",
+      "sha256_before": "029873bca48ef4c803ebd0cb1cd6a68462b2cebaeeeaf019d756f4f2aad037cb",
+      "sha256_after_move": "029873bca48ef4c803ebd0cb1cd6a68462b2cebaeeeaf019d756f4f2aad037cb",
+      "edited": false
+    },
+    {
+      "old": "previous_research/diagnose_card_rnn.py",
+      "new": "previous_research/code/diagnose_card_rnn.py",
+      "sha256_before": "6d425b670a0bd267319d294db36d2f541c15d96fa7a25f42d3c327ecde77e82c",
+      "sha256_after_move": "6d425b670a0bd267319d294db36d2f541c15d96fa7a25f42d3c327ecde77e82c",
+      "edited": true,
+      "sha256_after_repair": "7b8b88bdc5036f633d75ce08acf3b4fdc0b18e87b60ce0a0b1cdf5789b9b094e",
+      "original_source": "previous_research/manifests/source_before_layout/diagnose_card_rnn.py"
+    },
+    {
+      "old": "previous_research/diagnose_minigrid_s9.py",
+      "new": "previous_research/code/diagnose_minigrid_s9.py",
+      "sha256_before": "3e28f1a7f22f28b7facdbc5ddf13d4324068d9583a1a86fcd23e64e30d55694d",
+      "sha256_after_move": "3e28f1a7f22f28b7facdbc5ddf13d4324068d9583a1a86fcd23e64e30d55694d",
+      "edited": false
+    },
+    {
+      "old": "previous_research/diagnose_multi_cue.py",
+      "new": "previous_research/code/diagnose_multi_cue.py",
+      "sha256_before": "5c872e02f26aeeee7819a15dbe9af141a29c1cea7d0ecf71ece6fac9ab45ff26",
+      "sha256_after_move": "5c872e02f26aeeee7819a15dbe9af141a29c1cea7d0ecf71ece6fac9ab45ff26",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_card_delays.py",
+      "new": "previous_research/code/evaluate_card_delays.py",
+      "sha256_before": "90ea80080f53a0aba28e48adf0f7078034ed09edbef75b29cd25ba3fabd26313",
+      "sha256_after_move": "90ea80080f53a0aba28e48adf0f7078034ed09edbef75b29cd25ba3fabd26313",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_card_followup.py",
+      "new": "previous_research/code/evaluate_card_followup.py",
+      "sha256_before": "fa4c2c036049c40b0a90438d5ce0e1716bf4c0e6baa1b1e4186e8a02ec84e77b",
+      "sha256_after_move": "fa4c2c036049c40b0a90438d5ce0e1716bf4c0e6baa1b1e4186e8a02ec84e77b",
+      "edited": true,
+      "sha256_after_repair": "417d6ffac2a760a3929b32db1a6fe3df4081ba3c34d5ba6db91ec014dd561a9e",
+      "original_source": "previous_research/manifests/source_before_layout/evaluate_card_followup.py"
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_compositional.py",
+      "new": "previous_research/code/evaluate_minigrid_compositional.py",
+      "sha256_before": "847edf7c4b6dd91c48ad29639adb002fd41d76ecae145fc41ef981b834a6d374",
+      "sha256_after_move": "847edf7c4b6dd91c48ad29639adb002fd41d76ecae145fc41ef981b834a6d374",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_curriculum_lengths.py",
+      "new": "previous_research/code/evaluate_minigrid_curriculum_lengths.py",
+      "sha256_before": "c17fecb56766601dd13e53346b150acdc0bd6d89a1c0b78bb41b0b317f60bae5",
+      "sha256_after_move": "c17fecb56766601dd13e53346b150acdc0bd6d89a1c0b78bb41b0b317f60bae5",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_full_policy.py",
+      "new": "previous_research/code/evaluate_minigrid_full_policy.py",
+      "sha256_before": "815e48264b8cfda5aed9b654ac8d0fbb59e5a7b63e999e5b94c3f63987def107",
+      "sha256_after_move": "815e48264b8cfda5aed9b654ac8d0fbb59e5a7b63e999e5b94c3f63987def107",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_learned_relation.py",
+      "new": "previous_research/code/evaluate_minigrid_learned_relation.py",
+      "sha256_before": "5d70592a0af7602f34f9ca6f52821cadd33c9f3356162c3b8ba78ff25d5d2647",
+      "sha256_after_move": "5d70592a0af7602f34f9ca6f52821cadd33c9f3356162c3b8ba78ff25d5d2647",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_lengths.py",
+      "new": "previous_research/code/evaluate_minigrid_lengths.py",
+      "sha256_before": "0b7ca449d5dffe9cd767d24da5319e57ed12d925e4bdebd05c70526219fa0f8d",
+      "sha256_after_move": "0b7ca449d5dffe9cd767d24da5319e57ed12d925e4bdebd05c70526219fa0f8d",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_memory_diagnostic.py",
+      "new": "previous_research/code/evaluate_minigrid_memory_diagnostic.py",
+      "sha256_before": "b7e20d10bb489935c8f9051214c1ed4954502fad549b84e74d5b1c7cce0fbf17",
+      "sha256_after_move": "b7e20d10bb489935c8f9051214c1ed4954502fad549b84e74d5b1c7cce0fbf17",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_random_lengths.py",
+      "new": "previous_research/code/evaluate_minigrid_random_lengths.py",
+      "sha256_before": "0edfd22cce3f405b2ed386e4ee3260a159012c4272dda0faa177507f8f0814e5",
+      "sha256_after_move": "0edfd22cce3f405b2ed386e4ee3260a159012c4272dda0faa177507f8f0814e5",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_minigrid_random_start.py",
+      "new": "previous_research/code/evaluate_minigrid_random_start.py",
+      "sha256_before": "8b830243724c8fbbb2c0aee791f619135ace23487a51ba53cd2135207485ff24",
+      "sha256_after_move": "8b830243724c8fbbb2c0aee791f619135ace23487a51ba53cd2135207485ff24",
+      "edited": false
+    },
+    {
+      "old": "previous_research/evaluate_rnn_delay8.py",
+      "new": "previous_research/code/evaluate_rnn_delay8.py",
+      "sha256_before": "0cc6f4e0941876920ab2cd25b99c990d33e61e0bc3b45dc041cf02ed3d7d4617",
+      "sha256_after_move": "0cc6f4e0941876920ab2cd25b99c990d33e61e0bc3b45dc041cf02ed3d7d4617",
+      "edited": true,
+      "sha256_after_repair": "40ecd4bae99e10d0cc706efcd3a1f84caf0cbc10fffc9f18ff6f3f651ef28d63",
+      "original_source": "previous_research/manifests/source_before_layout/evaluate_rnn_delay8.py"
+    },
+    {
+      "old": "previous_research/evaluate_rnn_recovery.py",
+      "new": "previous_research/code/evaluate_rnn_recovery.py",
+      "sha256_before": "b3e18895537610100ef7bafef04ce59eca6c6d54c9eb1f2f1df222065911f881",
+      "sha256_after_move": "b3e18895537610100ef7bafef04ce59eca6c6d54c9eb1f2f1df222065911f881",
+      "edited": true,
+      "sha256_after_repair": "24ca00a5e0c36911ca6b0b07b9671094e838c1c51e792130f2fcd1a0721fdad2",
+      "original_source": "previous_research/manifests/source_before_layout/evaluate_rnn_recovery.py"
+    },
+    {
+      "old": "previous_research/grid_multi_cue.py",
+      "new": "previous_research/code/grid_multi_cue.py",
+      "sha256_before": "81e64878c4ab86f9a74e066e0843c9b441d093e428bf8329a4329f65614baa21",
+      "sha256_after_move": "81e64878c4ab86f9a74e066e0843c9b441d093e428bf8329a4329f65614baa21",
+      "edited": true,
+      "sha256_after_repair": "990ab81c14c8ea90b158fa55f1049e28ad5845605af63ce720e44b6bbac3316f",
+      "original_source": "previous_research/manifests/source_before_layout/grid_multi_cue.py"
+    },
+    {
+      "old": "previous_research/inspect_multi_cue_heads.py",
+      "new": "previous_research/code/inspect_multi_cue_heads.py",
+      "sha256_before": "abe4bcf1b1d7ad36242d39a569a2d487e979ea7bf19079613b0673a7cdcee2c4",
+      "sha256_after_move": "abe4bcf1b1d7ad36242d39a569a2d487e979ea7bf19079613b0673a7cdcee2c4",
+      "edited": false
+    },
+    {
+      "old": "previous_research/measure_rnn_initial_memory.py",
+      "new": "previous_research/code/measure_rnn_initial_memory.py",
+      "sha256_before": "8e6ac2c8259c150eccd3df0d628e8d57fb5145f40a428a6cb511e9515a24c8a4",
+      "sha256_after_move": "8e6ac2c8259c150eccd3df0d628e8d57fb5145f40a428a6cb511e9515a24c8a4",
+      "edited": true,
+      "sha256_after_repair": "b0180e63698d23b12ec68276aab4db4196feff0fd35a5fd1ba559c88b83fa826",
+      "original_source": "previous_research/manifests/source_before_layout/measure_rnn_initial_memory.py"
+    },
+    {
+      "old": "previous_research/minigrid_auxiliary_curriculum.py",
+      "new": "previous_research/code/minigrid_auxiliary_curriculum.py",
+      "sha256_before": "36ff25c96d24033aca4576ef73708c30f6bf3632073e378b6d42ac0d9f0c47f0",
+      "sha256_after_move": "36ff25c96d24033aca4576ef73708c30f6bf3632073e378b6d42ac0d9f0c47f0",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_compositional_policy.py",
+      "new": "previous_research/code/minigrid_compositional_policy.py",
+      "sha256_before": "f6da2a90b5b3313d6cbcb943ab0ae5cb8937e48b85d7c5f1f121684223f666f0",
+      "sha256_after_move": "f6da2a90b5b3313d6cbcb943ab0ae5cb8937e48b85d7c5f1f121684223f666f0",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_full_policy_curriculum.py",
+      "new": "previous_research/code/minigrid_full_policy_curriculum.py",
+      "sha256_before": "1a8b8e53daff5fa0959deb0bf267b2f9f04637a5fa921a5c4d8c478a72080402",
+      "sha256_after_move": "1a8b8e53daff5fa0959deb0bf267b2f9f04637a5fa921a5c4d8c478a72080402",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_learned_relation.py",
+      "new": "previous_research/code/minigrid_learned_relation.py",
+      "sha256_before": "9d5b26379091998940fc8545853e7cb696f679f6880aaeba53bd0444939da309",
+      "sha256_after_move": "9d5b26379091998940fc8545853e7cb696f679f6880aaeba53bd0444939da309",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_learned_relation_results.txt",
+      "new": "previous_research/reports/minigrid/minigrid_learned_relation_results.txt",
+      "sha256_before": "a35890b8c4d7f10051d214c8637fa3bfd167ff8d8a4add9551b9178cbae4540f",
+      "sha256_after_move": "a35890b8c4d7f10051d214c8637fa3bfd167ff8d8a4add9551b9178cbae4540f",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_length_curriculum.py",
+      "new": "previous_research/code/minigrid_length_curriculum.py",
+      "sha256_before": "d82824428e495fad77ca3b12783441f18c6f67d3dab6d4287f0cd0beab7e298c",
+      "sha256_after_move": "d82824428e495fad77ca3b12783441f18c6f67d3dab6d4287f0cd0beab7e298c",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_memory_diagnostic.py",
+      "new": "previous_research/code/minigrid_memory_diagnostic.py",
+      "sha256_before": "2635cc29c2f48b33d203dce7ce22557777ea3e90efd158049a0d7a2f56d03a22",
+      "sha256_after_move": "2635cc29c2f48b33d203dce7ce22557777ea3e90efd158049a0d7a2f56d03a22",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_memory_followup_results.txt",
+      "new": "previous_research/reports/minigrid/minigrid_memory_followup_results.txt",
+      "sha256_before": "143eaf86345be076ecf258836fbce22e1a3faaf0b406702990bab5f193ccefce",
+      "sha256_after_move": "143eaf86345be076ecf258836fbce22e1a3faaf0b406702990bab5f193ccefce",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_memory_pilot.py",
+      "new": "previous_research/code/minigrid_memory_pilot.py",
+      "sha256_before": "8026826cff289d4544cea1300cdbed51f15503155403bd89a3f0e9d3aae35698",
+      "sha256_after_move": "8026826cff289d4544cea1300cdbed51f15503155403bd89a3f0e9d3aae35698",
+      "edited": true,
+      "sha256_after_repair": "00ea5de0f781c38c11f7c3ac8db7655a0d9cf41ef9375736d9e28b7c2e593641",
+      "original_source": "previous_research/manifests/source_before_layout/minigrid_memory_pilot.py"
+    },
+    {
+      "old": "previous_research/minigrid_pilot_results.txt",
+      "new": "previous_research/reports/minigrid/minigrid_pilot_results.txt",
+      "sha256_before": "9b6f1863eb396a51235125be472a444f107ed12c288c96eab29026db6973241e",
+      "sha256_after_move": "9b6f1863eb396a51235125be472a444f107ed12c288c96eab29026db6973241e",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_random_start_curriculum.py",
+      "new": "previous_research/code/minigrid_random_start_curriculum.py",
+      "sha256_before": "a2bfe45f5e5e4a9189819fa4ec373a875e99ad732ee19a7a6bd4143739c87f34",
+      "sha256_after_move": "a2bfe45f5e5e4a9189819fa4ec373a875e99ad732ee19a7a6bd4143739c87f34",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_random_start_results.txt",
+      "new": "previous_research/reports/minigrid/minigrid_random_start_results.txt",
+      "sha256_before": "11b65c75337abd6b395c4da51f8bb28fa10b6f617f7c66ebd7e3f7ff0ef9599a",
+      "sha256_after_move": "11b65c75337abd6b395c4da51f8bb28fa10b6f617f7c66ebd7e3f7ff0ef9599a",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_recurrent_probe.py",
+      "new": "previous_research/code/minigrid_recurrent_probe.py",
+      "sha256_before": "cd4a9a4910ce43405060455a03f8bbf7a16f93ff2b4c8df6890526b9ecc508d4",
+      "sha256_after_move": "cd4a9a4910ce43405060455a03f8bbf7a16f93ff2b4c8df6890526b9ecc508d4",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_relation_curriculum.py",
+      "new": "previous_research/code/minigrid_relation_curriculum.py",
+      "sha256_before": "b94fe940d9c31291391caeb0aa799bb4cdaa1d9366df17cadb8a2fc6466e190e",
+      "sha256_after_move": "b94fe940d9c31291391caeb0aa799bb4cdaa1d9366df17cadb8a2fc6466e190e",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_relation_data.py",
+      "new": "previous_research/code/minigrid_relation_data.py",
+      "sha256_before": "ca0b49a9bf1bb0a54f035e59865e4c0ed8eef3dc2b4c07d7d88bee55ba1119b1",
+      "sha256_after_move": "ca0b49a9bf1bb0a54f035e59865e4c0ed8eef3dc2b4c07d7d88bee55ba1119b1",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_relation_followup.py",
+      "new": "previous_research/code/minigrid_relation_followup.py",
+      "sha256_before": "06725734e889379a1b6534b6dbe60345002b3c8cf972a4d04ca794f4b2078184",
+      "sha256_after_move": "06725734e889379a1b6534b6dbe60345002b3c8cf972a4d04ca794f4b2078184",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_relation_followup_results.txt",
+      "new": "previous_research/reports/minigrid/minigrid_relation_followup_results.txt",
+      "sha256_before": "901620444736f027342c2e0c899b7903d823412da891aede65a688fa79f44060",
+      "sha256_after_move": "901620444736f027342c2e0c899b7903d823412da891aede65a688fa79f44060",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_relation_generalization_results.txt",
+      "new": "previous_research/reports/minigrid/minigrid_relation_generalization_results.txt",
+      "sha256_before": "e9270826d1a8711af1dfb1d12ddc4e43c33343f057fd5b145b6e804a28c76ab1",
+      "sha256_after_move": "e9270826d1a8711af1dfb1d12ddc4e43c33343f057fd5b145b6e804a28c76ab1",
+      "edited": false
+    },
+    {
+      "old": "previous_research/minigrid_s9_three_step_results.txt",
+      "new": "previous_research/reports/minigrid/minigrid_s9_three_step_results.txt",
+      "sha256_before": "7eb37840d24ca96082e67c06e509187879c985e3071b1a5b8062ac7ea38c2b92",
+      "sha256_after_move": "7eb37840d24ca96082e67c06e509187879c985e3071b1a5b8062ac7ea38c2b92",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_audit_results.txt",
+      "new": "previous_research/reports/memory/multi_cue_audit_results.txt",
+      "sha256_before": "741d73648a3cf6fbb47db4d8ef25c7d59c6961cd93c88152e511bfbfae3252e7",
+      "sha256_after_move": "741d73648a3cf6fbb47db4d8ef25c7d59c6961cd93c88152e511bfbfae3252e7",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_aux_generalization_results.txt",
+      "new": "previous_research/reports/memory/multi_cue_aux_generalization_results.txt",
+      "sha256_before": "6d7adeacfc96573d4a6050a623764b607c23ba0e4a4a4f0c19d1d759e50b87fd",
+      "sha256_after_move": "6d7adeacfc96573d4a6050a623764b607c23ba0e4a4a4f0c19d1d759e50b87fd",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_aux_transfer.py",
+      "new": "previous_research/code/multi_cue_aux_transfer.py",
+      "sha256_before": "f635f03f9d06e1a0b999529854a69a523a4f628ab7dd4755e67abbb552b23346",
+      "sha256_after_move": "f635f03f9d06e1a0b999529854a69a523a4f628ab7dd4755e67abbb552b23346",
+      "edited": true,
+      "sha256_after_repair": "8abc4965017bd08315b901daf386c8b6cd146d800fff980778c373a11f1920be",
+      "original_source": "previous_research/manifests/source_before_layout/multi_cue_aux_transfer.py"
+    },
+    {
+      "old": "previous_research/multi_cue_binding.py",
+      "new": "previous_research/code/multi_cue_binding.py",
+      "sha256_before": "2ca2cb8c3b9d27b3e162dc96320c4def230b00e4d320262de0f5d006063f729f",
+      "sha256_after_move": "2ca2cb8c3b9d27b3e162dc96320c4def230b00e4d320262de0f5d006063f729f",
+      "edited": true,
+      "sha256_after_repair": "2df859ad5108a6f5e4f2adc81e87833d6c14a26137e9e73a4cb73c2d71febbc7",
+      "original_source": "previous_research/manifests/source_before_layout/multi_cue_binding.py"
+    },
+    {
+      "old": "previous_research/multi_cue_binding_results.txt",
+      "new": "previous_research/reports/memory/multi_cue_binding_results.txt",
+      "sha256_before": "92ae9a18378e1d4d2fa276e8eda6bb6d85129f878ff3f9ccccdbf58f35ef3787",
+      "sha256_after_move": "92ae9a18378e1d4d2fa276e8eda6bb6d85129f878ff3f9ccccdbf58f35ef3787",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_followup.py",
+      "new": "previous_research/code/multi_cue_followup.py",
+      "sha256_before": "e309473477d18702996c41428d92e4b9b45ca9ba40f815313d2e3d838bf43154",
+      "sha256_after_move": "e309473477d18702996c41428d92e4b9b45ca9ba40f815313d2e3d838bf43154",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_followup_results.txt",
+      "new": "previous_research/reports/memory/multi_cue_followup_results.txt",
+      "sha256_before": "dba56a78a70d5f9c77c3eea6bf398d40a4b925c34143593af2717b903da0f909",
+      "sha256_after_move": "dba56a78a70d5f9c77c3eea6bf398d40a4b925c34143593af2717b903da0f909",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_memory.py",
+      "new": "previous_research/code/multi_cue_memory.py",
+      "sha256_before": "d563fde6071db6bceadeda6780890671bcb8d5abb9ad21dee8dd32a3bf8c5b06",
+      "sha256_after_move": "d563fde6071db6bceadeda6780890671bcb8d5abb9ad21dee8dd32a3bf8c5b06",
+      "edited": true,
+      "sha256_after_repair": "17ec3795fea96aa4d07837191d658204a23519b5d57ece6e0ea12809690fe33b",
+      "original_source": "previous_research/manifests/source_before_layout/multi_cue_memory.py"
+    },
+    {
+      "old": "previous_research/multi_cue_observation_recovery.py",
+      "new": "previous_research/code/multi_cue_observation_recovery.py",
+      "sha256_before": "c134efca5428a84403b8672f3294d7b720fcc613022c4941a71e06e18c7a5813",
+      "sha256_after_move": "c134efca5428a84403b8672f3294d7b720fcc613022c4941a71e06e18c7a5813",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_order_holdout.py",
+      "new": "previous_research/code/multi_cue_order_holdout.py",
+      "sha256_before": "07e66b49662d20d86a21e637388d136c5bc5ab508749a78380edf044c94850fe",
+      "sha256_after_move": "07e66b49662d20d86a21e637388d136c5bc5ab508749a78380edf044c94850fe",
+      "edited": true,
+      "sha256_after_repair": "4aeac2563d77b170f3d7c043465ec26f6100a53a19a3bbcfcab0f87ca2fac6c1",
+      "original_source": "previous_research/manifests/source_before_layout/multi_cue_order_holdout.py"
+    },
+    {
+      "old": "previous_research/multi_cue_recovery.py",
+      "new": "previous_research/code/multi_cue_recovery.py",
+      "sha256_before": "f564d4499d696c5b064beabea823f2b53c4058dae8b01e2a21ac8a9a6ee37524",
+      "sha256_after_move": "f564d4499d696c5b064beabea823f2b53c4058dae8b01e2a21ac8a9a6ee37524",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_recovery_results.txt",
+      "new": "previous_research/reports/memory/multi_cue_recovery_results.txt",
+      "sha256_before": "4ce28d4248944fac7d13ff21fba6a87455a16b4d97170ce3a73eb0e75791870e",
+      "sha256_after_move": "4ce28d4248944fac7d13ff21fba6a87455a16b4d97170ce3a73eb0e75791870e",
+      "edited": false
+    },
+    {
+      "old": "previous_research/multi_cue_visual_aux.py",
+      "new": "previous_research/code/multi_cue_visual_aux.py",
+      "sha256_before": "10f90104ce3ae22682b39738bbb8ed7874c86b7ae35cd9549c3e0d496f0ffbf5",
+      "sha256_after_move": "10f90104ce3ae22682b39738bbb8ed7874c86b7ae35cd9549c3e0d496f0ffbf5",
+      "edited": true,
+      "sha256_after_repair": "467bb5b7ed5cae42a610ddd7b7bdbe2fcd0a5b139b1cc9cafe18ad64caba13b0",
+      "original_source": "previous_research/manifests/source_before_layout/multi_cue_visual_aux.py"
+    },
+    {
+      "old": "previous_research/multi_cue_visual_followup.py",
+      "new": "previous_research/code/multi_cue_visual_followup.py",
+      "sha256_before": "24b4f9860610e7caf620b80ec87b257006fff32b68e2c3e0e1479a841c74d41b",
+      "sha256_after_move": "24b4f9860610e7caf620b80ec87b257006fff32b68e2c3e0e1479a841c74d41b",
+      "edited": false
+    },
+    {
+      "old": "previous_research/pilot_card_game.py",
+      "new": "previous_research/code/pilot_card_game.py",
+      "sha256_before": "f77b94d139bcbb330c8bfbc24068ba6c9c63d64e756b021ea5e569d4172489b4",
+      "sha256_after_move": "f77b94d139bcbb330c8bfbc24068ba6c9c63d64e756b021ea5e569d4172489b4",
+      "edited": false
+    },
+    {
+      "old": "previous_research/probe_fly_memory.py",
+      "new": "previous_research/code/probe_fly_memory.py",
+      "sha256_before": "815167163e6f3edece4b8cb48a646508984b01c240a1ec2a339c4bd22e6b0958",
+      "sha256_after_move": "815167163e6f3edece4b8cb48a646508984b01c240a1ec2a339c4bd22e6b0958",
+      "edited": false
+    },
+    {
+      "old": "previous_research/probe_recovery_batch.py",
+      "new": "previous_research/code/probe_recovery_batch.py",
+      "sha256_before": "9a6b64aef61ce53dfceb5f16e8912080e76d6135e1f8e94d3657b31d7f05094d",
+      "sha256_after_move": "9a6b64aef61ce53dfceb5f16e8912080e76d6135e1f8e94d3657b31d7f05094d",
+      "edited": false
+    },
+    {
+      "old": "previous_research/project_config.py",
+      "new": "previous_research/code/project_config.py",
+      "sha256_before": "b0a2d9ab4794a51181b9f066adf9d910db2bf76b1e73a3c83418f5b81f96523a",
+      "sha256_after_move": "b0a2d9ab4794a51181b9f066adf9d910db2bf76b1e73a3c83418f5b81f96523a",
+      "edited": false
+    },
+    {
+      "old": "previous_research/refresh_order_holdout.py",
+      "new": "previous_research/code/refresh_order_holdout.py",
+      "sha256_before": "2d3ac827ae574e22b5fcee293e1f23eb388582e2a097823f31c778158cb4dc2d",
+      "sha256_after_move": "2d3ac827ae574e22b5fcee293e1f23eb388582e2a097823f31c778158cb4dc2d",
+      "edited": false
+    },
+    {
+      "old": "previous_research/refresh_visual_aux_results.py",
+      "new": "previous_research/code/refresh_visual_aux_results.py",
+      "sha256_before": "ce776a3fa52ad7f8500eea3d3f054230f3ffd723289efeec2127d47cd714f1d1",
+      "sha256_after_move": "ce776a3fa52ad7f8500eea3d3f054230f3ffd723289efeec2127d47cd714f1d1",
+      "edited": false
+    },
+    {
+      "old": "previous_research/relocation_manifest.json",
+      "new": "previous_research/manifests/relocation_manifest.json",
+      "sha256_before": "b935ba226cecf1ff29a4ba1588ab901bbc882dc96fb92aa44aca91a7ad7de007",
+      "sha256_after_move": "b935ba226cecf1ff29a4ba1588ab901bbc882dc96fb92aa44aca91a7ad7de007",
+      "edited": false
+    },
+    {
+      "old": "previous_research/requirements-minigrid.txt",
+      "new": "previous_research/requirements/requirements-minigrid.txt",
+      "sha256_before": "861bbbf15d93749da72f9f0067299419eba175f721f4b7fbb507c572f92a7091",
+      "sha256_after_move": "861bbbf15d93749da72f9f0067299419eba175f721f4b7fbb507c572f92a7091",
+      "edited": false
+    },
+    {
+      "old": "previous_research/requirements-phase0.txt",
+      "new": "previous_research/requirements/requirements-phase0.txt",
+      "sha256_before": "c6b07ca7ce2ec2a017dd5de571769c03c5392fef67a1aa5b665e031d87103df6",
+      "sha256_after_move": "c6b07ca7ce2ec2a017dd5de571769c03c5392fef67a1aa5b665e031d87103df6",
+      "edited": false
+    },
+    {
+      "old": "previous_research/rewire_subgraphs.py",
+      "new": "previous_research/code/rewire_subgraphs.py",
+      "sha256_before": "c8118dc8885353a75f45ff443f427f32e38e2098ff6c7c1e8037ec56bc7f83ad",
+      "sha256_after_move": "c8118dc8885353a75f45ff443f427f32e38e2098ff6c7c1e8037ec56bc7f83ad",
+      "edited": false
+    },
+    {
+      "old": "previous_research/rnn_recovery_results.txt",
+      "new": "previous_research/reports/card_game/rnn_recovery_results.txt",
+      "sha256_before": "e2366269444489a8dcf6b1fbd51f004912f29a1b83d113afe5476cdb538045ea",
+      "sha256_after_move": "e2366269444489a8dcf6b1fbd51f004912f29a1b83d113afe5476cdb538045ea",
+      "edited": false
+    },
+    {
+      "old": "previous_research/run_card_followup.py",
+      "new": "previous_research/code/run_card_followup.py",
+      "sha256_before": "47848fa5dffc429751cd5362ba20ba2e64006d4b081ac56dfe0b15069cf9df8e",
+      "sha256_after_move": "47848fa5dffc429751cd5362ba20ba2e64006d4b081ac56dfe0b15069cf9df8e",
+      "edited": true,
+      "sha256_after_repair": "24d38b3359667115fab63c8267bf0b6e8d976da7e2c4d889d339afabf2a2c406",
+      "original_source": "previous_research/manifests/source_before_layout/run_card_followup.py"
+    },
+    {
+      "old": "previous_research/run_minigrid_matrix.py",
+      "new": "previous_research/code/run_minigrid_matrix.py",
+      "sha256_before": "bc56f46db7efb4536f40fc439b090e59b51363313e1848f293a9c3fd372c6d69",
+      "sha256_after_move": "bc56f46db7efb4536f40fc439b090e59b51363313e1848f293a9c3fd372c6d69",
+      "edited": true,
+      "sha256_after_repair": "31c9247a0a42c092f2bd25558e61581b6b98105ef5d6114a2bcc8870009ff304",
+      "original_source": "previous_research/manifests/source_before_layout/run_minigrid_matrix.py"
+    },
+    {
+      "old": "previous_research/run_multi_cue_followup.py",
+      "new": "previous_research/code/run_multi_cue_followup.py",
+      "sha256_before": "d01502aab0a37c904cb5a408f532c5d50ed63a1a2d1eb3d4ddae363fa1489585",
+      "sha256_after_move": "d01502aab0a37c904cb5a408f532c5d50ed63a1a2d1eb3d4ddae363fa1489585",
+      "edited": true,
+      "sha256_after_repair": "2e0518f04311d15c93bc6c66a71d042469cce596b22900dd13e7c20cef017ae4",
+      "original_source": "previous_research/manifests/source_before_layout/run_multi_cue_followup.py"
+    },
+    {
+      "old": "previous_research/run_multi_cue_grid.ps1",
+      "new": "previous_research/code/run_multi_cue_grid.ps1",
+      "sha256_before": "b9dd1f0129bc37a83afcc3835c34d8287006dd7b4ad44bf3a1e87a7e95083020",
+      "sha256_after_move": "b9dd1f0129bc37a83afcc3835c34d8287006dd7b4ad44bf3a1e87a7e95083020",
+      "edited": true,
+      "sha256_after_repair": "fa2dd42df0bf6bbbcb3e6e9951eafd32b80174748f79d745dfd1d75450c3f35f",
+      "original_source": "previous_research/manifests/source_before_layout/run_multi_cue_grid.ps1"
+    },
+    {
+      "old": "previous_research/run_multi_cue_recovery.py",
+      "new": "previous_research/code/run_multi_cue_recovery.py",
+      "sha256_before": "318a8df58fa679109e3d03cd3f015cf48ef2b4a3569c0e8d804e45ce9e6187c4",
+      "sha256_after_move": "318a8df58fa679109e3d03cd3f015cf48ef2b4a3569c0e8d804e45ce9e6187c4",
+      "edited": true,
+      "sha256_after_repair": "3b4fe5b5c367312fa59147902d026c7ff559ab6018d577b19512adddc3d4b23e",
+      "original_source": "previous_research/manifests/source_before_layout/run_multi_cue_recovery.py"
+    },
+    {
+      "old": "previous_research/run_rnn_recovery.py",
+      "new": "previous_research/code/run_rnn_recovery.py",
+      "sha256_before": "cdb989f7adf9618e921e473c9f118bde5aeed4e618ceb08c5bd79e0b622887fb",
+      "sha256_after_move": "cdb989f7adf9618e921e473c9f118bde5aeed4e618ceb08c5bd79e0b622887fb",
+      "edited": true,
+      "sha256_after_repair": "78f6657c467cab250c5ccd971b64978fc1a542c80e72e12fa782764b0f97a8c6",
+      "original_source": "previous_research/manifests/source_before_layout/run_rnn_recovery.py"
+    },
+    {
+      "old": "previous_research/summarize_minigrid_matched.py",
+      "new": "previous_research/code/summarize_minigrid_matched.py",
+      "sha256_before": "e3a563c2c9470ec110fae459e418ed935b29012fec8f82cc5a10e3f85c820ffe",
+      "sha256_after_move": "e3a563c2c9470ec110fae459e418ed935b29012fec8f82cc5a10e3f85c820ffe",
+      "edited": false
+    },
+    {
+      "old": "previous_research/summarize_minigrid_matrix.py",
+      "new": "previous_research/code/summarize_minigrid_matrix.py",
+      "sha256_before": "4a746cde47fbc7ca6c58ad76bc65d5836b83b22325fda011442a669849d2f299",
+      "sha256_after_move": "4a746cde47fbc7ca6c58ad76bc65d5836b83b22325fda011442a669849d2f299",
+      "edited": false
+    },
+    {
+      "old": "previous_research/summarize_minigrid_relation_followup.py",
+      "new": "previous_research/code/summarize_minigrid_relation_followup.py",
+      "sha256_before": "e7a80d9e56685b2ecca05fde0f33f21cde811b2d9d5cfcf05d3a12d7624e2c1c",
+      "sha256_after_move": "e7a80d9e56685b2ecca05fde0f33f21cde811b2d9d5cfcf05d3a12d7624e2c1c",
+      "edited": true,
+      "sha256_after_repair": "fd28a67a1c3190cfe1644bd8df4453054235bafdb9775e58e7a5fef2abdab9cc",
+      "original_source": "previous_research/manifests/source_before_layout/summarize_minigrid_relation_followup.py"
+    },
+    {
+      "old": "previous_research/summarize_multi_cue_aux_transfer.py",
+      "new": "previous_research/code/summarize_multi_cue_aux_transfer.py",
+      "sha256_before": "368b0e61aa508021191dd80835f308597ebe5b6276e628438b3ec799c9ab5a0c",
+      "sha256_after_move": "368b0e61aa508021191dd80835f308597ebe5b6276e628438b3ec799c9ab5a0c",
+      "edited": true,
+      "sha256_after_repair": "16e752d03dde27485f5e8a865357eb3f87039918a8a829266f5b5d8b3d3b7fa4",
+      "original_source": "previous_research/manifests/source_before_layout/summarize_multi_cue_aux_transfer.py"
+    },
+    {
+      "old": "previous_research/summarize_multi_cue_binding.py",
+      "new": "previous_research/code/summarize_multi_cue_binding.py",
+      "sha256_before": "fc4fa9ad49d901e8924ff547eebc9ce1c8d4ff91588662d0fc45f10920d4ee68",
+      "sha256_after_move": "fc4fa9ad49d901e8924ff547eebc9ce1c8d4ff91588662d0fc45f10920d4ee68",
+      "edited": true,
+      "sha256_after_repair": "8218e630bed2497d3ab825065122ce167a0db0170f191c73486da592d2b40d62",
+      "original_source": "previous_research/manifests/source_before_layout/summarize_multi_cue_binding.py"
+    },
+    {
+      "old": "previous_research/summarize_multi_cue_followup.py",
+      "new": "previous_research/code/summarize_multi_cue_followup.py",
+      "sha256_before": "0d84accb3c94fb0b407048e87f6981f3cc40c86cb95e373ffc4435de4356c6ae",
+      "sha256_after_move": "0d84accb3c94fb0b407048e87f6981f3cc40c86cb95e373ffc4435de4356c6ae",
+      "edited": true,
+      "sha256_after_repair": "67bfd43e77b6d4b3ad8b504eaf7d106d07d2eb8e28ea49fb66736cff2d609862",
+      "original_source": "previous_research/manifests/source_before_layout/summarize_multi_cue_followup.py"
+    },
+    {
+      "old": "previous_research/summarize_multi_cue_recovery.py",
+      "new": "previous_research/code/summarize_multi_cue_recovery.py",
+      "sha256_before": "dae489776d00f5fcfe1eff7bece2c30127dfce92261d3527e2e150edbb5d8ca4",
+      "sha256_after_move": "dae489776d00f5fcfe1eff7bece2c30127dfce92261d3527e2e150edbb5d8ca4",
+      "edited": true,
+      "sha256_after_repair": "08ad0445cb25f042048deaeb782b276a7c7c336161dd0579c601db18ed0ebfa6",
+      "original_source": "previous_research/manifests/source_before_layout/summarize_multi_cue_recovery.py"
+    },
+    {
+      "old": "previous_research/test_grid_multi_cue.py",
+      "new": "previous_research/code/test_grid_multi_cue.py",
+      "sha256_before": "40975fb2c53a26b690a2cfbf8bccfdca929156e8dcb0d4c3948b75d78439ba66",
+      "sha256_after_move": "40975fb2c53a26b690a2cfbf8bccfdca929156e8dcb0d4c3948b75d78439ba66",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_minigrid_learned_relation.py",
+      "new": "previous_research/code/test_minigrid_learned_relation.py",
+      "sha256_before": "c625d6ad1674804206663ef2573c7a0a029b2241c79d13b83a65ce008d3af2d1",
+      "sha256_after_move": "c625d6ad1674804206663ef2573c7a0a029b2241c79d13b83a65ce008d3af2d1",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_minigrid_memory_pilot.py",
+      "new": "previous_research/code/test_minigrid_memory_pilot.py",
+      "sha256_before": "bf54c09a8ba34c850ef7021f7948f706faa08bd27a546d7f6c495943914c1e3c",
+      "sha256_after_move": "bf54c09a8ba34c850ef7021f7948f706faa08bd27a546d7f6c495943914c1e3c",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_minigrid_memory_stages.py",
+      "new": "previous_research/code/test_minigrid_memory_stages.py",
+      "sha256_before": "5ab2e4e46ca454c323118f3d2645292d9e2d592c23136c6883b4c060a5cdbb01",
+      "sha256_after_move": "5ab2e4e46ca454c323118f3d2645292d9e2d592c23136c6883b4c060a5cdbb01",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_minigrid_relation_data.py",
+      "new": "previous_research/code/test_minigrid_relation_data.py",
+      "sha256_before": "c5dd22e256f39b5e35d2cc0cf5713860be32ac02803787b1c725cd4bcd21cdaa",
+      "sha256_after_move": "c5dd22e256f39b5e35d2cc0cf5713860be32ac02803787b1c725cd4bcd21cdaa",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_multi_cue_binding.py",
+      "new": "previous_research/code/test_multi_cue_binding.py",
+      "sha256_before": "6acb62d999813736c4beecd088085022ab0d37bfdf6dea79454d8338f4a43772",
+      "sha256_after_move": "6acb62d999813736c4beecd088085022ab0d37bfdf6dea79454d8338f4a43772",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_multi_cue_followup.py",
+      "new": "previous_research/code/test_multi_cue_followup.py",
+      "sha256_before": "01f203ffc681d62619edcfd24d9ffa2a2c3161e377aa4a3f285f31c72c916345",
+      "sha256_after_move": "01f203ffc681d62619edcfd24d9ffa2a2c3161e377aa4a3f285f31c72c916345",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_multi_cue_memory.py",
+      "new": "previous_research/code/test_multi_cue_memory.py",
+      "sha256_before": "e9cae9a1cdde6e7b1f79737a11d154f126425a846474bb5fbc126e55923cae4f",
+      "sha256_after_move": "e9cae9a1cdde6e7b1f79737a11d154f126425a846474bb5fbc126e55923cae4f",
+      "edited": false
+    },
+    {
+      "old": "previous_research/test_multi_cue_recovery.py",
+      "new": "previous_research/code/test_multi_cue_recovery.py",
+      "sha256_before": "ae4a735d60c4cdb8e7ff086d2e7f5b6e495033397be51f5dea291e24e0393f8a",
+      "sha256_after_move": "ae4a735d60c4cdb8e7ff086d2e7f5b6e495033397be51f5dea291e24e0393f8a",
+      "edited": false
+    },
+    {
+      "old": "previous_research/train_memory_sanity.py",
+      "new": "previous_research/code/train_memory_sanity.py",
+      "sha256_before": "03467c47f5f354e35198c012828deb08466eee5c16e9b70fd96582e3b9d23358",
+      "sha256_after_move": "03467c47f5f354e35198c012828deb08466eee5c16e9b70fd96582e3b9d23358",
+      "edited": false
+    },
+    {
+      "old": "previous_research/tune_multi_cue.py",
+      "new": "previous_research/code/tune_multi_cue.py",
+      "sha256_before": "75ee592c177e997202d800f1620dcf036d55b6100e6412558b3eb3d903c23c7c",
+      "sha256_after_move": "75ee592c177e997202d800f1620dcf036d55b6100e6412558b3eb3d903c23c7c",
+      "edited": false
+    },
+    {
+      "old": "previous_research/tune_multi_cue_leak.py",
+      "new": "previous_research/code/tune_multi_cue_leak.py",
+      "sha256_before": "5693914c6c6e33f36aa51d362795cbf03598dea46c77317556f5925629c3d9e2",
+      "sha256_after_move": "5693914c6c6e33f36aa51d362795cbf03598dea46c77317556f5925629c3d9e2",
+      "edited": false
+    },
+    {
+      "old": "previous_research/tune_multi_cue_long.py",
+      "new": "previous_research/code/tune_multi_cue_long.py",
+      "sha256_before": "316985a4f7e1e5b4292ff81b8682332eba57dd40cd3749bf5a43cff41821ae72",
+      "sha256_after_move": "316985a4f7e1e5b4292ff81b8682332eba57dd40cd3749bf5a43cff41821ae72",
+      "edited": false
+    },
+    {
+      "old": "previous_research/verify_subgraphs.py",
+      "new": "previous_research/code/verify_subgraphs.py",
+      "sha256_before": "b87d4196fa757ddb88c1512ffe4643c063725b8f733c4ee86e6401e3ed2673dd",
+      "sha256_after_move": "b87d4196fa757ddb88c1512ffe4643c063725b8f733c4ee86e6401e3ed2673dd",
+      "edited": false
+    },
+    {
+      "old": "previous_research/visual_aux_shared_navigation.py",
+      "new": "previous_research/code/visual_aux_shared_navigation.py",
+      "sha256_before": "96e094a7607d94cd6787fbf9d584c8eeecb5e39d934bef2dcc4cc48a8d0415c1",
+      "sha256_after_move": "96e094a7607d94cd6787fbf9d584c8eeecb5e39d934bef2dcc4cc48a8d0415c1",
+      "edited": false
+    },
+    {
+      "old": "core_research_questions_report.txt",
+      "new": "previous_research/reports/foundation/core_research_questions_report.txt",
+      "sha256_before": "320b9c18c8c64b358086559821c55900f698fed4757d5cef3edc768acb063fca",
+      "sha256_after_move": "320b9c18c8c64b358086559821c55900f698fed4757d5cef3edc768acb063fca",
+      "edited": false
+    }
+  ],
+  "data_files": 2923,
+  "data_bytes": 4846559219,
+  "data_size_and_mtime_unchanged": true,
+  "moved_files_verified": true
+}

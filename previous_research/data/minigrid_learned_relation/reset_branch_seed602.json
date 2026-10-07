@@ -1,0 +1,107 @@
+{
+  "navigation_actor": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_relation_curriculum\\relation_variable_control_rnn_1000_seed401.pt",
+  "detector": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_compositional\\compositional_rnn_seed401_detector501.pt",
+  "checkpoint_dir": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_learned_relation\\main",
+  "start_seed": 37000000,
+  "base_per_size": 128,
+  "ablation": "reset_at_branch",
+  "duration_seconds": 25.1839837,
+  "runs": [
+    {
+      "kind": "fly",
+      "seed": 602,
+      "sizes": {
+        "9": {
+          "base_episodes": 128,
+          "success_rate": 0.529296875,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 12.234375
+        },
+        "19": {
+          "base_episodes": 128,
+          "success_rate": 0.5,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 26.515625
+        }
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 602,
+      "sizes": {
+        "9": {
+          "base_episodes": 128,
+          "success_rate": 0.529296875,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 12.234375
+        },
+        "19": {
+          "base_episodes": 128,
+          "success_rate": 0.5,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 26.515625
+        }
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 602,
+      "sizes": {
+        "9": {
+          "base_episodes": 128,
+          "success_rate": 0.5,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 12.234375
+        },
+        "19": {
+          "base_episodes": 128,
+          "success_rate": 0.5,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 17.71875
+        }
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 602,
+      "sizes": {
+        "9": {
+          "base_episodes": 128,
+          "success_rate": 0.529296875,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 12.234375
+        },
+        "19": {
+          "base_episodes": 128,
+          "success_rate": 0.5,
+          "all_four_success": 0.0,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0,
+          "cue_accuracy_at_override": 0.5,
+          "mean_branch_step": 26.515625
+        }
+      }
+    }
+  ]
+}

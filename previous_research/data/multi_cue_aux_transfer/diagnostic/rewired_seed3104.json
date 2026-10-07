@@ -1,0 +1,27 @@
+{
+  "kind": "rewired",
+  "seed": 3104,
+  "replayed_test": 0.92333984375,
+  "diagnostics": {
+    "after_cues": {
+      "linear_probe": 1.0,
+      "trained_aux_head": 0.9752197265625,
+      "same_probe_after_delay": 0.9805908203125
+    },
+    "before_query": {
+      "linear_probe": 1.0,
+      "trained_aux_head": 0.99853515625
+    },
+    "query_swap": {
+      "both_correct": 0.85595703125,
+      "slot0_correct": 0.931884765625,
+      "slot1_correct": 0.924072265625,
+      "different_kind_fraction": 0.652587890625,
+      "changes_when_kind_differs": 0.8260381817817688
+    },
+    "final_readout": {
+      "trained_answer_head": 0.92529296875,
+      "aux_with_explicit_query_selection": 0.9990234375
+    }
+  }
+}

@@ -1,0 +1,278 @@
+2026-10-06 실행 위치 안내: 기존 실험 자료·코드는 previous_research/에 보관. 현재 9×9 일반 오목(전체 관측)부터 진행하며 상세 고정 조건은 gomoku9/protocol.md. 아래 원 기획서의 부분관측 및 15×15 확장은 후속 단계로 유지한다.
+
+초파리 Connectome 기반 소규모 게임 학습 비교 연구 - 기획서 흐름
+
+1. 프로젝트 개요
+- 목표:
+  초파리 connectome 기반 recurrent network를 Vanilla RNN, GRU와 비교해
+  소규모 게임 환경에서 학습 효율, 기억 능력, 일반화, 강건성 차이를 분석한다.
+- 핵심 방향:
+  초파리 모델이 더 좋다는 것을 전제로 하지 않고,
+  어떤 조건에서 강하고 약한지를 비교한다.
+- 장기 확장:
+  좋은 결과가 나오면 작은 RTS -> StarCraft -> Pluto 대전으로 확장한다.
+- RRSI:
+  핵심 연구 요소가 아니라 참고 아이디어 정도로 둔다.
+
+2. 연구 환경 및 자원
+- GPU: RTX 5060 Ti 16GB
+- 학생 개인 프로젝트 수준
+- Fly 모델 규모: 약 5,000 뉴런 이하
+- 초기에 500~1,000 뉴런으로 디버깅 후 5,000 뉴런으로 확장
+- 전체 connectome을 그대로 사용하지 않고 소규모 subnetwork를 사용
+- 가능하면 sparse 연산으로 구현
+
+3. 핵심 연구 질문
+RQ1.
+초파리 connectome 기반 recurrent network는 RNN, GRU와 비교해
+작은 게임에서 어느 정도의 최종 성능을 보이는가?
+
+RQ2.
+제한된 interaction budget에서 sample efficiency 차이가 존재하는가?
+
+RQ3.
+과거 정보를 기억해야 하는 부분관측 환경에서
+모델별 기억 성능 차이가 나타나는가?
+
+RQ4.
+입력 noise, 새로운 맵, 새로운 상대 조건에서
+robustness/generalization 차이가 나타나는가?
+
+4. 비교 모델
+필수:
+- Fly-Connectome Network
+- Vanilla RNN
+- GRU
+
+선택:
+- MLP: 기억 없는 baseline
+- LSTM: 여유가 있을 경우
+- Fly-Random: 실제 connectome 구조의 의미를 확인하기 위한 통제 실험
+
+5. Experiment A - MiniGrid Memory
+목적:
+- memory
+- partial observability
+- sample efficiency 비교
+
+방법:
+- 과거에 본 정보를 일정 시간 뒤 기억해서 올바른 행동을 선택하게 한다.
+- Fly / RNN / GRU를 동일 조건에서 학습시킨다.
+
+평가:
+- 평균 reward
+- 성공률
+- 학습 속도
+- interaction step 대비 성능
+- 기억 구간이 길어질 때 성능 저하
+
+6. Experiment B - 9x9 Partial-Observation Gomoku
+환경:
+- 9x9 보드
+- 5목
+- 전체 판을 항상 보여주지 않는 부분관측 환경
+- 예: 최근 착수 주변 5x5 영역 또는 제한된 local window만 제공
+
+목적:
+- 경쟁적 의사결정
+- 기억
+- 전략 학습
+- 상대 변화에 대한 일반화
+
+상대:
+1) Random opponent
+2) Simple rule-based opponent
+3) 학습 때 보지 않은 다른 전략 opponent
+
+평가:
+- 승률
+- 평균 게임 길이
+- sample efficiency
+- 새로운 상대에 대한 generalization
+- noise 적용 후 성능
+
+7. 학습 예산
+예시 interaction budget:
+- 1,000 steps
+- 2,500 steps
+- 5,000 steps
+- 10,000 steps
+
+주의:
+- 각 budget을 따로 학습하지 않고,
+  한 번 10,000 step까지 학습하면서 중간 checkpoint를 저장한다.
+
+8. 반복 실험
+- 최소 3 random seeds
+- 여유가 있으면 5 seeds
+- 평균과 표준편차를 함께 기록
+
+기본 본실험:
+3 모델 x 2 게임 x 3 seeds = 18 runs
+
+9. 핵심 평가 지표
+Performance:
+- 평균 reward
+- 성공률
+- 오목 승률
+
+Sample Efficiency:
+- 1k / 2.5k / 5k / 10k step 성능
+
+Memory:
+- 기억해야 하는 지연 길이에 따른 성능 변화
+
+Robustness:
+- 입력 noise/masking 0%, 10%, 20%, 30%
+
+Generalization:
+- 새로운 맵
+- 새로운 환경 조건
+- 새로운 오목 상대
+
+10. 추가 통제 실험
+Fly-Real vs Fly-Random
+
+Fly-Real:
+- 실제 초파리 connectome 연결 구조
+
+Fly-Random:
+- 뉴런 수와 연결 수를 비슷하게 유지하면서 연결만 무작위화
+
+목적:
+- 단순히 sparse한 구조라서 좋은 것인지
+- 실제 초파리 연결 구조 자체가 의미가 있는지 확인
+
+11. 프로젝트 진행 순서
+Phase 0
+- 500~1,000 뉴런 Fly 모델 구현
+- 코드 및 sparse 연산 검증
+
+Phase 1
+- RNN / GRU baseline 구현
+- MiniGrid Memory에서 학습 가능 여부 확인
+
+Phase 2
+- Fly 모델을 약 5,000 뉴런으로 확장
+
+Phase 3
+- MiniGrid Memory 본실험
+- 3 seeds 이상 반복
+
+Phase 4
+- 9x9 Partial-Observation Gomoku 구현
+
+Phase 5
+- Gomoku 본실험
+- Fly / RNN / GRU 비교
+
+Phase 6
+- Noise robustness 실험
+- Generalization 실험
+
+Phase 7
+- 여유가 있으면 Fly-Real vs Fly-Random 추가
+
+Phase 8
+- 결과 그래프 및 통계 정리
+- 논문 작성
+
+12. 예상 결과 그래프
+Figure 1.
+Training Steps vs Reward
+- Fly / RNN / GRU
+
+Figure 2.
+Interaction Budget vs Success Rate
+- 1k / 2.5k / 5k / 10k
+
+Figure 3.
+Noise Level vs Performance
+
+Figure 4.
+MiniGrid와 Partial Gomoku 모델별 성능 비교
+
+선택:
+Figure 5.
+Fly-Real vs Fly-Random
+
+13. 예상 프로젝트 기간
+최소 기능 버전:
+- 약 4~6주
+
+실험 및 논문 정리 포함:
+- 약 8~12주
+
+권장 일정:
+1~2주차:
+- connectome 데이터 전처리
+- Fly 소형 모델 구현
+- RNN/GRU baseline
+
+3주차:
+- MiniGrid Memory 검증
+
+4주차:
+- Fly-5K 확장
+- MiniGrid 본실험
+
+5주차:
+- 9x9 부분관측 오목 구현
+
+6주차:
+- 오목 본실험
+
+7~8주차:
+- noise/generalization
+- 선택적으로 Fly-Random
+
+9~10주차:
+- 결과 분석 및 그래프
+
+11~12주차:
+- 논문 작성 및 수정
+
+14. 예상 학습 시간
+환경과 구현 효율에 따라 크게 달라질 수 있음.
+
+MiniGrid Memory:
+- RNN/GRU: 약 5~20분/run
+- Fly-5K: 약 15~60분/run
+- 비효율적 구현 시 1~2시간 이상 가능
+
+9x9 Partial Gomoku:
+- RNN/GRU: 약 10~40분/run
+- Fly-5K: 약 30분~2시간/run
+
+전체 메인 실험:
+- 예상 순수 학습 시간: 약 15~35 GPU시간
+- sparse 구현이 비효율적이면 30~50시간 이상 가능
+
+15. 논문에서 가장 중요한 주장 방향
+잘못된 방향:
+- "초파리 모델이 GRU보다 우수하다."
+
+권장 방향:
+- "제한된 데이터와 계산 환경에서
+   생물학적 connectome 기반 recurrent network와
+   일반 recurrent architecture가 어떤 서로 다른 학습 특성을 보이는지 비교한다."
+
+초파리 모델이 더 낮은 성능을 보여도 연구 결과로 사용할 수 있다.
+
+예:
+- GRU는 최종 성능이 더 높음
+- Fly는 low-data 구간에서 더 빠른 초기 학습
+- Fly는 noise 환경에서 더 안정적
+- Fly는 일반화가 더 좋거나 더 나쁨
+- 특정 memory task에서는 GRU가 확실히 우수함
+
+16. 장기 확장 경로
+MiniGrid Memory
+-> 9x9 Partial-Observation Gomoku
+-> 더 복잡한 multi-agent game
+-> 작은 RTS 환경
+-> StarCraft
+-> Pluto 상대 비교
+
+현재 학생 프로젝트의 핵심 범위는
+MiniGrid Memory + 9x9 Partial-Observation Gomoku까지로 제한한다.

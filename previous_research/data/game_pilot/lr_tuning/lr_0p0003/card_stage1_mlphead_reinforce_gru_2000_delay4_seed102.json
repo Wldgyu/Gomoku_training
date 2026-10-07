@@ -1,0 +1,82 @@
+{
+  "source_game": "C:/Users/a/Desktop/자바스크립트 게임/game.js",
+  "pilot_rule": "stage 1: four unique colors; choose the replaced slot",
+  "excluded_from_pilot": "real-time timer, animations, fake-shake cue, focus mode, reverse rule, stage progression, stages 3+",
+  "algorithm": "REINFORCE with batch reward baseline and entropy bonus",
+  "model": "gru",
+  "stage": 1,
+  "graph_variant": "real",
+  "rewire_seed": null,
+  "readout": "shared MLP 128 with current observation skip",
+  "neurons_reference": 2000,
+  "hidden_size": 369,
+  "parameters": 501798,
+  "fly_reference_parameters": 502497,
+  "graph_sha256": null,
+  "connection_direction": "pre_index -> post_index; W[post, pre]",
+  "blank_steps": 4,
+  "updates": 1200,
+  "batch": 256,
+  "learning_rate": 0.0003,
+  "entropy_bonus": 0.01,
+  "choice_interactions": 307200,
+  "eval_games": 1024,
+  "seed": 102,
+  "random_success_rate": 0.25,
+  "initial_success_rate": 0.2353515625,
+  "initial_no_memory_success_rate": 0.2353515625,
+  "final_fresh_success_rate": 0.669921875,
+  "final_fresh_no_memory_success_rate": 0.255859375,
+  "history": [
+    {
+      "update": 1,
+      "choice_interactions": 256,
+      "training_reward": 0.27734375,
+      "heldout_success_rate": 0.2353515625,
+      "no_memory_success_rate": 0.2353515625
+    },
+    {
+      "update": 200,
+      "choice_interactions": 51200,
+      "training_reward": 0.265625,
+      "heldout_success_rate": 0.2509765625,
+      "no_memory_success_rate": 0.25
+    },
+    {
+      "update": 400,
+      "choice_interactions": 102400,
+      "training_reward": 0.2109375,
+      "heldout_success_rate": 0.255859375,
+      "no_memory_success_rate": 0.255859375
+    },
+    {
+      "update": 600,
+      "choice_interactions": 153600,
+      "training_reward": 0.33203125,
+      "heldout_success_rate": 0.4306640625,
+      "no_memory_success_rate": 0.26171875
+    },
+    {
+      "update": 800,
+      "choice_interactions": 204800,
+      "training_reward": 0.55078125,
+      "heldout_success_rate": 0.5302734375,
+      "no_memory_success_rate": 0.2724609375
+    },
+    {
+      "update": 1000,
+      "choice_interactions": 256000,
+      "training_reward": 0.56640625,
+      "heldout_success_rate": 0.595703125,
+      "no_memory_success_rate": 0.251953125
+    },
+    {
+      "update": 1200,
+      "choice_interactions": 307200,
+      "training_reward": 0.65234375,
+      "heldout_success_rate": 0.6884765625,
+      "no_memory_success_rate": 0.24609375
+    }
+  ],
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\game_pilot\\lr_tuning\\lr_0p0003\\card_stage1_mlphead_reinforce_gru_2000_delay4_seed102.pt"
+}

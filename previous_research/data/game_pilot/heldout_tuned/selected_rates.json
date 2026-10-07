@@ -1,0 +1,22 @@
+{
+  "selection": "highest mean final success on tuning seeds 101,102,103; tie favors lower learning rate",
+  "tuning_seeds": [
+    101,
+    102,
+    103
+  ],
+  "heldout_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205
+  ],
+  "entropy_bonus": 0.01,
+  "selected_rates": {
+    "1000_rnn": 0.0003,
+    "1000_gru": 0.001,
+    "2000_rnn": 0.0003,
+    "2000_gru": 0.001
+  }
+}

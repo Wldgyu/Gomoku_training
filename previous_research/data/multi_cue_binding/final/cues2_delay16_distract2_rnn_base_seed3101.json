@@ -1,0 +1,114 @@
+{
+ "stage": "final",
+ "kind": "rnn",
+ "variant": "base",
+ "seed": 3101,
+ "cues": 2,
+ "delay": 16,
+ "distractors": 2,
+ "updates": 8000,
+ "name": "cues2_delay16_distract2_rnn_base_seed3101",
+ "hidden": 407,
+ "parameters": 223551,
+ "learning_rate": 0.0003,
+ "final_validation": 0.66015625,
+ "test": {
+  "accuracy": 0.66552734375,
+  "by_slot": {
+   "0": 0.6486873626708984,
+   "1": 0.6831583976745605
+  },
+  "distractor_reused_color": {
+   "False": 0.6682904958724976,
+   "True": 0.662132740020752
+  }
+ },
+ "curve": [
+  {
+   "update": 0,
+   "validation": 0.318359375
+  },
+  {
+   "update": 500,
+   "loss": 0.5048530697822571,
+   "validation": 0.671875
+  },
+  {
+   "update": 1000,
+   "loss": 0.4744408130645752,
+   "validation": 0.66015625
+  },
+  {
+   "update": 1500,
+   "loss": 0.48638850450515747,
+   "validation": 0.677734375
+  },
+  {
+   "update": 2000,
+   "loss": 0.43055278062820435,
+   "validation": 0.662109375
+  },
+  {
+   "update": 2500,
+   "loss": 0.4147219955921173,
+   "validation": 0.6796875
+  },
+  {
+   "update": 3000,
+   "loss": 0.4792225956916809,
+   "validation": 0.6748046875
+  },
+  {
+   "update": 3500,
+   "loss": 0.581201434135437,
+   "validation": 0.65625
+  },
+  {
+   "update": 4000,
+   "loss": 0.4397769570350647,
+   "validation": 0.671875
+  },
+  {
+   "update": 4500,
+   "loss": 0.4605647921562195,
+   "validation": 0.681640625
+  },
+  {
+   "update": 5000,
+   "loss": 0.46957969665527344,
+   "validation": 0.662109375
+  },
+  {
+   "update": 5500,
+   "loss": 0.4265007972717285,
+   "validation": 0.66796875
+  },
+  {
+   "update": 6000,
+   "loss": 0.5361216068267822,
+   "validation": 0.6572265625
+  },
+  {
+   "update": 6500,
+   "loss": 0.44166386127471924,
+   "validation": 0.658203125
+  },
+  {
+   "update": 7000,
+   "loss": 0.43833833932876587,
+   "validation": 0.66796875
+  },
+  {
+   "update": 7500,
+   "loss": 0.5160881280899048,
+   "validation": 0.66015625
+  },
+  {
+   "update": 8000,
+   "loss": 0.44001099467277527,
+   "validation": 0.66015625
+  }
+ ],
+ "to90": null,
+ "seconds": 132.4538795999997
+}

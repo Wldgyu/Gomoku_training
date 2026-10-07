@@ -1,0 +1,191 @@
+{
+  "kind": "rewired",
+  "seed": 1101,
+  "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\visual\\main\\rewired_seed1101.pt",
+  "selected_head": "relu_state",
+  "perception": {
+    "trained_delays": {
+      "positive_f1": 0.12215874924834637,
+      "positive_recall": 0.07033914443501896,
+      "exact_frame_accuracy": 0.013423693366348743,
+      "visible_query_color_accuracy": 0.2472330778837204,
+      "visible_query_exact_bits": 0.0,
+      "frames": 30692,
+      "query_visible_frames": 12288,
+      "positive_bits": 57763
+    },
+    "unseen_delays": {
+      "positive_f1": 0.12271707309824202,
+      "positive_recall": 0.070840339017946,
+      "exact_frame_accuracy": 0.05810147151350975,
+      "visible_query_color_accuracy": 0.2513834536075592,
+      "visible_query_exact_bits": 0.0,
+      "frames": 36660,
+      "query_visible_frames": 12288,
+      "positive_bits": 58286
+    },
+    "unseen_delays_wait": {
+      "positive_f1": 0.1258617024507273,
+      "positive_recall": 0.07274115417017692,
+      "exact_frame_accuracy": 0.06450355798006058,
+      "visible_query_color_accuracy": 0.2581624686717987,
+      "visible_query_exact_bits": 0.0,
+      "frames": 71841,
+      "query_visible_frames": 22726,
+      "positive_bits": 113952
+    }
+  },
+  "tests": {
+    "trained_delays": {
+      "original": {
+        "accuracy": 0.66943359375,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6744639277458191,
+            "count": 1026
+          },
+          "1": {
+            "accuracy": 0.664383590221405,
+            "count": 1022
+          }
+        }
+      },
+      "repaired": {
+        "accuracy": 0.65966796875,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6384015679359436,
+            "count": 1026
+          },
+          "1": {
+            "accuracy": 0.6810176372528076,
+            "count": 1022
+          }
+        }
+      }
+    },
+    "unseen_delays": {
+      "original": {
+        "accuracy": 0.669921875,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6699123382568359,
+            "count": 1027
+          },
+          "1": {
+            "accuracy": 0.6699314117431641,
+            "count": 1021
+          }
+        }
+      },
+      "repaired": {
+        "accuracy": 0.65234375,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6241480112075806,
+            "count": 1027
+          },
+          "1": {
+            "accuracy": 0.680705189704895,
+            "count": 1021
+          }
+        }
+      }
+    },
+    "unseen_delays_wait": {
+      "original": {
+        "accuracy": 0.6728515625,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.5928500294685364,
+            "count": 1007
+          },
+          "1": {
+            "accuracy": 0.7502401471138,
+            "count": 1041
+          }
+        }
+      },
+      "repaired": {
+        "accuracy": 0.677734375,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6037735939025879,
+            "count": 1007
+          },
+          "1": {
+            "accuracy": 0.7492795586585999,
+            "count": 1041
+          }
+        }
+      }
+    }
+  },
+  "decoder_validation_bce": 0.388297975063324,
+  "extra_head_training": {
+    "variant": "relu_state",
+    "seed": 1101,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 8192,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.47341352701187134,
+    "best_validation_accuracy": 0.6552734375,
+    "best_update": 100,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.48526498675346375,
+        "validation": 0.6650390625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.47341352701187134,
+        "validation": 0.6552734375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.5021620392799377,
+        "validation": 0.6513671875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.48035699129104614,
+        "validation": 0.6767578125
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4830210208892822,
+        "validation": 0.64453125
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.49093949794769287,
+        "validation": 0.681640625
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.49535858631134033,
+        "validation": 0.6513671875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.5078443884849548,
+        "validation": 0.671875
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.49456095695495605,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.4930097162723541,
+        "validation": 0.67578125
+      }
+    ]
+  },
+  "perception_metric_version": 2
+}

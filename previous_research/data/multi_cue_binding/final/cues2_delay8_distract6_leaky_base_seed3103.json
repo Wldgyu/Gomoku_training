@@ -1,0 +1,114 @@
+{
+ "stage": "final",
+ "kind": "leaky",
+ "variant": "base",
+ "seed": 3103,
+ "cues": 2,
+ "delay": 8,
+ "distractors": 6,
+ "updates": 8000,
+ "name": "cues2_delay8_distract6_leaky_base_seed3103",
+ "hidden": 1000,
+ "parameters": 140515,
+ "learning_rate": 0.003,
+ "final_validation": 0.658203125,
+ "test": {
+  "accuracy": 0.65673828125,
+  "by_slot": {
+   "0": 0.6588178873062134,
+   "1": 0.6545905470848083
+  },
+  "distractor_reused_color": {
+   "False": 0.6347941756248474,
+   "True": 0.6616811156272888
+  }
+ },
+ "curve": [
+  {
+   "update": 0,
+   "validation": 0.3037109375
+  },
+  {
+   "update": 500,
+   "loss": 0.5627436637878418,
+   "validation": 0.703125
+  },
+  {
+   "update": 1000,
+   "loss": 0.5355420112609863,
+   "validation": 0.6826171875
+  },
+  {
+   "update": 1500,
+   "loss": 0.545947790145874,
+   "validation": 0.6953125
+  },
+  {
+   "update": 2000,
+   "loss": 0.49101996421813965,
+   "validation": 0.6845703125
+  },
+  {
+   "update": 2500,
+   "loss": 0.4729269742965698,
+   "validation": 0.6875
+  },
+  {
+   "update": 3000,
+   "loss": 0.472246378660202,
+   "validation": 0.6923828125
+  },
+  {
+   "update": 3500,
+   "loss": 0.5149096250534058,
+   "validation": 0.685546875
+  },
+  {
+   "update": 4000,
+   "loss": 0.515344500541687,
+   "validation": 0.681640625
+  },
+  {
+   "update": 4500,
+   "loss": 0.5001310706138611,
+   "validation": 0.6806640625
+  },
+  {
+   "update": 5000,
+   "loss": 0.4626750946044922,
+   "validation": 0.685546875
+  },
+  {
+   "update": 5500,
+   "loss": 0.5027406215667725,
+   "validation": 0.677734375
+  },
+  {
+   "update": 6000,
+   "loss": 0.44688746333122253,
+   "validation": 0.6533203125
+  },
+  {
+   "update": 6500,
+   "loss": 0.4865071475505829,
+   "validation": 0.6611328125
+  },
+  {
+   "update": 7000,
+   "loss": 0.44337397813796997,
+   "validation": 0.6513671875
+  },
+  {
+   "update": 7500,
+   "loss": 0.4361511468887329,
+   "validation": 0.6748046875
+  },
+  {
+   "update": 8000,
+   "loss": 0.4569886028766632,
+   "validation": 0.658203125
+  }
+ ],
+ "to90": null,
+ "seconds": 124.36033839999982
+}

@@ -1,0 +1,65 @@
+{
+  "config": {
+    "kind": "gru",
+    "seed": 4901,
+    "hidden": 254,
+    "size": 9,
+    "rewire_seed": 1,
+    "updates": 5,
+    "envs": 32,
+    "rollout": 16,
+    "epochs": 2,
+    "lr": 0.0003,
+    "opponent": "random",
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "ppo_clip": 0.2,
+    "entropy_coefficient": 0.01,
+    "value_coefficient": 0.5,
+    "observation": "full board: own, opponent, last move, black-to-play color",
+    "reward": "terminal +1/-1, draw 0; no shaping, teacher or search",
+    "initialization": "fresh; archived task checkpoints not loaded"
+  },
+  "parameters": 381170,
+  "graph_sha256": null,
+  "completed_updates": 5,
+  "learner_decisions": 2560,
+  "completed_training_games": 76,
+  "last_1000_training_win_rate": 0.5,
+  "last_1000_training_draw_rate": 0.013157894736842105,
+  "last_1000_training_mean_plies": 53.026315789473685,
+  "elapsed_seconds": 0.43345289999979286,
+  "curve": [
+    {
+      "update": 1,
+      "training_win_rate": 0.0,
+      "games": 3,
+      "policy_loss": -0.0005037784576416016,
+      "value_loss": 0.04667077586054802,
+      "entropy": 4.174953937530518,
+      "seconds": 0.1
+    },
+    {
+      "update": 5,
+      "training_win_rate": 0.5,
+      "games": 76,
+      "policy_loss": -0.00012788176536560059,
+      "value_loss": 0.11065024882555008,
+      "entropy": 3.9000089168548584,
+      "seconds": 0.43
+    }
+  ],
+  "peak_allocated_gib": 0.03692150115966797,
+  "peak_reserved_gib": 0.05859375,
+  "torch_version": "2.11.0+cu128",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "tf32": false,
+  "source_hashes": {
+    "env.py": "4fb98e90188ea662ee6266469e5ed339c0768a981655b4e41ee8ca5559e01953",
+    "evaluate.py": "71efd3cf5d601d86cf53370f26cca93ab83177a374abf10de3072870b8302f92",
+    "models.py": "f97fa7ed8bfd66863e1b49bd650be7ed8ecd22f949840f9dc3f371be90d17331",
+    "test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "train.py": "5a258c342bb9cbd423d565a223dc1a05c9edb533917c90b54530d2def34329df",
+    "__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28"
+  }
+}

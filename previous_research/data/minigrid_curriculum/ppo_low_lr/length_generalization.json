@@ -1,0 +1,266 @@
+{
+  "source_environment": "MiniGrid-MemoryS11-v0",
+  "episodes": 64,
+  "rows": [
+    {
+      "model": "fly",
+      "seed": 403,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.203125,
+        "branch_reach_rate": 0.78125
+      },
+      "masked": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "fly",
+      "seed": 403,
+      "size": 13,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 401,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 401,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.21875,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 402,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 0.0
+      },
+      "masked": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 0.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 402,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 403,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.28125,
+        "branch_reach_rate": 0.5
+      },
+      "masked": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 0.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 403,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 0.71875
+      },
+      "masked": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 401,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.796875,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 401,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.78125,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 402,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.203125,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 402,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.21875,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.484375,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 403,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.703125,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 403,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.21875,
+        "branch_reach_rate": 0.796875
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 401,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.296875,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 401,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.5,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 402,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 402,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.21875,
+        "branch_reach_rate": 0.21875
+      },
+      "masked": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 0.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 403,
+      "size": 7,
+      "normal": {
+        "success_rate": 0.71875,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.515625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 403,
+      "size": 13,
+      "normal": {
+        "success_rate": 0.203125,
+        "branch_reach_rate": 0.71875
+      },
+      "masked": {
+        "success_rate": 0.484375,
+        "branch_reach_rate": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "kind": "gru",
+  "seed": 1103,
+  "graph": 0,
+  "run": "gru_graph0_seed1103",
+  "original": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 2017
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 2079
+      }
+    },
+    "changed_query_accuracy": 1.0,
+    "both_queries_correct": 1.0,
+    "prediction_changes_when_kinds_differ": 1.0
+  },
+  "heads": {
+    "relu_state": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 1.0,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 1.0,
+      "both_queries_correct": 1.0,
+      "prediction_changes_when_kinds_differ": 1.0
+    },
+    "leaky_state": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 1.0,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 1.0,
+      "both_queries_correct": 1.0,
+      "prediction_changes_when_kinds_differ": 1.0
+    },
+    "relu_query": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 1.0,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 1.0,
+      "both_queries_correct": 1.0,
+      "prediction_changes_when_kinds_differ": 1.0
+    },
+    "leaky_query": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2017
+        },
+        "1": {
+          "accuracy": 1.0,
+          "count": 2079
+        }
+      },
+      "changed_query_accuracy": 1.0,
+      "both_queries_correct": 1.0,
+      "prediction_changes_when_kinds_differ": 1.0
+    }
+  },
+  "selected_variant": "relu_state"
+}

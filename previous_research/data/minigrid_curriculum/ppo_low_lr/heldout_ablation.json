@@ -1,0 +1,165 @@
+{
+  "episodes": 256,
+  "rows": [
+    {
+      "model": "fly",
+      "seed": 403,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.44921875,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 401,
+      "normal": {
+        "success_rate": 0.7578125,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.53515625,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.2265625,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 402,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.46484375,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rewired",
+      "seed": 403,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.46484375,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 401,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.46484375,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 402,
+      "normal": {
+        "success_rate": 0.77734375,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.46484375,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.30859375,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "rnn",
+      "seed": 403,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.53515625,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 401,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.55078125,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 402,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.46484375,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    {
+      "model": "gru",
+      "seed": 403,
+      "normal": {
+        "success_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "masked": {
+        "success_rate": 0.55078125,
+        "branch_reach_rate": 1.0
+      },
+      "swapped": {
+        "success_rate": 0.0,
+        "branch_reach_rate": 1.0
+      }
+    }
+  ]
+}

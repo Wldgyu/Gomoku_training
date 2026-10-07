@@ -1,0 +1,74 @@
+{
+  "task": "synthetic delayed binary cue",
+  "graph": "data\\subgraphs\\malecns_cx_2000.npz",
+  "graph_sha256": "036a7e44bf0156e1641c8e2e4cb0a82463bf5b63bb3cc35d14bf3861cde6ee34",
+  "checkpoint": "data\\sanity\\malecns_cx_2000_delay16_seed42.pt",
+  "device": "cuda",
+  "neurons": 2000,
+  "edges": 169373,
+  "trainable_parameters": 183375,
+  "delay": 16,
+  "training_updates": 250,
+  "batch": 64,
+  "heldout_examples": 1024,
+  "chance_accuracy": 0.5,
+  "initial_heldout_accuracy": 0.4736328125,
+  "final_heldout_accuracy": 1.0,
+  "history": [
+    {
+      "update": 1,
+      "training_loss": 0.69126296043396,
+      "heldout_accuracy": 0.5263671875
+    },
+    {
+      "update": 25,
+      "training_loss": 0.672487735748291,
+      "heldout_accuracy": 0.912109375
+    },
+    {
+      "update": 50,
+      "training_loss": 0.4361110329627991,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 75,
+      "training_loss": 0.16389572620391846,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 100,
+      "training_loss": 0.021887756884098053,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 125,
+      "training_loss": 0.005639753770083189,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 150,
+      "training_loss": 0.002803283277899027,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 175,
+      "training_loss": 0.0017778597539290786,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 200,
+      "training_loss": 0.0012452410301193595,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 225,
+      "training_loss": 0.0009230836294591427,
+      "heldout_accuracy": 1.0
+    },
+    {
+      "update": 250,
+      "training_loss": 0.0007120661903172731,
+      "heldout_accuracy": 1.0
+    }
+  ]
+}

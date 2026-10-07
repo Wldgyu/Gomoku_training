@@ -1,0 +1,131 @@
+{
+  "kind": "leaky",
+  "seed": 1103,
+  "aux": true,
+  "hidden": 1000,
+  "learning_rate": 0.0003,
+  "best_epoch": 9,
+  "best_validation": 0.68359375,
+  "curve": [
+    {
+      "epoch": 1,
+      "validation": 0.3359375
+    },
+    {
+      "epoch": 2,
+      "validation": 0.4609375
+    },
+    {
+      "epoch": 3,
+      "validation": 0.5673828125
+    },
+    {
+      "epoch": 4,
+      "validation": 0.658203125
+    },
+    {
+      "epoch": 5,
+      "validation": 0.6630859375
+    },
+    {
+      "epoch": 6,
+      "validation": 0.662109375
+    },
+    {
+      "epoch": 7,
+      "validation": 0.65234375
+    },
+    {
+      "epoch": 8,
+      "validation": 0.6640625
+    },
+    {
+      "epoch": 9,
+      "validation": 0.68359375
+    },
+    {
+      "epoch": 10,
+      "validation": 0.673828125
+    },
+    {
+      "epoch": 11,
+      "validation": 0.6572265625
+    },
+    {
+      "epoch": 12,
+      "validation": 0.6611328125
+    },
+    {
+      "epoch": 13,
+      "validation": 0.6640625
+    },
+    {
+      "epoch": 14,
+      "validation": 0.6728515625
+    },
+    {
+      "epoch": 15,
+      "validation": 0.65625
+    },
+    {
+      "epoch": 16,
+      "validation": 0.669921875
+    },
+    {
+      "epoch": 17,
+      "validation": 0.673828125
+    },
+    {
+      "epoch": 18,
+      "validation": 0.662109375
+    },
+    {
+      "epoch": 19,
+      "validation": 0.6669921875
+    },
+    {
+      "epoch": 20,
+      "validation": 0.671875
+    }
+  ],
+  "tests": {
+    "trained_lengths": {
+      "answer_accuracy": 0.65966796875,
+      "by_delay": {
+        "6": 0.6457311089303238,
+        "10": 0.673469387755102
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.652099609375,
+      "aux_visible_door_route_accuracy": 0.65576171875
+    },
+    "unseen_lengths": {
+      "answer_accuracy": 0.6748046875,
+      "by_delay": {
+        "8": 0.6653919694072657,
+        "14": 0.6846307385229541
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.65478515625,
+      "aux_visible_door_route_accuracy": 0.65771484375
+    },
+    "unseen_wait": {
+      "answer_accuracy": 0.65625,
+      "by_delay": {
+        "8": 0.6511175898931001,
+        "14": 0.661432777232581
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.652587890625,
+      "aux_visible_door_route_accuracy": 0.65771484375
+    },
+    "autonomous_unseen": {
+      "movement_success": 0.0,
+      "answer_given_movement_success": null,
+      "end_to_end_answer_success": 0.0,
+      "episodes": 256
+    }
+  },
+  "seconds": 30.6653596000001,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_visual_aux\\runs\\leaky_aux_seed1103.pt"
+}

@@ -1,0 +1,535 @@
+{
+  "protocol": "same new 4096 games per seed for default and controlled orthogonal init",
+  "rows": [
+    {
+      "neurons_reference": 1000,
+      "seed": 201,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.770263671875,
+      "no_memory_success_rate": 0.25,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed201.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 201,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.248779296875,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed201.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 202,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.97900390625,
+      "no_memory_success_rate": 0.246826171875,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed202.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 202,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.25,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed202.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 203,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.256591796875,
+      "no_memory_success_rate": 0.256591796875,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed203.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 203,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 0.998291015625,
+      "no_memory_success_rate": 0.249755859375,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed203.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 204,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.999267578125,
+      "no_memory_success_rate": 0.244384765625,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed204.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 204,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.25341796875,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed204.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 205,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.982666015625,
+      "no_memory_success_rate": 0.25341796875,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed205.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 205,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.2470703125,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed205.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 206,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.95166015625,
+      "no_memory_success_rate": 0.24755859375,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed206.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 206,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.245361328125,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed206.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 207,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.9580078125,
+      "no_memory_success_rate": 0.237060546875,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed207.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 207,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.241455078125,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed207.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 208,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.998291015625,
+      "no_memory_success_rate": 0.260498046875,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed208.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 208,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.255126953125,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed208.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 209,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.9638671875,
+      "no_memory_success_rate": 0.250244140625,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed209.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 209,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.254638671875,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed209.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 210,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.93017578125,
+      "no_memory_success_rate": 0.261962890625,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed210.json"
+    },
+    {
+      "neurons_reference": 1000,
+      "seed": 210,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.228515625,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_1000_delay4_seed210.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 201,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.94287109375,
+      "no_memory_success_rate": 0.248291015625,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed201.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 201,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 0.99609375,
+      "no_memory_success_rate": 0.23486328125,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed201.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 202,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.9765625,
+      "no_memory_success_rate": 0.248291015625,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed202.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 202,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 0.99951171875,
+      "no_memory_success_rate": 0.248046875,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed202.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 203,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.24853515625,
+      "no_memory_success_rate": 0.24853515625,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed203.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 203,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 0.99462890625,
+      "no_memory_success_rate": 0.255859375,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed203.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 204,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.96240234375,
+      "no_memory_success_rate": 0.240966796875,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed204.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 204,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.25927734375,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed204.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 205,
+      "group": "diagnostic_old",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.7705078125,
+      "no_memory_success_rate": 0.25341796875,
+      "source": "data/game_pilot/heldout_tuned/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed205.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 205,
+      "group": "diagnostic_old",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.25732421875,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed205.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 206,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.91650390625,
+      "no_memory_success_rate": 0.23681640625,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed206.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 206,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.23876953125,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed206.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 207,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.999755859375,
+      "no_memory_success_rate": 0.25,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed207.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 207,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.246337890625,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed207.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 208,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.24951171875,
+      "no_memory_success_rate": 0.250244140625,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed208.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 208,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 0.999755859375,
+      "no_memory_success_rate": 0.24072265625,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed208.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 209,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.24951171875,
+      "no_memory_success_rate": 0.24951171875,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed209.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 209,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 1.0,
+      "no_memory_success_rate": 0.25146484375,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed209.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 210,
+      "group": "independent_new",
+      "initialization": "default",
+      "games": 4096,
+      "success_rate": 0.94580078125,
+      "no_memory_success_rate": 0.2490234375,
+      "source": "data/game_pilot/rnn_recovery/default_fresh/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed210.json"
+    },
+    {
+      "neurons_reference": 2000,
+      "seed": 210,
+      "group": "independent_new",
+      "initialization": "orthogonal",
+      "games": 4096,
+      "success_rate": 0.99853515625,
+      "no_memory_success_rate": 0.25390625,
+      "source": "data/game_pilot/rnn_recovery/orthogonal_controlled/card_stage1_mlphead_reinforce_rnn_2000_delay4_seed210.json"
+    }
+  ],
+  "by_size_and_group": {
+    "1000_old": {
+      "seeds": [
+        201,
+        202,
+        203,
+        204,
+        205
+      ],
+      "default_mean": 0.79755859375,
+      "orthogonal_mean": 0.999658203125,
+      "paired_difference_mean": 0.202099609375,
+      "paired_difference_95pct_bootstrap": [
+        0.01142578125,
+        0.49111328125
+      ],
+      "default_success_over_75pct": 4,
+      "orthogonal_success_over_75pct": 5,
+      "default_by_seed": {
+        "201": 0.770263671875,
+        "202": 0.97900390625,
+        "203": 0.256591796875,
+        "204": 0.999267578125,
+        "205": 0.982666015625
+      },
+      "orthogonal_by_seed": {
+        "201": 1.0,
+        "202": 1.0,
+        "203": 0.998291015625,
+        "204": 1.0,
+        "205": 1.0
+      }
+    },
+    "1000_new": {
+      "seeds": [
+        206,
+        207,
+        208,
+        209,
+        210
+      ],
+      "default_mean": 0.960400390625,
+      "orthogonal_mean": 1.0,
+      "paired_difference_mean": 0.039599609375,
+      "paired_difference_95pct_bootstrap": [
+        0.019091796875,
+        0.05869140625
+      ],
+      "default_success_over_75pct": 5,
+      "orthogonal_success_over_75pct": 5,
+      "default_by_seed": {
+        "206": 0.95166015625,
+        "207": 0.9580078125,
+        "208": 0.998291015625,
+        "209": 0.9638671875,
+        "210": 0.93017578125
+      },
+      "orthogonal_by_seed": {
+        "206": 1.0,
+        "207": 1.0,
+        "208": 1.0,
+        "209": 1.0,
+        "210": 1.0
+      }
+    },
+    "2000_old": {
+      "seeds": [
+        201,
+        202,
+        203,
+        204,
+        205
+      ],
+      "default_mean": 0.78017578125,
+      "orthogonal_mean": 0.998046875,
+      "paired_difference_mean": 0.21787109375,
+      "paired_difference_95pct_bootstrap": [
+        0.03486328125,
+        0.49814453125
+      ],
+      "default_success_over_75pct": 4,
+      "orthogonal_success_over_75pct": 5,
+      "default_by_seed": {
+        "201": 0.94287109375,
+        "202": 0.9765625,
+        "203": 0.24853515625,
+        "204": 0.96240234375,
+        "205": 0.7705078125
+      },
+      "orthogonal_by_seed": {
+        "201": 0.99609375,
+        "202": 0.99951171875,
+        "203": 0.99462890625,
+        "204": 1.0,
+        "205": 1.0
+      }
+    },
+    "2000_new": {
+      "seeds": [
+        206,
+        207,
+        208,
+        209,
+        210
+      ],
+      "default_mean": 0.672216796875,
+      "orthogonal_mean": 0.999658203125,
+      "paired_difference_mean": 0.32744140625,
+      "paired_difference_95pct_bootstrap": [
+        0.037890625,
+        0.6169921875
+      ],
+      "default_success_over_75pct": 3,
+      "orthogonal_success_over_75pct": 5,
+      "default_by_seed": {
+        "206": 0.91650390625,
+        "207": 0.999755859375,
+        "208": 0.24951171875,
+        "209": 0.24951171875,
+        "210": 0.94580078125
+      },
+      "orthogonal_by_seed": {
+        "206": 1.0,
+        "207": 1.0,
+        "208": 0.999755859375,
+        "209": 1.0,
+        "210": 0.99853515625
+      }
+    }
+  }
+}

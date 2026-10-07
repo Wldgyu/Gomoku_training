@@ -1,0 +1,150 @@
+{
+  "kind": "rnn",
+  "seed": 2204,
+  "graph": 0,
+  "frozen": false,
+  "name": "rnn_graph0_seed2204",
+  "config": {
+    "cues_min": 2,
+    "cues_max": 2,
+    "delay": 8,
+    "distractors": 6
+  },
+  "task": "cues2_delay8_distract6",
+  "hidden": 407,
+  "parameters": 223551,
+  "leak": 0.9,
+  "learning_rate": 0.0003,
+  "updates": 12000,
+  "batch_size": 128,
+  "episodes_seen": 1536000,
+  "generator": "vectorized_fixed_v2",
+  "execution_mode_at_finish": "cuda_graph_replay",
+  "final_validation": 0.66015625,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.3310546875
+    },
+    {
+      "update": 500,
+      "validation": 0.6796875
+    },
+    {
+      "update": 1000,
+      "validation": 0.654296875
+    },
+    {
+      "update": 1500,
+      "validation": 0.6953125
+    },
+    {
+      "update": 2000,
+      "validation": 0.6435546875
+    },
+    {
+      "update": 2500,
+      "validation": 0.626953125
+    },
+    {
+      "update": 3000,
+      "validation": 0.671875
+    },
+    {
+      "update": 3500,
+      "validation": 0.6513671875
+    },
+    {
+      "update": 4000,
+      "validation": 0.658203125
+    },
+    {
+      "update": 4500,
+      "validation": 0.662109375
+    },
+    {
+      "update": 5000,
+      "validation": 0.69921875
+    },
+    {
+      "update": 5500,
+      "validation": 0.69140625
+    },
+    {
+      "update": 6000,
+      "validation": 0.6240234375
+    },
+    {
+      "update": 6500,
+      "validation": 0.673828125
+    },
+    {
+      "update": 7000,
+      "validation": 0.666015625
+    },
+    {
+      "update": 7500,
+      "validation": 0.6689453125
+    },
+    {
+      "update": 8000,
+      "validation": 0.69140625
+    },
+    {
+      "update": 8500,
+      "validation": 0.658203125
+    },
+    {
+      "update": 9000,
+      "validation": 0.70703125
+    },
+    {
+      "update": 9500,
+      "validation": 0.67578125
+    },
+    {
+      "update": 10000,
+      "validation": 0.66015625
+    },
+    {
+      "update": 10500,
+      "validation": 0.69140625
+    },
+    {
+      "update": 11000,
+      "validation": 0.6650390625
+    },
+    {
+      "update": 11500,
+      "validation": 0.6767578125
+    },
+    {
+      "update": 12000,
+      "validation": 0.66015625
+    }
+  ],
+  "test": {
+    "accuracy": 0.668212890625,
+    "by_slot": {
+      "0": {
+        "accuracy": 0.6784834861755371,
+        "count": 2031
+      },
+      "1": {
+        "accuracy": 0.6581113934516907,
+        "count": 2065
+      }
+    },
+    "last_only_accuracy": 0.679931640625,
+    "majority_kind_accuracy": 0.671630859375,
+    "prediction_is_majority_kind": 1.0,
+    "queried_kind_change_accuracy": 0.675537109375,
+    "queried_kind_change_prediction_rate": 0.555419921875,
+    "unqueried_kind_change_accuracy": 0.665771484375,
+    "unqueried_kind_change_invariance": 0.441162109375
+  },
+  "to90": null,
+  "to99": null,
+  "seconds_this_session": 43.01991749999979,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\repeat\\raw\\cues2_delay8_distract6_rnn_graph0_seed2204.pt"
+}

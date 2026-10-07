@@ -1,0 +1,27 @@
+{
+  "kind": "gru",
+  "seed": 3104,
+  "replayed_test": 1.0,
+  "diagnostics": {
+    "after_cues": {
+      "linear_probe": 1.0,
+      "trained_aux_head": 0.6978759765625,
+      "same_probe_after_delay": 0.989013671875
+    },
+    "before_query": {
+      "linear_probe": 1.0,
+      "trained_aux_head": 1.0
+    },
+    "query_swap": {
+      "both_correct": 1.0,
+      "slot0_correct": 1.0,
+      "slot1_correct": 1.0,
+      "different_kind_fraction": 0.652587890625,
+      "changes_when_kind_differs": 1.0
+    },
+    "final_readout": {
+      "trained_answer_head": 1.0,
+      "aux_with_explicit_query_selection": 1.0
+    }
+  }
+}

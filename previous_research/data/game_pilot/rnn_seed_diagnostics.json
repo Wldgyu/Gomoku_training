@@ -1,0 +1,66 @@
+[
+  {
+    "neurons_reference": 1000,
+    "seed": 203,
+    "games": 4096,
+    "success_rate": 0.249755859375,
+    "greedy_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "mean_policy_entropy_nats": 1.3858990669250488,
+    "max_entropy_nats": 1.3862943611198906,
+    "mean_absolute_logit_change_after_wiping_first_cards": 0.0,
+    "greedy_action_change_fraction_after_wiping_first_cards": 0.0
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 204,
+    "games": 4096,
+    "success_rate": 0.999755859375,
+    "greedy_action_fraction": [
+      0.251953125,
+      0.239501953125,
+      0.259033203125,
+      0.24951171875
+    ],
+    "mean_policy_entropy_nats": 0.08156781271100044,
+    "max_entropy_nats": 1.3862943611198906,
+    "mean_absolute_logit_change_after_wiping_first_cards": 6.615242302417755,
+    "greedy_action_change_fraction_after_wiping_first_cards": 0.753173828125
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 203,
+    "games": 4096,
+    "success_rate": 0.250244140625,
+    "greedy_action_fraction": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "mean_policy_entropy_nats": 1.374336838722229,
+    "max_entropy_nats": 1.3862943611198906,
+    "mean_absolute_logit_change_after_wiping_first_cards": 9.515493638900807e-05,
+    "greedy_action_change_fraction_after_wiping_first_cards": 0.0
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 204,
+    "games": 4096,
+    "success_rate": 0.963623046875,
+    "greedy_action_fraction": [
+      0.2421875,
+      0.23291015625,
+      0.23876953125,
+      0.2861328125
+    ],
+    "mean_policy_entropy_nats": 0.11175948986783624,
+    "max_entropy_nats": 1.3862943611198906,
+    "mean_absolute_logit_change_after_wiping_first_cards": 9.019158720970154,
+    "greedy_action_change_fraction_after_wiping_first_cards": 0.7705078125
+  }
+]

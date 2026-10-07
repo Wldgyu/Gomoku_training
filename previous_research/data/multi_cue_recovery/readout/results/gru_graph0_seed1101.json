@@ -1,0 +1,89 @@
+{
+  "kind": "gru",
+  "seed": 1101,
+  "graph": 0,
+  "run": "gru_graph0_seed1101",
+  "original": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 2016
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 2080
+      }
+    },
+    "changed_query_accuracy": 1.0,
+    "both_queries_correct": 1.0,
+    "prediction_changes_when_kinds_differ": 1.0
+  },
+  "heads": {
+    "relu_state": {
+      "accuracy": 0.999755859375,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2016
+        },
+        "1": {
+          "accuracy": 0.9995192289352417,
+          "count": 2080
+        }
+      },
+      "changed_query_accuracy": 0.99951171875,
+      "both_queries_correct": 0.999267578125,
+      "prediction_changes_when_kinds_differ": 0.9988966584205627
+    },
+    "leaky_state": {
+      "accuracy": 0.999267578125,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2016
+        },
+        "1": {
+          "accuracy": 0.9985576868057251,
+          "count": 2080
+        }
+      },
+      "changed_query_accuracy": 0.9990234375,
+      "both_queries_correct": 0.998291015625,
+      "prediction_changes_when_kinds_differ": 0.9974254965782166
+    },
+    "relu_query": {
+      "accuracy": 0.999755859375,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2016
+        },
+        "1": {
+          "accuracy": 0.9995192289352417,
+          "count": 2080
+        }
+      },
+      "changed_query_accuracy": 0.99951171875,
+      "both_queries_correct": 0.999267578125,
+      "prediction_changes_when_kinds_differ": 0.9988966584205627
+    },
+    "leaky_query": {
+      "accuracy": 0.999755859375,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2016
+        },
+        "1": {
+          "accuracy": 0.9995192289352417,
+          "count": 2080
+        }
+      },
+      "changed_query_accuracy": 0.99951171875,
+      "both_queries_correct": 0.999267578125,
+      "prediction_changes_when_kinds_differ": 0.9988966584205627
+    }
+  },
+  "selected_variant": "relu_state"
+}

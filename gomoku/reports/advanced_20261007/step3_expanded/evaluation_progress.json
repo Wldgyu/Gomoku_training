@@ -1,0 +1,191 @@
+{
+  "tactical": [
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 12,
+          "accuracy": 0.0234375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 13,
+          "accuracy": 0.025390625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 12,
+          "accuracy": 0.0234375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 13,
+          "accuracy": 0.025390625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 56,
+          "accuracy": 0.109375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 77,
+          "accuracy": 0.150390625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 56,
+          "accuracy": 0.109375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 77,
+          "accuracy": 0.150390625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4500,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 183,
+          "accuracy": 0.357421875
+        },
+        "block": {
+          "positions": 512,
+          "correct": 131,
+          "accuracy": 0.255859375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 183,
+          "accuracy": 0.357421875
+        },
+        "block": {
+          "positions": 512,
+          "correct": 131,
+          "accuracy": 0.255859375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 12,
+          "accuracy": 0.0234375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 13,
+          "accuracy": 0.025390625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 12,
+          "accuracy": 0.0234375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 13,
+          "accuracy": 0.025390625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 62,
+          "accuracy": 0.12109375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 82,
+          "accuracy": 0.16015625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 62,
+          "accuracy": 0.12109375
+        },
+        "block": {
+          "positions": 512,
+          "correct": 82,
+          "accuracy": 0.16015625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4500,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 512,
+          "correct": 183,
+          "accuracy": 0.357421875
+        },
+        "block": {
+          "positions": 512,
+          "correct": 136,
+          "accuracy": 0.265625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 512,
+          "correct": 183,
+          "accuracy": 0.357421875
+        },
+        "block": {
+          "positions": 512,
+          "correct": 136,
+          "accuracy": 0.265625
+        },
+        "history_replayed": true
+      }
+    }
+  ],
+  "fixed": []
+}

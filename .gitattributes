@@ -1,0 +1,5 @@
+# Preserve recorded source/result byte hashes across Windows and Linux clones.
+* -text
+*.npz binary
+*.pt binary
+*.feather binary

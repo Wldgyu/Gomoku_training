@@ -1,0 +1,1128 @@
+{
+  "tactical_test": [
+    {
+      "kind": "fly",
+      "seed": 4601,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4601,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 479,
+          "accuracy": 0.4677734375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 674,
+          "accuracy": 0.658203125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 479,
+          "accuracy": 0.4677734375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 674,
+          "accuracy": 0.658203125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4601,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 745,
+          "accuracy": 0.7275390625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 857,
+          "accuracy": 0.8369140625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 745,
+          "accuracy": 0.7275390625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 857,
+          "accuracy": 0.8369140625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4601,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4601,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 513,
+          "accuracy": 0.5009765625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 698,
+          "accuracy": 0.681640625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 513,
+          "accuracy": 0.5009765625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 698,
+          "accuracy": 0.681640625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4601,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 749,
+          "accuracy": 0.7314453125
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 855,
+          "accuracy": 0.8349609375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 749,
+          "accuracy": 0.7314453125
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 855,
+          "accuracy": 0.8349609375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4601,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4601,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 506,
+          "accuracy": 0.494140625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 672,
+          "accuracy": 0.65625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 505,
+          "accuracy": 0.4931640625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 671,
+          "accuracy": 0.6552734375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4601,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 755,
+          "accuracy": 0.7373046875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 860,
+          "accuracy": 0.83984375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 755,
+          "accuracy": 0.7373046875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 860,
+          "accuracy": 0.83984375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4601,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 6,
+          "accuracy": 0.005859375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4601,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 518,
+          "accuracy": 0.505859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 678,
+          "accuracy": 0.662109375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 518,
+          "accuracy": 0.505859375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 678,
+          "accuracy": 0.662109375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4601,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 755,
+          "accuracy": 0.7373046875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 883,
+          "accuracy": 0.8623046875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 755,
+          "accuracy": 0.7373046875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 883,
+          "accuracy": 0.8623046875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4602,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4602,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 577,
+          "accuracy": 0.5634765625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 714,
+          "accuracy": 0.697265625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 577,
+          "accuracy": 0.5634765625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 714,
+          "accuracy": 0.697265625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4602,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 810,
+          "accuracy": 0.791015625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 882,
+          "accuracy": 0.861328125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 810,
+          "accuracy": 0.791015625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 882,
+          "accuracy": 0.861328125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4602,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4602,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 568,
+          "accuracy": 0.5546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 722,
+          "accuracy": 0.705078125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 568,
+          "accuracy": 0.5546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 722,
+          "accuracy": 0.705078125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4602,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 801,
+          "accuracy": 0.7822265625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 845,
+          "accuracy": 0.8251953125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 801,
+          "accuracy": 0.7822265625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 845,
+          "accuracy": 0.8251953125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4602,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4602,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 571,
+          "accuracy": 0.5576171875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 701,
+          "accuracy": 0.6845703125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 571,
+          "accuracy": 0.5576171875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 701,
+          "accuracy": 0.6845703125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4602,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 793,
+          "accuracy": 0.7744140625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 881,
+          "accuracy": 0.8603515625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 793,
+          "accuracy": 0.7744140625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 881,
+          "accuracy": 0.8603515625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4602,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 11,
+          "accuracy": 0.0107421875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 7,
+          "accuracy": 0.0068359375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4602,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 580,
+          "accuracy": 0.56640625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 716,
+          "accuracy": 0.69921875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 580,
+          "accuracy": 0.56640625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 716,
+          "accuracy": 0.69921875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4602,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 792,
+          "accuracy": 0.7734375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 852,
+          "accuracy": 0.83203125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 792,
+          "accuracy": 0.7734375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 852,
+          "accuracy": 0.83203125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4603,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4603,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 536,
+          "accuracy": 0.5234375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 702,
+          "accuracy": 0.685546875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 536,
+          "accuracy": 0.5234375
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 702,
+          "accuracy": 0.685546875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "fly",
+      "seed": 4603,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 801,
+          "accuracy": 0.7822265625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 892,
+          "accuracy": 0.87109375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 801,
+          "accuracy": 0.7822265625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 892,
+          "accuracy": 0.87109375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4603,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4603,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 561,
+          "accuracy": 0.5478515625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 723,
+          "accuracy": 0.7060546875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 561,
+          "accuracy": 0.5478515625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 723,
+          "accuracy": 0.7060546875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rewired",
+      "seed": 4603,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 832,
+          "accuracy": 0.8125
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 905,
+          "accuracy": 0.8837890625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 832,
+          "accuracy": 0.8125
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 905,
+          "accuracy": 0.8837890625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4603,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4603,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 531,
+          "accuracy": 0.5185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 713,
+          "accuracy": 0.6962890625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 531,
+          "accuracy": 0.5185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 713,
+          "accuracy": 0.6962890625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "rnn",
+      "seed": 4603,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 826,
+          "accuracy": 0.806640625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 900,
+          "accuracy": 0.87890625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 826,
+          "accuracy": 0.806640625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 900,
+          "accuracy": 0.87890625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4603,
+      "stage": "fresh",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 19,
+          "accuracy": 0.0185546875
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 13,
+          "accuracy": 0.0126953125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4603,
+      "stage": "warmup",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 548,
+          "accuracy": 0.53515625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 714,
+          "accuracy": 0.697265625
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 548,
+          "accuracy": 0.53515625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 714,
+          "accuracy": 0.697265625
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 4603,
+      "stage": "final",
+      "cold": {
+        "win": {
+          "positions": 1024,
+          "correct": 826,
+          "accuracy": 0.806640625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 888,
+          "accuracy": 0.8671875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 1024,
+          "correct": 826,
+          "accuracy": 0.806640625
+        },
+        "block": {
+          "positions": 1024,
+          "correct": 888,
+          "accuracy": 0.8671875
+        },
+        "history_replayed": true
+      }
+    }
+  ],
+  "fixed_opponents": [],
+  "head_to_head": [],
+  "data_path": "gomoku9\\runs\\defense12_20261006\\data\\test.npz",
+  "data_sha256": "2175e599668ddbd61074a3a2c617518b46c73315a72fd75ba3e07055c55ad299",
+  "frozen_policy": "neural argmax with occupancy-only mask; no teacher or search at runtime",
+  "random_baseline": {},
+  "games_per_opponent": 128,
+  "paired_openings": 0
+}

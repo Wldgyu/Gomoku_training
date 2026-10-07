@@ -1,0 +1,13 @@
+{
+ "variant": "aux",
+ "scores": {
+  "aux": 1.0,
+  "base": 0.6739501953125,
+  "bind_aux": 1.0,
+  "bind_gate_aux": 1.0,
+  "bind": 1.0,
+  "gate_aux": 1.0,
+  "gate": 1.0
+ },
+ "rnn_gru_variant": "aux"
+}

@@ -1,0 +1,212 @@
+{
+  "model": "rnn",
+  "seed": 401,
+  "mode": "variable_factorial",
+  "method": "teacher imitation with factorial cue/target and/or variable-length training",
+  "source_checkpoint": "data\\minigrid_length_curriculum\\mixed_s7_11_13_rnn_1000_seed401.pt",
+  "parameters": 350756,
+  "train_episodes": 12,
+  "train_junction_x_counts": {
+    "5": 8,
+    "10": 4
+  },
+  "excluded_train_junction_x": [
+    7,
+    13
+  ],
+  "epochs": 1,
+  "selected_epoch": 0,
+  "selection_rule": "S7/S11/S13 and S17Random held-in all-four success; S9/S15 corridor lengths excluded",
+  "learning_rate": 0.0001,
+  "validation_base_episodes": 2,
+  "final_base_episodes": 2,
+  "history": [
+    {
+      "epoch": 0,
+      "by_size": {
+        "7": {
+          "base_episodes": 2,
+          "per_variant_success": {
+            "00": 1.0,
+            "10": 1.0,
+            "01": 1.0,
+            "11": 1.0
+          },
+          "all_four_success": 1.0,
+          "mean_success": 1.0,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "11": {
+          "base_episodes": 2,
+          "per_variant_success": {
+            "00": 1.0,
+            "10": 1.0,
+            "01": 1.0,
+            "11": 1.0
+          },
+          "all_four_success": 1.0,
+          "mean_success": 1.0,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "13": {
+          "base_episodes": 2,
+          "per_variant_success": {
+            "00": 1.0,
+            "10": 1.0,
+            "01": 1.0,
+            "11": 1.0
+          },
+          "all_four_success": 1.0,
+          "mean_success": 1.0,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "17Random_heldin": {
+          "base_episodes": 3,
+          "per_variant_success": {
+            "00": 0.6666666666666666,
+            "10": 0.6666666666666666,
+            "01": 0.6666666666666666,
+            "11": 0.6666666666666666
+          },
+          "all_four_success": 0.0,
+          "mean_success": 0.6666666666666666,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        }
+      },
+      "mean_all_four": 0.75
+    },
+    {
+      "epoch": 1,
+      "teacher_loss": 0.8358297199010849,
+      "mean_all_four": 0.375,
+      "min_all_four": 0.0,
+      "mean_normal": 0.375,
+      "by_size": {
+        "7": {
+          "base_episodes": 2,
+          "per_variant_success": {
+            "00": 0.5,
+            "10": 1.0,
+            "01": 1.0,
+            "11": 1.0
+          },
+          "all_four_success": 0.5,
+          "mean_success": 0.875,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "11": {
+          "base_episodes": 2,
+          "per_variant_success": {
+            "00": 1.0,
+            "10": 1.0,
+            "01": 1.0,
+            "11": 1.0
+          },
+          "all_four_success": 1.0,
+          "mean_success": 1.0,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "13": {
+          "base_episodes": 2,
+          "per_variant_success": {
+            "00": 0.0,
+            "10": 1.0,
+            "01": 1.0,
+            "11": 1.0
+          },
+          "all_four_success": 0.0,
+          "mean_success": 0.75,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "17Random_heldin": {
+          "base_episodes": 3,
+          "per_variant_success": {
+            "00": 0.0,
+            "10": 1.0,
+            "01": 0.0,
+            "11": 0.3333333333333333
+          },
+          "all_four_success": 0.0,
+          "mean_success": 0.3333333333333333,
+          "cue_seen_rate": 1.0,
+          "branch_reach_rate": 1.0
+        }
+      }
+    }
+  ],
+  "final_fresh": {
+    "7": {
+      "base_episodes": 2,
+      "per_variant_success": {
+        "00": 1.0,
+        "10": 1.0,
+        "01": 1.0,
+        "11": 1.0
+      },
+      "all_four_success": 1.0,
+      "mean_success": 1.0,
+      "cue_seen_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    "11": {
+      "base_episodes": 2,
+      "per_variant_success": {
+        "00": 1.0,
+        "10": 1.0,
+        "01": 1.0,
+        "11": 1.0
+      },
+      "all_four_success": 1.0,
+      "mean_success": 1.0,
+      "cue_seen_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    "13": {
+      "base_episodes": 2,
+      "per_variant_success": {
+        "00": 1.0,
+        "10": 1.0,
+        "01": 1.0,
+        "11": 1.0
+      },
+      "all_four_success": 1.0,
+      "mean_success": 1.0,
+      "cue_seen_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    "9": {
+      "base_episodes": 2,
+      "per_variant_success": {
+        "00": 0.5,
+        "10": 0.5,
+        "01": 0.5,
+        "11": 0.0
+      },
+      "all_four_success": 0.0,
+      "mean_success": 0.375,
+      "cue_seen_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    "15": {
+      "base_episodes": 2,
+      "per_variant_success": {
+        "00": 0.0,
+        "10": 0.5,
+        "01": 0.5,
+        "11": 0.0
+      },
+      "all_four_success": 0.0,
+      "mean_success": 0.25,
+      "cue_seen_rate": 1.0,
+      "branch_reach_rate": 1.0
+    }
+  },
+  "duration_seconds": 5.00302659999943
+}

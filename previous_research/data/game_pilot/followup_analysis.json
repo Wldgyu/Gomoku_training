@@ -1,0 +1,192 @@
+{
+  "source": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\game_pilot\\followup_test_4096.json",
+  "test_seeds": [
+    201,
+    202,
+    203,
+    204,
+    205
+  ],
+  "rewire_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "bootstrap_repeats": 10000,
+  "topology": {
+    "1000": {
+      "actual_mean": 0.799560546875,
+      "rewired_mean": 0.809892578125,
+      "difference_actual_minus_rewired": -0.01033203125000004,
+      "difference_95pct_two_way_bootstrap": [
+        -0.09725585937500003,
+        0.06694335937500007
+      ],
+      "actual_by_training_seed": {
+        "201": 0.827880859375,
+        "202": 0.841064453125,
+        "203": 0.759033203125,
+        "204": 0.97314453125,
+        "205": 0.5966796875
+      },
+      "rewired_mean_by_graph_seed": {
+        "0": 0.83232421875,
+        "1": 0.777197265625,
+        "2": 0.788525390625,
+        "3": 0.820947265625,
+        "4": 0.83046875
+      },
+      "difference_by_training_seed": {
+        "201": -0.026708984375000022,
+        "202": -0.020410156249999978,
+        "203": 0.07377929687499996,
+        "204": 0.08803710937499998,
+        "205": -0.16635742187500002
+      },
+      "note": "one actual graph, five rewired graphs, five paired training seeds; exploratory bootstrap interval"
+    },
+    "2000": {
+      "actual_mean": 0.67470703125,
+      "rewired_mean": 0.7275,
+      "difference_actual_minus_rewired": -0.05279296875000006,
+      "difference_95pct_two_way_bootstrap": [
+        -0.16119140624999995,
+        0.06297851562500001
+      ],
+      "actual_by_training_seed": {
+        "201": 0.810546875,
+        "202": 0.60595703125,
+        "203": 0.5068359375,
+        "204": 0.804443359375,
+        "205": 0.645751953125
+      },
+      "rewired_mean_by_graph_seed": {
+        "0": 0.672216796875,
+        "1": 0.743359375,
+        "2": 0.72744140625,
+        "3": 0.759814453125,
+        "4": 0.73466796875
+      },
+      "difference_by_training_seed": {
+        "201": 0.13212890624999996,
+        "202": -0.09682617187499998,
+        "203": -0.23862304687500002,
+        "204": -0.060498046875000044,
+        "205": -0.0001464843749999778
+      },
+      "note": "one actual graph, five rewired graphs, five paired training seeds; exploratory bootstrap interval"
+    }
+  },
+  "baselines": {
+    "1000_rnn": {
+      "default_learning_rate": 0.001,
+      "selected_learning_rate": 0.0003,
+      "default_mean": 0.252490234375,
+      "tuned_mean": 0.7986328125,
+      "paired_difference_mean": 0.546142578125,
+      "paired_difference_95pct_bootstrap": [
+        0.258154296875,
+        0.73603515625
+      ],
+      "default_by_seed": {
+        "201": 0.259033203125,
+        "202": 0.259765625,
+        "203": 0.24365234375,
+        "204": 0.25146484375,
+        "205": 0.24853515625
+      },
+      "tuned_by_seed": {
+        "201": 0.783203125,
+        "202": 0.98046875,
+        "203": 0.249755859375,
+        "204": 0.999755859375,
+        "205": 0.97998046875
+      },
+      "default_success_over_75pct": 0,
+      "tuned_success_over_75pct": 4
+    },
+    "1000_gru": {
+      "default_learning_rate": 0.001,
+      "selected_learning_rate": 0.001,
+      "default_mean": 0.857080078125,
+      "tuned_mean": 0.857080078125,
+      "paired_difference_mean": 0.0,
+      "paired_difference_95pct_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "default_by_seed": {
+        "201": 0.654541015625,
+        "202": 0.871826171875,
+        "203": 0.969482421875,
+        "204": 0.86181640625,
+        "205": 0.927734375
+      },
+      "tuned_by_seed": {
+        "201": 0.654541015625,
+        "202": 0.871826171875,
+        "203": 0.969482421875,
+        "204": 0.86181640625,
+        "205": 0.927734375
+      },
+      "default_success_over_75pct": 4,
+      "tuned_success_over_75pct": 4
+    },
+    "2000_rnn": {
+      "default_learning_rate": 0.001,
+      "selected_learning_rate": 0.0003,
+      "default_mean": 0.251171875,
+      "tuned_mean": 0.780615234375,
+      "paired_difference_mean": 0.529443359375,
+      "paired_difference_95pct_bootstrap": [
+        0.25126953125,
+        0.714501953125
+      ],
+      "default_by_seed": {
+        "201": 0.259033203125,
+        "202": 0.246826171875,
+        "203": 0.249755859375,
+        "204": 0.251708984375,
+        "205": 0.24853515625
+      },
+      "tuned_by_seed": {
+        "201": 0.93896484375,
+        "202": 0.981201171875,
+        "203": 0.250244140625,
+        "204": 0.963623046875,
+        "205": 0.76904296875
+      },
+      "default_success_over_75pct": 0,
+      "tuned_success_over_75pct": 4
+    },
+    "2000_gru": {
+      "default_learning_rate": 0.001,
+      "selected_learning_rate": 0.001,
+      "default_mean": 0.619775390625,
+      "tuned_mean": 0.619775390625,
+      "paired_difference_mean": 0.0,
+      "paired_difference_95pct_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "default_by_seed": {
+        "201": 0.259033203125,
+        "202": 0.7900390625,
+        "203": 0.24365234375,
+        "204": 0.951416015625,
+        "205": 0.854736328125
+      },
+      "tuned_by_seed": {
+        "201": 0.259033203125,
+        "202": 0.7900390625,
+        "203": 0.24365234375,
+        "204": 0.951416015625,
+        "205": 0.854736328125
+      },
+      "default_success_over_75pct": 3,
+      "tuned_success_over_75pct": 3
+    }
+  }
+}

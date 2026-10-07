@@ -1,0 +1,227 @@
+[
+  {
+    "name": "fly_graph0_seed1101",
+    "kind": "fly",
+    "seed": 1101,
+    "frozen": false,
+    "relu_units_never_active": 73,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.07703018188476562,
+    "predicted_class_counts": [
+      1375,
+      1389,
+      1332
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "fly_graph0_seed1101_frozen",
+    "kind": "fly",
+    "seed": 1101,
+    "frozen": true,
+    "relu_units_never_active": 66,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.21765708923339844,
+    "predicted_class_counts": [
+      1375,
+      1389,
+      1332
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "fly_graph0_seed1102",
+    "kind": "fly",
+    "seed": 1102,
+    "frozen": false,
+    "relu_units_never_active": 122,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.011566162109375,
+    "predicted_class_counts": [
+      479,
+      1396,
+      2221
+    ],
+    "accuracy": 0.66357421875
+  },
+  {
+    "name": "fly_graph0_seed1102_frozen",
+    "kind": "fly",
+    "seed": 1102,
+    "frozen": true,
+    "relu_units_never_active": 110,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.011686325073242188,
+    "predicted_class_counts": [
+      479,
+      1396,
+      2221
+    ],
+    "accuracy": 0.66357421875
+  },
+  {
+    "name": "fly_graph0_seed1103",
+    "kind": "fly",
+    "seed": 1103,
+    "frozen": false,
+    "relu_units_never_active": 119,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.012939453125,
+    "predicted_class_counts": [
+      428,
+      1368,
+      2300
+    ],
+    "accuracy": 0.67138671875
+  },
+  {
+    "name": "fly_graph0_seed1103_frozen",
+    "kind": "fly",
+    "seed": 1103,
+    "frozen": true,
+    "relu_units_never_active": 54,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.24565887451171875,
+    "predicted_class_counts": [
+      1301,
+      1408,
+      1387
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "gru_graph0_seed1101",
+    "kind": "gru",
+    "seed": 1101,
+    "frozen": false,
+    "relu_units_never_active": 116,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.027376174926757812,
+    "predicted_class_counts": [
+      1375,
+      1389,
+      1332
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "gru_graph0_seed1102",
+    "kind": "gru",
+    "seed": 1102,
+    "frozen": false,
+    "relu_units_never_active": 128,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.0,
+    "predicted_class_counts": [
+      0,
+      4096,
+      0
+    ],
+    "accuracy": 0.337158203125
+  },
+  {
+    "name": "gru_graph0_seed1103",
+    "kind": "gru",
+    "seed": 1103,
+    "frozen": false,
+    "relu_units_never_active": 112,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.027187347412109375,
+    "predicted_class_counts": [
+      1301,
+      1408,
+      1387
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "leaky_graph0_seed1101",
+    "kind": "leaky",
+    "seed": 1101,
+    "frozen": false,
+    "relu_units_never_active": 59,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.22965621948242188,
+    "predicted_class_counts": [
+      1375,
+      1389,
+      1332
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "leaky_graph0_seed1102",
+    "kind": "leaky",
+    "seed": 1102,
+    "frozen": false,
+    "relu_units_never_active": 69,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.2319316864013672,
+    "predicted_class_counts": [
+      1411,
+      1381,
+      1304
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "leaky_graph0_seed1103",
+    "kind": "leaky",
+    "seed": 1103,
+    "frozen": false,
+    "relu_units_never_active": 66,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.22398948669433594,
+    "predicted_class_counts": [
+      1301,
+      1408,
+      1387
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "rnn_graph0_seed1101",
+    "kind": "rnn",
+    "seed": 1101,
+    "frozen": false,
+    "relu_units_never_active": 0,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.5121994018554688,
+    "predicted_class_counts": [
+      1375,
+      1389,
+      1332
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "rnn_graph0_seed1102",
+    "kind": "rnn",
+    "seed": 1102,
+    "frozen": false,
+    "relu_units_never_active": 1,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.4781227111816406,
+    "predicted_class_counts": [
+      1411,
+      1381,
+      1304
+    ],
+    "accuracy": 1.0
+  },
+  {
+    "name": "rnn_graph0_seed1103",
+    "kind": "rnn",
+    "seed": 1103,
+    "frozen": false,
+    "relu_units_never_active": 0,
+    "relu_units_total": 128,
+    "mean_active_fraction": 0.5309658050537109,
+    "predicted_class_counts": [
+      1301,
+      1408,
+      1387
+    ],
+    "accuracy": 1.0
+  }
+]

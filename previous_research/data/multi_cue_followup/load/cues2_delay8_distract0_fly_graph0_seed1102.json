@@ -1,0 +1,146 @@
+{
+  "kind": "fly",
+  "seed": 1102,
+  "graph": 0,
+  "frozen": false,
+  "name": "fly_graph0_seed1102",
+  "config": {
+    "cues_min": 2,
+    "cues_max": 2,
+    "delay": 8,
+    "distractors": 0
+  },
+  "task": "cues2_delay8_distract0",
+  "hidden": 1000,
+  "parameters": 223851,
+  "leak": 0.9,
+  "learning_rate": 0.003,
+  "updates": 12000,
+  "batch_size": 128,
+  "episodes_seen": 1536000,
+  "generator": "vectorized_fixed_v2",
+  "execution_mode_at_finish": "cuda_graph_replay",
+  "final_validation": 1.0,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.3232421875
+    },
+    {
+      "update": 500,
+      "validation": 0.6904296875
+    },
+    {
+      "update": 1000,
+      "validation": 0.6767578125
+    },
+    {
+      "update": 1500,
+      "validation": 0.6533203125
+    },
+    {
+      "update": 2000,
+      "validation": 0.671875
+    },
+    {
+      "update": 2500,
+      "validation": 0.669921875
+    },
+    {
+      "update": 3000,
+      "validation": 0.6767578125
+    },
+    {
+      "update": 3500,
+      "validation": 0.763671875
+    },
+    {
+      "update": 4000,
+      "validation": 0.8720703125
+    },
+    {
+      "update": 4500,
+      "validation": 0.947265625
+    },
+    {
+      "update": 5000,
+      "validation": 0.9365234375
+    },
+    {
+      "update": 5500,
+      "validation": 0.951171875
+    },
+    {
+      "update": 6000,
+      "validation": 0.9375
+    },
+    {
+      "update": 6500,
+      "validation": 0.9580078125
+    },
+    {
+      "update": 7000,
+      "validation": 0.9501953125
+    },
+    {
+      "update": 7500,
+      "validation": 0.9580078125
+    },
+    {
+      "update": 8000,
+      "validation": 1.0
+    },
+    {
+      "update": 8500,
+      "validation": 1.0
+    },
+    {
+      "update": 9000,
+      "validation": 1.0
+    },
+    {
+      "update": 9500,
+      "validation": 1.0
+    },
+    {
+      "update": 10000,
+      "validation": 1.0
+    },
+    {
+      "update": 10500,
+      "validation": 1.0
+    },
+    {
+      "update": 11000,
+      "validation": 1.0
+    },
+    {
+      "update": 11500,
+      "validation": 1.0
+    },
+    {
+      "update": 12000,
+      "validation": 1.0
+    }
+  ],
+  "test": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 2077
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 2019
+      }
+    },
+    "last_only_accuracy": 0.656982421875,
+    "majority_kind_accuracy": 0.6572265625,
+    "prediction_is_majority_kind": 1.0
+  },
+  "to90": 4500,
+  "to99": 8000,
+  "seconds_this_session": 221.84130189999996,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\load\\cues2_delay8_distract0_fly_graph0_seed1102.pt"
+}

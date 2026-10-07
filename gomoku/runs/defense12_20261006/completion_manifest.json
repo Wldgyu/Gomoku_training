@@ -1,0 +1,50 @@
+{
+  "completed_training_runs": 12,
+  "learner_decisions_per_run": 614400,
+  "effective_total_learner_decisions": 7372800,
+  "fixed_opponent_stage_games": 27648,
+  "head_to_head_games": 2304,
+  "validated_replay_examples": 288,
+  "passing_tests": 19,
+  "checkpoint_sha256": {
+    "fly_seed4201.pt": "8d2bff88368f03db1c9f3f80d583f98724a61b7bafd4b2a26243f4728c04107b",
+    "fly_seed4201_warmup.pt": "88cc2b9ae33ce6c832b181a57e27a165e3e5ecb1bec0a4151c8e898f0e547217",
+    "fly_seed4202.pt": "bc47852ac767ac18d79fa69be487321fc5984a6b07a824ac00e95e0b34db9934",
+    "fly_seed4202_warmup.pt": "3c3a2cccbc6606bac1d8fa51e6d863b622b2545fdf94fb156404be83cc7e32d8",
+    "fly_seed4203.pt": "ba56440eaf4145f890b1522243da578788b16a85c95b4335c97feab6c83b3cce",
+    "fly_seed4203_warmup.pt": "e850862e67ec180e399e9bb02f5374e1fb408680b4d3ea7c5e1cd860a174f75f",
+    "gru_seed4201.pt": "2873b6c01bb67836e17cbfdb5f2003d36fe7c2cf261237826f90c3a326977733",
+    "gru_seed4201_warmup.pt": "8ae2eae3397c966131f2d5b68e93d66dfb5a3273def726fbff1b868559e432ff",
+    "gru_seed4202.pt": "9c8d175d8a1fb6bd8dd9063d03c9c6e3440731ed98c181ada56e2f84bf735d65",
+    "gru_seed4202_warmup.pt": "99e5e739b79d29e76c67e07fa5a461fb5943d0146fcda66ac03834cff56c4f9e",
+    "gru_seed4203.pt": "450e5a8542359c7a0581858e53a3c4426f55a8900728476cad73229becf30ed5",
+    "gru_seed4203_warmup.pt": "60cf5b9d4c58bfa81aa0d010c694618c073e18795dd2c2b148c051ca6b9d062d",
+    "rewired_seed4201.pt": "944e11176f053baa992c2d6c8b3bfce0a631a7d0a3b1e0f2faf022316c438c99",
+    "rewired_seed4201_warmup.pt": "131882074943e322937e2c889496de6c06ba2692369df91b4043db4574a725ed",
+    "rewired_seed4202.pt": "0ea22d12beb5e3fc5a5f30080b12021d64635f53bdba2b84d30166804713aa2b",
+    "rewired_seed4202_warmup.pt": "222b8c3f29866443bac4c6e77e394df0a847fbeb5168075f1e585ad39748c094",
+    "rewired_seed4203.pt": "51d178789b6c8f0407a1b02b4061a4308b9e1876160d5b7ec1d9a93bf64cbaf3",
+    "rewired_seed4203_warmup.pt": "3f99adb2e8fff832be158d656372df5f6c6987694a141a934e14c6fe2b7e25b8",
+    "rnn_seed4201.pt": "3d5865388a26103747a848916a7f8fc552ed10a5e7a4f07a480483d700603897",
+    "rnn_seed4201_warmup.pt": "283b3019dc890cb79da629efe238f70603483bc4882bf04d3e7fe2595f904c54",
+    "rnn_seed4202.pt": "2aaec6e7b868222a08d29990f8e1ada2fc1f0f3f3d11848e6abed441432a4106",
+    "rnn_seed4202_warmup.pt": "f16bd124ad3276c55218381858731479c7264ea00c91213a0271bc79fca0d035",
+    "rnn_seed4203.pt": "63bdb502f87dd039de1e913052dfed51b8caf68c27c2a9be83163fab46f65c71",
+    "rnn_seed4203_warmup.pt": "3a2cd7a216975c8cf444def0abc0dd202e29e841292b06d5c8336e6b0b3c77c4"
+  },
+  "data_sha256": {
+    "test.npz": "2175e599668ddbd61074a3a2c617518b46c73315a72fd75ba3e07055c55ad299",
+    "train.npz": "018da29888c78f009b7bc5a8bdaea8961cb9f3cdfa869fcd7210d570da3f100a",
+    "validation.npz": "d4f44e7e604758b61d0ac243673804ca9ff3a87ed9e37372c7a951bab97a1ca6"
+  },
+  "shared_training_data_verified": true,
+  "shared_env_model_tactical_source_verified": true,
+  "save_retry_only_change": "last two runs use Windows save retry; learning algorithm and configuration unchanged",
+  "files": {
+    "evaluation.json": "eed892e073c28045f8486e799f22778d4b9223167d39506c54ad6d5f066f9790",
+    "diagnostics.json": "86946f509b66af0c97039e8b772e7fb917aee384f6c22137315ddfe738f94bf7",
+    "results.md": "eda6511cb468058684576c0dc143b43227cd4355924db1fb7be088a9b1d83be3",
+    "replays.json": "b3ca99c151d1101949a79d534584c3506410272ddd3ce35b3f5b71bfe15a8851",
+    "replays.html": "351bdfe03caae558b380140ae30e49ee7c84c577d1f00bbd6fa020a99ba895b6"
+  }
+}

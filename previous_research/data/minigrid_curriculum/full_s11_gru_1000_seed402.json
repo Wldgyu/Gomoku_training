@@ -1,0 +1,70 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "method": "teacher route imitation after diagnostic pretraining",
+  "observation": "partial 7x7 image and direction only",
+  "model": "gru",
+  "neurons_reference": 1000,
+  "seed": 402,
+  "parameters": 351196,
+  "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_gru_1000_seed402.pt",
+  "train_episodes": 1024,
+  "eval_episodes": 128,
+  "epochs": 30,
+  "before": {
+    "success_rate": 0.0,
+    "branch_reach_rate": 0.0
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "teacher_loss": 4.4833124577999115,
+      "success_rate": 0.0,
+      "branch_reach_rate": 0.0
+    },
+    {
+      "epoch": 5,
+      "teacher_loss": 0.5984350852668285,
+      "success_rate": 0.0,
+      "branch_reach_rate": 0.4453125
+    },
+    {
+      "epoch": 10,
+      "teacher_loss": 0.10897266305983067,
+      "success_rate": 0.7265625,
+      "branch_reach_rate": 0.7265625
+    },
+    {
+      "epoch": 15,
+      "teacher_loss": 0.011501025641337037,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    {
+      "epoch": 20,
+      "teacher_loss": 0.0022298900730675086,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    {
+      "epoch": 25,
+      "teacher_loss": 0.001108010117604863,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    {
+      "epoch": 30,
+      "teacher_loss": 0.0006887604686198756,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0
+    }
+  ],
+  "final_fresh": {
+    "success_rate": 1.0,
+    "branch_reach_rate": 1.0
+  },
+  "final_fresh_cue_masked": {
+    "success_rate": 0.5234375,
+    "branch_reach_rate": 1.0
+  },
+  "duration_seconds": 63.71733069999982
+}

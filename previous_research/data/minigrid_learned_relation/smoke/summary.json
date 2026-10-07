@@ -1,0 +1,84 @@
+{
+  "method": "frozen visual detector, learned recurrent cue memory and MLP comparison",
+  "train_sizes": [
+    7,
+    11,
+    13
+  ],
+  "heldout_sizes": [
+    9,
+    15,
+    19
+  ],
+  "train_base_per_size": 8,
+  "validation_base_per_size": 4,
+  "final_base_per_size": 4,
+  "detector_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_compositional\\compositional_rnn_seed401_detector501.pt",
+  "seeds": [
+    601
+  ],
+  "models": [
+    "rnn"
+  ],
+  "epochs": 2,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "duration_seconds": 4.060281099999997,
+  "runs": [
+    {
+      "kind": "rnn",
+      "seed": 601,
+      "parameters": 120212,
+      "hidden": 328,
+      "best_epoch": 1,
+      "validation": {
+        "episodes": 48,
+        "turn_accuracy": 0.5,
+        "all_four_success": 0.0,
+        "cue_accuracy": 0.5
+      },
+      "heldout": {
+        "9": {
+          "episodes": 16,
+          "turn_accuracy": 0.5,
+          "all_four_success": 0.0,
+          "cue_accuracy": 0.5
+        },
+        "15": {
+          "episodes": 16,
+          "turn_accuracy": 0.5,
+          "all_four_success": 0.0,
+          "cue_accuracy": 0.5
+        },
+        "19": {
+          "episodes": 16,
+          "turn_accuracy": 0.5,
+          "all_four_success": 0.0,
+          "cue_accuracy": 0.5
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.9231567978858948,
+          "validation": {
+            "episodes": 48,
+            "turn_accuracy": 0.5,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.5
+          }
+        },
+        {
+          "epoch": 2,
+          "loss": 0.8972311417261759,
+          "validation": {
+            "episodes": 48,
+            "turn_accuracy": 0.4375,
+            "all_four_success": 0.0,
+            "cue_accuracy": 0.7916666865348816
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "kind": "rewired",
+  "seed": 1103,
+  "aux": false,
+  "hidden": 1000,
+  "learning_rate": 0.0003,
+  "best_epoch": 13,
+  "best_validation": 0.677734375,
+  "curve": [
+    {
+      "epoch": 1,
+      "validation": 0.3359375
+    },
+    {
+      "epoch": 2,
+      "validation": 0.4814453125
+    },
+    {
+      "epoch": 3,
+      "validation": 0.576171875
+    },
+    {
+      "epoch": 4,
+      "validation": 0.5478515625
+    },
+    {
+      "epoch": 5,
+      "validation": 0.53515625
+    },
+    {
+      "epoch": 6,
+      "validation": 0.658203125
+    },
+    {
+      "epoch": 7,
+      "validation": 0.6640625
+    },
+    {
+      "epoch": 8,
+      "validation": 0.640625
+    },
+    {
+      "epoch": 9,
+      "validation": 0.642578125
+    },
+    {
+      "epoch": 10,
+      "validation": 0.662109375
+    },
+    {
+      "epoch": 11,
+      "validation": 0.6435546875
+    },
+    {
+      "epoch": 12,
+      "validation": 0.6484375
+    },
+    {
+      "epoch": 13,
+      "validation": 0.677734375
+    },
+    {
+      "epoch": 14,
+      "validation": 0.6591796875
+    },
+    {
+      "epoch": 15,
+      "validation": 0.65625
+    },
+    {
+      "epoch": 16,
+      "validation": 0.6376953125
+    },
+    {
+      "epoch": 17,
+      "validation": 0.6572265625
+    },
+    {
+      "epoch": 18,
+      "validation": 0.658203125
+    },
+    {
+      "epoch": 19,
+      "validation": 0.6572265625
+    },
+    {
+      "epoch": 20,
+      "validation": 0.662109375
+    }
+  ],
+  "tests": {
+    "trained_lengths": {
+      "answer_accuracy": 0.66650390625,
+      "by_delay": {
+        "6": 0.6565260058881256,
+        "10": 0.6763848396501457
+      },
+      "count": 2048
+    },
+    "unseen_lengths": {
+      "answer_accuracy": 0.68212890625,
+      "by_delay": {
+        "8": 0.6711281070745698,
+        "14": 0.6936127744510978
+      },
+      "count": 2048
+    },
+    "unseen_wait": {
+      "answer_accuracy": 0.66162109375,
+      "by_delay": {
+        "8": 0.6637512147716229,
+        "14": 0.6594700686947988
+      },
+      "count": 2048
+    },
+    "autonomous_unseen": {
+      "movement_success": 0.26953125,
+      "answer_given_movement_success": 0.6521739130434783,
+      "end_to_end_answer_success": 0.17578125,
+      "episodes": 256
+    }
+  },
+  "seconds": 35.12000809999995,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_visual_aux\\runs\\rewired_base_seed1103.pt"
+}

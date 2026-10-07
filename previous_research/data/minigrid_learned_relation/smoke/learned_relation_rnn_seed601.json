@@ -1,0 +1,55 @@
+{
+  "kind": "rnn",
+  "seed": 601,
+  "parameters": 120212,
+  "hidden": 328,
+  "best_epoch": 1,
+  "validation": {
+    "episodes": 48,
+    "turn_accuracy": 0.5,
+    "all_four_success": 0.0,
+    "cue_accuracy": 0.5
+  },
+  "heldout": {
+    "9": {
+      "episodes": 16,
+      "turn_accuracy": 0.5,
+      "all_four_success": 0.0,
+      "cue_accuracy": 0.5
+    },
+    "15": {
+      "episodes": 16,
+      "turn_accuracy": 0.5,
+      "all_four_success": 0.0,
+      "cue_accuracy": 0.5
+    },
+    "19": {
+      "episodes": 16,
+      "turn_accuracy": 0.5,
+      "all_four_success": 0.0,
+      "cue_accuracy": 0.5
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.9231567978858948,
+      "validation": {
+        "episodes": 48,
+        "turn_accuracy": 0.5,
+        "all_four_success": 0.0,
+        "cue_accuracy": 0.5
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.8972311417261759,
+      "validation": {
+        "episodes": 48,
+        "turn_accuracy": 0.4375,
+        "all_four_success": 0.0,
+        "cue_accuracy": 0.7916666865348816
+      }
+    }
+  ]
+}

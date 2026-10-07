@@ -1,0 +1,104 @@
+{
+  "actor_model": "rnn",
+  "actor_seed": 401,
+  "actor_checkpoint": "data\\minigrid_relation_curriculum\\relation_variable_control_rnn_1000_seed401.pt",
+  "detector_checkpoint": "data\\minigrid_compositional\\compositional_rnn_seed401_detector501.pt",
+  "sizes": [
+    9,
+    15,
+    19
+  ],
+  "base_episodes_per_size": 256,
+  "first_seed": 29000000,
+  "cue_threshold": 0.5,
+  "branch_threshold": 0.5,
+  "by_size": {
+    "9": {
+      "original_actor": {
+        "base_episodes": 256,
+        "per_variant_success": {
+          "00": 0.625,
+          "10": 0.62890625,
+          "01": 0.61328125,
+          "11": 0.63671875
+        },
+        "all_four_success": 0.0,
+        "mean_success": 0.6259765625,
+        "cue_seen_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "compositional": {
+        "base_episodes": 256,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "per_variant_success": {
+          "00": 1.0,
+          "10": 1.0,
+          "01": 1.0,
+          "11": 1.0
+        },
+        "cue_latched_rate": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    "15": {
+      "original_actor": {
+        "base_episodes": 256,
+        "per_variant_success": {
+          "00": 0.703125,
+          "10": 0.7421875,
+          "01": 0.734375,
+          "11": 0.8203125
+        },
+        "all_four_success": 0.0,
+        "mean_success": 0.75,
+        "cue_seen_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "compositional": {
+        "base_episodes": 256,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "per_variant_success": {
+          "00": 1.0,
+          "10": 1.0,
+          "01": 1.0,
+          "11": 1.0
+        },
+        "cue_latched_rate": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0
+      }
+    },
+    "19": {
+      "original_actor": {
+        "base_episodes": 256,
+        "per_variant_success": {
+          "00": 0.98046875,
+          "10": 0.96875,
+          "01": 0.98828125,
+          "11": 0.984375
+        },
+        "all_four_success": 0.921875,
+        "mean_success": 0.98046875,
+        "cue_seen_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "compositional": {
+        "base_episodes": 256,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "per_variant_success": {
+          "00": 1.0,
+          "10": 1.0,
+          "01": 1.0,
+          "11": 1.0
+        },
+        "cue_latched_rate": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0
+      }
+    }
+  }
+}

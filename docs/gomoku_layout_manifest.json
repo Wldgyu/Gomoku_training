@@ -1,0 +1,836 @@
+{
+  "date": "2026-10-07",
+  "prefix_before": "gomoku9",
+  "prefix_after": "gomoku",
+  "original_file_hashes": {
+    "advanced_audit.py": "15eb04f224e870d8d2d90764bdaeb1cb7f090f2b0bc51a6a9ffdab2800b9b858",
+    "advanced_evaluate.py": "ce4ead57373b530bd8f0c6acf6b4814b7889564121fba857230be573b02e5602",
+    "advanced_match_audit.py": "0f991df6ff12d3cd1a372825be14cdf4f7f6a3fbc46554657b0e8d777b280089",
+    "advanced_protocol.md": "0a97bd774fda1f7cc16dd844beffee1eeec52a512f84d061d0bb4ecda38c3e0d",
+    "advanced_report.py": "6708c5ffb6a74f62031744eea30754964ca99b40704a8cbd31bcd106c9fe501d",
+    "benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "defense12_protocol.md": "c42f2771e438265662bcae772a33dddab2a297be8a1de69d8aded1ebac99432a",
+    "defense_audit.py": "ced6afc3a1443db800701661b500fb301ba37f8142f7b82a2bae0f1832c29243",
+    "defense_evaluate.py": "b08c106951d451c8413764e133be0df4f10bd25568f6f3fe99e3b826903df3ef",
+    "defense_report.py": "4fcb9760115caefd1e2a44cc6fe41fafb1f22782fb4f4c32bd2641fd82b8302a",
+    "env.py": "e732d534c165f27172ac407417aa4ff288b3bca652737eb3a61a689f6697b46e",
+    "environment_versions.txt": "f7a597d429cae8b5f90706fca63c8901c39af42f307bf541c5ddd90e27922422",
+    "evaluate.py": "7f3fba758f42f53075dc97748fe35423f8412a24233c153241a9b8f37e9a7cc8",
+    "expanded_tactics.py": "52f7c0c3a3d52fc50b2b01e00deb3e8155da2547fb3d484a3af8c8faadd1df88",
+    "history_aux.py": "564d04fb40b5b4d7334800f24c45e25e118a01d7e6e1224355d6fde37fa64ba4",
+    "make_report.py": "812516d6370e3fada892ecc744141aa9324e1046559a19b02c17083004b97e95",
+    "models.py": "5cbf30663eb9ae90e339b263adee96dcac47eb16448285635d9bf2ceaadc9044",
+    "protocol.md": "4dc1c8747cdb8bd47e060e50d9360e24e4a93b800bd399c595c9b43737263268",
+    "README.md": "5c29bb9937f562ed59883c9fe7b08ea25604b6a9d799645c8faf3bab054d2f20",
+    "resource_benchmark.json": "9ed3193fb1effbbe0259dc596863a23c25c5bd35c155c23b2edb30a977712886",
+    "resource_benchmark.md": "a5895c904b62abd7b4b596ad96404e26064fbfd603902de9e5b0c60c4ba0bbff",
+    "spatial.py": "76c8e3ef0e12bf350ab75da3ea711bb66c3c10510c9f2855b50ce6b7d60157d2",
+    "tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "test_defense.py": "b86518edfd715811782eeca7307e986ba29d0e2d712335d14c4ebe377f0af235",
+    "test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "test_history_spatial.py": "d8e00948a2b3d548fa815f875c1b9823481ef33a9e6686259d09e2cb9413d0d8",
+    "train.py": "49de05240080ae8aa5c5de9e775b0b4ffdd36cf50bb581de3985952fac94c41f",
+    "__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28",
+    "runs\\advanced_20261007\\audit.json": "e6027e053dd979f367806dffd48547c1abe390c35dcedce685bf8011e428a8f9",
+    "runs\\advanced_20261007\\completion_manifest.json": "5b6793c89a66d6ef9ddae952e56af553cd3a284357e7c48bfee1f57eae43ef69",
+    "runs\\advanced_20261007\\diagnostics.json": "6cd4fefbb71db4d9390b032d61d036e27615b37590b093f6c1afa832ccc3155d",
+    "runs\\advanced_20261007\\full_budget_control.json": "42ece9cae15bb60c056eb06a77d432fbc8278233dc67846fee1929967779616d",
+    "runs\\advanced_20261007\\parallel_execution.json": "f79eebc2cc79d01e8e08fade91c60f957fba7845e466808cfd0a9e6cfc1b7bc1",
+    "runs\\advanced_20261007\\parallel_training_summary.json": "4ed44a53ec5127963e21f2ca19996dcf6a5ff0c545c6fc1c67bbf1ae62624c29",
+    "runs\\advanced_20261007\\replays.html": "52b5ea541334313aab941d503363946cc9fefa57789db5dc8962c0049097f890",
+    "runs\\advanced_20261007\\results.md": "cb8fea3e91c6fd2d8f04875acfbc5b2a62e1e7780bee441ba23e6a53e37fa199",
+    "runs\\advanced_20261007\\strong_replays.html": "e82fe590fe78a8d47866aeb0c098b97b66b2d587ad631dfa381eadf453043dbf",
+    "runs\\defense12_20261006\\completion_manifest.json": "343ecb3c8a1821fd4cb4c5e2dc59d3ba63d32c0e54de801c46c24875fbba2de7",
+    "runs\\defense12_20261006\\diagnostics.json": "86946f509b66af0c97039e8b772e7fb917aee384f6c22137315ddfe738f94bf7",
+    "runs\\defense12_20261006\\evaluation.json": "eed892e073c28045f8486e799f22778d4b9223167d39506c54ad6d5f066f9790",
+    "runs\\defense12_20261006\\evaluation_expanded_test.json": "99b50a1846aae7aa46048b65e91794dddc200022cd4cd1c3d074cb3a83763995",
+    "runs\\defense12_20261006\\evaluation_history_control_validation.json": "20362149aeb76587b72350d9e4cdef9f49b8911b089cc0859faaea04b69a33aa",
+    "runs\\defense12_20261006\\evaluation_progress.json": "6464ca97cefb019bd2b7271b2e67052df3950d630fa15d8c22a7bf324efdaf94",
+    "runs\\defense12_20261006\\fly_seed4201.json": "5128f1e90d36bc409fbeef602f41b4bb74c13567e2b6fb91783f646972f049ea",
+    "runs\\defense12_20261006\\fly_seed4201.pt": "8d2bff88368f03db1c9f3f80d583f98724a61b7bafd4b2a26243f4728c04107b",
+    "runs\\defense12_20261006\\fly_seed4201_warmup.pt": "88cc2b9ae33ce6c832b181a57e27a165e3e5ecb1bec0a4151c8e898f0e547217",
+    "runs\\defense12_20261006\\fly_seed4202.json": "9cd1f0c817e6edcfabe3a65a8be684816be08497c14cee2f61ef6f406f4e9855",
+    "runs\\defense12_20261006\\fly_seed4202.pt": "bc47852ac767ac18d79fa69be487321fc5984a6b07a824ac00e95e0b34db9934",
+    "runs\\defense12_20261006\\fly_seed4202_warmup.pt": "3c3a2cccbc6606bac1d8fa51e6d863b622b2545fdf94fb156404be83cc7e32d8",
+    "runs\\defense12_20261006\\fly_seed4203.json": "9acf1d7fc16d324d458393eb803fe2377ffca61f821310a79a950dfcb7c2b240",
+    "runs\\defense12_20261006\\fly_seed4203.pt": "ba56440eaf4145f890b1522243da578788b16a85c95b4335c97feab6c83b3cce",
+    "runs\\defense12_20261006\\fly_seed4203_warmup.pt": "e850862e67ec180e399e9bb02f5374e1fb408680b4d3ea7c5e1cd860a174f75f",
+    "runs\\defense12_20261006\\gpu_sample.csv": "d2e5512e1cda02a633125b42ff244637cda96d17b54b4361fa8efb01f09678aa",
+    "runs\\defense12_20261006\\gru_seed4201.json": "5b77ab35b4d340b0a312626d19192dc74b3c6ad5b7b757f2b6704a016f9ab224",
+    "runs\\defense12_20261006\\gru_seed4201.pt": "2873b6c01bb67836e17cbfdb5f2003d36fe7c2cf261237826f90c3a326977733",
+    "runs\\defense12_20261006\\gru_seed4201_warmup.pt": "8ae2eae3397c966131f2d5b68e93d66dfb5a3273def726fbff1b868559e432ff",
+    "runs\\defense12_20261006\\gru_seed4202.json": "154031387667772da65291680409160b9611cbbadb2c8b4fcb6dc9d945f61ca3",
+    "runs\\defense12_20261006\\gru_seed4202.pt": "9c8d175d8a1fb6bd8dd9063d03c9c6e3440731ed98c181ada56e2f84bf735d65",
+    "runs\\defense12_20261006\\gru_seed4202_warmup.pt": "99e5e739b79d29e76c67e07fa5a461fb5943d0146fcda66ac03834cff56c4f9e",
+    "runs\\defense12_20261006\\gru_seed4203.json": "03adf57c184d4421f23e959a49c9e561de727045a2f4d402f45b47e2920df3c6",
+    "runs\\defense12_20261006\\gru_seed4203.pt": "450e5a8542359c7a0581858e53a3c4426f55a8900728476cad73229becf30ed5",
+    "runs\\defense12_20261006\\gru_seed4203_warmup.pt": "60cf5b9d4c58bfa81aa0d010c694618c073e18795dd2c2b148c051ca6b9d062d",
+    "runs\\defense12_20261006\\openings_seed4201.json": "d58cad05b3e84057803b6347742c13443f2a12e5f3f21f7da609cb31ce3e3e35",
+    "runs\\defense12_20261006\\openings_seed4202.json": "b8a027403311bfb4d1740fb29fa745de687be99e74004abc514546e20507830a",
+    "runs\\defense12_20261006\\openings_seed4203.json": "6da66a0be5eda1b836522cf3bd28f8b90f6a479724647cc0b2eb996a8eb0e8bb",
+    "runs\\defense12_20261006\\replays.html": "351bdfe03caae558b380140ae30e49ee7c84c577d1f00bbd6fa020a99ba895b6",
+    "runs\\defense12_20261006\\replays.json": "b3ca99c151d1101949a79d534584c3506410272ddd3ce35b3f5b71bfe15a8851",
+    "runs\\defense12_20261006\\results.md": "eda6511cb468058684576c0dc143b43227cd4355924db1fb7be088a9b1d83be3",
+    "runs\\defense12_20261006\\rewired_seed4201.json": "815f3c3750d3821a7536a7845dc6486fdeeeeed21fb8005683dac4f7a4c75ed1",
+    "runs\\defense12_20261006\\rewired_seed4201.pt": "944e11176f053baa992c2d6c8b3bfce0a631a7d0a3b1e0f2faf022316c438c99",
+    "runs\\defense12_20261006\\rewired_seed4201_warmup.pt": "131882074943e322937e2c889496de6c06ba2692369df91b4043db4574a725ed",
+    "runs\\defense12_20261006\\rewired_seed4202.json": "4221e9b8511a0fb879078c430021fbe25f0a66ff1c2c75ee1f42247c96d0866f",
+    "runs\\defense12_20261006\\rewired_seed4202.pt": "0ea22d12beb5e3fc5a5f30080b12021d64635f53bdba2b84d30166804713aa2b",
+    "runs\\defense12_20261006\\rewired_seed4202_warmup.pt": "222b8c3f29866443bac4c6e77e394df0a847fbeb5168075f1e585ad39748c094",
+    "runs\\defense12_20261006\\rewired_seed4203.json": "b37063d5ca0283d084587704865d2381c75ca955b9526da70cced7723092c9b5",
+    "runs\\defense12_20261006\\rewired_seed4203.pt": "51d178789b6c8f0407a1b02b4061a4308b9e1876160d5b7ec1d9a93bf64cbaf3",
+    "runs\\defense12_20261006\\rewired_seed4203_warmup.pt": "3f99adb2e8fff832be158d656372df5f6c6987694a141a934e14c6fe2b7e25b8",
+    "runs\\defense12_20261006\\rnn_seed4201.json": "db2c6c19d141c92635bb14e280c2e87522c10a0104511793713dff1c6f399766",
+    "runs\\defense12_20261006\\rnn_seed4201.pt": "3d5865388a26103747a848916a7f8fc552ed10a5e7a4f07a480483d700603897",
+    "runs\\defense12_20261006\\rnn_seed4201_warmup.pt": "283b3019dc890cb79da629efe238f70603483bc4882bf04d3e7fe2595f904c54",
+    "runs\\defense12_20261006\\rnn_seed4202.json": "e481176907f7c491abb3812375521bba48f4de55400abe40a7e26aad74d4553f",
+    "runs\\defense12_20261006\\rnn_seed4202.pt": "2aaec6e7b868222a08d29990f8e1ada2fc1f0f3f3d11848e6abed441432a4106",
+    "runs\\defense12_20261006\\rnn_seed4202_warmup.pt": "f16bd124ad3276c55218381858731479c7264ea00c91213a0271bc79fca0d035",
+    "runs\\defense12_20261006\\rnn_seed4203.json": "c4917311207a17e9e00e0694426192727ce7faa0afe38534d3b7f9eb23f079ab",
+    "runs\\defense12_20261006\\rnn_seed4203.pt": "63bdb502f87dd039de1e913052dfed51b8caf68c27c2a9be83163fab46f65c71",
+    "runs\\defense12_20261006\\rnn_seed4203_warmup.pt": "3a2cd7a216975c8cf444def0abc0dd202e29e841292b06d5c8336e6b0b3c77c4",
+    "runs\\defense12_20261006\\training_summary.json": "34afa80654216da0bfd4e32279863a35501e4b04db9c9d5437ea8384f3cfc514",
+    "runs\\defense12_smoke\\gru_seed4300.json": "32a5de2596b3294fec9d120ff5abd08337b27ebd06f1320dc4fbac2aced69ae5",
+    "runs\\defense12_smoke\\gru_seed4300.pt": "dbb44261c27708941de3a8f6cbec65028fafd0fd6cdc86118044a24069f1ce0b",
+    "runs\\defense12_smoke\\gru_seed4300_warmup.pt": "a32b06eee3eb0fe4a9bef3088d9fed2a0b761af86bc3ca5d1fbb170a5e1fdaf1",
+    "runs\\defense12_smoke\\training_summary.json": "62de9eb27dec7400f70c72a482edff1dedddfda0234532d22f904112bcab9517",
+    "runs\\pilot_20261006\\evaluation.json": "b6a779267657f8bebb433555f06614607479eec06a9aaf6aa4983102de5272a2",
+    "runs\\pilot_20261006\\fly_seed4101.json": "5b73b99a512ddc32fc39e08635144ad058331aa011122f7496a2ae0a293852bb",
+    "runs\\pilot_20261006\\fly_seed4101.pt": "bcec611506ce11864d11526d14e176440fb66c269019485d8729aebbff846a49",
+    "runs\\pilot_20261006\\fly_seed4102.json": "0de972790242e50857a6c6769a4257c9eeb2032dfe8381f4a4d9bfb9e86d0c6a",
+    "runs\\pilot_20261006\\fly_seed4102.pt": "36e943a12ed272ec5e5620749c090058f886e7b45bc8d1b3165d098fd0d351ba",
+    "runs\\pilot_20261006\\fly_seed4103.json": "11fb11b2c159f40009bf7157d5b4c8b258a11a7bbe785c4e750e8a0a4048557a",
+    "runs\\pilot_20261006\\fly_seed4103.pt": "c21531c99b8f5d2933299c3d0abf7ca1a911062a451efddda6c71398fbec49d6",
+    "runs\\pilot_20261006\\gru_seed4101.json": "58b54af28b7f60ee5a6dea807a6a0449fd7473261a55cbd053dc477a1b397e01",
+    "runs\\pilot_20261006\\gru_seed4101.pt": "e0487727fcc567e7bcaed3a6473c7530aeb6e30fa9e180859a5f5baca5d34316",
+    "runs\\pilot_20261006\\gru_seed4102.json": "08c69c21c21424d28f540fa86a1b3525aadfd68b71575a07bbc0402b11d5f85c",
+    "runs\\pilot_20261006\\gru_seed4102.pt": "e2882cc0da8b33084e64c6eda0a96a2596306d8c429964c92bf8026295824806",
+    "runs\\pilot_20261006\\gru_seed4103.json": "4401831403adc873e773636a503e74024b025a1c22021197e2f8dac1a01de3a7",
+    "runs\\pilot_20261006\\gru_seed4103.pt": "1ae240e5760b12780f326cfba1b8c960f743db471341d7ff15a3f38fdbb520e9",
+    "runs\\pilot_20261006\\openings_seed4101.json": "0939192a63c2875f6d85d63c42de6438bc76dd90e08b77773b1ac28688d611cf",
+    "runs\\pilot_20261006\\openings_seed4102.json": "42a6fd1c6a719bcb96d1933ab1bcc0d9392da615076d878f4066c04d4e6948b5",
+    "runs\\pilot_20261006\\openings_seed4103.json": "e4a6f880fb7bac7344935d1fd0b19b189f9662125e90631cf8d75043f4dbca97",
+    "runs\\pilot_20261006\\replays.html": "09a77ebbbd433cb198b7e242e9e47e3d3c566670c5616a54dcd5bfd19408a990",
+    "runs\\pilot_20261006\\replays.json": "8d9609164cbb81a32747228527d029b401ede1d84e237c9a56c9f374402add3c",
+    "runs\\pilot_20261006\\results.md": "4af7a4a9731d4e339a93688d0e8ede3e7d5de1208a0abf231ae82cd95362aaa0",
+    "runs\\pilot_20261006\\rewired_seed4101.json": "865edd8efed33d44c911e3766cc5684b6394d14db837a314c4ce5f4e51c42ef3",
+    "runs\\pilot_20261006\\rewired_seed4101.pt": "18d00b1e61d38d7cb3fa5bc0ac0b07e20a8d2f94870b8ced89a73e5fb18cdbee",
+    "runs\\pilot_20261006\\rewired_seed4102.json": "233edf25a82beb18beeb606fe1ede4900a9721b8e63b641a58ae3f4f0ed47260",
+    "runs\\pilot_20261006\\rewired_seed4102.pt": "cb19fd82f63fce64ecd5c882795f36306eaaf74a5a9477cbd67d5ef21823facc",
+    "runs\\pilot_20261006\\rewired_seed4103.json": "4554daba70c2747dae6e7eacdca0655c902ecac482055057bff29462531b01ff",
+    "runs\\pilot_20261006\\rewired_seed4103.pt": "65e22ec9454a2e2dcf27e81ea36c6e5e4264ea9436a25d187134db1c2bfd6e20",
+    "runs\\pilot_20261006\\rnn_seed4101.json": "ee6f1037b55b9c6e206396e4c2b0ca77c51ae76c43390f3385674f6027509645",
+    "runs\\pilot_20261006\\rnn_seed4101.pt": "95eed994c6124f8bb838b99dce2d5da36208b2ff7105a4004d35fba54cf3dc93",
+    "runs\\pilot_20261006\\rnn_seed4102.json": "e3637ee62146cf49f4a436e7bf371c0ed04d37edf72ab7bb4d2ce4af9fbfcf91",
+    "runs\\pilot_20261006\\rnn_seed4102.pt": "05c39d4be16901d7deda1f9a4e71361fe89ffe5cfeee1a1efa8b97a2c7c6a507",
+    "runs\\pilot_20261006\\rnn_seed4103.json": "0413f74242dcb64fb4276acf9f71aac2c8298eae0b6761ab6f9e9d202bce3e8d",
+    "runs\\pilot_20261006\\rnn_seed4103.pt": "d76da996edafc1a89c5ae81a5db543f393e954a7b71c1e919a15a2da54480365",
+    "runs\\pilot_20261006\\training_summary.json": "22a4edae833b919c6239e5f150b9fae7d5e3d52ad5d165fee52f1ec6aaeb9872",
+    "runs\\smoke\\evaluation.json": "4d9c17a0c5cced7494240a95280adf47e89f354b161166056340245e93d619b3",
+    "runs\\smoke\\fly_seed4901.json": "4bbade69c449412e54fe5bccd6cfb9f989c65440d160b5b7e056e7a5dae2c0cd",
+    "runs\\smoke\\fly_seed4901.pt": "2d79dffea7a9db7078f2893af2f9991de615726994082d25e2cc7f355fd03051",
+    "runs\\smoke\\gru_seed4901.json": "e77faaf2007aa55c90e39d9d85c10b7befcf942d8f785e9ca1ffcb1465feb128",
+    "runs\\smoke\\gru_seed4901.pt": "a36ff8e05cfddd84a1d8d598dcaaaf9a913e390c491067faad7be69f202c6129",
+    "runs\\smoke\\openings_seed4901.json": "c1bffb922ef69c6e1f62ba66b68ea7b01ee907467f2d9cf5f720d6e9315a3512",
+    "runs\\smoke\\replays.html": "6a0ce3ef181cc0381518489faff6cd2fd9a4e1b86b62eea9ff2809cf9e804788",
+    "runs\\smoke\\replays.json": "153475e18fbdbc8d6ecac2681143d65e403ffa2387095c06bc94592daa16ec73",
+    "runs\\smoke\\results.md": "7eea2165fbe779402bb0300d812a2a2bd5719f017e74f23e2abac9ddf318ea7c",
+    "runs\\smoke\\rewired_seed4901.json": "b7c6b985b2549ec6c68b217cc2ceaf65ce9a509f0f4666cf851ff7d070e627d6",
+    "runs\\smoke\\rewired_seed4901.pt": "37343140625faa124b6dfd1ec717e1b5abf46b26f1238172d507c79d1da1cfab",
+    "runs\\smoke\\rnn_seed4901.json": "f4ff236c45d91ebe2d34a4292f96dd302430905750aa6f68dd6aefd8306bbf9b",
+    "runs\\smoke\\rnn_seed4901.pt": "ab1681ecffd2bb288de91474d7f6124668140509cd5aaea42e2446bf65fee6f6",
+    "runs\\smoke\\training_summary.json": "a8ad53230622398a8d49c7c345e5d6128cc5187422f2bfe6f64bd17cede36cf4",
+    "runs\\advanced_20261007\\data\\test.npz": "d79513d145357cde1cd172b29ad689960386dc783fd3d470d1375f78e4198566",
+    "runs\\advanced_20261007\\data\\train.npz": "ce5f2a3037f10432f10486d91de5102f0cc96f80bb1c5e2ab41989560ef2ef57",
+    "runs\\advanced_20261007\\data\\validation.npz": "4643ec9df0d1076d485ab177488b5317f1df12172046fbd1b1cd185325fb6d09",
+    "runs\\advanced_20261007\\final\\evaluation.json": "7cfd527f431824151b8ef85adf6485228135d43e897005f838cb5b6c34364d4d",
+    "runs\\advanced_20261007\\final\\evaluation_original_test.json": "c67c01133687eea642b9cbb6d646ec211fefbd671e206701851bca156b54d36d",
+    "runs\\advanced_20261007\\final\\evaluation_progress.json": "1497af7cac36b5620a4288e83bb9350d374eae161df391c09e7430c6917090db",
+    "runs\\advanced_20261007\\final\\fly_seed4601.json": "72e30cabfdc9470e247e8bb9f627bfc957c8a72cee1103d53f2af3383a9cf5c8",
+    "runs\\advanced_20261007\\final\\fly_seed4601.pt": "71c6af7735af713324a2fb8f5fe1c155003296cddf8e81af16291dc8365f3ecf",
+    "runs\\advanced_20261007\\final\\fly_seed4601_warmup.pt": "06a8cdada6de71d2567e214f12594882d3b866bdf757690f0caf8d5ffc579f19",
+    "runs\\advanced_20261007\\final\\fly_seed4602.json": "f091a825aa40898523431fe67a632de3df28f059e9906273b14e43e3d73a5ed1",
+    "runs\\advanced_20261007\\final\\fly_seed4602.pt": "97160a021429d4f3bb7f43d1ac4eb81cdbc836fa1b58e36bd28f7e054173e179",
+    "runs\\advanced_20261007\\final\\fly_seed4602_warmup.pt": "cdd29c35550236dec90685ed3179a6dc8236aafca8a8ea12aa184fe17f2a09a7",
+    "runs\\advanced_20261007\\final\\fly_seed4603.json": "e99c202a24c357a5fd1164c6f1184e6af92cc79ef4f2f92422e7a5711d9ee7b7",
+    "runs\\advanced_20261007\\final\\fly_seed4603.pt": "f160032121cb3728081d0ab8129251b4200fb32dfb2eb67492125701e7ca9948",
+    "runs\\advanced_20261007\\final\\fly_seed4603_warmup.pt": "64b035f682ea0d3fd70d42e0cbb8c23382c823db0f28e6f9137e43623f873b7e",
+    "runs\\advanced_20261007\\final\\gru_seed4601.json": "07a28f771445ff3f4f1a103f48c38bb8368cd0508b13c2e1190aa3eda52f82ac",
+    "runs\\advanced_20261007\\final\\gru_seed4601.pt": "022aefa60c68b065c2ad8d01f258485356862ea801d024c2afee8f50bd81897a",
+    "runs\\advanced_20261007\\final\\gru_seed4601_warmup.pt": "5b534d7a125da3e399749b9d4e677bad7c65c66542a15d1d596844c60ad64445",
+    "runs\\advanced_20261007\\final\\gru_seed4602.json": "9f8a77cff1ed05674a023dba669e23aaf3e33340f05679f822632f60efbcf038",
+    "runs\\advanced_20261007\\final\\gru_seed4602.pt": "a7067f6068b8c7d1813e317692de4c946aabb64893f772862e527c3e6fa8e50a",
+    "runs\\advanced_20261007\\final\\gru_seed4602_warmup.pt": "999bbfb3058bcbd755d7e94f1fbf03e38f3f180845b03024a01fd42fab19eb15",
+    "runs\\advanced_20261007\\final\\gru_seed4603.json": "a17d8abbe8f7952b6fed71ce36f73ae177e0dfb76b56f03e663572ac7d647307",
+    "runs\\advanced_20261007\\final\\gru_seed4603.pt": "caf53437407acacd1c17d5fbbeba69a74a48f4ca074dd6118ac0c6ffbebb41f1",
+    "runs\\advanced_20261007\\final\\gru_seed4603_warmup.pt": "022bb4eb13b35bf62b1a478533b11a3010589f1130518641e1c21ad0402a9281",
+    "runs\\advanced_20261007\\final\\openings_seed4601.json": "84570d18e4b38f6170e01e651198745cc3a2011f5a415f37ab4e319a17503ecd",
+    "runs\\advanced_20261007\\final\\openings_seed4602.json": "c82a41a596add6002a559dbc6f3fd02db53a280d3eacf750a26c31a4541db58f",
+    "runs\\advanced_20261007\\final\\openings_seed4603.json": "fa17be7b442700630e791bb9cac606365c0abe33713ec71add577fbf38eb05a7",
+    "runs\\advanced_20261007\\final\\replays.json": "134c7f6f78da4ecef0519a3df64fc75dec56c293c68cd606ac2a5bb77312d459",
+    "runs\\advanced_20261007\\final\\rewired_seed4601.json": "82938755e68d4a1c0588233df7481a7ed9a02c5275bca617e54a24c80816a865",
+    "runs\\advanced_20261007\\final\\rewired_seed4601.pt": "97d818a86a58236109102c36316331ad50b8d29eaf4d1cd7df2455a0a9dbdcf6",
+    "runs\\advanced_20261007\\final\\rewired_seed4601_warmup.pt": "5d3d423de009a0c1e03a146e8d089a51623a661d4b947c61c1aecc30ae6e88f0",
+    "runs\\advanced_20261007\\final\\rewired_seed4602.json": "b25d756b40e8c03173773590b6fd7b81cac409c919bcf42824e953beee584b43",
+    "runs\\advanced_20261007\\final\\rewired_seed4602.pt": "bda50523b559346ea0d2f31d8bf4c5f90fe966cf8877f282413a86743b7bc262",
+    "runs\\advanced_20261007\\final\\rewired_seed4602_warmup.pt": "e031d88549afb8a3791a739c6a8c68d45841099ca78f39cb7e3075969f8ca693",
+    "runs\\advanced_20261007\\final\\rewired_seed4603.json": "6246547ffe04a4fa93534dc4f69032c301f9b8be47efc1e0c48b08217033b3ca",
+    "runs\\advanced_20261007\\final\\rewired_seed4603.pt": "a862dd58999cbc03180d0432c3e34869428c0db4ea91506f555d22fdafbd46c0",
+    "runs\\advanced_20261007\\final\\rewired_seed4603_warmup.pt": "6b5181004326f21d653b2bf31691f95c6369fdb44d875a4cc00954a80c557a58",
+    "runs\\advanced_20261007\\final\\rnn_seed4601.json": "c9e11bf38a15d064b4e5b11bad051c39e2fef2c4583ecb56808732a5a917fb16",
+    "runs\\advanced_20261007\\final\\rnn_seed4601.pt": "e88adc16579ea62c4faa5c0e44f73cca831ace9ae95a79c6d6284bc0131bf136",
+    "runs\\advanced_20261007\\final\\rnn_seed4601_warmup.pt": "fc39261f3e94e41894590a9befa9d045622ef805a8d8544de409aa87cec08f30",
+    "runs\\advanced_20261007\\final\\rnn_seed4602.json": "2fa378116429a3ff4923d384c109394b294fd203e2f07f0dee267562ed13cc63",
+    "runs\\advanced_20261007\\final\\rnn_seed4602.pt": "5aa48646f5f6aef7698911a2dde13d092394e884054548b611cf68f8f037d91e",
+    "runs\\advanced_20261007\\final\\rnn_seed4602_warmup.pt": "3cd4078195d714d77640b8867de66d802343d2f7f230e727bff7225ee7c28c36",
+    "runs\\advanced_20261007\\final\\rnn_seed4603.json": "00130c50b1282e5ebd3495f9d551f275889a5540ddac877006aa25bb2c0d684d",
+    "runs\\advanced_20261007\\final\\rnn_seed4603.pt": "1e0d8c4078c55c702c27f328db72324685e675e54fb4caae6a190424efef0f7f",
+    "runs\\advanced_20261007\\final\\rnn_seed4603_warmup.pt": "92f0f826497d4df277b05bd130bd40dc6a7902ca698a636b4996a323f3290514",
+    "runs\\advanced_20261007\\final\\strong_match_audit.json": "19ea49cb5de6cfcd904cdb0b502069860cc32a1f2c80c24c7ee5dfa540f978b8",
+    "runs\\advanced_20261007\\final\\strong_replays.json": "e66d4616e53471d5706b85aa586c4defb552b92dcb4fc459c4246b55c15eda93",
+    "runs\\advanced_20261007\\final\\training_summary.json": "55c923f45ac1351d22cf2fd135fb6f4d4196c1de7db9c492356d614371fd8ffd",
+    "runs\\advanced_20261007\\source\\advanced_audit.py": "15eb04f224e870d8d2d90764bdaeb1cb7f090f2b0bc51a6a9ffdab2800b9b858",
+    "runs\\advanced_20261007\\source\\advanced_evaluate.py": "ce4ead57373b530bd8f0c6acf6b4814b7889564121fba857230be573b02e5602",
+    "runs\\advanced_20261007\\source\\advanced_match_audit.py": "0f991df6ff12d3cd1a372825be14cdf4f7f6a3fbc46554657b0e8d777b280089",
+    "runs\\advanced_20261007\\source\\advanced_protocol.md": "0a97bd774fda1f7cc16dd844beffee1eeec52a512f84d061d0bb4ecda38c3e0d",
+    "runs\\advanced_20261007\\source\\advanced_report.py": "6708c5ffb6a74f62031744eea30754964ca99b40704a8cbd31bcd106c9fe501d",
+    "runs\\advanced_20261007\\source\\benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "runs\\advanced_20261007\\source\\defense12_protocol.md": "c42f2771e438265662bcae772a33dddab2a297be8a1de69d8aded1ebac99432a",
+    "runs\\advanced_20261007\\source\\defense_audit.py": "ced6afc3a1443db800701661b500fb301ba37f8142f7b82a2bae0f1832c29243",
+    "runs\\advanced_20261007\\source\\defense_evaluate.py": "b08c106951d451c8413764e133be0df4f10bd25568f6f3fe99e3b826903df3ef",
+    "runs\\advanced_20261007\\source\\defense_report.py": "4fcb9760115caefd1e2a44cc6fe41fafb1f22782fb4f4c32bd2641fd82b8302a",
+    "runs\\advanced_20261007\\source\\env.py": "e732d534c165f27172ac407417aa4ff288b3bca652737eb3a61a689f6697b46e",
+    "runs\\advanced_20261007\\source\\environment_versions.txt": "f7a597d429cae8b5f90706fca63c8901c39af42f307bf541c5ddd90e27922422",
+    "runs\\advanced_20261007\\source\\evaluate.py": "7f3fba758f42f53075dc97748fe35423f8412a24233c153241a9b8f37e9a7cc8",
+    "runs\\advanced_20261007\\source\\expanded_tactics.py": "52f7c0c3a3d52fc50b2b01e00deb3e8155da2547fb3d484a3af8c8faadd1df88",
+    "runs\\advanced_20261007\\source\\history_aux.py": "564d04fb40b5b4d7334800f24c45e25e118a01d7e6e1224355d6fde37fa64ba4",
+    "runs\\advanced_20261007\\source\\make_report.py": "812516d6370e3fada892ecc744141aa9324e1046559a19b02c17083004b97e95",
+    "runs\\advanced_20261007\\source\\models.py": "5cbf30663eb9ae90e339b263adee96dcac47eb16448285635d9bf2ceaadc9044",
+    "runs\\advanced_20261007\\source\\protocol.md": "4dc1c8747cdb8bd47e060e50d9360e24e4a93b800bd399c595c9b43737263268",
+    "runs\\advanced_20261007\\source\\README.md": "5c29bb9937f562ed59883c9fe7b08ea25604b6a9d799645c8faf3bab054d2f20",
+    "runs\\advanced_20261007\\source\\resource_benchmark.md": "a5895c904b62abd7b4b596ad96404e26064fbfd603902de9e5b0c60c4ba0bbff",
+    "runs\\advanced_20261007\\source\\spatial.py": "76c8e3ef0e12bf350ab75da3ea711bb66c3c10510c9f2855b50ce6b7d60157d2",
+    "runs\\advanced_20261007\\source\\tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "runs\\advanced_20261007\\source\\test_defense.py": "b86518edfd715811782eeca7307e986ba29d0e2d712335d14c4ebe377f0af235",
+    "runs\\advanced_20261007\\source\\test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "runs\\advanced_20261007\\source\\test_history_spatial.py": "d8e00948a2b3d548fa815f875c1b9823481ef33a9e6686259d09e2cb9413d0d8",
+    "runs\\advanced_20261007\\source\\train.py": "49de05240080ae8aa5c5de9e775b0b4ffdd36cf50bb581de3985952fac94c41f",
+    "runs\\advanced_20261007\\source\\__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28",
+    "runs\\advanced_20261007\\step1_cold\\evaluation.json": "15289e0182841dcf02e8fd50a9113d1d2c9495b0b3e9ea682c62e048b853bbf2",
+    "runs\\advanced_20261007\\step1_cold\\evaluation_progress.json": "05fb34dc6d75381f04b952e76564dd4f26ae140bb8c3277d4d98b745f76b0f83",
+    "runs\\advanced_20261007\\step1_cold\\fly_seed4500.json": "1d9cc5db9b7b24b278874f9e468f6c7faa379fff744750f8f81c9197a067cfc9",
+    "runs\\advanced_20261007\\step1_cold\\fly_seed4500.pt": "5f0178dfb7205933339884a2804e9628af850b5314772a96386c0d2ca274183b",
+    "runs\\advanced_20261007\\step1_cold\\fly_seed4500_warmup.pt": "94984345ffcb108f1a07bfb8d7c64cd0723d600bad4a754d6d2c51676ecbf0ea",
+    "runs\\advanced_20261007\\step1_cold\\gru_seed4500.json": "27f4e8859d47f92b7541c3398b7ae690b0b351fc1a16e45e2fd6989f831dfc45",
+    "runs\\advanced_20261007\\step1_cold\\gru_seed4500.pt": "5461a169896ece65dcad18c494f5369eec90aa1c9c53db034c03ed5ed7a0a2eb",
+    "runs\\advanced_20261007\\step1_cold\\gru_seed4500_warmup.pt": "b9ca789dde17784b4654fb88a4eb8a132af4136daff18198a3da32176a351008",
+    "runs\\advanced_20261007\\step1_cold\\training_summary.json": "dce40cec51d7ea6ba4c608bb4c68731df54661e0acb861dc8c179ccce758f156",
+    "runs\\advanced_20261007\\step1_full_history\\evaluation.json": "0b656117e0ccd5b0f848c42d826fa4601333056eb822d0717a349e76b1f8d3d9",
+    "runs\\advanced_20261007\\step1_full_history\\evaluation_progress.json": "66eb90d99ba4add27a29fc22baee73ec55b63258f24ee258cf848570dc8f1c05",
+    "runs\\advanced_20261007\\step1_full_history\\fly_seed4201.json": "f69d583c01e7ff3651adfb8e79df3b092f06bf08c466db07bd015d01b2556a5e",
+    "runs\\advanced_20261007\\step1_full_history\\fly_seed4201.pt": "76e7cfc979a8d4699e68eef29817981646b454c82e1a4dbcf2f51c69f8b53630",
+    "runs\\advanced_20261007\\step1_full_history\\fly_seed4201_warmup.pt": "0dd6c0c5a0c08b771c1479debc2b1c110d4a7f95f42c965277aacb4d3482f7ef",
+    "runs\\advanced_20261007\\step1_full_history\\gru_seed4201.json": "6c8fb925131c8c436025bc7bb947ba07623f8817095a4e008c5ef6f1e1074e5f",
+    "runs\\advanced_20261007\\step1_full_history\\gru_seed4201.pt": "5bdf8881921c98f879bc1692822869baa7a11a095079dd31feb02fcaa9c721df",
+    "runs\\advanced_20261007\\step1_full_history\\gru_seed4201_warmup.pt": "98021f1b4b267cf550d61759c604a1c66314c3646ed4eb705a4214be2dc41dcc",
+    "runs\\advanced_20261007\\step1_full_history\\training_summary.json": "abaf05783561fed45fc6d9c0322c24c5177e896970c4d41e5e46dbb22a6bf008",
+    "runs\\advanced_20261007\\step1_history\\evaluation.json": "054708ad1b31a37d272dc50f624b4917b55939b660a3065a8080a4e10c74072e",
+    "runs\\advanced_20261007\\step1_history\\evaluation_progress.json": "61d0b7efab7cd3bda2d7f9a780deb312134d74ea555acf6f32619ed042b6290a",
+    "runs\\advanced_20261007\\step1_history\\fly_seed4500.json": "1a5540a6d3f3851ad93a1d34f9d985bc73cf0cc471b2f2a8712d4e834dfb945e",
+    "runs\\advanced_20261007\\step1_history\\fly_seed4500.pt": "caa6f930db12751fc0ac0c674832ad3ae5bbbe06772f00f823ac4a525f88ecb4",
+    "runs\\advanced_20261007\\step1_history\\fly_seed4500_warmup.pt": "38f9eec06f850a05ac103bc60afda4f4836d609bf9babd54387f2bf63f92913b",
+    "runs\\advanced_20261007\\step1_history\\gru_seed4500.json": "838d066fad6bcac10dc1d8cce0bb82744f02f7b90b2d3b7f9a495f0e72e92a3b",
+    "runs\\advanced_20261007\\step1_history\\gru_seed4500.pt": "3fdf5b24affdaa1ff014b17e42febbef021936f2e448f908485538bb7ce01167",
+    "runs\\advanced_20261007\\step1_history\\gru_seed4500_warmup.pt": "aa51453f460696fa10f4eab0080e17cf816e533da5d4a445824ddb9d82d02a95",
+    "runs\\advanced_20261007\\step1_history\\training_summary.json": "08f8a764dc95d8bded904dee101621d3bac89daefe2c3d74cdde78d1935ccffe",
+    "runs\\advanced_20261007\\step2_spatial\\evaluation.json": "c0c2fd450e0c2a6730cd856fed943e0baffc3098e2ab56e8b12290a2bba04a31",
+    "runs\\advanced_20261007\\step2_spatial\\evaluation_progress.json": "4effdf0406e30f6c3cd4fdc89a4c24be54039fc9ae3fbe093fbde18327be4462",
+    "runs\\advanced_20261007\\step2_spatial\\fly_seed4500.json": "76dc7a938477633f57b6f92f3608626c20e76ec5dd8ee11ddcf417c693313a41",
+    "runs\\advanced_20261007\\step2_spatial\\fly_seed4500.pt": "c9285436386e19da568ce023c717c8ad7cf0ef43b30eeba8d3d3227c4b1d0b3f",
+    "runs\\advanced_20261007\\step2_spatial\\fly_seed4500_warmup.pt": "0b5dd132889e595edd0fba015f15a037f9e4681f9c6472af28aa041fb1e59397",
+    "runs\\advanced_20261007\\step2_spatial\\gru_seed4500.json": "92ea21aec9c5cba90d121d64d721786caf1181704f95835edecc3aff73a94203",
+    "runs\\advanced_20261007\\step2_spatial\\gru_seed4500.pt": "4be1cb89ab401751ecde5d1ecac14d6e266f2d6d1d109f86d89f873dd403e69e",
+    "runs\\advanced_20261007\\step2_spatial\\gru_seed4500_warmup.pt": "78d62f5b7275df1927c8c9387aae175c1398748ab770746dfc14fd771acd792e",
+    "runs\\advanced_20261007\\step2_spatial\\training_summary.json": "ab53fa504f22dc2b90ab76e69ffd7005b88e34eea77b5b980232d1c6317b7775",
+    "runs\\advanced_20261007\\step3_expanded\\evaluation.json": "5884a29458cd6bee2e2f80dfc9d36ddbcbc6619c11a6e2a8f43b4f556b48e0ad",
+    "runs\\advanced_20261007\\step3_expanded\\evaluation_basic_validation.json": "cfc1c0a05a6234634142ea3d106f49fae2febc7a16e06625803a5d302c47746a",
+    "runs\\advanced_20261007\\step3_expanded\\evaluation_progress.json": "b77e7f0147e7b6caca981eea6be28bd3b779cae4b3a7bfeb24ffdfa9b64a30d5",
+    "runs\\advanced_20261007\\step3_expanded\\fly_seed4500.json": "e4a0af2cf69f2ddaf72d0c16073b082167753f43caf65e2c0461ac3c6dae36e8",
+    "runs\\advanced_20261007\\step3_expanded\\fly_seed4500.pt": "1ef3f891cd11227e0a4300bafc92576c15efbb38b64779dde1256b26f44c508d",
+    "runs\\advanced_20261007\\step3_expanded\\fly_seed4500_warmup.pt": "1d4e9b8091ef16fe61d8a53c4fd70cb8da4942937c66b3707af4a8aa4367de3b",
+    "runs\\advanced_20261007\\step3_expanded\\gru_seed4500.json": "b00c3d961f6473dda538196bf48b90f5e8b3ea5bd8e67337d65214bfa318341c",
+    "runs\\advanced_20261007\\step3_expanded\\gru_seed4500.pt": "4d25420a6dd93daae701f424624efef7364746e096541459bb1aba5c916131f1",
+    "runs\\advanced_20261007\\step3_expanded\\gru_seed4500_warmup.pt": "ba8d50ea0bdff3e04618b2a39a5ef7ae3f68dfb5e62e2129133cc903ea4e1e09",
+    "runs\\advanced_20261007\\step3_expanded\\training_summary.json": "4fd8b4d40543a2dfa9295731e87c5e03b77d99a7f59b88058dd17b34bc79aa1c",
+    "runs\\defense12_20261006\\data\\test.npz": "2175e599668ddbd61074a3a2c617518b46c73315a72fd75ba3e07055c55ad299",
+    "runs\\defense12_20261006\\data\\train.npz": "018da29888c78f009b7bc5a8bdaea8961cb9f3cdfa869fcd7210d570da3f100a",
+    "runs\\defense12_20261006\\data\\validation.npz": "d4f44e7e604758b61d0ac243673804ca9ff3a87ed9e37372c7a951bab97a1ca6",
+    "runs\\defense12_20261006\\source\\benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "runs\\defense12_20261006\\source\\defense12_protocol.md": "c42f2771e438265662bcae772a33dddab2a297be8a1de69d8aded1ebac99432a",
+    "runs\\defense12_20261006\\source\\defense_evaluate.py": "d80c37ac2702e8290e948154b812ae2fd7e0a9abab6570fa723f024ca81b9b04",
+    "runs\\defense12_20261006\\source\\defense_report.py": "219fc2fc24d07b23d15541c496be6ffc5575e3f810bb9a913cda22e91c71c050",
+    "runs\\defense12_20261006\\source\\env.py": "d6d0403604ad165c37a2e53c097bfed35032396c499cecdcc4f03fd59362fd90",
+    "runs\\defense12_20261006\\source\\evaluate.py": "7f3fba758f42f53075dc97748fe35423f8412a24233c153241a9b8f37e9a7cc8",
+    "runs\\defense12_20261006\\source\\make_report.py": "812516d6370e3fada892ecc744141aa9324e1046559a19b02c17083004b97e95",
+    "runs\\defense12_20261006\\source\\models.py": "f97fa7ed8bfd66863e1b49bd650be7ed8ecd22f949840f9dc3f371be90d17331",
+    "runs\\defense12_20261006\\source\\tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "runs\\defense12_20261006\\source\\test_defense.py": "ef2c996316d035e002089742f47e34997fa399bcbe26a06804cee5680ef67185",
+    "runs\\defense12_20261006\\source\\test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "runs\\defense12_20261006\\source\\train.py": "dd95719ec40733693e5d658bb0561433bef3845f99e3dcbd1ff6096eaf17c5ec",
+    "runs\\defense12_20261006\\source\\__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28",
+    "runs\\defense12_20261006\\source_final\\benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "runs\\defense12_20261006\\source_final\\defense12_protocol.md": "c42f2771e438265662bcae772a33dddab2a297be8a1de69d8aded1ebac99432a",
+    "runs\\defense12_20261006\\source_final\\defense_audit.py": "ced6afc3a1443db800701661b500fb301ba37f8142f7b82a2bae0f1832c29243",
+    "runs\\defense12_20261006\\source_final\\defense_evaluate.py": "b08c106951d451c8413764e133be0df4f10bd25568f6f3fe99e3b826903df3ef",
+    "runs\\defense12_20261006\\source_final\\defense_report.py": "9f46bdf91c24c1e5baebc9f37ab21c32f708deecae046b170a87efdc9a9e6af8",
+    "runs\\defense12_20261006\\source_final\\env.py": "d6d0403604ad165c37a2e53c097bfed35032396c499cecdcc4f03fd59362fd90",
+    "runs\\defense12_20261006\\source_final\\evaluate.py": "7f3fba758f42f53075dc97748fe35423f8412a24233c153241a9b8f37e9a7cc8",
+    "runs\\defense12_20261006\\source_final\\make_report.py": "812516d6370e3fada892ecc744141aa9324e1046559a19b02c17083004b97e95",
+    "runs\\defense12_20261006\\source_final\\models.py": "f97fa7ed8bfd66863e1b49bd650be7ed8ecd22f949840f9dc3f371be90d17331",
+    "runs\\defense12_20261006\\source_final\\tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "runs\\defense12_20261006\\source_final\\test_defense.py": "b86518edfd715811782eeca7307e986ba29d0e2d712335d14c4ebe377f0af235",
+    "runs\\defense12_20261006\\source_final\\test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "runs\\defense12_20261006\\source_final\\train.py": "101d132ef58fbad673d8e43fff8162dd6cda8d329c1bfd2c6a4c33f4564d67fa",
+    "runs\\defense12_20261006\\source_final\\__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28",
+    "runs\\defense12_20261006\\source_follow_training\\benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "runs\\defense12_20261006\\source_follow_training\\defense12_protocol.md": "c42f2771e438265662bcae772a33dddab2a297be8a1de69d8aded1ebac99432a",
+    "runs\\defense12_20261006\\source_follow_training\\defense_evaluate.py": "b08c106951d451c8413764e133be0df4f10bd25568f6f3fe99e3b826903df3ef",
+    "runs\\defense12_20261006\\source_follow_training\\defense_report.py": "219fc2fc24d07b23d15541c496be6ffc5575e3f810bb9a913cda22e91c71c050",
+    "runs\\defense12_20261006\\source_follow_training\\env.py": "d6d0403604ad165c37a2e53c097bfed35032396c499cecdcc4f03fd59362fd90",
+    "runs\\defense12_20261006\\source_follow_training\\evaluate.py": "7f3fba758f42f53075dc97748fe35423f8412a24233c153241a9b8f37e9a7cc8",
+    "runs\\defense12_20261006\\source_follow_training\\make_report.py": "812516d6370e3fada892ecc744141aa9324e1046559a19b02c17083004b97e95",
+    "runs\\defense12_20261006\\source_follow_training\\models.py": "f97fa7ed8bfd66863e1b49bd650be7ed8ecd22f949840f9dc3f371be90d17331",
+    "runs\\defense12_20261006\\source_follow_training\\tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "runs\\defense12_20261006\\source_follow_training\\test_defense.py": "ef2c996316d035e002089742f47e34997fa399bcbe26a06804cee5680ef67185",
+    "runs\\defense12_20261006\\source_follow_training\\test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "runs\\defense12_20261006\\source_follow_training\\train.py": "dd95719ec40733693e5d658bb0561433bef3845f99e3dcbd1ff6096eaf17c5ec",
+    "runs\\defense12_20261006\\source_follow_training\\__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28",
+    "runs\\pilot_20261006\\source\\benchmark_resources.py": "0aac5fbc50ade25564d303b66cae2bef2c375e7681387fa88e9804fe8803a114",
+    "runs\\pilot_20261006\\source\\env.py": "4fb98e90188ea662ee6266469e5ed339c0768a981655b4e41ee8ca5559e01953",
+    "runs\\pilot_20261006\\source\\evaluate.py": "83eccedaa126be4baa14737349aa6443f33a82b876c45969b8f181e6257e27ee",
+    "runs\\pilot_20261006\\source\\make_report.py": "efe1f7192bc4786d85e987b8625c09ac33df15b538b53ed52c2f92128cf601b9",
+    "runs\\pilot_20261006\\source\\models.py": "f97fa7ed8bfd66863e1b49bd650be7ed8ecd22f949840f9dc3f371be90d17331",
+    "runs\\pilot_20261006\\source\\protocol.md": "4dc1c8747cdb8bd47e060e50d9360e24e4a93b800bd399c595c9b43737263268",
+    "runs\\pilot_20261006\\source\\test_gomoku.py": "f4819d57350fa770f13e7133f26e667cd3aafeb797a5884efc2d5f83094f9392",
+    "runs\\pilot_20261006\\source\\train.py": "5a258c342bb9cbd423d565a223dc1a05c9edb533917c90b54530d2def34329df",
+    "runs\\pilot_20261006\\source\\__init__.py": "726625697675024729b5b1a78ec66be1488757ff4a8bc2550bad01fc2e065d28"
+  },
+  "reports": [
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\evaluation.json",
+      "report": "gomoku\\reports\\pilot_20261006\\evaluation.json",
+      "sha256": "b6a779267657f8bebb433555f06614607479eec06a9aaf6aa4983102de5272a2"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\fly_seed4101.json",
+      "report": "gomoku\\reports\\pilot_20261006\\fly_seed4101.json",
+      "sha256": "5b73b99a512ddc32fc39e08635144ad058331aa011122f7496a2ae0a293852bb"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\fly_seed4102.json",
+      "report": "gomoku\\reports\\pilot_20261006\\fly_seed4102.json",
+      "sha256": "0de972790242e50857a6c6769a4257c9eeb2032dfe8381f4a4d9bfb9e86d0c6a"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\fly_seed4103.json",
+      "report": "gomoku\\reports\\pilot_20261006\\fly_seed4103.json",
+      "sha256": "11fb11b2c159f40009bf7157d5b4c8b258a11a7bbe785c4e750e8a0a4048557a"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\gru_seed4101.json",
+      "report": "gomoku\\reports\\pilot_20261006\\gru_seed4101.json",
+      "sha256": "58b54af28b7f60ee5a6dea807a6a0449fd7473261a55cbd053dc477a1b397e01"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\gru_seed4102.json",
+      "report": "gomoku\\reports\\pilot_20261006\\gru_seed4102.json",
+      "sha256": "08c69c21c21424d28f540fa86a1b3525aadfd68b71575a07bbc0402b11d5f85c"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\gru_seed4103.json",
+      "report": "gomoku\\reports\\pilot_20261006\\gru_seed4103.json",
+      "sha256": "4401831403adc873e773636a503e74024b025a1c22021197e2f8dac1a01de3a7"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\openings_seed4101.json",
+      "report": "gomoku\\reports\\pilot_20261006\\openings_seed4101.json",
+      "sha256": "0939192a63c2875f6d85d63c42de6438bc76dd90e08b77773b1ac28688d611cf"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\openings_seed4102.json",
+      "report": "gomoku\\reports\\pilot_20261006\\openings_seed4102.json",
+      "sha256": "42a6fd1c6a719bcb96d1933ab1bcc0d9392da615076d878f4066c04d4e6948b5"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\openings_seed4103.json",
+      "report": "gomoku\\reports\\pilot_20261006\\openings_seed4103.json",
+      "sha256": "e4a6f880fb7bac7344935d1fd0b19b189f9662125e90631cf8d75043f4dbca97"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\replays.html",
+      "report": "gomoku\\reports\\pilot_20261006\\replays.html",
+      "sha256": "09a77ebbbd433cb198b7e242e9e47e3d3c566670c5616a54dcd5bfd19408a990"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\replays.json",
+      "report": "gomoku\\reports\\pilot_20261006\\replays.json",
+      "sha256": "8d9609164cbb81a32747228527d029b401ede1d84e237c9a56c9f374402add3c"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\results.md",
+      "report": "gomoku\\reports\\pilot_20261006\\results.md",
+      "sha256": "4af7a4a9731d4e339a93688d0e8ede3e7d5de1208a0abf231ae82cd95362aaa0"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\rewired_seed4101.json",
+      "report": "gomoku\\reports\\pilot_20261006\\rewired_seed4101.json",
+      "sha256": "865edd8efed33d44c911e3766cc5684b6394d14db837a314c4ce5f4e51c42ef3"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\rewired_seed4102.json",
+      "report": "gomoku\\reports\\pilot_20261006\\rewired_seed4102.json",
+      "sha256": "233edf25a82beb18beeb606fe1ede4900a9721b8e63b641a58ae3f4f0ed47260"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\rewired_seed4103.json",
+      "report": "gomoku\\reports\\pilot_20261006\\rewired_seed4103.json",
+      "sha256": "4554daba70c2747dae6e7eacdca0655c902ecac482055057bff29462531b01ff"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\rnn_seed4101.json",
+      "report": "gomoku\\reports\\pilot_20261006\\rnn_seed4101.json",
+      "sha256": "ee6f1037b55b9c6e206396e4c2b0ca77c51ae76c43390f3385674f6027509645"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\rnn_seed4102.json",
+      "report": "gomoku\\reports\\pilot_20261006\\rnn_seed4102.json",
+      "sha256": "e3637ee62146cf49f4a436e7bf371c0ed04d37edf72ab7bb4d2ce4af9fbfcf91"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\rnn_seed4103.json",
+      "report": "gomoku\\reports\\pilot_20261006\\rnn_seed4103.json",
+      "sha256": "0413f74242dcb64fb4276acf9f71aac2c8298eae0b6761ab6f9e9d202bce3e8d"
+    },
+    {
+      "source": "gomoku\\runs\\pilot_20261006\\training_summary.json",
+      "report": "gomoku\\reports\\pilot_20261006\\training_summary.json",
+      "sha256": "22a4edae833b919c6239e5f150b9fae7d5e3d52ad5d165fee52f1ec6aaeb9872"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\completion_manifest.json",
+      "report": "gomoku\\reports\\defense12_20261006\\completion_manifest.json",
+      "sha256": "343ecb3c8a1821fd4cb4c5e2dc59d3ba63d32c0e54de801c46c24875fbba2de7"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\diagnostics.json",
+      "report": "gomoku\\reports\\defense12_20261006\\diagnostics.json",
+      "sha256": "86946f509b66af0c97039e8b772e7fb917aee384f6c22137315ddfe738f94bf7"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\evaluation.json",
+      "report": "gomoku\\reports\\defense12_20261006\\evaluation.json",
+      "sha256": "eed892e073c28045f8486e799f22778d4b9223167d39506c54ad6d5f066f9790"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\evaluation_expanded_test.json",
+      "report": "gomoku\\reports\\defense12_20261006\\evaluation_expanded_test.json",
+      "sha256": "99b50a1846aae7aa46048b65e91794dddc200022cd4cd1c3d074cb3a83763995"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\evaluation_history_control_validation.json",
+      "report": "gomoku\\reports\\defense12_20261006\\evaluation_history_control_validation.json",
+      "sha256": "20362149aeb76587b72350d9e4cdef9f49b8911b089cc0859faaea04b69a33aa"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\evaluation_progress.json",
+      "report": "gomoku\\reports\\defense12_20261006\\evaluation_progress.json",
+      "sha256": "6464ca97cefb019bd2b7271b2e67052df3950d630fa15d8c22a7bf324efdaf94"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\fly_seed4201.json",
+      "report": "gomoku\\reports\\defense12_20261006\\fly_seed4201.json",
+      "sha256": "5128f1e90d36bc409fbeef602f41b4bb74c13567e2b6fb91783f646972f049ea"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\fly_seed4202.json",
+      "report": "gomoku\\reports\\defense12_20261006\\fly_seed4202.json",
+      "sha256": "9cd1f0c817e6edcfabe3a65a8be684816be08497c14cee2f61ef6f406f4e9855"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\fly_seed4203.json",
+      "report": "gomoku\\reports\\defense12_20261006\\fly_seed4203.json",
+      "sha256": "9acf1d7fc16d324d458393eb803fe2377ffca61f821310a79a950dfcb7c2b240"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\gru_seed4201.json",
+      "report": "gomoku\\reports\\defense12_20261006\\gru_seed4201.json",
+      "sha256": "5b77ab35b4d340b0a312626d19192dc74b3c6ad5b7b757f2b6704a016f9ab224"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\gru_seed4202.json",
+      "report": "gomoku\\reports\\defense12_20261006\\gru_seed4202.json",
+      "sha256": "154031387667772da65291680409160b9611cbbadb2c8b4fcb6dc9d945f61ca3"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\gru_seed4203.json",
+      "report": "gomoku\\reports\\defense12_20261006\\gru_seed4203.json",
+      "sha256": "03adf57c184d4421f23e959a49c9e561de727045a2f4d402f45b47e2920df3c6"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\openings_seed4201.json",
+      "report": "gomoku\\reports\\defense12_20261006\\openings_seed4201.json",
+      "sha256": "d58cad05b3e84057803b6347742c13443f2a12e5f3f21f7da609cb31ce3e3e35"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\openings_seed4202.json",
+      "report": "gomoku\\reports\\defense12_20261006\\openings_seed4202.json",
+      "sha256": "b8a027403311bfb4d1740fb29fa745de687be99e74004abc514546e20507830a"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\openings_seed4203.json",
+      "report": "gomoku\\reports\\defense12_20261006\\openings_seed4203.json",
+      "sha256": "6da66a0be5eda1b836522cf3bd28f8b90f6a479724647cc0b2eb996a8eb0e8bb"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\replays.html",
+      "report": "gomoku\\reports\\defense12_20261006\\replays.html",
+      "sha256": "351bdfe03caae558b380140ae30e49ee7c84c577d1f00bbd6fa020a99ba895b6"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\replays.json",
+      "report": "gomoku\\reports\\defense12_20261006\\replays.json",
+      "sha256": "b3ca99c151d1101949a79d534584c3506410272ddd3ce35b3f5b71bfe15a8851"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\results.md",
+      "report": "gomoku\\reports\\defense12_20261006\\results.md",
+      "sha256": "eda6511cb468058684576c0dc143b43227cd4355924db1fb7be088a9b1d83be3"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\rewired_seed4201.json",
+      "report": "gomoku\\reports\\defense12_20261006\\rewired_seed4201.json",
+      "sha256": "815f3c3750d3821a7536a7845dc6486fdeeeeed21fb8005683dac4f7a4c75ed1"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\rewired_seed4202.json",
+      "report": "gomoku\\reports\\defense12_20261006\\rewired_seed4202.json",
+      "sha256": "4221e9b8511a0fb879078c430021fbe25f0a66ff1c2c75ee1f42247c96d0866f"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\rewired_seed4203.json",
+      "report": "gomoku\\reports\\defense12_20261006\\rewired_seed4203.json",
+      "sha256": "b37063d5ca0283d084587704865d2381c75ca955b9526da70cced7723092c9b5"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\rnn_seed4201.json",
+      "report": "gomoku\\reports\\defense12_20261006\\rnn_seed4201.json",
+      "sha256": "db2c6c19d141c92635bb14e280c2e87522c10a0104511793713dff1c6f399766"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\rnn_seed4202.json",
+      "report": "gomoku\\reports\\defense12_20261006\\rnn_seed4202.json",
+      "sha256": "e481176907f7c491abb3812375521bba48f4de55400abe40a7e26aad74d4553f"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\rnn_seed4203.json",
+      "report": "gomoku\\reports\\defense12_20261006\\rnn_seed4203.json",
+      "sha256": "c4917311207a17e9e00e0694426192727ce7faa0afe38534d3b7f9eb23f079ab"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\training_summary.json",
+      "report": "gomoku\\reports\\defense12_20261006\\training_summary.json",
+      "sha256": "34afa80654216da0bfd4e32279863a35501e4b04db9c9d5437ea8384f3cfc514"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\audit.json",
+      "report": "gomoku\\reports\\advanced_20261007\\audit.json",
+      "sha256": "e6027e053dd979f367806dffd48547c1abe390c35dcedce685bf8011e428a8f9"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\completion_manifest.json",
+      "report": "gomoku\\reports\\advanced_20261007\\completion_manifest.json",
+      "sha256": "5b6793c89a66d6ef9ddae952e56af553cd3a284357e7c48bfee1f57eae43ef69"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\diagnostics.json",
+      "report": "gomoku\\reports\\advanced_20261007\\diagnostics.json",
+      "sha256": "6cd4fefbb71db4d9390b032d61d036e27615b37590b093f6c1afa832ccc3155d"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\full_budget_control.json",
+      "report": "gomoku\\reports\\advanced_20261007\\full_budget_control.json",
+      "sha256": "42ece9cae15bb60c056eb06a77d432fbc8278233dc67846fee1929967779616d"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\parallel_execution.json",
+      "report": "gomoku\\reports\\advanced_20261007\\parallel_execution.json",
+      "sha256": "f79eebc2cc79d01e8e08fade91c60f957fba7845e466808cfd0a9e6cfc1b7bc1"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\parallel_training_summary.json",
+      "report": "gomoku\\reports\\advanced_20261007\\parallel_training_summary.json",
+      "sha256": "4ed44a53ec5127963e21f2ca19996dcf6a5ff0c545c6fc1c67bbf1ae62624c29"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\replays.html",
+      "report": "gomoku\\reports\\advanced_20261007\\replays.html",
+      "sha256": "52b5ea541334313aab941d503363946cc9fefa57789db5dc8962c0049097f890"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\results.md",
+      "report": "gomoku\\reports\\advanced_20261007\\results.md",
+      "sha256": "cb8fea3e91c6fd2d8f04875acfbc5b2a62e1e7780bee441ba23e6a53e37fa199"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\strong_replays.html",
+      "report": "gomoku\\reports\\advanced_20261007\\strong_replays.html",
+      "sha256": "e82fe590fe78a8d47866aeb0c098b97b66b2d587ad631dfa381eadf453043dbf"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\evaluation.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\evaluation.json",
+      "sha256": "7cfd527f431824151b8ef85adf6485228135d43e897005f838cb5b6c34364d4d"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\evaluation_original_test.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\evaluation_original_test.json",
+      "sha256": "c67c01133687eea642b9cbb6d646ec211fefbd671e206701851bca156b54d36d"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\evaluation_progress.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\evaluation_progress.json",
+      "sha256": "1497af7cac36b5620a4288e83bb9350d374eae161df391c09e7430c6917090db"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\fly_seed4601.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\fly_seed4601.json",
+      "sha256": "72e30cabfdc9470e247e8bb9f627bfc957c8a72cee1103d53f2af3383a9cf5c8"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\fly_seed4602.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\fly_seed4602.json",
+      "sha256": "f091a825aa40898523431fe67a632de3df28f059e9906273b14e43e3d73a5ed1"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\fly_seed4603.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\fly_seed4603.json",
+      "sha256": "e99c202a24c357a5fd1164c6f1184e6af92cc79ef4f2f92422e7a5711d9ee7b7"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\gru_seed4601.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\gru_seed4601.json",
+      "sha256": "07a28f771445ff3f4f1a103f48c38bb8368cd0508b13c2e1190aa3eda52f82ac"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\gru_seed4602.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\gru_seed4602.json",
+      "sha256": "9f8a77cff1ed05674a023dba669e23aaf3e33340f05679f822632f60efbcf038"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\gru_seed4603.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\gru_seed4603.json",
+      "sha256": "a17d8abbe8f7952b6fed71ce36f73ae177e0dfb76b56f03e663572ac7d647307"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\openings_seed4601.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\openings_seed4601.json",
+      "sha256": "84570d18e4b38f6170e01e651198745cc3a2011f5a415f37ab4e319a17503ecd"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\openings_seed4602.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\openings_seed4602.json",
+      "sha256": "c82a41a596add6002a559dbc6f3fd02db53a280d3eacf750a26c31a4541db58f"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\openings_seed4603.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\openings_seed4603.json",
+      "sha256": "fa17be7b442700630e791bb9cac606365c0abe33713ec71add577fbf38eb05a7"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\replays.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\replays.json",
+      "sha256": "134c7f6f78da4ecef0519a3df64fc75dec56c293c68cd606ac2a5bb77312d459"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\rewired_seed4601.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\rewired_seed4601.json",
+      "sha256": "82938755e68d4a1c0588233df7481a7ed9a02c5275bca617e54a24c80816a865"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\rewired_seed4602.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\rewired_seed4602.json",
+      "sha256": "b25d756b40e8c03173773590b6fd7b81cac409c919bcf42824e953beee584b43"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\rewired_seed4603.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\rewired_seed4603.json",
+      "sha256": "6246547ffe04a4fa93534dc4f69032c301f9b8be47efc1e0c48b08217033b3ca"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\rnn_seed4601.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\rnn_seed4601.json",
+      "sha256": "c9e11bf38a15d064b4e5b11bad051c39e2fef2c4583ecb56808732a5a917fb16"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\rnn_seed4602.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\rnn_seed4602.json",
+      "sha256": "2fa378116429a3ff4923d384c109394b294fd203e2f07f0dee267562ed13cc63"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\rnn_seed4603.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\rnn_seed4603.json",
+      "sha256": "00130c50b1282e5ebd3495f9d551f275889a5540ddac877006aa25bb2c0d684d"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\strong_match_audit.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\strong_match_audit.json",
+      "sha256": "19ea49cb5de6cfcd904cdb0b502069860cc32a1f2c80c24c7ee5dfa540f978b8"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\strong_replays.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\strong_replays.json",
+      "sha256": "e66d4616e53471d5706b85aa586c4defb552b92dcb4fc459c4246b55c15eda93"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\final\\training_summary.json",
+      "report": "gomoku\\reports\\advanced_20261007\\final\\training_summary.json",
+      "sha256": "55c923f45ac1351d22cf2fd135fb6f4d4196c1de7db9c492356d614371fd8ffd"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_cold\\evaluation.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_cold\\evaluation.json",
+      "sha256": "15289e0182841dcf02e8fd50a9113d1d2c9495b0b3e9ea682c62e048b853bbf2"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_cold\\evaluation_progress.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_cold\\evaluation_progress.json",
+      "sha256": "05fb34dc6d75381f04b952e76564dd4f26ae140bb8c3277d4d98b745f76b0f83"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_cold\\fly_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_cold\\fly_seed4500.json",
+      "sha256": "1d9cc5db9b7b24b278874f9e468f6c7faa379fff744750f8f81c9197a067cfc9"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_cold\\gru_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_cold\\gru_seed4500.json",
+      "sha256": "27f4e8859d47f92b7541c3398b7ae690b0b351fc1a16e45e2fd6989f831dfc45"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_cold\\training_summary.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_cold\\training_summary.json",
+      "sha256": "dce40cec51d7ea6ba4c608bb4c68731df54661e0acb861dc8c179ccce758f156"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_full_history\\evaluation.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_full_history\\evaluation.json",
+      "sha256": "0b656117e0ccd5b0f848c42d826fa4601333056eb822d0717a349e76b1f8d3d9"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_full_history\\evaluation_progress.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_full_history\\evaluation_progress.json",
+      "sha256": "66eb90d99ba4add27a29fc22baee73ec55b63258f24ee258cf848570dc8f1c05"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_full_history\\fly_seed4201.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_full_history\\fly_seed4201.json",
+      "sha256": "f69d583c01e7ff3651adfb8e79df3b092f06bf08c466db07bd015d01b2556a5e"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_full_history\\gru_seed4201.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_full_history\\gru_seed4201.json",
+      "sha256": "6c8fb925131c8c436025bc7bb947ba07623f8817095a4e008c5ef6f1e1074e5f"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_full_history\\training_summary.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_full_history\\training_summary.json",
+      "sha256": "abaf05783561fed45fc6d9c0322c24c5177e896970c4d41e5e46dbb22a6bf008"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_history\\evaluation.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_history\\evaluation.json",
+      "sha256": "054708ad1b31a37d272dc50f624b4917b55939b660a3065a8080a4e10c74072e"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_history\\evaluation_progress.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_history\\evaluation_progress.json",
+      "sha256": "61d0b7efab7cd3bda2d7f9a780deb312134d74ea555acf6f32619ed042b6290a"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_history\\fly_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_history\\fly_seed4500.json",
+      "sha256": "1a5540a6d3f3851ad93a1d34f9d985bc73cf0cc471b2f2a8712d4e834dfb945e"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_history\\gru_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_history\\gru_seed4500.json",
+      "sha256": "838d066fad6bcac10dc1d8cce0bb82744f02f7b90b2d3b7f9a495f0e72e92a3b"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step1_history\\training_summary.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step1_history\\training_summary.json",
+      "sha256": "08f8a764dc95d8bded904dee101621d3bac89daefe2c3d74cdde78d1935ccffe"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step2_spatial\\evaluation.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step2_spatial\\evaluation.json",
+      "sha256": "c0c2fd450e0c2a6730cd856fed943e0baffc3098e2ab56e8b12290a2bba04a31"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step2_spatial\\evaluation_progress.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step2_spatial\\evaluation_progress.json",
+      "sha256": "4effdf0406e30f6c3cd4fdc89a4c24be54039fc9ae3fbe093fbde18327be4462"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step2_spatial\\fly_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step2_spatial\\fly_seed4500.json",
+      "sha256": "76dc7a938477633f57b6f92f3608626c20e76ec5dd8ee11ddcf417c693313a41"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step2_spatial\\gru_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step2_spatial\\gru_seed4500.json",
+      "sha256": "92ea21aec9c5cba90d121d64d721786caf1181704f95835edecc3aff73a94203"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step2_spatial\\training_summary.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step2_spatial\\training_summary.json",
+      "sha256": "ab53fa504f22dc2b90ab76e69ffd7005b88e34eea77b5b980232d1c6317b7775"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step3_expanded\\evaluation.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step3_expanded\\evaluation.json",
+      "sha256": "5884a29458cd6bee2e2f80dfc9d36ddbcbc6619c11a6e2a8f43b4f556b48e0ad"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step3_expanded\\evaluation_basic_validation.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step3_expanded\\evaluation_basic_validation.json",
+      "sha256": "cfc1c0a05a6234634142ea3d106f49fae2febc7a16e06625803a5d302c47746a"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step3_expanded\\evaluation_progress.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step3_expanded\\evaluation_progress.json",
+      "sha256": "b77e7f0147e7b6caca981eea6be28bd3b779cae4b3a7bfeb24ffdfa9b64a30d5"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step3_expanded\\fly_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step3_expanded\\fly_seed4500.json",
+      "sha256": "e4a0af2cf69f2ddaf72d0c16073b082167753f43caf65e2c0461ac3c6dae36e8"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step3_expanded\\gru_seed4500.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step3_expanded\\gru_seed4500.json",
+      "sha256": "b00c3d961f6473dda538196bf48b90f5e8b3ea5bd8e67337d65214bfa318341c"
+    },
+    {
+      "source": "gomoku\\runs\\advanced_20261007\\step3_expanded\\training_summary.json",
+      "report": "gomoku\\reports\\advanced_20261007\\step3_expanded\\training_summary.json",
+      "sha256": "4fd8b4d40543a2dfa9295731e87c5e03b77d99a7f59b88058dd17b34bc79aa1c"
+    },
+    {
+      "source": "gomoku\\runs\\defense12_20261006\\gpu_sample.csv",
+      "report": "gomoku\\reports\\defense12_20261006\\gpu_sample.csv",
+      "sha256": "d2e5512e1cda02a633125b42ff244637cda96d17b54b4361fa8efb01f09678aa"
+    }
+  ],
+  "note": "Metrics and checkpoints unchanged; live docs and one test mock path repaired."
+}

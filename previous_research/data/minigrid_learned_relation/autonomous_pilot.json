@@ -1,0 +1,37 @@
+{
+  "navigation_actor": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_relation_curriculum\\relation_variable_control_rnn_1000_seed401.pt",
+  "detector": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_compositional\\compositional_rnn_seed401_detector501.pt",
+  "checkpoint_dir": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_learned_relation\\main",
+  "start_seed": 37000000,
+  "base_per_size": 32,
+  "duration_seconds": 1.7576294000000416,
+  "runs": [
+    {
+      "kind": "fly",
+      "seed": 601,
+      "sizes": {
+        "9": {
+          "base_episodes": 32,
+          "success_rate": 0.9765625,
+          "all_four_success": 0.90625,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "15": {
+          "base_episodes": 32,
+          "success_rate": 0.890625,
+          "all_four_success": 0.78125,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0
+        },
+        "19": {
+          "base_episodes": 32,
+          "success_rate": 0.734375,
+          "all_four_success": 0.46875,
+          "branch_override_rate": 1.0,
+          "branch_reach_rate": 1.0
+        }
+      }
+    }
+  ]
+}

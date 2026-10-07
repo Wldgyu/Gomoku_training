@@ -1,0 +1,248 @@
+{
+  "means": {
+    "fly": {
+      "9": 1.0,
+      "15": 1.0,
+      "19": 1.0
+    },
+    "rewired": {
+      "9": 1.0,
+      "15": 1.0,
+      "19": 1.0
+    },
+    "rnn": {
+      "9": 1.0,
+      "15": 1.0,
+      "19": 0.8625
+    },
+    "gru": {
+      "9": 1.0,
+      "15": 1.0,
+      "19": 0.9296875
+    }
+  },
+  "per_seed_graph_averages": {
+    "fly": {
+      "9": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "15": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "19": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "rewired": {
+      "9": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "15": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "19": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "rnn": {
+      "9": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "15": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "19": [
+        0.84375,
+        0.7734375,
+        0.9609375,
+        0.84375,
+        0.890625
+      ]
+    },
+    "gru": {
+      "9": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "15": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "19": [
+        0.84375,
+        1.0,
+        1.0,
+        0.84375,
+        0.9609375
+      ]
+    }
+  },
+  "paired_topology": {
+    "9": {
+      "per_seed_difference": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "sample_standard_deviation": 0.0
+    },
+    "15": {
+      "per_seed_difference": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "sample_standard_deviation": 0.0
+    },
+    "19": {
+      "per_seed_difference": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "sample_standard_deviation": 0.0
+    }
+  },
+  "graph_audit": [
+    {
+      "rewire_seed": 0,
+      "path": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\subgraphs\\malecns_cx_1000_rewired_seed0.npz",
+      "sha256": "2dbb91cdabff050b843d06e5ccbf52b0f74143835ec5f03c6637d46080bcda27",
+      "degree_preserved": true,
+      "paired_parameters_identical": true,
+      "paired_initialization_seeds": [
+        711,
+        712,
+        713,
+        714,
+        715
+      ]
+    },
+    {
+      "rewire_seed": 1,
+      "path": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\subgraphs\\malecns_cx_1000_rewired_seed1.npz",
+      "sha256": "7e0b27e285ee96adfffa35a14b275a5e27a17b757193334e1ca363c9f9c92312",
+      "degree_preserved": true,
+      "paired_parameters_identical": true,
+      "paired_initialization_seeds": [
+        711,
+        712,
+        713,
+        714,
+        715
+      ]
+    },
+    {
+      "rewire_seed": 2,
+      "path": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\subgraphs\\malecns_cx_1000_rewired_seed2.npz",
+      "sha256": "cff89d844fdd3fdd69c3a40522387f0afabe02366599260c69e91842d09ec5c3",
+      "degree_preserved": true,
+      "paired_parameters_identical": true,
+      "paired_initialization_seeds": [
+        711,
+        712,
+        713,
+        714,
+        715
+      ]
+    },
+    {
+      "rewire_seed": 3,
+      "path": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\subgraphs\\malecns_cx_1000_rewired_seed3.npz",
+      "sha256": "2a1485ecdf28b8ee0c02ebe87d9231dbaa2230c3e6348ba6a61e4697205ac2c8",
+      "degree_preserved": true,
+      "paired_parameters_identical": true,
+      "paired_initialization_seeds": [
+        711,
+        712,
+        713,
+        714,
+        715
+      ]
+    },
+    {
+      "rewire_seed": 4,
+      "path": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\subgraphs\\malecns_cx_1000_rewired_seed4.npz",
+      "sha256": "00b71254ed309db4da51181a62737e72863b786d087b3373bcb237d5ca7bd781",
+      "degree_preserved": true,
+      "paired_parameters_identical": true,
+      "paired_initialization_seeds": [
+        711,
+        712,
+        713,
+        714,
+        715
+      ]
+    }
+  ],
+  "leaky_means": {
+    "9": 1.0,
+    "15": 1.0,
+    "19": 1.0
+  },
+  "final_base_per_size": 128,
+  "source_hashes": {
+    "minigrid_relation_followup.py": "06725734e889379a1b6534b6dbe60345002b3c8cf972a4d04ca794f4b2078184",
+    "minigrid_learned_relation.py": "9d5b26379091998940fc8545853e7cb696f679f6880aaeba53bd0444939da309",
+    "evaluate_minigrid_learned_relation.py": "5d70592a0af7602f34f9ca6f52821cadd33c9f3356162c3b8ba78ff25d5d2647",
+    "minigrid_compositional_policy.py": "f6da2a90b5b3313d6cbcb943ab0ae5cb8937e48b85d7c5f1f121684223f666f0",
+    "minigrid_relation_data.py": "ca0b49a9bf1bb0a54f035e59865e4c0ed8eef3dc2b4c07d7d88bee55ba1119b1",
+    "minigrid_memory_diagnostic.py": "2635cc29c2f48b33d203dce7ce22557777ea3e90efd158049a0d7a2f56d03a22",
+    "minigrid_memory_pilot.py": "8026826cff289d4544cea1300cdbed51f15503155403bd89a3f0e9d3aae35698",
+    "summarize_minigrid_relation_followup.py": "dbfb326a0bc424511e1f9c88b25563b2003d3abe98924ca1406d9d53fa18d05a",
+    "minigrid_relation_followup_protocol.txt": "90c55d841b54518e5893d7f613c17fb708dc0df6c31c0f5225219f88b25241ca"
+  },
+  "actor_sha256": "2447d912869786650e8e06c5e625bc92ae2b36f44f22bdc935357ab649ef4dff",
+  "detector_sha256": "1ab38016eddea0c86d493cd964ce70adcba3b1f33cdce40a2b66ca95e86f32dc",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.5.3",
+  "device": "NVIDIA GeForce RTX 5060 Ti"
+}

@@ -1,0 +1,99 @@
+{
+  "kind": "rewired",
+  "seed": 3201,
+  "updates": 5000,
+  "train_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "test_pairs": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "count_per_test": 4096,
+  "results": {
+    "train_order_new_episodes": 1.0,
+    "heldout_order": 0.966796875,
+    "same_episodes_reversed_to_seen": 1.0
+  },
+  "heldout_by_slot": {
+    "0": {
+      "accuracy": 0.9970831274986267,
+      "count": 2057
+    },
+    "1": {
+      "accuracy": 0.9362432360649109,
+      "count": 2039
+    }
+  },
+  "heldout_by_pair": {
+    "0-3": {
+      "accuracy": 1.0,
+      "count": 670
+    },
+    "1-0": {
+      "accuracy": 0.8535211086273193,
+      "count": 710
+    },
+    "2-0": {
+      "accuracy": 0.961077868938446,
+      "count": 668
+    },
+    "2-1": {
+      "accuracy": 0.9910314083099365,
+      "count": 669
+    },
+    "3-1": {
+      "accuracy": 1.0,
+      "count": 680
+    },
+    "3-2": {
+      "accuracy": 1.0,
+      "count": 699
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "method": "teacher route imitation after diagnostic pretraining",
+  "observation": "partial 7x7 image and direction only",
+  "model": "fly",
+  "neurons_reference": 1000,
+  "seed": 401,
+  "parameters": 351092,
+  "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_fly_1000_seed401.pt",
+  "train_episodes": 1024,
+  "eval_episodes": 128,
+  "epochs": 30,
+  "freeze_memory": true,
+  "before": {
+    "success_rate": 0.0,
+    "branch_reach_rate": 0.0
+  },
+  "history": [
+    {
+      "epoch": 10,
+      "teacher_loss": 0.8220455087721348,
+      "success_rate": 0.8125,
+      "branch_reach_rate": 1.0
+    },
+    {
+      "epoch": 20,
+      "teacher_loss": 0.4827391915023327,
+      "success_rate": 0.2734375,
+      "branch_reach_rate": 0.4609375
+    },
+    {
+      "epoch": 30,
+      "teacher_loss": 0.32982818223536015,
+      "success_rate": 0.4609375,
+      "branch_reach_rate": 0.4609375
+    }
+  ],
+  "final_fresh": {
+    "success_rate": 0.5390625,
+    "branch_reach_rate": 0.5390625
+  },
+  "final_fresh_cue_masked": {
+    "success_rate": 0.25,
+    "branch_reach_rate": 0.5390625
+  },
+  "duration_seconds": 56.31902769999988
+}

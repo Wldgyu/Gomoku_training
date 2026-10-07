@@ -1,0 +1,101 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "task": "fixed corridor, final left/right",
+  "model": "gru",
+  "neurons_reference": 1000,
+  "seed": 401,
+  "parameters": 351196,
+  "train_episodes": 1024,
+  "eval_episodes": 256,
+  "epochs": 40,
+  "learning_rate": 0.0003,
+  "cue_loss_weight": 0.5,
+  "label_distribution_train": [
+    521,
+    503
+  ],
+  "label_distribution_eval": [
+    124,
+    132
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.0417354255914688,
+      "heldout_accuracy": 0.515625,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0402917489409447,
+      "heldout_accuracy": 0.484375,
+      "masked_accuracy": 0.484375,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 8,
+      "loss": 1.0343577414751053,
+      "heldout_accuracy": 0.484375,
+      "masked_accuracy": 0.484375,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 12,
+      "loss": 0.8884533420205116,
+      "heldout_accuracy": 0.515625,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 16,
+      "loss": 0.684343533590436,
+      "heldout_accuracy": 0.48828125,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 20,
+      "loss": 0.10837746667675674,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 24,
+      "loss": 0.0023027497591101564,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 28,
+      "loss": 0.0004290383167244727,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 32,
+      "loss": 0.00025929433650162537,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 36,
+      "loss": 0.00018483558960724622,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 40,
+      "loss": 0.00014193453444022452,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    }
+  ],
+  "duration_seconds": 15.676561399999969
+}

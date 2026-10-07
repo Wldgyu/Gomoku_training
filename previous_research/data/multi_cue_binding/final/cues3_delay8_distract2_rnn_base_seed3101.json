@@ -1,0 +1,115 @@
+{
+ "stage": "final",
+ "kind": "rnn",
+ "variant": "base",
+ "seed": 3101,
+ "cues": 3,
+ "delay": 8,
+ "distractors": 2,
+ "updates": 8000,
+ "name": "cues3_delay8_distract2_rnn_base_seed3101",
+ "hidden": 407,
+ "parameters": 223551,
+ "learning_rate": 0.0003,
+ "final_validation": 0.6513671875,
+ "test": {
+  "accuracy": 0.631103515625,
+  "by_slot": {
+   "0": 0.6199559569358826,
+   "1": 0.6642228960990906,
+   "2": 0.6092038154602051
+  },
+  "distractor_reused_color": {
+   "False": 0.6325274705886841,
+   "True": 0.6293245553970337
+  }
+ },
+ "curve": [
+  {
+   "update": 0,
+   "validation": 0.4052734375
+  },
+  {
+   "update": 500,
+   "loss": 0.690889835357666,
+   "validation": 0.6328125
+  },
+  {
+   "update": 1000,
+   "loss": 0.7282952070236206,
+   "validation": 0.65625
+  },
+  {
+   "update": 1500,
+   "loss": 0.6079772710800171,
+   "validation": 0.6484375
+  },
+  {
+   "update": 2000,
+   "loss": 0.6338452100753784,
+   "validation": 0.6494140625
+  },
+  {
+   "update": 2500,
+   "loss": 0.7216916084289551,
+   "validation": 0.642578125
+  },
+  {
+   "update": 3000,
+   "loss": 0.6515973806381226,
+   "validation": 0.654296875
+  },
+  {
+   "update": 3500,
+   "loss": 0.6722425222396851,
+   "validation": 0.6513671875
+  },
+  {
+   "update": 4000,
+   "loss": 0.6463644504547119,
+   "validation": 0.6455078125
+  },
+  {
+   "update": 4500,
+   "loss": 0.6183722019195557,
+   "validation": 0.6416015625
+  },
+  {
+   "update": 5000,
+   "loss": 0.6214348077774048,
+   "validation": 0.6435546875
+  },
+  {
+   "update": 5500,
+   "loss": 0.6293786764144897,
+   "validation": 0.6572265625
+  },
+  {
+   "update": 6000,
+   "loss": 0.6753255724906921,
+   "validation": 0.6572265625
+  },
+  {
+   "update": 6500,
+   "loss": 0.7371737957000732,
+   "validation": 0.646484375
+  },
+  {
+   "update": 7000,
+   "loss": 0.642659068107605,
+   "validation": 0.65234375
+  },
+  {
+   "update": 7500,
+   "loss": 0.6781426668167114,
+   "validation": 0.6494140625
+  },
+  {
+   "update": 8000,
+   "loss": 0.6876062154769897,
+   "validation": 0.6513671875
+  }
+ ],
+ "to90": null,
+ "seconds": 106.40493419999984
+}

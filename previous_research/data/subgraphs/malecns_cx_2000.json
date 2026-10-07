@@ -1,0 +1,19 @@
+{
+  "dataset": "MaleCNS v1.0",
+  "source_url": "https://male-cns.janelia.org/download/",
+  "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+  "connectivity_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+  "candidate_superclass": "cb_intrinsic",
+  "candidate_class": "CX",
+  "candidate_neurons": 2950,
+  "minimum_synapses": 3,
+  "selection": "descending internal weighted degree, bodyId ascending tie break",
+  "self_edges_removed": true,
+  "neurons": 2000,
+  "edges": 169373,
+  "directed_density": 0.042364432216108056,
+  "isolated_neurons": 0,
+  "largest_strongly_connected_component": 2000,
+  "total_synapses": 2240907,
+  "file": "malecns_cx_2000.npz"
+}

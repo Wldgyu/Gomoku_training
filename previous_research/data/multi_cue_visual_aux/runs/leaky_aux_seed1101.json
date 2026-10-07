@@ -1,0 +1,131 @@
+{
+  "kind": "leaky",
+  "seed": 1101,
+  "aux": true,
+  "hidden": 1000,
+  "learning_rate": 0.0003,
+  "best_epoch": 18,
+  "best_validation": 0.6865234375,
+  "curve": [
+    {
+      "epoch": 1,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 2,
+      "validation": 0.513671875
+    },
+    {
+      "epoch": 3,
+      "validation": 0.5302734375
+    },
+    {
+      "epoch": 4,
+      "validation": 0.64453125
+    },
+    {
+      "epoch": 5,
+      "validation": 0.6484375
+    },
+    {
+      "epoch": 6,
+      "validation": 0.67578125
+    },
+    {
+      "epoch": 7,
+      "validation": 0.6669921875
+    },
+    {
+      "epoch": 8,
+      "validation": 0.662109375
+    },
+    {
+      "epoch": 9,
+      "validation": 0.658203125
+    },
+    {
+      "epoch": 10,
+      "validation": 0.66796875
+    },
+    {
+      "epoch": 11,
+      "validation": 0.666015625
+    },
+    {
+      "epoch": 12,
+      "validation": 0.6611328125
+    },
+    {
+      "epoch": 13,
+      "validation": 0.677734375
+    },
+    {
+      "epoch": 14,
+      "validation": 0.6640625
+    },
+    {
+      "epoch": 15,
+      "validation": 0.673828125
+    },
+    {
+      "epoch": 16,
+      "validation": 0.6689453125
+    },
+    {
+      "epoch": 17,
+      "validation": 0.6640625
+    },
+    {
+      "epoch": 18,
+      "validation": 0.6865234375
+    },
+    {
+      "epoch": 19,
+      "validation": 0.6708984375
+    },
+    {
+      "epoch": 20,
+      "validation": 0.6787109375
+    }
+  ],
+  "tests": {
+    "trained_lengths": {
+      "answer_accuracy": 0.65673828125,
+      "by_delay": {
+        "6": 0.6457311089303238,
+        "10": 0.6676384839650146
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.803466796875,
+      "aux_visible_door_route_accuracy": 0.79443359375
+    },
+    "unseen_lengths": {
+      "answer_accuracy": 0.66064453125,
+      "by_delay": {
+        "8": 0.6596558317399618,
+        "14": 0.6616766467065869
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.80810546875,
+      "aux_visible_door_route_accuracy": 0.81396484375
+    },
+    "unseen_wait": {
+      "answer_accuracy": 0.6552734375,
+      "by_delay": {
+        "8": 0.652089407191448,
+        "14": 0.6584887144259077
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.667724609375,
+      "aux_visible_door_route_accuracy": 0.66845703125
+    },
+    "autonomous_unseen": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.6953125,
+      "end_to_end_answer_success": 0.6953125,
+      "episodes": 256
+    }
+  },
+  "seconds": 26.123011200000064,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_visual_aux\\runs\\leaky_aux_seed1101.pt"
+}

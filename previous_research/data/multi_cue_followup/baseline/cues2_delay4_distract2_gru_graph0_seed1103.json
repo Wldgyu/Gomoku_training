@@ -1,0 +1,179 @@
+{
+  "kind": "gru",
+  "seed": 1103,
+  "graph": 0,
+  "frozen": false,
+  "name": "gru_graph0_seed1103",
+  "config": {
+    "cues_min": 2,
+    "cues_max": 2,
+    "delay": 4,
+    "distractors": 2
+  },
+  "task": "cues2_delay4_distract2",
+  "hidden": 246,
+  "parameters": 223145,
+  "leak": 0.9,
+  "learning_rate": 0.01,
+  "updates": 16000,
+  "batch_size": 128,
+  "episodes_seen": 2048000,
+  "generator": "vectorized_fixed_v2",
+  "final_validation": 1.0,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.333984375
+    },
+    {
+      "update": 500,
+      "validation": 0.6669921875
+    },
+    {
+      "update": 1000,
+      "validation": 0.662109375
+    },
+    {
+      "update": 1500,
+      "validation": 0.8154296875
+    },
+    {
+      "update": 2000,
+      "validation": 1.0
+    },
+    {
+      "update": 2500,
+      "validation": 1.0
+    },
+    {
+      "update": 3000,
+      "validation": 1.0
+    },
+    {
+      "update": 3500,
+      "validation": 1.0
+    },
+    {
+      "update": 4000,
+      "validation": 1.0
+    },
+    {
+      "update": 4500,
+      "validation": 1.0
+    },
+    {
+      "update": 5000,
+      "validation": 1.0
+    },
+    {
+      "update": 5500,
+      "validation": 1.0
+    },
+    {
+      "update": 6000,
+      "validation": 1.0
+    },
+    {
+      "update": 6500,
+      "validation": 1.0
+    },
+    {
+      "update": 7000,
+      "validation": 1.0
+    },
+    {
+      "update": 7500,
+      "validation": 1.0
+    },
+    {
+      "update": 8000,
+      "validation": 1.0
+    },
+    {
+      "update": 8500,
+      "validation": 1.0
+    },
+    {
+      "update": 9000,
+      "validation": 1.0
+    },
+    {
+      "update": 9500,
+      "validation": 1.0
+    },
+    {
+      "update": 10000,
+      "validation": 1.0
+    },
+    {
+      "update": 10500,
+      "validation": 1.0
+    },
+    {
+      "update": 11000,
+      "validation": 1.0
+    },
+    {
+      "update": 11500,
+      "validation": 1.0
+    },
+    {
+      "update": 12000,
+      "validation": 1.0
+    },
+    {
+      "update": 12500,
+      "validation": 0.859375
+    },
+    {
+      "update": 13000,
+      "validation": 1.0
+    },
+    {
+      "update": 13500,
+      "validation": 1.0
+    },
+    {
+      "update": 14000,
+      "validation": 1.0
+    },
+    {
+      "update": 14500,
+      "validation": 1.0
+    },
+    {
+      "update": 15000,
+      "validation": 1.0
+    },
+    {
+      "update": 15500,
+      "validation": 1.0
+    },
+    {
+      "update": 16000,
+      "validation": 1.0
+    }
+  ],
+  "test": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 2000
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 2096
+      }
+    },
+    "last_only_accuracy": 0.665283203125,
+    "queried_kind_change_accuracy": 1.0,
+    "queried_kind_change_prediction_rate": 1.0,
+    "unqueried_kind_change_accuracy": 1.0,
+    "unqueried_kind_change_invariance": 1.0
+  },
+  "to90": 2000,
+  "to99": 2000,
+  "seconds_this_session": 150.33992450000005,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_gru_graph0_seed1103.pt"
+}

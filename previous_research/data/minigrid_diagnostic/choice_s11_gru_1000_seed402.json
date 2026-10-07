@@ -1,0 +1,241 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "task": "fixed corridor, final left/right",
+  "model": "gru",
+  "neurons_reference": 1000,
+  "seed": 402,
+  "parameters": 351196,
+  "train_episodes": 1024,
+  "eval_episodes": 256,
+  "epochs": 120,
+  "learning_rate": 0.0003,
+  "cue_loss_weight": 0.5,
+  "label_distribution_train": [
+    521,
+    503
+  ],
+  "label_distribution_eval": [
+    124,
+    132
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.0416694283485413,
+      "heldout_accuracy": 0.484375,
+      "masked_accuracy": 0.484375,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 4,
+      "loss": 1.0397126451134682,
+      "heldout_accuracy": 0.484375,
+      "masked_accuracy": 0.484375,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 8,
+      "loss": 1.0360434502363205,
+      "heldout_accuracy": 0.484375,
+      "masked_accuracy": 0.484375,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 12,
+      "loss": 0.9105017483234406,
+      "heldout_accuracy": 0.51171875,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 16,
+      "loss": 0.7369873989373446,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 20,
+      "loss": 0.30409965477883816,
+      "heldout_accuracy": 0.72265625,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 24,
+      "loss": 0.03054265968967229,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 28,
+      "loss": 0.02056157516199164,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 32,
+      "loss": 0.0006330519354378339,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 36,
+      "loss": 0.00027060923730459763,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 40,
+      "loss": 0.000164273244990909,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 44,
+      "loss": 0.00011121814941361663,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 48,
+      "loss": 8.14079216979735e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 52,
+      "loss": 6.306234558905999e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 56,
+      "loss": 5.1065146408291184e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.515625
+    },
+    {
+      "epoch": 60,
+      "loss": 4.269417718205659e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 64,
+      "loss": 3.649286441032018e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 68,
+      "loss": 3.178844508511247e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 72,
+      "loss": 2.8102376290917164e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 76,
+      "loss": 2.516787128570286e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 80,
+      "loss": 2.276149302815611e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 84,
+      "loss": 2.0752850332428352e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 88,
+      "loss": 1.904898397242505e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 92,
+      "loss": 1.758609937496658e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 96,
+      "loss": 1.6326319951076584e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 100,
+      "loss": 1.5205806619178475e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 104,
+      "loss": 1.422251108351702e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 108,
+      "loss": 1.3339720283056522e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 112,
+      "loss": 1.2561583446313307e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 116,
+      "loss": 1.1829848631350615e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    },
+    {
+      "epoch": 120,
+      "loss": 1.1194387013802043e-05,
+      "heldout_accuracy": 1.0,
+      "masked_accuracy": 0.515625,
+      "branch_state_reset_accuracy": 0.484375
+    }
+  ],
+  "duration_seconds": 37.21971289999999
+}

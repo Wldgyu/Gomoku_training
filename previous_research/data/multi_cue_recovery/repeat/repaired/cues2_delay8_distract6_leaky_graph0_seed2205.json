@@ -1,0 +1,106 @@
+{
+  "run": "cues2_delay8_distract6_leaky_graph0_seed2205",
+  "kind": "leaky",
+  "seed": 2205,
+  "graph": 0,
+  "task": "cues2_delay8_distract6",
+  "selected_variant": "relu_state",
+  "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\repeat\\raw\\cues2_delay8_distract6_leaky_graph0_seed2205.pt",
+  "original": {
+    "accuracy": 0.659423828125,
+    "by_slot": {
+      "0": {
+        "accuracy": 0.6641001105308533,
+        "count": 2078
+      },
+      "1": {
+        "accuracy": 0.6546085476875305,
+        "count": 2018
+      }
+    },
+    "changed_query_accuracy": 0.675537109375,
+    "both_queries_correct": 0.335205078125,
+    "prediction_changes_when_kinds_differ": 0.0011009174631908536
+  },
+  "repaired": {
+    "accuracy": 0.67236328125,
+    "by_slot": {
+      "0": {
+        "accuracy": 0.5822906494140625,
+        "count": 2078
+      },
+      "1": {
+        "accuracy": 0.7651139497756958,
+        "count": 2018
+      }
+    },
+    "changed_query_accuracy": 0.66943359375,
+    "both_queries_correct": 0.40771484375,
+    "prediction_changes_when_kinds_differ": 0.2088073343038559
+  },
+  "extra_head_training": {
+    "variant": "relu_state",
+    "seed": 2205,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.49235743284225464,
+    "best_validation_accuracy": 0.6708984375,
+    "best_update": 450,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.552382230758667,
+        "validation": 0.65625
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.537697434425354,
+        "validation": 0.6552734375
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.5450873374938965,
+        "validation": 0.66796875
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.5198391675949097,
+        "validation": 0.650390625
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.5432426929473877,
+        "validation": 0.640625
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.5357851982116699,
+        "validation": 0.6376953125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.5022777318954468,
+        "validation": 0.6611328125
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.5068419575691223,
+        "validation": 0.6376953125
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.49235743284225464,
+        "validation": 0.6708984375
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49881958961486816,
+        "validation": 0.6728515625
+      }
+    ]
+  }
+}

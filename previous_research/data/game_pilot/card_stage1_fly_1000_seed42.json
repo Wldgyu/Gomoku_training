@@ -1,0 +1,118 @@
+{
+  "source_game": "C:/Users/a/Desktop/자바스크립트 게임/game.js",
+  "pilot_rule": "stage 1: remember four unique cards; choose the one replaced by a new card",
+  "excluded_from_pilot": "real-time timer, animations, focus mode, reverse rule, stages 2+",
+  "algorithm": "REINFORCE with batch reward baseline and entropy bonus",
+  "model": "fly",
+  "neurons_reference": 1000,
+  "hidden_size": 1000,
+  "parameters": 123340,
+  "fly_reference_parameters": 123340,
+  "graph_sha256": "0c18a502ac0a05440fd5c255ff4d862d5eff51f1ea4c167faa0641fbac306feb",
+  "connection_direction": "pre_index -> post_index; W[post, pre]",
+  "blank_steps": 8,
+  "updates": 300,
+  "batch": 128,
+  "choice_interactions": 38400,
+  "eval_games": 2048,
+  "seed": 42,
+  "random_success_rate": 0.25,
+  "initial_success_rate": 0.2392578125,
+  "initial_no_memory_success_rate": 0.24169921875,
+  "final_fresh_success_rate": 0.24658203125,
+  "final_fresh_no_memory_success_rate": 0.24609375,
+  "history": [
+    {
+      "update": 1,
+      "choice_interactions": 128,
+      "training_reward": 0.21875,
+      "heldout_success_rate": 0.23828125,
+      "no_memory_success_rate": 0.24365234375
+    },
+    {
+      "update": 25,
+      "choice_interactions": 3200,
+      "training_reward": 0.328125,
+      "heldout_success_rate": 0.24755859375,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 50,
+      "choice_interactions": 6400,
+      "training_reward": 0.296875,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 75,
+      "choice_interactions": 9600,
+      "training_reward": 0.2421875,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 100,
+      "choice_interactions": 12800,
+      "training_reward": 0.25,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 125,
+      "choice_interactions": 16000,
+      "training_reward": 0.2265625,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 150,
+      "choice_interactions": 19200,
+      "training_reward": 0.2734375,
+      "heldout_success_rate": 0.24609375,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 175,
+      "choice_interactions": 22400,
+      "training_reward": 0.25,
+      "heldout_success_rate": 0.2451171875,
+      "no_memory_success_rate": 0.2412109375
+    },
+    {
+      "update": 200,
+      "choice_interactions": 25600,
+      "training_reward": 0.28125,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 225,
+      "choice_interactions": 28800,
+      "training_reward": 0.2578125,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 250,
+      "choice_interactions": 32000,
+      "training_reward": 0.265625,
+      "heldout_success_rate": 0.248046875,
+      "no_memory_success_rate": 0.248046875
+    },
+    {
+      "update": 275,
+      "choice_interactions": 35200,
+      "training_reward": 0.2109375,
+      "heldout_success_rate": 0.25244140625,
+      "no_memory_success_rate": 0.2470703125
+    },
+    {
+      "update": 300,
+      "choice_interactions": 38400,
+      "training_reward": 0.265625,
+      "heldout_success_rate": 0.2529296875,
+      "no_memory_success_rate": 0.24951171875
+    }
+  ],
+  "checkpoint": "data\\game_pilot\\card_stage1_fly_1000_seed42.pt"
+}

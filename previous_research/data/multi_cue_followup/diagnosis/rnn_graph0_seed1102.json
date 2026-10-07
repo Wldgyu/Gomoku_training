@@ -1,0 +1,273 @@
+{
+  "run": {
+    "kind": "rnn",
+    "seed": 1102,
+    "graph": 0,
+    "frozen": false,
+    "name": "rnn_graph0_seed1102",
+    "config": {
+      "cues_min": 2,
+      "cues_max": 2,
+      "delay": 4,
+      "distractors": 2
+    },
+    "task": "cues2_delay4_distract2",
+    "hidden": 407,
+    "parameters": 223551,
+    "leak": 0.9,
+    "learning_rate": 0.0003,
+    "updates": 16000,
+    "batch_size": 128,
+    "episodes_seen": 2048000,
+    "generator": "vectorized_fixed_v2",
+    "final_validation": 1.0,
+    "curve": [
+      {
+        "update": 0,
+        "validation": 0.3330078125
+      },
+      {
+        "update": 500,
+        "validation": 0.66796875
+      },
+      {
+        "update": 1000,
+        "validation": 0.6669921875
+      },
+      {
+        "update": 1500,
+        "validation": 0.6630859375
+      },
+      {
+        "update": 2000,
+        "validation": 0.6416015625
+      },
+      {
+        "update": 2500,
+        "validation": 0.64453125
+      },
+      {
+        "update": 3000,
+        "validation": 0.68359375
+      },
+      {
+        "update": 3500,
+        "validation": 1.0
+      },
+      {
+        "update": 4000,
+        "validation": 1.0
+      },
+      {
+        "update": 4500,
+        "validation": 1.0
+      },
+      {
+        "update": 5000,
+        "validation": 1.0
+      },
+      {
+        "update": 5500,
+        "validation": 1.0
+      },
+      {
+        "update": 6000,
+        "validation": 1.0
+      },
+      {
+        "update": 6500,
+        "validation": 1.0
+      },
+      {
+        "update": 7000,
+        "validation": 1.0
+      },
+      {
+        "update": 7500,
+        "validation": 1.0
+      },
+      {
+        "update": 8000,
+        "validation": 1.0
+      },
+      {
+        "update": 8500,
+        "validation": 1.0
+      },
+      {
+        "update": 9000,
+        "validation": 1.0
+      },
+      {
+        "update": 9500,
+        "validation": 1.0
+      },
+      {
+        "update": 10000,
+        "validation": 1.0
+      },
+      {
+        "update": 10500,
+        "validation": 1.0
+      },
+      {
+        "update": 11000,
+        "validation": 1.0
+      },
+      {
+        "update": 11500,
+        "validation": 1.0
+      },
+      {
+        "update": 12000,
+        "validation": 1.0
+      },
+      {
+        "update": 12500,
+        "validation": 1.0
+      },
+      {
+        "update": 13000,
+        "validation": 1.0
+      },
+      {
+        "update": 13500,
+        "validation": 1.0
+      },
+      {
+        "update": 14000,
+        "validation": 1.0
+      },
+      {
+        "update": 14500,
+        "validation": 1.0
+      },
+      {
+        "update": 15000,
+        "validation": 1.0
+      },
+      {
+        "update": 15500,
+        "validation": 1.0
+      },
+      {
+        "update": 16000,
+        "validation": 1.0
+      }
+    ],
+    "test": {
+      "accuracy": 1.0,
+      "by_slot": {
+        "0": {
+          "accuracy": 1.0,
+          "count": 2100
+        },
+        "1": {
+          "accuracy": 1.0,
+          "count": 1996
+        }
+      },
+      "last_only_accuracy": 0.65234375,
+      "queried_kind_change_accuracy": 1.0,
+      "queried_kind_change_prediction_rate": 1.0,
+      "unqueried_kind_change_accuracy": 1.0,
+      "unqueried_kind_change_invariance": 1.0
+    },
+    "to90": 3500,
+    "to99": 3500,
+    "seconds_this_session": 104.29089460000068,
+    "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\baseline\\cues2_delay4_distract2_rnn_graph0_seed1102.pt"
+  },
+  "probes": [
+    {
+      "accuracy_all_present_colors": 0.767333984375,
+      "by_cue_slot": {
+        "0": 0.811767578125,
+        "1": 0.722900390625
+      },
+      "best_validation_loss": 0.437414288520813,
+      "phase": "cue_end",
+      "probe": "linear",
+      "updates": 500,
+      "normalization_std_mean": 0.16135486960411072,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 1.0,
+      "by_cue_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "best_validation_loss": 0.00014384773385245353,
+      "phase": "cue_end",
+      "probe": "mlp",
+      "updates": 500,
+      "normalization_std_mean": 0.16135486960411072,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 1.0,
+      "by_cue_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "best_validation_loss": 0.033102069050073624,
+      "phase": "delay_end",
+      "probe": "linear",
+      "updates": 500,
+      "normalization_std_mean": 0.5542974472045898,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 1.0,
+      "by_cue_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "best_validation_loss": 0.00029119098326191306,
+      "phase": "delay_end",
+      "probe": "mlp",
+      "updates": 500,
+      "normalization_std_mean": 0.5542974472045898,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 0.9991455078125,
+      "by_cue_slot": {
+        "0": 0.999755859375,
+        "1": 0.99853515625
+      },
+      "best_validation_loss": 0.0254664309322834,
+      "phase": "query_end",
+      "probe": "linear",
+      "updates": 500,
+      "normalization_std_mean": 0.5733630657196045,
+      "normalization_min_std": 0.0001
+    },
+    {
+      "accuracy_all_present_colors": 1.0,
+      "by_cue_slot": {
+        "0": 1.0,
+        "1": 1.0
+      },
+      "best_validation_loss": 0.000868026283569634,
+      "phase": "query_end",
+      "probe": "mlp",
+      "updates": 500,
+      "normalization_std_mean": 0.5733630657196045,
+      "normalization_min_std": 0.0001
+    }
+  ],
+  "query_switch": {
+    "changed_query_accuracy": 1.0,
+    "both_queries_correct": 1.0,
+    "prediction_changes_when_kinds_differ": 1.0,
+    "distinct_kind_count": 2736
+  },
+  "interventions": {},
+  "probe_seed_ranges": [
+    4100001102,
+    4200001102,
+    4300001102
+  ]
+}

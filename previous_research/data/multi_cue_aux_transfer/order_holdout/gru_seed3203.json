@@ -1,0 +1,99 @@
+{
+  "kind": "gru",
+  "seed": 3203,
+  "updates": 5000,
+  "train_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "test_pairs": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "count_per_test": 4096,
+  "results": {
+    "train_order_new_episodes": 1.0,
+    "heldout_order": 0.89013671875,
+    "same_episodes_reversed_to_seen": 1.0
+  },
+  "heldout_by_slot": {
+    "0": {
+      "accuracy": 1.0,
+      "count": 2082
+    },
+    "1": {
+      "accuracy": 0.7765640616416931,
+      "count": 2014
+    }
+  },
+  "heldout_by_pair": {
+    "0-3": {
+      "accuracy": 0.8827893137931824,
+      "count": 674
+    },
+    "1-0": {
+      "accuracy": 0.8174037337303162,
+      "count": 701
+    },
+    "2-0": {
+      "accuracy": 0.9971387982368469,
+      "count": 699
+    },
+    "2-1": {
+      "accuracy": 0.6830065250396729,
+      "count": 612
+    },
+    "3-1": {
+      "accuracy": 0.9311859607696533,
+      "count": 683
+    },
+    "3-2": {
+      "accuracy": 1.0,
+      "count": 727
+    }
+  }
+}

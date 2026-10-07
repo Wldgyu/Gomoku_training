@@ -1,0 +1,154 @@
+{
+  "kind": "fly",
+  "seed": 1102,
+  "graph": 0,
+  "frozen": false,
+  "name": "fly_graph0_seed1102",
+  "config": {
+    "cues_min": 4,
+    "cues_max": 4,
+    "delay": 8,
+    "distractors": 2
+  },
+  "task": "cues4_delay8_distract2",
+  "hidden": 1000,
+  "parameters": 223851,
+  "leak": 0.9,
+  "learning_rate": 0.003,
+  "updates": 12000,
+  "batch_size": 128,
+  "episodes_seen": 1536000,
+  "generator": "vectorized_fixed_v2",
+  "execution_mode_at_finish": "cuda_graph_replay",
+  "final_validation": 0.58203125,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.3251953125
+    },
+    {
+      "update": 500,
+      "validation": 0.5830078125
+    },
+    {
+      "update": 1000,
+      "validation": 0.5859375
+    },
+    {
+      "update": 1500,
+      "validation": 0.58984375
+    },
+    {
+      "update": 2000,
+      "validation": 0.5849609375
+    },
+    {
+      "update": 2500,
+      "validation": 0.5712890625
+    },
+    {
+      "update": 3000,
+      "validation": 0.5771484375
+    },
+    {
+      "update": 3500,
+      "validation": 0.5810546875
+    },
+    {
+      "update": 4000,
+      "validation": 0.583984375
+    },
+    {
+      "update": 4500,
+      "validation": 0.5849609375
+    },
+    {
+      "update": 5000,
+      "validation": 0.578125
+    },
+    {
+      "update": 5500,
+      "validation": 0.576171875
+    },
+    {
+      "update": 6000,
+      "validation": 0.5673828125
+    },
+    {
+      "update": 6500,
+      "validation": 0.58203125
+    },
+    {
+      "update": 7000,
+      "validation": 0.5888671875
+    },
+    {
+      "update": 7500,
+      "validation": 0.580078125
+    },
+    {
+      "update": 8000,
+      "validation": 0.5849609375
+    },
+    {
+      "update": 8500,
+      "validation": 0.5849609375
+    },
+    {
+      "update": 9000,
+      "validation": 0.5791015625
+    },
+    {
+      "update": 9500,
+      "validation": 0.578125
+    },
+    {
+      "update": 10000,
+      "validation": 0.58203125
+    },
+    {
+      "update": 10500,
+      "validation": 0.5859375
+    },
+    {
+      "update": 11000,
+      "validation": 0.583984375
+    },
+    {
+      "update": 11500,
+      "validation": 0.5810546875
+    },
+    {
+      "update": 12000,
+      "validation": 0.58203125
+    }
+  ],
+  "test": {
+    "accuracy": 0.58837890625,
+    "by_slot": {
+      "0": {
+        "accuracy": 0.5821596384048462,
+        "count": 1065
+      },
+      "1": {
+        "accuracy": 0.5736585259437561,
+        "count": 1025
+      },
+      "2": {
+        "accuracy": 0.6173826456069946,
+        "count": 1001
+      },
+      "3": {
+        "accuracy": 0.58109450340271,
+        "count": 1005
+      }
+    },
+    "last_only_accuracy": 0.498291015625,
+    "majority_kind_accuracy": 0.593017578125,
+    "prediction_is_majority_kind": 1.0
+  },
+  "to90": null,
+  "to99": null,
+  "seconds_this_session": 275.330484099999,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\load\\cues4_delay8_distract2_fly_graph0_seed1102.pt"
+}

@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-04T14:18:04.499786+09:00",
+  "counts": {
+    "readout_models": 15,
+    "readout_heads": 60,
+    "visual_diagnosis": 15,
+    "summary_tuning": 30,
+    "summary_main": 15,
+    "repeat_raw": 90,
+    "repeat_repaired": 90
+  },
+  "exact_task_seed_graph_combinations": 90,
+  "finite_weight_checkpoints": 315,
+  "budget_and_source_hash_checks": "passed",
+  "new_unit_tests": "4 passed",
+  "perception_metric": "v2: conditional color argmax is separate from door bit detection",
+  "graph_sha256": {
+    "malecns_cx_1000.npz": "0c18a502ac0a05440fd5c255ff4d862d5eff51f1ea4c167faa0641fbac306feb",
+    "malecns_cx_1000_rewired_seed0.npz": "2dbb91cdabff050b843d06e5ccbf52b0f74143835ec5f03c6637d46080bcda27",
+    "malecns_cx_1000_rewired_seed1.npz": "7e0b27e285ee96adfffa35a14b275a5e27a17b757193334e1ca363c9f9c92312",
+    "malecns_cx_1000_rewired_seed2.npz": "cff89d844fdd3fdd69c3a40522387f0afabe02366599260c69e91842d09ec5c3",
+    "malecns_cx_1000_rewired_seed3.npz": "2a1485ecdf28b8ee0c02ebe87d9231dbaa2230c3e6348ba6a61e4697205ac2c8",
+    "malecns_cx_1000_rewired_seed4.npz": "00b71254ed309db4da51181a62737e72863b786d087b3373bcb237d5ca7bd781"
+  },
+  "status": "all three stages complete"
+}

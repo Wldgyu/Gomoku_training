@@ -1,0 +1,189 @@
+{
+  "policy": "shared learned CNN forward/stop",
+  "training_episodes": 4096,
+  "updates": 500,
+  "rollout_episodes": 512,
+  "movement_success": 1.0,
+  "models": {
+    "fly_aux_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.677734375,
+      "end_to_end_answer_success": 0.677734375,
+      "episodes": 512
+    },
+    "fly_aux_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.63671875,
+      "end_to_end_answer_success": 0.63671875,
+      "episodes": 512
+    },
+    "fly_aux_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.669921875,
+      "end_to_end_answer_success": 0.669921875,
+      "episodes": 512
+    },
+    "fly_base_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.673828125,
+      "end_to_end_answer_success": 0.673828125,
+      "episodes": 512
+    },
+    "fly_base_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.669921875,
+      "end_to_end_answer_success": 0.669921875,
+      "episodes": 512
+    },
+    "fly_base_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.66796875,
+      "end_to_end_answer_success": 0.66796875,
+      "episodes": 512
+    },
+    "gru_aux_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.677734375,
+      "end_to_end_answer_success": 0.677734375,
+      "episodes": 512
+    },
+    "gru_aux_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.337890625,
+      "end_to_end_answer_success": 0.337890625,
+      "episodes": 512
+    },
+    "gru_aux_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.48046875,
+      "end_to_end_answer_success": 0.48046875,
+      "episodes": 512
+    },
+    "gru_base_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.318359375,
+      "end_to_end_answer_success": 0.318359375,
+      "episodes": 512
+    },
+    "gru_base_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.34375,
+      "end_to_end_answer_success": 0.34375,
+      "episodes": 512
+    },
+    "gru_base_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.34375,
+      "end_to_end_answer_success": 0.34375,
+      "episodes": 512
+    },
+    "leaky_aux_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.638671875,
+      "end_to_end_answer_success": 0.638671875,
+      "episodes": 512
+    },
+    "leaky_aux_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.662109375,
+      "end_to_end_answer_success": 0.662109375,
+      "episodes": 512
+    },
+    "leaky_aux_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.671875,
+      "end_to_end_answer_success": 0.671875,
+      "episodes": 512
+    },
+    "leaky_base_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.66015625,
+      "end_to_end_answer_success": 0.66015625,
+      "episodes": 512
+    },
+    "leaky_base_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.671875,
+      "end_to_end_answer_success": 0.671875,
+      "episodes": 512
+    },
+    "leaky_base_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.66796875,
+      "end_to_end_answer_success": 0.66796875,
+      "episodes": 512
+    },
+    "rewired_aux_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.658203125,
+      "end_to_end_answer_success": 0.658203125,
+      "episodes": 512
+    },
+    "rewired_aux_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.669921875,
+      "end_to_end_answer_success": 0.669921875,
+      "episodes": 512
+    },
+    "rewired_aux_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.646484375,
+      "end_to_end_answer_success": 0.646484375,
+      "episodes": 512
+    },
+    "rewired_base_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.6640625,
+      "end_to_end_answer_success": 0.6640625,
+      "episodes": 512
+    },
+    "rewired_base_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.669921875,
+      "end_to_end_answer_success": 0.669921875,
+      "episodes": 512
+    },
+    "rewired_base_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.693359375,
+      "end_to_end_answer_success": 0.693359375,
+      "episodes": 512
+    },
+    "rnn_aux_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.3671875,
+      "end_to_end_answer_success": 0.3671875,
+      "episodes": 512
+    },
+    "rnn_aux_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.36328125,
+      "end_to_end_answer_success": 0.36328125,
+      "episodes": 512
+    },
+    "rnn_aux_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.3671875,
+      "end_to_end_answer_success": 0.3671875,
+      "episodes": 512
+    },
+    "rnn_base_seed1101": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.36328125,
+      "end_to_end_answer_success": 0.36328125,
+      "episodes": 512
+    },
+    "rnn_base_seed1102": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.357421875,
+      "end_to_end_answer_success": 0.357421875,
+      "episodes": 512
+    },
+    "rnn_base_seed1103": {
+      "movement_success": 1.0,
+      "answer_given_movement_success": 0.412109375,
+      "end_to_end_answer_success": 0.412109375,
+      "episodes": 512
+    }
+  }
+}

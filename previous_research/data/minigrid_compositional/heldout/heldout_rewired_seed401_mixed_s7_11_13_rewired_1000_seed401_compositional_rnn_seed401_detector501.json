@@ -1,0 +1,44 @@
+{
+  "actor_model": "rewired",
+  "actor_seed": 401,
+  "actor_checkpoint": "data\\minigrid_matched_topology\\length\\mixed_s7_11_13_rewired_1000_seed401.pt",
+  "detector_checkpoint": "data\\minigrid_compositional\\compositional_rnn_seed401_detector501.pt",
+  "sizes": [
+    9
+  ],
+  "base_episodes_per_size": 128,
+  "first_seed": 29000000,
+  "cue_threshold": 0.5,
+  "branch_threshold": 0.5,
+  "by_size": {
+    "9": {
+      "original_actor": {
+        "base_episodes": 128,
+        "per_variant_success": {
+          "00": 0.6796875,
+          "10": 0.703125,
+          "01": 0.8671875,
+          "11": 0.75
+        },
+        "all_four_success": 0.0,
+        "mean_success": 0.75,
+        "cue_seen_rate": 1.0,
+        "branch_reach_rate": 1.0
+      },
+      "compositional": {
+        "base_episodes": 128,
+        "success_rate": 1.0,
+        "all_four_success": 1.0,
+        "per_variant_success": {
+          "00": 1.0,
+          "10": 1.0,
+          "01": 1.0,
+          "11": 1.0
+        },
+        "cue_latched_rate": 1.0,
+        "branch_override_rate": 1.0,
+        "branch_reach_rate": 1.0
+      }
+    }
+  }
+}

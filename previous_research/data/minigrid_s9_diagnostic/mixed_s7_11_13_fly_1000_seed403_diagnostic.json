@@ -1,0 +1,82 @@
+{
+  "model": "fly",
+  "seed": 403,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_length_curriculum\\mixed_s7_11_13_fly_1000_seed403.pt",
+  "episodes": 128,
+  "first_seed": 16000000,
+  "size": 9,
+  "cue_seen_rate": 1.0,
+  "branch_reach_rate": 1.0,
+  "success_rate": 0.890625,
+  "first_branch_turn_accuracy_given_reach": 0.890625,
+  "teacher_choice_accuracy": 0.890625,
+  "teacher_swap_flip_rate": 0.7734375,
+  "failure_counts": {
+    "success": 114,
+    "branch_or_finish": 14
+  },
+  "failure_by_start_x": [
+    {
+      "start_x": 1,
+      "category": "branch_or_finish",
+      "count": 6
+    },
+    {
+      "start_x": 1,
+      "category": "success",
+      "count": 14
+    },
+    {
+      "start_x": 2,
+      "category": "success",
+      "count": 28
+    },
+    {
+      "start_x": 3,
+      "category": "success",
+      "count": 24
+    },
+    {
+      "start_x": 4,
+      "category": "branch_or_finish",
+      "count": 5
+    },
+    {
+      "start_x": 4,
+      "category": "success",
+      "count": 15
+    },
+    {
+      "start_x": 5,
+      "category": "branch_or_finish",
+      "count": 3
+    },
+    {
+      "start_x": 5,
+      "category": "success",
+      "count": 12
+    },
+    {
+      "start_x": 6,
+      "category": "success",
+      "count": 21
+    }
+  ],
+  "failure_by_cue_type": [
+    {
+      "cue_type": "Ball",
+      "category": "success",
+      "count": 67
+    },
+    {
+      "cue_type": "Key",
+      "category": "branch_or_finish",
+      "count": 14
+    },
+    {
+      "cue_type": "Key",
+      "category": "success",
+      "count": 47
+    }
+  ]
+}

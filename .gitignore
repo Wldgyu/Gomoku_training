@@ -1,0 +1,10 @@
+/.venv/
+/github_upload/
+**/__pycache__/
+**/.ruff_cache/
+**/.cache/
+*.pt
+*.feather
+*.log
+*.tmp
+

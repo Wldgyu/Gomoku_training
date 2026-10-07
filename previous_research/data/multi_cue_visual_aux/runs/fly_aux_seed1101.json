@@ -1,0 +1,131 @@
+{
+  "kind": "fly",
+  "seed": 1101,
+  "aux": true,
+  "hidden": 1000,
+  "learning_rate": 0.0003,
+  "best_epoch": 16,
+  "best_validation": 0.671875,
+  "curve": [
+    {
+      "epoch": 1,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 2,
+      "validation": 0.5146484375
+    },
+    {
+      "epoch": 3,
+      "validation": 0.6513671875
+    },
+    {
+      "epoch": 4,
+      "validation": 0.6533203125
+    },
+    {
+      "epoch": 5,
+      "validation": 0.6513671875
+    },
+    {
+      "epoch": 6,
+      "validation": 0.6572265625
+    },
+    {
+      "epoch": 7,
+      "validation": 0.65625
+    },
+    {
+      "epoch": 8,
+      "validation": 0.6611328125
+    },
+    {
+      "epoch": 9,
+      "validation": 0.642578125
+    },
+    {
+      "epoch": 10,
+      "validation": 0.6689453125
+    },
+    {
+      "epoch": 11,
+      "validation": 0.6474609375
+    },
+    {
+      "epoch": 12,
+      "validation": 0.6474609375
+    },
+    {
+      "epoch": 13,
+      "validation": 0.658203125
+    },
+    {
+      "epoch": 14,
+      "validation": 0.6484375
+    },
+    {
+      "epoch": 15,
+      "validation": 0.6669921875
+    },
+    {
+      "epoch": 16,
+      "validation": 0.671875
+    },
+    {
+      "epoch": 17,
+      "validation": 0.6552734375
+    },
+    {
+      "epoch": 18,
+      "validation": 0.646484375
+    },
+    {
+      "epoch": 19,
+      "validation": 0.6484375
+    },
+    {
+      "epoch": 20,
+      "validation": 0.671875
+    }
+  ],
+  "tests": {
+    "trained_lengths": {
+      "answer_accuracy": 0.658203125,
+      "by_delay": {
+        "6": 0.6604514229636899,
+        "10": 0.6559766763848397
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.699951171875,
+      "aux_visible_door_route_accuracy": 0.69873046875
+    },
+    "unseen_lengths": {
+      "answer_accuracy": 0.66357421875,
+      "by_delay": {
+        "8": 0.6606118546845124,
+        "14": 0.6666666666666666
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.691650390625,
+      "aux_visible_door_route_accuracy": 0.68798828125
+    },
+    "unseen_wait": {
+      "answer_accuracy": 0.65576171875,
+      "by_delay": {
+        "8": 0.6452866861030127,
+        "14": 0.6663395485770363
+      },
+      "count": 2048,
+      "aux_cue_accuracy": 0.669677734375,
+      "aux_visible_door_route_accuracy": 0.66552734375
+    },
+    "autonomous_unseen": {
+      "movement_success": 0.96875,
+      "answer_given_movement_success": 0.6532258064516129,
+      "end_to_end_answer_success": 0.6328125,
+      "episodes": 256
+    }
+  },
+  "seconds": 31.079937200000018,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_visual_aux\\runs\\fly_aux_seed1101.pt"
+}

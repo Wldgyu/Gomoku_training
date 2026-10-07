@@ -1,0 +1,98 @@
+{
+  "dataset_statistics": {
+    "train": {
+      "sha256": "ce5f2a3037f10432f10486d91de5102f0cc96f80bb1c5e2ab41989560ef2ef57",
+      "categories": {
+        "1": {
+          "positions": 5000,
+          "mean_plies": 24.2308
+        },
+        "2": {
+          "positions": 5000,
+          "mean_plies": 23.7488
+        },
+        "3": {
+          "positions": 5000,
+          "mean_plies": 20.9848
+        },
+        "4": {
+          "positions": 5000,
+          "mean_plies": 17.94
+        }
+      }
+    },
+    "validation": {
+      "sha256": "4643ec9df0d1076d485ab177488b5317f1df12172046fbd1b1cd185325fb6d09",
+      "categories": {
+        "1": {
+          "positions": 256,
+          "mean_plies": 19.66796875
+        },
+        "2": {
+          "positions": 256,
+          "mean_plies": 20.07421875
+        },
+        "3": {
+          "positions": 256,
+          "mean_plies": 17.39453125
+        },
+        "4": {
+          "positions": 256,
+          "mean_plies": 12.42578125
+        }
+      }
+    },
+    "test": {
+      "sha256": "d79513d145357cde1cd172b29ad689960386dc783fd3d470d1375f78e4198566",
+      "categories": {
+        "1": {
+          "positions": 512,
+          "mean_plies": 23.58984375
+        },
+        "2": {
+          "positions": 512,
+          "mean_plies": 20.49609375
+        },
+        "3": {
+          "positions": 512,
+          "mean_plies": 22.39453125
+        },
+        "4": {
+          "positions": 512,
+          "mean_plies": 15.52734375
+        }
+      }
+    }
+  },
+  "split_overlap": 0,
+  "old_validation_test_overlap": 0,
+  "core_source_hashes_equal": true,
+  "core_source_hashes": {
+    "train.py": "49de05240080ae8aa5c5de9e775b0b4ffdd36cf50bb581de3985952fac94c41f",
+    "env.py": "e732d534c165f27172ac407417aa4ff288b3bca652737eb3a61a689f6697b46e",
+    "models.py": "5cbf30663eb9ae90e339b263adee96dcac47eb16448285635d9bf2ceaadc9044",
+    "spatial.py": "76c8e3ef0e12bf350ab75da3ea711bb66c3c10510c9f2855b50ce6b7d60157d2",
+    "history_aux.py": "564d04fb40b5b4d7334800f24c45e25e118a01d7e6e1224355d6fde37fa64ba4",
+    "tactics.py": "e3577ed1263826b37a1ef0aac31f12b3d71672f71f35c0bce63097e39ad948cb",
+    "expanded_tactics.py": "52f7c0c3a3d52fc50b2b01e00deb3e8155da2547fb3d484a3af8c8faadd1df88"
+  },
+  "budgets_equal": true,
+  "runs": 12,
+  "decisions_per_run": 614400,
+  "auxiliary_target_draws_per_run": 537600,
+  "auxiliary_history_frames": {
+    "fly_4601": 5709517,
+    "rewired_4601": 5709517,
+    "rnn_4601": 5709517,
+    "gru_4601": 5709517,
+    "fly_4602": 5710897,
+    "rewired_4602": 5710897,
+    "rnn_4602": 5710897,
+    "gru_4602": 5710897,
+    "fly_4603": 5712293,
+    "rewired_4603": 5712293,
+    "rnn_4603": 5712293,
+    "gru_4603": 5712293
+  },
+  "notes": "Source snapshots and historical path metadata are preserved across publication layout changes."
+}

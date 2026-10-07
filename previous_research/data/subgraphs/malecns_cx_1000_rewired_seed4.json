@@ -1,0 +1,19 @@
+{
+  "source_graph": "malecns_cx_1000.npz",
+  "source_graph_sha256": "0c18a502ac0a05440fd5c255ff4d862d5eff51f1ea4c167faa0641fbac306feb",
+  "rewire_seed": 4,
+  "neurons": 1000,
+  "edges": 83336,
+  "target_accepted_swaps": 833360,
+  "accepted_swaps": 833360,
+  "attempted_swaps": 1181230,
+  "directed_in_degrees_preserved": true,
+  "directed_out_degrees_preserved": true,
+  "self_edges": 0,
+  "duplicate_edges": 0,
+  "edge_overlap_with_real": 13624,
+  "edge_overlap_fraction": 0.16348276855140637,
+  "weight_values_retained": true,
+  "weight_note": "synapse_count is unused by the current game model",
+  "file": "malecns_cx_1000_rewired_seed4.npz"
+}

@@ -1,0 +1,115 @@
+{
+ "stage": "final",
+ "kind": "rnn",
+ "variant": "aux",
+ "seed": 3102,
+ "cues": 3,
+ "delay": 8,
+ "distractors": 2,
+ "updates": 8000,
+ "name": "cues3_delay8_distract2_rnn_aux_seed3102",
+ "hidden": 415,
+ "parameters": 236247,
+ "learning_rate": 0.0003,
+ "final_validation": 1.0,
+ "test": {
+  "accuracy": 1.0,
+  "by_slot": {
+   "0": 1.0,
+   "1": 1.0,
+   "2": 1.0
+  },
+  "distractor_reused_color": {
+   "False": 1.0,
+   "True": 1.0
+  }
+ },
+ "curve": [
+  {
+   "update": 0,
+   "validation": 0.3125
+  },
+  {
+   "update": 500,
+   "loss": 1.1633012294769287,
+   "validation": 0.609375
+  },
+  {
+   "update": 1000,
+   "loss": 0.7173343300819397,
+   "validation": 0.623046875
+  },
+  {
+   "update": 1500,
+   "loss": 0.6915256381034851,
+   "validation": 0.6640625
+  },
+  {
+   "update": 2000,
+   "loss": 0.2120061218738556,
+   "validation": 0.9814453125
+  },
+  {
+   "update": 2500,
+   "loss": 0.009985421784222126,
+   "validation": 1.0
+  },
+  {
+   "update": 3000,
+   "loss": 0.0031045114155858755,
+   "validation": 1.0
+  },
+  {
+   "update": 3500,
+   "loss": 0.001649155979976058,
+   "validation": 1.0
+  },
+  {
+   "update": 4000,
+   "loss": 0.0009364982834085822,
+   "validation": 1.0
+  },
+  {
+   "update": 4500,
+   "loss": 0.0006747992010787129,
+   "validation": 1.0
+  },
+  {
+   "update": 5000,
+   "loss": 0.0003697749925777316,
+   "validation": 1.0
+  },
+  {
+   "update": 5500,
+   "loss": 0.0002454497735016048,
+   "validation": 1.0
+  },
+  {
+   "update": 6000,
+   "loss": 0.0002181913732783869,
+   "validation": 1.0
+  },
+  {
+   "update": 6500,
+   "loss": 0.00017806491814553738,
+   "validation": 1.0
+  },
+  {
+   "update": 7000,
+   "loss": 0.00011659959272947162,
+   "validation": 1.0
+  },
+  {
+   "update": 7500,
+   "loss": 7.509700662922114e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 8000,
+   "loss": 5.388622230384499e-05,
+   "validation": 1.0
+  }
+ ],
+ "to90": 2000,
+ "seconds": 109.09870819999924
+}

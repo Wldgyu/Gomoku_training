@@ -1,0 +1,150 @@
+{
+  "kind": "rewired",
+  "seed": 1101,
+  "graph": 1,
+  "frozen": false,
+  "name": "rewired_graph1_seed1101",
+  "config": {
+    "cues_min": 3,
+    "cues_max": 3,
+    "delay": 8,
+    "distractors": 2
+  },
+  "task": "cues3_delay8_distract2",
+  "hidden": 1000,
+  "parameters": 223851,
+  "leak": 0.9,
+  "learning_rate": 0.003,
+  "updates": 12000,
+  "batch_size": 128,
+  "episodes_seen": 1536000,
+  "generator": "vectorized_fixed_v2",
+  "execution_mode_at_finish": "cuda_graph_replay",
+  "final_validation": 1.0,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.3427734375
+    },
+    {
+      "update": 500,
+      "validation": 0.626953125
+    },
+    {
+      "update": 1000,
+      "validation": 0.640625
+    },
+    {
+      "update": 1500,
+      "validation": 0.6416015625
+    },
+    {
+      "update": 2000,
+      "validation": 0.625
+    },
+    {
+      "update": 2500,
+      "validation": 0.634765625
+    },
+    {
+      "update": 3000,
+      "validation": 0.642578125
+    },
+    {
+      "update": 3500,
+      "validation": 0.640625
+    },
+    {
+      "update": 4000,
+      "validation": 0.640625
+    },
+    {
+      "update": 4500,
+      "validation": 0.640625
+    },
+    {
+      "update": 5000,
+      "validation": 0.642578125
+    },
+    {
+      "update": 5500,
+      "validation": 0.63671875
+    },
+    {
+      "update": 6000,
+      "validation": 0.6318359375
+    },
+    {
+      "update": 6500,
+      "validation": 0.6328125
+    },
+    {
+      "update": 7000,
+      "validation": 0.6533203125
+    },
+    {
+      "update": 7500,
+      "validation": 0.8623046875
+    },
+    {
+      "update": 8000,
+      "validation": 0.9990234375
+    },
+    {
+      "update": 8500,
+      "validation": 1.0
+    },
+    {
+      "update": 9000,
+      "validation": 1.0
+    },
+    {
+      "update": 9500,
+      "validation": 1.0
+    },
+    {
+      "update": 10000,
+      "validation": 0.96484375
+    },
+    {
+      "update": 10500,
+      "validation": 1.0
+    },
+    {
+      "update": 11000,
+      "validation": 1.0
+    },
+    {
+      "update": 11500,
+      "validation": 1.0
+    },
+    {
+      "update": 12000,
+      "validation": 1.0
+    }
+  ],
+  "test": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 1338
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 1406
+      },
+      "2": {
+        "accuracy": 1.0,
+        "count": 1352
+      }
+    },
+    "last_only_accuracy": 0.5458984375,
+    "majority_kind_accuracy": 0.625,
+    "prediction_is_majority_kind": 0.771728515625
+  },
+  "to90": 8000,
+  "to99": 8000,
+  "seconds_this_session": 241.44036210000013,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\load\\cues3_delay8_distract2_rewired_graph1_seed1101.pt"
+}

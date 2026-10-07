@@ -1,0 +1,125 @@
+{
+  "kind": "gru",
+  "seed": 1103,
+  "aux": false,
+  "hidden": 254,
+  "learning_rate": 0.003,
+  "best_epoch": 2,
+  "best_validation": 0.345703125,
+  "curve": [
+    {
+      "epoch": 1,
+      "validation": 0.3359375
+    },
+    {
+      "epoch": 2,
+      "validation": 0.345703125
+    },
+    {
+      "epoch": 3,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 4,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 5,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 6,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 7,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 8,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 9,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 10,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 11,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 12,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 13,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 14,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 15,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 16,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 17,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 18,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 19,
+      "validation": 0.318359375
+    },
+    {
+      "epoch": 20,
+      "validation": 0.318359375
+    }
+  ],
+  "tests": {
+    "trained_lengths": {
+      "answer_accuracy": 0.328125,
+      "by_delay": {
+        "6": 0.3277723258096173,
+        "10": 0.32847424684159376
+      },
+      "count": 2048
+    },
+    "unseen_lengths": {
+      "answer_accuracy": 0.33056640625,
+      "by_delay": {
+        "8": 0.3355640535372849,
+        "14": 0.3253493013972056
+      },
+      "count": 2048
+    },
+    "unseen_wait": {
+      "answer_accuracy": 0.3125,
+      "by_delay": {
+        "8": 0.3294460641399417,
+        "14": 0.29538763493621195
+      },
+      "count": 2048
+    },
+    "autonomous_unseen": {
+      "movement_success": 0.140625,
+      "answer_given_movement_success": 0.19444444444444445,
+      "end_to_end_answer_success": 0.02734375,
+      "episodes": 256
+    }
+  },
+  "seconds": 31.496605699999918,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_visual_aux\\runs\\gru_base_seed1103.pt"
+}

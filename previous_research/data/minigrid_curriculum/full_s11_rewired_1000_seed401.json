@@ -1,0 +1,47 @@
+{
+  "environment": "MiniGrid-MemoryS11-v0",
+  "method": "teacher route imitation after diagnostic pretraining",
+  "observation": "partial 7x7 image and direction only",
+  "model": "rewired",
+  "neurons_reference": 1000,
+  "seed": 401,
+  "parameters": 351092,
+  "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\minigrid_diagnostic\\choice_s11_rewired_1000_seed401.pt",
+  "train_episodes": 1024,
+  "eval_episodes": 128,
+  "epochs": 30,
+  "freeze_memory": false,
+  "before": {
+    "success_rate": 0.0,
+    "branch_reach_rate": 0.0
+  },
+  "history": [
+    {
+      "epoch": 10,
+      "teacher_loss": 1.1689512133598328,
+      "success_rate": 0.0,
+      "branch_reach_rate": 0.0
+    },
+    {
+      "epoch": 20,
+      "teacher_loss": 0.06171737238764763,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0
+    },
+    {
+      "epoch": 30,
+      "teacher_loss": 0.002935387412435375,
+      "success_rate": 1.0,
+      "branch_reach_rate": 1.0
+    }
+  ],
+  "final_fresh": {
+    "success_rate": 1.0,
+    "branch_reach_rate": 1.0
+  },
+  "final_fresh_cue_masked": {
+    "success_rate": 0.5234375,
+    "branch_reach_rate": 1.0
+  },
+  "duration_seconds": 45.731446000000005
+}

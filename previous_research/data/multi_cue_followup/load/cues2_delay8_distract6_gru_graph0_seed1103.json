@@ -1,0 +1,146 @@
+{
+  "kind": "gru",
+  "seed": 1103,
+  "graph": 0,
+  "frozen": false,
+  "name": "gru_graph0_seed1103",
+  "config": {
+    "cues_min": 2,
+    "cues_max": 2,
+    "delay": 8,
+    "distractors": 6
+  },
+  "task": "cues2_delay8_distract6",
+  "hidden": 246,
+  "parameters": 223145,
+  "leak": 0.9,
+  "learning_rate": 0.01,
+  "updates": 12000,
+  "batch_size": 128,
+  "episodes_seen": 1536000,
+  "generator": "vectorized_fixed_v2",
+  "execution_mode_at_finish": "cuda_graph_replay",
+  "final_validation": 1.0,
+  "curve": [
+    {
+      "update": 0,
+      "validation": 0.3466796875
+    },
+    {
+      "update": 500,
+      "validation": 0.65234375
+    },
+    {
+      "update": 1000,
+      "validation": 0.6630859375
+    },
+    {
+      "update": 1500,
+      "validation": 0.6591796875
+    },
+    {
+      "update": 2000,
+      "validation": 0.6669921875
+    },
+    {
+      "update": 2500,
+      "validation": 0.666015625
+    },
+    {
+      "update": 3000,
+      "validation": 0.66015625
+    },
+    {
+      "update": 3500,
+      "validation": 0.7509765625
+    },
+    {
+      "update": 4000,
+      "validation": 0.9384765625
+    },
+    {
+      "update": 4500,
+      "validation": 1.0
+    },
+    {
+      "update": 5000,
+      "validation": 1.0
+    },
+    {
+      "update": 5500,
+      "validation": 1.0
+    },
+    {
+      "update": 6000,
+      "validation": 1.0
+    },
+    {
+      "update": 6500,
+      "validation": 1.0
+    },
+    {
+      "update": 7000,
+      "validation": 1.0
+    },
+    {
+      "update": 7500,
+      "validation": 1.0
+    },
+    {
+      "update": 8000,
+      "validation": 1.0
+    },
+    {
+      "update": 8500,
+      "validation": 1.0
+    },
+    {
+      "update": 9000,
+      "validation": 1.0
+    },
+    {
+      "update": 9500,
+      "validation": 1.0
+    },
+    {
+      "update": 10000,
+      "validation": 1.0
+    },
+    {
+      "update": 10500,
+      "validation": 1.0
+    },
+    {
+      "update": 11000,
+      "validation": 1.0
+    },
+    {
+      "update": 11500,
+      "validation": 1.0
+    },
+    {
+      "update": 12000,
+      "validation": 1.0
+    }
+  ],
+  "test": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 2027
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 2069
+      }
+    },
+    "last_only_accuracy": 0.66943359375,
+    "majority_kind_accuracy": 0.672607421875,
+    "prediction_is_majority_kind": 1.0
+  },
+  "to90": 4000,
+  "to99": 4500,
+  "seconds_this_session": 45.87208069999906,
+  "checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\load\\cues2_delay8_distract6_gru_graph0_seed1103.pt"
+}

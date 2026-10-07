@@ -1,0 +1,191 @@
+{
+  "kind": "leaky",
+  "seed": 1102,
+  "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_followup\\visual\\main\\leaky_seed1102.pt",
+  "selected_head": "relu_state",
+  "perception": {
+    "trained_delays": {
+      "positive_f1": 0.1461880983881752,
+      "positive_recall": 0.08894967366653395,
+      "exact_frame_accuracy": 0.015183109790086746,
+      "visible_query_color_accuracy": 0.2568359375,
+      "visible_query_exact_bits": 0.0,
+      "frames": 30692,
+      "query_visible_frames": 12288,
+      "positive_bits": 57763
+    },
+    "unseen_delays": {
+      "positive_f1": 0.14347125201504568,
+      "positive_recall": 0.08703633805716639,
+      "exact_frame_accuracy": 0.06036552041769028,
+      "visible_query_color_accuracy": 0.25048828125,
+      "visible_query_exact_bits": 0.0,
+      "frames": 36660,
+      "query_visible_frames": 12288,
+      "positive_bits": 58286
+    },
+    "unseen_delays_wait": {
+      "positive_f1": 0.15156047749173018,
+      "positive_recall": 0.09247753440044931,
+      "exact_frame_accuracy": 0.06590943783521652,
+      "visible_query_color_accuracy": 0.24174953997135162,
+      "visible_query_exact_bits": 0.0,
+      "frames": 71841,
+      "query_visible_frames": 22726,
+      "positive_bits": 113952
+    }
+  },
+  "tests": {
+    "trained_delays": {
+      "original": {
+        "accuracy": 0.66259765625,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6569200754165649,
+            "count": 1026
+          },
+          "1": {
+            "accuracy": 0.6682974696159363,
+            "count": 1022
+          }
+        }
+      },
+      "repaired": {
+        "accuracy": 0.6689453125,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6832358837127686,
+            "count": 1026
+          },
+          "1": {
+            "accuracy": 0.6545988321304321,
+            "count": 1022
+          }
+        }
+      }
+    },
+    "unseen_delays": {
+      "original": {
+        "accuracy": 0.64990234375,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6231743097305298,
+            "count": 1027
+          },
+          "1": {
+            "accuracy": 0.6767874360084534,
+            "count": 1021
+          }
+        }
+      },
+      "repaired": {
+        "accuracy": 0.66552734375,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.6543329954147339,
+            "count": 1027
+          },
+          "1": {
+            "accuracy": 0.6767874360084534,
+            "count": 1021
+          }
+        }
+      }
+    },
+    "unseen_delays_wait": {
+      "original": {
+        "accuracy": 0.61083984375,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.555114209651947,
+            "count": 1007
+          },
+          "1": {
+            "accuracy": 0.6647454500198364,
+            "count": 1041
+          }
+        }
+      },
+      "repaired": {
+        "accuracy": 0.654296875,
+        "by_slot": {
+          "0": {
+            "accuracy": 0.5789473652839661,
+            "count": 1007
+          },
+          "1": {
+            "accuracy": 0.7271854281425476,
+            "count": 1041
+          }
+        }
+      }
+    }
+  },
+  "decoder_validation_bce": 0.3937111794948578,
+  "extra_head_training": {
+    "variant": "relu_state",
+    "seed": 1102,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 8192,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.4782986342906952,
+    "best_validation_accuracy": 0.6513671875,
+    "best_update": 100,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.512495756149292,
+        "validation": 0.6396484375
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.4782986342906952,
+        "validation": 0.6513671875
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.49631431698799133,
+        "validation": 0.673828125
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.48961201310157776,
+        "validation": 0.662109375
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.4812842607498169,
+        "validation": 0.6611328125
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.5189909934997559,
+        "validation": 0.6767578125
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.4982862174510956,
+        "validation": 0.6748046875
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.4833754599094391,
+        "validation": 0.6728515625
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.4954383969306946,
+        "validation": 0.68359375
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.49812838435173035,
+        "validation": 0.6591796875
+      }
+    ]
+  },
+  "perception_metric_version": 2
+}

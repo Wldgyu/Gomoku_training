@@ -1,0 +1,138 @@
+"""Generate the 12x12 report from completed experiment artifacts."""
+import argparse
+import itertools
+import json
+from pathlib import Path
+
+from .make_report import NAMES, mean_sd, validate_replays, viewer
+from .models import KINDS
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--input", type=Path, required=True)
+    args = p.parse_args()
+    e = json.loads((args.input / "evaluation.json").read_text(encoding="utf-8"))
+    runs = json.loads((args.input / "training_summary.json").read_text(encoding="utf-8"))["runs"]
+    replays = json.loads((args.input / "replays.json").read_text(encoding="utf-8"))["games"]
+    validate_replays(replays)
+    seeds = sorted({r["config"]["seed"] for r in runs})
+    if len(runs) != 4 * len(seeds) or any(r["completed_updates"] != 1200 for r in runs):
+        raise RuntimeError("Incomplete final training budget")
+    if any(r["config"]["warmup_updates"] != 1800 or r["learner_decisions"] != 614400 for r in runs):
+        raise RuntimeError("Training budgets differ")
+    lines = ["# 12×12 일반 오목: 방어 보조 학습과 경기 재평가", "",
+        "2026-10-06. 흑백 모두 5개 이상 연속이면 승리, 금수 없음.", "",
+        "[실험 프로토콜](../../defense12_protocol.md) · [평가 원자료](evaluation.json) · [실제 기보 재생](replays.html)", "",
+        "## 공통 조건", "",
+        "4모델 × 새 초기화 시드 4201·4202·4203. 9×9 가중치를 재사용하지 않았다.",
+        "학습 데이터는 합법 기보에서 나온 즉시 승리 10,000판·필수 방어 10,000판이다.",
+        "같은 데이터에서 보조 학습 1,800 × 128예제 = 230,400 예제 추출 후,",
+        "PPO 1,200 × 32환경 × 16결정 = 614,400 학습자 결정을 사용했다.",
+        "PPO 2에포크 각각 보조 예제 128개를 추가해 307,200 예제 추출을 더 사용했다.",
+        "경기 상대는 매 착수 70% 무작위·30% 얕은 규칙 정책. 경기 보상은 승패 ±1·무승부 0이다.",
+        "전체 판 관측, CNN·출력 구성 공통, 총 파라미터 수 일치(반올림 차이).",
+        "최종 시험은 예산의 마지막 체크포인트이며, 시험 점수에 따른 모델 선택은 없다.",
+        "평가 착수는 학습 모델의 argmax다. 정답 수·방어 규칙·탐색으로 수를 교체하지 않았다.", "",
+        "## 독립 전술 시험", "",
+        "학습·검증·시험의 판 내용+차례 해시 중복을 제거했다. 시험은 더 강한 생성 상대(규칙 수 80%)의",
+        "새 기보에서 승리·필수 방어 각각 1,024판. 필수 방어는 자기 즉시 승리가 없고 상대 승리 칸이 하나인 경우다.",
+        "초기화 → 보조 학습 완료 → 경기 학습 완료, 3개 학습 시드 평균 ± 표본표준편차.", "",
+        "| 모델 | 즉시 승리: 상태 0 | 필수 방어: 상태 0 |", "|---|---:|---:|"]
+    for mode in ("cold", "history"):
+        if mode == "history":
+            lines += ["", "합법 기보의 이전 관측을 순서대로 입력해 순환 상태를 만든 뒤 같은 문제를 풀었다.", "",
+                      "| 모델 | 즉시 승리: 기보 상태 | 필수 방어: 기보 상태 |", "|---|---:|---:|"]
+        for kind in KINDS:
+            cells = [" → ".join(mean_sd([r[mode][c]["accuracy"] for r in e["tactical_test"]
+                                        if r["kind"] == kind and r["stage"] == stage])
+                                for stage in ("fresh", "warmup", "final")) for c in ("win", "block")]
+            lines.append(f"| {NAMES[kind]} | {' | '.join(cells)} |")
+    lines += ["", "## 새 상대 경기", "",
+              "상대별·단계별·학습 시드별 256경기, 흑백 각 128경기. 평균 ± 시드 표준편차 승률.", "",
+              "| 모델 | 무작위: 초기 → 보조 → 최종 | 약화 규칙: 초기 → 보조 → 최종 | 완전 규칙: 초기 → 보조 → 최종 |",
+              "|---|---:|---:|---:|"]
+    for kind in KINDS:
+        cells = [" → ".join(mean_sd([r["win_rate"] for r in e["fixed_opponents"]
+                                    if r["kind"] == kind and r["stage"] == stage and r["opponent"] == opp])
+                            for stage in ("fresh", "warmup", "final")) for opp in ("random", "weak", "tactical")]
+        lines.append(f"| {NAMES[kind]} | {' | '.join(cells)} |")
+    lines += ["", "완전 규칙 상대는 자기 즉시 승리 → 상대 즉시 승리 차단 → 줄 늘리기 정책을 매 착수 적용한다.",
+              "무작위 플레이어 기준: " + "; ".join(f"{o} {r['win_rate'] * 100:.2f}%" for o, r in e["random_baseline"].items()),
+              "", "### 최종 모델의 실제 경기 중 필수 방어", "",
+              "동일 모델이 도달한 상황에서 상대의 유일한 즉시 승리 칸을 막은 횟수 / 해당 상황 수.",
+              "모델마다 도달한 판이 다르므로 이 비율을 동일 판 시험 정확도로 취급하지 않는다.", "",
+              "| 모델 | 무작위 상대 | 약화 규칙 상대 | 완전 규칙 상대 |", "|---|---:|---:|---:|"]
+    for kind in KINDS:
+        cells = []
+        for opponent in ("random", "weak", "tactical"):
+            rows = [r["tactical_decisions"]["block"] for r in e["fixed_opponents"]
+                    if r["kind"] == kind and r["stage"] == "final" and r["opponent"] == opponent]
+            n, c = sum(r["positions"] for r in rows), sum(r["correct"] for r in rows)
+            cells.append(f"{c}/{n} ({100 * c / n:.2f}%)" if n else "해당 상황 없음")
+        lines.append(f"| {NAMES[kind]} | {' | '.join(cells)} |")
+    lines += ["", "## 모델 맞대결", "",
+              "6쌍 × 3학습 시드 × 공통 시작 2수 64개 × 흑백 교환 = 2,304경기.",
+              "점수율은 (승 + 무승부×0.5)/경기 수, 평균 ± 시드 표준편차다.", "",
+              "| 행 / 상대 | " + " | ".join(NAMES[k] for k in KINDS) + " |",
+              "|---|" + "---:|" * len(KINDS)]
+    for kind in KINDS:
+        cells = []
+        for other in KINDS:
+            if kind == other:
+                cells.append("—")
+            else:
+                cells.append(mean_sd([r["score"] if r["a"] == kind else 1 - r["score"]
+                                     for r in e["head_to_head"] if {r["a"], r["b"]} == {kind, other}]))
+        lines.append(f"| {NAMES[kind]} | {' | '.join(cells)} |")
+    lines += ["", "| A | B | A 승 | 무 | A 패 |", "|---|---|---:|---:|---:|"]
+    for a, b in itertools.combinations(KINDS, 2):
+        rows = [r for r in e["head_to_head"] if r["a"] == a and r["b"] == b]
+        lines.append(f"| {NAMES[a]} | {NAMES[b]} | {sum(r['wins'] for r in rows)} | {sum(r['draws'] for r in rows)} | {sum(r['losses'] for r in rows)} |")
+    diagnostic = json.loads((args.input / "diagnostics.json").read_text(encoding="utf-8"))
+    if len(diagnostic["runs"]) != 2 * len(runs):
+        raise RuntimeError("Incomplete diagnostic runs")
+    lines += ["", "## 실패 원인 후속 진단", "",
+              "학습을 추가하지 않고 마지막 모델에서 학습에 사용한 판을 독립 난수로 각 종류 1,024개 추출했다.",
+              "검증은 미사용 각 종류 512판. 상태 0에서 비교하며 아래 수치로 모델을 다시 고르거나 학습하지 않았다.", "",
+              "| 모델 | 학습 판: 승리 / 방어 | 검증 판: 승리 / 방어 |", "|---|---:|---:|"]
+    for kind in KINDS:
+        cells = []
+        for split in ("train_seen", "validation"):
+            cells.append(" / ".join(mean_sd([r[split][c]["accuracy"] for r in diagnostic["runs"]
+                                              if r["kind"] == kind and r["stage"] == "final"])
+                                    for c in ("win", "block")))
+        lines.append(f"| {NAMES[kind]} | {' | '.join(cells)} |")
+    lines += ["", "낮은 학습 판 정답률은 기본 전술의 미학습을, 학습 판보다 낮은 미사용 판 정답률은 일반화 한계를 함께 보여준다.",
+              "기보 상태와 상태 0의 차이는 순환 상태의 영향이며, 이 수치만으로 기억 소실을 확정하지 않는다.",
+              "한 수로 못 막는 복수 위협과 열린 4는 필수 방어 정답률에서 제외했지만 실제 경기에는 포함된다."]
+    lines += ["", "## 실제 학습 메모리와 시간", "",
+              "PyTorch 최대 allocated/reserved. 학습 데이터 GPU 상주와 옵티마이저를 포함한다.",
+              "드라이버·화면·다른 프로세스 사용량을 제외하며 GPU 전체 사용량과 다르다.", "",
+              "| 모델 | 파라미터 | allocated 최대 GiB | reserved 최대 GiB | 학습 시간 범위 초 |",
+              "|---|---:|---:|---:|---:|"]
+    for kind in KINDS:
+        rows = [r for r in runs if r["config"]["kind"] == kind]
+        lines.append(f"| {NAMES[kind]} | {rows[0]['parameters']:,} | {max(r['peak_allocated_gib'] for r in rows):.3f} | "
+                     f"{max(r['peak_reserved_gib'] for r in rows):.3f} | "
+                     f"{min(r['elapsed_seconds'] for r in rows):.1f}–{max(r['elapsed_seconds'] for r in rows):.1f} |")
+    lines += ["", "[학습 중 GPU 전체 사용량 시점 표본](gpu_sample.csv)도 보존했다. 전체 GPU의 최대값을 연속 측정한 기록은 아니다.",
+              "고정 모델 평가는 CPU에서 진행해 다음 GPU 학습과 병행했다. 기보 맞대결도 CPU의 같은 평가 경로를 사용했다.",
+              "RNN 시드4203은 Windows의 읽기/교체 파일 잠금으로 저장 중 한 차례 중단됐다.",
+              "짧은 저장 재시도를 추가하고 정상 300업데이트 체크포인트의 가중치·옵티마이저·환경·난수·순환 상태를 복원했다.",
+              "학습 설정·예산은 변경하지 않았다. 위 시간은 이어진 정상 학습 구간의 합이며 중단 후 재실행한 중복 구간은 포함하지 않는다."]
+    lines += ["", "## 해석과 다음 단계", "",
+              "9×9 실험과 판 크기·예산·교사 정보를 함께 바꿨으므로 개선 전체를 보조 학습의 인과 효과로 단정할 수 없다.",
+              "초기·보조 완료·최종 모델 비교는 단계별 변화를 보여주며 동일 예산의 보조 학습 없는 대조군이 추가로 필요하다.",
+              "독립 전술 시험, 실제 경기 방어, 새 규칙 상대 승률을 함께 읽는다. 전술 문제만 좋아져도 전략 완성을 의미하지 않는다.",
+              "3개 시드와 서로 다른 3개 재배선 그래프를 함께 바꿨으므로 재배선 변동과 초기화 변동을 분리하지 못했다.",
+              "같은 시드 맞대결만으로 모델 구조 우월성을 선언하지 않는다. 독립 재배선 반복·교차 시드 리그가 필요하다.",
+              "후속은 완전 규칙 상대의 실패 기보에서 열린 3·양방향 4·복수 위협과 장기 공격/방어를 분리하고,",
+              "단계별 상대 강도와 과거 정책 상대를 포함한 리그로 확장한다. 15×15는 12×12 강한 상대 성적을 확인한 뒤 판단한다.", ""]
+    (args.input / "results.md").write_text("\n".join(lines), encoding="utf-8")
+    (args.input / "replays.html").write_text(viewer(replays).replace("9×9", "12×12"), encoding="utf-8")
+    print(f"Report written; {len(replays)} replay histories independently validated", flush=True)
+
+
+if __name__ == "__main__":
+    main()

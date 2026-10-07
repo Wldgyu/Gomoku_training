@@ -1,0 +1,22 @@
+{
+  "variant": "relu_state",
+  "scores": {
+    "relu_state": {
+      "mean_validation_loss": 0.15888947023340733,
+      "mean_validation_accuracy": 0.8952473958333333
+    },
+    "leaky_state": {
+      "mean_validation_loss": 0.15913190296269022,
+      "mean_validation_accuracy": 0.8926432291666667
+    },
+    "relu_query": {
+      "mean_validation_loss": 0.15929248387449965,
+      "mean_validation_accuracy": 0.8920572916666667
+    },
+    "leaky_query": {
+      "mean_validation_loss": 0.1589597986234973,
+      "mean_validation_accuracy": 0.8935546875
+    }
+  },
+  "selection_uses_test": false
+}

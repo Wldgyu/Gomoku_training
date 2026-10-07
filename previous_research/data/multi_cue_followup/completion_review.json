@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-04T12:53:29.913428+09:00",
+  "counts": {
+    "baseline": 27,
+    "frozen": 3,
+    "diagnosis": 15,
+    "load": 135,
+    "visual/main": 15
+  },
+  "probe_weights": 90,
+  "visual_tuning_runs": 30,
+  "verified_checkpoint_runs": 180,
+  "checks": {
+    "source_hash_mismatches": [],
+    "graph_hash_mismatches": [],
+    "missing_checkpoints": [],
+    "unexpected_budgets": [],
+    "invalid_accuracy": []
+  },
+  "test_suite": "20 tests passed in prior completed session; CUDA replay/eager equivalence included",
+  "status": "all three stages complete"
+}

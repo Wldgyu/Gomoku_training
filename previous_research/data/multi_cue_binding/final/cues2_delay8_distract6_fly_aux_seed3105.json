@@ -1,0 +1,114 @@
+{
+ "stage": "final",
+ "kind": "fly",
+ "variant": "aux",
+ "seed": 3105,
+ "cues": 2,
+ "delay": 8,
+ "distractors": 6,
+ "updates": 8000,
+ "name": "cues2_delay8_distract6_fly_aux_seed3105",
+ "hidden": 1000,
+ "parameters": 235863,
+ "learning_rate": 0.003,
+ "final_validation": 1.0,
+ "test": {
+  "accuracy": 1.0,
+  "by_slot": {
+   "0": 1.0,
+   "1": 1.0
+  },
+  "distractor_reused_color": {
+   "False": 1.0,
+   "True": 1.0
+  }
+ },
+ "curve": [
+  {
+   "update": 0,
+   "validation": 0.35546875
+  },
+  {
+   "update": 500,
+   "loss": 1.0892291069030762,
+   "validation": 0.6689453125
+  },
+  {
+   "update": 1000,
+   "loss": 0.5945120453834534,
+   "validation": 0.7314453125
+  },
+  {
+   "update": 1500,
+   "loss": 0.0353451743721962,
+   "validation": 0.9931640625
+  },
+  {
+   "update": 2000,
+   "loss": 0.004577591083943844,
+   "validation": 1.0
+  },
+  {
+   "update": 2500,
+   "loss": 0.0023359348997473717,
+   "validation": 1.0
+  },
+  {
+   "update": 3000,
+   "loss": 0.0014310444239526987,
+   "validation": 1.0
+  },
+  {
+   "update": 3500,
+   "loss": 0.0009461059817112982,
+   "validation": 1.0
+  },
+  {
+   "update": 4000,
+   "loss": 0.0004376282449811697,
+   "validation": 1.0
+  },
+  {
+   "update": 4500,
+   "loss": 0.0004215935477986932,
+   "validation": 1.0
+  },
+  {
+   "update": 5000,
+   "loss": 0.00042714757728390396,
+   "validation": 1.0
+  },
+  {
+   "update": 5500,
+   "loss": 0.00022300443379208446,
+   "validation": 1.0
+  },
+  {
+   "update": 6000,
+   "loss": 0.00013839984603691846,
+   "validation": 1.0
+  },
+  {
+   "update": 6500,
+   "loss": 0.00011425805860199034,
+   "validation": 1.0
+  },
+  {
+   "update": 7000,
+   "loss": 9.61003388511017e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 7500,
+   "loss": 6.638270861003548e-05,
+   "validation": 1.0
+  },
+  {
+   "update": 8000,
+   "loss": 6.419292913051322e-05,
+   "validation": 1.0
+  }
+ ],
+ "to90": 1500,
+ "seconds": 136.3066132999993
+}

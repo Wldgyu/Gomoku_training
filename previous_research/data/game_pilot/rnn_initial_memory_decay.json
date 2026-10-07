@@ -1,0 +1,226 @@
+[
+  {
+    "neurons_reference": 1000,
+    "seed": 203,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.1495592594146729,
+      0.6569992303848267,
+      0.37770989537239075,
+      0.21618536114692688,
+      0.1234668418765068,
+      0.07131113857030869
+    ],
+    "final_to_initial_distance_ratio": 0.062033460203363984
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 203,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.1495592594146729,
+      1.140688419342041,
+      1.1297225952148438,
+      1.1168239116668701,
+      1.1019680500030518,
+      1.0808736085891724
+    ],
+    "final_to_initial_distance_ratio": 0.9402504479321288
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 204,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.1415971517562866,
+      0.662155270576477,
+      0.3735063076019287,
+      0.21625995635986328,
+      0.12306390702724457,
+      0.06992241740226746
+    ],
+    "final_to_initial_distance_ratio": 0.06124964248088349
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 204,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.1415971517562866,
+      1.1330087184906006,
+      1.1226551532745361,
+      1.1104185581207275,
+      1.0963395833969116,
+      1.0768685340881348
+    ],
+    "final_to_initial_distance_ratio": 0.943299948174739
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 208,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.1436125040054321,
+      0.6502448916435242,
+      0.374134361743927,
+      0.215082585811615,
+      0.12410126626491547,
+      0.07049441337585449
+    ],
+    "final_to_initial_distance_ratio": 0.061641870064337495
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 208,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.1436125040054321,
+      1.1347742080688477,
+      1.1237232685089111,
+      1.1106505393981934,
+      1.09625244140625,
+      1.0770610570907593
+    ],
+    "final_to_initial_distance_ratio": 0.9418059467856634
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 209,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.1375737190246582,
+      0.658165693283081,
+      0.3797703981399536,
+      0.21509432792663574,
+      0.12437783926725388,
+      0.0706632062792778
+    ],
+    "final_to_initial_distance_ratio": 0.06211747432057728
+  },
+  {
+    "neurons_reference": 1000,
+    "seed": 209,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.1375737190246582,
+      1.1291742324829102,
+      1.1186944246292114,
+      1.1059575080871582,
+      1.0911446809768677,
+      1.0725624561309814
+    ],
+    "final_to_initial_distance_ratio": 0.9428509451243154
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 203,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.145364761352539,
+      0.6627887487411499,
+      0.3807995915412903,
+      0.21827492117881775,
+      0.125445157289505,
+      0.07206977158784866
+    ],
+    "final_to_initial_distance_ratio": 0.06292298664989733
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 203,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.145364761352539,
+      1.138920545578003,
+      1.131169319152832,
+      1.1218526363372803,
+      1.1109057664871216,
+      1.0960900783538818
+    ],
+    "final_to_initial_distance_ratio": 0.9569790474953414
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 204,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.1488593816757202,
+      0.6586973667144775,
+      0.3777093291282654,
+      0.2168315351009369,
+      0.12488113343715668,
+      0.07221587747335434
+    ],
+    "final_to_initial_distance_ratio": 0.06285876115492972
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 204,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.1488593816757202,
+      1.1430864334106445,
+      1.1354117393493652,
+      1.1254703998565674,
+      1.1136207580566406,
+      1.0986241102218628
+    ],
+    "final_to_initial_distance_ratio": 0.9562737857608087
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 208,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.1606699228286743,
+      0.6670230627059937,
+      0.38566428422927856,
+      0.22199666500091553,
+      0.12788890302181244,
+      0.07342862337827682
+    ],
+    "final_to_initial_distance_ratio": 0.06326400118935069
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 208,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.1606699228286743,
+      1.1547881364822388,
+      1.147017478942871,
+      1.1375186443328857,
+      1.1267951726913452,
+      1.1128654479980469
+    ],
+    "final_to_initial_distance_ratio": 0.9588130321201717
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 209,
+    "initialization": "default",
+    "first_card_state_distance_by_timestep": [
+      1.1673989295959473,
+      0.6658464670181274,
+      0.38554438948631287,
+      0.2209615707397461,
+      0.12801067531108856,
+      0.07398778200149536
+    ],
+    "final_to_initial_distance_ratio": 0.06337831920670302
+  },
+  {
+    "neurons_reference": 2000,
+    "seed": 209,
+    "initialization": "orthogonal",
+    "first_card_state_distance_by_timestep": [
+      1.1673989295959473,
+      1.1613831520080566,
+      1.1537611484527588,
+      1.1445047855377197,
+      1.1336538791656494,
+      1.1188218593597412
+    ],
+    "final_to_initial_distance_ratio": 0.9583886287671866
+  }
+]

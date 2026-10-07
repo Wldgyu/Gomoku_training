@@ -1,0 +1,106 @@
+{
+  "run": "cues2_delay16_distract2_rewired_graph4_seed2204",
+  "kind": "rewired",
+  "seed": 2204,
+  "graph": 4,
+  "task": "cues2_delay16_distract2",
+  "selected_variant": "relu_state",
+  "source_checkpoint": "C:\\Users\\a\\Desktop\\MaleCNS\\data\\multi_cue_recovery\\repeat\\raw\\cues2_delay16_distract2_rewired_graph4_seed2204.pt",
+  "original": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 2003
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 2093
+      }
+    },
+    "changed_query_accuracy": 1.0,
+    "both_queries_correct": 1.0,
+    "prediction_changes_when_kinds_differ": 1.0
+  },
+  "repaired": {
+    "accuracy": 1.0,
+    "by_slot": {
+      "0": {
+        "accuracy": 1.0,
+        "count": 2003
+      },
+      "1": {
+        "accuracy": 1.0,
+        "count": 2093
+      }
+    },
+    "changed_query_accuracy": 1.0,
+    "both_queries_correct": 1.0,
+    "prediction_changes_when_kinds_differ": 1.0
+  },
+  "extra_head_training": {
+    "variant": "relu_state",
+    "seed": 2204,
+    "updates": 500,
+    "batch_size": 256,
+    "learning_rate": 0.003,
+    "training_examples": 4096,
+    "validation_examples": 1024,
+    "best_validation_loss": 0.00017112347995862365,
+    "best_validation_accuracy": 1.0,
+    "best_update": 500,
+    "parameters": 128515,
+    "curve": [
+      {
+        "update": 50,
+        "validation_loss": 0.017034828662872314,
+        "validation": 1.0
+      },
+      {
+        "update": 100,
+        "validation_loss": 0.00214785011485219,
+        "validation": 1.0
+      },
+      {
+        "update": 150,
+        "validation_loss": 0.00116362189874053,
+        "validation": 1.0
+      },
+      {
+        "update": 200,
+        "validation_loss": 0.0007484446978196502,
+        "validation": 1.0
+      },
+      {
+        "update": 250,
+        "validation_loss": 0.0005073933862149715,
+        "validation": 1.0
+      },
+      {
+        "update": 300,
+        "validation_loss": 0.00038695745752193034,
+        "validation": 1.0
+      },
+      {
+        "update": 350,
+        "validation_loss": 0.000300425075693056,
+        "validation": 1.0
+      },
+      {
+        "update": 400,
+        "validation_loss": 0.00024380313698202372,
+        "validation": 1.0
+      },
+      {
+        "update": 450,
+        "validation_loss": 0.00020625982142519206,
+        "validation": 1.0
+      },
+      {
+        "update": 500,
+        "validation_loss": 0.00017112347995862365,
+        "validation": 1.0
+      }
+    ]
+  }
+}
