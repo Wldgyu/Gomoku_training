@@ -54,4 +54,4 @@ README·원 기획서·계획·프로토콜은 최상위에 유지했습니다. 
 
 ## GitHub 업로드 준비
 
-[업로드 안내](docs/GITHUB_UPLOAD.md). 검토용 github_upload 폴더에는 코드·보고서·작은 재현 자료를 담았고, 대형 원자료·가중치·가상환경은 로컬에 보존합니다. PUBLICATION_MANIFEST.json으로 사본 해시와 제외 파일을 확인할 수 있습니다. 실제 GitHub 게시는 사용자 검토 후 진행합니다.
+[업로드 안내](docs/GITHUB_UPLOAD.md). 검토용 github_upload 폴더에는 코드·보고서·작은 재현 자료를 담았고, 대형 원자료·가중치·가상환경은 로컬에 보존합니다. PUBLICATION_MANIFEST.json으로 사본 해시와 제외 파일을 확인할 수 있습니다. 실제 GitHub 게시는 검토 후 진행합니다.
