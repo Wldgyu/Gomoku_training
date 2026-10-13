@@ -1,0 +1,74 @@
+{
+  "config": {
+    "states": 737,
+    "root_widths": [
+      3,
+      6,
+      12
+    ],
+    "later_width": 3,
+    "node_budget": 2000,
+    "preparations": 6,
+    "opponent_top_k": 3,
+    "opponent_tie_seeds": 4,
+    "workers": 4,
+    "feature_cache": "cleared before each state timing; board geometry cache reused",
+    "root_order": "retain exact top3 prefix, then top6 prefix, then top12",
+    "baseline3_reused": true,
+    "source_hashes": {
+      "gru4810": "5df08ef4ba9097620370050e86caa129cce36b1530d326a9952e1f002ae32abf",
+      "gru4811": "2adde405deea4128d3c4bf65a0b9cef4aa44cdf5fcb45f252374b853af46cf60",
+      "gru4812": "f47cc0507f1da21bf5dabbc9447e3a099a700f8f7ea392328e558808dd73004d",
+      "gru4812_extra": "56c59fa71012b71813912d44ae1a204a83801656ad304ecb2f8699e8591e9158"
+    },
+    "teacher_sha256": "2f29000e8c07aa50adf1f372dc7a54adefaae9a5dff691110d49082d7a8bc4af"
+  },
+  "widths": {
+    "3": {
+      "status": "complete",
+      "wall_seconds_this_run": 0.001254300000027797,
+      "completed": 737,
+      "counts": {
+        "win": 54,
+        "no_plan": 598,
+        "unknown": 85
+      },
+      "missed_plan_states": 39,
+      "nodes": 661598,
+      "worker_seconds": 1042.5640780000008,
+      "median_state_seconds": 1.0947585000000117,
+      "long_roots": 20
+    },
+    "6": {
+      "status": "complete",
+      "completed": 737,
+      "counts": {
+        "win": 54,
+        "no_plan": 565,
+        "unknown": 118
+      },
+      "missed_plan_states": 38,
+      "nodes": 961435,
+      "worker_seconds": 1485.4757003000002,
+      "median_state_seconds": 1.841353899999831,
+      "long_roots": 19,
+      "wall_seconds_this_run": 376.0342872000001
+    },
+    "12": {
+      "status": "complete",
+      "completed": 737,
+      "counts": {
+        "win": 60,
+        "no_plan": 271,
+        "unknown": 406
+      },
+      "missed_plan_states": 44,
+      "nodes": 1282451,
+      "worker_seconds": 1970.2022644000012,
+      "median_state_seconds": 2.9228361000000405,
+      "long_roots": 22,
+      "wall_seconds_this_run": 500.48830920000023
+    }
+  },
+  "status": "complete"
+}

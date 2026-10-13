@@ -1,0 +1,64 @@
+{
+  "datasets": [
+    {
+      "name": "baseline_aux",
+      "positions": 20000,
+      "legal_nonempty_targets": true,
+      "exact_history_reconstruction": true,
+      "nonterminal": true,
+      "symmetry_normalized_holdout_overlap": 0,
+      "categories": {
+        "1": 4127,
+        "2": 5508,
+        "3": 4218,
+        "4": 5064,
+        "5": 513,
+        "6": 570
+      },
+      "sha256": "38b686f4d913c7c9e5034481afb8e97f127318891f4221202b4d51d9c4249883"
+    },
+    {
+      "name": "step1_starts",
+      "positions": 8858,
+      "legal_nonempty_targets": true,
+      "exact_history_reconstruction": true,
+      "nonterminal": true,
+      "symmetry_normalized_holdout_overlap": 0,
+      "categories": {
+        "1": 4127,
+        "3": 4218,
+        "5": 513
+      },
+      "sha256": "dcb4ceedf901022adcdb093fee68cbda79037ebf8d872da638b33c68a0b20371"
+    },
+    {
+      "name": "validation_starts",
+      "positions": 384,
+      "legal_nonempty_targets": true,
+      "exact_history_reconstruction": true,
+      "nonterminal": true,
+      "symmetry_normalized_holdout_overlap": null,
+      "categories": {
+        "1": 128,
+        "3": 128,
+        "5": 128
+      },
+      "sha256": "ce276d0896ad9580b753251dc06e5d0d46da01e31cdde53644103dc4efbbb48c"
+    },
+    {
+      "name": "test_starts",
+      "positions": 384,
+      "legal_nonempty_targets": true,
+      "exact_history_reconstruction": true,
+      "nonterminal": true,
+      "symmetry_normalized_holdout_overlap": null,
+      "categories": {
+        "1": 128,
+        "3": 128,
+        "5": 128
+      },
+      "sha256": "bed84c59aae3df0dcf5aef671300398415528f8a8ee2409fdcdb938766ce644f"
+    }
+  ],
+  "all_holdout_prefixes_reserved": 13057
+}

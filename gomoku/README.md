@@ -4,6 +4,17 @@
 전체 판을 관측하며 합법 칸만 출력에서 허용합니다. Fly·재배선 Fly·RNN·GRU는 과거 과제의 가중치를
 이식하지 않고 새로 학습했습니다. 실제 Fly는 실측 연결 부분 그래프 위의 학습 가능한 순환망입니다.
 
+## 최신 연구 상태 (2026-10-13)
+
+[최신 요약](../docs/RESEARCH_STATUS_20261013.md)을 먼저 참고하세요. 아래 초기 학습 명령은 10월7일 실험을 재현하는 예시입니다.
+
+- [F3 장기 준비·방어 보존](runs/long_plan_f_20261009/results.md): GRU 개선, 낮은 절대 승률과 시드 변동성 존재.
+- [네 모델 직접 대결](runs/model_league_20261010/results.md): 강한 전술 상대 평가와 분리해서 해석.
+- [정적 공간 처리](runs/spatial_state_20261012/report.md): 이번 방식 미채택.
+- [후보3/6/12 비교](runs/candidate_width_nested_20261013/comparison.json): 완료. 고유 출발 판30개 확보는 진행 중이며 새 자료 재학습은 아직 없음.
+- 새 탐색 코드: robust_long_plan.py, robust_collect.py, wide_search_worker.py, coverage_teacher.py.
+- 출발 판 균형 학습: history_aux.py의 root_keys 기반 샘플링.
+
 ## 자료 위치
 
 | 경로 | 내용 |
@@ -12,6 +23,10 @@
 | runs/pilot_20261006/ | 9×9 파일럿 원 실행 기록 |
 | runs/defense12_20261006/ | 첫 12×12 승리·방어 보조 학습 |
 | runs/advanced_20261007/ | 기보·공간 인식·전술 확대와 4모델×3시드 |
+| [runs/multistep_20261007/results.md](runs/multistep_20261007/results.md) | 실패 기보·강제 공격 연결 동일 예산 파일럿 |
+| [multistep_protocol.md](multistep_protocol.md) | 해당 파일럿 사전 예산·평가·확대 기준 |
+| [runs/midgame_20261007/results.md](runs/midgame_20261007/results.md) | 중간 판 커리큘럼 → 공격 다양화·범주 균형 비교 |
+| [midgame_protocol.md](midgame_protocol.md) | 두 단계의 사전 실행 순서·예산·평가 |
 | 각 실행의 source/ | 당시 코드 사본 |
 | logs/ | 로컬 실행 로그 |
 | [advanced_protocol.md](advanced_protocol.md) | 최신 실험의 사전 계획 |
@@ -34,7 +49,14 @@ GitHub용 사본에는 .pt 가중치와 로그가 제외됩니다. 전체 자료
 - 데이터·예산 감사와 학습 판 진단: advanced_audit.py
 - 강한 상대의 실제 복수 위협 선택·패배 상황·기보: advanced_match_audit.py
 - 최신 보고서 생성: advanced_report.py
-- 테스트: test_gomoku.py, test_defense.py, test_history_spatial.py
+- 실패 기보 추출·강제 공격 연결: mine_multistep.py, multistep_tactics.py, chain_curriculum.py
+- 실패 기보 비교 평가·보고서: multistep_evaluate.py, multistep_report.py
+- 중간 판 커리큘럼·자료: midgame_env.py, midgame_data.py
+- 중간 판/빈 판 평가·감사·보고서: midgame_evaluate.py, midgame_audit.py, midgame_report.py
+- 반복 방문 수집·위협 예측: dagger.py, threat_aux.py
+- 반복 실험 감사·청정 부분집합·보고서: iterative_audit.py, iterative_clean_subset.py, iterative_report.py
+- 반복 실험 최종 보고서: runs/iterative_20261008/results.md
+- 테스트: test_dagger_threat.py, test_midgame.py, test_multistep.py, test_gomoku.py, test_defense.py, test_history_spatial.py
 
 ## 실행
 
@@ -55,3 +77,4 @@ $env:OPENBLAS_NUM_THREADS = '1'
 학습 시드는4601·4602·4603이고 대표 단계 검증은4500의 단일 시드입니다.
 기보 학습은 앞선 자기 차례 관측을 역전파 없이 처리하고 정답 턴에서 학습합니다.
 공간 변경은 인코더와 출력 방식의 결합 효과이며 기억 능력이나 Fly 구조의 우월성을 직접 증명하지 않습니다.
+

@@ -1,0 +1,21 @@
+{
+  "source": "Only actual past moves in saved snapshots; no fabricated moves or new games",
+  "arms": {
+    "gru4810": {
+      "recovered_turns": 979,
+      "states": 1577
+    },
+    "gru4811": {
+      "recovered_turns": 989,
+      "states": 1594
+    },
+    "gru4812": {
+      "recovered_turns": 943,
+      "states": 1505
+    },
+    "gru4812_extra": {
+      "recovered_turns": 998,
+      "states": 1615
+    }
+  }
+}

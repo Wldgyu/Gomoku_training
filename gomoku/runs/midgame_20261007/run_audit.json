@@ -1,0 +1,429 @@
+{
+  "runs": [
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "auxiliary_examples": 153600,
+      "learner_decisions": 153600,
+      "samples_by_category": {
+        "1": 31788,
+        "2": 42492,
+        "3": 32623,
+        "4": 38584,
+        "5": 3819,
+        "6": 4294
+      },
+      "midgame_episode_outcomes": {},
+      "episode_starts": {},
+      "prefix_frames": 0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "auxiliary_examples": 153600,
+      "learner_decisions": 153600,
+      "samples_by_category": {
+        "1": 31788,
+        "2": 42492,
+        "3": 32623,
+        "4": 38584,
+        "5": 3819,
+        "6": 4294
+      },
+      "midgame_episode_outcomes": {},
+      "episode_starts": {},
+      "prefix_frames": 0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "auxiliary_examples": 153600,
+      "learner_decisions": 153600,
+      "samples_by_category": {
+        "1": 31788,
+        "2": 42492,
+        "3": 32623,
+        "4": 38584,
+        "5": 3819,
+        "6": 4294
+      },
+      "midgame_episode_outcomes": {
+        "0": {
+          "games": 8471,
+          "wins": 655,
+          "within_horizon_wins": 0
+        },
+        "1": {
+          "games": 1948,
+          "wins": 960,
+          "within_horizon_wins": 75
+        },
+        "2": {
+          "games": 3006,
+          "wins": 265,
+          "within_horizon_wins": 30
+        },
+        "3": {
+          "games": 3469,
+          "wins": 543,
+          "within_horizon_wins": 363
+        }
+      },
+      "episode_starts": {
+        "0": 8492,
+        "1": 1948,
+        "2": 3006,
+        "3": 3480
+      },
+      "prefix_frames": 86487
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "auxiliary_examples": 153600,
+      "learner_decisions": 153600,
+      "samples_by_category": {
+        "1": 31788,
+        "2": 42492,
+        "3": 32623,
+        "4": 38584,
+        "5": 3819,
+        "6": 4294
+      },
+      "midgame_episode_outcomes": {
+        "0": {
+          "games": 8408,
+          "wins": 661,
+          "within_horizon_wins": 0
+        },
+        "1": {
+          "games": 1955,
+          "wins": 894,
+          "within_horizon_wins": 78
+        },
+        "2": {
+          "games": 2927,
+          "wins": 269,
+          "within_horizon_wins": 14
+        },
+        "3": {
+          "games": 3498,
+          "wins": 529,
+          "within_horizon_wins": 323
+        }
+      },
+      "episode_starts": {
+        "0": 8422,
+        "1": 1955,
+        "2": 2927,
+        "3": 3516
+      },
+      "prefix_frames": 86363
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "auxiliary_examples": 153600,
+      "learner_decisions": 153600,
+      "samples_by_category": {
+        "1": 25623,
+        "2": 25560,
+        "3": 25592,
+        "4": 25437,
+        "5": 25838,
+        "6": 25550
+      },
+      "midgame_episode_outcomes": {
+        "0": {
+          "games": 10273,
+          "wins": 994,
+          "within_horizon_wins": 0
+        },
+        "1": {
+          "games": 2634,
+          "wins": 2030,
+          "within_horizon_wins": 937
+        },
+        "2": {
+          "games": 3524,
+          "wins": 1577,
+          "within_horizon_wins": 860
+        },
+        "3": {
+          "games": 4150,
+          "wins": 846,
+          "within_horizon_wins": 509
+        }
+      },
+      "episode_starts": {
+        "0": 10285,
+        "1": 2634,
+        "2": 3524,
+        "3": 4170
+      },
+      "prefix_frames": 98633
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "auxiliary_examples": 153600,
+      "learner_decisions": 153600,
+      "samples_by_category": {
+        "1": 25623,
+        "2": 25560,
+        "3": 25592,
+        "4": 25437,
+        "5": 25838,
+        "6": 25550
+      },
+      "midgame_episode_outcomes": {
+        "0": {
+          "games": 10334,
+          "wins": 999,
+          "within_horizon_wins": 0
+        },
+        "1": {
+          "games": 2685,
+          "wins": 2118,
+          "within_horizon_wins": 993
+        },
+        "2": {
+          "games": 3440,
+          "wins": 1556,
+          "within_horizon_wins": 812
+        },
+        "3": {
+          "games": 4266,
+          "wins": 934,
+          "within_horizon_wins": 577
+        }
+      },
+      "episode_starts": {
+        "0": 10348,
+        "1": 2685,
+        "2": 3440,
+        "3": 4284
+      },
+      "prefix_frames": 99141
+    }
+  ],
+  "evaluation_game_overlap": [
+    {
+      "file": "baseline_fly_test_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "baseline_fly_test_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "baseline_fly_validation_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "baseline_fly_validation_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "baseline_gru_test_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "baseline_gru_test_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "baseline_gru_validation_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "baseline_gru_validation_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step1_fly_test_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 1,
+        "step1": 1,
+        "step2": 1
+      }
+    },
+    {
+      "file": "step1_fly_test_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step1_fly_validation_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 1,
+        "step1": 1,
+        "step2": 1
+      }
+    },
+    {
+      "file": "step1_fly_validation_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step1_gru_test_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step1_gru_test_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step1_gru_validation_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step1_gru_validation_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_fly_test_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_fly_test_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_fly_validation_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_fly_validation_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_gru_test_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_gru_test_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_gru_validation_full_replays.json",
+      "games": 256,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    },
+    {
+      "file": "step2_gru_validation_mid_replays.json",
+      "games": 384,
+      "overlap": {
+        "baseline": 0,
+        "step1": 0,
+        "step2": 0
+      }
+    }
+  ],
+  "any_observed_overlap": true
+}

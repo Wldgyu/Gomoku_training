@@ -1,0 +1,1187 @@
+{
+  "config": {
+    "updates": 100,
+    "learning_rate": 0.0001,
+    "quotas": [
+      16,
+      64,
+      16,
+      32
+    ],
+    "seed": 267000481,
+    "internal_iterations": 8,
+    "training": "Supervised only, no PPO",
+    "checkpoints": {
+      "fly": {
+        "path": "gomoku\\runs\\long_plan_f_20261009\\structure_compare\\fly_seed4810.pt",
+        "sha256": "87047ba164ec1837b616445a228ec2c8af622c435c81507ce3b8a760bd5a360c"
+      },
+      "rewired": {
+        "path": "gomoku\\runs\\long_plan_f_20261009\\structure_compare\\rewired_seed4811.pt",
+        "sha256": "3b814f5bcc09ddce3101967e04da9d264bb7c14d40f2daaa029d5bcf06a7852c"
+      },
+      "rnn": {
+        "path": "gomoku\\runs\\long_plan_f_20261009\\structure_compare\\rnn_seed4811.pt",
+        "sha256": "0b6d4150bf669ef3a52c57659648e921e7fa7f4819b7c9f717cf0b51c588f7dc"
+      },
+      "gru": {
+        "path": "gomoku\\runs\\long_plan_f_20261009\\f3\\gru_seed4810.pt",
+        "sha256": "3cab6460c5a01340c93a77819c951b9a1b17785ac2a8c69ec749a329abeb88d7"
+      }
+    },
+    "datasets": [
+      {
+        "path": "gomoku\\runs\\midgame_20261007\\data\\baseline_aux.npz",
+        "sha256": "38b686f4d913c7c9e5034481afb8e97f127318891f4221202b4d51d9c4249883"
+      },
+      {
+        "path": "gomoku\\runs\\long_plan_f_20261009\\defense_round3\\gru_seed4810_dagger.npz",
+        "sha256": "5c8a87d2f44094cd8f38df1f5c3d10af5f4a571e608175432d56ece08968042b"
+      },
+      {
+        "path": "gomoku\\runs\\offense_e_20261008\\data\\gru_seed4810_attack.npz",
+        "sha256": "8d869a263dff20ca1e6b915770f25480e5900ed0f0bb277f5af9378240369aaf"
+      },
+      {
+        "path": "gomoku\\runs\\long_plan_f_20261009\\data_round2\\gru_seed4810_prep12.npz",
+        "sha256": "95a27fd0e05471aae5c01189394148f262636bf2036668870c942810e9e90703"
+      }
+    ],
+    "diagnostic_holdout": {
+      "path": "gomoku\\runs\\offense_e_20261008\\data\\fresh_test_starts.npz",
+      "sha256": "1429042804af8c75617e77a26be305181b1b5310f6700cc4eaadcc23015d6f66"
+    },
+    "evaluation_environment_seed": 268000481,
+    "evaluation_games": 256
+  },
+  "diagnostic": [
+    {
+      "kind": "fly",
+      "rows": [
+        {
+          "kind": "fly",
+          "mode": "history",
+          "positions": 384,
+          "correct": 360,
+          "accuracy": 0.9375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 124
+            },
+            "2": {
+              "positions": 128,
+              "correct": 119
+            },
+            "3": {
+              "positions": 128,
+              "correct": 117
+            }
+          }
+        },
+        {
+          "kind": "fly",
+          "mode": "static1",
+          "positions": 384,
+          "correct": 360,
+          "accuracy": 0.9375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 124
+            },
+            "2": {
+              "positions": 128,
+              "correct": 119
+            },
+            "3": {
+              "positions": 128,
+              "correct": 117
+            }
+          }
+        },
+        {
+          "kind": "fly",
+          "mode": "static4",
+          "positions": 384,
+          "correct": 360,
+          "accuracy": 0.9375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 124
+            },
+            "2": {
+              "positions": 128,
+              "correct": 119
+            },
+            "3": {
+              "positions": 128,
+              "correct": 117
+            }
+          }
+        },
+        {
+          "kind": "fly",
+          "mode": "static8",
+          "positions": 384,
+          "correct": 360,
+          "accuracy": 0.9375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 124
+            },
+            "2": {
+              "positions": 128,
+              "correct": 119
+            },
+            "3": {
+              "positions": 128,
+              "correct": 117
+            }
+          }
+        },
+        {
+          "kind": "fly",
+          "mode": "static16",
+          "positions": 384,
+          "correct": 360,
+          "accuracy": 0.9375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 124
+            },
+            "2": {
+              "positions": 128,
+              "correct": 119
+            },
+            "3": {
+              "positions": 128,
+              "correct": 117
+            }
+          }
+        }
+      ],
+      "state_update_rms": {
+        "1": 0.04930124431848526,
+        "4": 0.03620459884405136,
+        "8": 0.024052323773503304,
+        "16": 0.01072471309453249,
+        "32": 0.0022191063035279512
+      }
+    },
+    {
+      "kind": "rewired",
+      "rows": [
+        {
+          "kind": "rewired",
+          "mode": "history",
+          "positions": 384,
+          "correct": 352,
+          "accuracy": 0.9166666666666666,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 121
+            },
+            "2": {
+              "positions": 128,
+              "correct": 117
+            },
+            "3": {
+              "positions": 128,
+              "correct": 114
+            }
+          }
+        },
+        {
+          "kind": "rewired",
+          "mode": "static1",
+          "positions": 384,
+          "correct": 352,
+          "accuracy": 0.9166666666666666,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 121
+            },
+            "2": {
+              "positions": 128,
+              "correct": 117
+            },
+            "3": {
+              "positions": 128,
+              "correct": 114
+            }
+          }
+        },
+        {
+          "kind": "rewired",
+          "mode": "static4",
+          "positions": 384,
+          "correct": 352,
+          "accuracy": 0.9166666666666666,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 121
+            },
+            "2": {
+              "positions": 128,
+              "correct": 117
+            },
+            "3": {
+              "positions": 128,
+              "correct": 114
+            }
+          }
+        },
+        {
+          "kind": "rewired",
+          "mode": "static8",
+          "positions": 384,
+          "correct": 352,
+          "accuracy": 0.9166666666666666,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 121
+            },
+            "2": {
+              "positions": 128,
+              "correct": 117
+            },
+            "3": {
+              "positions": 128,
+              "correct": 114
+            }
+          }
+        },
+        {
+          "kind": "rewired",
+          "mode": "static16",
+          "positions": 384,
+          "correct": 352,
+          "accuracy": 0.9166666666666666,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 121
+            },
+            "2": {
+              "positions": 128,
+              "correct": 117
+            },
+            "3": {
+              "positions": 128,
+              "correct": 114
+            }
+          }
+        }
+      ],
+      "state_update_rms": {
+        "1": 0.08116582036018372,
+        "4": 0.059347108006477356,
+        "8": 0.03910227119922638,
+        "16": 0.01701769232749939,
+        "32": 0.0032731681130826473
+      }
+    },
+    {
+      "kind": "rnn",
+      "rows": [
+        {
+          "kind": "rnn",
+          "mode": "history",
+          "positions": 384,
+          "correct": 345,
+          "accuracy": 0.8984375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 119
+            },
+            "2": {
+              "positions": 128,
+              "correct": 115
+            },
+            "3": {
+              "positions": 128,
+              "correct": 111
+            }
+          }
+        },
+        {
+          "kind": "rnn",
+          "mode": "static1",
+          "positions": 384,
+          "correct": 345,
+          "accuracy": 0.8984375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 119
+            },
+            "2": {
+              "positions": 128,
+              "correct": 115
+            },
+            "3": {
+              "positions": 128,
+              "correct": 111
+            }
+          }
+        },
+        {
+          "kind": "rnn",
+          "mode": "static4",
+          "positions": 384,
+          "correct": 345,
+          "accuracy": 0.8984375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 119
+            },
+            "2": {
+              "positions": 128,
+              "correct": 115
+            },
+            "3": {
+              "positions": 128,
+              "correct": 111
+            }
+          }
+        },
+        {
+          "kind": "rnn",
+          "mode": "static8",
+          "positions": 384,
+          "correct": 345,
+          "accuracy": 0.8984375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 119
+            },
+            "2": {
+              "positions": 128,
+              "correct": 115
+            },
+            "3": {
+              "positions": 128,
+              "correct": 111
+            }
+          }
+        },
+        {
+          "kind": "rnn",
+          "mode": "static16",
+          "positions": 384,
+          "correct": 345,
+          "accuracy": 0.8984375,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 119
+            },
+            "2": {
+              "positions": 128,
+              "correct": 115
+            },
+            "3": {
+              "positions": 128,
+              "correct": 111
+            }
+          }
+        }
+      ],
+      "state_update_rms": {
+        "1": 0.40609505772590637,
+        "4": 0.022991091012954712,
+        "8": 3.314811920063221e-06,
+        "16": 3.852812291427199e-09,
+        "32": 3.244558177684098e-09
+      }
+    },
+    {
+      "kind": "gru",
+      "rows": [
+        {
+          "kind": "gru",
+          "mode": "history",
+          "positions": 384,
+          "correct": 359,
+          "accuracy": 0.9348958333333334,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 123
+            },
+            "2": {
+              "positions": 128,
+              "correct": 120
+            },
+            "3": {
+              "positions": 128,
+              "correct": 116
+            }
+          }
+        },
+        {
+          "kind": "gru",
+          "mode": "static1",
+          "positions": 384,
+          "correct": 359,
+          "accuracy": 0.9348958333333334,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 123
+            },
+            "2": {
+              "positions": 128,
+              "correct": 120
+            },
+            "3": {
+              "positions": 128,
+              "correct": 116
+            }
+          }
+        },
+        {
+          "kind": "gru",
+          "mode": "static4",
+          "positions": 384,
+          "correct": 359,
+          "accuracy": 0.9348958333333334,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 123
+            },
+            "2": {
+              "positions": 128,
+              "correct": 120
+            },
+            "3": {
+              "positions": 128,
+              "correct": 116
+            }
+          }
+        },
+        {
+          "kind": "gru",
+          "mode": "static8",
+          "positions": 384,
+          "correct": 359,
+          "accuracy": 0.9348958333333334,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 123
+            },
+            "2": {
+              "positions": 128,
+              "correct": 120
+            },
+            "3": {
+              "positions": 128,
+              "correct": 116
+            }
+          }
+        },
+        {
+          "kind": "gru",
+          "mode": "static16",
+          "positions": 384,
+          "correct": 359,
+          "accuracy": 0.9348958333333334,
+          "by_horizon": {
+            "1": {
+              "positions": 128,
+              "correct": 123
+            },
+            "2": {
+              "positions": 128,
+              "correct": 120
+            },
+            "3": {
+              "positions": 128,
+              "correct": 116
+            }
+          }
+        }
+      ],
+      "state_update_rms": {
+        "1": 0.4065137803554535,
+        "4": 0.13065336644649506,
+        "8": 0.02257101982831955,
+        "16": 0.0028354544192552567,
+        "32": 0.0007508315029554069
+      }
+    }
+  ],
+  "arms": [
+    {
+      "kind": "fly",
+      "mode": "history",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\fly_history.pt",
+      "training_seconds": 5.9004578000000265,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 356,
+        "accuracy": 0.9270833333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 123
+          },
+          "2": {
+            "positions": 128,
+            "correct": 116
+          },
+          "3": {
+            "positions": 128,
+            "correct": 117
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "fly",
+        "seed": 4810,
+        "games": 256,
+        "wins": 0,
+        "losses": 256,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "block": {
+            "positions": 477,
+            "correct": 408,
+            "accuracy": 0.8553459119496856
+          },
+          "create_fork": {
+            "positions": 3,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "prevent_fork": {
+            "positions": 700,
+            "correct": 511,
+            "accuracy": 0.73
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 69,
+          "already_multiple_winning_cells": 187,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 174,
+          "other_or_no_prevention_label": 13
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 0,
+        "actual_safe_forks_per_game": 0.0,
+        "games_reaching_multiple_threat": 187,
+        "multiple_threat_game_rate": 0.73046875,
+        "defense_omissions": 69
+      },
+      "defense_omission_rate": 0.14465408805031446
+    },
+    {
+      "kind": "fly",
+      "mode": "static8",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\fly_static8.pt",
+      "training_seconds": 3.652990499999987,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 356,
+        "accuracy": 0.9270833333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 123
+          },
+          "2": {
+            "positions": 128,
+            "correct": 116
+          },
+          "3": {
+            "positions": 128,
+            "correct": 117
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "fly",
+        "seed": 4810,
+        "games": 256,
+        "wins": 1,
+        "losses": 255,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 1,
+            "correct": 1,
+            "accuracy": 1.0
+          },
+          "block": {
+            "positions": 529,
+            "correct": 409,
+            "accuracy": 0.7731568998109641
+          },
+          "create_fork": {
+            "positions": 1,
+            "correct": 1,
+            "accuracy": 1.0
+          },
+          "prevent_fork": {
+            "positions": 652,
+            "correct": 531,
+            "accuracy": 0.8144171779141104
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 120,
+          "already_multiple_winning_cells": 135,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 106,
+          "other_or_no_prevention_label": 29
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 1,
+        "actual_safe_forks_per_game": 0.00390625,
+        "games_reaching_multiple_threat": 135,
+        "multiple_threat_game_rate": 0.52734375,
+        "defense_omissions": 120
+      },
+      "defense_omission_rate": 0.22684310018903592
+    },
+    {
+      "kind": "rewired",
+      "mode": "history",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rewired_history.pt",
+      "training_seconds": 5.187589600000024,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 347,
+        "accuracy": 0.9036458333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 121
+          },
+          "2": {
+            "positions": 128,
+            "correct": 114
+          },
+          "3": {
+            "positions": 128,
+            "correct": 112
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "rewired",
+        "seed": 4811,
+        "games": 256,
+        "wins": 21,
+        "losses": 235,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 21,
+            "correct": 21,
+            "accuracy": 1.0
+          },
+          "block": {
+            "positions": 472,
+            "correct": 349,
+            "accuracy": 0.739406779661017
+          },
+          "create_fork": {
+            "positions": 26,
+            "correct": 21,
+            "accuracy": 0.8076923076923077
+          },
+          "prevent_fork": {
+            "positions": 518,
+            "correct": 421,
+            "accuracy": 0.8127413127413128
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 123,
+          "already_multiple_winning_cells": 112,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 89,
+          "other_or_no_prevention_label": 23
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 21,
+        "actual_safe_forks_per_game": 0.08203125,
+        "games_reaching_multiple_threat": 112,
+        "multiple_threat_game_rate": 0.4375,
+        "defense_omissions": 123
+      },
+      "defense_omission_rate": 0.2605932203389831
+    },
+    {
+      "kind": "rewired",
+      "mode": "static8",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rewired_static8.pt",
+      "training_seconds": 3.661990699999933,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 347,
+        "accuracy": 0.9036458333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 121
+          },
+          "2": {
+            "positions": 128,
+            "correct": 114
+          },
+          "3": {
+            "positions": 128,
+            "correct": 112
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "rewired",
+        "seed": 4811,
+        "games": 256,
+        "wins": 21,
+        "losses": 235,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 21,
+            "correct": 21,
+            "accuracy": 1.0
+          },
+          "block": {
+            "positions": 472,
+            "correct": 349,
+            "accuracy": 0.739406779661017
+          },
+          "create_fork": {
+            "positions": 26,
+            "correct": 21,
+            "accuracy": 0.8076923076923077
+          },
+          "prevent_fork": {
+            "positions": 518,
+            "correct": 421,
+            "accuracy": 0.8127413127413128
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 123,
+          "already_multiple_winning_cells": 112,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 89,
+          "other_or_no_prevention_label": 23
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 21,
+        "actual_safe_forks_per_game": 0.08203125,
+        "games_reaching_multiple_threat": 112,
+        "multiple_threat_game_rate": 0.4375,
+        "defense_omissions": 123
+      },
+      "defense_omission_rate": 0.2605932203389831
+    },
+    {
+      "kind": "rnn",
+      "mode": "history",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rnn_history.pt",
+      "training_seconds": 4.935570499999926,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 344,
+        "accuracy": 0.8958333333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 119
+          },
+          "2": {
+            "positions": 128,
+            "correct": 115
+          },
+          "3": {
+            "positions": 128,
+            "correct": 110
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "rnn",
+        "seed": 4811,
+        "games": 256,
+        "wins": 1,
+        "losses": 255,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 2,
+            "correct": 1,
+            "accuracy": 0.5
+          },
+          "block": {
+            "positions": 620,
+            "correct": 544,
+            "accuracy": 0.8774193548387097
+          },
+          "create_fork": {
+            "positions": 7,
+            "correct": 2,
+            "accuracy": 0.2857142857142857
+          },
+          "prevent_fork": {
+            "positions": 727,
+            "correct": 563,
+            "accuracy": 0.7744154057771664
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 76,
+          "already_multiple_winning_cells": 179,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 138,
+          "other_or_no_prevention_label": 41
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 2,
+        "actual_safe_forks_per_game": 0.0078125,
+        "games_reaching_multiple_threat": 179,
+        "multiple_threat_game_rate": 0.69921875,
+        "defense_omissions": 76
+      },
+      "defense_omission_rate": 0.12258064516129032
+    },
+    {
+      "kind": "rnn",
+      "mode": "static8",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rnn_static8.pt",
+      "training_seconds": 3.643964100000062,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 344,
+        "accuracy": 0.8958333333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 119
+          },
+          "2": {
+            "positions": 128,
+            "correct": 115
+          },
+          "3": {
+            "positions": 128,
+            "correct": 110
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "rnn",
+        "seed": 4811,
+        "games": 256,
+        "wins": 1,
+        "losses": 255,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 2,
+            "correct": 1,
+            "accuracy": 0.5
+          },
+          "block": {
+            "positions": 619,
+            "correct": 543,
+            "accuracy": 0.877221324717286
+          },
+          "create_fork": {
+            "positions": 7,
+            "correct": 2,
+            "accuracy": 0.2857142857142857
+          },
+          "prevent_fork": {
+            "positions": 727,
+            "correct": 564,
+            "accuracy": 0.7757909215955984
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 76,
+          "already_multiple_winning_cells": 179,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 137,
+          "other_or_no_prevention_label": 42
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 2,
+        "actual_safe_forks_per_game": 0.0078125,
+        "games_reaching_multiple_threat": 179,
+        "multiple_threat_game_rate": 0.69921875,
+        "defense_omissions": 76
+      },
+      "defense_omission_rate": 0.12277867528271405
+    },
+    {
+      "kind": "gru",
+      "mode": "history",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\gru_history.pt",
+      "training_seconds": 5.291847699999948,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 356,
+        "accuracy": 0.9270833333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 121
+          },
+          "2": {
+            "positions": 128,
+            "correct": 119
+          },
+          "3": {
+            "positions": 128,
+            "correct": 116
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "gru",
+        "seed": 4810,
+        "games": 256,
+        "wins": 18,
+        "losses": 238,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 41,
+            "correct": 18,
+            "accuracy": 0.43902439024390244
+          },
+          "block": {
+            "positions": 616,
+            "correct": 514,
+            "accuracy": 0.8344155844155844
+          },
+          "create_fork": {
+            "positions": 42,
+            "correct": 30,
+            "accuracy": 0.7142857142857143
+          },
+          "prevent_fork": {
+            "positions": 642,
+            "correct": 549,
+            "accuracy": 0.8551401869158879
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 102,
+          "already_multiple_winning_cells": 135,
+          "other": 1
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 75,
+          "other_or_no_prevention_label": 60
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 41,
+        "actual_safe_forks_per_game": 0.16015625,
+        "games_reaching_multiple_threat": 135,
+        "multiple_threat_game_rate": 0.52734375,
+        "defense_omissions": 102
+      },
+      "defense_omission_rate": 0.16558441558441558
+    },
+    {
+      "kind": "gru",
+      "mode": "static8",
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\gru_static8.pt",
+      "training_seconds": 3.500801000000024,
+      "supervised_updates": 100,
+      "validation": {
+        "positions": 384,
+        "correct": 356,
+        "accuracy": 0.9270833333333334,
+        "by_horizon": {
+          "1": {
+            "positions": 128,
+            "correct": 121
+          },
+          "2": {
+            "positions": 128,
+            "correct": 119
+          },
+          "3": {
+            "positions": 128,
+            "correct": 116
+          }
+        }
+      },
+      "strong_opponent": {
+        "kind": "gru",
+        "seed": 4810,
+        "games": 256,
+        "wins": 19,
+        "losses": 237,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 42,
+            "correct": 19,
+            "accuracy": 0.4523809523809524
+          },
+          "block": {
+            "positions": 606,
+            "correct": 501,
+            "accuracy": 0.8267326732673267
+          },
+          "create_fork": {
+            "positions": 33,
+            "correct": 31,
+            "accuracy": 0.9393939393939394
+          },
+          "prevent_fork": {
+            "positions": 609,
+            "correct": 524,
+            "accuracy": 0.8604269293924466
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 105,
+          "already_multiple_winning_cells": 132,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 80,
+          "other_or_no_prevention_label": 52
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 42,
+        "actual_safe_forks_per_game": 0.1640625,
+        "games_reaching_multiple_threat": 132,
+        "multiple_threat_game_rate": 0.515625,
+        "defense_omissions": 105
+      },
+      "defense_omission_rate": 0.17326732673267325
+    }
+  ],
+  "status": "complete",
+  "holdout_state_overlap": 0
+}

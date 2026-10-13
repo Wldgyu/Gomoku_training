@@ -19,8 +19,10 @@ class SpatialEncoder(nn.Module):
 
 
 class SpatialPolicy(Policy):
-    def __init__(self, kind, seed, hidden=1000, size=12, rewire_seed=0):
+    def __init__(self, kind, seed, hidden=1000, size=12, rewire_seed=0,
+                 threat_aux=False):
         super().__init__(kind, seed, hidden, size, rewire_seed)
+        self.threat_aux = threat_aux
         with torch.random.fork_rng(devices=[]):
             torch.manual_seed(seed + 300_000)
             self.encoder = SpatialEncoder()
@@ -30,6 +32,18 @@ class SpatialPolicy(Policy):
             nn.init.zeros_(self.actor.bias)
             nn.init.normal_(self.cell_actor.weight, std=0.01)
             nn.init.zeros_(self.cell_actor.bias)
+            if threat_aux:
+                # The extra channel identifies the candidate move whose
+                # consequences are being predicted. Outputs are opponent
+                # immediate-win and double-threat maps.
+                self.threat_head = nn.Sequential(
+                    nn.Conv2d(17, 16, 5, padding=2), nn.ReLU(),
+                    nn.Conv2d(16, 2, 5, padding=2),
+                )
+                for layer in self.threat_head:
+                    if isinstance(layer, nn.Conv2d):
+                        nn.init.normal_(layer.weight, std=0.01)
+                        nn.init.zeros_(layer.bias)
 
     def cell_logits(self, maps, modulation):
         scale, bias = modulation.chunk(2, dim=1)
@@ -56,3 +70,20 @@ class SpatialPolicy(Policy):
             logits.append(self.cell_logits(maps[t], modulation))
             values.append(value)
         return torch.stack(logits), torch.stack(values)
+    def threat(self, obs, state, resets, actions, matrix=None):
+        if not self.threat_aux:
+            raise RuntimeError("Threat head is not enabled")
+        if matrix is None and self.kind in ("fly", "rewired"):
+            matrix = self.matrix()
+        maps = self.encoder.trunk(obs)
+        features = self.encoder.project(maps.mean((-2, -1)))
+        modulation, _, state = self.from_features(features, state, resets, matrix)
+        scale, bias = modulation.chunk(2, dim=1)
+        conditioned = F.relu(maps * (1 + 0.1 * scale.tanh()[:, :, None, None])
+                             + 0.1 * bias.tanh()[:, :, None, None])
+        chosen = F.one_hot(actions.long(), self.size * self.size).to(conditioned.dtype)
+        chosen = chosen.reshape(-1, 1, self.size, self.size)
+        return self.threat_head(torch.cat((conditioned, chosen), dim=1)), state
+
+
+

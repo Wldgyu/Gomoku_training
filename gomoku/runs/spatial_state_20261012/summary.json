@@ -1,0 +1,142 @@
+{
+  "status": "complete",
+  "summary": [
+    {
+      "kind": "fly",
+      "history": {
+        "wins": 0,
+        "games": 512,
+        "per_environment_wins": [
+          0,
+          0
+        ],
+        "defense_omission_rate": 0.15948275862068967,
+        "safe_forks": 0,
+        "tactical_correct": 356,
+        "tactical_positions": 384,
+        "training_seconds": 5.9004578000000265,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\fly_history.pt"
+      },
+      "static8": {
+        "wins": 2,
+        "games": 512,
+        "per_environment_wins": [
+          1,
+          1
+        ],
+        "defense_omission_rate": 0.21677662582469368,
+        "safe_forks": 2,
+        "tactical_correct": 356,
+        "tactical_positions": 384,
+        "training_seconds": 3.652990499999987,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\fly_static8.pt"
+      }
+    },
+    {
+      "kind": "rewired",
+      "history": {
+        "wins": 43,
+        "games": 512,
+        "per_environment_wins": [
+          21,
+          22
+        ],
+        "defense_omission_rate": 0.28297872340425534,
+        "safe_forks": 44,
+        "tactical_correct": 347,
+        "tactical_positions": 384,
+        "training_seconds": 5.187589600000024,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rewired_history.pt"
+      },
+      "static8": {
+        "wins": 43,
+        "games": 512,
+        "per_environment_wins": [
+          21,
+          22
+        ],
+        "defense_omission_rate": 0.28297872340425534,
+        "safe_forks": 44,
+        "tactical_correct": 347,
+        "tactical_positions": 384,
+        "training_seconds": 3.661990699999933,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rewired_static8.pt"
+      }
+    },
+    {
+      "kind": "rnn",
+      "history": {
+        "wins": 2,
+        "games": 512,
+        "per_environment_wins": [
+          1,
+          1
+        ],
+        "defense_omission_rate": 0.1348122866894198,
+        "safe_forks": 7,
+        "tactical_correct": 344,
+        "tactical_positions": 384,
+        "training_seconds": 4.935570499999926,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rnn_history.pt"
+      },
+      "static8": {
+        "wins": 2,
+        "games": 512,
+        "per_environment_wins": [
+          1,
+          1
+        ],
+        "defense_omission_rate": 0.13659793814432988,
+        "safe_forks": 7,
+        "tactical_correct": 344,
+        "tactical_positions": 384,
+        "training_seconds": 3.643964100000062,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rnn_static8.pt"
+      }
+    },
+    {
+      "kind": "gru",
+      "history": {
+        "wins": 36,
+        "games": 512,
+        "per_environment_wins": [
+          18,
+          18
+        ],
+        "defense_omission_rate": 0.16942148760330578,
+        "safe_forks": 83,
+        "tactical_correct": 356,
+        "tactical_positions": 384,
+        "training_seconds": 5.291847699999948,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\gru_history.pt"
+      },
+      "static8": {
+        "wins": 38,
+        "games": 512,
+        "per_environment_wins": [
+          19,
+          19
+        ],
+        "defense_omission_rate": 0.17950889077053345,
+        "safe_forks": 85,
+        "tactical_correct": 356,
+        "tactical_positions": 384,
+        "training_seconds": 3.500801000000024,
+        "checkpoint": "gomoku\\runs\\spatial_state_20261012\\gru_static8.pt"
+      }
+    }
+  ],
+  "validated_replays": 160,
+  "tests_passed": 48,
+  "saved_static_checkpoint_reload_verified": true,
+  "conclusion": "No convincing static8 advantage for Fly; direct spatial path may dominate current decisions.",
+  "scope": "One source checkpoint per architecture, paired 100-update supervised adaptation; no PPO; two evaluation environment seeds, not three training seeds",
+  "next_step": "G2 current-policy visited-state collection using multi-response teacher",
+  "resume": "run_pilot.py and confirm.py skip completed arms/runs; partial training checkpoints resume at saved update; remove STOP only after authorization",
+  "usage_remaining": {
+    "primary_percent": 90,
+    "weekly_percent": 94
+  },
+  "adoption_status": "failed_to_demonstrate_advantage_not_adopted",
+  "continued_method": "history recurrent policy"
+}

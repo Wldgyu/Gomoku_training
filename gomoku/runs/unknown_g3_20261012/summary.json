@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "reanalyzed_states": 728,
+  "counts": {
+    "win": 45,
+    "no_plan": 598,
+    "unknown": 85
+  },
+  "ready_attack_records": 3363,
+  "original_attack_records": 223,
+  "unique_first_missed_long_roots": 18,
+  "original_long_roots": 6,
+  "represented_long_root_groups": 18,
+  "long_root_source_counts": {
+    "gru4810": 5,
+    "gru4811": 7,
+    "gru4812": 4,
+    "gru4812_extra": 3
+  },
+  "selected_origin_counts": {
+    "G2": 8,
+    "G3": 26
+  },
+  "gate": {
+    "required_records": 200,
+    "required_roots": 30,
+    "passed": false
+  },
+  "policy": "Original recurrent GRU; this stage only reanalyzed stored visited positions",
+  "interpretation": "no_plan is only failure to find a plan inside the bounded candidate/depth search, not proof of a losing position",
+  "verification": {
+    "teacher_witnesses_replayed": true,
+    "earliest_per_source_game": true,
+    "history_observation_mismatch": 0,
+    "illegal_targets": 0,
+    "holdout_prefix_D4_overlap": 0,
+    "prior_target_overlap": 0
+  },
+  "resume": "run_all.py skips committed states; results and new targets are in this directory; G2 original banks restored",
+  "next_step": "Widen own root-move candidates, retaining verified branch requirements and earliest-opportunity selection; current 18 root groups are below the 30-root expansion gate."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "running",
+  "completed_games": 97,
+  "source": "same 512 saved games; stored sampled own turns only",
+  "root_width": 12,
+  "per_root_nodes": 2000,
+  "later_width": 3,
+  "model_action_checked": true,
+  "queried_states": 494,
+  "worker_seconds": 2389.3402398000026,
+  "ready_records": 11553,
+  "represented_long_roots": 22,
+  "elapsed_seconds": 944.8770769000002,
+  "prefix_recovery": "All available earlier and previously unsampled own turns; quiet setup search begins at four own stones, earlier exact short tactics are checked"
+}

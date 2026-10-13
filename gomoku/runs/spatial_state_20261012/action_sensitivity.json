@@ -1,0 +1,125 @@
+{
+  "scope": "Frozen source weights only; ablation on current-board internal iterations",
+  "rows": [
+    {
+      "kind": "fly",
+      "positions": 384,
+      "variants": [
+        {
+          "iterations": 1,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.07009374350309372,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 0.0
+        },
+        {
+          "iterations": 4,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.06517834216356277,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 7.152557373046875e-05
+        },
+        {
+          "iterations": 8,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.052021224051713943,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 0.004717350006103516
+        },
+        {
+          "iterations": 16,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.08114183694124222,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 0.0128631591796875
+        }
+      ]
+    },
+    {
+      "kind": "rewired",
+      "positions": 384,
+      "variants": [
+        {
+          "iterations": 1,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.022992484271526337,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 0.0
+        },
+        {
+          "iterations": 4,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.0032192596700042486,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 5.7220458984375e-06
+        },
+        {
+          "iterations": 8,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.00045969776692800224,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 2.09808349609375e-05
+        },
+        {
+          "iterations": 16,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.0002436022914480418,
+          "graph_ablation_changed_actions": 0,
+          "graph_ablation_max_legal_logit_change": 4.100799560546875e-05
+        }
+      ]
+    },
+    {
+      "kind": "rnn",
+      "positions": 384,
+      "variants": [
+        {
+          "iterations": 1,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.0010012586135417223
+        },
+        {
+          "iterations": 4,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 3.8188474604794465e-08
+        },
+        {
+          "iterations": 8,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 5.11135000991203e-09
+        },
+        {
+          "iterations": 16,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 5.131114200196407e-09
+        }
+      ]
+    },
+    {
+      "kind": "gru",
+      "positions": 384,
+      "variants": [
+        {
+          "iterations": 1,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.14032746851444244
+        },
+        {
+          "iterations": 4,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.10846675932407379
+        },
+        {
+          "iterations": 8,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.05751696601510048
+        },
+        {
+          "iterations": 16,
+          "changed_actions_vs_history": 0,
+          "mean_abs_legal_logit_change": 0.055965323001146317
+        }
+      ]
+    }
+  ]
+}

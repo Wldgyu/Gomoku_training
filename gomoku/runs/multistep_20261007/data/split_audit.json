@@ -1,0 +1,12 @@
+{
+  "all_plies_reserved": 12891,
+  "counts": {
+    "baseline": 20000,
+    "train": 20000,
+    "mined": 2323,
+    "chain_train": 1024
+  },
+  "unique_keys": true,
+  "zero_training_holdout_overlap": true,
+  "only_legal_nonempty_labels": true
+}

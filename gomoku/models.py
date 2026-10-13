@@ -129,12 +129,18 @@ def load_policy(path: Path, device: torch.device) -> tuple[Policy, dict]:
     saved = torch.load(path, map_location="cpu", weights_only=True)
     config = saved["config"]
     cls = Policy
-    if config.get("architecture", "global") == "spatial":
+    architecture = config.get("architecture", "global")
+    if architecture in ("spatial", "spatial_threat"):
         from .spatial import SpatialPolicy
         cls = SpatialPolicy
+    kwargs = {"threat_aux": True} if architecture == "spatial_threat" else {}
     model = cls(config["kind"], config["seed"], config["hidden"], config["size"],
-                   config["rewire_seed"])
+                config["rewire_seed"], **kwargs)
     if model.graph_sha256 != saved["graph_sha256"]:
         raise RuntimeError("Graph source changed since training")
     model.load_state_dict(saved["model"])
+    if config.get("state_processing") == "static_board":
+        from .static_board import StaticBoardPolicy
+        model = StaticBoardPolicy(model, config["internal_iterations"])
     return model.to(device).eval(), saved
+

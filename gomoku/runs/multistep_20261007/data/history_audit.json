@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "mined": {
+      "positions": 2323,
+      "exact_history_observation_match": true,
+      "all_nonterminal": true
+    },
+    "chain_train": {
+      "positions": 1024,
+      "exact_history_observation_match": true,
+      "all_nonterminal": true
+    },
+    "validation": {
+      "positions": 309,
+      "exact_history_observation_match": true,
+      "all_nonterminal": true
+    },
+    "test": {
+      "positions": 301,
+      "exact_history_observation_match": true,
+      "all_nonterminal": true
+    }
+  },
+  "mined_origins": {
+    "already_multiple_winning_cells:lag1": 793,
+    "already_multiple_winning_cells:lag2": 665,
+    "missed_unique_block:lag0": 865
+  },
+  "no_future_moves_in_observation": true
+}

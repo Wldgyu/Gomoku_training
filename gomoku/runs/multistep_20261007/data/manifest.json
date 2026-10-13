@@ -1,0 +1,40 @@
+{
+  "size": 12,
+  "budget_positions": 20000,
+  "mined_positions": 2323,
+  "counts": {
+    "unique_block_loss_games": 1388,
+    "multiple_loss_games": 1675,
+    "other_loss_games": 0
+  },
+  "unresolved_positions": 818,
+  "all_eval_game_positions_reserved": 12891,
+  "source_evaluation_retired": true,
+  "source_games": 3072,
+  "categories": {
+    "1": 1,
+    "2": 1359,
+    "3": 0,
+    "4": 904,
+    "5": 1,
+    "6": 58
+  },
+  "files": {
+    "baseline.npz": "4dbdbdb51e6041a1886d372686eecf688df9bfdba8dac3167fc900a88a1e51b0",
+    "chain_train.npz": "b957a18a2a73ede7e348f510e0afcaaac82407538cf492f97f1a3a0454e156a6",
+    "mined.npz": "82ae65c9b74556f83dc6865b001a257b05c62698c3453daa7cca3f109e8afc03",
+    "test.npz": "cc83cbda262d65a0ee0932f53cd126635001f37581d4e0a330225271779a2470",
+    "train.npz": "38b686f4d913c7c9e5034481afb8e97f127318891f4221202b4d51d9c4249883",
+    "validation.npz": "f079ecc8b557e464e70329d9029b2104097b13b1eb64d2ec971ffe98a8e81999"
+  },
+  "chain_motif_positions": 1024,
+  "chain_motif_scope": "single crossing motif with D4/translation and random legal context",
+  "train_counts": {
+    "1": 4127,
+    "2": 5508,
+    "3": 4218,
+    "4": 5064,
+    "5": 513,
+    "6": 570
+  }
+}

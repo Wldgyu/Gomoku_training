@@ -1,0 +1,68 @@
+{
+  "opening_seed": 258000481,
+  "paired_openings": 128,
+  "matches": [
+    {
+      "a": "F3-GRU",
+      "b": "E-GRU",
+      "games": 256,
+      "wins": 177,
+      "draws": 0,
+      "losses": 79,
+      "colors": [
+        {
+          "games": 128,
+          "wins": 87,
+          "draws": 0,
+          "losses": 41,
+          "win_rate": 0.6796875,
+          "score": 0.6796875,
+          "a_color": 1,
+          "mean_plies": 28.7890625
+        },
+        {
+          "games": 128,
+          "wins": 90,
+          "draws": 0,
+          "losses": 38,
+          "win_rate": 0.703125,
+          "score": 0.703125,
+          "a_color": -1,
+          "mean_plies": 36.5
+        }
+      ],
+      "score": 0.69140625
+    },
+    {
+      "a": "F3-GRU",
+      "b": "E-Fly",
+      "games": 256,
+      "wins": 165,
+      "draws": 0,
+      "losses": 91,
+      "colors": [
+        {
+          "games": 128,
+          "wins": 84,
+          "draws": 0,
+          "losses": 44,
+          "win_rate": 0.65625,
+          "score": 0.65625,
+          "a_color": 1,
+          "mean_plies": 26.90625
+        },
+        {
+          "games": 128,
+          "wins": 81,
+          "draws": 0,
+          "losses": 47,
+          "win_rate": 0.6328125,
+          "score": 0.6328125,
+          "a_color": -1,
+          "mean_plies": 34.3203125
+        }
+      ],
+      "score": 0.64453125
+    }
+  ]
+}

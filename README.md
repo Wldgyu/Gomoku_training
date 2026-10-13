@@ -1,57 +1,62 @@
-# MaleCNS 순환망 비교 연구
+# MaleCNS: Fly·RNN·GRU 오목 학습 비교
 
-2026-10-07 · 최신 완료 과제: 12×12 일반 오목의 기보·공간 인식·전술 확대.
+실제 Fly 연결 부분 그래프, 차수 보존 재배열 Fly, 일반 RNN, GRU를 비교하는 연구 프로젝트입니다. 카드 기억·다중 단서 과제에서 출발해 **12×12 자유 오목**으로 확장했습니다. 오목 모델은 이전 과제 가중치를 이식하지 않고 학습했습니다.
 
-실제 Fly 연결 그래프·차수 보존 재배선 Fly·RNN·GRU를 같은 조건에서 비교합니다. 카드 기억·다중 단서·방/복도 연구에서 출발해 일반 오목으로 확장했습니다. 오목은 과거 모델 가중치를 재사용하지 않고 새로 학습했습니다.
+**2026-10-13 기준: GRU의 실전 개선은 확인했지만 강한 상대 승률은 여전히 낮습니다. Fly 연결 구조나 정적 공간 처리의 우월성은 확인하지 못했습니다.**
 
-## 최신 결과
+## 현재까지의 핵심 결과
 
-대표 Fly·GRU의 동일 예산 대조를 상태0 → 기보 입력 → 공통 공간 인코더/출력 → 확대 전술 순서로 진행했습니다. 이후 네 모델×새 시드3개를 각각 보조1800업데이트와 경기1200업데이트로 학습하고 흑백 교환2,304판을 평가했습니다.
+| 평가 | 결과 | 해석 |
+|---|---|---|
+| F3-GRU 대표 모델, 강한 전술 상대 | 34승 / 1,024경기 (3.32%) | 설정한 최소 개선 문턱 통과, 실전 완성도는 낮음 |
+| F3-GRU 미세조정 3시드 | 27·20·5승, 합계 52 / 3,072 (1.69%) | 엄격 문턱 2/3 통과, 시드 변동성 존재 |
+| 같은 추가 예산의 구조 선별 | GRU 34, 재배열 Fly 4, RNN 1, Fly 0승 / 각 1,024경기 | 해당 체크포인트·학습 조건에서 GRU가 유리 |
+| 네 모델 직접 대결 | 재배열 Fly 58.9%, RNN 58.7%, GRU 49.9%, Fly 32.6% | 모델끼리의 강점은 강한 전술 상대 성적과 다름 |
+| 정적 판 반복 처리 | 이번 방식 미채택 | Fly의 소수 승리 증가와 방어 악화가 함께 발생 |
 
-아래는 기보를 입력한 새 시험 판의 정확도와 강한 전술 상대 승률입니다. 정확도는 시드 평균입니다.
+구조 선별과 직접 대결은 모델별 시작 가중치와 이전 학습 이력이 다릅니다. 순수한 구조 인과 비교가 아닙니다. 3시드 실험도 같은 F2 시작 가중치에서 미세조정 난수만 바꾼 재현이며, 독립된 전체 학습 3회는 아닙니다. 과거 8승/3,072는 네 모델 합계이므로 GRU 3시드의 52승과 동일 구성의 직접 비교가 아닙니다.
 
-| 모델 | 즉시 승리 | 필수 방어 | 복수 위협 생성 | 복수 위협 예방 | 강한 상대 승률 |
-|---|---:|---:|---:|---:|---:|
-| 실제 Fly | 75.72% | 85.68% | 66.54% | 86.85% | 0.13% |
-| 재배선 Fly | 76.11% | 85.22% | 65.89% | 86.78% | 0.39% |
-| RNN | 75.98% | 87.04% | 65.49% | 86.65% | 0.13% |
-| GRU | 76.43% | 86.78% | 65.95% | 86.98% | 0.39% |
+[최신 연구 요약](docs/RESEARCH_STATUS_20261013.md) · [F3 상세 평가](gomoku/runs/long_plan_f_20261009/results.md) · [모델 직접 대결](gomoku/runs/model_league_20261010/results.md) · [정적 공간 처리](gomoku/runs/spatial_state_20261012/report.md)
 
-강한 상대 총 8승·1무·3063패. 전술 판독 개선을 경기 전략 완성이나 Fly 구조 우월성으로 해석하지 않습니다. 다음 우선순위는 실제 실패 기보의 여러 수 위협 예측과 공격 연결 학습입니다.
+## 어떻게 학습하나
 
-- [최신 결과 보고서](gomoku/reports/advanced_20261007/results.md) · [맞대결 기보](gomoku/reports/advanced_20261007/replays.html)
-- [단계별 사전 계획](gomoku/advanced_protocol.md) · [데이터·예산 감사](gomoku/runs/advanced_20261007/audit.json)
-- [첫 12×12 결과](gomoku/reports/defense12_20261006/results.md) · [9×9 파일럿](gomoku/reports/pilot_20261006/results.md)
+고수의 인간 기보를 모방하는 방식이 아니라, 모델이 직접 경기하는 PPO와 전술 교사 지도학습을 결합합니다. 경기 보상은 승리 +1, 패배 −1, 무승부 0이며 잘못 둔 수마다 별도 감점하는 방식은 아닙니다. 교사는 즉시 승리·필수 방어·복수 위협·공격 연결의 정답 착수를 제공합니다.
 
-## 폴더와 읽는 순서
+중간 판에서 승리까지 이어가는 커리큘럼, 실제 방문 기보의 반복 재분석, 장기 공격 준비 수집, 방어 보존을 순서대로 적용했습니다. 평가는 고정 신경망이 탐색이나 교사 힌트 없이 직접 착수합니다. 흑백 모두 5개 이상 연속이면 승리하며 렌주 금수는 없습니다.
 
-| 위치 | 내용 |
+## 현재 진행 중인 작업
+
+같은 저장 판 737개에서 첫 자기 착수 후보를 3→6→12개로 확대했습니다. 이후 후보는 3개, 판당 전체 탐색 예산은 2,000노드로 유지했습니다.
+
+| 첫 수 후보 | 검증된 계획 | 미발견 | 미확인 | 판당 중앙 시간 |
+|---|---:|---:|---:|---:|
+| 3 | 54 | 598 | 85 | 1.095초 |
+| 6 | 54 | 565 | 118 | 1.841초 |
+| 12 | 60 | 271 | 406 | 2.923초 |
+
+후보 12개는 계획 발견을 늘리지만 계산 비용과 미확인도 증가합니다. 교사 계획은 선정된 여러 상대 응수를 통과한 것이며, 모든 합법 상대 수에 대한 강제 승리 증명은 아닙니다.
+
+현재 고유 장기계획 출발 판 30개 확보를 진행 중입니다. **아직 새 자료로 재학습하거나 개선된 승률을 평가하지 않았습니다.** 최신 수치는 아래 날짜별 요약의 저장 시점 기록을 참고하세요. 출발 판별 균형 샘플링, 실제 기보 복구, 평가 판 D4 중복 배제를 적용합니다.
+
+## 코드와 자료
+
+| 경로 | 내용 |
 |---|---|
-| [gomoku/](gomoku/) | 오목 코드·실험 계획·실행 안내 |
-| [gomoku/reports/](gomoku/reports/) | 결과 보고서·평가 JSON·기보 |
-| gomoku/runs/ | 원 실행 자료·전술 데이터·로컬 가중치·당시 코드 |
-| [previous_research/](previous_research/) | 카드게임·기억·방/복도 연구 |
-| [previous_research/code/](previous_research/code/) | 이전 연구 코드의 주제별 안내 |
-| [previous_research/reports/](previous_research/reports/) | 주제별 이전 보고서 |
-| [카드 웹게임](previous_research/games/card_memory/index.html) | 원본 index.html·game.js |
-| [docs/README_HISTORY.md](docs/README_HISTORY.md) | 이전 날짜별 연구 성과 기록 |
-| [tools/](tools/) | 이동 검증·정리·업로드용 사본 생성 도구 |
+| [gomoku/](gomoku/) | 오목 환경·정책·PPO·교사·평가·테스트 |
+| [gomoku/reports/](gomoku/reports/) | 초기 실험 보고서·기보 |
+| gomoku/runs/ | 날짜별 계획·상태·평가 수치·실행 스크립트 |
+| [previous_research/](previous_research/) | 이전 기억·다중 단서 연구 |
+| [docs/README_HISTORY.md](docs/README_HISTORY.md) | 이전 연구 기록 |
+| [docs/GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md) | 공개 사본 구성·재현 범위 |
 
-README·원 기획서·계획·프로토콜은 최상위에 유지했습니다. 원자료와 기존 학습 체크포인트는 로컬 previous_research/data/에 보존했습니다.
+## 실행과 재현
 
-- [원 기획서](drosophila_project_plan_flow.txt) · [연구 실행 계획](RESEARCH_PROTOCOL.md) · [핵심 질문 결과](previous_research/reports/foundation/core_research_questions_report.txt)
-- [이전 연구 이동 목록](previous_research/manifests/layout_20261007.json) · [오목 이동 목록](docs/gomoku_layout_manifest.json)
+저장소 최상위에서 실행합니다. [requirements.txt](requirements.txt)와 [환경 기록](gomoku/environment_versions.txt)을 참고하세요. 다음은 PowerShell 예시입니다.
 
-## 실행과 검증
+```powershell
+python -m venv .venv
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+.venv/Scripts/python.exe -m unittest discover -s . -p 'test_*.py' -q
+```
 
-오목은 저장소 최상위에서, 이전 코드는 previous_research에서 실행합니다. 자세한 학습 명령은 각 README에 있습니다. 24개 오목 테스트와 43개 기존 연구 테스트를 통과했습니다.
-
-~~~powershell
-.venv/Scripts/python.exe -m unittest gomoku.test_gomoku gomoku.test_defense gomoku.test_history_spatial -v
-~~~
-
-[핵심 의존성](requirements.txt) · [당시 전체 환경](gomoku/environment_versions.txt). 일반룰은 흑백5개 이상 연속 승리이며 렌주 금수는 없습니다. 15×15는 이번에 학습하지 않았습니다.
-
-## GitHub 업로드 준비
-
-[업로드 안내](docs/GITHUB_UPLOAD.md). 검토용 github_upload 폴더에는 코드·보고서·작은 재현 자료를 담았고, 대형 원자료·가중치·가상환경은 로컬에 보존합니다. PUBLICATION_MANIFEST.json으로 사본 해시와 제외 파일을 확인할 수 있습니다. 실제 GitHub 게시는 사용자 검토 후 진행합니다.
+최신 로컬 오목 회귀 검증은 **61개 통과**했습니다. 세부 학습 명령은 [오목 README](gomoku/README.md), 실험 조건은 각 실행의 보고서와 프로토콜에 있습니다. 공개 사본은 코드와 수치 검토를 위한 것으로, 제외된 가중치·대형 데이터가 필요한 평가 및 재개는 해당 파일을 별도로 준비해야 합니다.

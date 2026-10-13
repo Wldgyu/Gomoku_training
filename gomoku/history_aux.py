@@ -8,7 +8,8 @@ from torch.nn import functional as F
 from .models import masked_distribution
 from .tactics import TacticalData
 
-CATEGORIES = {1: "win", 2: "block", 3: "create_fork", 4: "prevent_fork"}
+CATEGORIES = {1: "win", 2: "block", 3: "create_fork", 4: "prevent_fork",
+              5: "create_forcing_chain", 6: "prevent_forcing_chain"}
 
 
 def prefix_observations(histories: torch.Tensor, size: int):
@@ -69,9 +70,92 @@ class HistoryTacticalData(TacticalData):
         self.mode = mode
         self.history_tensor = torch.from_numpy(self.histories.astype(np.int64)).to(device)
         self.frames_used = 0
+        self.balanced = False
+        self.base_count = len(self.obs)
+        self.dagger_fraction = 0.0
+        self.root_groups = []
+        with np.load(path) as saved:
+            self.dagger_keys = set(saved["keys"].tolist())
+            if "root_keys" in saved:
+                root_keys = saved["root_keys"].copy()
+                if len(root_keys) != len(self.obs):
+                    raise ValueError("One root key per training record is required")
+                self.root_groups = [torch.as_tensor(np.flatnonzero(root_keys == key), device=device)
+                                    for key in np.unique(root_keys)]
+        self.category_groups = [torch.as_tensor(np.flatnonzero(self.category == c),device=device)
+                                for c in sorted(set(self.category.tolist()))]
+        self.samples_by_category = {str(c):0 for c in sorted(set(self.category.tolist()))}
+
+    def append_file(self, path: Path, dagger_fraction: float = 0.5):
+        if self.root_groups:
+            raise ValueError("Merge root-grouped data with provenance before appending")
+        with np.load(path) as saved:
+            obs = torch.from_numpy(saved["obs"].astype(np.float32)).to(self.obs.device)
+            labels = torch.from_numpy(saved["labels"]).to(self.obs.device)
+            category = saved["category"].copy()
+            histories = saved["histories"].copy()
+            keys = saved["keys"].tolist()
+        keep = np.array([key not in self.dagger_keys for key in keys])
+        if not keep.any():
+            return
+        self.dagger_keys.update(key for key, selected in zip(keys, keep) if selected)
+        obs = obs[torch.from_numpy(keep).to(obs.device)]
+        labels = labels[torch.from_numpy(keep).to(labels.device)]
+        category = category[keep]
+        histories = histories[keep]
+        self.obs = torch.cat((self.obs, obs))
+        self.labels = torch.cat((self.labels, labels))
+        self.category = np.concatenate((self.category, category))
+        self.histories = np.concatenate((self.histories, histories))
+        self.history_tensor = torch.cat((
+            self.history_tensor,
+            torch.from_numpy(histories.astype(np.int64)).to(self.obs.device),
+        ))
+        self.legal = torch.cat((
+            self.legal,
+            (obs[:, 0] + obs[:, 1]).flatten(1) == 0,
+        ))
+        self.dagger_fraction = dagger_fraction
+        categories = sorted(set(self.category.tolist()))
+        self.category_groups = [
+            torch.as_tensor(np.flatnonzero(self.category == c), device=self.obs.device)
+            for c in categories
+        ]
+        for category_id in categories:
+            self.samples_by_category.setdefault(str(category_id), 0)
+
+    def sample_ids(self, batch: int):
+        if self.root_groups:
+            group_ids = torch.randint(len(self.root_groups), (batch,), device=self.obs.device)
+            ids = torch.empty(batch, dtype=torch.long, device=self.obs.device)
+            for group, candidates in enumerate(self.root_groups):
+                mask = group_ids == group
+                n = int(mask.sum())
+                ids[mask] = candidates[torch.randint(len(candidates), (n,), device=self.obs.device)]
+        elif self.dagger_fraction and len(self.obs) > self.base_count:
+            extra = min(batch - 1, max(1, round(batch * self.dagger_fraction)))
+            base = batch - extra
+            ids = torch.cat((
+                torch.randint(self.base_count, (base,), device=self.obs.device),
+                torch.randint(self.base_count, len(self.obs), (extra,), device=self.obs.device),
+            ))
+            ids = ids[torch.randperm(batch, device=self.obs.device)]
+        elif self.balanced:
+            group_ids = torch.randint(len(self.category_groups),(batch,),device=self.obs.device)
+            ids = torch.empty(batch,dtype=torch.long,device=self.obs.device)
+            for group, candidates in enumerate(self.category_groups):
+                mask = group_ids == group
+                n = int(mask.sum())
+                ids[mask] = candidates[torch.randint(len(candidates),(n,),device=self.obs.device)]
+        else:
+            ids = torch.randint(len(self.obs), (batch,), device=self.obs.device)
+        return ids
 
     def loss(self, model, batch: int):
-        ids = torch.randint(len(self.obs), (batch,), device=self.obs.device)
+        ids = self.sample_ids(batch)
+        cats = self.category[ids.cpu().numpy()]
+        for c in self.samples_by_category:
+            self.samples_by_category[c] += int((cats == int(c)).sum())
         if self.mode == "history":
             history = self.history_tensor[ids]
             self.frames_used += int(((history >= 0).sum(1) // 2).sum())
@@ -97,3 +181,6 @@ class HistoryTacticalData(TacticalData):
                            correct=int(hits[self.category == cat].sum()),
                            accuracy=float(hits[self.category == cat].mean()))
                 for cat, name in CATEGORIES.items() if (self.category == cat).any()} | {"history_replayed": history}
+
+
+

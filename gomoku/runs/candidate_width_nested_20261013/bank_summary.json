@@ -1,0 +1,18 @@
+{
+  "records": 11553,
+  "unique_long_roots": 22,
+  "represented_long_roots": 22,
+  "represented_root_groups": 23,
+  "selected_source_games": 62,
+  "chosen_proven_correct_states": 22,
+  "gate_passed": false,
+  "sampling": "uniform root group, then uniform record within group",
+  "verification": {
+    "union_proofs_replayed": true,
+    "earliest_per_source_game": true,
+    "history_observation_mismatch": 0,
+    "illegal_labels": 0,
+    "heldout_prefix_D4_overlap": 0,
+    "prior_target_overlap": 0
+  }
+}

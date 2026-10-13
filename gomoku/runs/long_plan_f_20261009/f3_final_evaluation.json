@@ -1,0 +1,122 @@
+{
+  "runs": [
+    {
+      "kind": "gru",
+      "seed": 4810,
+      "games": 512,
+      "wins": 18,
+      "losses": 494,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 18,
+          "correct": 18,
+          "accuracy": 1.0
+        },
+        "block": {
+          "positions": 1218,
+          "correct": 1026,
+          "accuracy": 0.8423645320197044
+        },
+        "create_fork": {
+          "positions": 20,
+          "correct": 18,
+          "accuracy": 0.9
+        },
+        "prevent_fork": {
+          "positions": 1455,
+          "correct": 1169,
+          "accuracy": 0.8034364261168385
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 192,
+        "already_multiple_winning_cells": 302,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 242,
+        "other_or_no_prevention_label": 60
+      },
+      "environment_seed": 256000481,
+      "actual_safe_forks_created": 18,
+      "actual_safe_forks_per_game": 0.03515625,
+      "games_reaching_multiple_threat": 302,
+      "multiple_threat_game_rate": 0.58984375,
+      "defense_omissions": 192
+    },
+    {
+      "kind": "gru",
+      "seed": 4810,
+      "games": 512,
+      "wins": 16,
+      "losses": 496,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 20,
+          "correct": 16,
+          "accuracy": 0.8
+        },
+        "block": {
+          "positions": 1145,
+          "correct": 945,
+          "accuracy": 0.8253275109170306
+        },
+        "create_fork": {
+          "positions": 19,
+          "correct": 18,
+          "accuracy": 0.9473684210526315
+        },
+        "prevent_fork": {
+          "positions": 1433,
+          "correct": 1144,
+          "accuracy": 0.7983251919050942
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 200,
+        "already_multiple_winning_cells": 296,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 242,
+        "other_or_no_prevention_label": 54
+      },
+      "environment_seed": 257000481,
+      "actual_safe_forks_created": 20,
+      "actual_safe_forks_per_game": 0.0390625,
+      "games_reaching_multiple_threat": 296,
+      "multiple_threat_game_rate": 0.578125,
+      "defense_omissions": 200
+    }
+  ],
+  "aggregate": {
+    "games": 1024,
+    "wins": 34,
+    "safe_forks": 38,
+    "defense_omissions": 392,
+    "block_positions": 2363,
+    "defense_rate": 0.165890816758358
+  }
+}

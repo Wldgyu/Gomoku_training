@@ -1,0 +1,749 @@
+{
+  "runs": [
+    {
+      "kind": "fly",
+      "mode": "original",
+      "environment_seed": 268000481,
+      "checkpoint": "gomoku\\runs\\long_plan_f_20261009\\structure_compare\\fly_seed4810.pt",
+      "result": {
+        "kind": "fly",
+        "seed": 4810,
+        "games": 256,
+        "wins": 0,
+        "losses": 256,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "block": {
+            "positions": 478,
+            "correct": 374,
+            "accuracy": 0.7824267782426778
+          },
+          "create_fork": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_fork": {
+            "positions": 574,
+            "correct": 449,
+            "accuracy": 0.7822299651567944
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 104,
+          "already_multiple_winning_cells": 152,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 121,
+          "other_or_no_prevention_label": 31
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 0,
+        "actual_safe_forks_per_game": 0.0,
+        "games_reaching_multiple_threat": 152,
+        "multiple_threat_game_rate": 0.59375,
+        "defense_omissions": 104
+      },
+      "defense_omission_rate": 0.2175732217573222
+    },
+    {
+      "kind": "rewired",
+      "mode": "original",
+      "environment_seed": 268000481,
+      "checkpoint": "gomoku\\runs\\long_plan_f_20261009\\structure_compare\\rewired_seed4811.pt",
+      "result": {
+        "kind": "rewired",
+        "seed": 4811,
+        "games": 256,
+        "wins": 1,
+        "losses": 255,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 2,
+            "correct": 1,
+            "accuracy": 0.5
+          },
+          "block": {
+            "positions": 652,
+            "correct": 513,
+            "accuracy": 0.7868098159509203
+          },
+          "create_fork": {
+            "positions": 33,
+            "correct": 2,
+            "accuracy": 0.06060606060606061
+          },
+          "prevent_fork": {
+            "positions": 612,
+            "correct": 484,
+            "accuracy": 0.7908496732026143
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 139,
+          "already_multiple_winning_cells": 116,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 78,
+          "other_or_no_prevention_label": 38
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 2,
+        "actual_safe_forks_per_game": 0.0078125,
+        "games_reaching_multiple_threat": 116,
+        "multiple_threat_game_rate": 0.453125,
+        "defense_omissions": 139
+      },
+      "defense_omission_rate": 0.21319018404907975
+    },
+    {
+      "kind": "rnn",
+      "mode": "original",
+      "environment_seed": 268000481,
+      "checkpoint": "gomoku\\runs\\long_plan_f_20261009\\structure_compare\\rnn_seed4811.pt",
+      "result": {
+        "kind": "rnn",
+        "seed": 4811,
+        "games": 256,
+        "wins": 0,
+        "losses": 256,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "block": {
+            "positions": 571,
+            "correct": 487,
+            "accuracy": 0.8528896672504378
+          },
+          "create_fork": {
+            "positions": 1,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "prevent_fork": {
+            "positions": 721,
+            "correct": 599,
+            "accuracy": 0.8307905686546463
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 84,
+          "already_multiple_winning_cells": 172,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 101,
+          "other_or_no_prevention_label": 71
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 0,
+        "actual_safe_forks_per_game": 0.0,
+        "games_reaching_multiple_threat": 172,
+        "multiple_threat_game_rate": 0.671875,
+        "defense_omissions": 84
+      },
+      "defense_omission_rate": 0.14711033274956217
+    },
+    {
+      "kind": "gru",
+      "mode": "original",
+      "environment_seed": 268000481,
+      "checkpoint": "gomoku\\runs\\long_plan_f_20261009\\f3\\gru_seed4810.pt",
+      "result": {
+        "kind": "gru",
+        "seed": 4810,
+        "games": 256,
+        "wins": 7,
+        "losses": 249,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 7,
+            "correct": 7,
+            "accuracy": 1.0
+          },
+          "block": {
+            "positions": 562,
+            "correct": 468,
+            "accuracy": 0.8327402135231317
+          },
+          "create_fork": {
+            "positions": 8,
+            "correct": 7,
+            "accuracy": 0.875
+          },
+          "prevent_fork": {
+            "positions": 700,
+            "correct": 543,
+            "accuracy": 0.7757142857142857
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 94,
+          "already_multiple_winning_cells": 155,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 126,
+          "other_or_no_prevention_label": 29
+        },
+        "environment_seed": 268000481,
+        "actual_safe_forks_created": 7,
+        "actual_safe_forks_per_game": 0.02734375,
+        "games_reaching_multiple_threat": 155,
+        "multiple_threat_game_rate": 0.60546875,
+        "defense_omissions": 94
+      },
+      "defense_omission_rate": 0.16725978647686832
+    },
+    {
+      "kind": "fly",
+      "mode": "history",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\fly_history.pt",
+      "result": {
+        "kind": "fly",
+        "seed": 4810,
+        "games": 256,
+        "wins": 0,
+        "losses": 256,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "block": {
+            "positions": 451,
+            "correct": 372,
+            "accuracy": 0.8248337028824834
+          },
+          "create_fork": {
+            "positions": 3,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "prevent_fork": {
+            "positions": 663,
+            "correct": 477,
+            "accuracy": 0.7194570135746606
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 79,
+          "already_multiple_winning_cells": 177,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 164,
+          "other_or_no_prevention_label": 13
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 0,
+        "actual_safe_forks_per_game": 0.0,
+        "games_reaching_multiple_threat": 177,
+        "multiple_threat_game_rate": 0.69140625,
+        "defense_omissions": 79
+      },
+      "defense_omission_rate": 0.17516629711751663
+    },
+    {
+      "kind": "fly",
+      "mode": "static8",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\fly_static8.pt",
+      "result": {
+        "kind": "fly",
+        "seed": 4810,
+        "games": 256,
+        "wins": 1,
+        "losses": 255,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 1,
+            "correct": 1,
+            "accuracy": 1.0
+          },
+          "block": {
+            "positions": 532,
+            "correct": 422,
+            "accuracy": 0.793233082706767
+          },
+          "create_fork": {
+            "positions": 2,
+            "correct": 1,
+            "accuracy": 0.5
+          },
+          "prevent_fork": {
+            "positions": 655,
+            "correct": 541,
+            "accuracy": 0.8259541984732824
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 110,
+          "already_multiple_winning_cells": 145,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 107,
+          "other_or_no_prevention_label": 38
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 1,
+        "actual_safe_forks_per_game": 0.00390625,
+        "games_reaching_multiple_threat": 145,
+        "multiple_threat_game_rate": 0.56640625,
+        "defense_omissions": 110
+      },
+      "defense_omission_rate": 0.20676691729323307
+    },
+    {
+      "kind": "rewired",
+      "mode": "history",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rewired_history.pt",
+      "result": {
+        "kind": "rewired",
+        "seed": 4811,
+        "games": 256,
+        "wins": 22,
+        "losses": 234,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 23,
+            "correct": 22,
+            "accuracy": 0.9565217391304348
+          },
+          "block": {
+            "positions": 468,
+            "correct": 325,
+            "accuracy": 0.6944444444444444
+          },
+          "create_fork": {
+            "positions": 26,
+            "correct": 22,
+            "accuracy": 0.8461538461538461
+          },
+          "prevent_fork": {
+            "positions": 511,
+            "correct": 425,
+            "accuracy": 0.8317025440313112
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 143,
+          "already_multiple_winning_cells": 91,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 77,
+          "other_or_no_prevention_label": 14
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 23,
+        "actual_safe_forks_per_game": 0.08984375,
+        "games_reaching_multiple_threat": 91,
+        "multiple_threat_game_rate": 0.35546875,
+        "defense_omissions": 143
+      },
+      "defense_omission_rate": 0.3055555555555556
+    },
+    {
+      "kind": "rewired",
+      "mode": "static8",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rewired_static8.pt",
+      "result": {
+        "kind": "rewired",
+        "seed": 4811,
+        "games": 256,
+        "wins": 22,
+        "losses": 234,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 23,
+            "correct": 22,
+            "accuracy": 0.9565217391304348
+          },
+          "block": {
+            "positions": 468,
+            "correct": 325,
+            "accuracy": 0.6944444444444444
+          },
+          "create_fork": {
+            "positions": 26,
+            "correct": 22,
+            "accuracy": 0.8461538461538461
+          },
+          "prevent_fork": {
+            "positions": 511,
+            "correct": 425,
+            "accuracy": 0.8317025440313112
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 143,
+          "already_multiple_winning_cells": 91,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 77,
+          "other_or_no_prevention_label": 14
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 23,
+        "actual_safe_forks_per_game": 0.08984375,
+        "games_reaching_multiple_threat": 91,
+        "multiple_threat_game_rate": 0.35546875,
+        "defense_omissions": 143
+      },
+      "defense_omission_rate": 0.3055555555555556
+    },
+    {
+      "kind": "rnn",
+      "mode": "history",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rnn_history.pt",
+      "result": {
+        "kind": "rnn",
+        "seed": 4811,
+        "games": 256,
+        "wins": 1,
+        "losses": 255,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 5,
+            "correct": 1,
+            "accuracy": 0.2
+          },
+          "block": {
+            "positions": 552,
+            "correct": 470,
+            "accuracy": 0.8514492753623188
+          },
+          "create_fork": {
+            "positions": 13,
+            "correct": 5,
+            "accuracy": 0.38461538461538464
+          },
+          "prevent_fork": {
+            "positions": 664,
+            "correct": 510,
+            "accuracy": 0.7680722891566265
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 82,
+          "already_multiple_winning_cells": 173,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 136,
+          "other_or_no_prevention_label": 37
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 5,
+        "actual_safe_forks_per_game": 0.01953125,
+        "games_reaching_multiple_threat": 173,
+        "multiple_threat_game_rate": 0.67578125,
+        "defense_omissions": 82
+      },
+      "defense_omission_rate": 0.14855072463768115
+    },
+    {
+      "kind": "rnn",
+      "mode": "static8",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\rnn_static8.pt",
+      "result": {
+        "kind": "rnn",
+        "seed": 4811,
+        "games": 256,
+        "wins": 1,
+        "losses": 255,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 5,
+            "correct": 1,
+            "accuracy": 0.2
+          },
+          "block": {
+            "positions": 545,
+            "correct": 462,
+            "accuracy": 0.8477064220183487
+          },
+          "create_fork": {
+            "positions": 13,
+            "correct": 5,
+            "accuracy": 0.38461538461538464
+          },
+          "prevent_fork": {
+            "positions": 657,
+            "correct": 506,
+            "accuracy": 0.7701674277016742
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 83,
+          "already_multiple_winning_cells": 172,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 133,
+          "other_or_no_prevention_label": 39
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 5,
+        "actual_safe_forks_per_game": 0.01953125,
+        "games_reaching_multiple_threat": 172,
+        "multiple_threat_game_rate": 0.671875,
+        "defense_omissions": 83
+      },
+      "defense_omission_rate": 0.15229357798165138
+    },
+    {
+      "kind": "gru",
+      "mode": "history",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\gru_history.pt",
+      "result": {
+        "kind": "gru",
+        "seed": 4810,
+        "games": 256,
+        "wins": 18,
+        "losses": 238,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 42,
+            "correct": 18,
+            "accuracy": 0.42857142857142855
+          },
+          "block": {
+            "positions": 594,
+            "correct": 491,
+            "accuracy": 0.8265993265993266
+          },
+          "create_fork": {
+            "positions": 55,
+            "correct": 30,
+            "accuracy": 0.5454545454545454
+          },
+          "prevent_fork": {
+            "positions": 608,
+            "correct": 511,
+            "accuracy": 0.8404605263157895
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 103,
+          "already_multiple_winning_cells": 135,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 79,
+          "other_or_no_prevention_label": 56
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 42,
+        "actual_safe_forks_per_game": 0.1640625,
+        "games_reaching_multiple_threat": 135,
+        "multiple_threat_game_rate": 0.52734375,
+        "defense_omissions": 103
+      },
+      "defense_omission_rate": 0.1734006734006734
+    },
+    {
+      "kind": "gru",
+      "mode": "static8",
+      "environment_seed": 269000481,
+      "checkpoint": "gomoku\\runs\\spatial_state_20261012\\gru_static8.pt",
+      "result": {
+        "kind": "gru",
+        "seed": 4810,
+        "games": 256,
+        "wins": 19,
+        "losses": 237,
+        "draws": 0,
+        "tactical_decisions": {
+          "win": {
+            "positions": 43,
+            "correct": 19,
+            "accuracy": 0.4418604651162791
+          },
+          "block": {
+            "positions": 575,
+            "correct": 468,
+            "accuracy": 0.8139130434782609
+          },
+          "create_fork": {
+            "positions": 35,
+            "correct": 31,
+            "accuracy": 0.8857142857142857
+          },
+          "prevent_fork": {
+            "positions": 600,
+            "correct": 515,
+            "accuracy": 0.8583333333333333
+          },
+          "create_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "prevent_forcing_chain": {
+            "positions": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        },
+        "terminal_loss_causes": {
+          "missed_unique_block": 107,
+          "already_multiple_winning_cells": 130,
+          "other": 0
+        },
+        "preceding_turn_of_multiple_threat_losses": {
+          "missed_prevent_fork": 77,
+          "other_or_no_prevention_label": 53
+        },
+        "environment_seed": 269000481,
+        "actual_safe_forks_created": 43,
+        "actual_safe_forks_per_game": 0.16796875,
+        "games_reaching_multiple_threat": 130,
+        "multiple_threat_game_rate": 0.5078125,
+        "defense_omissions": 107
+      },
+      "defense_omission_rate": 0.18608695652173912
+    }
+  ],
+  "status": "complete"
+}

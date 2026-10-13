@@ -1,0 +1,1564 @@
+{
+  "runs": [
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 87,
+      "completed": 87,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 54,
+      "completed": 54,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 33,
+      "completed": 33,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 90,
+      "completed": 50,
+      "conditional_completion_rate": 0.5555555555555556
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 18,
+      "completed": 7,
+      "conditional_completion_rate": 0.3888888888888889
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 19,
+      "conditional_completion_rate": 0.59375
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 25,
+      "completed": 17,
+      "conditional_completion_rate": 0.68
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 15,
+      "completed": 7,
+      "conditional_completion_rate": 0.4666666666666667
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 97,
+      "completed": 3,
+      "conditional_completion_rate": 0.030927835051546393
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 28,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 29,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 16,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 24,
+      "completed": 3,
+      "conditional_completion_rate": 0.125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 93,
+      "completed": 93,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 56,
+      "completed": 56,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 37,
+      "completed": 37,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 93,
+      "completed": 61,
+      "conditional_completion_rate": 0.6559139784946236
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 18,
+      "completed": 12,
+      "conditional_completion_rate": 0.6666666666666666
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 20,
+      "conditional_completion_rate": 0.625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 25,
+      "completed": 18,
+      "conditional_completion_rate": 0.72
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 18,
+      "completed": 11,
+      "conditional_completion_rate": 0.6111111111111112
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 102,
+      "completed": 7,
+      "conditional_completion_rate": 0.06862745098039216
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 27,
+      "completed": 1,
+      "conditional_completion_rate": 0.037037037037037035
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 30,
+      "completed": 2,
+      "conditional_completion_rate": 0.06666666666666667
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 19,
+      "completed": 1,
+      "conditional_completion_rate": 0.05263157894736842
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 26,
+      "completed": 3,
+      "conditional_completion_rate": 0.11538461538461539
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 102,
+      "completed": 102,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 57,
+      "completed": 57,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 45,
+      "completed": 45,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 99,
+      "completed": 77,
+      "conditional_completion_rate": 0.7777777777777778
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 21,
+      "completed": 16,
+      "conditional_completion_rate": 0.7619047619047619
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 27,
+      "conditional_completion_rate": 0.84375
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 28,
+      "completed": 21,
+      "conditional_completion_rate": 0.75
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 18,
+      "completed": 13,
+      "conditional_completion_rate": 0.7222222222222222
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 107,
+      "completed": 14,
+      "conditional_completion_rate": 0.1308411214953271
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 28,
+      "completed": 2,
+      "conditional_completion_rate": 0.07142857142857142
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 30,
+      "completed": 5,
+      "conditional_completion_rate": 0.16666666666666666
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 20,
+      "completed": 1,
+      "conditional_completion_rate": 0.05
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 6,
+      "conditional_completion_rate": 0.20689655172413793
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 105,
+      "completed": 105,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 59,
+      "completed": 59,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 46,
+      "completed": 46,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 101,
+      "completed": 83,
+      "conditional_completion_rate": 0.8217821782178217
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 20,
+      "completed": 16,
+      "conditional_completion_rate": 0.8
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 30,
+      "conditional_completion_rate": 0.9375
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 28,
+      "completed": 23,
+      "conditional_completion_rate": 0.8214285714285714
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 21,
+      "completed": 14,
+      "conditional_completion_rate": 0.6666666666666666
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 106,
+      "completed": 18,
+      "conditional_completion_rate": 0.16981132075471697
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 26,
+      "completed": 4,
+      "conditional_completion_rate": 0.15384615384615385
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 30,
+      "completed": 6,
+      "conditional_completion_rate": 0.2
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 21,
+      "completed": 1,
+      "conditional_completion_rate": 0.047619047619047616
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 7,
+      "conditional_completion_rate": 0.2413793103448276
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 106,
+      "completed": 106,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 61,
+      "completed": 61,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 45,
+      "completed": 45,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 101,
+      "completed": 90,
+      "conditional_completion_rate": 0.8910891089108911
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 20,
+      "completed": 15,
+      "conditional_completion_rate": 0.75
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 29,
+      "conditional_completion_rate": 0.90625
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 28,
+      "completed": 26,
+      "conditional_completion_rate": 0.9285714285714286
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 21,
+      "completed": 20,
+      "conditional_completion_rate": 0.9523809523809523
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 112,
+      "completed": 34,
+      "conditional_completion_rate": 0.30357142857142855
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 28,
+      "completed": 10,
+      "conditional_completion_rate": 0.35714285714285715
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 31,
+      "completed": 11,
+      "conditional_completion_rate": 0.3548387096774194
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 24,
+      "completed": 1,
+      "conditional_completion_rate": 0.041666666666666664
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 12,
+      "conditional_completion_rate": 0.41379310344827586
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 107,
+      "completed": 107,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 61,
+      "completed": 61,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 46,
+      "completed": 46,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 103,
+      "completed": 92,
+      "conditional_completion_rate": 0.8932038834951457
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 22,
+      "completed": 16,
+      "conditional_completion_rate": 0.7272727272727273
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 31,
+      "conditional_completion_rate": 0.96875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 28,
+      "completed": 26,
+      "conditional_completion_rate": 0.9285714285714286
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 21,
+      "completed": 19,
+      "conditional_completion_rate": 0.9047619047619048
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 113,
+      "completed": 38,
+      "conditional_completion_rate": 0.336283185840708
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 28,
+      "completed": 10,
+      "conditional_completion_rate": 0.35714285714285715
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 31,
+      "completed": 13,
+      "conditional_completion_rate": 0.41935483870967744
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 25,
+      "completed": 1,
+      "conditional_completion_rate": 0.04
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 14,
+      "conditional_completion_rate": 0.4827586206896552
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 92,
+      "completed": 92,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 53,
+      "completed": 53,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 39,
+      "completed": 39,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 89,
+      "completed": 49,
+      "conditional_completion_rate": 0.550561797752809
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 15,
+      "completed": 7,
+      "conditional_completion_rate": 0.4666666666666667
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 21,
+      "conditional_completion_rate": 0.65625
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 30,
+      "completed": 16,
+      "conditional_completion_rate": 0.5333333333333333
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 12,
+      "completed": 5,
+      "conditional_completion_rate": 0.4166666666666667
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 103,
+      "completed": 5,
+      "conditional_completion_rate": 0.04854368932038835
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 25,
+      "completed": 1,
+      "conditional_completion_rate": 0.04
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 32,
+      "completed": 1,
+      "conditional_completion_rate": 0.03125
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 20,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 26,
+      "completed": 3,
+      "conditional_completion_rate": 0.11538461538461539
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 90,
+      "completed": 90,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 53,
+      "completed": 53,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 37,
+      "completed": 37,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 93,
+      "completed": 51,
+      "conditional_completion_rate": 0.5483870967741935
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 17,
+      "completed": 8,
+      "conditional_completion_rate": 0.47058823529411764
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 21,
+      "conditional_completion_rate": 0.65625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 30,
+      "completed": 16,
+      "conditional_completion_rate": 0.5333333333333333
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 14,
+      "completed": 6,
+      "conditional_completion_rate": 0.42857142857142855
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 106,
+      "completed": 8,
+      "conditional_completion_rate": 0.07547169811320754
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 26,
+      "completed": 1,
+      "conditional_completion_rate": 0.038461538461538464
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 32,
+      "completed": 2,
+      "conditional_completion_rate": 0.0625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 21,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 27,
+      "completed": 5,
+      "conditional_completion_rate": 0.18518518518518517
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 97,
+      "completed": 97,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 56,
+      "completed": 56,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 41,
+      "completed": 41,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 98,
+      "completed": 68,
+      "conditional_completion_rate": 0.6938775510204082
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 22,
+      "completed": 13,
+      "conditional_completion_rate": 0.5909090909090909
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 26,
+      "conditional_completion_rate": 0.8125
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 30,
+      "completed": 21,
+      "conditional_completion_rate": 0.7
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 14,
+      "completed": 8,
+      "conditional_completion_rate": 0.5714285714285714
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 113,
+      "completed": 19,
+      "conditional_completion_rate": 0.168141592920354
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 27,
+      "completed": 3,
+      "conditional_completion_rate": 0.1111111111111111
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 32,
+      "completed": 6,
+      "conditional_completion_rate": 0.1875
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 25,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 10,
+      "conditional_completion_rate": 0.3448275862068966
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 100,
+      "completed": 100,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 58,
+      "completed": 58,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 42,
+      "completed": 42,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 99,
+      "completed": 72,
+      "conditional_completion_rate": 0.7272727272727273
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 23,
+      "completed": 15,
+      "conditional_completion_rate": 0.6521739130434783
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 25,
+      "conditional_completion_rate": 0.78125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 30,
+      "completed": 22,
+      "conditional_completion_rate": 0.7333333333333333
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 14,
+      "completed": 10,
+      "conditional_completion_rate": 0.7142857142857143
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 119,
+      "completed": 22,
+      "conditional_completion_rate": 0.18487394957983194
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 31,
+      "completed": 5,
+      "conditional_completion_rate": 0.16129032258064516
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 32,
+      "completed": 6,
+      "conditional_completion_rate": 0.1875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 27,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 11,
+      "conditional_completion_rate": 0.3793103448275862
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 103,
+      "completed": 103,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 54,
+      "completed": 54,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 49,
+      "completed": 49,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 100,
+      "completed": 85,
+      "conditional_completion_rate": 0.85
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 20,
+      "completed": 19,
+      "conditional_completion_rate": 0.95
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 27,
+      "conditional_completion_rate": 0.84375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 30,
+      "completed": 25,
+      "conditional_completion_rate": 0.8333333333333334
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 18,
+      "completed": 14,
+      "conditional_completion_rate": 0.7777777777777778
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 118,
+      "completed": 35,
+      "conditional_completion_rate": 0.2966101694915254
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 31,
+      "completed": 10,
+      "conditional_completion_rate": 0.3225806451612903
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 32,
+      "completed": 10,
+      "conditional_completion_rate": 0.3125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 26,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 15,
+      "conditional_completion_rate": 0.5172413793103449
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "first_correct": 108,
+      "completed": 108,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "first_correct": 55,
+      "completed": 55,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "first_correct": 53,
+      "completed": 53,
+      "conditional_completion_rate": 1.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "first_correct": 103,
+      "completed": 87,
+      "conditional_completion_rate": 0.8446601941747572
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "first_correct": 20,
+      "completed": 17,
+      "conditional_completion_rate": 0.85
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "first_correct": 32,
+      "completed": 28,
+      "conditional_completion_rate": 0.875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "first_correct": 30,
+      "completed": 27,
+      "conditional_completion_rate": 0.9
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "first_correct": 21,
+      "completed": 15,
+      "conditional_completion_rate": 0.7142857142857143
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "first_correct": 118,
+      "completed": 45,
+      "conditional_completion_rate": 0.3813559322033898
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "first_correct": 31,
+      "completed": 12,
+      "conditional_completion_rate": 0.3870967741935484
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "first_correct": 32,
+      "completed": 15,
+      "conditional_completion_rate": 0.46875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "first_correct": 26,
+      "completed": 0,
+      "conditional_completion_rate": 0.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "first_correct": 29,
+      "completed": 18,
+      "conditional_completion_rate": 0.6206896551724138
+    }
+  ]
+}

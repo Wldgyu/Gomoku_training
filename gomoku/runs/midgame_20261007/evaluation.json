@@ -1,0 +1,3368 @@
+{
+  "full_games": [
+    {
+      "arm": "baseline",
+      "split": "validation",
+      "kind": "fly",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 208,
+          "correct": 135,
+          "accuracy": 0.6490384615384616
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 375,
+          "correct": 196,
+          "accuracy": 0.5226666666666666
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 73,
+        "already_multiple_winning_cells": 183,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 175,
+        "other_or_no_prevention_label": 8
+      },
+      "environment_seed": 210000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 183,
+      "multiple_threat_game_rate": 0.71484375,
+      "defense_omissions": 73
+    },
+    {
+      "arm": "baseline",
+      "split": "validation",
+      "kind": "gru",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 266,
+          "correct": 154,
+          "accuracy": 0.5789473684210527
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 389,
+          "correct": 246,
+          "accuracy": 0.6323907455012854
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 112,
+        "already_multiple_winning_cells": 144,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 137,
+        "other_or_no_prevention_label": 7
+      },
+      "environment_seed": 210000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 144,
+      "multiple_threat_game_rate": 0.5625,
+      "defense_omissions": 112
+    },
+    {
+      "arm": "step1",
+      "split": "validation",
+      "kind": "fly",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 183,
+          "correct": 92,
+          "accuracy": 0.5027322404371585
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 284,
+          "correct": 125,
+          "accuracy": 0.44014084507042256
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 91,
+        "already_multiple_winning_cells": 165,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 157,
+        "other_or_no_prevention_label": 8
+      },
+      "environment_seed": 210000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 165,
+      "multiple_threat_game_rate": 0.64453125,
+      "defense_omissions": 91
+    },
+    {
+      "arm": "step1",
+      "split": "validation",
+      "kind": "gru",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 217,
+          "correct": 133,
+          "accuracy": 0.6129032258064516
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 313,
+          "correct": 148,
+          "accuracy": 0.4728434504792332
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 84,
+        "already_multiple_winning_cells": 172,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 163,
+        "other_or_no_prevention_label": 9
+      },
+      "environment_seed": 210000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 172,
+      "multiple_threat_game_rate": 0.671875,
+      "defense_omissions": 84
+    },
+    {
+      "arm": "step2",
+      "split": "validation",
+      "kind": "fly",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 173,
+          "correct": 67,
+          "accuracy": 0.3872832369942196
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 218,
+          "correct": 68,
+          "accuracy": 0.3119266055045872
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 106,
+        "already_multiple_winning_cells": 150,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 150,
+        "other_or_no_prevention_label": 0
+      },
+      "environment_seed": 210000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 150,
+      "multiple_threat_game_rate": 0.5859375,
+      "defense_omissions": 106
+    },
+    {
+      "arm": "step2",
+      "split": "validation",
+      "kind": "gru",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 157,
+          "correct": 53,
+          "accuracy": 0.3375796178343949
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 215,
+          "correct": 66,
+          "accuracy": 0.30697674418604654
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 104,
+        "already_multiple_winning_cells": 152,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 149,
+        "other_or_no_prevention_label": 3
+      },
+      "environment_seed": 210000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 152,
+      "multiple_threat_game_rate": 0.59375,
+      "defense_omissions": 104
+    },
+    {
+      "arm": "baseline",
+      "split": "test",
+      "kind": "fly",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 214,
+          "correct": 122,
+          "accuracy": 0.5700934579439252
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 343,
+          "correct": 179,
+          "accuracy": 0.521865889212828
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 92,
+        "already_multiple_winning_cells": 164,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 158,
+        "other_or_no_prevention_label": 6
+      },
+      "environment_seed": 211000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 164,
+      "multiple_threat_game_rate": 0.640625,
+      "defense_omissions": 92
+    },
+    {
+      "arm": "baseline",
+      "split": "test",
+      "kind": "gru",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 259,
+          "correct": 145,
+          "accuracy": 0.5598455598455598
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 385,
+          "correct": 248,
+          "accuracy": 0.6441558441558441
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 114,
+        "already_multiple_winning_cells": 142,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 136,
+        "other_or_no_prevention_label": 6
+      },
+      "environment_seed": 211000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 142,
+      "multiple_threat_game_rate": 0.5546875,
+      "defense_omissions": 114
+    },
+    {
+      "arm": "step1",
+      "split": "test",
+      "kind": "fly",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 207,
+          "correct": 121,
+          "accuracy": 0.5845410628019324
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 294,
+          "correct": 127,
+          "accuracy": 0.43197278911564624
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 86,
+        "already_multiple_winning_cells": 170,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 166,
+        "other_or_no_prevention_label": 4
+      },
+      "environment_seed": 211000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 170,
+      "multiple_threat_game_rate": 0.6640625,
+      "defense_omissions": 86
+    },
+    {
+      "arm": "step1",
+      "split": "test",
+      "kind": "gru",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 229,
+          "correct": 144,
+          "accuracy": 0.62882096069869
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 335,
+          "correct": 169,
+          "accuracy": 0.5044776119402985
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 85,
+        "already_multiple_winning_cells": 171,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 163,
+        "other_or_no_prevention_label": 8
+      },
+      "environment_seed": 211000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 171,
+      "multiple_threat_game_rate": 0.66796875,
+      "defense_omissions": 85
+    },
+    {
+      "arm": "step2",
+      "split": "test",
+      "kind": "fly",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 162,
+          "correct": 63,
+          "accuracy": 0.3888888888888889
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 228,
+          "correct": 72,
+          "accuracy": 0.3157894736842105
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 99,
+        "already_multiple_winning_cells": 157,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 156,
+        "other_or_no_prevention_label": 1
+      },
+      "environment_seed": 211000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 157,
+      "multiple_threat_game_rate": 0.61328125,
+      "defense_omissions": 99
+    },
+    {
+      "arm": "step2",
+      "split": "test",
+      "kind": "gru",
+      "seed": 4810,
+      "games": 256,
+      "wins": 0,
+      "losses": 256,
+      "draws": 0,
+      "tactical_decisions": {
+        "win": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "block": {
+          "positions": 165,
+          "correct": 64,
+          "accuracy": 0.3878787878787879
+        },
+        "create_fork": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_fork": {
+          "positions": 231,
+          "correct": 77,
+          "accuracy": 0.3333333333333333
+        },
+        "create_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "prevent_forcing_chain": {
+          "positions": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      },
+      "terminal_loss_causes": {
+        "missed_unique_block": 101,
+        "already_multiple_winning_cells": 155,
+        "other": 0
+      },
+      "preceding_turn_of_multiple_threat_losses": {
+        "missed_prevent_fork": 154,
+        "other_or_no_prevention_label": 1
+      },
+      "environment_seed": 211000481,
+      "actual_safe_forks_created": 0,
+      "actual_safe_forks_per_game": 0.0,
+      "games_reaching_multiple_threat": 155,
+      "multiple_threat_game_rate": 0.60546875,
+      "defense_omissions": 101
+    }
+  ],
+  "midgames": [
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 87,
+      "wins": 89,
+      "within_horizon_wins": 87,
+      "draws": 0,
+      "win_rate": 0.6953125,
+      "within_horizon_win_rate": 0.6796875
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 54,
+      "wins": 54,
+      "within_horizon_wins": 54,
+      "draws": 0,
+      "win_rate": 0.84375,
+      "within_horizon_win_rate": 0.84375
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 33,
+      "wins": 35,
+      "within_horizon_wins": 33,
+      "draws": 0,
+      "win_rate": 0.546875,
+      "within_horizon_win_rate": 0.515625
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 90,
+      "wins": 51,
+      "within_horizon_wins": 50,
+      "draws": 0,
+      "win_rate": 0.3984375,
+      "within_horizon_win_rate": 0.390625
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 18,
+      "wins": 7,
+      "within_horizon_wins": 7,
+      "draws": 0,
+      "win_rate": 0.21875,
+      "within_horizon_win_rate": 0.21875
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 19,
+      "within_horizon_wins": 19,
+      "draws": 0,
+      "win_rate": 0.59375,
+      "within_horizon_win_rate": 0.59375
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 25,
+      "wins": 18,
+      "within_horizon_wins": 17,
+      "draws": 0,
+      "win_rate": 0.5625,
+      "within_horizon_win_rate": 0.53125
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 15,
+      "wins": 7,
+      "within_horizon_wins": 7,
+      "draws": 0,
+      "win_rate": 0.21875,
+      "within_horizon_win_rate": 0.21875
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 97,
+      "wins": 5,
+      "within_horizon_wins": 3,
+      "draws": 0,
+      "win_rate": 0.0390625,
+      "within_horizon_win_rate": 0.0234375
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 2,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 0,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.0,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 16,
+      "wins": 0,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.0,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 24,
+      "wins": 3,
+      "within_horizon_wins": 3,
+      "draws": 0,
+      "win_rate": 0.09375,
+      "within_horizon_win_rate": 0.09375
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 93,
+      "wins": 100,
+      "within_horizon_wins": 93,
+      "draws": 0,
+      "win_rate": 0.78125,
+      "within_horizon_win_rate": 0.7265625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 56,
+      "wins": 57,
+      "within_horizon_wins": 56,
+      "draws": 0,
+      "win_rate": 0.890625,
+      "within_horizon_win_rate": 0.875
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 37,
+      "wins": 43,
+      "within_horizon_wins": 37,
+      "draws": 0,
+      "win_rate": 0.671875,
+      "within_horizon_win_rate": 0.578125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 93,
+      "wins": 65,
+      "within_horizon_wins": 61,
+      "draws": 0,
+      "win_rate": 0.5078125,
+      "within_horizon_win_rate": 0.4765625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 18,
+      "wins": 13,
+      "within_horizon_wins": 12,
+      "draws": 0,
+      "win_rate": 0.40625,
+      "within_horizon_win_rate": 0.375
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 20,
+      "within_horizon_wins": 20,
+      "draws": 0,
+      "win_rate": 0.625,
+      "within_horizon_win_rate": 0.625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 25,
+      "wins": 20,
+      "within_horizon_wins": 18,
+      "draws": 0,
+      "win_rate": 0.625,
+      "within_horizon_win_rate": 0.5625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 18,
+      "wins": 12,
+      "within_horizon_wins": 11,
+      "draws": 0,
+      "win_rate": 0.375,
+      "within_horizon_win_rate": 0.34375
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 102,
+      "wins": 8,
+      "within_horizon_wins": 7,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.0546875
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 27,
+      "wins": 2,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 2,
+      "within_horizon_wins": 2,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.0625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 19,
+      "wins": 1,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.03125,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 26,
+      "wins": 3,
+      "within_horizon_wins": 3,
+      "draws": 0,
+      "win_rate": 0.09375,
+      "within_horizon_win_rate": 0.09375
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 102,
+      "wins": 105,
+      "within_horizon_wins": 102,
+      "draws": 0,
+      "win_rate": 0.8203125,
+      "within_horizon_win_rate": 0.796875
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 57,
+      "wins": 57,
+      "within_horizon_wins": 57,
+      "draws": 0,
+      "win_rate": 0.890625,
+      "within_horizon_win_rate": 0.890625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 45,
+      "wins": 48,
+      "within_horizon_wins": 45,
+      "draws": 0,
+      "win_rate": 0.75,
+      "within_horizon_win_rate": 0.703125
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 99,
+      "wins": 79,
+      "within_horizon_wins": 77,
+      "draws": 0,
+      "win_rate": 0.6171875,
+      "within_horizon_win_rate": 0.6015625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 21,
+      "wins": 17,
+      "within_horizon_wins": 16,
+      "draws": 0,
+      "win_rate": 0.53125,
+      "within_horizon_win_rate": 0.5
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 27,
+      "within_horizon_wins": 27,
+      "draws": 0,
+      "win_rate": 0.84375,
+      "within_horizon_win_rate": 0.84375
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 22,
+      "within_horizon_wins": 21,
+      "draws": 0,
+      "win_rate": 0.6875,
+      "within_horizon_win_rate": 0.65625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 18,
+      "wins": 13,
+      "within_horizon_wins": 13,
+      "draws": 0,
+      "win_rate": 0.40625,
+      "within_horizon_win_rate": 0.40625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 107,
+      "wins": 15,
+      "within_horizon_wins": 14,
+      "draws": 0,
+      "win_rate": 0.1171875,
+      "within_horizon_win_rate": 0.109375
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 3,
+      "within_horizon_wins": 2,
+      "draws": 0,
+      "win_rate": 0.09375,
+      "within_horizon_win_rate": 0.0625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 5,
+      "within_horizon_wins": 5,
+      "draws": 0,
+      "win_rate": 0.15625,
+      "within_horizon_win_rate": 0.15625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 20,
+      "wins": 1,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.03125,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 6,
+      "within_horizon_wins": 6,
+      "draws": 0,
+      "win_rate": 0.1875,
+      "within_horizon_win_rate": 0.1875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 105,
+      "wins": 109,
+      "within_horizon_wins": 105,
+      "draws": 0,
+      "win_rate": 0.8515625,
+      "within_horizon_win_rate": 0.8203125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 59,
+      "wins": 60,
+      "within_horizon_wins": 59,
+      "draws": 0,
+      "win_rate": 0.9375,
+      "within_horizon_win_rate": 0.921875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 46,
+      "wins": 49,
+      "within_horizon_wins": 46,
+      "draws": 0,
+      "win_rate": 0.765625,
+      "within_horizon_win_rate": 0.71875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 101,
+      "wins": 85,
+      "within_horizon_wins": 83,
+      "draws": 0,
+      "win_rate": 0.6640625,
+      "within_horizon_win_rate": 0.6484375
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 20,
+      "wins": 17,
+      "within_horizon_wins": 16,
+      "draws": 0,
+      "win_rate": 0.53125,
+      "within_horizon_win_rate": 0.5
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 30,
+      "within_horizon_wins": 30,
+      "draws": 0,
+      "win_rate": 0.9375,
+      "within_horizon_win_rate": 0.9375
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 24,
+      "within_horizon_wins": 23,
+      "draws": 0,
+      "win_rate": 0.75,
+      "within_horizon_win_rate": 0.71875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 21,
+      "wins": 14,
+      "within_horizon_wins": 14,
+      "draws": 0,
+      "win_rate": 0.4375,
+      "within_horizon_win_rate": 0.4375
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 106,
+      "wins": 21,
+      "within_horizon_wins": 18,
+      "draws": 0,
+      "win_rate": 0.1640625,
+      "within_horizon_win_rate": 0.140625
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 26,
+      "wins": 6,
+      "within_horizon_wins": 4,
+      "draws": 0,
+      "win_rate": 0.1875,
+      "within_horizon_win_rate": 0.125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 6,
+      "within_horizon_wins": 6,
+      "draws": 0,
+      "win_rate": 0.1875,
+      "within_horizon_win_rate": 0.1875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 21,
+      "wins": 2,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 7,
+      "within_horizon_wins": 7,
+      "draws": 0,
+      "win_rate": 0.21875,
+      "within_horizon_win_rate": 0.21875
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 106,
+      "wins": 114,
+      "within_horizon_wins": 106,
+      "draws": 0,
+      "win_rate": 0.890625,
+      "within_horizon_win_rate": 0.828125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 61,
+      "wins": 62,
+      "within_horizon_wins": 61,
+      "draws": 0,
+      "win_rate": 0.96875,
+      "within_horizon_win_rate": 0.953125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 45,
+      "wins": 52,
+      "within_horizon_wins": 45,
+      "draws": 0,
+      "win_rate": 0.8125,
+      "within_horizon_win_rate": 0.703125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 101,
+      "wins": 95,
+      "within_horizon_wins": 90,
+      "draws": 0,
+      "win_rate": 0.7421875,
+      "within_horizon_win_rate": 0.703125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 20,
+      "wins": 16,
+      "within_horizon_wins": 15,
+      "draws": 0,
+      "win_rate": 0.5,
+      "within_horizon_win_rate": 0.46875
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 30,
+      "within_horizon_wins": 29,
+      "draws": 0,
+      "win_rate": 0.9375,
+      "within_horizon_win_rate": 0.90625
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 27,
+      "within_horizon_wins": 26,
+      "draws": 0,
+      "win_rate": 0.84375,
+      "within_horizon_win_rate": 0.8125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 21,
+      "wins": 22,
+      "within_horizon_wins": 20,
+      "draws": 0,
+      "win_rate": 0.6875,
+      "within_horizon_win_rate": 0.625
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 112,
+      "wins": 39,
+      "within_horizon_wins": 34,
+      "draws": 0,
+      "win_rate": 0.3046875,
+      "within_horizon_win_rate": 0.265625
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 12,
+      "within_horizon_wins": 10,
+      "draws": 0,
+      "win_rate": 0.375,
+      "within_horizon_win_rate": 0.3125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 31,
+      "wins": 11,
+      "within_horizon_wins": 11,
+      "draws": 0,
+      "win_rate": 0.34375,
+      "within_horizon_win_rate": 0.34375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 24,
+      "wins": 3,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.09375,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 13,
+      "within_horizon_wins": 12,
+      "draws": 0,
+      "win_rate": 0.40625,
+      "within_horizon_win_rate": 0.375
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 107,
+      "wins": 114,
+      "within_horizon_wins": 107,
+      "draws": 0,
+      "win_rate": 0.890625,
+      "within_horizon_win_rate": 0.8359375
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 61,
+      "wins": 62,
+      "within_horizon_wins": 61,
+      "draws": 0,
+      "win_rate": 0.96875,
+      "within_horizon_win_rate": 0.953125
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 46,
+      "wins": 52,
+      "within_horizon_wins": 46,
+      "draws": 0,
+      "win_rate": 0.8125,
+      "within_horizon_win_rate": 0.71875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 103,
+      "wins": 96,
+      "within_horizon_wins": 92,
+      "draws": 0,
+      "win_rate": 0.75,
+      "within_horizon_win_rate": 0.71875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 22,
+      "wins": 17,
+      "within_horizon_wins": 16,
+      "draws": 0,
+      "win_rate": 0.53125,
+      "within_horizon_win_rate": 0.5
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 31,
+      "within_horizon_wins": 31,
+      "draws": 0,
+      "win_rate": 0.96875,
+      "within_horizon_win_rate": 0.96875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 27,
+      "within_horizon_wins": 26,
+      "draws": 0,
+      "win_rate": 0.84375,
+      "within_horizon_win_rate": 0.8125
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 21,
+      "wins": 21,
+      "within_horizon_wins": 19,
+      "draws": 0,
+      "win_rate": 0.65625,
+      "within_horizon_win_rate": 0.59375
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 113,
+      "wins": 42,
+      "within_horizon_wins": 38,
+      "draws": 0,
+      "win_rate": 0.328125,
+      "within_horizon_win_rate": 0.296875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 28,
+      "wins": 11,
+      "within_horizon_wins": 10,
+      "draws": 0,
+      "win_rate": 0.34375,
+      "within_horizon_win_rate": 0.3125
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 31,
+      "wins": 13,
+      "within_horizon_wins": 13,
+      "draws": 0,
+      "win_rate": 0.40625,
+      "within_horizon_win_rate": 0.40625
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 25,
+      "wins": 4,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.125,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 14,
+      "within_horizon_wins": 14,
+      "draws": 0,
+      "win_rate": 0.4375,
+      "within_horizon_win_rate": 0.4375
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 92,
+      "wins": 93,
+      "within_horizon_wins": 92,
+      "draws": 0,
+      "win_rate": 0.7265625,
+      "within_horizon_win_rate": 0.71875
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 53,
+      "wins": 53,
+      "within_horizon_wins": 53,
+      "draws": 0,
+      "win_rate": 0.828125,
+      "within_horizon_win_rate": 0.828125
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 39,
+      "wins": 40,
+      "within_horizon_wins": 39,
+      "draws": 0,
+      "win_rate": 0.625,
+      "within_horizon_win_rate": 0.609375
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 89,
+      "wins": 51,
+      "within_horizon_wins": 49,
+      "draws": 0,
+      "win_rate": 0.3984375,
+      "within_horizon_win_rate": 0.3828125
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 15,
+      "wins": 8,
+      "within_horizon_wins": 7,
+      "draws": 0,
+      "win_rate": 0.25,
+      "within_horizon_win_rate": 0.21875
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 22,
+      "within_horizon_wins": 21,
+      "draws": 0,
+      "win_rate": 0.6875,
+      "within_horizon_win_rate": 0.65625
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 16,
+      "within_horizon_wins": 16,
+      "draws": 0,
+      "win_rate": 0.5,
+      "within_horizon_win_rate": 0.5
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 12,
+      "wins": 5,
+      "within_horizon_wins": 5,
+      "draws": 0,
+      "win_rate": 0.15625,
+      "within_horizon_win_rate": 0.15625
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 103,
+      "wins": 7,
+      "within_horizon_wins": 5,
+      "draws": 0,
+      "win_rate": 0.0546875,
+      "within_horizon_win_rate": 0.0390625
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 25,
+      "wins": 1,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.03125,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 1,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.03125,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 20,
+      "wins": 1,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.03125,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 26,
+      "wins": 4,
+      "within_horizon_wins": 3,
+      "draws": 0,
+      "win_rate": 0.125,
+      "within_horizon_win_rate": 0.09375
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 90,
+      "wins": 93,
+      "within_horizon_wins": 90,
+      "draws": 0,
+      "win_rate": 0.7265625,
+      "within_horizon_win_rate": 0.703125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 53,
+      "wins": 54,
+      "within_horizon_wins": 53,
+      "draws": 0,
+      "win_rate": 0.84375,
+      "within_horizon_win_rate": 0.828125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 37,
+      "wins": 39,
+      "within_horizon_wins": 37,
+      "draws": 0,
+      "win_rate": 0.609375,
+      "within_horizon_win_rate": 0.578125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 93,
+      "wins": 54,
+      "within_horizon_wins": 51,
+      "draws": 0,
+      "win_rate": 0.421875,
+      "within_horizon_win_rate": 0.3984375
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 17,
+      "wins": 9,
+      "within_horizon_wins": 8,
+      "draws": 0,
+      "win_rate": 0.28125,
+      "within_horizon_win_rate": 0.25
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 22,
+      "within_horizon_wins": 21,
+      "draws": 0,
+      "win_rate": 0.6875,
+      "within_horizon_win_rate": 0.65625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 17,
+      "within_horizon_wins": 16,
+      "draws": 0,
+      "win_rate": 0.53125,
+      "within_horizon_win_rate": 0.5
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 14,
+      "wins": 6,
+      "within_horizon_wins": 6,
+      "draws": 0,
+      "win_rate": 0.1875,
+      "within_horizon_win_rate": 0.1875
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 106,
+      "wins": 10,
+      "within_horizon_wins": 8,
+      "draws": 0,
+      "win_rate": 0.078125,
+      "within_horizon_win_rate": 0.0625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 26,
+      "wins": 2,
+      "within_horizon_wins": 1,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.03125
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 2,
+      "within_horizon_wins": 2,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.0625
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 21,
+      "wins": 1,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.03125,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 27,
+      "wins": 5,
+      "within_horizon_wins": 5,
+      "draws": 0,
+      "win_rate": 0.15625,
+      "within_horizon_win_rate": 0.15625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 97,
+      "wins": 101,
+      "within_horizon_wins": 97,
+      "draws": 0,
+      "win_rate": 0.7890625,
+      "within_horizon_win_rate": 0.7578125
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 56,
+      "wins": 57,
+      "within_horizon_wins": 56,
+      "draws": 0,
+      "win_rate": 0.890625,
+      "within_horizon_win_rate": 0.875
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 41,
+      "wins": 44,
+      "within_horizon_wins": 41,
+      "draws": 0,
+      "win_rate": 0.6875,
+      "within_horizon_win_rate": 0.640625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 98,
+      "wins": 69,
+      "within_horizon_wins": 68,
+      "draws": 0,
+      "win_rate": 0.5390625,
+      "within_horizon_win_rate": 0.53125
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 22,
+      "wins": 13,
+      "within_horizon_wins": 13,
+      "draws": 0,
+      "win_rate": 0.40625,
+      "within_horizon_win_rate": 0.40625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 26,
+      "within_horizon_wins": 26,
+      "draws": 0,
+      "win_rate": 0.8125,
+      "within_horizon_win_rate": 0.8125
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 21,
+      "within_horizon_wins": 21,
+      "draws": 0,
+      "win_rate": 0.65625,
+      "within_horizon_win_rate": 0.65625
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 14,
+      "wins": 9,
+      "within_horizon_wins": 8,
+      "draws": 0,
+      "win_rate": 0.28125,
+      "within_horizon_win_rate": 0.25
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 113,
+      "wins": 21,
+      "within_horizon_wins": 19,
+      "draws": 0,
+      "win_rate": 0.1640625,
+      "within_horizon_win_rate": 0.1484375
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 27,
+      "wins": 3,
+      "within_horizon_wins": 3,
+      "draws": 0,
+      "win_rate": 0.09375,
+      "within_horizon_win_rate": 0.09375
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 7,
+      "within_horizon_wins": 6,
+      "draws": 0,
+      "win_rate": 0.21875,
+      "within_horizon_win_rate": 0.1875
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 25,
+      "wins": 1,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.03125,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 10,
+      "within_horizon_wins": 10,
+      "draws": 0,
+      "win_rate": 0.3125,
+      "within_horizon_win_rate": 0.3125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 100,
+      "wins": 105,
+      "within_horizon_wins": 100,
+      "draws": 0,
+      "win_rate": 0.8203125,
+      "within_horizon_win_rate": 0.78125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 58,
+      "wins": 58,
+      "within_horizon_wins": 58,
+      "draws": 0,
+      "win_rate": 0.90625,
+      "within_horizon_win_rate": 0.90625
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 42,
+      "wins": 47,
+      "within_horizon_wins": 42,
+      "draws": 0,
+      "win_rate": 0.734375,
+      "within_horizon_win_rate": 0.65625
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 99,
+      "wins": 75,
+      "within_horizon_wins": 72,
+      "draws": 0,
+      "win_rate": 0.5859375,
+      "within_horizon_win_rate": 0.5625
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 23,
+      "wins": 15,
+      "within_horizon_wins": 15,
+      "draws": 0,
+      "win_rate": 0.46875,
+      "within_horizon_win_rate": 0.46875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 25,
+      "within_horizon_wins": 25,
+      "draws": 0,
+      "win_rate": 0.78125,
+      "within_horizon_win_rate": 0.78125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 24,
+      "within_horizon_wins": 22,
+      "draws": 0,
+      "win_rate": 0.75,
+      "within_horizon_win_rate": 0.6875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 14,
+      "wins": 11,
+      "within_horizon_wins": 10,
+      "draws": 0,
+      "win_rate": 0.34375,
+      "within_horizon_win_rate": 0.3125
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 119,
+      "wins": 28,
+      "within_horizon_wins": 22,
+      "draws": 0,
+      "win_rate": 0.21875,
+      "within_horizon_win_rate": 0.171875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 31,
+      "wins": 7,
+      "within_horizon_wins": 5,
+      "draws": 0,
+      "win_rate": 0.21875,
+      "within_horizon_win_rate": 0.15625
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 7,
+      "within_horizon_wins": 6,
+      "draws": 0,
+      "win_rate": 0.21875,
+      "within_horizon_win_rate": 0.1875
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 27,
+      "wins": 3,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.09375,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 11,
+      "within_horizon_wins": 11,
+      "draws": 0,
+      "win_rate": 0.34375,
+      "within_horizon_win_rate": 0.34375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 103,
+      "wins": 106,
+      "within_horizon_wins": 103,
+      "draws": 0,
+      "win_rate": 0.828125,
+      "within_horizon_win_rate": 0.8046875
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 54,
+      "wins": 55,
+      "within_horizon_wins": 54,
+      "draws": 0,
+      "win_rate": 0.859375,
+      "within_horizon_win_rate": 0.84375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 49,
+      "wins": 51,
+      "within_horizon_wins": 49,
+      "draws": 0,
+      "win_rate": 0.796875,
+      "within_horizon_win_rate": 0.765625
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 100,
+      "wins": 89,
+      "within_horizon_wins": 85,
+      "draws": 0,
+      "win_rate": 0.6953125,
+      "within_horizon_win_rate": 0.6640625
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 20,
+      "wins": 19,
+      "within_horizon_wins": 19,
+      "draws": 0,
+      "win_rate": 0.59375,
+      "within_horizon_win_rate": 0.59375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 27,
+      "within_horizon_wins": 27,
+      "draws": 0,
+      "win_rate": 0.84375,
+      "within_horizon_win_rate": 0.84375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 28,
+      "within_horizon_wins": 25,
+      "draws": 0,
+      "win_rate": 0.875,
+      "within_horizon_win_rate": 0.78125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 18,
+      "wins": 15,
+      "within_horizon_wins": 14,
+      "draws": 0,
+      "win_rate": 0.46875,
+      "within_horizon_win_rate": 0.4375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 118,
+      "wins": 40,
+      "within_horizon_wins": 35,
+      "draws": 0,
+      "win_rate": 0.3125,
+      "within_horizon_win_rate": 0.2734375
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 31,
+      "wins": 12,
+      "within_horizon_wins": 10,
+      "draws": 0,
+      "win_rate": 0.375,
+      "within_horizon_win_rate": 0.3125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 11,
+      "within_horizon_wins": 10,
+      "draws": 0,
+      "win_rate": 0.34375,
+      "within_horizon_win_rate": 0.3125
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 26,
+      "wins": 2,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.0625,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 15,
+      "within_horizon_wins": 15,
+      "draws": 0,
+      "win_rate": 0.46875,
+      "within_horizon_win_rate": 0.46875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "all",
+      "games": 128,
+      "first_correct": 108,
+      "wins": 110,
+      "within_horizon_wins": 108,
+      "draws": 0,
+      "win_rate": 0.859375,
+      "within_horizon_win_rate": 0.84375
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "broken_four",
+      "games": 64,
+      "first_correct": 55,
+      "wins": 56,
+      "within_horizon_wins": 55,
+      "draws": 0,
+      "win_rate": 0.875,
+      "within_horizon_win_rate": 0.859375
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 1,
+      "family": "four",
+      "games": 64,
+      "first_correct": 53,
+      "wins": 54,
+      "within_horizon_wins": 53,
+      "draws": 0,
+      "win_rate": 0.84375,
+      "within_horizon_win_rate": 0.828125
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "all",
+      "games": 128,
+      "first_correct": 103,
+      "wins": 90,
+      "within_horizon_wins": 87,
+      "draws": 0,
+      "win_rate": 0.703125,
+      "within_horizon_win_rate": 0.6796875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "broken_three",
+      "games": 32,
+      "first_correct": 20,
+      "wins": 18,
+      "within_horizon_wins": 17,
+      "draws": 0,
+      "win_rate": 0.5625,
+      "within_horizon_win_rate": 0.53125
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "counterattack",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 28,
+      "within_horizon_wins": 28,
+      "draws": 0,
+      "win_rate": 0.875,
+      "within_horizon_win_rate": 0.875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "cross",
+      "games": 32,
+      "first_correct": 30,
+      "wins": 29,
+      "within_horizon_wins": 27,
+      "draws": 0,
+      "win_rate": 0.90625,
+      "within_horizon_win_rate": 0.84375
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 2,
+      "family": "open_three",
+      "games": 32,
+      "first_correct": 21,
+      "wins": 15,
+      "within_horizon_wins": 15,
+      "draws": 0,
+      "win_rate": 0.46875,
+      "within_horizon_win_rate": 0.46875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "all",
+      "games": 128,
+      "first_correct": 118,
+      "wins": 50,
+      "within_horizon_wins": 45,
+      "draws": 0,
+      "win_rate": 0.390625,
+      "within_horizon_win_rate": 0.3515625
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "broken_chain",
+      "games": 32,
+      "first_correct": 31,
+      "wins": 14,
+      "within_horizon_wins": 12,
+      "draws": 0,
+      "win_rate": 0.4375,
+      "within_horizon_win_rate": 0.375
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "counterattack_chain",
+      "games": 32,
+      "first_correct": 32,
+      "wins": 15,
+      "within_horizon_wins": 15,
+      "draws": 0,
+      "win_rate": 0.46875,
+      "within_horizon_win_rate": 0.46875
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "diagonal_chain",
+      "games": 32,
+      "first_correct": 26,
+      "wins": 3,
+      "within_horizon_wins": 0,
+      "draws": 0,
+      "win_rate": 0.09375,
+      "within_horizon_win_rate": 0.0
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "horizon": 3,
+      "family": "straight_chain",
+      "games": 32,
+      "first_correct": 29,
+      "wins": 18,
+      "within_horizon_wins": 18,
+      "draws": 0,
+      "win_rate": 0.5625,
+      "within_horizon_win_rate": 0.5625
+    }
+  ],
+  "tactical": [
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "validation",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 87,
+          "accuracy": 0.6796875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 90,
+          "accuracy": 0.703125
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 97,
+          "accuracy": 0.7578125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 87,
+          "accuracy": 0.6796875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 90,
+          "accuracy": 0.703125
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 97,
+          "accuracy": 0.7578125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "validation",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 93,
+          "accuracy": 0.7265625
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 93,
+          "accuracy": 0.7265625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 102,
+          "accuracy": 0.796875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 93,
+          "accuracy": 0.7265625
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 93,
+          "accuracy": 0.7265625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 102,
+          "accuracy": 0.796875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "validation",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 102,
+          "accuracy": 0.796875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 99,
+          "accuracy": 0.7734375
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 107,
+          "accuracy": 0.8359375
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 102,
+          "accuracy": 0.796875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 99,
+          "accuracy": 0.7734375
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 107,
+          "accuracy": 0.8359375
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "validation",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 105,
+          "accuracy": 0.8203125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 101,
+          "accuracy": 0.7890625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 106,
+          "accuracy": 0.828125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 105,
+          "accuracy": 0.8203125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 101,
+          "accuracy": 0.7890625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 106,
+          "accuracy": 0.828125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "validation",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 106,
+          "accuracy": 0.828125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 101,
+          "accuracy": 0.7890625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 112,
+          "accuracy": 0.875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 106,
+          "accuracy": 0.828125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 101,
+          "accuracy": 0.7890625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 112,
+          "accuracy": 0.875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "validation",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 107,
+          "accuracy": 0.8359375
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 113,
+          "accuracy": 0.8828125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 107,
+          "accuracy": 0.8359375
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 113,
+          "accuracy": 0.8828125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "baseline",
+      "kind": "fly",
+      "split": "test",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 92,
+          "accuracy": 0.71875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 89,
+          "accuracy": 0.6953125
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 92,
+          "accuracy": 0.71875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 89,
+          "accuracy": 0.6953125
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "baseline",
+      "kind": "gru",
+      "split": "test",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 90,
+          "accuracy": 0.703125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 93,
+          "accuracy": 0.7265625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 106,
+          "accuracy": 0.828125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 90,
+          "accuracy": 0.703125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 93,
+          "accuracy": 0.7265625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 106,
+          "accuracy": 0.828125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step1",
+      "kind": "fly",
+      "split": "test",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 97,
+          "accuracy": 0.7578125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 98,
+          "accuracy": 0.765625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 113,
+          "accuracy": 0.8828125
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 97,
+          "accuracy": 0.7578125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 98,
+          "accuracy": 0.765625
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 113,
+          "accuracy": 0.8828125
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step1",
+      "kind": "gru",
+      "split": "test",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 100,
+          "accuracy": 0.78125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 99,
+          "accuracy": 0.7734375
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 119,
+          "accuracy": 0.9296875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 100,
+          "accuracy": 0.78125
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 99,
+          "accuracy": 0.7734375
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 119,
+          "accuracy": 0.9296875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step2",
+      "kind": "fly",
+      "split": "test",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 100,
+          "accuracy": 0.78125
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 118,
+          "accuracy": 0.921875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 100,
+          "accuracy": 0.78125
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 118,
+          "accuracy": 0.921875
+        },
+        "history_replayed": true
+      }
+    },
+    {
+      "arm": "step2",
+      "kind": "gru",
+      "split": "test",
+      "cold": {
+        "win": {
+          "positions": 128,
+          "correct": 108,
+          "accuracy": 0.84375
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 118,
+          "accuracy": 0.921875
+        },
+        "history_replayed": false
+      },
+      "history": {
+        "win": {
+          "positions": 128,
+          "correct": 108,
+          "accuracy": 0.84375
+        },
+        "create_fork": {
+          "positions": 128,
+          "correct": 103,
+          "accuracy": 0.8046875
+        },
+        "create_forcing_chain": {
+          "positions": 128,
+          "correct": 118,
+          "accuracy": 0.921875
+        },
+        "history_replayed": true
+      }
+    }
+  ]
+}

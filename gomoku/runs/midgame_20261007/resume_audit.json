@@ -1,0 +1,6 @@
+{
+  "checkpoint": "step1/fly_seed4810.pt",
+  "weights_only_load": true,
+  "restored_rng_and_all_environment_state": true,
+  "identical_four_followup_transitions": true
+}

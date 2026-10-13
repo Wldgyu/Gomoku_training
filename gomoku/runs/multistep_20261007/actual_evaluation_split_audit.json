@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "file": "baseline_fly_test_replays.json",
+      "games": 256,
+      "positions": 1926,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    },
+    {
+      "file": "baseline_fly_validation_replays.json",
+      "games": 256,
+      "positions": 1867,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    },
+    {
+      "file": "baseline_gru_test_replays.json",
+      "games": 256,
+      "positions": 1901,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    },
+    {
+      "file": "baseline_gru_validation_replays.json",
+      "games": 256,
+      "positions": 1760,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    },
+    {
+      "file": "multistep_fly_test_replays.json",
+      "games": 256,
+      "positions": 3320,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    },
+    {
+      "file": "multistep_fly_validation_replays.json",
+      "games": 256,
+      "positions": 3163,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    },
+    {
+      "file": "multistep_gru_test_replays.json",
+      "games": 256,
+      "positions": 3288,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    },
+    {
+      "file": "multistep_gru_validation_replays.json",
+      "games": 256,
+      "positions": 3097,
+      "overlap": {
+        "baseline": 0,
+        "multistep": 0
+      }
+    }
+  ],
+  "all_actual_eval_games_disjoint": true
+}

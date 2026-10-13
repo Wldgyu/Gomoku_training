@@ -1,0 +1,11 @@
+{
+  "identical_configuration_except_training_data": true,
+  "final_checkpoints": true,
+  "seed": 4700,
+  "auxiliary_examples_per_model": 153600,
+  "ppo_decisions_per_model": 153600,
+  "models": [
+    "fly",
+    "gru"
+  ]
+}
