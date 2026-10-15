@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6589,
-      "sha256": "448e1ce1f0942103dd0a4561dccdd6d93e8d37e58d6c8aea707815c25be763cf"
+      "bytes": 7191,
+      "sha256": "232de92c8e52189496710a97ac0d19f8f238fd8978e162dc37117c1b4ad0f028"
     },
     {
       "path": "RESEARCH_PROTOCOL.md",
@@ -26,6 +26,11 @@
       "path": "card_followup_protocol.txt",
       "bytes": 2784,
       "sha256": "e0fbd6b3aafd8d4e1eb7b278315d11314b52c1e2e0c94211f32a1acb774de90a"
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "bytes": 2257,
+      "sha256": "ccb716229ee40dcfab68daef4f852cc19fbd95f027c4b79e338f469a6d44d04a"
     },
     {
       "path": "docs/GITHUB_UPLOAD.md",
@@ -11733,7 +11738,7 @@
       "sha256": "d1386be00cbd6d01e2f7318cb05177a445500f7f50e1a7d2a6118e157e8e9017"
     }
   ],
-  "total_included_bytes": 51226419,
+  "total_included_bytes": 51229278,
   "excluded_files_remain_local": true,
   "automatic_github_upload": false,
   "git_metadata_excluded": true,
