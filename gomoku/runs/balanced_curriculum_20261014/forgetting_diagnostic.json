@@ -1,0 +1,53 @@
+{
+  "scope": "Same defense positions and real histories mined from original final evaluation replays; D4 deduplicated, first 128 per model at most; diagnostic only, no training or checkpoint selection",
+  "models": {
+    "fly": {
+      "positions": 128,
+      "correct": {
+        "original": 95,
+        "basic": 105,
+        "forcing": 106
+      },
+      "original_correct_lost_after_basic": 0,
+      "original_correct_lost_after_forcing": 0,
+      "original_wrong_recovered_after_forcing": 11,
+      "basic_correct_lost_after_forcing": 0
+    },
+    "gru": {
+      "positions": 128,
+      "correct": {
+        "original": 97,
+        "basic": 105,
+        "forcing": 107
+      },
+      "original_correct_lost_after_basic": 0,
+      "original_correct_lost_after_forcing": 1,
+      "original_wrong_recovered_after_forcing": 11,
+      "basic_correct_lost_after_forcing": 2
+    },
+    "rnn": {
+      "positions": 128,
+      "correct": {
+        "original": 109,
+        "basic": 114,
+        "forcing": 116
+      },
+      "original_correct_lost_after_basic": 1,
+      "original_correct_lost_after_forcing": 0,
+      "original_wrong_recovered_after_forcing": 7,
+      "basic_correct_lost_after_forcing": 0
+    },
+    "rewired": {
+      "positions": 128,
+      "correct": {
+        "original": 98,
+        "basic": 103,
+        "forcing": 104
+      },
+      "original_correct_lost_after_basic": 1,
+      "original_correct_lost_after_forcing": 1,
+      "original_wrong_recovered_after_forcing": 7,
+      "basic_correct_lost_after_forcing": 1
+    }
+  }
+}

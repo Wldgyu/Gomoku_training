@@ -1,0 +1,155 @@
+{
+  "variant": "atk_q",
+  "openings": 128,
+  "seed": 331000481,
+  "games_per_pair": 256,
+  "pairs": [
+    {
+      "a": "gru",
+      "b": "rnn",
+      "games": 256,
+      "a_wins": 95,
+      "b_wins": 95,
+      "draws": 66,
+      "a_black": {
+        "wins": 75,
+        "losses": 23,
+        "draws": 30
+      },
+      "a_white": {
+        "wins": 20,
+        "losses": 72,
+        "draws": 36
+      },
+      "mean_plies": 61.69140625
+    },
+    {
+      "a": "gru",
+      "b": "rewired",
+      "games": 256,
+      "a_wins": 99,
+      "b_wins": 100,
+      "draws": 57,
+      "a_black": {
+        "wins": 76,
+        "losses": 21,
+        "draws": 31
+      },
+      "a_white": {
+        "wins": 23,
+        "losses": 79,
+        "draws": 26
+      },
+      "mean_plies": 58.80078125
+    },
+    {
+      "a": "gru",
+      "b": "fly",
+      "games": 256,
+      "a_wins": 94,
+      "b_wins": 94,
+      "draws": 68,
+      "a_black": {
+        "wins": 73,
+        "losses": 23,
+        "draws": 32
+      },
+      "a_white": {
+        "wins": 21,
+        "losses": 71,
+        "draws": 36
+      },
+      "mean_plies": 62.5703125
+    },
+    {
+      "a": "rnn",
+      "b": "rewired",
+      "games": 256,
+      "a_wins": 99,
+      "b_wins": 93,
+      "draws": 64,
+      "a_black": {
+        "wins": 65,
+        "losses": 23,
+        "draws": 40
+      },
+      "a_white": {
+        "wins": 34,
+        "losses": 70,
+        "draws": 24
+      },
+      "mean_plies": 62.15234375
+    },
+    {
+      "a": "rnn",
+      "b": "fly",
+      "games": 256,
+      "a_wins": 107,
+      "b_wins": 94,
+      "draws": 55,
+      "a_black": {
+        "wins": 83,
+        "losses": 19,
+        "draws": 26
+      },
+      "a_white": {
+        "wins": 24,
+        "losses": 75,
+        "draws": 29
+      },
+      "mean_plies": 56.453125
+    },
+    {
+      "a": "rewired",
+      "b": "fly",
+      "games": 256,
+      "a_wins": 92,
+      "b_wins": 103,
+      "draws": 61,
+      "a_black": {
+        "wins": 63,
+        "losses": 36,
+        "draws": 29
+      },
+      "a_white": {
+        "wins": 29,
+        "losses": 67,
+        "draws": 32
+      },
+      "mean_plies": 60.765625
+    }
+  ],
+  "table": {
+    "gru": {
+      "win": 288,
+      "draw": 191,
+      "loss": 289,
+      "score": 0.4993489583333333
+    },
+    "rnn": {
+      "win": 301,
+      "draw": 185,
+      "loss": 282,
+      "score": 0.5123697916666666
+    },
+    "rewired": {
+      "win": 285,
+      "draw": 182,
+      "loss": 301,
+      "score": 0.4895833333333333
+    },
+    "fly": {
+      "win": 291,
+      "draw": 184,
+      "loss": 293,
+      "score": 0.4986979166666667
+    }
+  },
+  "checkpoints": {
+    "gru": "gomoku/runs/defense_probe_20261014/scratch_gru_w64x6_atk_q.pt",
+    "rnn": "gomoku/runs/defense_probe_20261014/scratch_rnn_w64x6_atk_q.pt",
+    "rewired": "gomoku/runs/defense_probe_20261014/scratch_rewired_w64x6_atk_q.pt",
+    "fly": "gomoku/runs/defense_probe_20261014/scratch_fly_w64x6_atk_q.pt"
+  },
+  "note": "fixed argmax policies; four-ply openings shared by both colors; fixed rule opponent not used"
+}

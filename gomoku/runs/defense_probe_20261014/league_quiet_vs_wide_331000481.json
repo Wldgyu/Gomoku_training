@@ -1,0 +1,66 @@
+[
+  {
+    "kind": "gru",
+    "quiet_wins": 134,
+    "wide_wins": 33,
+    "draws": 89,
+    "q_black": [
+      80,
+      17,
+      31
+    ],
+    "q_white": [
+      54,
+      16,
+      58
+    ]
+  },
+  {
+    "kind": "rnn",
+    "quiet_wins": 150,
+    "wide_wins": 29,
+    "draws": 77,
+    "q_black": [
+      90,
+      9,
+      29
+    ],
+    "q_white": [
+      60,
+      20,
+      48
+    ]
+  },
+  {
+    "kind": "rewired",
+    "quiet_wins": 139,
+    "wide_wins": 31,
+    "draws": 86,
+    "q_black": [
+      87,
+      14,
+      27
+    ],
+    "q_white": [
+      52,
+      17,
+      59
+    ]
+  },
+  {
+    "kind": "fly",
+    "quiet_wins": 150,
+    "wide_wins": 26,
+    "draws": 80,
+    "q_black": [
+      90,
+      9,
+      29
+    ],
+    "q_white": [
+      60,
+      17,
+      51
+    ]
+  }
+]

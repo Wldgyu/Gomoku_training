@@ -17,7 +17,7 @@ import numpy as np
 import torch
 from torch.nn import functional as F
 
-from .env import LearnerEnv
+from .env import LearnerEnv, force_black_center, policy_action_mask
 from .models import KINDS, Policy, count_parameters, masked_distribution, matched_hidden
 from .tactics import TacticalData
 from .history_aux import HistoryTacticalData
@@ -99,6 +99,7 @@ def train_one(kind: str, seed: int, args: argparse.Namespace) -> dict:
                   if args.tactical_data else None,
                   gamma=0.99, gae_lambda=0.95, ppo_clip=0.2,
                   entropy_coefficient=0.01, value_coefficient=0.5,
+                  opening_policy="black center enforced in sampling and PPO probability mask",
                   observation="full board: own, opponent, last move, black-to-play color",
                   reward="terminal +1/-1, draw 0; no shaping or search; auxiliary tactical labels if configured",
                   initialization=(
@@ -342,6 +343,7 @@ def train_one(kind: str, seed: int, args: argparse.Namespace) -> dict:
             matrix = model.matrix()
             for _ in range(args.rollout):
                 obs_np, legal_np = env.observe()
+                legal_np = policy_action_mask(env.games, env.colors)
                 obs = torch.from_numpy(obs_np).to(device)
                 legal = torch.from_numpy(legal_np).to(device)
                 effective_resets=resets
@@ -354,7 +356,9 @@ def train_one(kind: str, seed: int, args: argparse.Namespace) -> dict:
                 logits, value, next_state = model.step(obs, state, effective_resets, matrix)
                 distribution = masked_distribution(logits, legal)
                 action = distribution.sample()
-                reward_np, done_np, info = env.step(action.cpu().numpy())
+                played = force_black_center(env.games, env.colors, action.detach().cpu().numpy())
+                action = torch.as_tensor(played, device=device)
+                reward_np, done_np, info = env.step(played)
                 observations.append(obs)
                 legal_masks.append(legal)
                 reset_masks.append(resets)

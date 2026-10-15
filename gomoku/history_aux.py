@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from torch.nn import functional as F
 
-from .models import masked_distribution
+from .models import label_set_nll
 from .tactics import TacticalData
 
 CATEGORIES = {1: "win", 2: "block", 3: "create_fork", 4: "prevent_fork",
@@ -164,8 +164,7 @@ class HistoryTacticalData(TacticalData):
             state = model.initial(batch, self.obs.device)
         logits, _, _ = model.step(self.obs[ids], state,
                                   torch.zeros(batch, dtype=torch.bool, device=self.obs.device))
-        probs = masked_distribution(logits, self.legal[ids]).logits
-        return -torch.logsumexp(probs.masked_fill(~self.labels[ids], -torch.inf), dim=1).mean()
+        return label_set_nll(logits, self.legal[ids], self.labels[ids])
 
     @torch.no_grad()
     def evaluate(self, model, history=False):

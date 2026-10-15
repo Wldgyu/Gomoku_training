@@ -3,7 +3,7 @@ import unittest
 import numpy as np
 import torch
 
-from .env import BatchBoard, LearnerEnv, geometry, opponent_actions
+from .env import BatchBoard, LearnerEnv, black_center_action, geometry, opponent_actions
 from .models import Policy, count_parameters, masked_distribution, matched_hidden, parameter_formula
 from .train import advantages
 
@@ -81,6 +81,21 @@ class RulesTests(unittest.TestCase):
             board.place(np.array([cell]), -1)
         action = opponent_actions(board, 1, np.random.default_rng(3), "tactical")
         self.assertEqual(action[0], 4)
+
+    def test_black_first_move_is_the_central_point(self):
+        env = LearnerEnv(2, seed=1, size=12, opponent="tactical")
+        self.assertEqual(black_center_action(12), 65)
+        self.assertEqual(int(env.games.moves[0]), 0)
+        self.assertGreater(int(env.games.moves[1]), 0)
+        white_cell = int(np.flatnonzero(env.games.board[1] == 0)[0])
+        env.step(np.array([0, white_cell]))
+        self.assertEqual(int(env.games.board[0, 65]), 1)
+        self.assertEqual(int(env.games.board[0, 0]), 0)
+        self.assertEqual(int(env.games.board[1, white_cell]), -1)
+        later = int(np.flatnonzero(env.games.board[0] == 0)[0])
+        white_later = int(np.flatnonzero(env.games.board[1] == 0)[0])
+        env.step(np.array([later, white_later]))
+        self.assertEqual(int(env.games.board[0, later]), 1)
 
     def test_terminal_reward_and_color_swap(self):
         env = LearnerEnv(1, seed=3)

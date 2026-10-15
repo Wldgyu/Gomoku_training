@@ -1,0 +1,1185 @@
+{
+  "status": "complete",
+  "counts": {
+    "fly": {
+      "black": 16,
+      "white": 16
+    },
+    "gru": {
+      "black": 16,
+      "white": 16
+    },
+    "rnn": {
+      "black": 16,
+      "white": 16
+    },
+    "rewired": {
+      "black": 16,
+      "white": 16
+    }
+  },
+  "records": 128,
+  "provenance": [
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "14132af835dd925de501bb762dda151c8c58bc93e432a9511e08ab43057ac36d",
+      "action": 54,
+      "evaluation": 775,
+      "seconds": 0.17215859999987515,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "99a6a4d7e65167db8e370abc367648fcd8e8955562788583951660330b3d76c1",
+      "action": 67,
+      "evaluation": null,
+      "seconds": 0.17440529999976206,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "9cb28deb2eac43cf6d75fee3bcb749c084876a0c48e5c21a37e28976d35c3766",
+      "action": 78,
+      "evaluation": 581,
+      "seconds": 0.16605110000000423,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "00470db4709de574e0c4c755958ad99189796e6e9e48b14c1824f7d8b9c34a6d",
+      "action": 52,
+      "evaluation": 505,
+      "seconds": 0.16346160000011878,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "e497e79a4c2dc5486d59ecb7a54b756f6ca5b8d9e7d91332ee9e031a4cdfa0ef",
+      "action": 77,
+      "evaluation": 64,
+      "seconds": 0.17729959999996936,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "2de1b5fe48027d87c0fb81e566836b0ecf4cb3edce666f9fb1a2e157a22f6892",
+      "action": 91,
+      "evaluation": 172,
+      "seconds": 0.18011399999977584,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "2e697da2f5de8d21635e880b098bcbd0441e0eeaaa5de356cfe7e1db5928d9a6",
+      "action": 42,
+      "evaluation": 214,
+      "seconds": 0.18507339999996475,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "5a6009d00bd18bda105d0a269e2916da9fae04dde3e6c4f3266a698059685255",
+      "action": 54,
+      "evaluation": 82,
+      "seconds": 0.1821831000002021,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "3acbc58f28653554b054751e7bc9c5fd2afe63cd65e897c31ac80f75c062e586",
+      "action": 101,
+      "evaluation": -103,
+      "seconds": 0.17681260000017573,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "67bcd9e4e781200e92361504a16e377f0c30615c2e6a34ebd5025c0f19564fcf",
+      "action": 66,
+      "evaluation": 294,
+      "seconds": 0.16585119999990638,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "f6825c90033363b1580121ae530e523706d2dfe342e0b9f8843fac7635640c76",
+      "action": 54,
+      "evaluation": 707,
+      "seconds": 0.17178800000010597,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "b4813caa21fc515576db9725c1716b854985b420da880f31803327584fb82ab2",
+      "action": 54,
+      "evaluation": 946,
+      "seconds": 0.18071499999996377,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "601bc2135f8be88b16af27f3a1b04b84cd22779f30351caf834892c804357873",
+      "action": 52,
+      "evaluation": 475,
+      "seconds": 0.18645680000008724,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "ba0d0a2235df61718fe19b5f7e74b442877df45cf3d99a22fd396ca9df8d2c9b",
+      "action": 79,
+      "evaluation": 947,
+      "seconds": 0.16764899999998306,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "5b1f350b5aac5a6db2f9c671128cad866f22a98bfe15a5ea1cb962bac1bed395",
+      "action": 54,
+      "evaluation": 819,
+      "seconds": 0.18362159999969663,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": 1,
+      "key": "b945bc2d2dde9d7230431e338472ba1aacb91ddce27a6bda58f1c7e1e4efa935",
+      "action": 54,
+      "evaluation": 684,
+      "seconds": 0.1817747000000054,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "8a66087cfd3e706d7f9c870367b5ef7069a9f009e396930ff8bdb0e90f33b395",
+      "action": 55,
+      "evaluation": -346,
+      "seconds": 0.18052829999987807,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "9f3a74eb804459176d7638ea36100e71909f7e176656d8e03430be4cfeee1a7a",
+      "action": 88,
+      "evaluation": -501,
+      "seconds": 0.18510430000014821,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "91b67c27d6f37db7a96d86b50c6fb172b0c05eb0b03cc40c4f5cfc871d0994af",
+      "action": 31,
+      "evaluation": null,
+      "seconds": 0.04566870000007839,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "5513a76a639046509192d902f1d31cef6bcde8af0145e94e6b94702afbf01dc6",
+      "action": 79,
+      "evaluation": 40,
+      "seconds": 0.17592710000008083,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "d8129d829a3c5c5439e8f9d9f1c43b4161a459ec38dd4ec145e247c3b6becc0a",
+      "action": 89,
+      "evaluation": -62,
+      "seconds": 0.17852979999997842,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "42212c2e3614e27bcc982d09127fd27ca679e175c14a3ed5c10e9b142f2b57cb",
+      "action": 75,
+      "evaluation": -61,
+      "seconds": 0.16511119999995572,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "0eb4bac832c11e71a629937dc263a29441c6b5015b6f2ce03cec73230e47460e",
+      "action": 80,
+      "evaluation": 197,
+      "seconds": 0.18219890000000305,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "bfaa620e50ad0c00a3dd382657dd8f0469c97d91e069ede1c47c126c32c983b9",
+      "action": 75,
+      "evaluation": 206,
+      "seconds": 0.176245800000288,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "25072c943bfae8c69d591f3cdb333e0e97846336b49a4e49f5f9b557ad6a7035",
+      "action": 55,
+      "evaluation": -332,
+      "seconds": 0.17201500000010128,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "0ba20500b50b23d321c9501a8270d38a3a7c197fdd7e72165751522ca281a34e",
+      "action": 54,
+      "evaluation": -595,
+      "seconds": 0.18532709999999497,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "2f8641de3f757b2b32630db97db6dd628f34e37f832efabf41630a054cf60ddf",
+      "action": 76,
+      "evaluation": -606,
+      "seconds": 0.1843218999997589,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "cd335cebd29d0aa859bffde026ea9245c325a1211c7070dda9cdf5f0d70702b7",
+      "action": 54,
+      "evaluation": -462,
+      "seconds": 0.18025089999991906,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "ece79c154e2ef7158fb45bfcd7c7d297f8cd6d3154ea90b57546c7d6f29d9fe9",
+      "action": 88,
+      "evaluation": -446,
+      "seconds": 0.18453249999993204,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "f074adddd2355e22876a8a5f162e4de598ec6975e69d85fff81b3b60a014ea70",
+      "action": 76,
+      "evaluation": -528,
+      "seconds": 0.18048840000028576,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "5379130b5145e69ced31e268ae440aa2cc574bd6c9eb8a4beb6e0a42ee88554b",
+      "action": 63,
+      "evaluation": 256,
+      "seconds": 0.18663909999986572,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "fly",
+      "color": -1,
+      "key": "8d8bd6e3f807e487f9574e949e2e07e10badbb5c82f7ab46db352cc9496c2324",
+      "action": 52,
+      "evaluation": 58,
+      "seconds": 0.18021180000005188,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "fe7b3f169e4886c3bef8069e24dca90c391d9835447d2502e54b6f86da87ca2a",
+      "action": 41,
+      "evaluation": 337,
+      "seconds": 0.16248380000024554,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "af62393f8911659a59ea20a6a79e3cddd6daa72803502b4771e9992d32bdb899",
+      "action": 78,
+      "evaluation": -170,
+      "seconds": 0.17552269999987402,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "676491d594bdf76ed59ac7750a9f7f166f1ae61956efef0b4fce7df8f0ed0171",
+      "action": 78,
+      "evaluation": -303,
+      "seconds": 0.18260270000018863,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "618299cb4b673dd143e781a8d3e9f7d487ebf3bc97a0b2efb290ef4d124c154c",
+      "action": 63,
+      "evaluation": 445,
+      "seconds": 0.18327169999975013,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "b6bdee1bb153ae88a52f352254c92b0a9fabf6fc1530f67cd6d18e595c70da02",
+      "action": 56,
+      "evaluation": 74,
+      "seconds": 0.18425519999982498,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "d7cc69f12e6b786e14ad0a3f02d6e0a8803358809002cfe51f66c1713aa716c0",
+      "action": 56,
+      "evaluation": 240,
+      "seconds": 0.1818607999998676,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "ec551997a3b102a5c9d8b5ffd3a076e73db20d408ddc42250a99985e3e0c733e",
+      "action": 43,
+      "evaluation": 453,
+      "seconds": 0.1835464000000684,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "6ed30acbf479fbccc92555afe7d6f3039e23aa1bfc4d5c67e1d6f980e1599a3d",
+      "action": 56,
+      "evaluation": 576,
+      "seconds": 0.18373800000017582,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "87902816d74f65e34ae8f98bd95a3efcf97ad86549f98405f37eac72a0d4c6f6",
+      "action": 56,
+      "evaluation": 449,
+      "seconds": 0.18172649999996793,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "34c8effdadb5c53d00543a24c99b0a482e05800971f611d4ab2a50bf2458149d",
+      "action": 89,
+      "evaluation": -145,
+      "seconds": 0.18195040000000517,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "4d0faaac23d992d2768004bcb00bb948c3bce018e01e02be413fa22b6d073736",
+      "action": 54,
+      "evaluation": 159,
+      "seconds": 0.1843949999997676,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "01eeed5e34dfc8b639eac38e454515919698f1436ef9300ab2dd11f7b54685f2",
+      "action": 100,
+      "evaluation": 112,
+      "seconds": 0.1757737000002635,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "f055435d881d93c160b0b1c17986232f2de1af894ed87cdb6849c0760c2afacf",
+      "action": 43,
+      "evaluation": 622,
+      "seconds": 0.17374060000020108,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "60313c5a5e71d1c61951c4a25641132bc9b189cc40407ff82565cd6f1f105c31",
+      "action": 42,
+      "evaluation": 802,
+      "seconds": 0.18381649999992078,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "b5e698972850447036631fdbc500071c18e75ae84c651b702c2f32df41ea9046",
+      "action": 42,
+      "evaluation": 615,
+      "seconds": 0.1807360000002518,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": 1,
+      "key": "ce714f4d05fcc4aed30c0049043c9ec46e31cc783a21da1e57b12feb2fd83bfc",
+      "action": 42,
+      "evaluation": 457,
+      "seconds": 0.17047679999996035,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "a349e78fcbd5b54a6f670131c6414e0590e56b5f500d06e6bb11390e83be8b5e",
+      "action": 75,
+      "evaluation": 505,
+      "seconds": 0.16529329999957554,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "d84ef117b8d523c79e0090c7f4dc9f0efd22a9b35c063800c1738c2c08ce693d",
+      "action": 42,
+      "evaluation": -163,
+      "seconds": 0.18193890000020474,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "aac4c79d308fff940059f448cf6d49ef1bd9e22687ebdfc9f70decf87b994078",
+      "action": 67,
+      "evaluation": -264,
+      "seconds": 0.18360849999999118,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "cef71192549025838e8cb79098c401c64c534c4c1b64f987dae1e703801a19b3",
+      "action": 55,
+      "evaluation": -501,
+      "seconds": 0.18321459999970102,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "02c2c99d96401dd111661ab1863913661dc7ec4a6867077b78ce6be0457b44c9",
+      "action": 55,
+      "evaluation": -905,
+      "seconds": 0.17994899999985137,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "92717015b48839a3d2bd373ed96920649f0be4c23712a28839d5a6b3617a478b",
+      "action": 76,
+      "evaluation": 120,
+      "seconds": 0.18551960000013423,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "d79bc162ce8e603118e42aab253234753f2a5215083c5f06e21410c589062994",
+      "action": 54,
+      "evaluation": 25,
+      "seconds": 0.17984599999999773,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "9f8f555992e6a0b531477b121592110f0d98320b481b88ddc008955d220385fc",
+      "action": 99,
+      "evaluation": 197,
+      "seconds": 0.18678900000031717,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "35a77c8de9a006c6d4f01d3b24dba8375aa7593c385b4888233ba4f1012e9ad0",
+      "action": 43,
+      "evaluation": -192,
+      "seconds": 0.17395360000000437,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "e641391a5bc94744604abbd059071ca4c30af0202b5f7b276eb946d8f5a0ca8b",
+      "action": 90,
+      "evaluation": -70,
+      "seconds": 0.1716945999996824,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "db55055b0b57dfd55e05ead08f6beee84d46cc9153e604b795257fdc743d54bc",
+      "action": 75,
+      "evaluation": 141,
+      "seconds": 0.18561429999999746,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "9b9355de53e76ceaf4cb8443c223243a6c5d5280d9b6d51561a6d5c985132460",
+      "action": 89,
+      "evaluation": 135,
+      "seconds": 0.1811901000000944,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "7f9a8739a83494245af84917373d502349bb5d171c0ae15654e42d8a333b6a0b",
+      "action": 89,
+      "evaluation": 99,
+      "seconds": 0.18377239999972517,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "a687dd263cd66908e2c25b95465cff2a08637d341db6791843d838c6a1a1c11e",
+      "action": 100,
+      "evaluation": 64,
+      "seconds": 0.18328569999994215,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "9521f0881cde95028a72eb6fa3dbb94e4811564a3947b710f884fa559081d677",
+      "action": 100,
+      "evaluation": -19,
+      "seconds": 0.16943559999981517,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "gru",
+      "color": -1,
+      "key": "d18946d3809956a1a03e15296622819b9fecc19bfb800bb9c3497e9e2e43015b",
+      "action": 52,
+      "evaluation": -97,
+      "seconds": 0.18017969999982597,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "1d506fbef0c8c5da3e1f1b5f3397befdf3895962fe3efb800f5f6a1617d36217",
+      "action": 66,
+      "evaluation": 354,
+      "seconds": 0.17238989999987098,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "b22a2e6c6dbb08ca6e7cbcdc9bc35c63d0f15ff15675023f20b0d456a8a74f79",
+      "action": 66,
+      "evaluation": 595,
+      "seconds": 0.17738939999981085,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "8b11a56c843075cf832b65156a66b9a37428075d35eaf31c703cd614e11a02bc",
+      "action": 66,
+      "evaluation": 519,
+      "seconds": 0.17930519999981698,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "421c40288318db054ee599430887b58385e5e7e0d1005d53a3eaf7c0a7367b30",
+      "action": 53,
+      "evaluation": 2,
+      "seconds": 0.17261350000035236,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "756455415b45f78a8028fd8c9e1b0e3aa5aeda52f0cd4af9e99747129277b378",
+      "action": 88,
+      "evaluation": 88,
+      "seconds": 0.1847357000001466,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "6299a0b7b378edf638369d525c23060b555a0cdb9f2cb33b11fc0df2d92bbba2",
+      "action": 88,
+      "evaluation": 189,
+      "seconds": 0.18300060000001395,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "b7de19cb27f6c3694e231c04f6adaa4575cca1a3dd66a2d0ae2c337c47b50b09",
+      "action": 88,
+      "evaluation": -21,
+      "seconds": 0.18353350000006685,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "446004870ff02e0a7624d971426719f57d9e00cb00be748eed8898e2e9fb8d1c",
+      "action": 88,
+      "evaluation": 4,
+      "seconds": 0.18233650000001944,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "b9b24a1a24712e08c38cfec80d6add89679501a8b760b874a773f74093102cbf",
+      "action": 30,
+      "evaluation": 110,
+      "seconds": 0.1833904000000075,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "050a0bbe28af72ee1aeecd7a89afd2fe3b88d442dd1151546b5da6994d0750c4",
+      "action": 42,
+      "evaluation": 207,
+      "seconds": 0.19957209999984116,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "ac9f1aedce129ae0ecc6e216c49a6b82a38529d4e0bfa88dffe0fa7dfb8ebcb8",
+      "action": 32,
+      "evaluation": null,
+      "seconds": 0.034932900000058,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "3c14a3f674014ca418f61e155c8d99b8cc8adbdfe0c86237af27ddec7805a475",
+      "action": 43,
+      "evaluation": 122,
+      "seconds": 0.16734100000030594,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "a011662885f182bcb71c41f946d1072549f298dd834c1457fb6b49fb873fb6b7",
+      "action": 29,
+      "evaluation": null,
+      "seconds": 0.036353800000142655,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "9f9cdb501086b01727431aee35e2f99b72b96199758e7acde9ea4919114e082a",
+      "action": 77,
+      "evaluation": 43,
+      "seconds": 0.17597699999987526,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "58713506039bc64ebeace4d78d446bd2d508e8486b1a280ad47f9b71f87fa8ae",
+      "action": 68,
+      "evaluation": -11,
+      "seconds": 0.18454109999993307,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": 1,
+      "key": "5a545a152e2a0f4bbb200de83485746fc01f9a513aa87bb6bd07e9f61c6e3fc6",
+      "action": 64,
+      "evaluation": 656,
+      "seconds": 0.17513730000018768,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "b9176c8f2475beced297d127168d1e099aee192748299b31cda7f134cf53c1e8",
+      "action": 66,
+      "evaluation": -22,
+      "seconds": 0.17394859999967593,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "50b5f0065a424810bc5069e20a560729e2b90791ce6f8caa2b2121d6972eff5c",
+      "action": 54,
+      "evaluation": 58,
+      "seconds": 0.1820356999996875,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "8826ce843765584aeda5f4a6fc2f6016cb0d496e84fb331849ee2ff5dcc214c0",
+      "action": 42,
+      "evaluation": -52,
+      "seconds": 0.1824323999999251,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "7fc8af90dc103993c76474a2a55095e28b26b09cc9796b0ee7065c3194591cee",
+      "action": 88,
+      "evaluation": 90,
+      "seconds": 0.18475760000001173,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "64f7688af60555e5fcc5947cb7cd4ba64bf6bfa1e3c058727a1e6e1d35b87e73",
+      "action": 75,
+      "evaluation": 20,
+      "seconds": 0.1813177000003634,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "4803dd5e58674d3022cfadb396f480d2266837413361ff5a67a6f8666cd9d64c",
+      "action": 75,
+      "evaluation": -6,
+      "seconds": 0.18395749999990585,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "aa3638789ece66d1a63d55865b8d9d68c54c7fddfe59a72783546cf08c20795a",
+      "action": 87,
+      "evaluation": -183,
+      "seconds": 0.18252639999991516,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "649a5823328caf9f4de86f9eed49a69ffd2f736a6a2fac1786db8af1f1bab86a",
+      "action": 42,
+      "evaluation": -513,
+      "seconds": 0.177170599999954,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "c56a07d576003b52c7b53189cf09a3d993638fdf62feb74a2937e8711ad37f46",
+      "action": 75,
+      "evaluation": -363,
+      "seconds": 0.16605530000015278,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "01e42a404c05e27d4a341c712c3547a15aef4860c631dca351dd22d34b76b935",
+      "action": 56,
+      "evaluation": null,
+      "seconds": 0.010061400000267895,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "78dde558592ef06cb3b3da46a221c09c67a76daa307b5cd4b4179ca1966df62d",
+      "action": 40,
+      "evaluation": -411,
+      "seconds": 0.04178399999955218,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "8eee4e6ee961202b883ef25da2a10436cdcfff0af418a35fe4fe15be46d2bdd4",
+      "action": 28,
+      "evaluation": null,
+      "seconds": 0.017353499999899213,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "6e61f1e7b78bb036909dd79fc950bda4ced0a8b256aed09c051bdd1e032a1639",
+      "action": 79,
+      "evaluation": 280,
+      "seconds": 0.18589320000000953,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "e80ae8f62dc1de009a6ee8be24d10c896eccae6e79f62d0f504df3402eab87ad",
+      "action": 78,
+      "evaluation": 622,
+      "seconds": 0.17627670000001672,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "e2fa1c16c6d29965f6b22eb7ee656eaa1c8d8d1aa676868a52a8ba48736dfafd",
+      "action": 89,
+      "evaluation": null,
+      "seconds": 0.1748843999998826,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rnn",
+      "color": -1,
+      "key": "48cdeede1d2e75eff4a652f53ab6ef1b923ac1b22a930992e10e0ad786c1c209",
+      "action": 87,
+      "evaluation": null,
+      "seconds": 0.17915929999981017,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "f05f8a0ceb0f66d2b7cc778db03373d75196843933b35d4de8b960a685f2c67c",
+      "action": 76,
+      "evaluation": 173,
+      "seconds": 0.18730340000001888,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "2c703ff4896ad074df4ede2499a4c0e1f75288298926d4d4decd674600eb5571",
+      "action": 76,
+      "evaluation": 331,
+      "seconds": 0.18341810000038095,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "1a658adad0d148a83522494774312c4d15e7f1441630835a5d5ad0eba6e11609",
+      "action": 77,
+      "evaluation": 789,
+      "seconds": 0.18386680000003253,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "a8432c5552536a97b032ecb5de5ba943597585864c9f9d328f9074be79f538f0",
+      "action": 77,
+      "evaluation": null,
+      "seconds": 0.1762221000003592,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "0f0049be4fdb5822c3754e95b41cb711d3c3e65dffead92770a88360ae2a93c0",
+      "action": 54,
+      "evaluation": -6,
+      "seconds": 0.1744410000001153,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "f0ec63f6fa3f4176857783b0f7d4c883edd79bbc845ec62cf82b9f6aaeda63fe",
+      "action": 76,
+      "evaluation": 794,
+      "seconds": 0.17761269999982687,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "967bff9158c1b7402695015fa75f83aae38c4fc9e634fb47876512fdb5b5bd1d",
+      "action": 28,
+      "evaluation": 641,
+      "seconds": 0.18522540000003573,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "c8722dba15a6cd138341709cf8a00c9ed4302ab4f4521bca97f4d6790ce5c9cb",
+      "action": 28,
+      "evaluation": 409,
+      "seconds": 0.16784830000005968,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "d427dfb7ee01799dc7477b47a6e81e5ea33a6d0a3ab0945cb832e90370e61fae",
+      "action": 75,
+      "evaluation": 472,
+      "seconds": 0.1670404999999846,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "1928f3e5a6f90069337f001bb1b83c64c8af933cf807430c3828f02a8f9757b4",
+      "action": 63,
+      "evaluation": 795,
+      "seconds": 0.18447550000018964,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "49c80276353e166496afaa8581b11bf4cef9c4b2ff796accfa8bf4b39ab6ad60",
+      "action": 63,
+      "evaluation": 1012,
+      "seconds": 0.17992400000002817,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "7037052bea6087cb916dd79dda469528201fa19078c96710ee869cdaf9312382",
+      "action": 64,
+      "evaluation": 126,
+      "seconds": 0.18003889999999956,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "f878f1a06612eb13b0a36fe2544c986e596b2481bbdbbe7c2e81cd473240b913",
+      "action": 42,
+      "evaluation": 122,
+      "seconds": 0.184869499999877,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "4bf73b2bac68306fc49a96d07d4d0be12cc8caf5d621dbf48fd1afee990c51b2",
+      "action": 75,
+      "evaluation": null,
+      "seconds": 0.0467079999998532,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "5b0fe68d1ea39ab715d8243341ff38ab0d8b8e2c719864250af6c0951860bcd9",
+      "action": 75,
+      "evaluation": 424,
+      "seconds": 0.1856616000000031,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": 1,
+      "key": "9027bba1ee58726bec7e150689bbfb530e5b468c40c67f3ad56c7356240ff6a9",
+      "action": 54,
+      "evaluation": 81,
+      "seconds": 0.1858935999998721,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "4d9a88f474e0c78edec1575213f832d8261d89b805df32846b812ee979c4a5b8",
+      "action": 40,
+      "evaluation": 200,
+      "seconds": 0.18233520000012504,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "183dceb9198005915e0865cffb142811ebf4483c0558df5c70cbf6cabe4c337d",
+      "action": 40,
+      "evaluation": 55,
+      "seconds": 0.1819141999999374,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "1a3f2e43607d7b46e09e32789550c78488aa0659a44829a4f6969b3e29b16c14",
+      "action": 77,
+      "evaluation": -342,
+      "seconds": 0.18003420000013648,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "f48d12f5428358760efcbc45f2c16698da17ebd85d5962f6b60f9af368ec2826",
+      "action": 54,
+      "evaluation": 37,
+      "seconds": 0.1864327999996931,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "79e1631325c41c3ed7ca6315faafb57ee32354dfd6f5e96cb0eabbe720a97a14",
+      "action": 40,
+      "evaluation": 404,
+      "seconds": 0.1760287000001881,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "04d37e9e81586d272219f1b6d3ac2eb8837177c2f42bb71c11f83ff99e85d719",
+      "action": 54,
+      "evaluation": 283,
+      "seconds": 0.1693451000001005,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "49a9efeba41a48101cc2a8ee1fac55010d6c860439b03e46a2be02c76227d960",
+      "action": 54,
+      "evaluation": -806,
+      "seconds": 0.18590199999971446,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "e40ab7e3724c594ef56758b5cde5fa4f495bf28173d793b3e11eb0e1207a2c62",
+      "action": 42,
+      "evaluation": 530,
+      "seconds": 0.18337789999986853,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "caa29f3cbcbd45d49218319860c210e354d0cf4bef0daa8bb4a317f763d40372",
+      "action": 63,
+      "evaluation": 131,
+      "seconds": 0.18374189999985902,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "f3a30b957aa31927f3ee29ab82978293f26c0eefed3fa14be638fa69dea246c6",
+      "action": 64,
+      "evaluation": 47,
+      "seconds": 0.18124319999969885,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "7b23d134c0adecb529fb2f63fd0f47e9ab93cc1b5692a6f749abb8745cea86c2",
+      "action": 64,
+      "evaluation": 71,
+      "seconds": 0.18372760000011112,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "5c3c21b7c2edb9bd3b2a075a2392dbc351a98d227457982b7c10ae0c9890a1e7",
+      "action": 43,
+      "evaluation": 59,
+      "seconds": 0.1810648000000583,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "35cc03f762ab3e1dad86569626bd4686aaef32f476c53e9d379833367b9c9539",
+      "action": 64,
+      "evaluation": -41,
+      "seconds": 0.1849896999997327,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "46c57b1f9483eb62ed679acc113810e631c68aa45dc1ab3ddff948db1da479d3",
+      "action": 101,
+      "evaluation": -137,
+      "seconds": 0.18147499999986394,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "c46375af6d57a90c3e38c248f3e34bf66f333742a08dfedace8829ecfa64094d",
+      "action": 101,
+      "evaluation": -69,
+      "seconds": 0.18490289999999732,
+      "evaluator_disabled": true
+    },
+    {
+      "kind": "rewired",
+      "color": -1,
+      "key": "10d320ee697f6d0238d7fd12402a7fe5bdc9b8079ea3922574484709e0bca277",
+      "action": 91,
+      "evaluation": -168,
+      "seconds": 0.1631494999996903,
+      "evaluator_disabled": true
+    }
+  ],
+  "turn_ms": 200,
+  "rule": "freestyle",
+  "size": 12,
+  "illegal_labels": 0,
+  "bad_history_observations": 0,
+  "reserved_evaluation_overlap": 0,
+  "teacher": "Rapfi 250615 classical evaluation plus search",
+  "scope": "suggestions on quiet visited states, not forced-win certificates",
+  "training_performed": false
+}

@@ -1,7 +1,8 @@
 """Freestyle Gomoku. Both colors win with at least five contiguous stones.
 
-No forbidden patterns or opening restrictions. Coordinates are zero based;
-action = row * size + column. Board values: 0 empty, 1 black, -1 white.
+No forbidden patterns. Coordinates are zero based; action = row * size + column.
+Board values: 0 empty, 1 black, -1 white. When the learner is black, its first
+move is the central point: on a 12x12 board that is row 6, column 6.
 The learning policy receives the full board and an occupancy-only action mask.
 """
 
@@ -27,6 +28,31 @@ def geometry(size: int) -> tuple[np.ndarray, np.ndarray]:
     for i, line in enumerate(lines):
         incidence[line, i] = 1
     return lines_array, incidence
+
+
+def black_center_action(size: int) -> int:
+    """One central intersection. Even sizes use the upper-left of the center four."""
+    row = size // 2 - (size % 2 == 0)
+    return row * size + row
+
+
+def force_black_center(board: BatchBoard, colors: np.ndarray | int, actions: np.ndarray) -> np.ndarray:
+    """Replace a black learner's move on an empty board with the central point."""
+    actions = np.array(actions, copy=True)
+    colors = np.broadcast_to(np.asarray(colors), (board.count,))
+    opening = (board.moves == 0) & (colors == 1) & ~board.finished
+    actions[opening] = black_center_action(board.size)
+    return actions
+
+
+def policy_action_mask(board: BatchBoard, colors: np.ndarray | int) -> np.ndarray:
+    """PPO samples the action actually executed, including the fixed opening."""
+    legal = board.legal().copy()
+    colors = np.broadcast_to(np.asarray(colors), (board.count,))
+    opening = (board.moves == 0) & (colors == 1) & ~board.finished
+    legal[opening] = False
+    legal[opening, black_center_action(board.size)] = True
+    return legal
 
 
 class BatchBoard:
@@ -148,6 +174,7 @@ No tactical features, teacher moves, or intermediate reward shaping are supplied
         return self.games.observe(self.colors), self.games.legal()
 
     def step(self, actions: np.ndarray) -> tuple[np.ndarray, np.ndarray, dict]:
+        actions = force_black_center(self.games, self.colors, actions)
         self.games.place(actions, self.colors)
         opp = opponent_actions(self.games, -self.colors, self.rng, self.opponent)
         self.games.place(opp, -self.colors, ~self.games.finished)

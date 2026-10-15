@@ -8,7 +8,7 @@ import numpy as np
 import torch
 
 from .dagger import MAX_TURNS, FIELDS, save_records
-from .env import BatchBoard, geometry, opponent_actions
+from .env import BatchBoard, force_black_center, geometry, opponent_actions
 from .midgame_data import attack, canonical
 from .tactics import position_key
 
@@ -228,7 +228,7 @@ def collect(model, games, seed, device, excluded=(), round_index=0):
         legal = torch.from_numpy(legal_np).to(torch_device)
         logits, _, next_state = model.step(obs, state, zeros, matrix)
         state = torch.where(torch.from_numpy(active).to(torch_device)[:, None], next_state, state)
-        actions = logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy()
+        actions = force_black_center(board, colors, logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy())
 
         for row in np.flatnonzero(active & ~found & (board.moves >= 6)):
             analysed_positions += 1

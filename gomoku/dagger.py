@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from .env import BatchBoard, opponent_actions
+from .env import BatchBoard, force_black_center, opponent_actions
 from .midgame_data import canonical
 from .multistep_tactics import multi_targets
 from .tactics import position_key
@@ -57,7 +57,9 @@ def save_records(path, records):
 
 
 @torch.no_grad()
-def collect(model, games, seed, device, excluded=(), round_index=0):
+def collect(model, games, seed, device, excluded=(), round_index=0,
+            center_opponent_opening=False, skip_excluded_departures=False,
+            opponent_kind="tactical"):
     """Collect the first certified unsafe learner action from each lost game."""
     rng = np.random.default_rng(seed)
     board = BatchBoard(games, 12)
@@ -65,7 +67,9 @@ def collect(model, games, seed, device, excluded=(), round_index=0):
     histories = np.full((games, 144), -1, dtype=np.int16)
 
     white = colors == -1
-    opening = opponent_actions(board, -colors, rng, "tactical")
+    opening = opponent_actions(board, -colors, rng, opponent_kind)
+    if center_opponent_opening:
+        opening = force_black_center(board, -colors, opening)
     histories[white, 0] = opening[white]
     board.place(opening, -colors, white)
 
@@ -91,11 +95,13 @@ def collect(model, games, seed, device, excluded=(), round_index=0):
         legal = torch.from_numpy(legal_np).to(torch_device)
         logits, _, next_state = model.step(obs, state, zeros, matrix)
         state = torch.where(torch.from_numpy(active).to(torch_device)[:, None], next_state, state)
-        actions = logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy()
+        actions = force_black_center(board, colors, logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy())
 
         labels, categories = multi_targets(board, colors)
         for row in np.flatnonzero(active & (categories > 0)):
             if pending[row] is None and not labels[row, actions[row]]:
+                if skip_excluded_departures and canonical(board.board[row], int(colors[row])) in seen:
+                    continue
                 pending[row] = {
                     "obs": obs_np[row].astype(np.int8),
                     "labels": labels[row].copy(),
@@ -111,7 +117,7 @@ def collect(model, games, seed, device, excluded=(), round_index=0):
         histories[rows, board.moves[rows]] = actions[rows]
         board.place(actions, colors, active)
         reply_active = active & ~board.finished
-        replies = opponent_actions(board, -colors, rng, "tactical")
+        replies = opponent_actions(board, -colors, rng, opponent_kind)
         rows = np.flatnonzero(reply_active)
         histories[rows, board.moves[rows]] = replies[rows]
         board.place(replies, -colors, reply_active)
@@ -140,6 +146,8 @@ def collect(model, games, seed, device, excluded=(), round_index=0):
         "excluded_or_duplicate": losses - losses_without_certified_departure - len(records),
         "collection_seed": seed,
         "round": round_index,
+        "skip_excluded_departures": skip_excluded_departures,
+        "opponent_kind": opponent_kind,
     }
     return records, stats
 

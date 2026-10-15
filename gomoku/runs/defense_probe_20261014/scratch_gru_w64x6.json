@@ -1,0 +1,125 @@
+{
+  "curve": [
+    {
+      "update": 500,
+      "loss": 0.46370965242385864,
+      "seconds": 57,
+      "validation": 0.8858516483516483
+    },
+    {
+      "update": 1000,
+      "loss": 0.27205243706703186,
+      "seconds": 115,
+      "validation": 0.9210164835164835
+    },
+    {
+      "update": 1500,
+      "loss": 0.14706307649612427,
+      "seconds": 174,
+      "validation": 0.9436813186813187
+    },
+    {
+      "update": 2000,
+      "loss": 0.10013152658939362,
+      "seconds": 233,
+      "validation": 0.9611263736263737
+    },
+    {
+      "update": 2500,
+      "loss": 0.11367760598659515,
+      "seconds": 291,
+      "validation": 0.9611263736263737
+    },
+    {
+      "update": 3000,
+      "loss": 0.040025077760219574,
+      "seconds": 349,
+      "validation": 0.9668956043956044
+    },
+    {
+      "update": 3500,
+      "loss": 0.03582616150379181,
+      "seconds": 408,
+      "validation": 0.9703296703296703
+    },
+    {
+      "update": 4000,
+      "loss": 0.033203743398189545,
+      "seconds": 466,
+      "validation": 0.9721153846153846
+    },
+    {
+      "update": 4500,
+      "loss": 0.004493793472647667,
+      "seconds": 525,
+      "validation": 0.9792582417582417
+    },
+    {
+      "update": 5000,
+      "loss": 0.0010253172367811203,
+      "seconds": 583,
+      "validation": 0.9782967032967033
+    },
+    {
+      "update": 5500,
+      "loss": 0.0007674619555473328,
+      "seconds": 642,
+      "validation": 0.9813186813186813
+    },
+    {
+      "update": 6000,
+      "loss": 0.0008638817816972733,
+      "seconds": 701,
+      "validation": 0.981043956043956
+    }
+  ],
+  "parameters": 756802,
+  "updates": 6000,
+  "lr": 0.001,
+  "tests": {
+    "synthetic": {
+      "block": {
+        "positions": 800,
+        "correct": 800,
+        "accuracy": 1.0
+      },
+      "prevent_fork": {
+        "positions": 800,
+        "correct": 799,
+        "accuracy": 0.99875
+      },
+      "prevent_forcing_chain": {
+        "positions": 799,
+        "correct": 732,
+        "accuracy": 0.9161451814768461
+      },
+      "all": {
+        "positions": 2399,
+        "correct": 2331,
+        "accuracy": 0.9716548561900792
+      }
+    },
+    "onpolicy": {
+      "block": {
+        "positions": 1227,
+        "correct": 1224,
+        "accuracy": 0.9975550122249389
+      },
+      "prevent_fork": {
+        "positions": 1276,
+        "correct": 1233,
+        "accuracy": 0.9663009404388715
+      },
+      "prevent_forcing_chain": {
+        "positions": 72,
+        "correct": 68,
+        "accuracy": 0.9444444444444444
+      },
+      "all": {
+        "positions": 2575,
+        "correct": 2525,
+        "accuracy": 0.9805825242718447
+      }
+    }
+  }
+}

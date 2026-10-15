@@ -12,12 +12,21 @@ from torch.nn import functional as F
 
 GRAPH_DIR = Path(__file__).resolve().parents[1] / "previous_research" / "data" / "subgraphs"
 KINDS = ("fly", "rewired", "rnn", "gru")
+# 12x12 비교·학습의 원본 네 체크포인트 (모델 구조 자체를 금지하지 않는다).
+# GRU: runs/long_plan_f_20261009/f3/gru_seed4810.pt
+# Fly: runs/long_plan_f_20261009/structure_compare/fly_seed4810.pt
+# 재배열 Fly: 같은 structure_compare/rewired_seed4811.pt
+# RNN: 같은 structure_compare/rnn_seed4811.pt
+# 강한 전술 상대와 네 모델 리그는 평가 목적이 달라 성적을 구분한다.
+# 2026-10-14 교정·커리큘럼 후보는 승리 증가·방어 보존을 함께 통과하지
+# 못해 원본을 유지한다. 새 가중치 채택 여부는 각 실행 summary.json 참조.
+# 10월13일 label_set, long_root_train, gru_selected도 원본을 교체하지 않는다.
 FEATURES, HEAD = 64, 128
 
 
 class Policy(nn.Module):
     def __init__(self, kind: str, seed: int, hidden: int = 1000, size: int = 9,
-                 rewire_seed: int = 0):
+                 rewire_seed: int = 0, graph_neurons: int = 1000):
         super().__init__()
         if kind not in KINDS:
             raise ValueError(kind)
@@ -34,7 +43,7 @@ class Policy(nn.Module):
             torch.manual_seed(seed + 100_000)
             if kind in ("fly", "rewired"):
                 suffix = f"_rewired_seed{rewire_seed}" if kind == "rewired" else ""
-                path = GRAPH_DIR / f"malecns_cx_1000{suffix}.npz"
+                path = GRAPH_DIR / f"malecns_cx_{graph_neurons}{suffix}.npz"
                 self.graph_sha256 = hashlib.sha256(path.read_bytes()).hexdigest()
                 with np.load(path) as graph:
                     self.hidden = len(graph["body_ids"])
@@ -125,15 +134,42 @@ def masked_distribution(logits: torch.Tensor, legal: torch.Tensor) -> torch.dist
     return torch.distributions.Categorical(logits=logits.masked_fill(~legal, -1e9))
 
 
+def label_set_nll(logits: torch.Tensor, legal: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
+    """Negative log-probability of playing any labeled action.
+
+    Every legal move stays in the normalizer. A higher logit on a wrong legal
+    move therefore raises the loss and receives a gradient.
+    """
+    chosen = labels & legal
+    if not bool(chosen.any(dim=-1).all()):
+        raise ValueError("Each position needs at least one legal labeled action")
+    available = logits.masked_fill(~legal, -torch.inf)
+    correct = available.masked_fill(~chosen, -torch.inf)
+    return (-torch.logsumexp(correct, dim=-1) + torch.logsumexp(available, dim=-1)).mean()
+
+
 def load_policy(path: Path, device: torch.device) -> tuple[Policy, dict]:
     saved = torch.load(path, map_location="cpu", weights_only=True)
     config = saved["config"]
     cls = Policy
     architecture = config.get("architecture", "global")
+    if architecture == "spatial_wide":
+        from .wide_spatial import WideSpatialPolicy
+        model = WideSpatialPolicy(config["kind"], config["seed"], config["hidden"], config["size"],
+                                  config["rewire_seed"], config["channels"], config["blocks"],
+                                  graph_neurons=config.get("graph_neurons", 1000))
+        if model.graph_sha256 != saved["graph_sha256"]:
+            raise RuntimeError("Graph source changed since training")
+        model.load_state_dict(saved["model"])
+        return model.to(device).eval(), saved
     if architecture in ("spatial", "spatial_threat"):
         from .spatial import SpatialPolicy
         cls = SpatialPolicy
     kwargs = {"threat_aux": True} if architecture == "spatial_threat" else {}
+    if config.get("recurrent_cell"):
+        if architecture not in ("spatial", "spatial_threat"):
+            raise RuntimeError("Recurrent cell logits require a spatial policy")
+        kwargs["recurrent_cell"] = True
     model = cls(config["kind"], config["seed"], config["hidden"], config["size"],
                 config["rewire_seed"], **kwargs)
     if model.graph_sha256 != saved["graph_sha256"]:

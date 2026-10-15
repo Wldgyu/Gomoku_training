@@ -9,7 +9,7 @@ import numpy as np
 import torch
 
 from .dagger import MAX_TURNS, heldout_canonical_keys, save_records
-from .env import BatchBoard, geometry, opponent_actions
+from .env import BatchBoard, force_black_center, geometry, opponent_actions
 from .midgame_data import attack, canonical
 from .models import load_policy
 from .offense_dagger import board_from_cells, quiet_candidates, record, stable_rng
@@ -178,7 +178,7 @@ def visited_losses(model, games, seed, device):
         legal = torch.from_numpy(board.legal()).to(device)
         logits, _, next_state = model.step(obs, state, zeros, matrix)
         state = torch.where(torch.from_numpy(active).to(device)[:, None], next_state, state)
-        actions = logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy()
+        actions = force_black_center(board, colors, logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy())
         for row in np.flatnonzero(active & (board.moves >= 8) & (board.moves <= 36)):
             # Search every second learner turn to cover early/middle/late construction.
             if ((int(board.moves[row]) - int(colors[row] == -1)) // 2) % 2 == 0:

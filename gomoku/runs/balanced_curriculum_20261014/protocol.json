@@ -1,0 +1,51 @@
+{
+  "stages": [
+    {
+      "name": "basic",
+      "quotas": {
+        "guard": 64,
+        "block": 32,
+        "win": 32
+      },
+      "updates": 50
+    },
+    {
+      "name": "forcing",
+      "quotas": {
+        "guard": 48,
+        "block": 16,
+        "prevent": 16,
+        "win": 16,
+        "fork": 16,
+        "chain": 16
+      },
+      "updates": 50
+    }
+  ],
+  "learning_rate": 2e-05,
+  "preservation_weight": 0.5,
+  "color_quota": [
+    64,
+    64
+  ],
+  "validation_seed": 291000481,
+  "validation_games_per_mode": 64,
+  "final_seeds": [
+    292000481,
+    293000481
+  ],
+  "final_games_per_mode": 128,
+  "modes": [
+    "empty",
+    "diverse"
+  ],
+  "source_hashes": {
+    "fly": "87047ba164ec1837b616445a228ec2c8af622c435c81507ce3b8a760bd5a360c",
+    "gru": "3cab6460c5a01340c93a77819c951b9a1b17785ac2a8c69ec749a329abeb88d7",
+    "rnn": "0b6d4150bf669ef3a52c57659648e921e7fa7f4819b7c9f717cf0b51c588f7dc",
+    "rewired": "3b814f5bcc09ddce3101967e04da9d264bb7c14d40f2daaa029d5bcf06a7852c"
+  },
+  "adoption": "fixed final forcing stage; wins increase and defense rate/count do not rise in EACH mode, on validation and final tests; safe forks do not decrease",
+  "teacher": "existing immediate/fork/forcing-chain labels; no external expert engine",
+  "final_test": "run only after all four curricula finish; no final-test checkpoint selection"
+}

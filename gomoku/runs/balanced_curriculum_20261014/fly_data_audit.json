@@ -1,0 +1,86 @@
+{
+  "records": 20605,
+  "ledger": {
+    "base": {
+      "1": {
+        "black": 2318,
+        "white": 1809
+      },
+      "2": {
+        "black": 2341,
+        "white": 3165
+      },
+      "3": {
+        "black": 2340,
+        "white": 1878
+      },
+      "4": {
+        "black": 2163,
+        "white": 2899
+      },
+      "5": {
+        "black": 246,
+        "white": 267
+      },
+      "6": {
+        "black": 273,
+        "white": 297
+      }
+    },
+    "guard": {
+      "1": {
+        "black": 1,
+        "white": 0
+      },
+      "2": {
+        "black": 86,
+        "white": 138
+      },
+      "3": {
+        "black": 1,
+        "white": 1
+      },
+      "4": {
+        "black": 86,
+        "white": 226
+      },
+      "5": {
+        "black": 3,
+        "white": 0
+      },
+      "6": {
+        "black": 1,
+        "white": 2
+      }
+    },
+    "fresh": {
+      "1": {
+        "black": 1,
+        "white": 1
+      },
+      "2": {
+        "black": 4,
+        "white": 13
+      },
+      "3": {
+        "black": 4,
+        "white": 4
+      },
+      "4": {
+        "black": 19,
+        "white": 13
+      },
+      "5": {
+        "black": 1,
+        "white": 0
+      },
+      "6": {
+        "black": 2,
+        "white": 2
+      }
+    }
+  },
+  "reserved_overlap": 0,
+  "bad_observations": 0,
+  "illegal_labels": 0
+}

@@ -2,7 +2,7 @@
 from pathlib import Path
 import numpy as np
 import torch
-from .env import LearnerEnv, opponent_actions
+from .env import LearnerEnv, force_black_center, opponent_actions
 from .history_aux import burn_in
 
 class MidgameEnv(LearnerEnv):
@@ -60,6 +60,7 @@ class MidgameEnv(LearnerEnv):
 
     def step(self,actions):
         rr=np.arange(self.games.count)
+        actions=force_black_center(self.games,self.colors,actions)
         self.histories[rr,self.games.moves]=actions
         self.games.place(actions,self.colors)
         reply=~self.games.finished

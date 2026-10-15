@@ -1,0 +1,12 @@
+{
+  "games": 128,
+  "losses": 72,
+  "first_certified_departures": 70,
+  "selected_loss_records": 54,
+  "losses_without_certified_departure": 18,
+  "excluded_or_duplicate": 0,
+  "collection_seed": 284000481,
+  "round": 1,
+  "skip_excluded_departures": true,
+  "opponent_kind": "hard"
+}

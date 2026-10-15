@@ -1,0 +1,216 @@
+{
+  "curve": [
+    {
+      "update": 500,
+      "loss": 0.7994,
+      "seconds": 95,
+      "validation": 0.7567,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 1000,
+      "loss": 0.6368,
+      "seconds": 201,
+      "validation": 0.7962,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 1500,
+      "loss": 0.6352,
+      "seconds": 304,
+      "validation": 0.8187,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 2000,
+      "loss": 0.5494,
+      "seconds": 407,
+      "validation": 0.8239,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 2500,
+      "loss": 0.515,
+      "seconds": 510,
+      "validation": 0.8336,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 3000,
+      "loss": 0.477,
+      "seconds": 613,
+      "validation": 0.8472,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 3500,
+      "loss": 0.3813,
+      "seconds": 716,
+      "validation": 0.8533,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 4000,
+      "loss": 0.4471,
+      "seconds": 818,
+      "validation": 0.8592,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 4500,
+      "loss": 0.2895,
+      "seconds": 921,
+      "validation": 0.8631,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 5000,
+      "loss": 0.2757,
+      "seconds": 1024,
+      "validation": 0.8601,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 5500,
+      "loss": 0.3523,
+      "seconds": 1127,
+      "validation": 0.8704,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 6000,
+      "loss": 0.3344,
+      "seconds": 1229,
+      "validation": 0.8708,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 6500,
+      "loss": 0.3489,
+      "seconds": 1332,
+      "validation": 0.8755,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 7000,
+      "loss": 0.3763,
+      "seconds": 1435,
+      "validation": 0.8785,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 7500,
+      "loss": 0.2987,
+      "seconds": 1538,
+      "validation": 0.8797,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 8000,
+      "loss": 0.1848,
+      "seconds": 1641,
+      "validation": 0.883,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 8500,
+      "loss": 0.2498,
+      "seconds": 1743,
+      "validation": 0.8876,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 9000,
+      "loss": 0.1952,
+      "seconds": 1846,
+      "validation": 0.8863,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 9500,
+      "loss": 0.2589,
+      "seconds": 1949,
+      "validation": 0.8871,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 10000,
+      "loss": 0.1847,
+      "seconds": 2051,
+      "validation": 0.8869,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 10500,
+      "loss": 0.202,
+      "seconds": 2154,
+      "validation": 0.8895,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 11000,
+      "loss": 0.1613,
+      "seconds": 2257,
+      "validation": 0.8891,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 11500,
+      "loss": 0.333,
+      "seconds": 2360,
+      "validation": 0.8896,
+      "vram_gb": 1.11
+    },
+    {
+      "update": 12000,
+      "loss": 0.163,
+      "seconds": 2463,
+      "validation": 0.8895,
+      "vram_gb": 1.11
+    }
+  ],
+  "tests": {
+    "test": {
+      "win": {
+        "positions": 600,
+        "accuracy": 0.9983333333333333
+      },
+      "block": {
+        "positions": 600,
+        "accuracy": 0.9933333333333333
+      },
+      "create_fork": {
+        "positions": 600,
+        "accuracy": 0.9883333333333333
+      },
+      "prevent_fork": {
+        "positions": 600,
+        "accuracy": 0.9933333333333333
+      },
+      "create_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.875
+      },
+      "prevent_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.8866666666666667
+      },
+      "all": {
+        "positions": 3600,
+        "accuracy": 0.9558333333333333
+      }
+    },
+    "quiet_test": {
+      "quiet_rapfi_agreement": {
+        "positions": 400,
+        "accuracy": 0.48
+      },
+      "all": {
+        "positions": 400,
+        "accuracy": 0.48
+      }
+    }
+  },
+  "hidden": 2950,
+  "parameters": 1257627
+}

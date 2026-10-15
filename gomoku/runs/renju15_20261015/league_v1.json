@@ -1,0 +1,38 @@
+{
+  "pairs": {
+    "fly2950_v1 vs rnn3000_v1": {
+      "as_black": {
+        "wins": 75,
+        "draws": 0,
+        "losses": 53
+      },
+      "as_white": {
+        "wins": 55,
+        "draws": 0,
+        "losses": 73
+      },
+      "total": {
+        "wins": 130,
+        "draws": 0,
+        "losses": 126
+      },
+      "score": 0.5078125
+    }
+  },
+  "ranking": {
+    "fly2950_v1": {
+      "wins": 130,
+      "draws": 0,
+      "losses": 126,
+      "score": 0.5078125
+    },
+    "rnn3000_v1": {
+      "wins": 126,
+      "draws": 0,
+      "losses": 130,
+      "score": 0.4921875
+    }
+  },
+  "seed": 331000481,
+  "openings": 128
+}

@@ -1,0 +1,186 @@
+{
+  "fly": {
+    "synthetic": {
+      "block": {
+        "positions": 800,
+        "correct": 625,
+        "accuracy": 0.78125
+      },
+      "prevent_fork": {
+        "positions": 800,
+        "correct": 703,
+        "accuracy": 0.87875
+      },
+      "prevent_forcing_chain": {
+        "positions": 799,
+        "correct": 340,
+        "accuracy": 0.425531914893617
+      },
+      "all": {
+        "positions": 2399,
+        "correct": 1668,
+        "accuracy": 0.6952897040433514
+      }
+    },
+    "onpolicy": {
+      "block": {
+        "positions": 1227,
+        "correct": 920,
+        "accuracy": 0.7497962510187449
+      },
+      "prevent_fork": {
+        "positions": 1276,
+        "correct": 881,
+        "accuracy": 0.6904388714733543
+      },
+      "prevent_forcing_chain": {
+        "positions": 72,
+        "correct": 30,
+        "accuracy": 0.4166666666666667
+      },
+      "all": {
+        "positions": 2575,
+        "correct": 1831,
+        "accuracy": 0.7110679611650486
+      }
+    }
+  },
+  "gru": {
+    "synthetic": {
+      "block": {
+        "positions": 800,
+        "correct": 643,
+        "accuracy": 0.80375
+      },
+      "prevent_fork": {
+        "positions": 800,
+        "correct": 716,
+        "accuracy": 0.895
+      },
+      "prevent_forcing_chain": {
+        "positions": 799,
+        "correct": 335,
+        "accuracy": 0.4192740926157697
+      },
+      "all": {
+        "positions": 2399,
+        "correct": 1694,
+        "accuracy": 0.7061275531471446
+      }
+    },
+    "onpolicy": {
+      "block": {
+        "positions": 1227,
+        "correct": 966,
+        "accuracy": 0.7872860635696821
+      },
+      "prevent_fork": {
+        "positions": 1276,
+        "correct": 931,
+        "accuracy": 0.7296238244514106
+      },
+      "prevent_forcing_chain": {
+        "positions": 72,
+        "correct": 26,
+        "accuracy": 0.3611111111111111
+      },
+      "all": {
+        "positions": 2575,
+        "correct": 1923,
+        "accuracy": 0.7467961165048543
+      }
+    }
+  },
+  "rnn": {
+    "synthetic": {
+      "block": {
+        "positions": 800,
+        "correct": 678,
+        "accuracy": 0.8475
+      },
+      "prevent_fork": {
+        "positions": 800,
+        "correct": 735,
+        "accuracy": 0.91875
+      },
+      "prevent_forcing_chain": {
+        "positions": 799,
+        "correct": 326,
+        "accuracy": 0.40801001251564456
+      },
+      "all": {
+        "positions": 2399,
+        "correct": 1739,
+        "accuracy": 0.7248853689037099
+      }
+    },
+    "onpolicy": {
+      "block": {
+        "positions": 1227,
+        "correct": 1005,
+        "accuracy": 0.8190709046454768
+      },
+      "prevent_fork": {
+        "positions": 1276,
+        "correct": 965,
+        "accuracy": 0.7562695924764891
+      },
+      "prevent_forcing_chain": {
+        "positions": 72,
+        "correct": 31,
+        "accuracy": 0.4305555555555556
+      },
+      "all": {
+        "positions": 2575,
+        "correct": 2001,
+        "accuracy": 0.7770873786407767
+      }
+    }
+  },
+  "rewired": {
+    "synthetic": {
+      "block": {
+        "positions": 800,
+        "correct": 656,
+        "accuracy": 0.82
+      },
+      "prevent_fork": {
+        "positions": 800,
+        "correct": 753,
+        "accuracy": 0.94125
+      },
+      "prevent_forcing_chain": {
+        "positions": 799,
+        "correct": 326,
+        "accuracy": 0.40801001251564456
+      },
+      "all": {
+        "positions": 2399,
+        "correct": 1735,
+        "accuracy": 0.7232180075031263
+      }
+    },
+    "onpolicy": {
+      "block": {
+        "positions": 1227,
+        "correct": 998,
+        "accuracy": 0.8133659331703341
+      },
+      "prevent_fork": {
+        "positions": 1276,
+        "correct": 945,
+        "accuracy": 0.7405956112852664
+      },
+      "prevent_forcing_chain": {
+        "positions": 72,
+        "correct": 31,
+        "accuracy": 0.4305555555555556
+      },
+      "all": {
+        "positions": 2575,
+        "correct": 1974,
+        "accuracy": 0.7666019417475728
+      }
+    }
+  }
+}

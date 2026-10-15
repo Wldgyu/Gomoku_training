@@ -1,0 +1,89 @@
+{
+  "seeds": [
+    321000481,
+    322000481
+  ],
+  "games_per_seed": 128,
+  "results": {
+    "original": {
+      "empty": {
+        "games": 256,
+        "wins": 0,
+        "losses": 256,
+        "block": [
+          544,
+          596
+        ],
+        "prevent_fork": [
+          456,
+          608
+        ],
+        "reached_multiple_threat": 204,
+        "loss_causes": {
+          "missed_unique_block": 52,
+          "already_multiple_winning_cells": 204,
+          "other": 0
+        }
+      },
+      "diverse": {
+        "games": 256,
+        "wins": 5,
+        "losses": 251,
+        "block": [
+          514,
+          603
+        ],
+        "prevent_fork": [
+          550,
+          704
+        ],
+        "reached_multiple_threat": 162,
+        "loss_causes": {
+          "missed_unique_block": 89,
+          "already_multiple_winning_cells": 162,
+          "other": 0
+        }
+      }
+    },
+    "seed5103": {
+      "empty": {
+        "games": 256,
+        "wins": 12,
+        "losses": 6,
+        "block": [
+          1661,
+          1663
+        ],
+        "prevent_fork": [
+          1748,
+          1768
+        ],
+        "reached_multiple_threat": 5,
+        "loss_causes": {
+          "missed_unique_block": 2,
+          "already_multiple_winning_cells": 4,
+          "other": 0
+        }
+      },
+      "diverse": {
+        "games": 256,
+        "wins": 12,
+        "losses": 42,
+        "block": [
+          1635,
+          1640
+        ],
+        "prevent_fork": [
+          1735,
+          1757
+        ],
+        "reached_multiple_threat": 37,
+        "loss_causes": {
+          "missed_unique_block": 5,
+          "already_multiple_winning_cells": 37,
+          "other": 0
+        }
+      }
+    }
+  }
+}

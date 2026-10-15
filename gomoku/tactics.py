@@ -13,7 +13,7 @@ import numpy as np
 import torch
 
 from .env import BatchBoard, opponent_actions
-from .models import masked_distribution
+from .models import label_set_nll
 
 
 def targets(board: BatchBoard, colors: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -96,9 +96,7 @@ class TacticalData:
         ids = torch.randint(len(self.obs), (batch,), device=self.obs.device)
         logits, _, _ = model.step(self.obs[ids], model.initial(batch, self.obs.device),
                                   torch.ones(batch, dtype=torch.bool, device=self.obs.device))
-        log_probs = masked_distribution(logits, self.legal[ids]).logits
-        # Maximize total probability of ANY correct immediate winning move.
-        return -torch.logsumexp(log_probs.masked_fill(~self.labels[ids], -torch.inf), dim=1).mean()
+        return label_set_nll(logits, self.legal[ids], self.labels[ids])
 
     @torch.no_grad()
     def evaluate(self, model, history: bool = False) -> dict:

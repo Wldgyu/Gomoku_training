@@ -20,9 +20,10 @@ class SpatialEncoder(nn.Module):
 
 class SpatialPolicy(Policy):
     def __init__(self, kind, seed, hidden=1000, size=12, rewire_seed=0,
-                 threat_aux=False):
-        super().__init__(kind, seed, hidden, size, rewire_seed)
+                 threat_aux=False, recurrent_cell=False, graph_neurons=1000):
+        super().__init__(kind, seed, hidden, size, rewire_seed, graph_neurons)
         self.threat_aux = threat_aux
+        self.use_recurrent_cell = bool(recurrent_cell)
         with torch.random.fork_rng(devices=[]):
             torch.manual_seed(seed + 300_000)
             self.encoder = SpatialEncoder()
@@ -44,6 +45,18 @@ class SpatialPolicy(Policy):
                     if isinstance(layer, nn.Conv2d):
                         nn.init.normal_(layer.weight, std=0.01)
                         nn.init.zeros_(layer.bias)
+        if self.use_recurrent_cell:
+            # Zero weights keep the loaded policy unchanged until this path learns.
+            with torch.random.fork_rng(devices=[]):
+                self.recurrent_to_cell = nn.Linear(self.hidden, self.size * self.size)
+                nn.init.zeros_(self.recurrent_to_cell.weight)
+                nn.init.zeros_(self.recurrent_to_cell.bias)
+
+    def policy_logits(self, maps, modulation, state):
+        logits = self.cell_logits(maps, modulation)
+        if self.use_recurrent_cell:
+            logits = logits + self.recurrent_to_cell(state)
+        return logits
 
     def cell_logits(self, maps, modulation):
         scale, bias = modulation.chunk(2, dim=1)
@@ -57,7 +70,7 @@ class SpatialPolicy(Policy):
         maps = self.encoder.trunk(obs)
         features = self.encoder.project(maps.mean((-2, -1)))
         modulation, value, state = self.from_features(features, state, resets, matrix)
-        return self.cell_logits(maps, modulation), value, state
+        return self.policy_logits(maps, modulation, state), value, state
 
     def sequence(self, obs, state, resets):
         steps, count = obs.shape[:2]
@@ -67,7 +80,7 @@ class SpatialPolicy(Policy):
         logits, values = [], []
         for t in range(steps):
             modulation, value, state = self.from_features(features[t], state, resets[t], matrix)
-            logits.append(self.cell_logits(maps[t], modulation))
+            logits.append(self.policy_logits(maps[t], modulation, state))
             values.append(value)
         return torch.stack(logits), torch.stack(values)
     def threat(self, obs, state, resets, actions, matrix=None):

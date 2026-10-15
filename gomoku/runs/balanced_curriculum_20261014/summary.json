@@ -1,0 +1,538 @@
+{
+  "status": "complete",
+  "protocol": {
+    "stages": [
+      {
+        "name": "basic",
+        "quotas": {
+          "guard": 64,
+          "block": 32,
+          "win": 32
+        },
+        "updates": 50
+      },
+      {
+        "name": "forcing",
+        "quotas": {
+          "guard": 48,
+          "block": 16,
+          "prevent": 16,
+          "win": 16,
+          "fork": 16,
+          "chain": 16
+        },
+        "updates": 50
+      }
+    ],
+    "learning_rate": 2e-05,
+    "preservation_weight": 0.5,
+    "color_quota": [
+      64,
+      64
+    ],
+    "validation_seed": 291000481,
+    "validation_games_per_mode": 64,
+    "final_seeds": [
+      292000481,
+      293000481
+    ],
+    "final_games_per_mode": 128,
+    "modes": [
+      "empty",
+      "diverse"
+    ],
+    "source_hashes": {
+      "fly": "87047ba164ec1837b616445a228ec2c8af622c435c81507ce3b8a760bd5a360c",
+      "gru": "3cab6460c5a01340c93a77819c951b9a1b17785ac2a8c69ec749a329abeb88d7",
+      "rnn": "0b6d4150bf669ef3a52c57659648e921e7fa7f4819b7c9f717cf0b51c588f7dc",
+      "rewired": "3b814f5bcc09ddce3101967e04da9d264bb7c14d40f2daaa029d5bcf06a7852c"
+    },
+    "adoption": "fixed final forcing stage; wins increase and defense rate/count do not rise in EACH mode, on validation and final tests; safe forks do not decrease",
+    "teacher": "existing immediate/fork/forcing-chain labels; no external expert engine",
+    "final_test": "run only after all four curricula finish; no final-test checkpoint selection"
+  },
+  "models": {
+    "fly": {
+      "baseline_validation": {
+        "empty": {
+          "games": 64,
+          "wins": 0,
+          "omissions": 23,
+          "blocks": 146,
+          "omission_rate": 0.15753424657534246,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 64,
+          "wins": 0,
+          "omissions": 28,
+          "blocks": 144,
+          "omission_rate": 0.19444444444444445,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        }
+      },
+      "stage_validation": {
+        "basic": {
+          "empty": {
+            "games": 64,
+            "wins": 0,
+            "omissions": 15,
+            "blocks": 148,
+            "omission_rate": 0.10135135135135136,
+            "safe_forks": 0,
+            "black_wins": 0,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 1,
+            "omissions": 21,
+            "blocks": 142,
+            "omission_rate": 0.14788732394366197,
+            "safe_forks": 1,
+            "black_wins": 1,
+            "white_wins": 0
+          }
+        },
+        "forcing": {
+          "empty": {
+            "games": 64,
+            "wins": 0,
+            "omissions": 46,
+            "blocks": 192,
+            "omission_rate": 0.23958333333333334,
+            "safe_forks": 0,
+            "black_wins": 0,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 0,
+            "omissions": 24,
+            "blocks": 169,
+            "omission_rate": 0.14201183431952663,
+            "safe_forks": 0,
+            "black_wins": 0,
+            "white_wins": 0
+          }
+        }
+      },
+      "candidate": "gomoku/runs/balanced_curriculum_20261014/fly_forcing.pt",
+      "data_records": 20605,
+      "before_test": {
+        "empty": {
+          "games": 256,
+          "wins": 0,
+          "omissions": 85,
+          "blocks": 557,
+          "omission_rate": 0.1526032315978456,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 0,
+          "omissions": 99,
+          "blocks": 577,
+          "omission_rate": 0.17157712305025996,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        }
+      },
+      "after_test": {
+        "empty": {
+          "games": 256,
+          "wins": 0,
+          "omissions": 160,
+          "blocks": 790,
+          "omission_rate": 0.20253164556962025,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 2,
+          "omissions": 97,
+          "blocks": 710,
+          "omission_rate": 0.13661971830985917,
+          "safe_forks": 4,
+          "black_wins": 2,
+          "white_wins": 0
+        }
+      },
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/structure_compare/fly_seed4810.pt"
+    },
+    "gru": {
+      "baseline_validation": {
+        "empty": {
+          "games": 64,
+          "wins": 0,
+          "omissions": 30,
+          "blocks": 179,
+          "omission_rate": 0.16759776536312848,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 64,
+          "wins": 0,
+          "omissions": 24,
+          "blocks": 149,
+          "omission_rate": 0.1610738255033557,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        }
+      },
+      "stage_validation": {
+        "basic": {
+          "empty": {
+            "games": 64,
+            "wins": 3,
+            "omissions": 34,
+            "blocks": 192,
+            "omission_rate": 0.17708333333333334,
+            "safe_forks": 3,
+            "black_wins": 3,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 0,
+            "omissions": 21,
+            "blocks": 170,
+            "omission_rate": 0.12352941176470589,
+            "safe_forks": 0,
+            "black_wins": 0,
+            "white_wins": 0
+          }
+        },
+        "forcing": {
+          "empty": {
+            "games": 64,
+            "wins": 1,
+            "omissions": 38,
+            "blocks": 226,
+            "omission_rate": 0.168141592920354,
+            "safe_forks": 1,
+            "black_wins": 1,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 0,
+            "omissions": 24,
+            "blocks": 208,
+            "omission_rate": 0.11538461538461539,
+            "safe_forks": 0,
+            "black_wins": 0,
+            "white_wins": 0
+          }
+        }
+      },
+      "candidate": "gomoku/runs/balanced_curriculum_20261014/gru_forcing.pt",
+      "data_records": 20594,
+      "before_test": {
+        "empty": {
+          "games": 256,
+          "wins": 0,
+          "omissions": 110,
+          "blocks": 745,
+          "omission_rate": 0.1476510067114094,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 1,
+          "omissions": 94,
+          "blocks": 625,
+          "omission_rate": 0.1504,
+          "safe_forks": 8,
+          "black_wins": 1,
+          "white_wins": 0
+        }
+      },
+      "after_test": {
+        "empty": {
+          "games": 256,
+          "wins": 3,
+          "omissions": 154,
+          "blocks": 878,
+          "omission_rate": 0.17539863325740318,
+          "safe_forks": 3,
+          "black_wins": 1,
+          "white_wins": 2
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 1,
+          "omissions": 112,
+          "blocks": 752,
+          "omission_rate": 0.14893617021276595,
+          "safe_forks": 5,
+          "black_wins": 1,
+          "white_wins": 0
+        }
+      },
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/f3/gru_seed4810.pt"
+    },
+    "rnn": {
+      "baseline_validation": {
+        "empty": {
+          "games": 64,
+          "wins": 6,
+          "omissions": 14,
+          "blocks": 148,
+          "omission_rate": 0.0945945945945946,
+          "safe_forks": 13,
+          "black_wins": 6,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 64,
+          "wins": 2,
+          "omissions": 21,
+          "blocks": 124,
+          "omission_rate": 0.1693548387096774,
+          "safe_forks": 5,
+          "black_wins": 2,
+          "white_wins": 0
+        }
+      },
+      "stage_validation": {
+        "basic": {
+          "empty": {
+            "games": 64,
+            "wins": 1,
+            "omissions": 7,
+            "blocks": 175,
+            "omission_rate": 0.04,
+            "safe_forks": 2,
+            "black_wins": 1,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 1,
+            "omissions": 19,
+            "blocks": 156,
+            "omission_rate": 0.12179487179487179,
+            "safe_forks": 1,
+            "black_wins": 1,
+            "white_wins": 0
+          }
+        },
+        "forcing": {
+          "empty": {
+            "games": 64,
+            "wins": 0,
+            "omissions": 20,
+            "blocks": 163,
+            "omission_rate": 0.12269938650306748,
+            "safe_forks": 0,
+            "black_wins": 0,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 1,
+            "omissions": 28,
+            "blocks": 167,
+            "omission_rate": 0.16766467065868262,
+            "safe_forks": 1,
+            "black_wins": 1,
+            "white_wins": 0
+          }
+        }
+      },
+      "candidate": "gomoku/runs/balanced_curriculum_20261014/rnn_forcing.pt",
+      "data_records": 20586,
+      "before_test": {
+        "empty": {
+          "games": 256,
+          "wins": 15,
+          "omissions": 48,
+          "blocks": 575,
+          "omission_rate": 0.08347826086956522,
+          "safe_forks": 39,
+          "black_wins": 15,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 9,
+          "omissions": 84,
+          "blocks": 566,
+          "omission_rate": 0.14840989399293286,
+          "safe_forks": 18,
+          "black_wins": 9,
+          "white_wins": 0
+        }
+      },
+      "after_test": {
+        "empty": {
+          "games": 256,
+          "wins": 1,
+          "omissions": 89,
+          "blocks": 729,
+          "omission_rate": 0.12208504801097393,
+          "safe_forks": 5,
+          "black_wins": 1,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 2,
+          "omissions": 109,
+          "blocks": 679,
+          "omission_rate": 0.16053019145802652,
+          "safe_forks": 12,
+          "black_wins": 0,
+          "white_wins": 2
+        }
+      },
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/structure_compare/rnn_seed4811.pt"
+    },
+    "rewired": {
+      "baseline_validation": {
+        "empty": {
+          "games": 64,
+          "wins": 0,
+          "omissions": 21,
+          "blocks": 184,
+          "omission_rate": 0.11413043478260869,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 64,
+          "wins": 2,
+          "omissions": 30,
+          "blocks": 172,
+          "omission_rate": 0.1744186046511628,
+          "safe_forks": 5,
+          "black_wins": 0,
+          "white_wins": 2
+        }
+      },
+      "stage_validation": {
+        "basic": {
+          "empty": {
+            "games": 64,
+            "wins": 0,
+            "omissions": 13,
+            "blocks": 136,
+            "omission_rate": 0.09558823529411764,
+            "safe_forks": 0,
+            "black_wins": 0,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 1,
+            "omissions": 30,
+            "blocks": 166,
+            "omission_rate": 0.18072289156626506,
+            "safe_forks": 4,
+            "black_wins": 1,
+            "white_wins": 0
+          }
+        },
+        "forcing": {
+          "empty": {
+            "games": 64,
+            "wins": 3,
+            "omissions": 32,
+            "blocks": 153,
+            "omission_rate": 0.20915032679738563,
+            "safe_forks": 3,
+            "black_wins": 3,
+            "white_wins": 0
+          },
+          "diverse": {
+            "games": 64,
+            "wins": 2,
+            "omissions": 28,
+            "blocks": 161,
+            "omission_rate": 0.17391304347826086,
+            "safe_forks": 2,
+            "black_wins": 2,
+            "white_wins": 0
+          }
+        }
+      },
+      "candidate": "gomoku/runs/balanced_curriculum_20261014/rewired_forcing.pt",
+      "data_records": 20595,
+      "before_test": {
+        "empty": {
+          "games": 256,
+          "wins": 0,
+          "omissions": 67,
+          "blocks": 722,
+          "omission_rate": 0.09279778393351801,
+          "safe_forks": 0,
+          "black_wins": 0,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 8,
+          "omissions": 97,
+          "blocks": 602,
+          "omission_rate": 0.1611295681063123,
+          "safe_forks": 15,
+          "black_wins": 4,
+          "white_wins": 4
+        }
+      },
+      "after_test": {
+        "empty": {
+          "games": 256,
+          "wins": 9,
+          "omissions": 138,
+          "blocks": 623,
+          "omission_rate": 0.22150882825040127,
+          "safe_forks": 12,
+          "black_wins": 9,
+          "white_wins": 0
+        },
+        "diverse": {
+          "games": 256,
+          "wins": 4,
+          "omissions": 125,
+          "blocks": 631,
+          "omission_rate": 0.19809825673534073,
+          "safe_forks": 4,
+          "black_wins": 4,
+          "white_wins": 0
+        }
+      },
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/structure_compare/rewired_seed4811.pt"
+    }
+  },
+  "original_hashes_unchanged": true,
+  "validation_checks": {
+    "unit_tests": 49,
+    "original_hashes_unchanged": true,
+    "engine_probe_legal_moves": 42,
+    "engine_basic_errors": 0,
+    "quiet_teacher_records": 128,
+    "quiet_records_unique_D4": 128,
+    "quiet_opponent_immediate_win_states": 0
+  }
+}

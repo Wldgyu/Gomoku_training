@@ -1,0 +1,893 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T17:59:41.084793+09:00",
+  "scope": "Saved-result audit; no additional model training or match evaluation",
+  "source_tests": {
+    "count": 35,
+    "status": "passed",
+    "suites": [
+      "gomoku.renju.test_rules",
+      "gomoku.renju.test_tactics",
+      "gomoku.renju.test_env",
+      "gomoku.renju.test_data",
+      "gomoku.renju.test_play",
+      "gomoku.test_defense_probe",
+      "gomoku.test_external_engine"
+    ]
+  },
+  "publication_copy_tests": {
+    "count": 35,
+    "status": "passed",
+    "date": "2026-10-15",
+    "scope": "Manually verified from github_upload_20261013 during this snapshot; helper does not run tests"
+  },
+  "renju15": {
+    "training": {
+      "fly2950_v1": {
+        "updates": 12000,
+        "seconds": 2463,
+        "parameters": 1257627,
+        "tests": {
+          "test": {
+            "win": {
+              "positions": 600,
+              "accuracy": 0.9983333333333333
+            },
+            "block": {
+              "positions": 600,
+              "accuracy": 0.9933333333333333
+            },
+            "create_fork": {
+              "positions": 600,
+              "accuracy": 0.9883333333333333
+            },
+            "prevent_fork": {
+              "positions": 600,
+              "accuracy": 0.9933333333333333
+            },
+            "create_forcing_chain": {
+              "positions": 600,
+              "accuracy": 0.875
+            },
+            "prevent_forcing_chain": {
+              "positions": 600,
+              "accuracy": 0.8866666666666667
+            },
+            "all": {
+              "positions": 3600,
+              "accuracy": 0.9558333333333333
+            }
+          },
+          "quiet_test": {
+            "quiet_rapfi_agreement": {
+              "positions": 400,
+              "accuracy": 0.48
+            },
+            "all": {
+              "positions": 400,
+              "accuracy": 0.48
+            }
+          }
+        },
+        "validation_first": {
+          "update": 500,
+          "loss": 0.7994,
+          "seconds": 95,
+          "validation": 0.7567,
+          "vram_gb": 1.11
+        },
+        "validation_last": {
+          "update": 12000,
+          "loss": 0.163,
+          "seconds": 2463,
+          "validation": 0.8895,
+          "vram_gb": 1.11
+        }
+      },
+      "rnn3000_v1": {
+        "updates": 12000,
+        "seconds": 2473,
+        "parameters": 10062450,
+        "tests": {
+          "test": {
+            "win": {
+              "positions": 600,
+              "accuracy": 0.9966666666666667
+            },
+            "block": {
+              "positions": 600,
+              "accuracy": 0.995
+            },
+            "create_fork": {
+              "positions": 600,
+              "accuracy": 0.9966666666666667
+            },
+            "prevent_fork": {
+              "positions": 600,
+              "accuracy": 0.9966666666666667
+            },
+            "create_forcing_chain": {
+              "positions": 600,
+              "accuracy": 0.875
+            },
+            "prevent_forcing_chain": {
+              "positions": 600,
+              "accuracy": 0.89
+            },
+            "all": {
+              "positions": 3600,
+              "accuracy": 0.9583333333333334
+            }
+          },
+          "quiet_test": {
+            "quiet_rapfi_agreement": {
+              "positions": 400,
+              "accuracy": 0.4325
+            },
+            "all": {
+              "positions": 400,
+              "accuracy": 0.4325
+            }
+          }
+        },
+        "validation_first": {
+          "update": 500,
+          "loss": 0.769,
+          "seconds": 93,
+          "validation": 0.764,
+          "vram_gb": 1.24
+        },
+        "validation_last": {
+          "update": 12000,
+          "loss": 0.1696,
+          "seconds": 2473,
+          "validation": 0.8881,
+          "vram_gb": 1.24
+        }
+      }
+    },
+    "live": {
+      "fly2950_v1": {
+        "games": 256,
+        "wins": 171,
+        "losses": 80,
+        "draws": 5,
+        "mean_plies": 54.08203125,
+        "by_color": {
+          "black": {
+            "games": 128,
+            "wins": 77,
+            "losses": 49,
+            "draws": 2
+          },
+          "white": {
+            "games": 128,
+            "wins": 94,
+            "losses": 31,
+            "draws": 3
+          }
+        },
+        "tactical": {
+          "win": {
+            "positions": 171,
+            "accuracy": 1.0
+          },
+          "block": {
+            "positions": 1114,
+            "accuracy": 0.9820466786355476
+          },
+          "create_fork": {
+            "positions": 171,
+            "accuracy": 1.0
+          },
+          "prevent_fork": {
+            "positions": 1018,
+            "accuracy": 0.9567779960707269
+          },
+          "create_forcing_chain": {
+            "positions": 65,
+            "accuracy": 0.9846153846153847
+          },
+          "prevent_forcing_chain": {
+            "positions": 63,
+            "accuracy": 0.873015873015873
+          }
+        },
+        "seed": 321000481,
+        "opponent": "tactical"
+      },
+      "rnn3000_v1": {
+        "games": 256,
+        "wins": 142,
+        "losses": 104,
+        "draws": 10,
+        "mean_plies": 52.28515625,
+        "by_color": {
+          "black": {
+            "games": 128,
+            "wins": 60,
+            "losses": 65,
+            "draws": 3
+          },
+          "white": {
+            "games": 128,
+            "wins": 82,
+            "losses": 39,
+            "draws": 7
+          }
+        },
+        "tactical": {
+          "win": {
+            "positions": 142,
+            "accuracy": 1.0
+          },
+          "block": {
+            "positions": 1212,
+            "accuracy": 0.995049504950495
+          },
+          "create_fork": {
+            "positions": 141,
+            "accuracy": 1.0
+          },
+          "prevent_fork": {
+            "positions": 904,
+            "accuracy": 0.9081858407079646
+          },
+          "create_forcing_chain": {
+            "positions": 97,
+            "accuracy": 1.0
+          },
+          "prevent_forcing_chain": {
+            "positions": 72,
+            "accuracy": 0.7083333333333334
+          }
+        },
+        "seed": 321000481,
+        "opponent": "tactical"
+      }
+    },
+    "league": {
+      "pairs": {
+        "fly2950_v1 vs rnn3000_v1": {
+          "as_black": {
+            "wins": 75,
+            "draws": 0,
+            "losses": 53
+          },
+          "as_white": {
+            "wins": 55,
+            "draws": 0,
+            "losses": 73
+          },
+          "total": {
+            "wins": 130,
+            "draws": 0,
+            "losses": 126
+          },
+          "score": 0.5078125
+        }
+      },
+      "ranking": {
+        "fly2950_v1": {
+          "wins": 130,
+          "draws": 0,
+          "losses": 126,
+          "score": 0.5078125
+        },
+        "rnn3000_v1": {
+          "wins": 126,
+          "draws": 0,
+          "losses": 130,
+          "score": 0.4921875
+        }
+      },
+      "seed": 331000481,
+      "openings": 128
+    }
+  },
+  "freestyle12": {
+    "fly": {
+      "original": {
+        "games": 512,
+        "wins": 1,
+        "losses": 511,
+        "draws": 0
+      },
+      "wide": {
+        "games": 512,
+        "wins": 29,
+        "losses": 130,
+        "draws": 353
+      },
+      "quiet": {
+        "games": 512,
+        "wins": 245,
+        "losses": 92,
+        "draws": 175
+      }
+    },
+    "gru": {
+      "original": {
+        "games": 512,
+        "wins": 1,
+        "losses": 511,
+        "draws": 0
+      },
+      "wide": {
+        "games": 512,
+        "wins": 36,
+        "losses": 69,
+        "draws": 407
+      },
+      "quiet": {
+        "games": 512,
+        "wins": 191,
+        "losses": 131,
+        "draws": 190
+      }
+    },
+    "rnn": {
+      "original": {
+        "games": 512,
+        "wins": 29,
+        "losses": 483,
+        "draws": 0
+      },
+      "wide": {
+        "games": 512,
+        "wins": 22,
+        "losses": 71,
+        "draws": 419
+      },
+      "quiet": {
+        "games": 512,
+        "wins": 219,
+        "losses": 91,
+        "draws": 202
+      }
+    },
+    "rewired": {
+      "original": {
+        "games": 512,
+        "wins": 5,
+        "losses": 507,
+        "draws": 0
+      },
+      "wide": {
+        "games": 512,
+        "wins": 18,
+        "losses": 48,
+        "draws": 446
+      },
+      "quiet": {
+        "games": 512,
+        "wins": 227,
+        "losses": 122,
+        "draws": 163
+      }
+    }
+  },
+  "datasets": {
+    "gomoku/runs/defense_probe_20261014/data": {
+      "files": {
+        "attack_test": {
+          "records": 1800,
+          "unique_keys": 1800,
+          "categories": {
+            "1": 600,
+            "3": 600,
+            "5": 600
+          },
+          "sha256": "f8f52aad27679081398c1078d2cffb751d189cf395b735d695919d88eec86f21",
+          "bytes": 178673
+        },
+        "attack_train": {
+          "records": 17992,
+          "unique_keys": 17992,
+          "categories": {
+            "1": 6000,
+            "3": 6000,
+            "5": 5992
+          },
+          "sha256": "00a88a31b1f4de4da6e0b14dbfdae07c10de03ab7fa7ec145ce1d0be5d385a40",
+          "bytes": 1908958
+        },
+        "onpolicy_test": {
+          "records": 2575,
+          "unique_keys": 2575,
+          "categories": {
+            "2": 1227,
+            "4": 1276,
+            "6": 72
+          },
+          "sha256": "19581e1e235dabeb409f4e3b0a87aa500ccc4e12bf75584a90284fb51738baa8",
+          "bytes": 214895
+        },
+        "quiet_test": {
+          "records": 400,
+          "unique_keys": 400,
+          "categories": {
+            "7": 400
+          },
+          "sha256": "721891100af7868a60743cc9eb664e2dd4e1ac37244fe52350d9032ea036c10f",
+          "bytes": 33321
+        },
+        "quiet_train": {
+          "records": 6000,
+          "unique_keys": 6000,
+          "categories": {
+            "7": 6000
+          },
+          "sha256": "b0c032442a7b496b592617d6165908b00f155ed9ea4a431e3afa8e283114b7b7",
+          "bytes": 533966
+        },
+        "synthetic_test": {
+          "records": 2399,
+          "unique_keys": 2399,
+          "categories": {
+            "2": 800,
+            "4": 800,
+            "6": 799
+          },
+          "sha256": "2388774297fbdc019d72cb8412285837fc6ec6432101203c91822ae0fed54d31",
+          "bytes": 235193
+        },
+        "train": {
+          "records": 17946,
+          "unique_keys": 17946,
+          "categories": {
+            "2": 5981,
+            "4": 5972,
+            "6": 5993
+          },
+          "sha256": "7ff33506a9615f1009cd77b7a2a2d72bfc5366740da05b5e42211aede65fd842",
+          "bytes": 1853015
+        }
+      },
+      "train_test_key_intersections": [
+        {
+          "train": "attack_train",
+          "test": "attack_test",
+          "overlap": 0
+        },
+        {
+          "train": "attack_train",
+          "test": "onpolicy_test",
+          "overlap": 0
+        },
+        {
+          "train": "attack_train",
+          "test": "quiet_test",
+          "overlap": 0
+        },
+        {
+          "train": "attack_train",
+          "test": "synthetic_test",
+          "overlap": 0
+        },
+        {
+          "train": "quiet_train",
+          "test": "attack_test",
+          "overlap": 0
+        },
+        {
+          "train": "quiet_train",
+          "test": "onpolicy_test",
+          "overlap": 0
+        },
+        {
+          "train": "quiet_train",
+          "test": "quiet_test",
+          "overlap": 0
+        },
+        {
+          "train": "quiet_train",
+          "test": "synthetic_test",
+          "overlap": 0
+        },
+        {
+          "train": "train",
+          "test": "attack_test",
+          "overlap": 0
+        },
+        {
+          "train": "train",
+          "test": "onpolicy_test",
+          "overlap": 0
+        },
+        {
+          "train": "train",
+          "test": "quiet_test",
+          "overlap": 0
+        },
+        {
+          "train": "train",
+          "test": "synthetic_test",
+          "overlap": 0
+        }
+      ],
+      "scope": "stored canonical position keys; not an exhaustive trajectory independence proof"
+    },
+    "gomoku/runs/renju15_20261015/data": {
+      "files": {
+        "human_train": {
+          "records": 79,
+          "unique_keys": 79,
+          "categories": {
+            "1": 3,
+            "2": 25,
+            "3": 1,
+            "4": 42,
+            "5": 2,
+            "6": 6
+          },
+          "sha256": "3821d35dea5f4090303bb1c093a2d798bf3aa34e357734a70c3872443e4bef0e",
+          "bytes": 7116
+        },
+        "quiet_test": {
+          "records": 400,
+          "unique_keys": 400,
+          "categories": {
+            "7": 400
+          },
+          "sha256": "622f24f4d9917d3c43e52f45a69a6bc9a99e6ac3589a349194e7c6e581a1856a",
+          "bytes": 33184
+        },
+        "quiet_train": {
+          "records": 6000,
+          "unique_keys": 6000,
+          "categories": {
+            "7": 6000
+          },
+          "sha256": "5237e6a31dc94d803299e3c08d93c4293b756fe15f9a82ee336b221f78e63524",
+          "bytes": 525012
+        },
+        "test": {
+          "records": 3600,
+          "unique_keys": 3600,
+          "categories": {
+            "1": 600,
+            "2": 600,
+            "3": 600,
+            "4": 600,
+            "5": 600,
+            "6": 600
+          },
+          "sha256": "63801f111792a927b0dee158ce50c07fa09e816c568b8ae0d273d35cc7294177",
+          "bytes": 373991
+        },
+        "train": {
+          "records": 36000,
+          "unique_keys": 36000,
+          "categories": {
+            "1": 6000,
+            "2": 6000,
+            "3": 6000,
+            "4": 6000,
+            "5": 6000,
+            "6": 6000
+          },
+          "sha256": "eee3d0247284c7dec10ae1114e34c6b1c630767fdc9afd50f22771701ae738c7",
+          "bytes": 3848423
+        }
+      },
+      "train_test_key_intersections": [
+        {
+          "train": "human_train",
+          "test": "quiet_test",
+          "overlap": 0
+        },
+        {
+          "train": "human_train",
+          "test": "test",
+          "overlap": 0
+        },
+        {
+          "train": "quiet_train",
+          "test": "quiet_test",
+          "overlap": 0
+        },
+        {
+          "train": "quiet_train",
+          "test": "test",
+          "overlap": 0
+        },
+        {
+          "train": "train",
+          "test": "quiet_test",
+          "overlap": 0
+        },
+        {
+          "train": "train",
+          "test": "test",
+          "overlap": 0
+        }
+      ],
+      "scope": "stored canonical position keys; not an exhaustive trajectory independence proof"
+    }
+  },
+  "source_files": [
+    {
+      "path": "gomoku/runs/defense_probe_20261014/baseline_static.json",
+      "sha256": "3d4e5e66c86683d177c18c78f5ca73a71ade47730f63577fcb2c4e0e9317d37e"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/cnn_static.json",
+      "sha256": "49bd234f9a16de8dde2a16f39f35c662cefa5e61e9755a615bf16b425e97e5a0"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/data/quiet_test.json",
+      "sha256": "222e0937e0340cbd11e6e80f8a1a68aa4813d3e79cdc5653a9a9ee95184b0a92"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/data/quiet_train.json",
+      "sha256": "d51714cacfee22a175c03e573c9f5ade9f3c013aefe7c63191a696443996384e"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/fly_quiet_live.json",
+      "sha256": "a4053d97224cb636a935fd34259dba01c0f6f4a4912f5c9e129c58a6f247670b"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/fly_seed5101_live.json",
+      "sha256": "d2b081d4cc1d8e74f2e42b773e0a63baedfa5dabff2313378341eebaf9f6971c"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/fly_seed5102_live.json",
+      "sha256": "711b7b5f1a10a9cd7329551fcdba5f7481ed1d476ab50c59bb1a842644a31535"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/fly_seed5103_live.json",
+      "sha256": "7fc192820414a18cc1c300c86bc2f4683d2445682e682b34bd0020fbfe858c2d"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/fly_wide_all_confirm_live.json",
+      "sha256": "f14dd43f4d5ee2571cbefaaa5d3df4c1f8753fe29d86835833c7126a583c97b6"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/fly_wide_all_live.json",
+      "sha256": "f10e4f1788282fd8d2d225a27aa5e002f95dd1b399c104003c26fb4c7743bbbe"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_finetune_static.json",
+      "sha256": "9077dd8f3102791bf3b32ea030dda9f68353aee3549e1ee4e92f3ecc0b396dcd"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_live.json",
+      "sha256": "7772b78cf51f69d989120e9ee21e75d855a8416710e6ea93193f1e7a4224b1f7"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_quiet_live.json",
+      "sha256": "94ab37865819b214c3c7026a98a0cf8171cf150db4e2cd64bccd987bcbf9054b"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_seed5101_live.json",
+      "sha256": "ff9c1810186a1769a1acc9e7898c6242b2aecd2e9050ed0c0a48db63bf47b73e"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_seed5102_live.json",
+      "sha256": "9902dab0499a9943dd29aae0769ce8e765e3bd61b5a3099b0cbaf3f0199f32c7"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_seed5103_live.json",
+      "sha256": "55a0d17af1a696e355b51c0a0dff64f563d47095bad4395b8708452eed653be0"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_wide_all_confirm_live.json",
+      "sha256": "6a5f104aa9f8ecbe5d9c8de902ae244e4cad78f3c62d8f9ee167079c195a48f1"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_wide_all_live.json",
+      "sha256": "e333f13e1a52663fdd54f654753cd9d665d7000f298927a7fb34098bea3c650a"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/gru_wide_defense_only_live.json",
+      "sha256": "acf16ba71255460ec48f5f839844506e2357febc80c06374c05435fc70de03d5"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/human_games_analysis.json",
+      "sha256": "44e0844d1a670bb11bd5725f75aa4f6c9fe494b0227d76c6b43df0e46574c55c"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/league_atk_q_331000481.json",
+      "sha256": "6432438c430dc8bccd2ae1e590beb1b7918e3d194257a18ea6bca1ceaae4a799"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/league_quiet_vs_wide_331000481.json",
+      "sha256": "5ba3ab43846910ae0eba5bd645b03697becc6f8a62ee65f7193a4f78ff09b605"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rewired_quiet_live.json",
+      "sha256": "daa03ceb757128d75db577183bc0b3379719b17b951065c5d010cb2387fa0607"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rewired_seed5101_live.json",
+      "sha256": "889a5428dec3d70951a18f198a6a45458bfe15466bb24e6ed9cf8bb89ff7b02a"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rewired_seed5102_live.json",
+      "sha256": "df6fa00920d87dd04adc3f2d143bc8b00adcb2400e7ff0f0b742f54364c3fe42"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rewired_seed5103_live.json",
+      "sha256": "10a49609f89573d340eaf58e6d6d81226dee31dd07da17cd29a028e03d3f21c6"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rewired_wide_all_confirm_live.json",
+      "sha256": "1989b2d941467ad22fec82046f4a98b8dca99f035b9c538af309f29603ad55e9"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rewired_wide_all_live.json",
+      "sha256": "3210461250aa23437045dfda69d59e90800dcf9fe766140557402ca534a79866"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_finetune_static.json",
+      "sha256": "8d8b097236333e682a80ca951c9ddb4bdf727e15aeeef37a04b169b1f4216d4c"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_live.json",
+      "sha256": "57f556dd422b7c7dcecf7448c41401c9a94f5bcb00a3c1bb492cfb94b94a5295"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_quiet_live.json",
+      "sha256": "dc03d0c920fb19dabcf9051c29855b79180e85cfb89d414dd5bb9e05f3cf9214"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_seed5101_live.json",
+      "sha256": "a42ed1030920f20724036e9c709a8719b33d146fae214ce2ae855149ded15bf0"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_seed5102_live.json",
+      "sha256": "9f39256ecaf2cac50227463827f015d5cd9f5a0f9f54dc06962846e51054074a"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_seed5103_live.json",
+      "sha256": "ea06e2f52fa4679bdc1cf9723cd8522b7fc06eb7c143f2a335aa99b7fc84773e"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_wide_all_confirm_live.json",
+      "sha256": "98c7bff81b1210fd96101dd35ac2e300b6ef1bca46700ed0f87cc28b6f1dfd67"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/rnn_wide_all_live.json",
+      "sha256": "a712a3b8b144d880e76a110adea4dced6dbc20168a9c56fadd4ceee8ee5372b2"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_fly_w64x6_atk.json",
+      "sha256": "bfed2acb40c45e0c0f00e48903ae43e300be35ca7e80d9669ba10b9a2551707e"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_fly_w64x6_atk_q.json",
+      "sha256": "057d7ed829e5b8b787e965cbfa7353abe2f81918680907da93db331c3a289e84"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_fly_w64x6_atk_s5102.json",
+      "sha256": "85ea3765ce468e51204ccc2ae7677c8938b7a368df1927e8af653f1cb253f86f"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_fly_w64x6_atk_s5103.json",
+      "sha256": "449ddf993b599efc762d9ffaceb00c0dc8c0eed527ceac4de91fa6d766f73061"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_gru_orig.json",
+      "sha256": "a268b751b5dcc63c9fb3e54080eff3d5b6c91ca27e0b1871a33239016c73345f"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_gru_w64x6.json",
+      "sha256": "76dcbd39e751c5b49598fba8559cb8791edbbb3a925a44ee771c0ff55590d179"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_gru_w64x6_atk.json",
+      "sha256": "2c72ef38aaa7eb3edd0dede083c6548bc7e54d1fbf2afdbd02c6696b8e899da9"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_gru_w64x6_atk_q.json",
+      "sha256": "e3d2cc41afbfd5fdf11a3b29ffc20ba769af8130e1c6f23e105ca1b88a604ed6"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_gru_w64x6_atk_s5102.json",
+      "sha256": "3d06cd57bcf6fd54f2c55f5066080f7b26b389659d4f130cecfee911542a6147"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_gru_w64x6_atk_s5103.json",
+      "sha256": "cc89d9361915d033cc6e96c210f088e1c080a8acae1c6b9d79914a7fd0da92c3"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rewired_w64x6_atk.json",
+      "sha256": "44102dbc88d952d13d22fc914dd385f7db6f77c554660302f419385abb8d0219"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rewired_w64x6_atk_q.json",
+      "sha256": "6fa6d1da5353f48fc2142a9af47f980b7e5ce485cfc4f2d4407378a90ff594d9"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rewired_w64x6_atk_s5102.json",
+      "sha256": "3206e86ea0fa3b3af48334635011a46f414d4dd9981a9152a29310e51ed10922"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rewired_w64x6_atk_s5103.json",
+      "sha256": "40f3fc7c23408a5dbee86017ec9c55651bd2f3792cf93e6853b12112dc0e8c82"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rnn_w64x6_atk.json",
+      "sha256": "42e01adc63be5fe1458cf789915c596d54506f9e9f6e15314e4def05c35ba032"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rnn_w64x6_atk_q.json",
+      "sha256": "02e76de09682bd020a1037e56cf0ee360fd148d5c976c1b8bebe1f99cc89c5ce"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rnn_w64x6_atk_s5102.json",
+      "sha256": "8dc38bbd48185fc59e2df26b14b6a13dcb5dbfcd1675d3dccf0f938e2bee8d45"
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rnn_w64x6_atk_s5103.json",
+      "sha256": "fe69d3144269f1b710222ceee3f8fad2aa125a0599488e947b5322ccbecd2e06"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/quiet_test.json",
+      "sha256": "cb03faaa16e6a815a8a14209946834eb2e4a00f1fbea1e1afba91d9ddb88c68e"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/quiet_train.json",
+      "sha256": "023e1400ad0420bab2308c4f80e450db9e341be8bc536d07547967a647c1faed"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/human_games_v1.json",
+      "sha256": "d932de67f204085c80063dc1bd7bdf001bd62d5451f8023964fac7f18260b1bc"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v1.json",
+      "sha256": "d7ffdffb53bba95ab4ac1cb8eb667cbf97a88bd04c4f4cff021f311caebb939c"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/live_v1.json",
+      "sha256": "a203184f3016444a135b9fa50d6027cec2851d9f34635e6e5e7006aa69144bf9"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v1.json",
+      "sha256": "8dfc440bb4f96432e6403afdbed966bad5920cff6d0a104c66e7a1b465b0e288"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v1.json",
+      "sha256": "e019cbd28f8f0d43e5f368667d1bab3de8ec7df9ce51e01aef8892228a08853d"
+    }
+  ],
+  "local_checkpoint_inventory": [
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_fly_w64x6_atk_q.pt",
+      "bytes": 4718165,
+      "sha256": "d58cea12ac3905d6dd963c9ff49326118f0cbeb8fa3b4bb520f11ac0b66c6fb9",
+      "included_in_publication": false
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_gru_w64x6_atk_q.pt",
+      "bytes": 3050805,
+      "sha256": "c255e60d6a4e38267bacaaba3d017669c225519fb1340b0a9aa98b8e56777ecf",
+      "included_in_publication": false
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rewired_w64x6_atk_q.pt",
+      "bytes": 4718461,
+      "sha256": "ea7b4287bc62cd1789759e1c9c2566cf2e7813fa91cf8d19201c023300ea53b0",
+      "included_in_publication": false
+    },
+    {
+      "path": "gomoku/runs/defense_probe_20261014/scratch_rnn_w64x6_atk_q.pt",
+      "bytes": 3052725,
+      "sha256": "25f5fe76c5374280f7461488f6a49583a045e1e73d5298b492e77805712c3705",
+      "included_in_publication": false
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v1.pt",
+      "bytes": 9208531,
+      "sha256": "1afd0038f488d78d4353de88c8967e5798f29c8981d15540c257782c30bab537",
+      "included_in_publication": false
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v1.pt",
+      "bytes": 40270669,
+      "sha256": "87216c0b54aa87266557abb8947c27120d6735d903d1976e24f63f5688038467",
+      "included_in_publication": false
+    }
+  ]
+}

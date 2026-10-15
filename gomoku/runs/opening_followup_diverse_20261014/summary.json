@@ -1,0 +1,301 @@
+{
+  "status": "complete",
+  "protocol": {
+    "games_per_seed": 128,
+    "validation_seed": 281000481,
+    "test_seeds": [
+      282000481,
+      283000481
+    ],
+    "collection_seed": 284000481,
+    "updates": 100,
+    "learning_rate": 5e-05,
+    "correction_selection": "first certified mistake outside reserved evaluation boards per lost game",
+    "collection_opponent": "hard: 85% tactical / 15% random; evaluation remains tactical",
+    "source_hashes": {
+      "fly": "87047ba164ec1837b616445a228ec2c8af622c435c81507ce3b8a760bd5a360c",
+      "gru": "3cab6460c5a01340c93a77819c951b9a1b17785ac2a8c69ec749a329abeb88d7",
+      "rnn": "0b6d4150bf669ef3a52c57659648e921e7fa7f4819b7c9f717cf0b51c588f7dc",
+      "rewired": "3b814f5bcc09ddce3101967e04da9d264bb7c14d40f2daaa029d5bcf06a7852c"
+    },
+    "opponent": "built-in tactical heuristic; not an external expert engine",
+    "opening": "both players black center; raw comparison disables only learner forcing",
+    "selection": "fixed final 100 updates; no checkpoint search; validation and test must improve wins, preserve omission rate/count and forks",
+    "test_scope": "new opponent RNG seeds; common opening is intentionally shared; baseline evaluation prefixes excluded from tactical training"
+  },
+  "models": {
+    "fly": {
+      "raw_validation": {
+        "games": 128,
+        "wins": 0,
+        "omissions": 31,
+        "blocks": 287,
+        "omission_rate": 0.10801393728222997,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "before_validation": {
+        "games": 128,
+        "wins": 0,
+        "omissions": 46,
+        "blocks": 301,
+        "omission_rate": 0.15282392026578073,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "after_validation": {
+        "games": 128,
+        "wins": 0,
+        "omissions": 25,
+        "blocks": 327,
+        "omission_rate": 0.0764525993883792,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "before_test": {
+        "games": 256,
+        "wins": 0,
+        "omissions": 84,
+        "blocks": 578,
+        "omission_rate": 0.1453287197231834,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "after_test": {
+        "games": 256,
+        "wins": 0,
+        "omissions": 63,
+        "blocks": 671,
+        "omission_rate": 0.09388971684053651,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "candidate": "gomoku/runs/opening_followup_diverse_20261014/fly_candidate.pt",
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/structure_compare/fly_seed4810.pt",
+      "fresh_records": 64,
+      "correction_eval_overlap": 0,
+      "unique_baseline_test_replays": 33,
+      "candidate_raw_opening_1based": [
+        6,
+        6
+      ],
+      "baseline_raw_opening_1based": [
+        1,
+        1
+      ]
+    },
+    "gru": {
+      "raw_validation": {
+        "games": 128,
+        "wins": 6,
+        "omissions": 46,
+        "blocks": 357,
+        "omission_rate": 0.12885154061624648,
+        "safe_forks": 6,
+        "black_wins": 6,
+        "white_wins": 0
+      },
+      "before_validation": {
+        "games": 128,
+        "wins": 0,
+        "omissions": 43,
+        "blocks": 345,
+        "omission_rate": 0.1246376811594203,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "after_validation": {
+        "games": 128,
+        "wins": 5,
+        "omissions": 85,
+        "blocks": 359,
+        "omission_rate": 0.23676880222841226,
+        "safe_forks": 17,
+        "black_wins": 0,
+        "white_wins": 5
+      },
+      "before_test": {
+        "games": 256,
+        "wins": 3,
+        "omissions": 120,
+        "blocks": 715,
+        "omission_rate": 0.16783216783216784,
+        "safe_forks": 5,
+        "black_wins": 3,
+        "white_wins": 0
+      },
+      "after_test": {
+        "games": 256,
+        "wins": 11,
+        "omissions": 187,
+        "blocks": 748,
+        "omission_rate": 0.25,
+        "safe_forks": 27,
+        "black_wins": 0,
+        "white_wins": 11
+      },
+      "candidate": "gomoku/runs/opening_followup_diverse_20261014/gru_candidate.pt",
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/f3/gru_seed4810.pt",
+      "fresh_records": 53,
+      "correction_eval_overlap": 0,
+      "unique_baseline_test_replays": 46,
+      "candidate_raw_opening_1based": [
+        5,
+        6
+      ],
+      "baseline_raw_opening_1based": [
+        5,
+        5
+      ]
+    },
+    "rnn": {
+      "raw_validation": {
+        "games": 128,
+        "wins": 0,
+        "omissions": 25,
+        "blocks": 306,
+        "omission_rate": 0.08169934640522876,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "before_validation": {
+        "games": 128,
+        "wins": 9,
+        "omissions": 26,
+        "blocks": 290,
+        "omission_rate": 0.0896551724137931,
+        "safe_forks": 19,
+        "black_wins": 9,
+        "white_wins": 0
+      },
+      "after_validation": {
+        "games": 128,
+        "wins": 1,
+        "omissions": 69,
+        "blocks": 537,
+        "omission_rate": 0.12849162011173185,
+        "safe_forks": 1,
+        "black_wins": 1,
+        "white_wins": 0
+      },
+      "before_test": {
+        "games": 256,
+        "wins": 13,
+        "omissions": 51,
+        "blocks": 585,
+        "omission_rate": 0.08717948717948718,
+        "safe_forks": 32,
+        "black_wins": 13,
+        "white_wins": 0
+      },
+      "after_test": {
+        "games": 256,
+        "wins": 2,
+        "omissions": 151,
+        "blocks": 1099,
+        "omission_rate": 0.13739763421292084,
+        "safe_forks": 2,
+        "black_wins": 1,
+        "white_wins": 1
+      },
+      "candidate": "gomoku/runs/opening_followup_diverse_20261014/rnn_candidate.pt",
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/structure_compare/rnn_seed4811.pt",
+      "fresh_records": 45,
+      "correction_eval_overlap": 0,
+      "unique_baseline_test_replays": 46,
+      "candidate_raw_opening_1based": [
+        8,
+        6
+      ],
+      "baseline_raw_opening_1based": [
+        8,
+        4
+      ]
+    },
+    "rewired": {
+      "raw_validation": {
+        "games": 128,
+        "wins": 0,
+        "omissions": 47,
+        "blocks": 358,
+        "omission_rate": 0.13128491620111732,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "before_validation": {
+        "games": 128,
+        "wins": 0,
+        "omissions": 34,
+        "blocks": 335,
+        "omission_rate": 0.10149253731343283,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "after_validation": {
+        "games": 128,
+        "wins": 2,
+        "omissions": 59,
+        "blocks": 398,
+        "omission_rate": 0.14824120603015076,
+        "safe_forks": 24,
+        "black_wins": 2,
+        "white_wins": 0
+      },
+      "before_test": {
+        "games": 256,
+        "wins": 0,
+        "omissions": 55,
+        "blocks": 651,
+        "omission_rate": 0.08448540706605223,
+        "safe_forks": 0,
+        "black_wins": 0,
+        "white_wins": 0
+      },
+      "after_test": {
+        "games": 256,
+        "wins": 2,
+        "omissions": 118,
+        "blocks": 806,
+        "omission_rate": 0.14640198511166252,
+        "safe_forks": 25,
+        "black_wins": 2,
+        "white_wins": 0
+      },
+      "candidate": "gomoku/runs/opening_followup_diverse_20261014/rewired_candidate.pt",
+      "adopted": false,
+      "selected": "gomoku/runs/long_plan_f_20261009/structure_compare/rewired_seed4811.pt",
+      "fresh_records": 54,
+      "correction_eval_overlap": 0,
+      "unique_baseline_test_replays": 44,
+      "candidate_raw_opening_1based": [
+        8,
+        6
+      ],
+      "baseline_raw_opening_1based": [
+        8,
+        5
+      ]
+    }
+  },
+  "reserved_keys": 9670,
+  "legacy_records": 21400,
+  "original_hashes_unchanged": true,
+  "validation_checks": {
+    "unit_tests": 43,
+    "ppo_smoke_updates": 2,
+    "candidate_checkpoints_loadable": true,
+    "candidate_raw_openings_checked": true
+  }
+}

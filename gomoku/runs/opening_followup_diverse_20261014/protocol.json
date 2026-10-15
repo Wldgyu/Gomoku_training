@@ -1,0 +1,23 @@
+{
+  "games_per_seed": 128,
+  "validation_seed": 281000481,
+  "test_seeds": [
+    282000481,
+    283000481
+  ],
+  "collection_seed": 284000481,
+  "updates": 100,
+  "learning_rate": 5e-05,
+  "correction_selection": "first certified mistake outside reserved evaluation boards per lost game",
+  "collection_opponent": "hard: 85% tactical / 15% random; evaluation remains tactical",
+  "source_hashes": {
+    "fly": "87047ba164ec1837b616445a228ec2c8af622c435c81507ce3b8a760bd5a360c",
+    "gru": "3cab6460c5a01340c93a77819c951b9a1b17785ac2a8c69ec749a329abeb88d7",
+    "rnn": "0b6d4150bf669ef3a52c57659648e921e7fa7f4819b7c9f717cf0b51c588f7dc",
+    "rewired": "3b814f5bcc09ddce3101967e04da9d264bb7c14d40f2daaa029d5bcf06a7852c"
+  },
+  "opponent": "built-in tactical heuristic; not an external expert engine",
+  "opening": "both players black center; raw comparison disables only learner forcing",
+  "selection": "fixed final 100 updates; no checkpoint search; validation and test must improve wins, preserve omission rate/count and forks",
+  "test_scope": "new opponent RNG seeds; common opening is intentionally shared; baseline evaluation prefixes excluded from tactical training"
+}

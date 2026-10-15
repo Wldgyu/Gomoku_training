@@ -8,3 +8,10 @@
 *.log
 *.tmp
 
+
+/gomoku/external/
+*.pth
+*.onnx
+*.exe
+*.dll
+*.7z

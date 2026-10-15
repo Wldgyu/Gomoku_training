@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from .env import BatchBoard, LearnerEnv, opponent_actions
+from .env import BatchBoard, LearnerEnv, force_black_center, opponent_actions
 from .models import KINDS, Policy, load_policy, matched_hidden
 from .train import DEFAULT_OUT, atomic_json
 from .tactics import targets
@@ -40,12 +40,12 @@ def versus_opponent(model: Policy, opponent: str, seed: int, games: int = 256) -
         logits, _, state = model.step(torch.from_numpy(obs).to(device), state, resets, matrix)
         actions = logits.masked_fill(~torch.from_numpy(legal).to(device), -1e9).argmax(1)
         label, category = targets(env.games, env.colors)
-        chosen = actions.cpu().numpy()
+        chosen = force_black_center(env.games, env.colors, actions.cpu().numpy())
         for name, cat in (("win", 1), ("block", 2)):
             rows = np.flatnonzero((category == cat) & ~finished)
             tactic_counts[name][0] += len(rows)
             tactic_counts[name][1] += int(label[rows, chosen[rows]].sum())
-        _, done, info = env.step(actions.cpu().numpy())
+        _, done, info = env.step(chosen)
         for row, value, plies in zip(info["rows"], info["results"], info["plies"]):
             if not finished[row]:
                 finished[row] = True
@@ -111,7 +111,7 @@ def match(a: Policy, b: Policy, openings: np.ndarray, a_color: int) -> tuple[dic
         else:
             state_b = new_state
         legal = torch.from_numpy(board.legal()).to(device)
-        actions = logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy()
+        actions = force_black_center(board, color, logits.masked_fill(~legal, -1e9).argmax(1).cpu().numpy())
         for row in np.flatnonzero(active):
             history[row].append(int(actions[row]))
         board.place(actions, color, active)

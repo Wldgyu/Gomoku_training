@@ -1,0 +1,100 @@
+{
+  "fly2950_v1": {
+    "games": 256,
+    "wins": 171,
+    "losses": 80,
+    "draws": 5,
+    "mean_plies": 54.08203125,
+    "by_color": {
+      "black": {
+        "games": 128,
+        "wins": 77,
+        "losses": 49,
+        "draws": 2
+      },
+      "white": {
+        "games": 128,
+        "wins": 94,
+        "losses": 31,
+        "draws": 3
+      }
+    },
+    "tactical": {
+      "win": {
+        "positions": 171,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 1114,
+        "accuracy": 0.9820466786355476
+      },
+      "create_fork": {
+        "positions": 171,
+        "accuracy": 1.0
+      },
+      "prevent_fork": {
+        "positions": 1018,
+        "accuracy": 0.9567779960707269
+      },
+      "create_forcing_chain": {
+        "positions": 65,
+        "accuracy": 0.9846153846153847
+      },
+      "prevent_forcing_chain": {
+        "positions": 63,
+        "accuracy": 0.873015873015873
+      }
+    },
+    "seed": 321000481,
+    "opponent": "tactical"
+  },
+  "rnn3000_v1": {
+    "games": 256,
+    "wins": 142,
+    "losses": 104,
+    "draws": 10,
+    "mean_plies": 52.28515625,
+    "by_color": {
+      "black": {
+        "games": 128,
+        "wins": 60,
+        "losses": 65,
+        "draws": 3
+      },
+      "white": {
+        "games": 128,
+        "wins": 82,
+        "losses": 39,
+        "draws": 7
+      }
+    },
+    "tactical": {
+      "win": {
+        "positions": 142,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 1212,
+        "accuracy": 0.995049504950495
+      },
+      "create_fork": {
+        "positions": 141,
+        "accuracy": 1.0
+      },
+      "prevent_fork": {
+        "positions": 904,
+        "accuracy": 0.9081858407079646
+      },
+      "create_forcing_chain": {
+        "positions": 97,
+        "accuracy": 1.0
+      },
+      "prevent_forcing_chain": {
+        "positions": 72,
+        "accuracy": 0.7083333333333334
+      }
+    },
+    "seed": 321000481,
+    "opponent": "tactical"
+  }
+}

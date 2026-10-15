@@ -1,0 +1,45 @@
+{
+  "curve": [
+    {
+      "update": 60,
+      "loss": 0.4601,
+      "seconds": 8,
+      "validation": 0.7159,
+      "vram_gb": 0.52
+    }
+  ],
+  "tests": {
+    "test": {
+      "win": {
+        "positions": 20,
+        "accuracy": 0.95
+      },
+      "block": {
+        "positions": 20,
+        "accuracy": 0.9
+      },
+      "create_fork": {
+        "positions": 20,
+        "accuracy": 0.95
+      },
+      "prevent_fork": {
+        "positions": 20,
+        "accuracy": 1.0
+      },
+      "create_forcing_chain": {
+        "positions": 20,
+        "accuracy": 0.55
+      },
+      "prevent_forcing_chain": {
+        "positions": 20,
+        "accuracy": 0.5
+      },
+      "all": {
+        "positions": 120,
+        "accuracy": 0.8083333333333333
+      }
+    }
+  },
+  "hidden": 2950,
+  "parameters": 1257627
+}

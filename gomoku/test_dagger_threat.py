@@ -11,6 +11,7 @@ from .history_aux import HistoryTacticalData
 from .midgame_data import collect, save
 from .models import matched_hidden
 from .spatial import SpatialPolicy
+from .midgame_data import canonical
 from .threat_aux import ThreatData, generate
 
 
@@ -71,6 +72,18 @@ class DaggerThreatTests(unittest.TestCase):
             np.testing.assert_array_equal(board.observe(color)[0], record["obs"])
             self.assertTrue(record["labels"].any())
             self.assertGreater(record["category"], 0)
+
+    def test_novel_collector_never_returns_reserved_failure_boards(self):
+        model = SpatialPolicy("gru", 4912, matched_hidden("gru", 12), 12)
+        first, _ = collect_dagger(model, 8, 313_000_481, "cpu")
+        def record_key(record):
+            obs = record["obs"]
+            color = 1 if obs[3, 0, 0] else -1
+            return canonical(((obs[0] - obs[1]) * color).reshape(-1).astype(np.int8), color)
+        reserved = {record_key(r) for r in first}
+        records, _ = collect_dagger(model, 8, 313_000_481, "cpu", excluded=reserved,
+                                    skip_excluded_departures=True)
+        self.assertFalse(reserved & {record_key(r) for r in records})
 
 
 if __name__ == "__main__":
