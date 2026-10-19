@@ -1,0 +1,1314 @@
+{
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T15:22:01.530507+09:00",
+  "scope": "Train/test canonical-position-key intersections of every stored 15x15 array; no training or evaluation was run",
+  "files": {
+    "deep_test": {
+      "records": 300,
+      "unique_keys": 300,
+      "categories": {
+        "5": 149,
+        "6": 151
+      },
+      "sha256": "b8a906a1518f07c2ba510a9f00dcc0722b956d8aff18d8a8405d1ca7f5cf4978",
+      "bytes": 39460
+    },
+    "deep_train": {
+      "records": 3000,
+      "unique_keys": 3000,
+      "categories": {
+        "5": 1475,
+        "6": 1525
+      },
+      "sha256": "a863bc71aac403754f36b07147e57503003667e9e8fe37b9cb91d4e18ec0627f",
+      "bytes": 366064
+    },
+    "forbid2_test": {
+      "records": 50,
+      "unique_keys": 50,
+      "categories": {
+        "5": 50
+      },
+      "sha256": "456b28ef064923109a7ce5c026567ee7cfc21871c895f6805789d33917c32835",
+      "bytes": 9061
+    },
+    "forbid2_train": {
+      "records": 1000,
+      "unique_keys": 1000,
+      "categories": {
+        "5": 1000
+      },
+      "sha256": "f2ad8563418aec87a507ec1c049188d139b06ed4762e2b2dd17af729f56168b9",
+      "bytes": 134235
+    },
+    "forbid_black_test": {
+      "records": 200,
+      "unique_keys": 200,
+      "categories": {
+        "6": 200
+      },
+      "sha256": "f02a641e9722039f479feea67e266ab03dd40f359d01266889596e2391b6312f",
+      "bytes": 28977
+    },
+    "forbid_black_train": {
+      "records": 1500,
+      "unique_keys": 1500,
+      "categories": {
+        "6": 1500
+      },
+      "sha256": "e4aa2605a9f3bde8f313d3b23e422aae2e5fe2e687f479ec14f80cfa1c3664bf",
+      "bytes": 208407
+    },
+    "forbid_test": {
+      "records": 150,
+      "unique_keys": 150,
+      "categories": {
+        "5": 150
+      },
+      "sha256": "b2b0164b4a89c8ae89babdcbea02cb167ad69395c44868bcc5ce061c36508349",
+      "bytes": 22995
+    },
+    "forbid_train": {
+      "records": 1000,
+      "unique_keys": 1000,
+      "categories": {
+        "5": 1000
+      },
+      "sha256": "3074c0f7e46b0b009f15d83167865f63f248d1dd401f163812548c360ec67ad7",
+      "bytes": 138455
+    },
+    "human_train": {
+      "records": 1089,
+      "unique_keys": 1089,
+      "categories": {
+        "1": 73,
+        "2": 363,
+        "3": 63,
+        "4": 444,
+        "5": 79,
+        "6": 67
+      },
+      "sha256": "cd699d10f422c823b41d7908fd9a12a81953f0069cfd21bb46a998ecade7ebaa",
+      "bytes": 74641
+    },
+    "humanlost_train": {
+      "records": 259,
+      "unique_keys": 259,
+      "categories": {
+        "2": 64,
+        "3": 1,
+        "4": 69,
+        "5": 7,
+        "6": 25,
+        "7": 93
+      },
+      "sha256": "1c25c07a5839d81ecb313193dc28742b662cbf818038829336304936e4e663cd",
+      "bytes": 21556
+    },
+    "humanr_train": {
+      "records": 865,
+      "unique_keys": 865,
+      "categories": {
+        "1": 36,
+        "2": 25,
+        "3": 27,
+        "4": 82,
+        "5": 75,
+        "6": 31,
+        "7": 589
+      },
+      "sha256": "92ba44856ec35b3b13ff41f67696be1bd23b98928959cd67ad6bfbbf6823d039",
+      "bytes": 58179
+    },
+    "onpolicy_test": {
+      "records": 3321,
+      "unique_keys": 3321,
+      "categories": {
+        "1": 89,
+        "2": 1925,
+        "3": 91,
+        "4": 1035,
+        "5": 78,
+        "6": 103
+      },
+      "sha256": "71c0bfc77ccfd50abbe31fff1c50c11249f6c6a3f8a5e553dd0506b3a8b48718",
+      "bytes": 411560
+    },
+    "onpolicy_train": {
+      "records": 59,
+      "unique_keys": 59,
+      "categories": {
+        "2": 27,
+        "4": 21,
+        "5": 5,
+        "6": 6
+      },
+      "sha256": "672f196d476352cdaf99612f239a3965726ccd44b4e9af074e3f6bc880805c51",
+      "bytes": 14772
+    },
+    "quiet_test": {
+      "records": 400,
+      "unique_keys": 400,
+      "categories": {
+        "7": 400
+      },
+      "sha256": "622f24f4d9917d3c43e52f45a69a6bc9a99e6ac3589a349194e7c6e581a1856a",
+      "bytes": 33184
+    },
+    "quiet_train": {
+      "records": 6000,
+      "unique_keys": 6000,
+      "categories": {
+        "7": 6000
+      },
+      "sha256": "5237e6a31dc94d803299e3c08d93c4293b756fe15f9a82ee336b221f78e63524",
+      "bytes": 525012
+    },
+    "rapfi2_test": {
+      "records": 4004,
+      "unique_keys": 4004,
+      "categories": {
+        "1": 44,
+        "2": 764,
+        "3": 40,
+        "4": 1011,
+        "5": 44,
+        "6": 124,
+        "7": 1977
+      },
+      "sha256": "d1542e05893d23015df98d63e84935962e9a616ff97dcd6cad8237e1c7fa8bb7",
+      "bytes": 264242
+    },
+    "rapfi2_train": {
+      "records": 30353,
+      "unique_keys": 30353,
+      "categories": {
+        "1": 416,
+        "2": 6101,
+        "3": 428,
+        "4": 7686,
+        "5": 400,
+        "6": 904,
+        "7": 14418
+      },
+      "sha256": "315f0703553646c06291d96261ce8dfdab5391bdcec59bf4323b666ebac64442",
+      "bytes": 2000382
+    },
+    "rapfi3_test": {
+      "records": 1158,
+      "unique_keys": 1158,
+      "categories": {
+        "1": 22,
+        "2": 236,
+        "3": 22,
+        "4": 295,
+        "5": 29,
+        "6": 39,
+        "7": 515
+      },
+      "sha256": "cb79033b5de34004929fe21d638baff0cc5bbcc5a880c74df32299289aedd063",
+      "bytes": 78111
+    },
+    "rapfi3_train": {
+      "records": 9486,
+      "unique_keys": 9486,
+      "categories": {
+        "1": 145,
+        "2": 1875,
+        "3": 145,
+        "4": 2342,
+        "5": 223,
+        "6": 406,
+        "7": 4350
+      },
+      "sha256": "10819fdc26f97efa559b02c2962e8f7172104204bf2186f28c72b952d1ee3c70",
+      "bytes": 626006
+    },
+    "rapfi4_test": {
+      "records": 1512,
+      "unique_keys": 1512,
+      "categories": {
+        "1": 19,
+        "2": 281,
+        "3": 20,
+        "4": 328,
+        "5": 33,
+        "6": 63,
+        "7": 768
+      },
+      "sha256": "c0967c71b6ead4b7d7bd7815ff26213a826494e160b3c1ff762c682875218393",
+      "bytes": 101333
+    },
+    "rapfi4_train": {
+      "records": 9850,
+      "unique_keys": 9850,
+      "categories": {
+        "1": 143,
+        "2": 1968,
+        "3": 143,
+        "4": 2392,
+        "5": 187,
+        "6": 444,
+        "7": 4573
+      },
+      "sha256": "f79b2ae6ea5d419d161ac83c555611671dda5b43417a299327a8ba2946167a3c",
+      "bytes": 649881
+    },
+    "rapfi_test": {
+      "records": 3839,
+      "unique_keys": 3839,
+      "categories": {
+        "1": 45,
+        "2": 699,
+        "3": 44,
+        "4": 951,
+        "5": 49,
+        "6": 97,
+        "7": 1954
+      },
+      "sha256": "660a6500fab1b3e71a23fd882b0fa2b0766c18189c120b8d034e6780c2c2b62b",
+      "bytes": 253032
+    },
+    "rapfi_train": {
+      "records": 30861,
+      "unique_keys": 30861,
+      "categories": {
+        "1": 364,
+        "2": 6085,
+        "3": 350,
+        "4": 7799,
+        "5": 367,
+        "6": 865,
+        "7": 15031
+      },
+      "sha256": "0cc7f0cc61bc30114c4cd6d76a7560066f5e1def8e3011d6ca3e7a37bf397c9b",
+      "bytes": 2028937
+    },
+    "selfplay_test": {
+      "records": 1046,
+      "unique_keys": 1046,
+      "categories": {
+        "1": 69,
+        "2": 312,
+        "3": 82,
+        "4": 453,
+        "5": 77,
+        "6": 53
+      },
+      "sha256": "b8bec6b7c13b19733b1a9f63a27bf6cd7f148dbfc8832e614a61b84d0f46219c",
+      "bytes": 102104
+    },
+    "selfplay_train": {
+      "records": 4178,
+      "unique_keys": 4178,
+      "categories": {
+        "1": 290,
+        "2": 1223,
+        "3": 268,
+        "4": 1958,
+        "5": 246,
+        "6": 193
+      },
+      "sha256": "044164ccf01a99bf249dc6461a99602360ceb21e2d4166562734818c245730b5",
+      "bytes": 404761
+    },
+    "test": {
+      "records": 3600,
+      "unique_keys": 3600,
+      "categories": {
+        "1": 600,
+        "2": 600,
+        "3": 600,
+        "4": 600,
+        "5": 600,
+        "6": 600
+      },
+      "sha256": "63801f111792a927b0dee158ce50c07fa09e816c568b8ae0d273d35cc7294177",
+      "bytes": 373991
+    },
+    "train": {
+      "records": 36000,
+      "unique_keys": 36000,
+      "categories": {
+        "1": 6000,
+        "2": 6000,
+        "3": 6000,
+        "4": 5960,
+        "5": 6040,
+        "6": 6000
+      },
+      "sha256": "85cd88d659aae551e44d0b6985adc770c6aebfb787673c8c422df2a444e019ac",
+      "bytes": 3848499
+    }
+  },
+  "train_test_key_intersections": [
+    {
+      "train": "deep_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "deep_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid2_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_black_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "forbid_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "human_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanlost_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "humanr_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "onpolicy_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "rapfi2_test",
+      "overlap": 8
+    },
+    {
+      "train": "quiet_train",
+      "test": "rapfi3_test",
+      "overlap": 2
+    },
+    {
+      "train": "quiet_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "rapfi_test",
+      "overlap": 5
+    },
+    {
+      "train": "quiet_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "quiet_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "rapfi3_test",
+      "overlap": 59
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "rapfi4_test",
+      "overlap": 66
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "rapfi4_test",
+      "overlap": 25
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi4_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "rapfi2_test",
+      "overlap": 203
+    },
+    {
+      "train": "rapfi_train",
+      "test": "rapfi3_test",
+      "overlap": 63
+    },
+    {
+      "train": "rapfi_train",
+      "test": "rapfi4_test",
+      "overlap": 63
+    },
+    {
+      "train": "rapfi_train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "rapfi_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi2_test",
+      "overlap": 6
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi3_test",
+      "overlap": 2
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi4_test",
+      "overlap": 1
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi_test",
+      "overlap": 9
+    },
+    {
+      "train": "selfplay_train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "selfplay_train",
+      "test": "test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "deep_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "forbid2_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "forbid_black_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "forbid_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "onpolicy_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "quiet_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "rapfi2_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "rapfi3_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "rapfi4_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "rapfi_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "selfplay_test",
+      "overlap": 0
+    },
+    {
+      "train": "train",
+      "test": "test",
+      "overlap": 0
+    }
+  ],
+  "pairs_with_overlap": [
+    {
+      "train": "quiet_train",
+      "test": "rapfi2_test",
+      "overlap": 8
+    },
+    {
+      "train": "quiet_train",
+      "test": "rapfi3_test",
+      "overlap": 2
+    },
+    {
+      "train": "quiet_train",
+      "test": "rapfi_test",
+      "overlap": 5
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "rapfi3_test",
+      "overlap": 59
+    },
+    {
+      "train": "rapfi2_train",
+      "test": "rapfi4_test",
+      "overlap": 66
+    },
+    {
+      "train": "rapfi3_train",
+      "test": "rapfi4_test",
+      "overlap": 25
+    },
+    {
+      "train": "rapfi_train",
+      "test": "rapfi2_test",
+      "overlap": 203
+    },
+    {
+      "train": "rapfi_train",
+      "test": "rapfi3_test",
+      "overlap": 63
+    },
+    {
+      "train": "rapfi_train",
+      "test": "rapfi4_test",
+      "overlap": 63
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi2_test",
+      "overlap": 6
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi3_test",
+      "overlap": 2
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi4_test",
+      "overlap": 1
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi_test",
+      "overlap": 9
+    }
+  ],
+  "note": "Stored position keys only; not an exhaustive trajectory-independence proof. Files without a keys array are skipped."
+}

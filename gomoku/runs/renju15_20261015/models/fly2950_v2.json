@@ -1,0 +1,192 @@
+{
+  "curve": [
+    {
+      "update": 500,
+      "loss": 0.3207,
+      "seconds": 98,
+      "validation": 0.8852,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 1000,
+      "loss": 0.3123,
+      "seconds": 209,
+      "validation": 0.8858,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 1500,
+      "loss": 0.2512,
+      "seconds": 319,
+      "validation": 0.8882,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 2000,
+      "loss": 0.2628,
+      "seconds": 429,
+      "validation": 0.8855,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 2500,
+      "loss": 0.2137,
+      "seconds": 540,
+      "validation": 0.8881,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 3000,
+      "loss": 0.2159,
+      "seconds": 650,
+      "validation": 0.8885,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 3500,
+      "loss": 0.1933,
+      "seconds": 760,
+      "validation": 0.8903,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 4000,
+      "loss": 0.1773,
+      "seconds": 871,
+      "validation": 0.8914,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 4500,
+      "loss": 0.1081,
+      "seconds": 981,
+      "validation": 0.8903,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 5000,
+      "loss": 0.1083,
+      "seconds": 1091,
+      "validation": 0.8916,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 5500,
+      "loss": 0.158,
+      "seconds": 1201,
+      "validation": 0.8926,
+      "vram_gb": 1.19
+    },
+    {
+      "update": 6000,
+      "loss": 0.1704,
+      "seconds": 1312,
+      "validation": 0.8928,
+      "vram_gb": 1.19
+    }
+  ],
+  "tests": {
+    "test": {
+      "win": {
+        "positions": 600,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 600,
+        "accuracy": 0.995
+      },
+      "create_fork": {
+        "positions": 600,
+        "accuracy": 0.9933333333333333
+      },
+      "prevent_fork": {
+        "positions": 600,
+        "accuracy": 0.995
+      },
+      "create_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.8666666666666667
+      },
+      "prevent_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.8816666666666667
+      },
+      "all": {
+        "positions": 3600,
+        "accuracy": 0.9552777777777778
+      }
+    },
+    "quiet_test": {
+      "quiet_rapfi_agreement": {
+        "positions": 400,
+        "accuracy": 0.465
+      },
+      "all": {
+        "positions": 400,
+        "accuracy": 0.465
+      }
+    },
+    "onpolicy_test": {
+      "win": {
+        "positions": 89,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 1925,
+        "accuracy": 0.9864935064935065
+      },
+      "create_fork": {
+        "positions": 91,
+        "accuracy": 0.9010989010989011
+      },
+      "prevent_fork": {
+        "positions": 1050,
+        "accuracy": 0.9638095238095238
+      },
+      "create_forcing_chain": {
+        "positions": 63,
+        "accuracy": 0.9523809523809523
+      },
+      "prevent_forcing_chain": {
+        "positions": 103,
+        "accuracy": 0.883495145631068
+      },
+      "all": {
+        "positions": 3321,
+        "accuracy": 0.9735019572417947
+      }
+    },
+    "selfplay_test": {
+      "win": {
+        "positions": 69,
+        "accuracy": 0.9420289855072463
+      },
+      "block": {
+        "positions": 312,
+        "accuracy": 0.9647435897435898
+      },
+      "create_fork": {
+        "positions": 82,
+        "accuracy": 0.8780487804878049
+      },
+      "prevent_fork": {
+        "positions": 487,
+        "accuracy": 0.9383983572895277
+      },
+      "create_forcing_chain": {
+        "positions": 43,
+        "accuracy": 0.6976744186046512
+      },
+      "prevent_forcing_chain": {
+        "positions": 53,
+        "accuracy": 0.7547169811320755
+      },
+      "all": {
+        "positions": 1046,
+        "accuracy": 0.9225621414913958
+      }
+    }
+  },
+  "hidden": 2950,
+  "parameters": 1257627
+}

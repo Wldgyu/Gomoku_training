@@ -1,0 +1,282 @@
+{
+  "fly2950_v1": {
+    "games": 2,
+    "human_wins": 1,
+    "ai_wins": 1,
+    "tactical": "14/15",
+    "mistakes": {
+      "prevent_fork": 1
+    },
+    "mean_plies": 45.0,
+    "human_color_hw_aw": {
+      "black": [
+        0,
+        1
+      ],
+      "white": [
+        1,
+        0
+      ]
+    }
+  },
+  "fly2950_v2": {
+    "games": 2,
+    "human_wins": 2,
+    "ai_wins": 0,
+    "tactical": "8/10",
+    "mistakes": {
+      "create_forcing_chain": 2
+    },
+    "mean_plies": 29.5,
+    "human_color_hw_aw": {
+      "black": [
+        1,
+        0
+      ],
+      "white": [
+        1,
+        0
+      ]
+    }
+  },
+  "fly2950_v3": {
+    "games": 3,
+    "human_wins": 1,
+    "ai_wins": 2,
+    "tactical": "13/13",
+    "mistakes": {},
+    "mean_plies": 31.0,
+    "human_color_hw_aw": {
+      "black": [
+        0,
+        1
+      ],
+      "white": [
+        1,
+        1
+      ]
+    }
+  },
+  "fly2950_v4": {
+    "games": 6,
+    "human_wins": 2,
+    "ai_wins": 3,
+    "tactical": "30/34",
+    "mistakes": {
+      "create_forcing_chain": 3,
+      "create_fork": 1
+    },
+    "mean_plies": 37.8,
+    "human_color_hw_aw": {
+      "black": [
+        2,
+        1
+      ],
+      "white": [
+        0,
+        2
+      ]
+    }
+  },
+  "fly2950_v5": {
+    "games": 8,
+    "human_wins": 5,
+    "ai_wins": 3,
+    "tactical": "28/29",
+    "mistakes": {
+      "create_forcing_chain": 1
+    },
+    "mean_plies": 33.8,
+    "human_color_hw_aw": {
+      "black": [
+        2,
+        3
+      ],
+      "white": [
+        3,
+        0
+      ]
+    }
+  },
+  "fly2950_v6a": {
+    "games": 4,
+    "human_wins": 2,
+    "ai_wins": 2,
+    "tactical": "22/23",
+    "mistakes": {
+      "create_forcing_chain": 1
+    },
+    "mean_plies": 45.0,
+    "human_color_hw_aw": {
+      "black": [
+        1,
+        1
+      ],
+      "white": [
+        1,
+        1
+      ]
+    }
+  },
+  "fly2950_v6b": {
+    "games": 2,
+    "human_wins": 0,
+    "ai_wins": 2,
+    "tactical": "6/6",
+    "mistakes": {},
+    "mean_plies": 25.5,
+    "human_color_hw_aw": {
+      "black": [
+        0,
+        1
+      ],
+      "white": [
+        0,
+        1
+      ]
+    }
+  },
+  "rnn3000_v1": {
+    "games": 2,
+    "human_wins": 0,
+    "ai_wins": 1,
+    "tactical": "16/16",
+    "mistakes": {},
+    "mean_plies": 54.5,
+    "human_color_hw_aw": {
+      "black": [
+        0,
+        0
+      ],
+      "white": [
+        0,
+        1
+      ]
+    }
+  },
+  "rnn3000_v2": {
+    "games": 2,
+    "human_wins": 2,
+    "ai_wins": 0,
+    "tactical": "8/8",
+    "mistakes": {},
+    "mean_plies": 40.5,
+    "human_color_hw_aw": {
+      "black": [
+        1,
+        0
+      ],
+      "white": [
+        1,
+        0
+      ]
+    }
+  },
+  "rnn3000_v3": {
+    "games": 4,
+    "human_wins": 2,
+    "ai_wins": 2,
+    "tactical": "19/23",
+    "mistakes": {
+      "create_forcing_chain": 2,
+      "prevent_fork": 1,
+      "prevent_forcing_chain": 1
+    },
+    "mean_plies": 44.5,
+    "human_color_hw_aw": {
+      "black": [
+        1,
+        1
+      ],
+      "white": [
+        1,
+        1
+      ]
+    }
+  },
+  "rnn3000_v4b": {
+    "games": 7,
+    "human_wins": 3,
+    "ai_wins": 4,
+    "tactical": "21/25",
+    "mistakes": {
+      "win": 1,
+      "prevent_fork": 2,
+      "prevent_forcing_chain": 1
+    },
+    "mean_plies": 35.7,
+    "human_color_hw_aw": {
+      "black": [
+        2,
+        2
+      ],
+      "white": [
+        1,
+        2
+      ]
+    }
+  },
+  "rnn3000_v5": {
+    "games": 7,
+    "human_wins": 5,
+    "ai_wins": 2,
+    "tactical": "49/52",
+    "mistakes": {
+      "prevent_forcing_chain": 1,
+      "create_forcing_chain": 2
+    },
+    "mean_plies": 49.3,
+    "human_color_hw_aw": {
+      "black": [
+        2,
+        1
+      ],
+      "white": [
+        3,
+        1
+      ]
+    }
+  },
+  "rnn3000_v6a": {
+    "games": 5,
+    "human_wins": 3,
+    "ai_wins": 2,
+    "tactical": "18/20",
+    "mistakes": {
+      "create_forcing_chain": 1,
+      "prevent_forcing_chain": 1
+    },
+    "mean_plies": 37.8,
+    "human_color_hw_aw": {
+      "black": [
+        2,
+        1
+      ],
+      "white": [
+        1,
+        1
+      ]
+    }
+  },
+  "rnn3000_v6b": {
+    "games": 2,
+    "human_wins": 2,
+    "ai_wins": 0,
+    "tactical": "10/13",
+    "mistakes": {
+      "create_forcing_chain": 1,
+      "prevent_forcing_chain": 2
+    },
+    "mean_plies": 35.5,
+    "human_color_hw_aw": {
+      "black": [
+        1,
+        0
+      ],
+      "white": [
+        1,
+        0
+      ]
+    }
+  }
+}

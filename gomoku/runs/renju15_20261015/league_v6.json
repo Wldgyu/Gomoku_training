@@ -1,0 +1,314 @@
+{
+  "pairs": {
+    "fly2950_v5 vs fly2950_v6a": {
+      "as_black": {
+        "wins": 85,
+        "draws": 3,
+        "losses": 40
+      },
+      "as_white": {
+        "wins": 33,
+        "draws": 2,
+        "losses": 93
+      },
+      "total": {
+        "wins": 118,
+        "draws": 5,
+        "losses": 133
+      },
+      "score": 0.470703125
+    },
+    "fly2950_v5 vs fly2950_v6b": {
+      "as_black": {
+        "wins": 80,
+        "draws": 5,
+        "losses": 43
+      },
+      "as_white": {
+        "wins": 38,
+        "draws": 0,
+        "losses": 90
+      },
+      "total": {
+        "wins": 118,
+        "draws": 5,
+        "losses": 133
+      },
+      "score": 0.470703125
+    },
+    "fly2950_v5 vs rnn3000_v5": {
+      "as_black": {
+        "wins": 87,
+        "draws": 2,
+        "losses": 39
+      },
+      "as_white": {
+        "wins": 42,
+        "draws": 3,
+        "losses": 83
+      },
+      "total": {
+        "wins": 129,
+        "draws": 5,
+        "losses": 122
+      },
+      "score": 0.513671875
+    },
+    "fly2950_v5 vs rnn3000_v6a": {
+      "as_black": {
+        "wins": 84,
+        "draws": 2,
+        "losses": 42
+      },
+      "as_white": {
+        "wins": 28,
+        "draws": 0,
+        "losses": 100
+      },
+      "total": {
+        "wins": 112,
+        "draws": 2,
+        "losses": 142
+      },
+      "score": 0.44140625
+    },
+    "fly2950_v5 vs rnn3000_v6b": {
+      "as_black": {
+        "wins": 86,
+        "draws": 0,
+        "losses": 42
+      },
+      "as_white": {
+        "wins": 35,
+        "draws": 1,
+        "losses": 92
+      },
+      "total": {
+        "wins": 121,
+        "draws": 1,
+        "losses": 134
+      },
+      "score": 0.474609375
+    },
+    "fly2950_v6a vs fly2950_v6b": {
+      "as_black": {
+        "wins": 91,
+        "draws": 3,
+        "losses": 34
+      },
+      "as_white": {
+        "wins": 37,
+        "draws": 2,
+        "losses": 89
+      },
+      "total": {
+        "wins": 128,
+        "draws": 5,
+        "losses": 123
+      },
+      "score": 0.509765625
+    },
+    "fly2950_v6a vs rnn3000_v5": {
+      "as_black": {
+        "wins": 85,
+        "draws": 3,
+        "losses": 40
+      },
+      "as_white": {
+        "wins": 41,
+        "draws": 2,
+        "losses": 85
+      },
+      "total": {
+        "wins": 126,
+        "draws": 5,
+        "losses": 125
+      },
+      "score": 0.501953125
+    },
+    "fly2950_v6a vs rnn3000_v6a": {
+      "as_black": {
+        "wins": 88,
+        "draws": 0,
+        "losses": 40
+      },
+      "as_white": {
+        "wins": 41,
+        "draws": 1,
+        "losses": 86
+      },
+      "total": {
+        "wins": 129,
+        "draws": 1,
+        "losses": 126
+      },
+      "score": 0.505859375
+    },
+    "fly2950_v6a vs rnn3000_v6b": {
+      "as_black": {
+        "wins": 91,
+        "draws": 1,
+        "losses": 36
+      },
+      "as_white": {
+        "wins": 37,
+        "draws": 2,
+        "losses": 89
+      },
+      "total": {
+        "wins": 128,
+        "draws": 3,
+        "losses": 125
+      },
+      "score": 0.505859375
+    },
+    "fly2950_v6b vs rnn3000_v5": {
+      "as_black": {
+        "wins": 91,
+        "draws": 1,
+        "losses": 36
+      },
+      "as_white": {
+        "wins": 44,
+        "draws": 1,
+        "losses": 83
+      },
+      "total": {
+        "wins": 135,
+        "draws": 2,
+        "losses": 119
+      },
+      "score": 0.53125
+    },
+    "fly2950_v6b vs rnn3000_v6a": {
+      "as_black": {
+        "wins": 90,
+        "draws": 2,
+        "losses": 36
+      },
+      "as_white": {
+        "wins": 33,
+        "draws": 4,
+        "losses": 91
+      },
+      "total": {
+        "wins": 123,
+        "draws": 6,
+        "losses": 127
+      },
+      "score": 0.4921875
+    },
+    "fly2950_v6b vs rnn3000_v6b": {
+      "as_black": {
+        "wins": 99,
+        "draws": 4,
+        "losses": 25
+      },
+      "as_white": {
+        "wins": 38,
+        "draws": 2,
+        "losses": 88
+      },
+      "total": {
+        "wins": 137,
+        "draws": 6,
+        "losses": 113
+      },
+      "score": 0.546875
+    },
+    "rnn3000_v5 vs rnn3000_v6a": {
+      "as_black": {
+        "wins": 96,
+        "draws": 2,
+        "losses": 30
+      },
+      "as_white": {
+        "wins": 38,
+        "draws": 1,
+        "losses": 89
+      },
+      "total": {
+        "wins": 134,
+        "draws": 3,
+        "losses": 119
+      },
+      "score": 0.529296875
+    },
+    "rnn3000_v5 vs rnn3000_v6b": {
+      "as_black": {
+        "wins": 88,
+        "draws": 2,
+        "losses": 38
+      },
+      "as_white": {
+        "wins": 42,
+        "draws": 0,
+        "losses": 86
+      },
+      "total": {
+        "wins": 130,
+        "draws": 2,
+        "losses": 124
+      },
+      "score": 0.51171875
+    },
+    "rnn3000_v6a vs rnn3000_v6b": {
+      "as_black": {
+        "wins": 94,
+        "draws": 1,
+        "losses": 33
+      },
+      "as_white": {
+        "wins": 38,
+        "draws": 1,
+        "losses": 89
+      },
+      "total": {
+        "wins": 132,
+        "draws": 2,
+        "losses": 122
+      },
+      "score": 0.51953125
+    }
+  },
+  "ranking": {
+    "fly2950_v5": {
+      "wins": 598,
+      "draws": 18,
+      "losses": 664,
+      "score": 0.47421875
+    },
+    "fly2950_v6a": {
+      "wins": 644,
+      "draws": 19,
+      "losses": 617,
+      "score": 0.510546875
+    },
+    "fly2950_v6b": {
+      "wins": 651,
+      "draws": 24,
+      "losses": 605,
+      "score": 0.51796875
+    },
+    "rnn3000_v5": {
+      "wins": 630,
+      "draws": 17,
+      "losses": 633,
+      "score": 0.498828125
+    },
+    "rnn3000_v6a": {
+      "wins": 646,
+      "draws": 14,
+      "losses": 620,
+      "score": 0.51015625
+    },
+    "rnn3000_v6b": {
+      "wins": 618,
+      "draws": 14,
+      "losses": 648,
+      "score": 0.48828125
+    }
+  },
+  "seed": 331000481,
+  "openings": 128
+}

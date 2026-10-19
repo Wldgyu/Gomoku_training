@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-19",
+  "note": "Short human sessions against the six from-scratch control models; 1-2 games per model, not a ranking. One two-move game was abandoned and is excluded from totals.",
+  "games": [
+    {
+      "model": "ctl_fly2950_a",
+      "human_color": "black",
+      "winner": "white",
+      "moves": 28,
+      "result": "ai",
+      "ai_first_reply_when_white": [
+        9,
+        8
+      ]
+    },
+    {
+      "model": "ctl_fly2950_a",
+      "human_color": "white",
+      "winner": "white",
+      "moves": 60,
+      "result": "human",
+      "ai_first_reply_when_white": null
+    },
+    {
+      "model": "ctl_fly2950_b",
+      "human_color": "white",
+      "winner": "black",
+      "moves": 39,
+      "result": "ai",
+      "ai_first_reply_when_white": null
+    },
+    {
+      "model": "ctl_rewired2950_a",
+      "human_color": "black",
+      "winner": "white",
+      "moves": 34,
+      "result": "ai",
+      "ai_first_reply_when_white": [
+        7,
+        8
+      ]
+    },
+    {
+      "model": "ctl_rewired2950_a",
+      "human_color": "white",
+      "winner": "black",
+      "moves": 23,
+      "result": "ai",
+      "ai_first_reply_when_white": null
+    },
+    {
+      "model": "ctl_rewired2950_b",
+      "human_color": "black",
+      "winner": "white",
+      "moves": 20,
+      "result": "ai",
+      "ai_first_reply_when_white": [
+        9,
+        9
+      ]
+    },
+    {
+      "model": "ctl_rewired2950_b",
+      "human_color": "white",
+      "winner": "black",
+      "moves": 25,
+      "result": "ai",
+      "ai_first_reply_when_white": null
+    },
+    {
+      "model": "ctl_rnn3000_a",
+      "human_color": "black",
+      "winner": "white",
+      "moves": 30,
+      "result": "ai",
+      "ai_first_reply_when_white": [
+        7,
+        9
+      ]
+    },
+    {
+      "model": "ctl_rnn3000_a",
+      "human_color": "white",
+      "winner": "black",
+      "moves": 33,
+      "result": "ai",
+      "ai_first_reply_when_white": null
+    },
+    {
+      "model": "ctl_rnn3000_b",
+      "human_color": "black",
+      "winner": "black",
+      "moves": 59,
+      "result": "human",
+      "ai_first_reply_when_white": [
+        7,
+        7
+      ]
+    },
+    {
+      "model": "ctl_rnn3000_b",
+      "human_color": "white",
+      "winner": "black",
+      "moves": 19,
+      "result": "ai",
+      "ai_first_reply_when_white": null
+    },
+    {
+      "model": "ctl_fly2950_b",
+      "human_color": "black",
+      "winner": "none",
+      "moves": 2,
+      "result": "unfinished",
+      "ai_first_reply_when_white": [
+        11,
+        11
+      ]
+    }
+  ],
+  "totals_by_kind": {
+    "fly": {
+      "games": 3,
+      "human_wins": 1,
+      "ai_wins": 2
+    },
+    "rewired": {
+      "games": 4,
+      "human_wins": 0,
+      "ai_wins": 4
+    },
+    "rnn": {
+      "games": 4,
+      "human_wins": 1,
+      "ai_wins": 3
+    }
+  }
+}

@@ -24,7 +24,7 @@ def check_file(case, path, sample=200):
         case.assertTrue(labels[i].any() or category[i] == 7)
         case.assertTrue((labels[i] & ~legal[i]).sum() == 0 or category[i] == 1)
         if category[i] in (1, 2, 3, 4, 5, 6) and i < 40:
-            recomputed, cat = tactics.analyze(board, color)
+            recomputed, cat = tactics.analyze_deep(board, color)
             case.assertEqual(int(cat), int(category[i]))
             case.assertTrue(np.array_equal(recomputed, labels[i]))
 

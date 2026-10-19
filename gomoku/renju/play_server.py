@@ -27,6 +27,9 @@ KIND_NAMES = {"fly": "Fly", "rnn": "RNN", "gru": "GRU", "rewired": "재배열 Fl
 def checkpoints():
     found = {}
     for path in sorted(MODELS.glob("*.pt")) if MODELS.exists() else []:
+        # retired / regressed checkpoints stay on disk for the records but are hidden from the game list
+        if path.stem.endswith(("_v1", "_v2", "_v3", "_v4", "_v4b", "_v5", "_v5a", "_v5b", "_v6a", "_v6b", "_v7a", "_v7b", "_v8a", "_v8b")):
+            continue
         found[path.stem] = path
     return found
 

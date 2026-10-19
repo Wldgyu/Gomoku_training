@@ -64,7 +64,7 @@ def game_positions(folder, reserved=frozenset()):
     """Every position with an exact label (either side to move) from the saved games, as dataset records."""
     from .data import canonical, position_obs
     records, seen = [], set(reserved)
-    for path in sorted(folder.glob("renju-*.json")):
+    for path in sorted(folder.rglob("*renju-*.json")):  # includes sub-folders (older games)
         data = json.loads(path.read_text(encoding="utf-8"))
         moves = [(m["row"] - 1) * SIZE + m["column"] - 1 for m in data["moves"]]
         board = BatchBoard(1)
@@ -93,7 +93,7 @@ def main():
         import numpy as _np
         from .data import save
         reserved = set()
-        for name in ("test", "quiet_test", "onpolicy_test"):
+        for name in ("test", "quiet_test", "onpolicy_test", "selfplay_test", "rapfi_test", "forbid_test"):
             p = args.positions.parent / f"{name}.npz"
             if p.exists():
                 with _np.load(p) as saved:
@@ -101,7 +101,7 @@ def main():
         records = game_positions(args.folder, reserved)
         save(args.positions, records)
         print("saved", len(records), "positions", {c: sum(r[3] == c for r in records) for c in range(1, 7)})
-    results = [analyze(p) for p in sorted(args.folder.glob("renju-*.json"))]
+    results = [analyze(p) for p in sorted(args.folder.glob("*renju-*.json"))]
     for r in results:
         print(f"\n=== {r['file']} | {r['model']} | 사람={r['human']} | {r['result']} | {r['plies']}수")
         print(f"AI 전술 판단 {r['ai_tactical_correct']}/{r['ai_tactical_turns']} | 사람의 공격 수: {r['human_attacks']}")

@@ -79,15 +79,16 @@ def train_validation(paths):
 
 def suites(directory):
     out = {}
-    for name in ("test", "quiet_test", "onpolicy_test", "selfplay_test"):
+    for name in ("test", "quiet_test", "onpolicy_test", "selfplay_test", "rapfi_test", "rapfi2_test", "forbid_test",
+                 "deep_test", "forbid_black_test", "rapfi3_test", "rapfi4_test"):
         if (directory / f"{name}.npz").exists():
             out[name] = to_device(load(directory / f"{name}.npz"))
     return out
 
 
 # ---------------------------------------------------------------- model
-def build(kind, seed, hidden, graph_neurons, channels=64, blocks=6):
-    return WideSpatialPolicy(kind, seed, hidden, SIZE, 0, channels, blocks, graph_neurons=graph_neurons)
+def build(kind, seed, hidden, graph_neurons, channels=64, blocks=6, rewire_seed=0):
+    return WideSpatialPolicy(kind, seed, hidden, SIZE, rewire_seed, channels, blocks, graph_neurons=graph_neurons)
 
 
 @torch.no_grad()
@@ -167,9 +168,9 @@ def fit(model, train_data, valid, updates, lr, batch, tag, log_every=500, warm=1
     return curve
 
 
-def save_checkpoint(path, model, kind, seed, hidden, graph_neurons, channels, blocks, extra=None):
+def save_checkpoint(path, model, kind, seed, hidden, graph_neurons, channels, blocks, extra=None, rewire_seed=0):
     atomic_torch(path, dict(
-        config=dict(kind=kind, seed=seed, hidden=hidden, size=SIZE, rewire_seed=0, architecture="spatial_wide",
+        config=dict(kind=kind, seed=seed, hidden=hidden, size=SIZE, rewire_seed=rewire_seed, architecture="spatial_wide",
                     channels=channels, blocks=blocks, graph_neurons=graph_neurons, rule="renju15", **(extra or {})),
         graph_sha256=model.graph_sha256, model={k: v.detach().cpu() for k, v in model.state_dict().items()}))
 
@@ -182,6 +183,7 @@ def main():
     parser.add_argument("--channels", type=int, default=64)
     parser.add_argument("--blocks", type=int, default=6)
     parser.add_argument("--seed", type=int, default=5101)
+    parser.add_argument("--rewire-seed", type=int, default=0, help="which degree-preserving rewired graph (kind rewired)")
     parser.add_argument("--updates", type=int, default=12000)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--batch", type=int, default=256)
@@ -192,7 +194,8 @@ def main():
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
     torch.manual_seed(args.seed)
-    model = build(args.kind, args.seed, args.hidden, args.graph_neurons, args.channels, args.blocks).to(DEVICE)
+    model = build(args.kind, args.seed, args.hidden, args.graph_neurons, args.channels, args.blocks,
+                  args.rewire_seed).to(DEVICE)
     hidden = model.hidden
     if args.init:
         model.load_state_dict(torch.load(args.init, map_location="cpu", weights_only=True)["model"])
@@ -205,7 +208,8 @@ def main():
     tests = {n: accuracy(model, d) for n, d in suites(args.data).items()}
     args.out.mkdir(parents=True, exist_ok=True)
     save_checkpoint(args.out / f"{args.name}.pt", model, args.kind, args.seed, hidden, args.graph_neurons,
-                    args.channels, args.blocks, dict(updates=args.updates, lr=args.lr, data=[str(args.data)]))
+                    args.channels, args.blocks, dict(updates=args.updates, lr=args.lr, data=[str(args.data)]),
+                    rewire_seed=args.rewire_seed)
     atomic_json(args.out / f"{args.name}.json", dict(curve=curve, tests=tests, hidden=hidden,
                                                     parameters=sum(p.numel() for p in model.parameters())))
     print(args.name, {n: round(r["all"]["accuracy"], 3) for n, r in tests.items()}, flush=True)

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-19",
   "snapshot": true,
   "included": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7191,
-      "sha256": "232de92c8e52189496710a97ac0d19f8f238fd8978e162dc37117c1b4ad0f028"
+      "bytes": 9815,
+      "sha256": "2c033469d90aa131195ef10a70b070d6912542c5f9e1ed854b82071b5e690b8d"
     },
     {
       "path": "RESEARCH_PROTOCOL.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "docs/GITHUB_UPLOAD.md",
-      "bytes": 2113,
-      "sha256": "eb6b1540ff48be4bc1ce4970cb0f19a7b80e6dd2f96e84e42aa3982dc7280277"
+      "bytes": 3331,
+      "sha256": "5510482577f2485ea28f1dc463ca2e69609091f6a531d3fbdeb322741333efa6"
     },
     {
       "path": "docs/OPENING_AND_NEXT_STEPS_20261014.md",
@@ -48,6 +48,11 @@
       "sha256": "d09b325dd6e7c3ce1133f4d430ba4638ad0796850032bfadf57148c39559f664"
     },
     {
+      "path": "docs/RESEARCH_REPORT_20261019.md",
+      "bytes": 18879,
+      "sha256": "11804aaea48c602556f287aae04573f0210c093ba1166125d9a1933ddb2d9618"
+    },
+    {
       "path": "docs/RESEARCH_STATUS_20261013.md",
       "bytes": 2763,
       "sha256": "4485b421ca1cdb72ab49b46467abd74c3e6c497b46abb0175e1be0a88f39d829"
@@ -58,9 +63,29 @@
       "sha256": "a6bd7fcc76adbffbaa9cfc1ed76843076d672dc06be16177fd164bb2bc06ea63"
     },
     {
+      "path": "docs/RESEARCH_STATUS_20261016.md",
+      "bytes": 4258,
+      "sha256": "69b010eec8bcd452c48c2f579173b4e7a4aa287695fd0e7d1a54dfc88ad144b7"
+    },
+    {
+      "path": "docs/RESEARCH_STATUS_20261017.md",
+      "bytes": 13199,
+      "sha256": "ec69afee952dc159f8ba5f7559978168ffa2eb46e2b7c82cbd41ba32fa09a224"
+    },
+    {
       "path": "docs/RESULTS_AUDIT_20261015.json",
       "bytes": 26769,
       "sha256": "c5f2ebc05b2c1d98f5efdbb5c1855c5c42d68d66a15615b983ec7e5f002e2bff"
+    },
+    {
+      "path": "docs/RESULTS_AUDIT_20261016.json",
+      "bytes": 4915,
+      "sha256": "b1c2bf1f4311a697b68289d8ef66c52a290ec181cff8887d89ae6b5ebc252ef4"
+    },
+    {
+      "path": "docs/RESULTS_AUDIT_20261019.json",
+      "bytes": 26153,
+      "sha256": "159d4e625d9725f4651e2efd2f35380f4dfd1b899753a551fa971af6bfa62c25"
     },
     {
       "path": "docs/gomoku_layout_manifest.json",
@@ -79,8 +104,8 @@
     },
     {
       "path": "gomoku/README.md",
-      "bytes": 7665,
-      "sha256": "b31cbc2badab41d518c49a176345c6b1e0f4116f7c2b2ccc6be2f534917e7ebd"
+      "bytes": 7844,
+      "sha256": "ad1bf8faac20d11b1ebfa928a0eddd6b22b1b0f750cf6e233f0c684676225795"
     },
     {
       "path": "gomoku/__init__.py",
@@ -369,8 +394,13 @@
     },
     {
       "path": "gomoku/renju/analyze_games.py",
-      "bytes": 5229,
-      "sha256": "4bc9e59402ad8b121b0f761a08d2fa0eb7a3f811db863a3124f77f512a79ebb5"
+      "bytes": 5316,
+      "sha256": "98fe568314f903bd81cb53e2de42b352e0dfd039fe4aa761f135531794128561"
+    },
+    {
+      "path": "gomoku/renju/dagger.py",
+      "bytes": 15488,
+      "sha256": "290a10f5dd2904fe755a8360353c5cbe811a734a083bfecc95e80b29095e627f"
     },
     {
       "path": "gomoku/renju/data.py",
@@ -378,9 +408,19 @@
       "sha256": "612e6a1aa51da5fd8c6442bceb08aa673358a2f9780235ceddaa46914facb2a1"
     },
     {
+      "path": "gomoku/renju/deep.py",
+      "bytes": 6045,
+      "sha256": "b9c446e07980bffe0c5634873b59928dce69f4527f63ad3628003c5dac598f53"
+    },
+    {
       "path": "gomoku/renju/env.py",
       "bytes": 6644,
       "sha256": "2f20f61dc4613caa3611f43536c58bdd4fa0aabf193f69c46e49d8144784e912"
+    },
+    {
+      "path": "gomoku/renju/forbid.py",
+      "bytes": 4427,
+      "sha256": "0b2226663ce784a5d25701be07df41306d0a5ec3e388630e71a4351c9f63ab91"
     },
     {
       "path": "gomoku/renju/league.py",
@@ -404,13 +444,18 @@
     },
     {
       "path": "gomoku/renju/play_server.py",
-      "bytes": 8202,
-      "sha256": "0ad3ef64e24cfc6b47ccb18c88aab6a1a9f2e3298e17f56597ee230f0374439b"
+      "bytes": 8468,
+      "sha256": "607385e6f7302468c968211cc78a97b335ed9df6ea3d29139dc39a4bebd26b9a"
     },
     {
       "path": "gomoku/renju/quiet.py",
       "bytes": 9311,
       "sha256": "c3def0225cdf699755d96e89731426916f7d9338a0fbbad5020dd8c97f01b00b"
+    },
+    {
+      "path": "gomoku/renju/relabel.py",
+      "bytes": 2155,
+      "sha256": "c02dc8e56e0969b6a2279b17a079845d362a9564a9434c4f9fec508aae050886"
     },
     {
       "path": "gomoku/renju/rules.py",
@@ -419,13 +464,13 @@
     },
     {
       "path": "gomoku/renju/tactics.py",
-      "bytes": 3701,
-      "sha256": "15f17da0597ed7d82f94fca2511b3d35c74dcf8c73964542964e9a1b78804a01"
+      "bytes": 7104,
+      "sha256": "6c9ceaabb0f7ac42e251895c63cd9b70764412aa330cd0c388eb3a56549ff1b8"
     },
     {
       "path": "gomoku/renju/test_data.py",
-      "bytes": 1630,
-      "sha256": "a1e578f5775776d92e51ddb0926b5bf49f3f9b85ac936a01ed7a722ae0590cf1"
+      "bytes": 1635,
+      "sha256": "f135c46395274f3df6aa3acfb56b016deb0533162019f0e55aaad40650fe74c2"
     },
     {
       "path": "gomoku/renju/test_env.py",
@@ -444,13 +489,13 @@
     },
     {
       "path": "gomoku/renju/test_tactics.py",
-      "bytes": 3702,
-      "sha256": "597edccf0869722524ad23d0d0e693c70f5c4f165879356711db37019c7577bc"
+      "bytes": 6026,
+      "sha256": "859e5fc13fc716ac9d3960b9a00cdae280d27a5e093b0f320457d423184d1f59"
     },
     {
       "path": "gomoku/renju/train.py",
-      "bytes": 10449,
-      "sha256": "ac1d7bd93b7941641cbb41284700fc5547962d2b16d24383a08178738f480083"
+      "bytes": 10833,
+      "sha256": "87ad7c3c44178b8fdf601906097b8451b6d757cbaf0a225c888c58a014dc1f9b"
     },
     {
       "path": "gomoku/reports/README.md",
@@ -3039,13 +3084,78 @@
     },
     {
       "path": "gomoku/runs/renju15_20261015/RESUME.md",
-      "bytes": 3277,
-      "sha256": "f40334015853629f0c122e726e35ae856222bef7372634eca38adb9e520aa4c8"
+      "bytes": 11641,
+      "sha256": "c2beda93a3ce900ce39f2778a666b433fafabcf80e685d956c4954f609f46517"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/controlled_comparison_20261019.json",
+      "bytes": 9679,
+      "sha256": "dfc6a013e2b04b21750ef996f936981d5021407783c5d4b2f8ed061e871eac0e"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/deep_test.npz",
+      "bytes": 39460,
+      "sha256": "b8a906a1518f07c2ba510a9f00dcc0722b956d8aff18d8a8405d1ca7f5cf4978"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/deep_train.npz",
+      "bytes": 366064,
+      "sha256": "a863bc71aac403754f36b07147e57503003667e9e8fe37b9cb91d4e18ec0627f"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid2_test.npz",
+      "bytes": 9061,
+      "sha256": "456b28ef064923109a7ce5c026567ee7cfc21871c895f6805789d33917c32835"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid2_train.npz",
+      "bytes": 134235,
+      "sha256": "f2ad8563418aec87a507ec1c049188d139b06ed4762e2b2dd17af729f56168b9"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid_black_test.npz",
+      "bytes": 28977,
+      "sha256": "f02a641e9722039f479feea67e266ab03dd40f359d01266889596e2391b6312f"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid_black_train.npz",
+      "bytes": 208407,
+      "sha256": "e4aa2605a9f3bde8f313d3b23e422aae2e5fe2e687f479ec14f80cfa1c3664bf"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid_test.npz",
+      "bytes": 22995,
+      "sha256": "b2b0164b4a89c8ae89babdcbea02cb167ad69395c44868bcc5ce061c36508349"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid_train.npz",
+      "bytes": 138455,
+      "sha256": "3074c0f7e46b0b009f15d83167865f63f248d1dd401f163812548c360ec67ad7"
     },
     {
       "path": "gomoku/runs/renju15_20261015/data/human_train.npz",
-      "bytes": 7116,
-      "sha256": "3821d35dea5f4090303bb1c093a2d798bf3aa34e357734a70c3872443e4bef0e"
+      "bytes": 74641,
+      "sha256": "cd699d10f422c823b41d7908fd9a12a81953f0069cfd21bb46a998ecade7ebaa"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/humanlost_train.npz",
+      "bytes": 21556,
+      "sha256": "1c25c07a5839d81ecb313193dc28742b662cbf818038829336304936e4e663cd"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/humanr_train.npz",
+      "bytes": 58179,
+      "sha256": "92ba44856ec35b3b13ff41f67696be1bd23b98928959cd67ad6bfbbf6823d039"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/onpolicy_test.npz",
+      "bytes": 411560,
+      "sha256": "71c0bfc77ccfd50abbe31fff1c50c11249f6c6a3f8a5e553dd0506b3a8b48718"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/onpolicy_train.npz",
+      "bytes": 14772,
+      "sha256": "672f196d476352cdaf99612f239a3965726ccd44b4e9af074e3f6bc880805c51"
     },
     {
       "path": "gomoku/runs/renju15_20261015/data/quiet_test.json",
@@ -3068,14 +3178,74 @@
       "sha256": "5237e6a31dc94d803299e3c08d93c4293b756fe15f9a82ee336b221f78e63524"
     },
     {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi2_test.npz",
+      "bytes": 264242,
+      "sha256": "d1542e05893d23015df98d63e84935962e9a616ff97dcd6cad8237e1c7fa8bb7"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi2_train.npz",
+      "bytes": 2000382,
+      "sha256": "315f0703553646c06291d96261ce8dfdab5391bdcec59bf4323b666ebac64442"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi3_test.npz",
+      "bytes": 78111,
+      "sha256": "cb79033b5de34004929fe21d638baff0cc5bbcc5a880c74df32299289aedd063"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi3_train.npz",
+      "bytes": 626006,
+      "sha256": "10819fdc26f97efa559b02c2962e8f7172104204bf2186f28c72b952d1ee3c70"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi4_test.npz",
+      "bytes": 101333,
+      "sha256": "c0967c71b6ead4b7d7bd7815ff26213a826494e160b3c1ff762c682875218393"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi4_train.npz",
+      "bytes": 649881,
+      "sha256": "f79b2ae6ea5d419d161ac83c555611671dda5b43417a299327a8ba2946167a3c"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi_test.npz",
+      "bytes": 253032,
+      "sha256": "660a6500fab1b3e71a23fd882b0fa2b0766c18189c120b8d034e6780c2c2b62b"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi_train.npz",
+      "bytes": 2028937,
+      "sha256": "0cc7f0cc61bc30114c4cd6d76a7560066f5e1def8e3011d6ca3e7a37bf397c9b"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/selfplay_test.npz",
+      "bytes": 102104,
+      "sha256": "b8bec6b7c13b19733b1a9f63a27bf6cd7f148dbfc8832e614a61b84d0f46219c"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/selfplay_train.npz",
+      "bytes": 404761,
+      "sha256": "044164ccf01a99bf249dc6461a99602360ceb21e2d4166562734818c245730b5"
+    },
+    {
       "path": "gomoku/runs/renju15_20261015/data/test.npz",
       "bytes": 373991,
       "sha256": "63801f111792a927b0dee158ce50c07fa09e816c568b8ae0d273d35cc7294177"
     },
     {
       "path": "gomoku/runs/renju15_20261015/data/train.npz",
-      "bytes": 3848423,
-      "sha256": "eee3d0247284c7dec10ae1114e34c6b1c630767fdc9afd50f22771701ae738c7"
+      "bytes": 3848499,
+      "sha256": "85cd88d659aae551e44d0b6985adc770c6aebfb787673c8c422df2a444e019ac"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/human_games_summary_ctl.json",
+      "bytes": 2848,
+      "sha256": "28258f515ccb6fffb74c9a84b4eb1a334be1cb38cb5a643ca933a2089c20394d"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/human_games_summary_v1_v6.json",
+      "bytes": 4414,
+      "sha256": "4067a2fa61a98eea5b534c0d1f0783bf540769520c0a6eb90cd1ea41445c93ec"
     },
     {
       "path": "gomoku/runs/renju15_20261015/human_games_v1.json",
@@ -3083,9 +3253,54 @@
       "sha256": "fa3c0bfeee84de995be8ba6027ed70b55133348b26c95fd95ac329864a9cf0d9"
     },
     {
+      "path": "gomoku/runs/renju15_20261015/league_ctl.json",
+      "bytes": 10658,
+      "sha256": "e82cdac4c1fedf0b12bef926119baad9481b2de405fef84cd600792277813913"
+    },
+    {
       "path": "gomoku/runs/renju15_20261015/league_v1.json",
       "bytes": 634,
       "sha256": "f101a39e4c095822ccbd955280236c4ca591e7235538a723364251b613ad2754"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v2.json",
+      "bytes": 2554,
+      "sha256": "99058bf10b3639e863bacdcc7c70a73658e6ce981d5ee70ea373ebbfcb1ddbc5"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v3.json",
+      "bytes": 2555,
+      "sha256": "dc8ac63653a7d63226b354c6dd89e5c9be913e06208f805b0e1b55a2df362ee7"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v4.json",
+      "bytes": 2560,
+      "sha256": "012872b460355abd2dd27914748d9ca39442ef5a776f6160cfe9b634d086525b"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v4b.json",
+      "bytes": 2580,
+      "sha256": "1adeb2dfb1975d56dca00f6303a58c4592be558fd3cfae7dc783a72fe3d54b3b"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v5.json",
+      "bytes": 5817,
+      "sha256": "c4ac6620efdaed67d8dbd8ee928f28fdda304b96e16fd20a7ca6d14365336d58"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v6.json",
+      "bytes": 5821,
+      "sha256": "191ceb937025d0033eaaa853c3248a900073f77acd2bcdda7f645019cd2d5479"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v7.json",
+      "bytes": 4032,
+      "sha256": "db7a8bae164ed26dea2b68894e67dd0b6628903db0cf23ff6b3662dade0dc5a8"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/league_v8.json",
+      "bytes": 4021,
+      "sha256": "23b0c5cd7f7855b96ba7fec47ea062797980cac65eb60c500b75ed04835a3876"
     },
     {
       "path": "gomoku/runs/renju15_20261015/live_v1.json",
@@ -3093,9 +3308,129 @@
       "sha256": "b6bed3497709c0fa197315ffb99597721ba8370fcb80d34cd8dcab17573892a1"
     },
     {
+      "path": "gomoku/runs/renju15_20261015/live_v2.json",
+      "bytes": 2036,
+      "sha256": "365658ec1d251655dd41df2d291022ba923fc9849d3b06eb779200d56dc5a968"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/live_v3.json",
+      "bytes": 1979,
+      "sha256": "91a86a9855df6ed7599aa203ff0a500398da390397d91e96b0bad1cdc62c5c3e"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/live_v4.json",
+      "bytes": 1985,
+      "sha256": "55a77cb63dc6db3f12cf5c7188c2040a89a21b7bf69d56f25e7bb2b41807316a"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/ctl_fly2950_a.json",
+      "bytes": 9326,
+      "sha256": "6b48ff6a0b17c7296e6f84eb17157ad68f2e5bc1a2d78d6b5765a5d0010c0c0f"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/ctl_fly2950_b.json",
+      "bytes": 9337,
+      "sha256": "eae296428b7cd87afba4e94f549657a7517d5990875e43a8395a217023b33f6e"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/ctl_rewired2950_a.json",
+      "bytes": 9263,
+      "sha256": "cf552f62432bf66a342c376492a0dff2d4b3c6c0e6adb2b3fd495958a6f8232d"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/ctl_rewired2950_b.json",
+      "bytes": 9280,
+      "sha256": "1875eb9e11b5704826f500fd2f6f4e8b9a3a92a92fdd5e32e19dde0fea890d51"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/ctl_rnn3000_a.json",
+      "bytes": 9319,
+      "sha256": "e595e11a3ccdf10a765e1f3adf7b89254c1bbf905a05a84d5dcea7f7ec0be17f"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/ctl_rnn3000_b.json",
+      "bytes": 9309,
+      "sha256": "e55e98e4f0983edf9d2cf23e2bbd3895060d88b6eaf679242fba688852e96702"
+    },
+    {
       "path": "gomoku/runs/renju15_20261015/models/fly2950_v1.json",
       "bytes": 4067,
       "sha256": "997a37b5d45bdc0a81ce4d1457df1876d84d7fad45033e6a637659dd37781407"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v2.json",
+      "bytes": 3874,
+      "sha256": "57a85930633e60ffda6ff5cdc71c2fbcff587153f087579df80ee12ffc836c5a"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v3.json",
+      "bytes": 5191,
+      "sha256": "3c53e21cfd3970edb3dea104852242ab6207b99966c00e058f7f5be888a29629"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v4.json",
+      "bytes": 4654,
+      "sha256": "9e8eb9f728567355e4bcaac64b9307bf34f8c7d11762b57c09eae2ede24ef253"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v5.json",
+      "bytes": 5438,
+      "sha256": "58d07d1470bb1a5306b28bea13b38918085b9e758e1f5e028c2b38075e9eec1f"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v5a.json",
+      "bytes": 5438,
+      "sha256": "58d07d1470bb1a5306b28bea13b38918085b9e758e1f5e028c2b38075e9eec1f"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v5b.json",
+      "bytes": 5398,
+      "sha256": "99c122bbeeb627760f0db0e9fafe08270c3745b40ed176ffbf5977a3f73120c2"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v6.json",
+      "bytes": 5436,
+      "sha256": "e1c49f63afab7b96cd23a7bd6230cbb51605a805ef8c55070c128b0510e66497"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v6a.json",
+      "bytes": 5436,
+      "sha256": "e1c49f63afab7b96cd23a7bd6230cbb51605a805ef8c55070c128b0510e66497"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v6b.json",
+      "bytes": 5429,
+      "sha256": "275da83812b5ff4d47dc4ab8def7b5ed0fcaf93c21afd73153027afa0e645d22"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v7.json",
+      "bytes": 6707,
+      "sha256": "49effe70d4558e5c015a62df7316d170137743a71fec144ad335b7903ae6fd65"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v7a.json",
+      "bytes": 6739,
+      "sha256": "c7fed01d806851125e975dbf2873cf1d2552c2ccf80b75035e66f975ac244368"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v7b.json",
+      "bytes": 6707,
+      "sha256": "49effe70d4558e5c015a62df7316d170137743a71fec144ad335b7903ae6fd65"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v8.json",
+      "bytes": 7471,
+      "sha256": "7533c39bcf74c190e9c4cd43351ef45b9c42650ccec8e8545740246a2f113951"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v8a.json",
+      "bytes": 7516,
+      "sha256": "b5de610f4fe03173fcda50ad38aeedd87293da896e9b41499b410f3c842e7497"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/fly2950_v8b.json",
+      "bytes": 7471,
+      "sha256": "7533c39bcf74c190e9c4cd43351ef45b9c42650ccec8e8545740246a2f113951"
     },
     {
       "path": "gomoku/runs/renju15_20261015/models/rnn3000_v1.json",
@@ -3103,9 +3438,119 @@
       "sha256": "6dc0c4d374f8b298e8e5fd762aef7b3035fb17c7e3007cf6cd514adbb2fb4ab7"
     },
     {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v2.json",
+      "bytes": 3917,
+      "sha256": "49713df92b21b25d95e84411ebb81fb4ed71db22536f430d13e05c7218f212aa"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v3.json",
+      "bytes": 5222,
+      "sha256": "f3a7c188604bbf203214ff93db72b8e2dbe33aec82326f36c9bd788ca0d43f09"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v4.json",
+      "bytes": 4630,
+      "sha256": "956f56ad2f1edfce27a9ea8ad9ee18d1234b6fd874429f8aba72bd277d0dfe70"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v4b.json",
+      "bytes": 4646,
+      "sha256": "12bd8a90780630de5df28756c861664a659992724be24e4d23c76f9f173a5348"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v5.json",
+      "bytes": 5431,
+      "sha256": "3fa9c4716488c5b81409b14c2172851b7c6ed38b164952b4044d08700687e21e"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v5a.json",
+      "bytes": 5414,
+      "sha256": "b2cb9092c11e2265912de71fbf03fee2618d54b2305debb6c2c43a63a0c3d480"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v5b.json",
+      "bytes": 5431,
+      "sha256": "3fa9c4716488c5b81409b14c2172851b7c6ed38b164952b4044d08700687e21e"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v6.json",
+      "bytes": 5443,
+      "sha256": "fa6cee08b262e623285539f7d7aec5e2f86ed2e420cd12be3dc69465e89778d7"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v6a.json",
+      "bytes": 5443,
+      "sha256": "fa6cee08b262e623285539f7d7aec5e2f86ed2e420cd12be3dc69465e89778d7"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/models/rnn3000_v6b.json",
+      "bytes": 5453,
+      "sha256": "3f4d501c152eb3a4cbb520f854b2a0996b1c6fd709e5f4b8ff6976fceef7b2d4"
+    },
+    {
       "path": "gomoku/runs/renju15_20261015/results.md",
-      "bytes": 1420,
-      "sha256": "f8cd2a978546c273c5cff822f4e4a633d0eae1f528f4dac6ee01a72758994f75"
+      "bytes": 1584,
+      "sha256": "963a75af841ab8c4acc95cfeb027bf61f343d872e8345e5fae5ef63210daf46f"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/README.md",
+      "bytes": 1265,
+      "sha256": "8bee27ac0278aeabfc6fdfc3571fb5843e57aab9014ca8b5e93c34be01dda5fc"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/eval_suites.py",
+      "bytes": 645,
+      "sha256": "b4b91cd110ca5554ec07b21aae995a9a409ef9a459f187f24cf3e65a11c68181"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_ctl_eval.ps1",
+      "bytes": 1331,
+      "sha256": "8c19de7b0b6ed12b1ec6da421c05e9251d2fdaf9980a567a9b5dc81ca36fd0b8"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_ctl_lane1.ps1",
+      "bytes": 1247,
+      "sha256": "aaf5bfc28fcf6481eddb4005cf39302506c86ccd1e16abaca5d0b2d7b99ac31b"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_ctl_lane2.ps1",
+      "bytes": 1027,
+      "sha256": "eb90c9fbabcfe27c2585ed68b0ac184efd2b1c2f660a9d6b77b9fe097d9fae78"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_ctl_train.ps1",
+      "bytes": 1409,
+      "sha256": "d6f3ecaa1ccb7f8fd56b6cdb8bd45c05f97d5302bb5ab0e849f60b42eb603ebc"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_v7_data.ps1",
+      "bytes": 869,
+      "sha256": "3e1dcbb834a097d851ed06e5f5eb8eaaed84447fb09d77593ac13ecf00d8ac87"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_v7_eval.ps1",
+      "bytes": 1004,
+      "sha256": "561d8d155e0a669a1b1e66a69b9bee4f232414f6911ccc07290ea30e41e81225"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_v7_train.ps1",
+      "bytes": 1086,
+      "sha256": "7aeffc33142007546058dba36ce6623b63c83fae3bc4897e2e7ff956a86abc10"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_v8_data.ps1",
+      "bytes": 1345,
+      "sha256": "0cf55c18d437ac4880df7bbe8d4703d1b50bc7fb412cc2959108c6811d94c946"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_v8_eval.ps1",
+      "bytes": 1097,
+      "sha256": "033266f344fb557653bc5668bf4b5dcc5d0ceb54feb36a0330b1e402fc3dc816"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/scripts/run_v8_train.ps1",
+      "bytes": 1079,
+      "sha256": "3945cdbf94d3f26baf45708c4b06c7c9042fd729750419fb934932bf2e1bda05"
     },
     {
       "path": "gomoku/runs/renju15_20261015/smoke/smoke_fly.json",
@@ -11408,6 +11853,16 @@
       "sha256": "ff52299bac6ed5cd082c930e4f18fc370cd96c21dc986016e979ad5a54656c8e"
     },
     {
+      "path": "previous_research/data/subgraphs/malecns_cx_2950_rewired_seed0.npz",
+      "bytes": 600730,
+      "sha256": "c64d1d11bfff014e6436f34486f328e0cc7b487998d7e7b394dd75032b41c523"
+    },
+    {
+      "path": "previous_research/data/subgraphs/malecns_cx_2950_rewired_seed1.npz",
+      "bytes": 601024,
+      "sha256": "1a5c1ffd605a4a7d2573a23ef97011e50f97c9e4217cf1b6403d577e9e07684f"
+    },
+    {
       "path": "previous_research/data/subgraphs/malecns_cx_500.json",
       "bytes": 739,
       "sha256": "7e7c467fa1513a4c433367e37be04a91fa8de913aab120cb23ff3ceca56a6a01"
@@ -11723,6 +12178,11 @@
       "sha256": "0b6ae3390a927111845a9022528bde8981e0576058ad106beb375b75df2f9ebb"
     },
     {
+      "path": "tools/prepare_publication_20261019.py",
+      "bytes": 8847,
+      "sha256": "0c4fbbe7d3a696a1241127dfc1ee2dcba92cad74bf09743bf8aaa6ad1274ae6e"
+    },
+    {
       "path": "tools/validate_publication.py",
       "bytes": 1907,
       "sha256": "4be8219c2d2115a373daae14637b0089226ab18212b1fdf01f5a31b31afa9f1d"
@@ -11738,7 +12198,7 @@
       "sha256": "d1386be00cbd6d01e2f7318cb05177a445500f7f50e1a7d2a6118e157e8e9017"
     }
   ],
-  "total_included_bytes": 51229278,
+  "total_included_bytes": 60857239,
   "excluded_files_remain_local": true,
   "automatic_github_upload": false,
   "git_metadata_excluded": true,
@@ -11747,61 +12207,14 @@
     "model checkpoints (.pt/.pth), raw feather data",
     "logs and temporary files",
     "external engine executables/weights and bundled dependencies",
-    "large proof trees and historical local artifact manifests"
+    "large proof trees and historical local artifact manifests",
+    "raw human game files (analysis summaries and position arrays are included)"
   ],
-  "updated_source_files": 333,
+  "updated_source_files": 426,
   "changed_source_files": [
-    "docs/GITHUB_UPLOAD.md",
-    "docs/RESULTS_AUDIT_20261015.json",
-    "gomoku/advanced_match_audit.py",
-    "gomoku/advanced_protocol.md",
-    "gomoku/chain_curriculum.py",
-    "gomoku/coverage_teacher.py",
-    "gomoku/defense12_protocol.md",
-    "gomoku/environment_versions.txt",
-    "gomoku/history_aux.py",
-    "gomoku/iterative_audit.py",
-    "gomoku/iterative_clean_subset.py",
-    "gomoku/iterative_report.py",
-    "gomoku/midgame_audit.py",
-    "gomoku/midgame_clean_subset.py",
-    "gomoku/midgame_data.py",
-    "gomoku/midgame_evaluate.py",
-    "gomoku/midgame_protocol.md",
-    "gomoku/midgame_report.py",
-    "gomoku/mine_multistep.py",
-    "gomoku/models.py",
-    "gomoku/multistep_evaluate.py",
-    "gomoku/multistep_protocol.md",
-    "gomoku/multistep_report.py",
-    "gomoku/multistep_tactics.py",
-    "gomoku/offense_aux.py",
-    "gomoku/offense_e_evaluate.py",
-    "gomoku/offense_e_league.py",
-    "gomoku/protocol.md",
-    "gomoku/README.md",
-    "gomoku/refine_worker.py",
-    "gomoku/renju/play.html",
-    "gomoku/resource_benchmark.md",
-    "gomoku/robust_collect.py",
-    "gomoku/robust_long_plan.py",
-    "gomoku/test_coverage_guard.py",
-    "gomoku/test_coverage_teacher.py",
-    "gomoku/test_dagger_threat.py",
-    "gomoku/test_defense.py",
-    "gomoku/test_midgame.py",
-    "gomoku/test_multistep.py",
-    "gomoku/test_proof_memo.py",
-    "gomoku/test_robust_collect.py",
-    "gomoku/test_robust_long_plan.py",
-    "gomoku/test_root_sampler.py",
-    "gomoku/test_static_board.py",
-    "gomoku/test_wide_root.py",
-    "gomoku/threat_aux.py",
-    "gomoku/train.py",
-    "gomoku/wide_search_worker.py",
-    "README.md",
-    "tools/prepare_publication_20261015.py"
+    "docs/RESULTS_AUDIT_20261019.json",
+    "gomoku/runs/renju15_20261015/RESUME.md",
+    "tools/prepare_publication_20261019.py"
   ],
   "portability": "Current workspace absolute paths in copied JSON are made repository-relative; copied text uses LF; numeric results unchanged",
   "note": "Existing checkout and historical published files preserved; no stage/commit/push; manifest excludes itself"

@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-16",
+  "scope": "Saved results and current arrays; no new training or match evaluation",
+  "recommended": [
+    "fly2950_v4",
+    "rnn3000_v4b"
+  ],
+  "retired_regression": "rnn3000_v4",
+  "datasets": [
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid_test.npz",
+      "positions": 150,
+      "sha256": "b2b0164b4a89c8ae89babdcbea02cb167ad69395c44868bcc5ce061c36508349"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/forbid_train.npz",
+      "positions": 1000,
+      "sha256": "3074c0f7e46b0b009f15d83167865f63f248d1dd401f163812548c360ec67ad7"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/human_train.npz",
+      "positions": 297,
+      "sha256": "862a63682255ad1a9bd9749ac18a5f535f7c76c0e2ba1dad2c1e77ed431d9501"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/humanr_train.npz",
+      "positions": 319,
+      "sha256": "e6005dc4951f2ffd3a301dde2dc416867b62d483909dc1ded81acb924cf5e1f7"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/onpolicy_test.npz",
+      "positions": 3321,
+      "sha256": "2f426c28a85354a0c14de30b902b6706986fbc7a1c649cf99db05b31a8f3c894"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/onpolicy_train.npz",
+      "positions": 59,
+      "sha256": "0fe934a6dcdcc6f124b10d5b940fa0d60e3a60f9e13af50a44d0df64eb0ea72c"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/quiet_test.npz",
+      "positions": 400,
+      "sha256": "622f24f4d9917d3c43e52f45a69a6bc9a99e6ac3589a349194e7c6e581a1856a"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/quiet_train.npz",
+      "positions": 6000,
+      "sha256": "5237e6a31dc94d803299e3c08d93c4293b756fe15f9a82ee336b221f78e63524"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi_test.npz",
+      "positions": 3839,
+      "sha256": "bc8bdb3f59ca43949932851c8f99cbc728fc1c8af537fa36be72554cb3a254b6"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/rapfi_train.npz",
+      "positions": 30861,
+      "sha256": "4ab0dc12134761b10a160432f5fbdcfe950207abfeccb8625a771e68ac82c5cf"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/selfplay_test.npz",
+      "positions": 1046,
+      "sha256": "3fcafe20dd88ce35ff5a48b77e90e113ba4f31b149a4c1a26e0992c29c7e29af"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/selfplay_train.npz",
+      "positions": 4178,
+      "sha256": "30ca8d484143925d450c87c0d73b033d8e3fa7db6af06e1fea335f8f44c0eef8"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/test.npz",
+      "positions": 3600,
+      "sha256": "63801f111792a927b0dee158ce50c07fa09e816c568b8ae0d273d35cc7294177"
+    },
+    {
+      "path": "gomoku/runs/renju15_20261015/data/train.npz",
+      "positions": 36000,
+      "sha256": "eee3d0247284c7dec10ae1114e34c6b1c630767fdc9afd50f22771701ae738c7"
+    }
+  ],
+  "nonzero_train_test_key_intersections": [
+    {
+      "train": "quiet_train",
+      "test": "rapfi_test",
+      "shared_keys": 5
+    },
+    {
+      "train": "selfplay_train",
+      "test": "rapfi_test",
+      "shared_keys": 9
+    }
+  ],
+  "limitation": "Current data, not historical per-version snapshots; canonical keys do not prove full independence",
+  "copied_files_changed": [
+    "gomoku/renju/analyze_games.py",
+    "gomoku/renju/dagger.py",
+    "gomoku/renju/forbid.py",
+    "gomoku/renju/play_server.py",
+    "gomoku/renju/train.py",
+    "gomoku/runs/renju15_20261015/league_v2.json",
+    "gomoku/runs/renju15_20261015/league_v3.json",
+    "gomoku/runs/renju15_20261015/league_v4.json",
+    "gomoku/runs/renju15_20261015/league_v4b.json",
+    "gomoku/runs/renju15_20261015/live_v2.json",
+    "gomoku/runs/renju15_20261015/live_v3.json",
+    "gomoku/runs/renju15_20261015/live_v4.json",
+    "gomoku/runs/renju15_20261015/RESUME.md",
+    "gomoku/runs/renju15_20261015/data/forbid_test.npz",
+    "gomoku/runs/renju15_20261015/data/forbid_train.npz",
+    "gomoku/runs/renju15_20261015/data/humanr_train.npz",
+    "gomoku/runs/renju15_20261015/data/human_train.npz",
+    "gomoku/runs/renju15_20261015/data/onpolicy_test.npz",
+    "gomoku/runs/renju15_20261015/data/onpolicy_train.npz",
+    "gomoku/runs/renju15_20261015/data/rapfi_test.npz",
+    "gomoku/runs/renju15_20261015/data/rapfi_train.npz",
+    "gomoku/runs/renju15_20261015/data/selfplay_test.npz",
+    "gomoku/runs/renju15_20261015/data/selfplay_train.npz",
+    "gomoku/runs/renju15_20261015/models/fly2950_v2.json",
+    "gomoku/runs/renju15_20261015/models/fly2950_v3.json",
+    "gomoku/runs/renju15_20261015/models/fly2950_v4.json",
+    "gomoku/runs/renju15_20261015/models/rnn3000_v2.json",
+    "gomoku/runs/renju15_20261015/models/rnn3000_v3.json",
+    "gomoku/runs/renju15_20261015/models/rnn3000_v4.json",
+    "gomoku/runs/renju15_20261015/models/rnn3000_v4b.json"
+  ],
+  "publication_tests": {
+    "count": 35,
+    "status": "passed",
+    "seconds": 10.583,
+    "date": "2026-10-16"
+  }
+}

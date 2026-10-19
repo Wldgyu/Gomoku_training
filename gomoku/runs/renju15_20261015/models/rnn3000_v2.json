@@ -1,0 +1,192 @@
+{
+  "curve": [
+    {
+      "update": 500,
+      "loss": 0.1863,
+      "seconds": 99,
+      "validation": 0.8859,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 1000,
+      "loss": 0.1876,
+      "seconds": 211,
+      "validation": 0.8844,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 1500,
+      "loss": 0.2767,
+      "seconds": 321,
+      "validation": 0.8874,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 2000,
+      "loss": 0.2067,
+      "seconds": 433,
+      "validation": 0.8867,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 2500,
+      "loss": 0.2173,
+      "seconds": 544,
+      "validation": 0.8861,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 3000,
+      "loss": 0.2515,
+      "seconds": 656,
+      "validation": 0.8892,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 3500,
+      "loss": 0.1613,
+      "seconds": 768,
+      "validation": 0.8903,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 4000,
+      "loss": 0.1839,
+      "seconds": 879,
+      "validation": 0.8913,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 4500,
+      "loss": 0.1743,
+      "seconds": 990,
+      "validation": 0.8905,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 5000,
+      "loss": 0.2185,
+      "seconds": 1101,
+      "validation": 0.8918,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 5500,
+      "loss": 0.2088,
+      "seconds": 1213,
+      "validation": 0.8926,
+      "vram_gb": 1.32
+    },
+    {
+      "update": 6000,
+      "loss": 0.1782,
+      "seconds": 1324,
+      "validation": 0.8926,
+      "vram_gb": 1.32
+    }
+  ],
+  "tests": {
+    "test": {
+      "win": {
+        "positions": 600,
+        "accuracy": 0.9966666666666667
+      },
+      "block": {
+        "positions": 600,
+        "accuracy": 0.995
+      },
+      "create_fork": {
+        "positions": 600,
+        "accuracy": 0.9983333333333333
+      },
+      "prevent_fork": {
+        "positions": 600,
+        "accuracy": 0.9983333333333333
+      },
+      "create_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.8733333333333333
+      },
+      "prevent_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.8816666666666667
+      },
+      "all": {
+        "positions": 3600,
+        "accuracy": 0.9572222222222222
+      }
+    },
+    "quiet_test": {
+      "quiet_rapfi_agreement": {
+        "positions": 400,
+        "accuracy": 0.42
+      },
+      "all": {
+        "positions": 400,
+        "accuracy": 0.42
+      }
+    },
+    "onpolicy_test": {
+      "win": {
+        "positions": 89,
+        "accuracy": 0.9887640449438202
+      },
+      "block": {
+        "positions": 1925,
+        "accuracy": 0.9854545454545455
+      },
+      "create_fork": {
+        "positions": 91,
+        "accuracy": 0.8681318681318682
+      },
+      "prevent_fork": {
+        "positions": 1050,
+        "accuracy": 0.9552380952380952
+      },
+      "create_forcing_chain": {
+        "positions": 63,
+        "accuracy": 0.9047619047619048
+      },
+      "prevent_forcing_chain": {
+        "positions": 103,
+        "accuracy": 0.8932038834951457
+      },
+      "all": {
+        "positions": 3321,
+        "accuracy": 0.9683830171635049
+      }
+    },
+    "selfplay_test": {
+      "win": {
+        "positions": 69,
+        "accuracy": 0.9420289855072463
+      },
+      "block": {
+        "positions": 312,
+        "accuracy": 0.967948717948718
+      },
+      "create_fork": {
+        "positions": 82,
+        "accuracy": 0.7804878048780488
+      },
+      "prevent_fork": {
+        "positions": 487,
+        "accuracy": 0.9425051334702259
+      },
+      "create_forcing_chain": {
+        "positions": 43,
+        "accuracy": 0.7674418604651163
+      },
+      "prevent_forcing_chain": {
+        "positions": 53,
+        "accuracy": 0.7735849056603774
+      },
+      "all": {
+        "positions": 1046,
+        "accuracy": 0.9216061185468452
+      }
+    }
+  },
+  "hidden": 3000,
+  "parameters": 10062450
+}

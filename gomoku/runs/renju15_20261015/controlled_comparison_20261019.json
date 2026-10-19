@@ -1,0 +1,424 @@
+{
+  "date": "2026-10-19",
+  "design": {
+    "task": "15x15 Renju, from scratch, identical data/updates/lr, one GPU job at a time",
+    "updates": 12000,
+    "lr": 0.001,
+    "seeds": [
+      9101,
+      9102
+    ],
+    "rewire_seeds": {
+      "ctl_rewired2950_a": 0,
+      "ctl_rewired2950_b": 1
+    },
+    "extra_datasets": [
+      "quiet_train",
+      "selfplay_train",
+      "onpolicy_train",
+      "human_train",
+      "humanr_train",
+      "humanlost_train",
+      "rapfi_train",
+      "rapfi2_train",
+      "rapfi3_train",
+      "rapfi4_train",
+      "forbid_train",
+      "forbid2_train",
+      "deep_train",
+      "forbid_black_train"
+    ],
+    "references": [
+      "fly2950_v7 (continued training, not from scratch)",
+      "rnn3000_v6a (continued training, not from scratch)"
+    ],
+    "weak_rapfi": "dagger eval --opp-ms 60 --blunders 0.5, 2 seeds x 360 games per model",
+    "league": "128 openings x both colours, 8 models"
+  },
+  "static_suites_accuracy": {
+    "ctl_rewired2950_a": {
+      "quiet_test": 0.415,
+      "onpolicy_test": 0.983,
+      "selfplay_test": 0.96,
+      "rapfi_test": 0.659,
+      "rapfi2_test": 0.676,
+      "forbid_test": 0.8,
+      "deep_test": 0.803,
+      "forbid_black_test": 0.93,
+      "rapfi3_test": 0.7,
+      "rapfi4_test": 0.622
+    },
+    "ctl_rewired2950_b": {
+      "quiet_test": 0.42,
+      "onpolicy_test": 0.978,
+      "selfplay_test": 0.963,
+      "rapfi_test": 0.665,
+      "rapfi2_test": 0.676,
+      "forbid_test": 0.793,
+      "deep_test": 0.777,
+      "forbid_black_test": 0.895,
+      "rapfi3_test": 0.705,
+      "rapfi4_test": 0.629
+    },
+    "ctl_fly2950_a": {
+      "quiet_test": 0.422,
+      "onpolicy_test": 0.981,
+      "selfplay_test": 0.955,
+      "rapfi_test": 0.656,
+      "rapfi2_test": 0.677,
+      "forbid_test": 0.84,
+      "deep_test": 0.833,
+      "forbid_black_test": 0.92,
+      "rapfi3_test": 0.706,
+      "rapfi4_test": 0.63
+    },
+    "ctl_fly2950_b": {
+      "quiet_test": 0.445,
+      "onpolicy_test": 0.977,
+      "selfplay_test": 0.958,
+      "rapfi_test": 0.662,
+      "rapfi2_test": 0.676,
+      "forbid_test": 0.8,
+      "deep_test": 0.82,
+      "forbid_black_test": 0.905,
+      "rapfi3_test": 0.704,
+      "rapfi4_test": 0.631
+    },
+    "ctl_rnn3000_a": {
+      "quiet_test": 0.438,
+      "onpolicy_test": 0.985,
+      "selfplay_test": 0.961,
+      "rapfi_test": 0.662,
+      "rapfi2_test": 0.678,
+      "forbid_test": 0.86,
+      "deep_test": 0.863,
+      "forbid_black_test": 0.92,
+      "rapfi3_test": 0.711,
+      "rapfi4_test": 0.634
+    },
+    "ctl_rnn3000_b": {
+      "quiet_test": 0.427,
+      "onpolicy_test": 0.982,
+      "selfplay_test": 0.963,
+      "rapfi_test": 0.663,
+      "rapfi2_test": 0.677,
+      "forbid_test": 0.813,
+      "deep_test": 0.813,
+      "forbid_black_test": 0.885,
+      "rapfi3_test": 0.703,
+      "rapfi4_test": 0.622
+    },
+    "fly2950_v7": {
+      "quiet_test": 0.463,
+      "onpolicy_test": 0.977,
+      "selfplay_test": 0.951,
+      "rapfi_test": 0.672,
+      "rapfi2_test": 0.683,
+      "forbid_test": 0.793,
+      "deep_test": 0.797,
+      "forbid_black_test": 0.835,
+      "rapfi3_test": 0.711,
+      "rapfi4_test": 0.632
+    },
+    "rnn3000_v6a": {
+      "quiet_test": 0.463,
+      "onpolicy_test": 0.971,
+      "selfplay_test": 0.944,
+      "rapfi_test": 0.661,
+      "rapfi2_test": 0.671,
+      "forbid_test": 0.713,
+      "deep_test": 0.68,
+      "forbid_black_test": 0.76,
+      "rapfi3_test": 0.696,
+      "rapfi4_test": 0.629
+    }
+  },
+  "weak_rapfi": {
+    "ctl_rewired2950_a": [
+      {
+        "seed": 886000001,
+        "games": 360,
+        "wins": 120,
+        "draws": 1,
+        "losses": 239
+      },
+      {
+        "seed": 886000002,
+        "games": 360,
+        "wins": 140,
+        "draws": 6,
+        "losses": 214
+      }
+    ],
+    "ctl_rewired2950_b": [
+      {
+        "seed": 886000001,
+        "games": 360,
+        "wins": 130,
+        "draws": 9,
+        "losses": 221
+      },
+      {
+        "seed": 886000002,
+        "games": 360,
+        "wins": 115,
+        "draws": 11,
+        "losses": 234
+      }
+    ],
+    "ctl_fly2950_a": [
+      {
+        "seed": 886000001,
+        "games": 360,
+        "wins": 126,
+        "draws": 13,
+        "losses": 221
+      },
+      {
+        "seed": 886000002,
+        "games": 360,
+        "wins": 162,
+        "draws": 9,
+        "losses": 189
+      }
+    ],
+    "ctl_fly2950_b": [
+      {
+        "seed": 886000001,
+        "games": 360,
+        "wins": 133,
+        "draws": 9,
+        "losses": 218
+      },
+      {
+        "seed": 886000002,
+        "games": 360,
+        "wins": 135,
+        "draws": 6,
+        "losses": 219
+      }
+    ],
+    "ctl_rnn3000_a": [
+      {
+        "seed": 886000001,
+        "games": 360,
+        "wins": 123,
+        "draws": 16,
+        "losses": 221
+      },
+      {
+        "seed": 886000002,
+        "games": 360,
+        "wins": 111,
+        "draws": 7,
+        "losses": 242
+      }
+    ],
+    "ctl_rnn3000_b": [
+      {
+        "seed": 886000001,
+        "games": 360,
+        "wins": 113,
+        "draws": 8,
+        "losses": 239
+      },
+      {
+        "seed": 886000002,
+        "games": 360,
+        "wins": 126,
+        "draws": 6,
+        "losses": 228
+      }
+    ],
+    "rnn3000_v6a": [
+      {
+        "seed": 886000001,
+        "games": 360,
+        "wins": 126,
+        "draws": 4,
+        "losses": 230
+      },
+      {
+        "seed": 886000002,
+        "games": 360,
+        "wins": 136,
+        "draws": 3,
+        "losses": 221
+      }
+    ]
+  },
+  "validation_by_update": {
+    "ctl_rewired2950_a": {
+      "1000": 0.6559,
+      "2000": 0.6865,
+      "4000": 0.7196,
+      "8000": 0.7446,
+      "12000": 0.7569
+    },
+    "ctl_rewired2950_b": {
+      "1000": 0.6646,
+      "2000": 0.6789,
+      "4000": 0.7186,
+      "8000": 0.7463,
+      "12000": 0.7551
+    },
+    "ctl_fly2950_a": {
+      "1000": 0.6673,
+      "2000": 0.6828,
+      "4000": 0.7211,
+      "8000": 0.7468,
+      "12000": 0.7556
+    },
+    "ctl_fly2950_b": {
+      "1000": 0.6625,
+      "2000": 0.6803,
+      "4000": 0.7155,
+      "8000": 0.7489,
+      "12000": 0.7589
+    },
+    "ctl_rnn3000_a": {
+      "1000": 0.6659,
+      "2000": 0.684,
+      "4000": 0.7189,
+      "8000": 0.7444,
+      "12000": 0.7557
+    },
+    "ctl_rnn3000_b": {
+      "1000": 0.6637,
+      "2000": 0.6813,
+      "4000": 0.7082,
+      "8000": 0.7461,
+      "12000": 0.7568
+    }
+  },
+  "league_ranking": {
+    "ctl_rewired2950_a": {
+      "wins": 857,
+      "draws": 13,
+      "losses": 922,
+      "score": 0.4818638392857143
+    },
+    "ctl_rewired2950_b": {
+      "wins": 913,
+      "draws": 17,
+      "losses": 862,
+      "score": 0.5142299107142857
+    },
+    "ctl_fly2950_a": {
+      "wins": 855,
+      "draws": 26,
+      "losses": 911,
+      "score": 0.484375
+    },
+    "ctl_fly2950_b": {
+      "wins": 914,
+      "draws": 14,
+      "losses": 864,
+      "score": 0.5139508928571429
+    },
+    "ctl_rnn3000_a": {
+      "wins": 893,
+      "draws": 18,
+      "losses": 881,
+      "score": 0.5033482142857143
+    },
+    "ctl_rnn3000_b": {
+      "wins": 849,
+      "draws": 22,
+      "losses": 921,
+      "score": 0.4799107142857143
+    },
+    "fly2950_v7": {
+      "wins": 882,
+      "draws": 19,
+      "losses": 891,
+      "score": 0.4974888392857143
+    },
+    "rnn3000_v6a": {
+      "wins": 928,
+      "draws": 25,
+      "losses": 839,
+      "score": 0.5248325892857143
+    }
+  },
+  "by_kind": {
+    "fly": {
+      "models": [
+        "ctl_fly2950_a",
+        "ctl_fly2950_b"
+      ],
+      "weak_rapfi_wins": 556,
+      "weak_rapfi_games": 1440,
+      "weak_rapfi_win_rate": 0.3861,
+      "league_score_mean": 0.4992,
+      "static_mean": {
+        "quiet_test": 0.4335,
+        "onpolicy_test": 0.979,
+        "selfplay_test": 0.9565,
+        "rapfi_test": 0.659,
+        "rapfi2_test": 0.6765,
+        "forbid_test": 0.82,
+        "deep_test": 0.8265,
+        "forbid_black_test": 0.9125,
+        "rapfi3_test": 0.705,
+        "rapfi4_test": 0.6305
+      },
+      "validation_12000_mean": 0.7572,
+      "validation_4000_mean": 0.7183
+    },
+    "rewired": {
+      "models": [
+        "ctl_rewired2950_a",
+        "ctl_rewired2950_b"
+      ],
+      "weak_rapfi_wins": 505,
+      "weak_rapfi_games": 1440,
+      "weak_rapfi_win_rate": 0.3507,
+      "league_score_mean": 0.498,
+      "static_mean": {
+        "quiet_test": 0.4175,
+        "onpolicy_test": 0.9805,
+        "selfplay_test": 0.9615,
+        "rapfi_test": 0.662,
+        "rapfi2_test": 0.676,
+        "forbid_test": 0.7965,
+        "deep_test": 0.79,
+        "forbid_black_test": 0.9125,
+        "rapfi3_test": 0.7025,
+        "rapfi4_test": 0.6255
+      },
+      "validation_12000_mean": 0.756,
+      "validation_4000_mean": 0.7191
+    },
+    "rnn": {
+      "models": [
+        "ctl_rnn3000_a",
+        "ctl_rnn3000_b"
+      ],
+      "weak_rapfi_wins": 473,
+      "weak_rapfi_games": 1440,
+      "weak_rapfi_win_rate": 0.3285,
+      "league_score_mean": 0.4916,
+      "static_mean": {
+        "quiet_test": 0.4325,
+        "onpolicy_test": 0.9835,
+        "selfplay_test": 0.962,
+        "rapfi_test": 0.6625,
+        "rapfi2_test": 0.6775,
+        "forbid_test": 0.8365,
+        "deep_test": 0.838,
+        "forbid_black_test": 0.9025,
+        "rapfi3_test": 0.707,
+        "rapfi4_test": 0.628
+      },
+      "validation_12000_mean": 0.7563,
+      "validation_4000_mean": 0.7136
+    }
+  },
+  "caveats": [
+    "2 seeds per kind",
+    "extra data includes positions visited by earlier Fly/RNN checkpoints and human games against them",
+    "static suites are the same type of position as the training data",
+    "the validation score is the training objective's own held-out metric"
+  ]
+}

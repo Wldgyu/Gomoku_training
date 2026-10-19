@@ -1,0 +1,446 @@
+{
+  "curve": [
+    {
+      "update": 500,
+      "loss": 0.9382,
+      "seconds": 211,
+      "validation": 0.6382,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 1000,
+      "loss": 0.8609,
+      "seconds": 495,
+      "validation": 0.6637,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 1500,
+      "loss": 0.4673,
+      "seconds": 691,
+      "validation": 0.6841,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 2000,
+      "loss": 0.6696,
+      "seconds": 836,
+      "validation": 0.6813,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 2500,
+      "loss": 0.5914,
+      "seconds": 981,
+      "validation": 0.6983,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 3000,
+      "loss": 0.4727,
+      "seconds": 1125,
+      "validation": 0.7077,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 3500,
+      "loss": 0.6306,
+      "seconds": 1269,
+      "validation": 0.7075,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 4000,
+      "loss": 0.3971,
+      "seconds": 1414,
+      "validation": 0.7082,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 4500,
+      "loss": 0.6572,
+      "seconds": 1559,
+      "validation": 0.715,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 5000,
+      "loss": 0.3638,
+      "seconds": 1704,
+      "validation": 0.7169,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 5500,
+      "loss": 0.5015,
+      "seconds": 1848,
+      "validation": 0.7338,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 6000,
+      "loss": 0.4511,
+      "seconds": 1992,
+      "validation": 0.7311,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 6500,
+      "loss": 0.4643,
+      "seconds": 2136,
+      "validation": 0.7387,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 7000,
+      "loss": 0.4411,
+      "seconds": 2281,
+      "validation": 0.7435,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 7500,
+      "loss": 0.4486,
+      "seconds": 2425,
+      "validation": 0.7427,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 8000,
+      "loss": 0.3354,
+      "seconds": 2569,
+      "validation": 0.7461,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 8500,
+      "loss": 0.4196,
+      "seconds": 2714,
+      "validation": 0.7484,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 9000,
+      "loss": 0.4644,
+      "seconds": 2858,
+      "validation": 0.7521,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 9500,
+      "loss": 0.313,
+      "seconds": 3002,
+      "validation": 0.7521,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 10000,
+      "loss": 0.2891,
+      "seconds": 3148,
+      "validation": 0.7552,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 10500,
+      "loss": 0.3598,
+      "seconds": 3293,
+      "validation": 0.7566,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 11000,
+      "loss": 0.2839,
+      "seconds": 3439,
+      "validation": 0.7545,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 11500,
+      "loss": 0.2968,
+      "seconds": 3583,
+      "validation": 0.7568,
+      "vram_gb": 2.52
+    },
+    {
+      "update": 12000,
+      "loss": 0.4392,
+      "seconds": 3727,
+      "validation": 0.7568,
+      "vram_gb": 2.52
+    }
+  ],
+  "tests": {
+    "test": {
+      "win": {
+        "positions": 600,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 600,
+        "accuracy": 0.9966666666666667
+      },
+      "create_fork": {
+        "positions": 600,
+        "accuracy": 0.9983333333333333
+      },
+      "prevent_fork": {
+        "positions": 600,
+        "accuracy": 0.9966666666666667
+      },
+      "create_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.9383333333333334
+      },
+      "prevent_forcing_chain": {
+        "positions": 600,
+        "accuracy": 0.9283333333333333
+      },
+      "all": {
+        "positions": 3600,
+        "accuracy": 0.9763888888888889
+      }
+    },
+    "quiet_test": {
+      "quiet_rapfi_agreement": {
+        "positions": 400,
+        "accuracy": 0.4275
+      },
+      "all": {
+        "positions": 400,
+        "accuracy": 0.4275
+      }
+    },
+    "onpolicy_test": {
+      "win": {
+        "positions": 89,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 1925,
+        "accuracy": 0.9953246753246753
+      },
+      "create_fork": {
+        "positions": 91,
+        "accuracy": 0.9340659340659341
+      },
+      "prevent_fork": {
+        "positions": 1035,
+        "accuracy": 0.9681159420289855
+      },
+      "create_forcing_chain": {
+        "positions": 78,
+        "accuracy": 0.9358974358974359
+      },
+      "prevent_forcing_chain": {
+        "positions": 103,
+        "accuracy": 0.9320388349514563
+      },
+      "all": {
+        "positions": 3321,
+        "accuracy": 0.98193315266486
+      }
+    },
+    "selfplay_test": {
+      "win": {
+        "positions": 69,
+        "accuracy": 0.9565217391304348
+      },
+      "block": {
+        "positions": 312,
+        "accuracy": 0.9935897435897436
+      },
+      "create_fork": {
+        "positions": 82,
+        "accuracy": 0.9878048780487805
+      },
+      "prevent_fork": {
+        "positions": 453,
+        "accuracy": 0.977924944812362
+      },
+      "create_forcing_chain": {
+        "positions": 77,
+        "accuracy": 0.8181818181818182
+      },
+      "prevent_forcing_chain": {
+        "positions": 53,
+        "accuracy": 0.8301886792452831
+      },
+      "all": {
+        "positions": 1046,
+        "accuracy": 0.9627151051625239
+      }
+    },
+    "rapfi_test": {
+      "win": {
+        "positions": 45,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 699,
+        "accuracy": 1.0
+      },
+      "create_fork": {
+        "positions": 44,
+        "accuracy": 1.0
+      },
+      "prevent_fork": {
+        "positions": 951,
+        "accuracy": 0.982124079915878
+      },
+      "create_forcing_chain": {
+        "positions": 49,
+        "accuracy": 0.8571428571428571
+      },
+      "prevent_forcing_chain": {
+        "positions": 97,
+        "accuracy": 0.7938144329896907
+      },
+      "quiet_rapfi_agreement": {
+        "positions": 1954,
+        "accuracy": 0.36131013306038895
+      },
+      "all": {
+        "positions": 3839,
+        "accuracy": 0.6634540244855431
+      }
+    },
+    "rapfi2_test": {
+      "win": {
+        "positions": 44,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 764,
+        "accuracy": 0.9960732984293194
+      },
+      "create_fork": {
+        "positions": 40,
+        "accuracy": 0.975
+      },
+      "prevent_fork": {
+        "positions": 1011,
+        "accuracy": 0.9792284866468842
+      },
+      "create_forcing_chain": {
+        "positions": 44,
+        "accuracy": 0.9772727272727273
+      },
+      "prevent_forcing_chain": {
+        "positions": 124,
+        "accuracy": 0.967741935483871
+      },
+      "quiet_rapfi_agreement": {
+        "positions": 1977,
+        "accuracy": 0.36064744562468387
+      },
+      "all": {
+        "positions": 4004,
+        "accuracy": 0.6768231768231768
+      }
+    },
+    "forbid_test": {
+      "create_forcing_chain": {
+        "positions": 150,
+        "accuracy": 0.8133333333333334
+      },
+      "all": {
+        "positions": 150,
+        "accuracy": 0.8133333333333334
+      }
+    },
+    "deep_test": {
+      "create_forcing_chain": {
+        "positions": 149,
+        "accuracy": 0.7583892617449665
+      },
+      "prevent_forcing_chain": {
+        "positions": 151,
+        "accuracy": 0.8675496688741722
+      },
+      "all": {
+        "positions": 300,
+        "accuracy": 0.8133333333333334
+      }
+    },
+    "forbid_black_test": {
+      "prevent_forcing_chain": {
+        "positions": 200,
+        "accuracy": 0.885
+      },
+      "all": {
+        "positions": 200,
+        "accuracy": 0.885
+      }
+    },
+    "rapfi3_test": {
+      "win": {
+        "positions": 22,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 236,
+        "accuracy": 1.0
+      },
+      "create_fork": {
+        "positions": 22,
+        "accuracy": 1.0
+      },
+      "prevent_fork": {
+        "positions": 295,
+        "accuracy": 0.9830508474576272
+      },
+      "create_forcing_chain": {
+        "positions": 29,
+        "accuracy": 0.7931034482758621
+      },
+      "prevent_forcing_chain": {
+        "positions": 39,
+        "accuracy": 0.9487179487179487
+      },
+      "quiet_rapfi_agreement": {
+        "positions": 515,
+        "accuracy": 0.3572815533980582
+      },
+      "all": {
+        "positions": 1158,
+        "accuracy": 0.7029360967184801
+      }
+    },
+    "rapfi4_test": {
+      "win": {
+        "positions": 19,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 281,
+        "accuracy": 0.9893238434163701
+      },
+      "create_fork": {
+        "positions": 20,
+        "accuracy": 1.0
+      },
+      "prevent_fork": {
+        "positions": 328,
+        "accuracy": 0.9817073170731707
+      },
+      "create_forcing_chain": {
+        "positions": 33,
+        "accuracy": 0.9090909090909091
+      },
+      "prevent_forcing_chain": {
+        "positions": 63,
+        "accuracy": 0.8253968253968254
+      },
+      "quiet_rapfi_agreement": {
+        "positions": 768,
+        "accuracy": 0.2864583333333333
+      },
+      "all": {
+        "positions": 1512,
+        "accuracy": 0.6223544973544973
+      }
+    }
+  },
+  "hidden": 3000,
+  "parameters": 10062450
+}

@@ -1,0 +1,100 @@
+{
+  "fly2950_v4": {
+    "games": 256,
+    "wins": 193,
+    "losses": 43,
+    "draws": 20,
+    "mean_plies": 51.55859375,
+    "by_color": {
+      "black": {
+        "games": 128,
+        "wins": 86,
+        "losses": 36,
+        "draws": 6
+      },
+      "white": {
+        "games": 128,
+        "wins": 107,
+        "losses": 7,
+        "draws": 14
+      }
+    },
+    "tactical": {
+      "win": {
+        "positions": 193,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 1015,
+        "accuracy": 0.9950738916256158
+      },
+      "create_fork": {
+        "positions": 194,
+        "accuracy": 0.9948453608247423
+      },
+      "prevent_fork": {
+        "positions": 727,
+        "accuracy": 0.9889958734525447
+      },
+      "create_forcing_chain": {
+        "positions": 156,
+        "accuracy": 1.0
+      },
+      "prevent_forcing_chain": {
+        "positions": 17,
+        "accuracy": 1.0
+      }
+    },
+    "seed": 321000481,
+    "opponent": "tactical"
+  },
+  "rnn3000_v4": {
+    "games": 256,
+    "wins": 122,
+    "losses": 111,
+    "draws": 23,
+    "mean_plies": 67.078125,
+    "by_color": {
+      "black": {
+        "games": 128,
+        "wins": 76,
+        "losses": 38,
+        "draws": 14
+      },
+      "white": {
+        "games": 128,
+        "wins": 46,
+        "losses": 73,
+        "draws": 9
+      }
+    },
+    "tactical": {
+      "win": {
+        "positions": 122,
+        "accuracy": 1.0
+      },
+      "block": {
+        "positions": 1680,
+        "accuracy": 0.9976190476190476
+      },
+      "create_fork": {
+        "positions": 121,
+        "accuracy": 0.9669421487603306
+      },
+      "prevent_fork": {
+        "positions": 1107,
+        "accuracy": 0.9494128274616079
+      },
+      "create_forcing_chain": {
+        "positions": 83,
+        "accuracy": 1.0
+      },
+      "prevent_forcing_chain": {
+        "positions": 51,
+        "accuracy": 0.9803921568627451
+      }
+    },
+    "seed": 321000481,
+    "opponent": "tactical"
+  }
+}

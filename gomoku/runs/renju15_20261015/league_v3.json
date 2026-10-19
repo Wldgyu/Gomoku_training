@@ -1,0 +1,140 @@
+{
+  "pairs": {
+    "fly2950_v2 vs fly2950_v3": {
+      "as_black": {
+        "wins": 66,
+        "draws": 1,
+        "losses": 61
+      },
+      "as_white": {
+        "wins": 34,
+        "draws": 4,
+        "losses": 90
+      },
+      "total": {
+        "wins": 100,
+        "draws": 5,
+        "losses": 151
+      },
+      "score": 0.400390625
+    },
+    "fly2950_v2 vs rnn3000_v2": {
+      "as_black": {
+        "wins": 75,
+        "draws": 1,
+        "losses": 52
+      },
+      "as_white": {
+        "wins": 44,
+        "draws": 2,
+        "losses": 82
+      },
+      "total": {
+        "wins": 119,
+        "draws": 3,
+        "losses": 134
+      },
+      "score": 0.470703125
+    },
+    "fly2950_v2 vs rnn3000_v3": {
+      "as_black": {
+        "wins": 67,
+        "draws": 2,
+        "losses": 59
+      },
+      "as_white": {
+        "wins": 27,
+        "draws": 1,
+        "losses": 100
+      },
+      "total": {
+        "wins": 94,
+        "draws": 3,
+        "losses": 159
+      },
+      "score": 0.373046875
+    },
+    "fly2950_v3 vs rnn3000_v2": {
+      "as_black": {
+        "wins": 94,
+        "draws": 0,
+        "losses": 34
+      },
+      "as_white": {
+        "wins": 64,
+        "draws": 5,
+        "losses": 59
+      },
+      "total": {
+        "wins": 158,
+        "draws": 5,
+        "losses": 93
+      },
+      "score": 0.626953125
+    },
+    "fly2950_v3 vs rnn3000_v3": {
+      "as_black": {
+        "wins": 87,
+        "draws": 0,
+        "losses": 41
+      },
+      "as_white": {
+        "wins": 35,
+        "draws": 4,
+        "losses": 89
+      },
+      "total": {
+        "wins": 122,
+        "draws": 4,
+        "losses": 130
+      },
+      "score": 0.484375
+    },
+    "rnn3000_v2 vs rnn3000_v3": {
+      "as_black": {
+        "wins": 52,
+        "draws": 1,
+        "losses": 75
+      },
+      "as_white": {
+        "wins": 31,
+        "draws": 1,
+        "losses": 96
+      },
+      "total": {
+        "wins": 83,
+        "draws": 2,
+        "losses": 171
+      },
+      "score": 0.328125
+    }
+  },
+  "ranking": {
+    "fly2950_v2": {
+      "wins": 313,
+      "draws": 11,
+      "losses": 444,
+      "score": 0.4147135416666667
+    },
+    "fly2950_v3": {
+      "wins": 431,
+      "draws": 14,
+      "losses": 323,
+      "score": 0.5703125
+    },
+    "rnn3000_v2": {
+      "wins": 310,
+      "draws": 10,
+      "losses": 448,
+      "score": 0.41015625
+    },
+    "rnn3000_v3": {
+      "wins": 460,
+      "draws": 9,
+      "losses": 299,
+      "score": 0.6048177083333334
+    }
+  },
+  "seed": 331000481,
+  "openings": 128
+}
